@@ -1,1 +1,62 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Models</title>
+</head>
+
+<body>
+    <h1>AI Models List</h1>
+    <ul id="model-list"></ul>
+
+    <script>
+        async function fetchModels() {
+            try {
+                // Fetch the data from the API
+                const response = await fetch('https://st-ut-gen1.azurewebsites.net/api/ai-models');
+
+                // Check if the response is okay
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                // Parse the response as JSON
+                const data = await response.json();
+
+                // Check for status 200 in the response
+                if (data.status === 200) {
+                    const models = data.result.ai_models;
+
+                    // Get the HTML element to display the list of AI models
+                    const modelList = document.getElementById('model-list');
+
+                    // Clear any existing content
+                    modelList.innerHTML = '';
+
+                    // Iterate through the models and create list items
+                    models.forEach(model => {
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `
+                            <strong>ID:</strong> ${model.id} <br>
+                            <strong>Model Name:</strong> ${model.model_name} <br>
+                            <strong>Display Name:</strong> ${model.display_name} <br>
+                            <strong>Created At:</strong> ${model.created_at} <br><br>
+                        `;
+                        modelList.appendChild(listItem);
+                    });
+                } else {
+                    console.error('API returned an error:', data.error_message);
+                }
+            } catch (error) {
+                console.error('Error fetching the AI models:', error);
+            }
+        }
+
+        // Call the function to fetch and display the models when the page loads
+        fetchModels();
+    </script>
+</body>
+
+</html>
