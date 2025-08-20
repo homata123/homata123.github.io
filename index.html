@@ -1,61 +1,890 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Models</title>
-</head>
+    <title>🎭 Fun Zone - Lợn Tùng & Friends</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<body>
-    <h1>AI Models List</h1>
-    <ul id="model-list"></ul>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-    <script>
-        async function fetchModels() {
-            try {
-                // Fetch the data from the API
-                const response = await fetch('https://st-ut-gen1.azurewebsites.net/api/ai-models');
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
 
-                // Check if the response is okay
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
+            50% {
+                background-position: 100% 50%;
+            }
 
-                // Parse the response as JSON
-                const data = await response.json();
-
-                // Check for status 200 in the response
-                if (data.status === 200) {
-                    const models = data.result.ai_models;
-
-                    // Get the HTML element to display the list of AI models
-                    const modelList = document.getElementById('model-list');
-
-                    // Clear any existing content
-                    modelList.innerHTML = '';
-
-                    // Iterate through the models and create list items
-                    models.forEach(model => {
-                        const listItem = document.createElement('li');
-                        listItem.innerHTML = `
-                            <strong>ID:</strong> ${model.id} <br>
-                            <strong>Model Name:</strong> ${model.model_name} <br>
-                            <strong>Display Name:</strong> ${model.display_name} <br>
-                            <strong>Created At:</strong> ${model.created_at} <br><br>
-                        `;
-                        modelList.appendChild(listItem);
-                    });
-                } else {
-                    console.error('API returned an error:', data.error_message);
-                }
-            } catch (error) {
-                console.error('Error fetching the AI models:', error);
+            100% {
+                background-position: 0% 50%;
             }
         }
 
-        // Call the function to fetch and display the models when the page loads
-        fetchModels();
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 3px 3px 0px #ff6b6b, 6px 6px 0px #4ecdc4;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            color: #fff;
+            text-shadow: 2px 2px 0px #333;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 3px solid #ff6b6b;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #ff6b6b;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 0px #ffd93d;
+        }
+
+        /* People Section Styles */
+        .people-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .person-card {
+            background: linear-gradient(145deg, #fff, #f0f0f0);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .person-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        .person-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s ease;
+            opacity: 0;
+        }
+
+        .person-card:hover::before {
+            animation: shine 1s ease;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        .person-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff6b6b;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .person-image:hover {
+            transform: scale(1.1) rotate(5deg);
+            border-color: #4ecdc4;
+        }
+
+        .person-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 0px #ffd93d;
+        }
+
+        .person-description {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .slap-counter {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: inline-block;
+            box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+        }
+
+        .slap-button {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .slap-button:hover {
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+        }
+
+        .slap-button:active {
+            transform: scale(0.95);
+        }
+
+        .slap-animation {
+            animation: slap 0.5s ease;
+        }
+
+        @keyframes slap {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            25% {
+                transform: rotate(-15deg) scale(1.1);
+            }
+
+            50% {
+                transform: rotate(15deg) scale(0.9);
+            }
+
+            75% {
+                transform: rotate(-5deg) scale(1.05);
+            }
+
+            100% {
+                transform: rotate(0deg) scale(1);
+            }
+        }
+
+        /* Gaming Section Styles */
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .game-card {
+            background: linear-gradient(145deg, #4ecdc4, #45b7d1);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-content {
+            margin-bottom: 20px;
+        }
+
+        .game-button {
+            background: linear-gradient(45deg, #ffd93d, #ffed4e);
+            color: #333;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Tic Tac Toe Styles */
+        .tictactoe-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin: 20px auto;
+            max-width: 200px;
+        }
+
+        .tictactoe-cell {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tictactoe-cell:hover {
+            background: #ffd93d;
+            transform: scale(1.1);
+        }
+
+        /* Rock Paper Scissors Styles */
+        .rps-choices {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .rps-choice {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border: 3px solid #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .rps-choice:hover {
+            transform: scale(1.2);
+            border-color: #ffd93d;
+            background: #ffd93d;
+        }
+
+        /* Wheel Styles */
+        .wheel-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+
+        .wheel {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#ff6b6b 0deg 60deg,
+                    #4ecdc4 60deg 120deg,
+                    #45b7d1 120deg 180deg,
+                    #96ceb4 180deg 240deg,
+                    #ffd93d 240deg 300deg,
+                    #ff8e8e 300deg 360deg);
+            transition: transform 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+        }
+
+        .wheel-pointer {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid #333;
+            z-index: 10;
+        }
+
+        .wheel-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        .wheel-input:focus {
+            outline: none;
+            border-color: #ffd93d;
+            box-shadow: 0 0 10px rgba(255, 217, 61, 0.5);
+        }
+
+        .result-display {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 15px;
+            margin: 15px 0;
+            font-size: 1.1rem;
+            color: #333;
+            text-align: center;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .people-grid,
+            .games-container {
+                grid-template-columns: 1fr;
+            }
+
+            .rps-choices {
+                gap: 10px;
+            }
+
+            .rps-choice {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Fun Animations */
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .shake {
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            75% {
+                transform: translateX(5px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>🎭 Fun Zone</h1>
+            <p>Lợn Tùng & Friends - Nơi vui vẻ nhất hành tinh! 🚀</p>
+        </div>
+
+        <!-- Section 1: People Introduction -->
+        <div class="section">
+            <h2>👥 Đội Quân Siêu Đỉnh</h2>
+            <div class="people-grid">
+                <!-- Lợn Tùng -->
+                <div class="person-card floating">
+                    <img src="https://images.viblo.asia/28d7e09a-f90e-4901-9dbc-01465d646a4d.jpg" alt="Lợn Tùng"
+                        class="person-image" onclick="slapPerson(this, 'tung')">
+                    <h3 class="person-name">🐷 Lợn Tùng</h3>
+                    <p class="person-description">40 cân cả bỉm, khắc chế cứng Chí cò! 💪</p>
+                    <div class="slap-counter" id="slap-counter-tung">👋 Tát: 0 lần</div>
+                    <button class="slap-button"
+                        onclick="slapPerson(this.previousElementSibling.previousElementSibling, 'tung')">
+                        👋 Tát Mặt!
+                    </button>
+                </div>
+
+                <!-- Lợn Tuấn -->
+                <div class="person-card floating">
+                    <img src="https://images.viblo.asia/deb2138a-bd8d-419e-aba9-8a1b9866cefc.jpg" alt="Lợn Tuấn"
+                        class="person-image" onclick="slapPerson(this, 'hmat')">
+                    <h3 class="person-name">🚚 Lợn Tuấn</h3>
+                    <p class="person-description">Người vận chuyển (đồ ăn, cơm gà) - Chuyên gia logistics! 📦</p>
+                    <div class="slap-counter" id="slap-counter-hmat">👋 Tát: 0 lần</div>
+                    <button class="slap-button"
+                        onclick="slapPerson(this.previousElementSibling.previousElementSibling, 'hmat')">
+                        👋 Tát Mặt!
+                    </button>
+                </div>
+
+                <!-- Chí cò -->
+                <div class="person-card floating">
+                    <img src="https://images.viblo.asia/1ba32b04-7ec9-44cf-90ad-702250778175.png" alt="Chí cò"
+                        class="person-image" onclick="slapPerson(this, 'ky')">
+                    <h3 class="person-name">🦅 Chí cò</h3>
+                    <p class="person-description">Top 1 đê tiện, dâm dê, phổi bạn! 😈</p>
+                    <div class="slap-counter" id="slap-counter-ky">👋 Tát: 0 lần</div>
+                    <button class="slap-button"
+                        onclick="slapPerson(this.previousElementSibling.previousElementSibling, 'ky')">
+                        👋 Tát Mặt!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Gaming Section -->
+        <div class="section">
+            <h2>🎮 Khu Vực Giải Trí</h2>
+            <div class="games-container">
+                <!-- Tic Tac Toe -->
+                <div class="game-card">
+                    <h3 class="game-title">⭕ Tic Tac Toe</h3>
+                    <div class="game-content">
+                        <div class="tictactoe-grid">
+                            <div class="tictactoe-cell" onclick="makeMove(this, 0)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 1)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 2)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 3)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 4)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 5)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 6)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 7)"></div>
+                            <div class="tictactoe-cell" onclick="makeMove(this, 8)"></div>
+                        </div>
+                        <div class="result-display" id="tictactoe-result">Chơi đi! Bạn vs AI! 🎯</div>
+                        <button class="game-button" onclick="resetTicTacToe()">🔄 Chơi Lại</button>
+                    </div>
+                </div>
+
+                <!-- Rock Paper Scissors -->
+                <div class="game-card">
+                    <h3 class="game-title">✂️ Kéo Búa Bao</h3>
+                    <div class="game-content">
+                        <div class="rps-choices">
+                            <div class="rps-choice" onclick="playRPS('rock')">🪨</div>
+                            <div class="rps-choice" onclick="playRPS('paper')">📄</div>
+                            <div class="rps-choice" onclick="playRPS('scissors')">✂️</div>
+                        </div>
+                        <div class="result-display" id="rps-result">Chọn kéo, búa hoặc bao! 🎲</div>
+                        <button class="game-button" onclick="resetRPS()">🔄 Chơi Lại</button>
+                    </div>
+                </div>
+
+                <!-- Lucky Wheel -->
+                <div class="game-card">
+                    <h3 class="game-title">🎡 Vòng Quay May Mắn</h3>
+                    <div class="game-content">
+                        <input type="text" class="wheel-input" id="wheel-options"
+                            placeholder="Nhập các lựa chọn, phân cách bằng dấu phẩy (VD: Pizza, Burger, Sushi, Salad)"
+                            value="Pizza, Burger, Sushi, Salad, Ice Cream, Coffee">
+                        <div class="wheel-container">
+                            <div class="wheel-pointer"></div>
+                            <div class="wheel" id="wheel"></div>
+                        </div>
+                        <div class="result-display" id="wheel-result">Quay để nhận quà! 🎁</div>
+                        <button class="game-button" onclick="spinWheel()">🎯 Quay Ngay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // People Slap Function
+        function slapPerson(image, slug) {
+            image.classList.add('slap-animation');
+
+            // Add funny effects
+            const card = image.closest('.person-card');
+            card.style.transform = 'rotate(5deg) scale(1.05)';
+
+            // Create true slap effect (hand coming down to slap)
+            const slap = document.createElement('div');
+            slap.innerHTML = '🤚';
+            slap.style.position = 'absolute';
+            slap.style.fontSize = '3rem';
+            slap.style.left = Math.random() * 200 + 'px';
+            slap.style.top = Math.random() * 100 + 'px';
+            slap.style.animation = 'slap 0.5s ease';
+            slap.style.zIndex = '1000';
+            card.appendChild(slap);
+
+            // Increment slap counter via API
+            incrementSlapCounter(slug);
+
+            // Funny messages
+            const messages = [
+                'Ouch! 😵',
+                'Đau quá! 😭',
+                'Tại sao lại tát tôi? 😢',
+                'Tôi sẽ trả thù! 😈',
+                'Haha, đau không? 😂'
+            ];
+
+            setTimeout(() => {
+                alert(messages[Math.floor(Math.random() * messages.length)]);
+                card.style.transform = '';
+                slap.remove();
+            }, 500);
+
+            setTimeout(() => {
+                image.classList.remove('slap-animation');
+            }, 500);
+        }
+
+        // Slap Counter Functions
+        async function incrementSlapCounter(slug) {
+            try {
+                const response = await fetch(`https://api.counterapi.dev/v2/vmb-cg/${slug}/up`);
+
+                if (response.ok) {
+                    // Update the counter display
+                    updateSlapCounterDisplay(slug);
+                }
+            } catch (error) {
+                console.error('Error incrementing slap counter:', error);
+            }
+        }
+
+        async function updateSlapCounterDisplay(slug) {
+            try {
+                const response = await fetch(`https://api.counterapi.dev/v2/vmb-cg/${slug}`);
+
+                if (response.ok) {
+                    const data = await response.json();
+                    const counterElement = document.getElementById(`slap-counter-${slug}`);
+                    if (counterElement) {
+                        counterElement.textContent = `👋 Tát: ${data.data.up_count} lần`;
+                    }
+                }
+            } catch (error) {
+                console.error('Error updating slap counter display:', error);
+            }
+        }
+
+        // Load initial slap counters
+        async function loadSlapCounters() {
+            const slugs = ['hmat', 'tung', 'ky'];
+            for (const slug of slugs) {
+                await updateSlapCounterDisplay(slug);
+            }
+        }
+
+        // Tic Tac Toe Game
+        let ticTacToeBoard = ['', '', '', '', '', '', '', '', ''];
+        let currentPlayer = 'X';
+        let gameActive = true;
+
+        function makeMove(cell, index) {
+            if (ticTacToeBoard[index] === '' && gameActive) {
+                ticTacToeBoard[index] = currentPlayer;
+                cell.textContent = currentPlayer;
+                cell.style.color = currentPlayer === 'X' ? '#ff6b6b' : '#4ecdc4';
+
+                if (checkWinner()) {
+                    document.getElementById('tictactoe-result').textContent =
+                        `🎉 ${currentPlayer} thắng! Bạn quá đỉnh!`;
+                    gameActive = false;
+                    return;
+                }
+
+                if (ticTacToeBoard.every(cell => cell !== '')) {
+                    document.getElementById('tictactoe-result').textContent = '🤝 Hòa! Chơi lại đi!';
+                    gameActive = false;
+                    return;
+                }
+
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+
+                // AI move
+                if (currentPlayer === 'O' && gameActive) {
+                    setTimeout(() => {
+                        const emptyCells = ticTacToeBoard
+                            .map((cell, index) => cell === '' ? index : -1)
+                            .filter(index => index !== -1);
+
+                        if (emptyCells.length > 0) {
+                            const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+                            const aiCell = document.querySelectorAll('.tictactoe-cell')[randomIndex];
+                            makeMove(aiCell, randomIndex);
+                        }
+                    }, 500);
+                }
+            }
+        }
+
+        function checkWinner() {
+            const winConditions = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+                [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+                [0, 4, 8], [2, 4, 6] // Diagonals
+            ];
+
+            return winConditions.some(condition => {
+                return condition.every(index => {
+                    return ticTacToeBoard[index] === currentPlayer;
+                });
+            });
+        }
+
+        function resetTicTacToe() {
+            ticTacToeBoard = ['', '', '', '', '', '', '', '', ''];
+            currentPlayer = 'X';
+            gameActive = true;
+
+            document.querySelectorAll('.tictactoe-cell').forEach(cell => {
+                cell.textContent = '';
+                cell.style.color = '';
+            });
+
+            document.getElementById('tictactoe-result').textContent = 'Chơi đi! Bạn vs AI! 🎯';
+        }
+
+        // Rock Paper Scissors Game
+        let rpsScore = { player: 0, computer: 0 };
+
+        function playRPS(choice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+            const result = getRPSResult(choice, computerChoice);
+
+            let message = '';
+            if (result === 'win') {
+                rpsScore.player++;
+                message = `🎉 Bạn thắng! ${getChoiceEmoji(choice)} vs ${getChoiceEmoji(computerChoice)}`;
+            } else if (result === 'lose') {
+                rpsScore.computer++;
+                message = `😭 Bạn thua! ${getChoiceEmoji(choice)} vs ${getChoiceEmoji(computerChoice)}`;
+            } else {
+                message = `🤝 Hòa! ${getChoiceEmoji(choice)} vs ${getChoiceEmoji(computerChoice)}`;
+            }
+
+            message += `\nĐiểm: Bạn ${rpsScore.player} - Máy ${rpsScore.computer}`;
+            document.getElementById('rps-result').innerHTML = message.replace(/\n/g, '<br>');
+        }
+
+        function getRPSResult(player, computer) {
+            if (player === computer) return 'tie';
+            if (
+                (player === 'rock' && computer === 'scissors') ||
+                (player === 'paper' && computer === 'rock') ||
+                (player === 'scissors' && computer === 'paper')
+            ) {
+                return 'win';
+            }
+            return 'lose';
+        }
+
+        function getChoiceEmoji(choice) {
+            const emojis = { rock: '🪨', paper: '📄', scissors: '✂️' };
+            return emojis[choice];
+        }
+
+        function resetRPS() {
+            rpsScore = { player: 0, computer: 0 };
+            document.getElementById('rps-result').textContent = 'Chọn kéo, búa hoặc bao! 🎲';
+        }
+
+        // Lucky Wheel Game
+        let isSpinning = false;
+
+        function spinWheel() {
+            if (isSpinning) return;
+
+            // Get custom options from input
+            const optionsInput = document.getElementById('wheel-options');
+            const options = optionsInput.value.split(',').map(option => option.trim()).filter(option => option.length > 0);
+
+            if (options.length === 0) {
+                alert('Vui lòng nhập ít nhất một lựa chọn!');
+                return;
+            }
+
+            isSpinning = true;
+            const wheel = document.getElementById('wheel');
+            const result = document.getElementById('wheel-result');
+
+            // Update wheel colors based on number of options
+            updateWheelColors(options.length);
+
+            // Random rotation
+            const spins = 5 + Math.random() * 5; // 5-10 full rotations
+            const finalAngle = Math.random() * 360;
+            const totalRotation = spins * 360 + finalAngle;
+
+            wheel.style.transform = `rotate(${totalRotation}deg)`;
+
+            // Determine result based on final angle and options
+            setTimeout(() => {
+                const normalizedAngle = finalAngle % 360;
+                const segmentSize = 360 / options.length;
+                const selectedIndex = Math.floor(normalizedAngle / segmentSize);
+                const selectedOption = options[selectedIndex] || options[0];
+
+                result.textContent = `🎉 Kết quả: ${selectedOption}!`;
+                isSpinning = false;
+
+                // Add celebration effect
+                result.style.animation = 'shake 0.5s ease-in-out';
+                setTimeout(() => {
+                    result.style.animation = '';
+                }, 500);
+            }, 3000);
+        }
+
+        function updateWheelColors(numOptions) {
+            const wheel = document.getElementById('wheel');
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffd93d', '#ff8e8e', '#ff9ff3', '#54a0ff', '#5f27cd', '#00d2d3'];
+
+            let conicGradient = '';
+            const segmentSize = 360 / numOptions;
+
+            for (let i = 0; i < numOptions; i++) {
+                const startAngle = i * segmentSize;
+                const endAngle = (i + 1) * segmentSize;
+                const color = colors[i % colors.length];
+                conicGradient += `${color} ${startAngle}deg ${endAngle}deg`;
+                if (i < numOptions - 1) conicGradient += ', ';
+            }
+
+            wheel.style.background = `conic-gradient(${conicGradient})`;
+        }
+
+        // Add some fun random effects
+        setInterval(() => {
+            const randomCard = document.querySelectorAll('.person-card')[Math.floor(Math.random() * 3)];
+            if (Math.random() < 0.1) { // 10% chance every 3 seconds
+                randomCard.style.animation = 'shake 0.5s ease-in-out';
+                setTimeout(() => {
+                    randomCard.style.animation = 'floating 3s ease-in-out infinite';
+                }, 500);
+            }
+        }, 3000);
+
+        // Easter egg: Konami code
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
+
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.code);
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+
+            if (konamiCode.join(',') === konamiSequence.join(',')) {
+                alert('🎉 Bạn đã tìm thấy Easter Egg! Bạn quá đỉnh! 🚀');
+                document.body.style.animation = 'gradientShift 1s ease infinite';
+                setTimeout(() => {
+                    document.body.style.animation = 'gradientShift 8s ease infinite';
+                }, 5000);
+            }
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            loadSlapCounters();
+            updateWheelColors(6); // Initialize wheel with default 6 options
+        });
     </script>
 </body>
 
