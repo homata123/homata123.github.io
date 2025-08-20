@@ -185,8 +185,8 @@
             margin-bottom: 15px;
         }
 
-        .slap-counter {
-            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+        .perfume-counter {
+            background: linear-gradient(45deg, #ff9ff3, #54a0ff);
             color: white;
             padding: 8px 15px;
             border-radius: 20px;
@@ -194,11 +194,11 @@
             font-weight: bold;
             margin-bottom: 15px;
             display: inline-block;
-            box-shadow: 0 3px 10px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 3px 10px rgba(255, 159, 243, 0.3);
         }
 
-        .slap-button {
-            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+        .perfume-button {
+            background: linear-gradient(45deg, #ff9ff3, #54a0ff);
             color: white;
             border: none;
             padding: 12px 25px;
@@ -206,23 +206,23 @@
             font-size: 1.1rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 5px 15px rgba(255, 159, 243, 0.4);
         }
 
-        .slap-button:hover {
+        .perfume-button:hover {
             transform: scale(1.1) rotate(-5deg);
-            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+            box-shadow: 0 8px 25px rgba(255, 159, 243, 0.6);
         }
 
         .slap-button:active {
             transform: scale(0.95);
         }
 
-        .slap-animation {
-            animation: slap 0.5s ease;
+        .perfume-animation {
+            animation: perfume 0.5s ease;
         }
 
-        @keyframes slap {
+        @keyframes perfume {
             0% {
                 transform: rotate(0deg) scale(1);
             }
@@ -493,39 +493,39 @@
                 <!-- Lợn Tùng -->
                 <div class="person-card floating">
                     <img src="https://images.viblo.asia/28d7e09a-f90e-4901-9dbc-01465d646a4d.jpg" alt="Lợn Tùng"
-                        class="person-image" onclick="slapPerson(this, 'tung')">
+                        class="person-image" onclick="givePerfume(this, 'tung')">
                     <h3 class="person-name">🐷 Lợn Tùng</h3>
                     <p class="person-description">40 cân cả bỉm, khắc chế cứng Chí cò! 💪</p>
-                    <div class="slap-counter" id="slap-counter-tung">👋 Tát: 0 lần</div>
-                    <button class="slap-button"
-                        onclick="slapPerson(this.previousElementSibling.previousElementSibling, 'tung')">
-                        👋 Tát Mặt!
+                    <div class="perfume-counter" id="perfume-counter-tung">🌸 Nước hoa: 0 chai</div>
+                    <button class="perfume-button"
+                        onclick="givePerfume(this.previousElementSibling.previousElementSibling, 'tung')">
+                        🌸 Tặng 1 chai nước hoa Minh béo!
                     </button>
                 </div>
 
                 <!-- Lợn Tuấn -->
                 <div class="person-card floating">
                     <img src="https://images.viblo.asia/deb2138a-bd8d-419e-aba9-8a1b9866cefc.jpg" alt="Lợn Tuấn"
-                        class="person-image" onclick="slapPerson(this, 'hmat')">
+                        class="person-image" onclick="givePerfume(this, 'hmat')">
                     <h3 class="person-name">🚚 Lợn Tuấn</h3>
                     <p class="person-description">Người vận chuyển (đồ ăn, cơm gà) - Chuyên gia logistics! 📦</p>
-                    <div class="slap-counter" id="slap-counter-hmat">👋 Tát: 0 lần</div>
-                    <button class="slap-button"
-                        onclick="slapPerson(this.previousElementSibling.previousElementSibling, 'hmat')">
-                        👋 Tát Mặt!
+                    <div class="perfume-counter" id="perfume-counter-hmat">🌸 Nước hoa: 0 chai</div>
+                    <button class="perfume-button"
+                        onclick="givePerfume(this.previousElementSibling.previousElementSibling, 'hmat')">
+                        🌸 Tặng 1 chai nước hoa Minh béo!
                     </button>
                 </div>
 
                 <!-- Chí cò -->
                 <div class="person-card floating">
                     <img src="https://images.viblo.asia/1ba32b04-7ec9-44cf-90ad-702250778175.png" alt="Chí cò"
-                        class="person-image" onclick="slapPerson(this, 'ky')">
+                        class="person-image" onclick="givePerfume(this, 'ky')">
                     <h3 class="person-name">🦅 Chí cò</h3>
                     <p class="person-description">Top 1 đê tiện, dâm dê, phổi bạn! 😈</p>
-                    <div class="slap-counter" id="slap-counter-ky">👋 Tát: 0 lần</div>
-                    <button class="slap-button"
-                        onclick="slapPerson(this.previousElementSibling.previousElementSibling, 'ky')">
-                        👋 Tát Mặt!
+                    <div class="perfume-counter" id="perfume-counter-ky">🌸 Nước hoa: 0 chai</div>
+                    <button class="perfume-button"
+                        onclick="givePerfume(this.previousElementSibling.previousElementSibling, 'ky')">
+                        🌸 Tặng 1 chai nước hoa Minh béo!
                     </button>
                 </div>
             </div>
@@ -589,83 +589,82 @@
     </div>
 
     <script>
-        // People Slap Function
-        function slapPerson(image, slug) {
-            image.classList.add('slap-animation');
+        // People Perfume Gift Function
+        function givePerfume(image, slug) {
+            image.classList.add('perfume-animation');
 
             // Add funny effects
             const card = image.closest('.person-card');
             card.style.transform = 'rotate(5deg) scale(1.05)';
 
-            // Create true slap effect (hand coming down to slap)
-            const slap = document.createElement('div');
-            slap.innerHTML = '🤚';
-            slap.style.position = 'absolute';
-            slap.style.fontSize = '3rem';
-            slap.style.left = Math.random() * 200 + 'px';
-            slap.style.top = Math.random() * 100 + 'px';
-            slap.style.animation = 'slap 0.5s ease';
-            slap.style.zIndex = '1000';
-            card.appendChild(slap);
+            // Create perfume gift effect with the perfume image
+            const perfume = document.createElement('div');
+            perfume.innerHTML = '<img src="https://images.viblo.asia/edd61d52-f982-4d11-9068-973b86c3ddb2.jpg" style="width: 60px; height: 60px; border-radius: 10px; object-fit: cover;">';
+            perfume.style.position = 'absolute';
+            perfume.style.left = Math.random() * 200 + 'px';
+            perfume.style.top = Math.random() * 100 + 'px';
+            perfume.style.animation = 'perfume 0.5s ease';
+            perfume.style.zIndex = '1000';
+            card.appendChild(perfume);
 
-            // Increment slap counter via API
-            incrementSlapCounter(slug);
+            // Increment perfume counter via API
+            incrementPerfumeCounter(slug);
 
-            // Funny messages
+            // Funny perfume messages
             const messages = [
-                'Ouch! 😵',
-                'Đau quá! 😭',
-                'Tại sao lại tát tôi? 😢',
-                'Tôi sẽ trả thù! 😈',
-                'Haha, đau không? 😂'
+                'Wooow! Nước hoa Minh béo! 😍',
+                'Thơm quá! Cảm ơn bạn! 🌸',
+                'Minh béo thật sự rất thơm! 💕',
+                'Tôi sẽ xịt ngay! 🎉',
+                'Quá đã! Nước hoa xịn! ✨'
             ];
 
             setTimeout(() => {
                 alert(messages[Math.floor(Math.random() * messages.length)]);
                 card.style.transform = '';
-                slap.remove();
+                perfume.remove();
             }, 500);
 
             setTimeout(() => {
-                image.classList.remove('slap-animation');
+                image.classList.remove('perfume-animation');
             }, 500);
         }
 
-        // Slap Counter Functions
-        async function incrementSlapCounter(slug) {
+        // Perfume Counter Functions
+        async function incrementPerfumeCounter(slug) {
             try {
                 const response = await fetch(`https://api.counterapi.dev/v2/vmb-cg/${slug}/up`);
 
                 if (response.ok) {
                     // Update the counter display
-                    updateSlapCounterDisplay(slug);
+                    updatePerfumeCounterDisplay(slug);
                 }
             } catch (error) {
-                console.error('Error incrementing slap counter:', error);
+                console.error('Error incrementing perfume counter:', error);
             }
         }
 
-        async function updateSlapCounterDisplay(slug) {
+        async function updatePerfumeCounterDisplay(slug) {
             try {
                 const response = await fetch(`https://api.counterapi.dev/v2/vmb-cg/${slug}`);
 
                 if (response.ok) {
                     const data = await response.json();
-                    const counterElement = document.getElementById(`slap-counter-${slug}`);
+                    const counterElement = document.getElementById(`perfume-counter-${slug}`);
                     if (counterElement) {
-                        counterElement.textContent = `👋 Tát: ${data.data.up_count} lần`;
+                        counterElement.textContent = `🌸 Nước hoa: ${data.data.up_count} chai`;
                     }
                 }
             } catch (error) {
-                console.error('Error updating slap counter display:', error);
+                console.error('Error updating perfume counter display:', error);
             }
         }
 
-        // Load initial slap counters
-        async function loadSlapCounters() {
+        // Load initial perfume counters
+        async function loadPerfumeCounters() {
             const slugs = ['hmat', 'tung', 'ky'];
             for (const slug of slugs) {
-                await updateSlapCounterDisplay(slug);
+                await updatePerfumeCounterDisplay(slug);
             }
         }
 
@@ -882,7 +881,7 @@
 
         // Initialize page
         document.addEventListener('DOMContentLoaded', () => {
-            loadSlapCounters();
+            loadPerfumeCounters();
             updateWheelColors(6); // Initialize wheel with default 6 options
         });
     </script>
