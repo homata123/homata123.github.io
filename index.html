@@ -244,6 +244,135 @@
             }
         }
 
+        /* Betting Section Styles */
+        .betting-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .betting-card {
+            background: linear-gradient(145deg, #ff9ff3, #54a0ff);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .betting-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .betting-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .betting-content {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .betting-input,
+        .betting-select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #fff;
+            border-radius: 15px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .betting-input:focus,
+        .betting-select:focus {
+            outline: none;
+            border-color: #ffd93d;
+            box-shadow: 0 0 10px rgba(255, 217, 61, 0.5);
+            transform: scale(1.02);
+        }
+
+        .betting-button {
+            background: linear-gradient(45deg, #ffd93d, #ffed4e);
+            color: #333;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+        }
+
+        .betting-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Checkbox Styles */
+        .checkbox-label {
+            display: flex !important;
+            align-items: center;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 5px !important;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border: 2px solid #fff;
+            border-radius: 4px;
+            margin-right: 10px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .checkbox-label input[type="checkbox"]:checked+.checkmark {
+            background: #ffd93d;
+            border-color: #ffd93d;
+        }
+
+        .checkbox-label input[type="checkbox"]:checked+.checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .checkbox-label:hover .checkmark {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
         /* Gaming Section Styles */
         .games-container {
             display: grid;
@@ -531,7 +660,99 @@
             </div>
         </div>
 
-        <!-- Section 2: Gaming Section -->
+        <!-- Section 2: Betting Section -->
+        <div class="section">
+            <h2>🎲 Cược Vui - FC Online</h2>
+            <div class="betting-container">
+                <!-- Upgrade Calculator -->
+                <div class="betting-card">
+                    <h3 class="betting-title">⚽ Máy Tính Tỉ Lệ Nâng Cấp</h3>
+                    <div class="betting-content">
+                        <div class="input-group">
+                            <label for="upgrade-from">Cấp thẻ bắt đầu:</label>
+                            <select id="upgrade-from" class="betting-select">
+                                <option value="1">+1</option>
+                                <option value="2">+2</option>
+                                <option value="3">+3</option>
+                                <option value="4">+4</option>
+                                <option value="5">+5</option>
+                                <option value="6">+6</option>
+                                <option value="7">+7</option>
+                                <option value="8">+8</option>
+                                <option value="9">+9</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="upgrade-to">Cấp thẻ mục tiêu:</label>
+                            <select id="upgrade-to" class="betting-select">
+                                <option value="2">+2</option>
+                                <option value="3">+3</option>
+                                <option value="4">+4</option>
+                                <option value="5">+5</option>
+                                <option value="6">+6</option>
+                                <option value="7">+7</option>
+                                <option value="8">+8</option>
+                                <option value="9">+9</option>
+                                <option value="10">+10</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="upgrade-bars">Số vạch nâng cấp (0-5):</label>
+                            <input type="number" id="upgrade-bars" class="betting-input" min="0" max="5" step="0.1"
+                                value="5" placeholder="VD: 2.5">
+                        </div>
+
+                        <button class="betting-button" onclick="calculateUpgradeRate()">🎯 Tính Tỉ Lệ Thành
+                            Công</button>
+
+                        <div class="result-display" id="upgrade-result">Nhập thông tin để tính tỉ lệ! 📊</div>
+                    </div>
+                </div>
+
+                <!-- Betting Calculator -->
+                <div class="betting-card">
+                    <h3 class="betting-title">💰 Máy Tính Tiền Cược</h3>
+                    <div class="betting-content">
+                        <div class="input-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="house-betting" checked>
+                                <span class="checkmark"></span>
+                                🏠 Cược có nhà cái (tính theo tỉ lệ)
+                            </label>
+                            <small style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+                                Bỏ tick = Cược không nhà cái (chia đều tiền)
+                            </small>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="success-bettors">Số người cược thành công:</label>
+                            <input type="number" id="success-bettors" class="betting-input" min="0" value="0"
+                                placeholder="VD: 3">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="fail-bettors">Số người cược thất bại:</label>
+                            <input type="number" id="fail-bettors" class="betting-input" min="0" value="0"
+                                placeholder="VD: 2">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bet-amount">Số tiền cược mỗi người (VNĐ):</label>
+                            <input type="number" id="bet-amount" class="betting-input" min="0" value="0"
+                                placeholder="VD: 20000">
+                        </div>
+
+                        <button class="betting-button" onclick="calculateBetting()">💸 Tính Tiền Thắng</button>
+
+                        <div class="result-display" id="betting-result">Nhập thông tin để tính tiền cược! 💰</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Gaming Section -->
         <div class="section">
             <h2>🎮 Khu Vực Giải Trí</h2>
             <div class="games-container">
@@ -879,10 +1100,200 @@
             }
         });
 
+        // FC Online Betting Functions
+        // Bảng tỉ lệ thành công nâng cấp (dựa trên 5 vạch)
+        const upgradeRates = {
+            '1-2': 100,  // 1 -> 2: 100%
+            '2-3': 81,   // 2 -> 3: 81%
+            '3-4': 64,   // 3 -> 4: 64%
+            '4-5': 50,   // 4 -> 5: 50%
+            '5-6': 26,   // 5 -> 6: 26%
+            '6-7': 15,   // 6 -> 7: 15%
+            '7-8': 7,    // 7 -> 8: 7%
+            '8-9': 4,    // 8 -> 9: 4%
+            '9-10': 2    // 9 -> 10: 2%
+        };
+
+        // Tính tỉ lệ nâng cấp thành công
+        function calculateUpgradeRate() {
+            const fromLevel = parseInt(document.getElementById('upgrade-from').value);
+            const toLevel = parseInt(document.getElementById('upgrade-to').value);
+            const bars = parseFloat(document.getElementById('upgrade-bars').value);
+
+            // Validation
+            if (toLevel <= fromLevel) {
+                alert('Cấp thẻ mục tiêu phải cao hơn cấp thẻ bắt đầu!');
+                return;
+            }
+
+            if (bars < 0 || bars > 5) {
+                alert('Số vạch nâng cấp phải từ 0 đến 5!');
+                return;
+            }
+
+            // Lấy tỉ lệ cơ bản từ bảng
+            const upgradeKey = `${fromLevel}-${toLevel}`;
+            const baseRate = upgradeRates[upgradeKey];
+
+            if (!baseRate) {
+                alert('Không tìm thấy tỉ lệ nâng cấp cho cấp độ này!');
+                return;
+            }
+
+            // Tính tỉ lệ thực tế dựa trên số vạch
+            const actualRate = (baseRate * bars) / 5;
+
+            // Hiển thị kết quả
+            const resultElement = document.getElementById('upgrade-result');
+            resultElement.innerHTML = `
+                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">
+                    📊 Kết Quả Tính Toán
+                </div>
+                <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 10px;">
+                    <div>🎯 Nâng cấp: +${fromLevel} → +${toLevel}</div>
+                    <div>⚡ Số vạch: ${bars}/5</div>
+                    <div>📈 Tỉ lệ cơ bản: ${baseRate}%</div>
+                    <div style="font-size: 1.3rem; font-weight: bold; color: #ffd93d; margin-top: 10px;">
+                        🎉 Tỉ lệ thành công: ${actualRate.toFixed(1)}%
+                    </div>
+                </div>
+            `;
+
+            // Lưu tỉ lệ để sử dụng cho tính toán cược
+            window.currentUpgradeRate = actualRate;
+        }
+
+        // Tính toán tiền cược
+        function calculateBetting() {
+            const successBettors = parseInt(document.getElementById('success-bettors').value);
+            const failBettors = parseInt(document.getElementById('fail-bettors').value);
+            const betAmount = parseInt(document.getElementById('bet-amount').value);
+            const isHouseBetting = document.getElementById('house-betting').checked;
+
+            // Validation
+            if (successBettors < 0 || failBettors < 0) {
+                alert('Số người cược không được âm!');
+                return;
+            }
+
+            if (betAmount < 0) {
+                alert('Số tiền cược không được âm!');
+                return;
+            }
+
+            if (successBettors === 0 && failBettors === 0) {
+                alert('Phải có ít nhất 1 người tham gia cược!');
+                return;
+            }
+
+            // Chỉ cần tỉ lệ nâng cấp khi cược có nhà cái
+            if (isHouseBetting && !window.currentUpgradeRate) {
+                alert('Vui lòng tính tỉ lệ nâng cấp trước!');
+                return;
+            }
+
+            const totalBettors = successBettors + failBettors;
+            const totalBetAmount = betAmount * totalBettors;
+
+            let resultHTML = `
+                <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 15px;">
+                    💰 Kết Quả Tính Tiền Cược
+                </div>
+                <div style="background: rgba(255,255,255,0.2); padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                    <div>🏠 Loại cược: ${isHouseBetting ? 'Có nhà cái (tính theo tỉ lệ)' : 'Không nhà cái (chia đều tiền)'}</div>
+                    ${isHouseBetting ? `<div>📊 Tỉ lệ nâng cấp thành công: ${window.currentUpgradeRate.toFixed(1)}%</div>` : ''}
+                    <div>👥 Tổng người tham gia: ${totalBettors}</div>
+                    <div>💵 Tổng tiền cược: ${totalBetAmount.toLocaleString('vi-VN')} VNĐ</div>
+                </div>
+            `;
+
+            if (isHouseBetting) {
+                // Logic cược có nhà cái (như cũ)
+                const upgradeRate = window.currentUpgradeRate;
+
+                // Tính tiền thắng cho người cược thành công
+                if (successBettors > 0) {
+                    const successWinAmount = (totalBetAmount * (100 - upgradeRate) / 100) / successBettors;
+                    const successTotalAmount = successWinAmount + betAmount;
+
+                    resultHTML += `
+                        <div style="background: rgba(76, 175, 80, 0.3); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+                            <div style="font-weight: bold; color: #4CAF50;">✅ Người cược THÀNH CÔNG (${successBettors} người)</div>
+                            <div>💰 Tiền thắng: ${successWinAmount.toLocaleString('vi-VN')} VNĐ</div>
+                            <div>💎 Tổng nhận về: ${successTotalAmount.toLocaleString('vi-VN')} VNĐ</div>
+                        </div>
+                    `;
+                }
+
+                // Tính tiền thắng cho người cược thất bại
+                if (failBettors > 0) {
+                    const failWinAmount = (totalBetAmount * upgradeRate / 100) / failBettors;
+                    const failTotalAmount = failWinAmount + betAmount;
+
+                    resultHTML += `
+                        <div style="background: rgba(244, 67, 54, 0.3); padding: 15px; border-radius: 10px;">
+                            <div style="font-weight: bold; color: #f44336;">❌ Người cược THẤT BẠI (${failBettors} người)</div>
+                            <div>💰 Tiền thắng: ${failWinAmount.toLocaleString('vi-VN')} VNĐ</div>
+                            <div>💎 Tổng nhận về: ${failTotalAmount.toLocaleString('vi-VN')} VNĐ</div>
+                        </div>
+                    `;
+                }
+            } else {
+                // Logic cược không có nhà cái (chia đều tiền)
+                // Tính tiền thắng cho người cược thành công
+                if (successBettors > 0) {
+                    const successWinAmount = totalBetAmount / successBettors;
+
+                    resultHTML += `
+                        <div style="background: rgba(76, 175, 80, 0.3); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+                            <div style="font-weight: bold; color: #4CAF50;">✅ Người cược THÀNH CÔNG (${successBettors} người)</div>
+                            <div>💰 Tiền thắng: ${successWinAmount.toLocaleString('vi-VN')} VNĐ</div>
+                            <div>💎 Tổng nhận về: ${successWinAmount.toLocaleString('vi-VN')} VNĐ</div>
+                        </div>
+                    `;
+                }
+
+                // Tính tiền thắng cho người cược thất bại
+                if (failBettors > 0) {
+                    const failWinAmount = totalBetAmount / failBettors;
+
+                    resultHTML += `
+                        <div style="background: rgba(244, 67, 54, 0.3); padding: 15px; border-radius: 10px;">
+                            <div style="font-weight: bold; color: #f44336;">❌ Người cược THẤT BẠI (${failBettors} người)</div>
+                            <div>💰 Tiền thắng: ${failWinAmount.toLocaleString('vi-VN')} VNĐ</div>
+                            <div>💎 Tổng nhận về: ${failWinAmount.toLocaleString('vi-VN')} VNĐ</div>
+                        </div>
+                    `;
+                }
+            }
+
+            document.getElementById('betting-result').innerHTML = resultHTML;
+        }
+
+        // Auto-update "to" options when "from" changes
+        document.getElementById('upgrade-from').addEventListener('change', function () {
+            const fromValue = parseInt(this.value);
+            const toSelect = document.getElementById('upgrade-to');
+
+            // Clear current options
+            toSelect.innerHTML = '';
+
+            // Add options from (fromValue + 1) to 10
+            for (let i = fromValue + 1; i <= 10; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = `+${i}`;
+                toSelect.appendChild(option);
+            }
+        });
+
         // Initialize page
         document.addEventListener('DOMContentLoaded', () => {
             loadPerfumeCounters();
             updateWheelColors(6); // Initialize wheel with default 6 options
+
+            // Initialize betting section
+            document.getElementById('upgrade-from').dispatchEvent(new Event('change'));
         });
     </script>
 </body>
