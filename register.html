@@ -144,6 +144,61 @@
             display: block;
             margin-bottom: 5px;
         }
+
+        /* Tooltip styles */
+        .tooltip-icon {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            color: #4ecdc4;
+            font-size: 0.9rem;
+            margin-left: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .tooltip-icon:hover {
+            color: #ff6b6b;
+            transform: scale(1.2);
+        }
+
+        .tooltip-icon::after {
+            content: attr(title);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip-icon::before {
+            content: '';
+            position: absolute;
+            bottom: 115%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .tooltip-icon:hover::after,
+        .tooltip-icon:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 
@@ -179,7 +234,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="memberCode">🎫 Mã thành viên:</label>
+                    <label for="memberCode">🎫 Mã thành viên: <span class="tooltip-icon"
+                            title="Liên hệ với admin Homata để có member code">❓</span></label>
                     <input type="text" id="memberCode" name="memberCode" class="form-input"
                         placeholder="Nhập mã thành viên" autocomplete="off" required>
                 </div>

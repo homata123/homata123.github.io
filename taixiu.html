@@ -20,6 +20,8 @@
                     <a href="index.html#betting" class="nav-link">🎲 Cược Vui</a>
                     <a href="index.html#games" class="nav-link">🎮 Game</a>
                     <button id="loginButton" class="login-button" onclick="goToLogin()">🔐 Đăng Nhập</button>
+                    <button id="logoutButton" class="logout-button" onclick="logout()" style="display: none;">🚪 Đăng
+                        Xuất</button>
                     <div id="userInfo" style="display: none;"></div>
                 </div>
             </div>
@@ -29,6 +31,10 @@
         <div class="game-header">
             <h1>🎲 Tài Xỉu MD5</h1>
             <p>Trò chơi giải trí với tiền ảo - Không có giá trị thực tế</p>
+            <div id="tokenNotice" class="token-notice" style="display: none;">
+                <p>⚠️ <strong>Lưu ý:</strong> Access token sẽ hết hạn sau 60 phút từ lần đăng nhập cuối. Nếu không tham
+                    gia tài xỉu được, hãy đăng xuất và đăng nhập lại.</p>
+            </div>
         </div>
 
         <!-- User Balance -->
@@ -122,8 +128,12 @@
                                 <div class="dice-face" id="dice2">2</div>
                                 <div class="dice-face" id="dice3">3</div>
                             </div>
-                            <div class="dice-total" id="diceTotal">Tổng: 6</div>
                         </div>
+                    </div>
+                    <!-- Result display outside the bowl -->
+                    <div class="dice-result-display" id="diceResultDisplay" style="display: none;">
+                        <div class="dice-total" id="diceTotal">Tổng: 6</div>
+                        <div class="dice-outcome" id="diceOutcome"></div>
                     </div>
                     <div class="result-announcement" id="resultAnnouncement"></div>
                 </div>

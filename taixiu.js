@@ -398,11 +398,18 @@ class TaiXiuGame {
         const dice2 = document.getElementById('dice2');
         const dice3 = document.getElementById('dice3');
         const diceTotal = document.getElementById('diceTotal');
+        const diceResultDisplay = document.getElementById('diceResultDisplay');
+        const diceOutcome = document.getElementById('diceOutcome');
 
         if (dice1) dice1.innerHTML = '1';
         if (dice2) dice2.innerHTML = '2';
         if (dice3) dice3.innerHTML = '3';
         if (diceTotal) diceTotal.textContent = 'Tổng: 6';
+        if (diceResultDisplay) diceResultDisplay.style.display = 'none';
+        if (diceOutcome) {
+            diceOutcome.textContent = '';
+            diceOutcome.className = 'dice-outcome';
+        }
 
         // Reset betting buttons
         const taiButton = document.getElementById('taiButton');
@@ -1061,6 +1068,7 @@ class TaiXiuGame {
     showDiceCover() {
         const diceCover = document.getElementById('diceCover');
         const diceResult = document.getElementById('diceResult');
+        const diceResultDisplay = document.getElementById('diceResultDisplay');
 
         // Show dice result but keep it hidden behind cover
         diceResult.style.display = 'block';
@@ -1071,6 +1079,11 @@ class TaiXiuGame {
         diceCover.style.transform = 'translate(-50%, -50%)';
         diceCover.style.transition = '';
 
+        // Hide result display initially
+        if (diceResultDisplay) {
+            diceResultDisplay.style.display = 'none';
+        }
+
         // Enable dragging
         this.diceCoverDraggable = true;
 
@@ -1080,6 +1093,7 @@ class TaiXiuGame {
         this.displayDiceFace(document.getElementById('dice2'), round.dice_result[1]);
         this.displayDiceFace(document.getElementById('dice3'), round.dice_result[2]);
 
+        // Don't show total yet - will show after dragging
         const total = round.dice_result.reduce((a, b) => a + b, 0);
         document.getElementById('diceTotal').textContent = `Tổng: ${total}`;
     }
@@ -1541,11 +1555,12 @@ class TaiXiuGame {
                 currentNewTop = Math.max(0, startTop + deltaY);
                 diceCover.style.top = currentNewTop + 'px';
 
-                // Gradually reveal dice as cover is dragged
+                // Gradually reveal dice as cover is dragged - keep dice in place
                 const revealPercent = Math.min(currentNewTop / 100, 1);
                 const diceResult = document.getElementById('diceResult');
                 diceResult.style.opacity = revealPercent;
-                diceResult.style.transform = `scale(${0.5 + revealPercent * 0.5})`;
+                // Keep dice centered in bowl, don't scale or move them
+                diceResult.style.transform = 'translate(-50%, -50%) scale(1)';
             };
 
             const handleMouseUp = async () => {
@@ -1560,10 +1575,25 @@ class TaiXiuGame {
                 if (draggedDistance > 100) {
                     // Fully reveal dice and show result
                     const diceResult = document.getElementById('diceResult');
+                    const diceResultDisplay = document.getElementById('diceResultDisplay');
+                    const diceOutcome = document.getElementById('diceOutcome');
+
                     diceResult.style.opacity = '1';
                     diceResult.style.transform = 'translate(-50%, -50%) scale(1)';
                     diceCover.style.display = 'none';
                     this.diceCoverDraggable = false;
+
+                    // Show result display outside the bowl
+                    if (diceResultDisplay) {
+                        diceResultDisplay.style.display = 'flex';
+                    }
+
+                    // Show outcome result
+                    if (diceOutcome) {
+                        const round = this.gameData.current_round;
+                        diceOutcome.textContent = round.result.toUpperCase();
+                        diceOutcome.className = `dice-outcome ${round.result}`;
+                    }
 
                     // Show announcement and process winnings
                     this.showResultAnnouncement();
@@ -1590,7 +1620,7 @@ class TaiXiuGame {
                     diceCover.style.transform = 'translate(-50%, -50%)';
                     const diceResult = document.getElementById('diceResult');
                     diceResult.style.opacity = '0';
-                    diceResult.style.transform = 'translate(-50%, -50%) scale(0.5)';
+                    diceResult.style.transform = 'translate(-50%, -50%) scale(1)';
                     setTimeout(() => {
                         diceCover.style.transition = '';
                     }, 300);
@@ -1620,11 +1650,12 @@ class TaiXiuGame {
                 currentNewTop = Math.max(0, startTop + deltaY);
                 diceCover.style.top = currentNewTop + 'px';
 
-                // Gradually reveal dice as cover is dragged
+                // Gradually reveal dice as cover is dragged - keep dice in place
                 const revealPercent = Math.min(currentNewTop / 100, 1);
                 const diceResult = document.getElementById('diceResult');
                 diceResult.style.opacity = revealPercent;
-                diceResult.style.transform = `scale(${0.5 + revealPercent * 0.5})`;
+                // Keep dice centered in bowl, don't scale or move them
+                diceResult.style.transform = 'translate(-50%, -50%) scale(1)';
             };
 
             const handleTouchEnd = async () => {
@@ -1639,10 +1670,25 @@ class TaiXiuGame {
                 if (draggedDistance > 100) {
                     // Fully reveal dice and show result
                     const diceResult = document.getElementById('diceResult');
+                    const diceResultDisplay = document.getElementById('diceResultDisplay');
+                    const diceOutcome = document.getElementById('diceOutcome');
+
                     diceResult.style.opacity = '1';
                     diceResult.style.transform = 'translate(-50%, -50%) scale(1)';
                     diceCover.style.display = 'none';
                     this.diceCoverDraggable = false;
+
+                    // Show result display outside the bowl
+                    if (diceResultDisplay) {
+                        diceResultDisplay.style.display = 'flex';
+                    }
+
+                    // Show outcome result
+                    if (diceOutcome) {
+                        const round = this.gameData.current_round;
+                        diceOutcome.textContent = round.result.toUpperCase();
+                        diceOutcome.className = `dice-outcome ${round.result}`;
+                    }
 
                     // Show announcement and process winnings
                     this.showResultAnnouncement();
@@ -1669,7 +1715,7 @@ class TaiXiuGame {
                     diceCover.style.transform = 'translate(-50%, -50%)';
                     const diceResult = document.getElementById('diceResult');
                     diceResult.style.opacity = '0';
-                    diceResult.style.transform = 'translate(-50%, -50%) scale(0.5)';
+                    diceResult.style.transform = 'translate(-50%, -50%) scale(1)';
                     setTimeout(() => {
                         diceCover.style.transition = '';
                     }, 300);

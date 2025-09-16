@@ -157,6 +157,56 @@ body {
     box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
 }
 
+.logout-button {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.logout-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+}
+
+.token-notice {
+    background: linear-gradient(45deg, #ff9800, #f57c00);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.token-notice p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 25px rgba(255, 152, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+    }
+}
+
 /* People Section Styles */
 .people-grid {
     display: grid;

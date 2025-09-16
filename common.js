@@ -18,10 +18,18 @@ function goToHome() {
 function updateUserStatus() {
     const user = window.auth ? window.auth.getCurrentUser() : null;
     const loginButton = document.getElementById('loginButton');
+    const logoutButton = document.getElementById('logoutButton');
     const userInfo = document.getElementById('userInfo');
+    const tokenNotice = document.getElementById('tokenNotice');
 
     if (user && loginButton) {
         loginButton.style.display = 'none';
+        if (logoutButton) {
+            logoutButton.style.display = 'inline-block';
+        }
+        if (tokenNotice) {
+            tokenNotice.style.display = 'block';
+        }
         if (userInfo) {
             userInfo.style.display = 'block';
             userInfo.innerHTML = `
@@ -29,14 +37,17 @@ function updateUserStatus() {
                     <img src="${user.avatar_url || 'https://via.placeholder.com/30x30/ff6b6b/ffffff?text=' + (user.full_name ? user.full_name.charAt(0) : 'U')}" 
                          style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
                     <span style="color: white; font-weight: bold;">${user.full_name || 'User'}</span>
-                    <button onclick="logout()" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 5px 10px; border-radius: 10px; cursor: pointer; font-size: 0.8rem;">
-                        Đăng xuất
-                    </button>
                 </div>
             `;
         }
     } else if (loginButton) {
         loginButton.style.display = 'block';
+        if (logoutButton) {
+            logoutButton.style.display = 'none';
+        }
+        if (tokenNotice) {
+            tokenNotice.style.display = 'none';
+        }
         if (userInfo) {
             userInfo.style.display = 'none';
         }
@@ -194,3 +205,18 @@ const utils = {
 
 // Export utilities to global scope
 window.utils = utils;
+
+// Initialize user status when page loads
+document.addEventListener('DOMContentLoaded', function () {
+    // Wait a bit for auth.js to load
+    setTimeout(() => {
+        updateUserStatus();
+    }, 100);
+});
+
+// Also update when auth state changes
+window.addEventListener('storage', function (e) {
+    if (e.key === 'auth_token' || e.key === 'user_data') {
+        updateUserStatus();
+    }
+});
