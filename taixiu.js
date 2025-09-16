@@ -1109,8 +1109,9 @@ class TaiXiuGame {
 
         const betAmount = parseInt(document.getElementById('betAmount').value);
 
-        if (betAmount < 100 || betAmount > 10000) {
-            this.showNotification('Số tiền cược phải từ 100 đến 10,000!', 'error');
+        // Check if bet amount is a valid positive integer
+        if (isNaN(betAmount) || betAmount < 1 || !Number.isInteger(betAmount)) {
+            this.showNotification('Số tiền cược phải là số nguyên dương!', 'error');
             return;
         }
 
@@ -1119,7 +1120,7 @@ class TaiXiuGame {
         const availableBalance = this.userData.balance + totalCurrentBets;
 
         if (betAmount > availableBalance) {
-            this.showNotification('Số dư không đủ!', 'error');
+            this.showNotification(`Số dư không đủ! Số dư hiện tại: $${availableBalance.toLocaleString()}`, 'error');
             return;
         }
 
@@ -1167,6 +1168,15 @@ class TaiXiuGame {
         document.getElementById('betAmount').value = amount;
     }
 
+    setAllIn() {
+        if (this.userData && this.userData.balance) {
+            // Calculate available balance including any current bets
+            const totalCurrentBets = this.userBets.tai + this.userBets.xiu;
+            const availableBalance = this.userData.balance + totalCurrentBets;
+            document.getElementById('betAmount').value = availableBalance;
+        }
+    }
+
     updateUI() {
         // Ensure userData exists
         if (!this.userData) {
@@ -1182,6 +1192,15 @@ class TaiXiuGame {
         const userBalanceEl = document.getElementById('userBalance');
         if (userBalanceEl) {
             userBalanceEl.textContent = `$${this.userData.balance.toLocaleString()}`;
+        }
+
+        // Update bet amount input placeholder and max
+        const betAmountEl = document.getElementById('betAmount');
+        if (betAmountEl) {
+            const totalCurrentBets = this.userBets.tai + this.userBets.xiu;
+            const availableBalance = this.userData.balance + totalCurrentBets;
+            betAmountEl.placeholder = `Tối đa: $${availableBalance.toLocaleString()}`;
+            betAmountEl.max = availableBalance;
         }
 
         const gamesPlayedEl = document.getElementById('gamesPlayed');
@@ -1868,6 +1887,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Export functions for global access
 window.placeBet = (type) => window.taixiuGame.placeBet(type);
 window.setBetAmount = (amount) => window.taixiuGame.setBetAmount(amount);
+window.setAllIn = () => window.taixiuGame.setAllIn();
 window.copyMD5 = () => window.taixiuGame.copyMD5();
 window.joinNewGame = () => window.taixiuGame.joinNewGame();
 window.loadGameHistory = () => window.taixiuGame.loadGameHistory();

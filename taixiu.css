@@ -824,6 +824,31 @@
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
 }
 
+.quick-bet-buttons .all-in-btn {
+    background: linear-gradient(45deg, #e74c3c, #c0392b) !important;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.quick-bet-buttons .all-in-btn:hover {
+    background: linear-gradient(45deg, #ff6b6b, #e74c3c) !important;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(231, 76, 60, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
+    }
+}
+
 /* Login Required */
 .login-required {
     text-align: center;

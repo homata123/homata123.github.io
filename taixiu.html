@@ -157,13 +157,16 @@
             <div class="betting-controls">
                 <div class="bet-amount-input">
                     <label for="betAmount">Số tiền cược:</label>
-                    <input type="number" id="betAmount" min="100" max="10000" value="1000" step="100">
+                    <input type="number" id="betAmount" min="1" value="1000" step="1">
                     <div class="quick-bet-buttons">
                         <button onclick="setBetAmount(100)">100</button>
                         <button onclick="setBetAmount(500)">500</button>
                         <button onclick="setBetAmount(1000)">1K</button>
                         <button onclick="setBetAmount(5000)">5K</button>
                         <button onclick="setBetAmount(10000)">10K</button>
+                        <button onclick="setBetAmount(50000)">50K</button>
+                        <button onclick="setBetAmount(100000)">100K</button>
+                        <button onclick="setAllIn()" class="all-in-btn">All In</button>
                     </div>
                 </div>
             </div>
