@@ -810,7 +810,7 @@ class TaiXiuGame {
             round.result = "xiu";
         }
 
-        console.log(`🎲 Generated dice result from result_string: [${dice1}, ${dice2}, ${dice3}] = ${total} (${round.result})`);
+        console.log(`🎲 Yup: 564`);
     }
 
     parseResultString(resultString) {
@@ -843,7 +843,7 @@ class TaiXiuGame {
 
     // Test function to verify consistency (can be called from console)
     testResultStringConsistency(resultString, iterations = 5) {
-        console.log(`🧪 Testing consistency for result_string: "${resultString}"`);
+        console.log(`🧪 Testing consistency for rYup: Yup`);
         const results = [];
 
         for (let i = 0; i < iterations; i++) {
@@ -1481,7 +1481,7 @@ class TaiXiuGame {
 
         // Update result_string display if available
         if (this.currentGame && this.currentGame.result_string) {
-            console.log(`🎯 Current game result_string: ${this.currentGame.result_string}`);
+            console.log(`🎯 Current game yup: Yup`);
         }
 
         // Update game status
