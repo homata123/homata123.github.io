@@ -171,10 +171,24 @@ async function register(fullName, email, password, memberCode) {
 
         const data = await response.json();
 
+        // If registration includes access token, save user session
+        if (data.access_token) {
+            const saveSuccess = saveUserSession(data);
+            if (saveSuccess) {
+                return {
+                    success: true,
+                    user: data,
+                    message: 'Đăng ký thành công! Bạn đã được đăng nhập tự động.',
+                    autoLogin: true
+                };
+            }
+        }
+
         return {
             success: true,
             user: data,
-            message: 'Đăng ký thành công! Vui lòng đăng nhập để tiếp tục.'
+            message: 'Đăng ký thành công! Vui lòng đăng nhập để tiếp tục.',
+            autoLogin: false
         };
 
     } catch (error) {
@@ -534,6 +548,22 @@ function getUserAvatar(user) {
     }
 }
 
+// Get top users by current money
+async function getTopUsers(page = 1, limit = 10) {
+    try {
+        const response = await authenticatedRequest(`${API_BASE_URL}/users/top-win?page=${page}&limit=${limit}`);
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching top users:', error);
+        throw error;
+    }
+}
+
 // Export functions for use in other scripts
 window.auth = {
     login,
@@ -554,7 +584,8 @@ window.auth = {
     startNewTaiXiuGame,
     finishTaiXiuGame,
     updateUserAfterGame,
-    getUserAvatar
+    getUserAvatar,
+    getTopUsers
 };
 
 // Make functions globally available
@@ -563,3 +594,4 @@ window.register = register;
 window.logout = logout;
 window.handleLogout = handleLogout;
 window.getUserAvatar = getUserAvatar;
+window.getTopUsers = getTopUsers;

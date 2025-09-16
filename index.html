@@ -8,6 +8,225 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Additional styles specific to index.html if needed */
+
+        /* Leaderboard Styles */
+        .leaderboard-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border: 3px solid #ffd93d;
+        }
+
+        .leaderboard-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .pagination-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pagination-btn {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .page-info {
+            font-weight: bold;
+            color: #333;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .limit-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .limit-controls label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .limit-controls select {
+            padding: 8px 12px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .leaderboard-list {
+            min-height: 200px;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .leaderboard-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: #ffd93d;
+        }
+
+        .leaderboard-item.rank-1 {
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            border-color: #ffd700;
+        }
+
+        .leaderboard-item.rank-2 {
+            background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+            border-color: #c0c0c0;
+        }
+
+        .leaderboard-item.rank-3 {
+            background: linear-gradient(135deg, #cd7f32, #daa520);
+            border-color: #cd7f32;
+        }
+
+        .rank-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            min-width: 40px;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        .rank-1 .rank-number {
+            color: #ff6b00;
+        }
+
+        .rank-2 .rank-number {
+            color: #666;
+        }
+
+        .rank-3 .rank-number {
+            color: #8b4513;
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-info {
+            flex: 1;
+        }
+
+        .user-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .user-email {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .user-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .money-amount {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #28a745;
+            min-width: 120px;
+            text-align: right;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 20px;
+            color: #dc3545;
+            background: #f8d7da;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .leaderboard-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .pagination-controls {
+                justify-content: center;
+            }
+
+            .leaderboard-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .user-avatar {
+                margin: 0 auto 10px;
+            }
+
+            .user-stats {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .money-amount {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -20,6 +239,7 @@
                 <div class="navbar-nav">
                     <a href="#people" class="nav-link">👥 Đội Quân</a>
                     <a href="#betting" class="nav-link">🎲 Cược Vui</a>
+                    <a href="#leaderboard" class="nav-link">🏆 Bảng Xếp Hạng</a>
                     <a href="#games" class="nav-link">🎮 Game</a>
                     <a href="taixiu.html" class="nav-link">🎲 Tài Xỉu</a>
                     <button id="loginButton" class="login-button" onclick="goToLogin()">🔐 Đăng Nhập</button>
@@ -171,7 +391,35 @@
             </div>
         </div>
 
-        <!-- Section 3: Gaming Section -->
+        <!-- Section 3: Leaderboard Section -->
+        <div class="section" id="leaderboard">
+            <h2>🏆 Bảng Xếp Hạng</h2>
+            <p>Top người chơi có số tiền cao nhất! 💰</p>
+
+            <div class="leaderboard-container">
+                <div class="leaderboard-controls">
+                    <div class="pagination-controls">
+                        <button id="prevPage" class="pagination-btn" onclick="changePage(-1)">← Trước</button>
+                        <span id="pageInfo" class="page-info">Trang 1 / 1</span>
+                        <button id="nextPage" class="pagination-btn" onclick="changePage(1)">Sau →</button>
+                    </div>
+                    <div class="limit-controls">
+                        <label for="limitSelect">Hiển thị:</label>
+                        <select id="limitSelect" onchange="changeLimit()">
+                            <option value="5">5 người</option>
+                            <option value="10" selected>10 người</option>
+                            <option value="20">20 người</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="leaderboard-list" id="leaderboardList">
+                    <div class="loading">⏳ Đang tải...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Gaming Section -->
         <div class="section" id="games">
             <h2>🎮 Khu Vực Giải Trí</h2>
             <div class="games-container">
@@ -706,6 +954,77 @@
             }
         });
 
+        // Leaderboard functionality
+        let currentPage = 1;
+        let currentLimit = 10;
+        let totalPages = 1;
+
+        async function loadLeaderboard() {
+            const leaderboardList = document.getElementById('leaderboardList');
+            const pageInfo = document.getElementById('pageInfo');
+            const prevBtn = document.getElementById('prevPage');
+            const nextBtn = document.getElementById('nextPage');
+
+            try {
+                leaderboardList.innerHTML = '<div class="loading">⏳ Đang tải...</div>';
+
+                const data = await getTopUsers(currentPage, currentLimit);
+
+                totalPages = data.total_pages;
+                pageInfo.textContent = `Trang ${currentPage} / ${totalPages}`;
+
+                // Update pagination buttons
+                prevBtn.disabled = currentPage <= 1;
+                nextBtn.disabled = currentPage >= totalPages;
+
+                // Display users
+                if (data.users && data.users.length > 0) {
+                    leaderboardList.innerHTML = data.users.map((user, index) => {
+                        const rank = (currentPage - 1) * currentLimit + index + 1;
+                        const avatarUrl = getUserAvatar({ role: 'member' }); // Default to member avatar
+                        const lastGame = user.last_game ? new Date(user.last_game).toLocaleDateString('vi-VN') : 'Chưa chơi';
+
+                        return `
+                            <div class="leaderboard-item rank-${rank <= 3 ? rank : ''}">
+                                <div class="rank-number">${rank}</div>
+                                <img src="${avatarUrl}" alt="Avatar" class="user-avatar">
+                                <div class="user-info">
+                                    <div class="user-name">${user.full_name}</div>
+                                    <div class="user-email">${user.email}</div>
+                                    <div class="user-stats">
+                                        <span>🎮 ${user.total_games} ván</span>
+                                        <span>🏆 Cao nhất: $${user.highest_win.toLocaleString()}</span>
+                                        <span>📅 Cuối: ${lastGame}</span>
+                                    </div>
+                                </div>
+                                <div class="money-amount">$${user.current_money.toLocaleString()}</div>
+                            </div>
+                        `;
+                    }).join('');
+                } else {
+                    leaderboardList.innerHTML = '<div class="error-message">Không có dữ liệu người chơi</div>';
+                }
+            } catch (error) {
+                console.error('Error loading leaderboard:', error);
+                leaderboardList.innerHTML = '<div class="error-message">Lỗi tải dữ liệu: ' + error.message + '</div>';
+            }
+        }
+
+        function changePage(direction) {
+            const newPage = currentPage + direction;
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                loadLeaderboard();
+            }
+        }
+
+        function changeLimit() {
+            const limitSelect = document.getElementById('limitSelect');
+            currentLimit = parseInt(limitSelect.value);
+            currentPage = 1; // Reset to first page
+            loadLeaderboard();
+        }
+
         // Initialize page
         document.addEventListener('DOMContentLoaded', () => {
             loadPerfumeCounters();
@@ -713,6 +1032,9 @@
 
             // Initialize betting section
             document.getElementById('upgrade-from').dispatchEvent(new Event('change'));
+
+            // Load leaderboard
+            loadLeaderboard();
         });
     </script>
 
