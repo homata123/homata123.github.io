@@ -790,7 +790,7 @@ class TaiXiuGame {
             dice3 = diceValues[2];
         } else {
             // Fallback to random if no result_string available
-            console.warn('No result_string available, using random fallback');
+            console.warn('No genXXXX available, using random fallback');
             dice1 = Math.floor(Math.random() * 6) + 1;
             dice2 = Math.floor(Math.random() * 6) + 1;
             dice3 = Math.floor(Math.random() * 6) + 1;
@@ -836,7 +836,7 @@ class TaiXiuGame {
         const dice2 = (seed2 % 6) + 1;
         const dice3 = (seed3 % 6) + 1;
 
-        console.log(`🔢 Parsed result_string "${resultString}" -> seeds: ${seed1}, ${seed2}, ${seed3} -> dice: [${dice1}, ${dice2}, ${dice3}]`);
+        // console.log(`🔢 Parsed result_string "${resultString}" -> seeds: ${seed1}, ${seed2}, ${seed3} -> dice: [${dice1}, ${dice2}, ${dice3}]`);
 
         return [dice1, dice2, dice3];
     }
