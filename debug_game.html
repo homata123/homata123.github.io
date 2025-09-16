@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 Debug TaiXiu Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .debug-section {
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+        }
+
+        .result {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            white-space: pre-wrap;
+            font-family: monospace;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .success {
+            border-left: 4px solid #2ecc71;
+        }
+
+        .error {
+            border-left: 4px solid #e74c3c;
+        }
+
+        .info {
+            border-left: 4px solid #3498db;
+        }
+
+        .warning {
+            border-left: 4px solid #f39c12;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔧 Debug TaiXiu Game</h1>
+
+        <div class="debug-section">
+            <h3>1. Authentication Status</h3>
+            <button onclick="checkAuth()">Check Auth</button>
+            <div id="authResult" class="result"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>2. Game State</h3>
+            <button onclick="checkGameState()">Check Game State</button>
+            <div id="gameStateResult" class="result"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>3. API Tests</h3>
+            <button onclick="testGetActiveGame()">Test Get Active Game</button>
+            <button onclick="testStartNewGame()">Test Start New Game</button>
+            <div id="apiResult" class="result"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>4. Force Actions</h3>
+            <button onclick="forceJoinGame()">Force Join Game</button>
+            <button onclick="forceStartGame()">Force Start Game</button>
+            <button onclick="createFallbackGame()">Create Fallback Game</button>
+            <div id="forceResult" class="result"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>5. Console Logs</h3>
+            <button onclick="showLogs()">Show Recent Logs</button>
+            <button onclick="clearLogs()">Clear Logs</button>
+            <div id="logsResult" class="result"></div>
+        </div>
+
+        <div class="debug-section">
+            <h3>6. UI Elements Check</h3>
+            <button onclick="checkUIElements()">Check UI Elements</button>
+            <div id="uiResult" class="result"></div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="taixiu.js"></script>
+    <script>
+        let consoleLogs = [];
+
+        // Capture console logs
+        const originalLog = console.log;
+        const originalWarn = console.warn;
+        const originalError = console.error;
+
+        console.log = function (...args) {
+            const message = args.join(' ');
+            consoleLogs.push({ type: 'log', message, time: new Date().toISOString() });
+            originalLog.apply(console, args);
+        };
+
+        console.warn = function (...args) {
+            const message = args.join(' ');
+            consoleLogs.push({ type: 'warn', message, time: new Date().toISOString() });
+            originalWarn.apply(console, args);
+        };
+
+        console.error = function (...args) {
+            const message = args.join(' ');
+            consoleLogs.push({ type: 'error', message, time: new Date().toISOString() });
+            originalError.apply(console, args);
+        };
+
+        function displayResult(elementId, data, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.textContent = JSON.stringify(data, null, 2);
+            element.className = `result ${type}`;
+        }
+
+        function checkAuth() {
+            const auth = {
+                isLoggedIn: window.auth ? window.auth.isLoggedIn() : false,
+                currentUser: window.auth ? window.auth.getCurrentUser() : null,
+                hasToken: window.auth ? !!window.auth.getAccessToken() : false
+            };
+            displayResult('authResult', auth, auth.isLoggedIn ? 'success' : 'error');
+        }
+
+        function checkGameState() {
+            if (window.taixiuGame) {
+                const state = {
+                    gameData: window.taixiuGame.gameData,
+                    currentGame: window.taixiuGame.currentGame,
+                    userData: window.taixiuGame.userData,
+                    userBets: window.taixiuGame.userBets,
+                    gameStartTime: window.taixiuGame.gameStartTime,
+                    gameDuration: window.taixiuGame.gameDuration,
+                    isJoiningGame: window.taixiuGame.isJoiningGame,
+                    gameInterval: !!window.taixiuGame.gameInterval,
+                    countdownInterval: !!window.taixiuGame.countdownInterval
+                };
+                displayResult('gameStateResult', state, 'info');
+            } else {
+                displayResult('gameStateResult', { error: 'TaiXiu game not initialized' }, 'error');
+            }
+        }
+
+        async function testGetActiveGame() {
+            try {
+                const result = await window.auth.getActiveTaiXiuGame();
+                displayResult('apiResult', {
+                    success: true,
+                    data: result,
+                    message: result ? 'Active game found' : 'No active game'
+                }, 'success');
+            } catch (error) {
+                displayResult('apiResult', {
+                    success: false,
+                    error: error.message
+                }, 'error');
+            }
+        }
+
+        async function testStartNewGame() {
+            try {
+                const md5Hash = 'test_' + Date.now();
+                const result = await window.auth.startNewTaiXiuGame(md5Hash);
+                displayResult('apiResult', {
+                    success: true,
+                    data: result,
+                    message: 'New game started successfully'
+                }, 'success');
+            } catch (error) {
+                displayResult('apiResult', {
+                    success: false,
+                    error: error.message
+                }, 'error');
+            }
+        }
+
+        async function forceJoinGame() {
+            if (window.taixiuGame) {
+                try {
+                    await window.taixiuGame.joinOrStartGame();
+                    displayResult('forceResult', { success: 'Join/start game triggered' }, 'success');
+                } catch (error) {
+                    displayResult('forceResult', { error: error.message }, 'error');
+                }
+            } else {
+                displayResult('forceResult', { error: 'Game not initialized' }, 'error');
+            }
+        }
+
+        async function forceStartGame() {
+            if (window.taixiuGame) {
+                try {
+                    await window.taixiuGame.startNewGame();
+                    displayResult('forceResult', { success: 'New game started' }, 'success');
+                } catch (error) {
+                    displayResult('forceResult', { error: error.message }, 'error');
+                }
+            } else {
+                displayResult('forceResult', { error: 'Game not initialized' }, 'error');
+            }
+        }
+
+        function createFallbackGame() {
+            if (window.taixiuGame) {
+                try {
+                    window.taixiuGame.createFallbackGame();
+                    displayResult('forceResult', { success: 'Fallback game created' }, 'success');
+                } catch (error) {
+                    displayResult('forceResult', { error: error.message }, 'error');
+                }
+            } else {
+                displayResult('forceResult', { error: 'Game not initialized' }, 'error');
+            }
+        }
+
+        function showLogs() {
+            const recentLogs = consoleLogs.slice(-30); // Last 30 logs
+            displayResult('logsResult', recentLogs, 'info');
+        }
+
+        function clearLogs() {
+            consoleLogs = [];
+            displayResult('logsResult', { message: 'Logs cleared' }, 'success');
+        }
+
+        function checkUIElements() {
+            const elements = {
+                countdownTimer: document.getElementById('countdownTimer'),
+                taiButton: document.getElementById('taiButton'),
+                xiuButton: document.getElementById('xiuButton'),
+                userBalance: document.getElementById('userBalance'),
+                gameStatus: document.getElementById('gameStatus'),
+                roundNumber: document.getElementById('roundNumber'),
+                md5Hash: document.getElementById('md5Hash')
+            };
+
+            const result = {};
+            for (const [key, element] of Object.entries(elements)) {
+                result[key] = {
+                    exists: !!element,
+                    textContent: element ? element.textContent : null,
+                    disabled: element ? element.disabled : null,
+                    display: element ? element.style.display : null
+                };
+            }
+
+            displayResult('uiResult', result, 'info');
+        }
+
+        // Auto-check on load
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(() => {
+                checkAuth();
+                checkGameState();
+                checkUIElements();
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

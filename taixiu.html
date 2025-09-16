@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎲 Tài Xỉu MD5 - Fun Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="taixiu.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="index.html" class="navbar-brand">🎭 Fun Zone</a>
+                <div class="navbar-nav">
+                    <a href="index.html#people" class="nav-link">👥 Đội Quân</a>
+                    <a href="index.html#betting" class="nav-link">🎲 Cược Vui</a>
+                    <a href="index.html#games" class="nav-link">🎮 Game</a>
+                    <button id="loginButton" class="login-button" onclick="goToLogin()">🔐 Đăng Nhập</button>
+                    <div id="userInfo" style="display: none;"></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Game Header -->
+        <div class="game-header">
+            <h1>🎲 Tài Xỉu MD5</h1>
+            <p>Trò chơi giải trí với tiền ảo - Không có giá trị thực tế</p>
+        </div>
+
+        <!-- User Balance -->
+        <div class="balance-section" id="balanceSection" style="display: none;">
+            <div class="balance-card">
+                <h3>💰 Tài Khoản Của Bạn</h3>
+                <div class="balance-info">
+                    <div class="balance-amount" id="userBalance">$0</div>
+                    <div class="balance-stats">
+                        <span>Đã chơi: <span id="gamesPlayed">0</span> ván</span>
+                        <span>Thắng: <span id="gamesWon">0</span> ván</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Statistics -->
+        <div class="stats-section" id="statsSection" style="display: none;">
+            <div class="stats-card">
+                <h3>📊 Thống Kê Cá Nhân</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Tổng ván chơi</div>
+                        <div class="stat-value" id="totalGames">0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Thắng cao nhất</div>
+                        <div class="stat-value" id="highestWin">$0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Ván cuối</div>
+                        <div class="stat-value" id="lastGame">Chưa có</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Số dư hiện tại</div>
+                        <div class="stat-value" id="currentMoney">$0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Games History -->
+        <div class="history-section" id="historySection" style="display: none;">
+            <div class="history-card">
+                <h3>🎲 Lịch Sử Các Ván Đã Chơi</h3>
+                <div class="history-controls">
+                    <button class="refresh-button" onclick="loadGameHistory()">🔄 Làm Mới</button>
+                    <div class="history-pagination">
+                        <button id="prevPageBtn" onclick="changePage(-1)" disabled>← Trước</button>
+                        <span id="currentPage">1</span>
+                        <button id="nextPageBtn" onclick="changePage(1)">Sau →</button>
+                    </div>
+                </div>
+                <div class="games-list" id="gamesList">
+                    <div class="loading">Đang tải...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Area -->
+        <div class="game-area">
+            <!-- Round Info -->
+            <div class="round-info">
+                <div class="round-number">Ván #<span id="roundNumber">1</span></div>
+                <div class="countdown-timer" id="countdownTimer">01:30</div>
+                <div class="game-status" id="gameStatus">Đang chờ...</div>
+            </div>
+
+            <!-- Betting Area -->
+            <div class="betting-area">
+                <!-- Tài Section -->
+                <div class="bet-section tai-section">
+                    <div class="bet-label">TÀI</div>
+                    <div class="bet-amount" id="taiAmount">$0</div>
+                    <div class="bet-players">👥 <span id="taiPlayers">0</span> người</div>
+                    <button class="bet-button tai-button" onclick="placeBet('tai')" id="taiButton">
+                        CƯỢC
+                    </button>
+                    <div class="user-bet" id="userTaiBet">$0</div>
+                </div>
+
+                <!-- Center Dice Area -->
+                <div class="dice-area">
+                    <div class="dice-container" id="diceContainer">
+                        <div class="dice-cover" id="diceCover">
+                            <img src="dia.png" alt="Dice Cover" class="dice-cover-image">
+                        </div>
+                        <div class="dice-result" id="diceResult" style="display: none;">
+                            <div class="dice-display">
+                                <div class="dice-face" id="dice1">1</div>
+                                <div class="dice-face" id="dice2">2</div>
+                                <div class="dice-face" id="dice3">3</div>
+                            </div>
+                            <div class="dice-total" id="diceTotal">Tổng: 6</div>
+                        </div>
+                    </div>
+                    <div class="result-announcement" id="resultAnnouncement"></div>
+                </div>
+
+                <!-- Xỉu Section -->
+                <div class="bet-section xiu-section">
+                    <div class="bet-label">XỈU</div>
+                    <div class="bet-amount" id="xiuAmount">$0</div>
+                    <div class="bet-players">👥 <span id="xiuPlayers">0</span> người</div>
+                    <button class="bet-button xiu-button" onclick="placeBet('xiu')" id="xiuButton">
+                        CƯỢC
+                    </button>
+                    <div class="user-bet" id="userXiuBet">$0</div>
+                </div>
+            </div>
+
+            <!-- MD5 Hash -->
+            <div class="md5-section">
+                <div class="md5-label">Chuỗi MD5:</div>
+                <div class="md5-hash" id="md5Hash">Đang tạo...</div>
+                <button class="copy-button" onclick="copyMD5()">COPY</button>
+            </div>
+
+            <!-- Game History -->
+            <div class="game-history">
+                <h3>📊 Lịch Sử Kết Quả</h3>
+                <div class="history-dots" id="historyDots"></div>
+            </div>
+
+            <!-- Betting Controls -->
+            <div class="betting-controls">
+                <div class="bet-amount-input">
+                    <label for="betAmount">Số tiền cược:</label>
+                    <input type="number" id="betAmount" min="100" max="10000" value="1000" step="100">
+                    <div class="quick-bet-buttons">
+                        <button onclick="setBetAmount(100)">100</button>
+                        <button onclick="setBetAmount(500)">500</button>
+                        <button onclick="setBetAmount(1000)">1K</button>
+                        <button onclick="setBetAmount(5000)">5K</button>
+                        <button onclick="setBetAmount(10000)">10K</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Game Button -->
+            <div class="new-game-section" id="newGameSection" style="display: none;">
+                <button class="new-game-button" onclick="joinNewGame()">
+                    🎲 Tham Gia Ván Mới
+                </button>
+            </div>
+        </div>
+
+        <!-- Login Required Message -->
+        <div class="login-required" id="loginRequired">
+            <div class="login-message">
+                <h2>🔐 Cần Đăng Nhập</h2>
+                <p>Bạn cần đăng nhập để chơi Tài Xỉu MD5</p>
+                <button class="login-button" onclick="goToLogin()">Đăng Nhập Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="auth.js"></script>
+    <script src="common.js"></script>
+    <script src="taixiu.js"></script>
+</body>
+
+</html>
