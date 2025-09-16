@@ -772,9 +772,23 @@ class TaiXiuGame {
 
     generateDiceResult() {
         const round = this.gameData.current_round;
-        const dice1 = Math.floor(Math.random() * 6) + 1;
-        const dice2 = Math.floor(Math.random() * 6) + 1;
-        const dice3 = Math.floor(Math.random() * 6) + 1;
+
+        // Use result_string from server to generate consistent dice results
+        let dice1, dice2, dice3;
+
+        if (this.currentGame && this.currentGame.result_string) {
+            const diceValues = this.parseResultString(this.currentGame.result_string);
+            dice1 = diceValues[0];
+            dice2 = diceValues[1];
+            dice3 = diceValues[2];
+        } else {
+            // Fallback to random if no result_string available
+            console.warn('No result_string available, using random fallback');
+            dice1 = Math.floor(Math.random() * 6) + 1;
+            dice2 = Math.floor(Math.random() * 6) + 1;
+            dice3 = Math.floor(Math.random() * 6) + 1;
+        }
+
         const total = dice1 + dice2 + dice3;
 
         round.dice_result = [dice1, dice2, dice3];
@@ -788,6 +802,59 @@ class TaiXiuGame {
         } else {
             round.result = "xiu";
         }
+
+        console.log(`🎲 Generated dice result from result_string: [${dice1}, ${dice2}, ${dice3}] = ${total} (${round.result})`);
+    }
+
+    parseResultString(resultString) {
+        // Convert result_string to consistent dice values
+        // Use character codes to generate deterministic values
+        let seed = 0;
+        for (let i = 0; i < resultString.length; i++) {
+            seed += resultString.charCodeAt(i) * (i + 1);
+        }
+
+        // Use a simple linear congruential generator for deterministic pseudo-random values
+        const a = 1664525;
+        const c = 1013904223;
+        const m = Math.pow(2, 32);
+
+        // Generate three different seeds for each dice
+        const seed1 = (a * seed + c) % m;
+        const seed2 = (a * seed1 + c) % m;
+        const seed3 = (a * seed2 + c) % m;
+
+        // Convert to dice values (1-6)
+        const dice1 = (seed1 % 6) + 1;
+        const dice2 = (seed2 % 6) + 1;
+        const dice3 = (seed3 % 6) + 1;
+
+        console.log(`🔢 Parsed result_string "${resultString}" -> seeds: ${seed1}, ${seed2}, ${seed3} -> dice: [${dice1}, ${dice2}, ${dice3}]`);
+
+        return [dice1, dice2, dice3];
+    }
+
+    // Test function to verify consistency (can be called from console)
+    testResultStringConsistency(resultString, iterations = 5) {
+        console.log(`🧪 Testing consistency for result_string: "${resultString}"`);
+        const results = [];
+
+        for (let i = 0; i < iterations; i++) {
+            const dice = this.parseResultString(resultString);
+            results.push(dice);
+            console.log(`Iteration ${i + 1}: [${dice[0]}, ${dice[1]}, ${dice[2]}]`);
+        }
+
+        // Check if all results are the same
+        const firstResult = results[0];
+        const allSame = results.every(result =>
+            result[0] === firstResult[0] &&
+            result[1] === firstResult[1] &&
+            result[2] === firstResult[2]
+        );
+
+        console.log(`✅ Consistency test ${allSame ? 'PASSED' : 'FAILED'}: All ${iterations} iterations produced the same result`);
+        return allSame;
     }
 
     showDiceCover() {
@@ -1176,6 +1243,11 @@ class TaiXiuGame {
         const md5HashEl = document.getElementById('md5Hash');
         if (md5HashEl) {
             md5HashEl.textContent = this.gameData.current_round.md5_hash;
+        }
+
+        // Update result_string display if available
+        if (this.currentGame && this.currentGame.result_string) {
+            console.log(`🎯 Current game result_string: ${this.currentGame.result_string}`);
         }
 
         // Update game status
@@ -1786,6 +1858,11 @@ class TaiXiuGame {
 // Initialize game when page loads
 document.addEventListener('DOMContentLoaded', () => {
     window.taixiuGame = new TaiXiuGame();
+
+    // Make test function globally available
+    window.testResultStringConsistency = (resultString, iterations = 5) => {
+        return window.taixiuGame.testResultStringConsistency(resultString, iterations);
+    };
 });
 
 // Export functions for global access
