@@ -857,6 +857,207 @@ class TaiXiuGame {
         return allSame;
     }
 
+    // Soi Cầu functionality
+    showSoiCauModal() {
+        const modal = document.getElementById('soiCauModal');
+        modal.style.display = 'block';
+        this.loadChartData();
+    }
+
+    closeSoiCauModal() {
+        const modal = document.getElementById('soiCauModal');
+        modal.style.display = 'none';
+    }
+
+    async loadChartData() {
+        const chartContainer = document.getElementById('chartContainer');
+        const pageSize = document.getElementById('pageSizeSelect').value;
+
+        try {
+            chartContainer.innerHTML = '<div class="loading">⏳ Đang tải dữ liệu...</div>';
+
+            const data = await window.getPublicGameHistory(1, parseInt(pageSize));
+
+            if (data.results && data.results.length > 0) {
+                this.renderChart(data.results);
+            } else {
+                chartContainer.innerHTML = '<div class="error">Không có dữ liệu lịch sử</div>';
+            }
+        } catch (error) {
+            console.error('Error loading chart data:', error);
+            chartContainer.innerHTML = '<div class="error">Lỗi tải dữ liệu: ' + error.message + '</div>';
+        }
+    }
+
+    renderChart(games) {
+        const chartContainer = document.getElementById('chartContainer');
+
+        // Sort games by order (descending to show newest first)
+        const sortedGames = games.sort((a, b) => b.order - a.order);
+
+        const chartHTML = `
+            <div class="chart">
+                <!-- Game Numbers Row -->
+                <div class="chart-row">
+                    <div class="chart-row-label">Ván</div>
+                    <div class="chart-row-content">
+                        ${sortedGames.map((game, index) => `<div class="game-number" data-index="${index}">${game.order}</div>`).join('')}
+                    </div>
+                </div>
+                
+                <!-- Tài Row -->
+                <div class="chart-row">
+                    <div class="chart-row-label">Tài</div>
+                    <div class="chart-row-content">
+                        ${sortedGames.map((game, index) =>
+            `<div class="result-circle ${game.result === 'tai' ? 'tai' : ''}" 
+                                 data-index="${index}"
+                                 style="opacity: ${game.result === 'tai' ? '1' : '0.3'}"></div>`
+        ).join('')}
+                    </div>
+                </div>
+                
+                <!-- Xỉu Row -->
+                <div class="chart-row">
+                    <div class="chart-row-label">Xỉu</div>
+                    <div class="chart-row-content">
+                        ${sortedGames.map((game, index) =>
+            `<div class="result-circle ${game.result === 'xiu' ? 'xiu' : ''}" 
+                                 data-index="${index}"
+                                 style="opacity: ${game.result === 'xiu' ? '1' : '0.3'}"></div>`
+        ).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        chartContainer.innerHTML = chartHTML;
+
+        // Add connection lines after a short delay to ensure DOM is ready
+        setTimeout(() => {
+            this.addConnectionLines(sortedGames);
+        }, 100);
+    }
+
+    addConnectionLines(games) {
+        const taiRow = document.querySelector('.chart-row:nth-child(2) .chart-row-content');
+        const xiuRow = document.querySelector('.chart-row:nth-child(3) .chart-row-content');
+
+        if (!taiRow || !xiuRow) return;
+
+        const taiCircles = taiRow.querySelectorAll('.result-circle');
+        const xiuCircles = xiuRow.querySelectorAll('.result-circle');
+
+        // Clear existing lines
+        const existingLines = document.querySelectorAll('.connection-line');
+        existingLines.forEach(line => line.remove());
+
+        // Find all circles with actual results (colored circles) and sort by their data-index
+        const coloredCircles = [];
+        for (let i = 0; i < games.length; i++) {
+            const game = games[i];
+            const circle = game.result === 'tai' ? taiCircles[i] : xiuCircles[i];
+            if (circle && circle.style.opacity === '1') {
+                const dataIndex = parseInt(circle.getAttribute('data-index'));
+                coloredCircles.push({
+                    dataIndex: dataIndex,
+                    game: game,
+                    circle: circle,
+                    row: game.result === 'tai' ? taiRow : xiuRow
+                });
+            }
+        }
+
+        // Sort by data-index to ensure correct order
+        coloredCircles.sort((a, b) => a.dataIndex - b.dataIndex);
+
+        // Connect consecutive colored circles
+        for (let i = 0; i < coloredCircles.length - 1; i++) {
+            const current = coloredCircles[i];
+            const next = coloredCircles[i + 1];
+
+            if (current.game.result === next.game.result) {
+                // Same result - horizontal line in the same row
+                this.addHorizontalLine(current.dataIndex, next.dataIndex, current.row);
+            } else {
+                // Different result - diagonal line between rows
+                this.addDiagonalLineBetweenRows(current.dataIndex, next.dataIndex, taiRow, xiuRow, current.game.result, next.game.result);
+            }
+        }
+    }
+
+    addHorizontalLine(fromIndex, toIndex, row) {
+        const fromCircle = row.querySelector(`[data-index="${fromIndex}"]`);
+        const toCircle = row.querySelector(`[data-index="${toIndex}"]`);
+
+        if (!fromCircle || !toCircle) return;
+
+        const fromRect = fromCircle.getBoundingClientRect();
+        const toRect = toCircle.getBoundingClientRect();
+        const rowRect = row.getBoundingClientRect();
+
+        const line = document.createElement('div');
+        line.className = 'connection-line';
+        line.style.left = `${fromRect.right - rowRect.left}px`;
+        line.style.width = `${toRect.left - fromRect.right}px`;
+
+        row.appendChild(line);
+    }
+
+    addDiagonalLineBetweenRows(fromIndex, toIndex, taiRow, xiuRow, fromResult, toResult) {
+        const fromRow = fromResult === 'tai' ? taiRow : xiuRow;
+        const toRow = toResult === 'tai' ? taiRow : xiuRow;
+
+        const fromCircle = fromRow.querySelector(`[data-index="${fromIndex}"]`);
+        const toCircle = toRow.querySelector(`[data-index="${toIndex}"]`);
+
+        if (!fromCircle || !toCircle) return;
+
+        // Get positions relative to the chart container
+        const chartContainer = document.getElementById('chartContainer');
+        const chartRect = chartContainer.getBoundingClientRect();
+
+        const fromRect = fromCircle.getBoundingClientRect();
+        const toRect = toCircle.getBoundingClientRect();
+
+        // Calculate positions relative to chart container
+        const startX = fromRect.left + fromRect.width / 2 - chartRect.left;
+        const startY = fromRect.top + fromRect.height / 2 - chartRect.top;
+        const endX = toRect.left + toRect.width / 2 - chartRect.left;
+        const endY = toRect.top + toRect.height / 2 - chartRect.top;
+
+        // Calculate line properties
+        const deltaX = endX - startX;
+        const deltaY = endY - startY;
+        const length = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+        const angle = Math.atan2(deltaY, deltaX) * 180 / Math.PI;
+
+        // Create line element
+        const line = document.createElement('div');
+        line.className = `connection-line ${fromResult === 'tai' ? 'diagonal-down' : 'diagonal-up'}`;
+
+        // Position the line
+        line.style.position = 'absolute';
+        line.style.left = `${startX}px`;
+        line.style.top = `${startY}px`;
+        line.style.width = `${length}px`;
+        line.style.height = '3px';
+        line.style.transform = `rotate(${angle}deg)`;
+        line.style.transformOrigin = '0 50%';
+        line.style.zIndex = '1';
+
+        // Add to chart container
+        chartContainer.appendChild(line);
+    }
+
+    changePageSize() {
+        this.loadChartData();
+    }
+
+    refreshChart() {
+        this.loadChartData();
+    }
+
     showDiceCover() {
         const diceCover = document.getElementById('diceCover');
         const diceResult = document.getElementById('diceResult');
@@ -1892,3 +2093,7 @@ window.copyMD5 = () => window.taixiuGame.copyMD5();
 window.joinNewGame = () => window.taixiuGame.joinNewGame();
 window.loadGameHistory = () => window.taixiuGame.loadGameHistory();
 window.changePage = (direction) => window.taixiuGame.changePage(direction);
+window.showSoiCauModal = () => window.taixiuGame.showSoiCauModal();
+window.closeSoiCauModal = () => window.taixiuGame.closeSoiCauModal();
+window.changePageSize = () => window.taixiuGame.changePageSize();
+window.refreshChart = () => window.taixiuGame.refreshChart();

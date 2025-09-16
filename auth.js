@@ -564,6 +564,27 @@ async function getTopUsers(page = 1, limit = 10) {
     }
 }
 
+// Get public game history for chart display
+async function getPublicGameHistory(page = 1, pageSize = 10) {
+    try {
+        const response = await fetch(`${API_BASE_URL}/public/taixiu/history?page=${page}&page_size=${pageSize}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching public game history:', error);
+        throw error;
+    }
+}
+
 // Export functions for use in other scripts
 window.auth = {
     login,
@@ -585,7 +606,8 @@ window.auth = {
     finishTaiXiuGame,
     updateUserAfterGame,
     getUserAvatar,
-    getTopUsers
+    getTopUsers,
+    getPublicGameHistory
 };
 
 // Make functions globally available
@@ -595,3 +617,4 @@ window.logout = logout;
 window.handleLogout = handleLogout;
 window.getUserAvatar = getUserAvatar;
 window.getTopUsers = getTopUsers;
+window.getPublicGameHistory = getPublicGameHistory;

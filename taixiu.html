@@ -177,6 +177,13 @@
                     🎲 Tham Gia Ván Mới
                 </button>
             </div>
+
+            <!-- Soi Cầu Button -->
+            <div class="soi-cau-section">
+                <button class="soi-cau-button" onclick="showSoiCauModal()">
+                    🔮 Soi Cầu
+                </button>
+            </div>
         </div>
 
         <!-- Login Required Message -->
@@ -185,6 +192,32 @@
                 <h2>🔐 Cần Đăng Nhập</h2>
                 <p>Bạn cần đăng nhập để chơi Tài Xỉu MD5</p>
                 <button class="login-button" onclick="goToLogin()">Đăng Nhập Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Soi Cầu Modal -->
+    <div id="soiCauModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🔮 Soi Cầu Lịch Sử</h2>
+                <span class="close" onclick="closeSoiCauModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="chart-controls">
+                    <div class="page-size-controls">
+                        <label for="pageSizeSelect">Hiển thị:</label>
+                        <select id="pageSizeSelect" onchange="changePageSize()">
+                            <option value="10" selected>10 ván</option>
+                            <option value="20">20 ván</option>
+                            <option value="50">50 ván</option>
+                        </select>
+                    </div>
+                    <button class="refresh-button" onclick="refreshChart()">🔄 Làm mới</button>
+                </div>
+                <div class="chart-container" id="chartContainer">
+                    <div class="loading">⏳ Đang tải dữ liệu...</div>
+                </div>
             </div>
         </div>
     </div>

@@ -83,6 +83,23 @@
             cursor: pointer;
         }
 
+        .limit-controls .refresh-button {
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .limit-controls .refresh-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+        }
+
         .leaderboard-list {
             min-height: 200px;
         }
@@ -410,6 +427,7 @@
                             <option value="10" selected>10 người</option>
                             <option value="20">20 người</option>
                         </select>
+                        <button class="refresh-button" onclick="refreshLeaderboard()">🔄 Làm mới</button>
                     </div>
                 </div>
 
@@ -1022,6 +1040,10 @@
             const limitSelect = document.getElementById('limitSelect');
             currentLimit = parseInt(limitSelect.value);
             currentPage = 1; // Reset to first page
+            loadLeaderboard();
+        }
+
+        function refreshLeaderboard() {
             loadLeaderboard();
         }
 
