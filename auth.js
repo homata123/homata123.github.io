@@ -1,5 +1,5 @@
 // Authentication functions for Fun Zone
-const API_BASE_URL = 'https://homatabe.onrender.com';
+const API_BASE_URL = 'https://homatabe-qx4o.onrender.com';
 const LOGIN_ENDPOINT = '/auth/login';
 
 // User session management

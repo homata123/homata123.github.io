@@ -1898,7 +1898,7 @@ class TaiXiuGame {
     // Load user statistics from API
     async loadUserStats() {
         try {
-            const response = await window.auth.authenticatedRequest('https://homatabe.onrender.com/taixiu/stats');
+            const response = await window.auth.authenticatedRequest('https://homatabe-qx4o.onrender.com/taixiu/stats');
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -1948,7 +1948,7 @@ class TaiXiuGame {
     // Load game history from API
     async loadGameHistory(page = 1, limit = 10) {
         try {
-            const response = await window.auth.authenticatedRequest(`https://homatabe.onrender.com/taixiu/games?page=${page}&limit=${limit}&sort_by=timestamp&sort_order=desc`);
+            const response = await window.auth.authenticatedRequest(`https://homatabe-qx4o.onrender.com/taixiu/games?page=${page}&limit=${limit}&sort_by=timestamp&sort_order=desc`);
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);

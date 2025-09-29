@@ -98,7 +98,7 @@ Test bằng curl:
 ```bash
 # Test OPTIONS request
 curl -X OPTIONS \
-  'https://homatabe.onrender.com/auth/login' \
+  'https://homatabe-qx4o.onrender.com/auth/login' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -H 'Origin: http://localhost:3000'
@@ -157,7 +157,7 @@ chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security --disa
 ```bash
 # Test login API
 curl -X 'POST' \
-  'https://homatabe.onrender.com/auth/login' \
+  'https://homatabe-qx4o.onrender.com/auth/login' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{
