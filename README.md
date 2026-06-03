@@ -64,7 +64,7 @@ homata123.github.io/
 
 ## 🎯 API Endpoints
 
-- **Đăng nhập**: `POST https://icdlweb.vmb.edu.vn/api-token-auth`
+- **Đăng nhập**: In page
 - **Counter API**: `https://api.counterapi.dev/v2/vmb-cg/{slug}/up`
 
 ## 📱 Responsive Design
