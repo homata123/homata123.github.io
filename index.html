@@ -125,6 +125,17 @@
     .toast{transition:none}
   }
 
+  /* ---------- Residents search ---------- */
+  #respanel{border-bottom:1px solid var(--line);padding:20px 0 18px}
+  .resform{display:flex;gap:10px;flex-wrap:wrap}
+  .resform input{flex:1;min-width:240px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-family:inherit;font-size:14px;padding:11px 14px;border-radius:6px;outline:none}
+  .resform input:focus{border-color:var(--ink)}
+  .resbtn{border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-family:inherit;font-size:14px;font-weight:600;padding:11px 18px;border-radius:6px;cursor:pointer}
+  .resbtn:disabled{opacity:.55;cursor:default}
+  .reshint{font-size:12.5px;color:var(--muted);line-height:1.55;margin:10px 0 0;max-width:75ch}
+  .reshead{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:20px;margin:18px 0 2px}
+  .resstatus{font-size:13.5px;color:var(--muted);padding:16px 0 4px;line-height:1.6}
+
   /* ---------- Modal ---------- */
   .overlay{position:fixed;inset:0;background:var(--overlay);z-index:50;display:none;overflow-y:auto;padding:30px 14px}
   .overlay.open{display:block}
@@ -187,6 +198,15 @@
       <input id="search" type="search" placeholder="Tìm trong bảng tin">
     </label>
   </nav>
+
+  <section id="respanel" hidden>
+    <form class="resform" id="resform">
+      <input id="resquery" type="search" placeholder="Tìm trong chợ cư dân — ví dụ: bánh chưng, căn hộ cho thuê, sửa điều hòa" autocomplete="off">
+      <button class="resbtn" id="resbtn" type="submit">Tìm trong chợ</button>
+    </form>
+    <p class="reshint">Tìm trực tiếp trong nhóm chợ cư dân của tòa nhà, không chỉ trong các tin đã thu thập. Kết quả do Ada quét trong group và lược bỏ thông tin liên hệ cá nhân; cần liên hệ người bán thì mở bài gốc.</p>
+    <div id="resresults"></div>
+  </section>
 
   <main id="main">
     <div class="loading">Đang tải bản tin…</div>
@@ -492,6 +512,112 @@ fetch("feed.json", {cache:"no-store"})
   });
   document.querySelectorAll(".tab").forEach(tb => tb.addEventListener("click", ()=> setTimeout(syncBtn, 0)));
   syncBtn();
+})();
+</script>
+<script>
+// Residents-group direct search — Cloudflare host only, via /api/search.
+(function(){
+  if (location.hostname !== "adas-feed.pages.dev") return;
+  const panel = document.getElementById("respanel");
+  const form = document.getElementById("resform");
+  const input = document.getElementById("resquery");
+  const sbtn = document.getElementById("resbtn");
+  const box = document.getElementById("resresults");
+  if (!panel || !form) return;
+  let results = [];
+  let polling = null;
+
+  function syncPanel(){ panel.hidden = activeCat !== "Bảng tin cư dân"; }
+  document.querySelectorAll(".tab").forEach(tb => tb.addEventListener("click", ()=> setTimeout(syncPanel, 0)));
+  syncPanel();
+
+  function renderResults(data){
+    results = data.results || [];
+    if (!results.length){
+      box.innerHTML = `<div class="reshead">Kết quả cho “${esc(data.query)}”</div><p class="resstatus">Không tìm thấy bài nào khớp trong chợ cư dân. Thử từ khóa khác, ngắn hơn hoặc viết không dấu.</p>`;
+      return;
+    }
+    const when = new Date(data.ts);
+    box.innerHTML = `<div class="reshead">Kết quả cho “${esc(data.query)}”</div>
+      <p class="reshint">${results.length} bài trong group, quét lúc ${when.toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"})} ngày ${when.toLocaleDateString("vi-VN")}.</p>
+      <div class="listwrap">${results.map((it,i)=>`
+        <article class="story ${it.image ? "" : "notumb"} clickable" tabindex="0" role="button" onclick="openRes(${i})" onkeydown="if(event.key==='Enter')openRes(${i})">
+          <div>
+            <span class="catmark"><span class="sq" style="background:#5F7422"></span>Bảng tin cư dân</span>
+            <h3>${esc(it.title)}</h3>
+            <p class="sum">${esc(it.summary)}</p>
+            <div class="meta"><span class="src">${esc(it.source || "Chợ cư dân")}</span><span>${relTime(it.ts)}</span></div>
+          </div>
+          ${it.image ? `<figure><img src="${esc(it.image)}" alt="" loading="lazy" onerror="this.parentElement.remove()"></figure>` : ""}
+        </article>`).join("")}</div>`;
+  }
+  window.openRes = function(i){
+    const it = results[i]; if (!it) return;
+    const raw = (it.content && it.content.trim()) ? it.content : it.summary;
+    const paras = raw.split(/\n+/).map(l => { const t = l.trim(); return t ? `<p>${esc(t)}</p>` : ""; }).join("");
+    document.getElementById("dialog").innerHTML = `
+      <button class="closebtn" onclick="closeItem()" aria-label="Đóng">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="dbody">
+        <span class="catmark"><span class="sq" style="background:#5F7422"></span>Bảng tin cư dân — kết quả tìm kiếm</span>
+        <h2>${esc(it.title)}</h2>
+        <div class="meta dmeta"><span class="src">${esc(it.source || "Chợ cư dân")}</span><span>${fullDate(it.ts)}</span><span>${relTime(it.ts)}</span></div>
+        <div class="dcontent">${paras}</div>
+        <div class="dactions"><a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">Mở bài gốc trong group</a></div>
+      </div>`;
+    document.getElementById("overlay").classList.add("open");
+    document.body.style.overflow = "hidden";
+    document.getElementById("overlay").scrollTop = 0;
+  };
+  function setSearching(q){
+    sbtn.disabled = true; sbtn.textContent = "Đang tìm…";
+    box.innerHTML = `<p class="resstatus">Đang tìm “${esc(q)}” trong chợ cư dân — Ada quét trực tiếp trong group, thường mất vài phút. Cứ để nguyên trang này, kết quả sẽ tự hiện ra.</p>`;
+  }
+  function stopSearching(){ sbtn.disabled = false; sbtn.textContent = "Tìm trong chợ"; }
+  function pollFor(id, sinceTs){
+    if (polling) clearInterval(polling);
+    let tries = 0;
+    polling = setInterval(async ()=>{
+      tries++;
+      try{
+        const r = await fetch("search-results.json?cb=" + Date.now(), {cache:"no-store"});
+        if (r.ok){
+          const data = await r.json();
+          if ((id && data.id === id) || (!id && new Date(data.ts).getTime() > sinceTs)){
+            clearInterval(polling); polling = null;
+            renderResults(data); stopSearching();
+            return;
+          }
+        }
+      }catch(e){}
+      if (tries >= 44){
+        clearInterval(polling); polling = null;
+        box.innerHTML = `<p class="resstatus">Tìm kiếm lâu hơn thường lệ. Thử bấm Tìm lại sau ít phút — kết quả cũng sẽ xuất hiện tại đây khi quét xong.</p>`;
+        stopSearching();
+      }
+    }, 15000);
+  }
+  form.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    const q = input.value.trim();
+    if (q.length < 2){ box.innerHTML = `<p class="resstatus">Nhập ít nhất 2 ký tự để tìm.</p>`; return; }
+    setSearching(q);
+    const since = Date.now() - 5000;
+    try{
+      const r = await fetch("/api/search", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({query: q})});
+      const d = await r.json();
+      if (d.status === "queued"){ pollFor(d.id, since); }
+      else if (d.status === "pending"){
+        box.innerHTML = `<p class="resstatus">Đang có một lượt tìm “${esc(d.query || "")}” chạy trước. Kết quả của lượt đó sẽ hiện tại đây; muốn tìm từ khác, đợi lượt này xong rồi tìm tiếp.</p>`;
+        pollFor(d.id || null, since);
+      }
+      else { box.innerHTML = `<p class="resstatus">Chưa gửi được yêu cầu tìm kiếm. Thử lại sau ít phút.</p>`; stopSearching(); }
+    }catch(err){ box.innerHTML = `<p class="resstatus">Chưa gửi được yêu cầu tìm kiếm. Thử lại sau ít phút.</p>`; stopSearching(); }
+  });
+  fetch("/api/search", {cache:"no-store"}).then(r=>r.json()).then(d=>{
+    if (d.status === "pending" && d.query){ setSearching(d.query); pollFor(d.id || null, Date.now()); }
+  }).catch(()=>{});
 })();
 </script>
 </body>
