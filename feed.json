@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-20T14:21:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Alibaba ra mắt Qwen4-Max: 2,4 nghìn tỷ tham số, chi phí tác vụ rẻ hơn ~60%",
+    "summary": "Alibaba vừa phát hành Qwen4-Max, mô hình viết code, hiểu ảnh và xử lý tác vụ nhiều bước; vượt tiền nhiệm trên bài kiểm tra nội bộ Work360 và xếp hạng 6 trên Code Arena, với context 1 triệu token.",
+    "content": "Alibaba vừa phát hành Qwen4-Max, mô hình AI có thể viết code, hiểu hình ảnh và xử lý các tác vụ cần nhiều bước.\nTrên bài kiểm tra nội bộ Work360 — bao phủ 721 lĩnh vực chuyên môn — Qwen4-Max vượt tiền nhiệm Qwen3.8-Max và cắt khoảng 60% chi phí trung bình để hoàn thành một tác vụ. Mô hình cũng xếp hạng 6 trên Code Arena, bảng so sánh các mô hình trên tác vụ lập trình thực tế.\nCả hai mô hình Qwen đều có 2,4 nghìn tỷ tham số tổng, nhưng Qwen4-Max chỉ dùng 71 tỷ tham số cho mỗi token — ít hơn 25% so với tiền nhiệm — nhờ đó chi phí vận hành thấp hơn. Mô hình xử lý tối đa 1 triệu token mỗi yêu cầu và hiểu trực tiếp thông tin hình ảnh, kể cả biểu đồ.\nAlibaba cho biết mô hình hỗ trợ cả mô hình 3D, phát triển game và sản xuất video. Trong một demo sản xuất, Qwen4-Max rút thời gian lập trình máy gia công một chi tiết từ khoảng 475 phút xuống còn 24 phút. Mô hình hiện có qua QwenCloud Token Plan, API, QwenWork và QwenStudio; các bản nhỏ hơn mở trọng số sẽ ra sau, chưa có ngày cụ thể.",
+    "url": "https://backendnews.net/alibaba-launches-qwen4-max-ai-model-to-use-for-coding-and-visual-tasks/",
+    "image": "https://backendnews.net/wp-content/uploads/2024/12/Alibaba-Cloud-HQ.jpeg",
+    "source": "Back End News"
+  },
+  {
+    "ts": "2026-11-20T19:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Microsoft đưa mô hình Aion Instruct vào Edge, thay thế Phi-4-mini",
+    "summary": "Aion Instruct (2,3 tỷ tham số, mở trọng số) trở thành mô hình ngôn ngữ nhỏ tích hợp sẵn trong Edge; nhỏ và nhanh hơn Phi nhưng chất lượng tương đương, cuối năm nay lên Windows cho máy Copilot+ PC.",
+    "content": "Microsoft đã đưa Aion Instruct trở thành mô hình ngôn ngữ nhỏ tích hợp sẵn trong trình duyệt Edge, thay thế Phi-4-mini.\nAion Instruct có 2,3 tỷ tham số và được phát hành mở trọng số trên Hugging Face. Theo Microsoft, mô hình nhỏ và nhanh hơn Phi nhưng vẫn cho chất lượng tương đương trên các tác vụ web phổ biến như tổng hợp văn bản, tóm tắt, làm theo hướng dẫn và xuất dữ liệu có cấu trúc — nhờ đó chạy được trên nhiều thiết bị hơn.\nCùng với Aion, Microsoft mở bản thử nghiệm Prompt API để nhà phát triển gọi mô hình từ trang web thật, và bản xem trước Decisions API: trả lời câu hỏi có/không, trắc nghiệm hoặc chấm điểm một đoạn văn kèm xác suất và độ tin cậy mà không cần sinh văn bản.\nAion cũng sẽ lên Windows vào cuối năm nay, đặt nền móng cho AI chạy trên thiết bị trong các máy Copilot+ PC.",
+    "url": "https://blogs.windows.com/msedgedev/2026/11/19/hybrid-intelligence-on-the-web-introducing-aion-instruct-and-prompt-api-in-microsoft-edge/",
+    "image": null,
+    "source": "Microsoft Edge Blog"
+  },
+  {
+    "ts": "2026-11-20T17:21:41+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Rò rỉ dữ liệu ~265.000 khách hàng thẻ Oyster của Transport for London",
+    "summary": "Transport for London xác nhận khoảng 265.000 khách hàng thẻ Oyster photocard có thể đã bị lộ thông tin tài khoản; mật khẩu, thẻ ngân hàng và lịch sử di chuyển không bị ảnh hưởng.",
+    "content": "Transport for London (TfL) xác nhận khoảng 265.000 khách hàng thẻ Oyster photocard có thể đã bị lộ thông tin tài khoản trong một vụ xâm nhập.\nTfL phát hiện sự việc ngày 16/11, khi khách hàng nhận được email yêu cầu tạo tài khoản mà họ đã có — các email này được gửi từ chính hệ thống của TfL do bị xâm nhập. TfL lập tức gỡ trang web photocard xuống để điều tra.\nDữ liệu có thể bị lộ gồm họ tên, số điện thoại, email, địa chỉ nhà, ngày sinh và câu hỏi/đáp án bảo mật. Theo đánh giá hiện tại của TfL, mật khẩu, thông tin thẻ ngân hàng, lịch sử di chuyển, cũng như tên và ngày sinh của trẻ em dùng thẻ Zip Oyster, không bị ảnh hưởng.\nTfL đã thông báo cho cơ quan bảo vệ dữ liệu Anh (ICO), đang liên hệ những người có thể bị ảnh hưởng và yêu cầu họ đổi mật khẩu cùng câu hỏi bảo mật. Cơ quan này chưa công bố kẻ tấn công xâm nhập bằng cách nào; thẻ photocard hiện tại vẫn dùng để đi lại bình thường.",
+    "url": "https://www.helpnetsecurity.com/2026/11/20/transport-for-london-oyster-photocard-data-breach/",
+    "image": null,
+    "source": "Help Net Security"
+  },
+  {
+    "ts": "2026-11-20T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Lần đầu quan sát trực tiếp sao khổng lồ \"nuốt chửng\" bạn đồng hành",
+    "summary": "Các nhà thiên văn lần đầu ghi lại trọn vẹn một ngôi sao khổng lồ đang hấp hối nuốt chửng sao bạn đồng hành — hiện tượng được lý thuyết dự đoán hàng chục năm nhưng chưa từng quan sát trực tiếp.",
+    "content": "Các nhà thiên văn đã lần đầu tiên quan sát trực tiếp quá trình một ngôi sao khổng lồ đang hấp hối nuốt chửng sao bạn đồng hành — hiện tượng được lý thuyết dự đoán từ hàng chục năm trước nhưng chưa từng được bắt gặp đang diễn ra.\nNgôi sao lớn gấp 7 lần khối lượng Mặt Trời và sáng gấp 18.000 lần. Khi hấp hối, nó phình tới đường kính gấp 350 lần Mặt Trời và bao lấy sao bạn — một ngôi sao có đường kính bằng khoảng 70% Mặt Trời, quay quanh nó ở khoảng cách tương đương Sao Hỏa tới Mặt Trời. Hệ sao này cách chúng ta khoảng 2,5 triệu năm ánh sáng.\nNhóm nghiên cứu phát hiện dấu hiệu sáng lên từ năm 2018 và theo dõi sao bạn xoắn dần vào lõi suốt 7 năm. Tới cuối năm 2025, hai sao hợp nhất và bùng nổ sáng gấp một triệu lần Mặt Trời. Ngôi sao hợp nhất được đặt biệt danh \"Bao\", theo tên bánh bao; tên chính thức của vụ nổ là AT2025abao.\nNghiên cứu đăng trên tạp chí Nature, do Viraj Karambelkar (Đại học Columbia, nghiên cứu sinh sau tiến sĩ kiêm NASA Hubble Fellow) dẫn đầu, với dữ liệu từ kính hồng ngoại WINTER tại Đài Palomar, vệ tinh NEOWISE của NASA, cùng SPHEREx và kính James Webb. Theo các tác giả, vụ hợp nhất có thể đã tạo ra một ngôi sao trẻ lại với \"cuộc đời mới\".",
+    "url": "https://www.reuters.com/science/astronomers-observe-huge-puffy-star-merge-with-smaller-companion-2026-11-20/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-20T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Dải Ngân Hà có thể không có cánh tay xoắn ốc Norma như vẫn tưởng",
+    "summary": "Nghiên cứu trên Nature Astronomy cho thấy \"cánh tay Norma\" có thể thực chất là mặt sóng xung kích do thanh sao trung tâm tạo ra, chứ không phải một cánh tay xoắn ốc thật.",
+    "content": "Một nghiên cứu mới đăng trên Nature Astronomy cho thấy Dải Ngân Hà khác thường so với các thiên hà lân cận ở nơi các ngôi sao mới ra đời.\nThanh sao khổng lồ ở trung tâm thiên hà của chúng ta — một cấu trúc sao dài, xoay tròn — tạo ra các mặt sóng xung kích lớn xuyên qua các đám mây khí, nén khí lại và kích hoạt sự hình thành sao dọc theo mặt sóng. Đây là điều hiếm thấy ở thanh sao của các thiên hà gần.\nPhát hiện này đặt dấu hỏi về sự tồn tại của cánh tay xoắn ốc Norma: nó có thể thực chất là một mặt sóng xung kích do thanh sao tạo ra, chứ không phải một cánh tay xoắn ốc thật sự.\nNghiên cứu do Hillary Davis, nghiên cứu sinh tiến sĩ tại Đại học Sydney, dẫn đầu, kết hợp mô phỏng máy tính về sự tiến hóa của thiên hà với quan sát các maser. Nhóm cũng ước tính thanh trung tâm dài khoảng 4,3 kiloparsec (tương đương ~14.000 năm ánh sáng), ủng hộ mô hình thanh dài, quay chậm.",
+    "url": "https://phys.org/news/2026-11-galactic-discovery-milky.html",
+    "image": null,
+    "source": "phys.org"
+  },
+  {
     "ts": "2026-11-20T18:57:58+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
