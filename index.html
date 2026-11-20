@@ -111,6 +111,20 @@
   .loading{padding:64px 0;text-align:center;color:var(--muted);font-size:14.5px}
   footer{border-top:1px solid var(--line);margin-top:34px;padding:18px 0 40px;font-size:12.5px;color:var(--muted);line-height:1.7}
 
+  /* ---------- Refresh (on-demand) ---------- */
+  .refreshbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--ink);background:none;color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:6px;cursor:pointer}
+  .refreshbtn:hover:not(:disabled){background:var(--ink);color:var(--paper)}
+  .refreshbtn:disabled{opacity:.55;cursor:default}
+  .refreshbtn svg{width:15px;height:15px;flex:none}
+  .refreshbtn.busy svg{animation:spin 1.1s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:var(--paper);font-size:13.5px;font-weight:500;line-height:1.5;padding:12px 18px;border-radius:8px;max-width:min(92vw,560px);text-align:center;opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;z-index:60;box-shadow:0 14px 40px -12px rgba(0,0,0,.45)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (prefers-reduced-motion: reduce){
+    .refreshbtn.busy svg{animation:none}
+    .toast{transition:none}
+  }
+
   /* ---------- Modal ---------- */
   .overlay{position:fixed;inset:0;background:var(--overlay);z-index:50;display:none;overflow-y:auto;padding:30px 14px}
   .overlay.open{display:block}
@@ -393,6 +407,92 @@ fetch("feed.json", {cache:"no-store"})
       `<div class="empty">Chưa tải được dữ liệu tin.<br>Kiểm tra kết nối rồi tải lại trang.</div>`;
     document.getElementById("edition-line").textContent = "Chưa rõ ấn bản gần nhất";
   });
+</script>
+<script>
+// On-demand refresh button — only on the Cloudflare Pages host, where the
+// /api/refresh Pages Function exists behind Cloudflare Access.
+(function(){
+  if (location.hostname !== "adas-feed.pages.dev") return;
+  const TOPIC_BY_CAT = {"Tất cả":"all","AI & Công nghệ":"ai","Bảo mật":"ai","Khoa học":"science","Game":"game","Video":"video","Facebook":"facebook","Bảng tin cư dân":"residents"};
+  const toolbar = document.querySelector(".toolbar");
+  if (!toolbar) return;
+  const btn = document.createElement("button");
+  btn.className = "refreshbtn"; btn.type = "button";
+  btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg><span>Cập nhật tin mới</span>';
+  toolbar.appendChild(btn);
+  const toastEl = document.createElement("div");
+  toastEl.className = "toast"; document.body.appendChild(toastEl);
+  let toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg; toastEl.classList.add("show");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(()=>toastEl.classList.remove("show"), 6000);
+  }
+  function topic(){ return TOPIC_BY_CAT[activeCat] || "all"; }
+  function setBtn(busy, label){
+    btn.disabled = busy; btn.classList.toggle("busy", busy);
+    btn.querySelector("span").textContent = label;
+  }
+  let watching = false;
+  async function syncBtn(){
+    try{
+      const r = await fetch("/api/refresh?topic=" + topic(), {cache:"no-store"});
+      const d = await r.json();
+      if (d.status === "pending"){ setBtn(true, "Đang cập nhật…"); if (!watching) watch(); }
+      else setBtn(false, "Cập nhật tin mới");
+    }catch(e){ setBtn(false, "Cập nhật tin mới"); }
+  }
+  function watch(){
+    if (watching) return; watching = true;
+    const t = topic();
+    const before = items.length ? items[0].ts : null;
+    let tries = 0;
+    const iv = setInterval(async ()=>{
+      tries++;
+      try{
+        const r = await fetch("feed.json?cb=" + Date.now(), {cache:"no-store"});
+        const data = await r.json();
+        const sorted = data.sort((a,b)=> new Date(b.ts) - new Date(a.ts));
+        if (sorted.length && before && sorted[0].ts > before){
+          items = sorted;
+          document.getElementById("edition-line").textContent =
+            "Ấn bản gần nhất lúc " + new Date(items[0].ts).toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"}) +
+            " — hiện có " + items.length + " tin";
+          render();
+          toast("Đã cập nhật xong — có tin mới trên trang.");
+          clearInterval(iv); watching = false; syncBtn();
+          return;
+        }
+      }catch(e){}
+      let done = false;
+      try{
+        const rs = await fetch("/api/refresh?topic=" + t, {cache:"no-store"});
+        const ds = await rs.json();
+        if (ds.status === "idle") done = true;
+      }catch(e){}
+      if (done){
+        clearInterval(iv); watching = false;
+        toast("Đã quét xong — mục này chưa có tin mới hơn.");
+        syncBtn();
+        return;
+      }
+      if (tries >= 30){ clearInterval(iv); watching = false; syncBtn(); }
+    }, 20000);
+  }
+  btn.addEventListener("click", async ()=>{
+    setBtn(true, "Đang gửi yêu cầu…");
+    try{
+      const r = await fetch("/api/refresh", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({topic: topic()})});
+      const d = await r.json();
+      if (d.status === "queued"){ toast("Đã gửi yêu cầu. Ada đang quét tin mới cho mục này."); watch(); }
+      else if (d.status === "pending"){ toast("Mục này đang được cập nhật. Trang sẽ tự làm mới khi có tin mới."); watch(); }
+      else toast("Chưa gửi được yêu cầu. Thử lại sau ít phút.");
+    }catch(e){ toast("Chưa gửi được yêu cầu. Thử lại sau ít phút."); }
+    syncBtn();
+  });
+  document.querySelectorAll(".tab").forEach(tb => tb.addEventListener("click", ()=> setTimeout(syncBtn, 0)));
+  syncBtn();
+})();
 </script>
 </body>
 </html>
