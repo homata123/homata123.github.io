@@ -429,6 +429,48 @@ fetch("feed.json", {cache:"no-store"})
   });
 </script>
 <script>
+// Realtime client — a WebSocket to the adas-relay Worker (Durable Object hub).
+// The page gets a short-lived HMAC token from /api/rt-token (behind Access),
+// opens wss://.../browser, and can then send refresh/search requests that the
+// relay pushes straight to Ada's daemon — no 5-minute polling. If the socket
+// is unavailable, callers fall back to the original KV-mailbox flow.
+window.RT = (function(){
+  if (location.hostname !== "adas-feed.pages.dev") return { connected: false, send: function(){ return false; }, on: function(){} };
+  let ws = null, relayUrl = null, busy = false;
+  const listeners = [];
+  async function connect(){
+    if (busy || (ws && ws.readyState <= 1)) return;
+    busy = true;
+    try{
+      const r = await fetch("/api/rt-token", {cache:"no-store"});
+      const d = await r.json();
+      if (!d.token || !d.relay) throw new Error("no token");
+      relayUrl = d.relay;
+      ws = new WebSocket(relayUrl + "?token=" + encodeURIComponent(d.token));
+      ws.onmessage = (ev)=>{
+        let data; try{ data = JSON.parse(ev.data); }catch(e){ return; }
+        listeners.forEach((f)=>{ try{ f(data); }catch(e){} });
+      };
+      ws.onclose = ()=>{ ws = null; setTimeout(connect, 5000); };
+      ws.onerror = ()=>{ try{ ws.close(); }catch(e){} };
+    }catch(e){
+      setTimeout(connect, 10000);
+    }finally{
+      busy = false;
+    }
+  }
+  connect();
+  return {
+    get connected(){ return !!ws && ws.readyState === 1; },
+    send: function(obj){
+      if (ws && ws.readyState === 1){ ws.send(JSON.stringify(obj)); return true; }
+      return false;
+    },
+    on: function(fn){ listeners.push(fn); }
+  };
+})();
+</script>
+<script>
 // On-demand refresh button — only on the Cloudflare Pages host, where the
 // /api/refresh Pages Function exists behind Cloudflare Access.
 (function(){
@@ -499,7 +541,7 @@ fetch("feed.json", {cache:"no-store"})
       if (tries >= 30){ clearInterval(iv); watching = false; syncBtn(); }
     }, 20000);
   }
-  btn.addEventListener("click", async ()=>{
+  async function legacyRefresh(){
     setBtn(true, "Đang gửi yêu cầu…");
     try{
       const r = await fetch("/api/refresh", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({topic: topic()})});
@@ -509,6 +551,52 @@ fetch("feed.json", {cache:"no-store"})
       else toast("Chưa gửi được yêu cầu. Thử lại sau ít phút.");
     }catch(e){ toast("Chưa gửi được yêu cầu. Thử lại sau ít phút."); }
     syncBtn();
+  }
+  // Realtime path: send the request over the WebSocket; the relay pushes it
+  // to Ada's daemon immediately and progress/results stream back here.
+  let rtRefreshReq = null;
+  if (window.RT) RT.on((d)=>{
+    if (!rtRefreshReq) return;
+    if (d.type === "accepted" && d.reqId === rtRefreshReq.id && d.mode === "queued"){
+      // Daemon offline — the relay queued the request in the KV mailbox
+      // instead; use the original polling watch.
+      clearTimeout(rtRefreshReq.timer); rtRefreshReq = null;
+      toast("Ada đang ngoại tuyến — yêu cầu đã vào hàng đợi, trang sẽ tự cập nhật khi quét xong.");
+      watch(); syncBtn();
+      return;
+    }
+    if (d.reqId !== rtRefreshReq.id) return;
+    if (d.type === "progress"){
+      toast(d.text || "Đang quét…");
+    } else if (d.type === "result" && d.kind === "refresh"){
+      const fresh = (d.items || []).filter((n)=> !items.some((o)=> o.url === n.url));
+      if (fresh.length){
+        items = fresh.concat(items).sort((a,b)=> new Date(b.ts) - new Date(a.ts)).slice(0, 300);
+        document.getElementById("edition-line").textContent =
+          "Ấn bản gần nhất lúc " + new Date(items[0].ts).toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"}) +
+          " — hiện có " + items.length + " tin";
+        render();
+      }
+    } else if (d.type === "done"){
+      clearTimeout(rtRefreshReq.timer); rtRefreshReq = null;
+      setBtn(false, "Cập nhật tin mới");
+      toast(d.summary || "Đã cập nhật xong.");
+    } else if (d.type === "error"){
+      clearTimeout(rtRefreshReq.timer); rtRefreshReq = null;
+      setBtn(false, "Cập nhật tin mới");
+      toast("Có lỗi khi cập nhật. Thử lại sau ít phút.");
+    }
+  });
+  btn.addEventListener("click", ()=>{
+    if (window.RT && RT.connected && !rtRefreshReq){
+      const reqId = "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+      rtRefreshReq = { id: reqId, timer: setTimeout(()=>{ rtRefreshReq = null; legacyRefresh(); }, 240000) };
+      setBtn(true, "Đang cập nhật…");
+      toast("Đã gửi yêu cầu — Ada đang quét ngay bây giờ…");
+      RT.send({type:"request", reqId: reqId, kind:"refresh", topic: topic()});
+      return;
+    }
+    legacyRefresh();
   });
   document.querySelectorAll(".tab").forEach(tb => tb.addEventListener("click", ()=> setTimeout(syncBtn, 0)));
   syncBtn();
@@ -572,7 +660,7 @@ fetch("feed.json", {cache:"no-store"})
   };
   function setSearching(q){
     sbtn.disabled = true; sbtn.textContent = "Đang tìm…";
-    box.innerHTML = `<p class="resstatus">Đang tìm “${esc(q)}” trong chợ cư dân — Ada quét trực tiếp trong group, thường mất vài phút. Cứ để nguyên trang này, kết quả sẽ tự hiện ra.</p>`;
+    box.innerHTML = `<p class="resstatus">Đang tìm “${esc(q)}” trong chợ cư dân — Ada quét trực tiếp trong group, kết quả sẽ tự hiện ra tại đây ngay khi quét xong.</p>`;
   }
   function stopSearching(){ sbtn.disabled = false; sbtn.textContent = "Tìm trong chợ"; }
   function pollFor(id, sinceTs){
@@ -598,12 +686,42 @@ fetch("feed.json", {cache:"no-store"})
       }
     }, 15000);
   }
+  // Realtime path: the relay pushes the search to Ada's daemon over the
+  // WebSocket and results stream back — no polling of search-results.json.
+  let rtSearchReq = null;
+  if (window.RT) RT.on((d)=>{
+    if (!rtSearchReq || d.reqId !== rtSearchReq.id) return;
+    if (d.type === "accepted" && d.mode === "queued"){
+      // Daemon offline — relay queued it in the KV mailbox; poll as before.
+      clearTimeout(rtSearchReq.timer); rtSearchReq = null;
+      pollFor(d.id || null, Date.now() - 5000);
+    } else if (d.type === "progress"){
+      box.innerHTML = `<p class="resstatus">${esc(d.text || "Đang tìm trong chợ cư dân…")}</p>`;
+    } else if (d.type === "result" && d.kind === "search"){
+      renderResults({query: d.query || rtSearchReq.query, ts: new Date().toISOString(), results: d.results || []});
+    } else if (d.type === "done"){
+      clearTimeout(rtSearchReq.timer); rtSearchReq = null;
+      stopSearching();
+    } else if (d.type === "error"){
+      clearTimeout(rtSearchReq.timer); rtSearchReq = null;
+      box.innerHTML = `<p class="resstatus">Có lỗi khi tìm kiếm. Thử lại sau ít phút.</p>`;
+      stopSearching();
+    }
+  });
   form.addEventListener("submit", async (e)=>{
     e.preventDefault();
     const q = input.value.trim();
     if (q.length < 2){ box.innerHTML = `<p class="resstatus">Nhập ít nhất 2 ký tự để tìm.</p>`; return; }
     setSearching(q);
     const since = Date.now() - 5000;
+    if (window.RT && RT.connected && !rtSearchReq){
+      const reqId = "s" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+      rtSearchReq = { id: reqId, query: q, timer: setTimeout(()=>{
+        if (rtSearchReq && rtSearchReq.id === reqId){ rtSearchReq = null; pollFor(reqId, since); }
+      }, 300000) };
+      RT.send({type:"request", reqId: reqId, kind:"search", query: q});
+      return;
+    }
     try{
       const r = await fetch("/api/search", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({query: q})});
       const d = await r.json();
