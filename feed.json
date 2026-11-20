@@ -1,5 +1,49 @@
 [
   {
+    "ts": "2026-11-20T05:00:13+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Apple phát triển AI agent tự dùng máy tính",
+    "summary": "Apple đang tuyển quản lý cấp cao cho AI agent có thể duyệt web, dùng app, viết code thay người dùng; nhắm ra mắt sớm nhất cuối 2027, đồng thời macOS 27.3 siết quyền của agent bên thứ ba.",
+    "content": "Apple đang tuyển quản lý kỹ thuật cấp cao cho một \"AI agent that can use a computer\" — duyệt web, dùng app, chạy lệnh, viết và gỡ lỗi code, gọi dịch vụ, tự chọn công cụ phù hợp từng bước; đội ngũ đang xây nền tảng \"general-purpose computer-use agents\".\nBloomberg cho biết Apple nhắm ra mắt sớm nhất cuối năm 2027, hiện vẫn ở giai đoạn đầu. Cùng lúc, macOS 27.3 sẽ siết quyền của agent bên thứ ba, hiển thị cảnh báo khi người dùng cấp quyền kiểm soát toàn bộ máy.\nCổ phiếu Meta giảm khoảng 2%, Anthropic khoảng 3% sau khi tin được đăng.",
+    "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800",
+    "source": "TechCrunch"
+  },
+  {
+    "ts": "2026-11-20T05:30:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Nvidia đàm phán mua Inception với giá hơn 500 triệu USD",
+    "summary": "Nvidia đàm phán nâng cao để mua startup đứng sau mô hình ngôn ngữ khuếch tán Mercury, đạt hơn 1.000 token/giây; cả 3 nhà đồng sáng lập dự kiến gia nhập Nvidia.",
+    "content": "Nvidia đang đàm phán nâng cao để mua Inception, startup 2 tuổi đứng sau họ mô hình ngôn ngữ khuếch tán (diffusion LLM) Mercury — tạo văn bản song song thay vì từng token, đạt hơn 1.000 token/giây (Mercury 3: 1.068 token/giây trên GPU Nvidia), chất lượng ngang GPT-6 Luna và Claude Haiku 5.5 theo benchmark của hãng.\nThỏa thuận gồm khoản earnout theo hiệu suất; cả 3 nhà đồng sáng lập (Stefano Ermon, Aditya Grover, Volodymyr Kuleshov) dự kiến gia nhập Nvidia, công nghệ sẽ bổ sung cho dòng Nemotron và AI robot.\nChưa ký kết, hai bên chưa xác nhận. API Mercury sẽ đóng ngày 28/12.",
+    "url": "https://www.tipranks.com/news/nvidia-nears-500m-deal-for-ai-startup-inception-to-strengthen-ai-models",
+    "image": null,
+    "source": "TipRanks"
+  },
+  {
+    "ts": "2026-11-20T03:13:59+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Meta định giá thiết bị Muse Charm 300 USD, kèm 5G Verizon miễn phí 1 năm",
+    "summary": "Thiết bị bỏ túi mang trợ lý Muse có màn hình khoảng 2 inch, modem 5G tích hợp; Meta dự kiến bán kịp mùa mua sắm tháng 12.",
+    "content": "Meta dự kiến bán thiết bị bỏ túi mang trợ lý Muse với giá 300 USD và tặng tối đa 12 tháng dữ liệu 5G Verizon, theo The Information.\nThiết bị có màn hình khoảng 2 inch điều khiển bằng ngón cái, nhân vật Muse tùy chỉnh ở giữa, modem 5G tích hợp (không gọi điện được), đeo cổ hoặc móc khóa.\nMeta dự kiến bán kịp mùa mua sắm tháng 12. Người phát ngôn Meta không phủ nhận mức giá.",
+    "url": "https://www.reuters.com/business/media-telecom/meta-price-muse-charm-gadget-300-information-reports-2026-11-19/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-20T09:29:29+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Lần đầu quan sát agent AI tự động khai thác lỗ hổng gần như không cần con người",
+    "summary": "Google Threat Intelligence Group phát hiện framework \"exploit_agent\" tự động tìm và weaponize lỗ hổng từ mã nguồn trước/sau bản vá, không có người trong vòng lặp.",
+    "content": "Google Threat Intelligence Group (GTIG) phát hiện một máy chủ staging chạy framework \"exploit_agent\" — kết nối nhiều LLM, liên tục so sánh mã nguồn các ứng dụng web phổ biến trước và sau bản vá để tìm rồi weaponize lỗ hổng, tự động trinh sát, brute-force mật khẩu, cài webshell.\nGTIG cho biết đây là lần đầu quan sát LLM tự động cả khâu phát hiện lẫn khai thác mà không có người trong vòng lặp; AI đang rút ngắn khoảng thời gian từ lúc phát hành bản vá đến lúc bị khai thác.\nCác framework pentest AI mã nguồn mở khác như ARTEX, CAIRN và PentAGI cũng đã bị lạm dụng ngoài thực địa.",
+    "url": "https://cybersecasia.net/news/autonomous-ai-agents-now-exploit-software-vulnerabilities-with-little-human-involvement-report-2/",
+    "image": null,
+    "source": "CybersecAsia"
+  },
+  {
     "ts": "2026-11-20T21:25:57+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
