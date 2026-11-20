@@ -93,6 +93,16 @@
   .railitem:hover h3{text-decoration:underline;text-underline-offset:3px}
   .railitem .sum{font-size:13px;line-height:1.55;color:var(--ink-soft);margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 
+  /* ---------- Residents band ---------- */
+  .residents{margin-top:32px;border-top:1px solid var(--ink);padding-top:20px}
+  .residents h2{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:25px;margin:0 0 4px}
+  .residents .ressub{font-size:13px;color:var(--muted);margin:0 0 6px;line-height:1.55}
+  .resgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 30px}
+  .resitem{padding:14px 0;border-top:1px solid var(--line)}
+  .resitem h3{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:17px;line-height:1.35;margin:6px 0 6px}
+  .resitem:hover h3{text-decoration:underline;text-underline-offset:3px}
+  .resitem .sum{font-size:13px;line-height:1.55;color:var(--ink-soft);margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
   /* ---------- List mode ---------- */
   .listwrap{max-width:880px}
   .listwrap .story:first-child{border-top:none}
@@ -178,14 +188,15 @@
 </div>
 
 <script>
-const CATS = ["Tất cả","AI & Công nghệ","Bảo mật","Khoa học","Game","Video","Facebook"];
+const CATS = ["Tất cả","AI & Công nghệ","Bảo mật","Khoa học","Game","Video","Facebook","Bảng tin cư dân"];
 const CATCOLOR = {
   "AI & Công nghệ":"#205E3B",
   "Bảo mật":"#BC3318",
   "Khoa học":"#1F5F7A",
   "Game":"#8A6D1F",
   "Video":"#A34A1F",
-  "Facebook":"#2B4C9A"
+  "Facebook":"#2B4C9A",
+  "Bảng tin cư dân":"#5F7422"
 };
 let items = [], activeCat = "Tất cả", query = "";
 
@@ -272,23 +283,46 @@ function render(){
     main.innerHTML = `<div class="listwrap">${filtered.map(storyRow).join("")}</div>`;
     return;
   }
-  const lead = filtered[0];
-  const rest = filtered.slice(1);
-  const river = rest.filter(it => it.flow !== "facebook");
-  const rail = rest.filter(it => it.flow === "facebook");
-  let html = leadBlock(lead);
-  if (river.length || rail.length){
-    html += `<div class="front"><div>${river.map(storyRow).join("")}</div>`;
-    if (rail.length){
-      html += `<aside class="rail">
-        <h2>Từ cộng đồng Facebook</h2>
-        <p class="railsub">Bài đáng chú ý trong các group Ada theo dõi cho Mister T, J2Team trước nhất.</p>
-        ${rail.map(railItem).join("")}
-      </aside>`;
+  const residents = filtered.filter(it => it.category === "Bảng tin cư dân").slice(0, 6);
+  const pool = filtered.filter(it => it.category !== "Bảng tin cư dân");
+  let html = "";
+  if (pool.length){
+    const lead = pool[0];
+    const rest = pool.slice(1);
+    const river = rest.filter(it => it.flow !== "facebook");
+    const rail = rest.filter(it => it.flow === "facebook");
+    html += leadBlock(lead);
+    if (river.length || rail.length){
+      html += `<div class="front"><div>${river.map(storyRow).join("")}</div>`;
+      if (rail.length){
+        html += `<aside class="rail">
+          <h2>Từ cộng đồng Facebook</h2>
+          <p class="railsub">Bài đáng chú ý trong các group Ada theo dõi cho Mister T, J2Team trước nhất.</p>
+          ${rail.map(railItem).join("")}
+        </aside>`;
+      }
+      html += `</div>`;
     }
-    html += `</div>`;
   }
-  main.innerHTML = html;
+  if (residents.length){
+    html += `<section class="residents">
+      <h2>Bảng tin cư dân</h2>
+      <p class="ressub">Chợ và đời sống trong khu dân cư: đồ ăn rao bán trong ngày, thông báo của tòa nhà và sinh hoạt cư dân. Thông tin liên hệ của người bán được giữ tại bài gốc trong group.</p>
+      <div class="resgrid">${residents.map(resItem).join("")}</div>
+    </section>`;
+  }
+  main.innerHTML = html || `<div class="empty">Chưa có tin nào khớp với lựa chọn này.<br>Thử bỏ bộ lọc hoặc đổi từ khóa tìm kiếm.</div>`;
+}
+
+function resItem(it){
+  const idx = items.indexOf(it);
+  return `
+  <article class="resitem clickable" tabindex="0" role="button" onclick="openItem(${idx})" onkeydown="if(event.key==='Enter')openItem(${idx})">
+    ${catmark(it)}
+    <h3>${esc(it.title)}</h3>
+    <p class="sum">${esc(it.summary)}</p>
+    ${metarow(it)}
+  </article>`;
 }
 
 function contentHtml(it){

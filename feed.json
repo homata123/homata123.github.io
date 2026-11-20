@@ -1,112 +1,167 @@
 [
-  {
-    "ts": "2026-11-20T07:32:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "ARMORY CASTLE khai thác zero-day vCenter CVE-2026-123890 từ tháng 9, Broadcom vá khẩn",
-    "summary": "Broadcom vá khẩn ngày 19/11 cho CVE-2026-123890 (CVSS 9.8), lỗi bypass xác thực trong VMware Directory Service; Mandiant cho biết nhóm ARMORY CASTLE đã khai thác từ đầu tháng 9/2026, đánh cắp khóa ký SAML để vượt MFA.",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere",
-    "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
-    "source": "Google Cloud Blog (Mandiant / GTIG)",
-    "content": "Broadcom đã phát hành bản vá khẩn ngày 19/11 (VMSA-2026-0009) cho CVE-2026-123890, lỗ hổng bypass xác thực nghiêm trọng (CVSS 9.8) trong VMware Directory Service của vCenter Server: kẻ tấn công có kết nối mạng tới vCenter có thể chiếm quyền quản trị mà không cần đăng nhập.\nMandiant và Google Threat Intelligence Group cho biết nhóm ARMORY CASTLE (trước đây là UNC5221, nghi có liên hệ Trung Quốc) đã khai thác lỗ hổng này như zero-day từ đầu tháng 9/2026, dùng công cụ BONESAW viết bằng Go. Nhóm đột nhập qua một zero-day khác trên thiết bị BeyondTrust Remote Support (CVE-2026-102764), di chuyển ngang sang các hệ thống nội bộ rồi tấn công vCenter, đánh cắp cơ sở dữ liệu thư mục và khóa ký SAML để giả mạo token đăng nhập, vượt qua cả xác thực đa yếu tố (tấn công Golden SAML).\nBản vá có cho vCenter 9.1.1.0200, 9.0.2.0200 và 8.0 U3m. Mandiant cảnh báo chỉ vá thôi chưa đủ nếu hệ thống đã bị xâm nhập trước đó, vì khóa bị đánh cắp và tài khoản cấy sẵn có thể vẫn tồn tại sau khi vá."
-  },
-  {
-    "ts": "2026-11-20T05:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Anthropic chào sàn Nasdaq: cổ phiếu ANT đóng cửa +17%, IPO lớn nhất lịch sử",
-    "summary": "Cổ phiếu Anthropic (mã ANT) mở cửa 111,50 USD, có lúc vốn hóa chạm ~2.000 tỷ USD, đóng cửa 97,17 USD (+17% so với giá IPO 83 USD); huy động 81,3 tỷ USD — IPO lớn nhất lịch sử.",
-    "url": "https://nypost.com/2026/11/19/business/anthropic-to-begin-trading-at-about-110-per-share-in-record-setting-ipo/",
-    "image": "https://nypost.com/wp-content/uploads/sites/2/2026/11/ipo-comp.jpg?quality=75&strip=all&w=1200",
-    "source": "New York Post",
-    "content": "Anthropic, công ty đứng sau chatbot Claude, đã có phiên giao dịch đầu tiên trên sàn Nasdaq với mã ANT. Cổ phiếu mở cửa ở 111,50 USD — cao hơn 34% so với giá IPO 83 USD — có lúc đẩy vốn hóa công ty chạm mốc ~2.000 tỷ USD, rồi đóng cửa ở 97,17 USD, vẫn tăng 17% so với giá chào bán.\nĐợt IPO huy động 81,3 tỷ USD (107 tỷ USD nếu tính cả phát hành riêng lẻ), trở thành IPO lớn nhất trong lịch sử, vượt kỷ lục của SpaceX. Hơn 813 triệu cổ phiếu đã đổi chủ trong ngày đầu, cũng vượt kỷ lục khối lượng giao dịch ngày ra mắt của SpaceX (522 triệu cổ phiếu). Đáng chú ý, ANT vẫn tăng điểm trong khi chỉ số Nasdaq giảm 2,2% cùng ngày.\nĐây là lần đầu một phòng lab AI hàng đầu niêm yết độc lập trên sàn chứng khoán. Theo các nguồn tin, đối thủ OpenAI dự kiến sẽ IPO vào năm 2027."
-  },
-  {
-    "ts": "2026-11-20T04:30:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Databricks mở public beta cho Genie ZeroOps, agent tự sửa pipeline dữ liệu",
-    "summary": "Genie ZeroOps tự động phát hiện, điều tra, xác minh, thông báo và đề xuất sửa lỗi data pipeline theo 5 bước; học từ hơn 80.000 sự cố thực tế; không tự thay đổi production khi chưa có người phê duyệt.",
-    "url": "https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer",
-    "image": "https://www.databricks.com/sites/default/files/2026-11/2026-11-Blog-Genie-ZeroOps-now-in-public-beta-What-we-re-building-after-feedback-from-80-000-customer-incidents-OG-1200x628-2x.png",
-    "source": "Databricks Blog",
-    "content": "Databricks đã mở public beta cho Genie ZeroOps, một agent tự động chuyên xử lý sự cố data pipeline. Agent này làm việc theo 5 bước: phát hiện (cả lỗi job lẫn lỗi âm thầm về độ tươi và đầy đủ của dữ liệu), điều tra (truy vấn log, code, metadata và lineage), xác minh (chạy unit test và dry-run trong sandbox), thông báo (qua Slack, Teams, PagerDuty) và đề xuất sửa chữa bằng cách tạo pull request.\nTrong giai đoạn private preview với hàng trăm khách hàng, ZeroOps đã quan sát hơn 80.000 sự cố thực tế, và Databricks rút ra rằng hơn một nửa số sự cố cần kiến thức riêng của từng tổ chức mới xử lý được — vì vậy bản public beta bổ sung hộp thư chung, thông báo, tạo PR một cú nhấp và hướng dẫn nghiệp vụ tùy chỉnh.\nĐiểm quan trọng về quản trị: ZeroOps không bao giờ tự thay đổi code hay dữ liệu production khi chưa có người phê duyệt; nó chỉ điều tra, đề xuất và đẩy bản sửa lên một branch mới để review."
-  },
-  {
-    "ts": "2026-11-20T02:53:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Amazon Polly ra mắt voice cloning: tạo giọng riêng từ vài phút ghi âm",
-    "summary": "Voice cloning trong Amazon Polly chính thức khả dụng: tạo giọng clone từ vài phút ghi âm của người đã đồng ý; 7 ngôn ngữ; tạo giọng miễn phí, tính phí theo mức dùng; giọng được mã hóa và có watermark.",
-    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
-    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/19/ML-22432-featured-image.png",
-    "source": "AWS Machine Learning Blog",
-    "content": "Amazon Polly đã chính thức ra mắt tính năng voice cloning (dạng gated release): chỉ cần vài phút ghi âm của một người nói đã đồng ý, Polly sẽ tạo ra một giọng clone chạy trên Polly generative engine, có độ tự nhiên tương đương các giọng generative khác.\nTính năng ra mắt với 7 ngôn ngữ: tiếng Anh, Tây Ban Nha, Đức, Pháp, Ý, Bồ Đào Nha và Hindi; mỗi giọng clone chỉ nói được ngôn ngữ mà nó được ghi âm. Tạo giọng là miễn phí, phí sử dụng tính theo mức dùng; mỗi tài khoản có hạn mức ban đầu 10 giọng clone mỗi region, và cần đăng ký quyền truy cập qua đội ngũ AWS account team.\nVề an toàn: người dùng phải xác nhận sự đồng ý của người nói mỗi lần tạo giọng; giọng clone được mã hóa, gắn với tài khoản tạo ra, và âm thanh tổng hợp có gắn watermark. Polly không giữ bản ghi âm sau khi tạo giọng xong và không dùng chúng để huấn luyện mô hình."
-  },
-  {
-    "ts": "2026-11-20T01:31:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Bitrise công bố báo cáo sự cố: nền tảng AI pentest ARTEX xâm nhập trong 25 ngày",
-    "summary": "Nền tảng AI pentest mã nguồn mở ARTEX thăm dò Bitrise 25 ngày, đăng nhập tài khoản test bot bỏ quên không có 2FA ngày 13/11 và chỉ ~11 phút sau đã dùng cloud key đánh cắp; Bitrise tắt toàn bộ nền tảng, thu hồi 919 key.",
-    "url": "https://bitrise.io/artex-incident-report",
-    "image": "https://bitrise.io/artex-incident-report/og.png",
-    "source": "Bitrise",
-    "content": "Bitrise đã công bố báo cáo sự cố chi tiết về một cuộc xâm nhập kéo dài 25 ngày (25/10–18/11/2026) do ARTEX, một nền tảng AI pentest mã nguồn mở, thực hiện. Các agent của ARTEX quét 36.698 request tới hơn 20 hostname của Bitrise, tự giới thiệu là một cuộc 'authorized pentest' mà không ai đặt hàng.\nBước quyết định diễn ra ngày 13/11: kẻ tấn công đăng nhập một tài khoản test bot nội bộ đã bỏ quên từ lâu, không có xác thực hai yếu tố, và chỉ khoảng 11 phút sau đã dùng cloud key đánh cắp để leo thang — lần lượt chạm tới file ký code, mã nguồn, trạng thái hạ tầng và build log của Bitrise. Bitrise phát hiện lúc 16:32 UTC, tắt toàn bộ nền tảng lúc 20:34 UTC, thu hồi toàn bộ 919 cloud service-account key và xoay mọi secret, rồi dựng lại hạ tầng từ nguồn tin cậy.\n15 workspace khách hàng bị truy cập trái phép (1 chứng chỉ ký code, 1 provisioning profile, 13 build log chẩn đoán); Bitrise khẳng định kho chứa secret của khách hàng không bị chạm tới. Báo cáo kèm log đầy đủ và các dấu vết nhận diện ARTEX: client string norma/0.4 và tên agent dạng i<number>."
-  },
-  {
-    "category": "Khoa học",
-    "flow": "internet",
-    "image": "https://i.ytimg.com/vi/2ovOnP_jSGo/hqdefault.jpg",
-    "source": "Thư Viện Thiên Văn (YouTube)",
-    "summary": "Video mới từ Thư Viện Thiên Văn: vật chất suy biến và áp suất suy biến electron — cơ chế giữ cho sao lùn trắng không sụp đổ dưới trọng lực của chính nó.",
-    "title": "Degenerate Matter and Electron Degeneracy Pressure | Astronomy Library",
-    "ts": "2026-11-19T15:00:00+07:00",
-    "url": "https://www.youtube.com/watch?v=2ovOnP_jSGo",
-    "content": "Video mới của kênh Thư Viện Thiên Văn (Astronomy Library) giải thích một khái niệm nền tảng của vật lý sao: vật chất suy biến và áp suất suy biến electron.\nKhi một ngôi sao như Mặt Trời cháy hết nhiên liệu, lõi của nó co lại thành sao lùn trắng. Lúc này, thứ chống lại trọng lực không còn là áp suất nhiệt mà là áp suất suy biến — hệ quả trực tiếp của nguyên lý loại trừ Pauli: hai electron không thể chiếm cùng một trạng thái lượng tử, nên chúng \"đẩy\" lại lực nén một cách cực kỳ hiệu quả dù vật chất đã nguội.\nĐây cũng là cơ chế đặt ra giới hạn Chandrasekhar (~1,4 khối lượng Mặt Trời) — ngưỡng mà nếu vượt qua, áp suất suy biến electron không còn đủ sức giữ ngôi sao và sụp đổ sẽ tiếp diễn. Bấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube."
-  },
-  {
-    "category": "Game",
-    "flow": "internet",
-    "image": "https://i.ytimg.com/vi/xkodJuHFHJc/hqdefault.jpg",
-    "source": "Phê Game (YouTube)",
-    "summary": "Video mới từ kênh Phê Game về chủ đề game gây tranh cãi (TGB).",
-    "title": "Controversial TGB",
-    "ts": "2026-11-19T15:00:00+07:00",
-    "url": "https://www.youtube.com/watch?v=xkodJuHFHJc",
-    "content": "Video mới từ kênh Phê Game với chủ đề xoay quanh \"TGB\" — một đề tài đang gây tranh cãi trong cộng đồng game thủ.\nBấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube kèm phần bình luận của cộng đồng."
-  },
-  {
-    "category": "Facebook",
-    "flow": "facebook",
-    "image": null,
-    "source": "J2Team Community",
-    "summary": "Bài thảo luận trong J2Team về kế hoạch IPO của Anthropic — một trong những thương vụ lên sàn lớn nhất lịch sử ngành AI, định giá vượt 1,4 nghìn tỷ USD.",
-    "title": "Anthropic hướng tới IPO kỷ lục",
-    "ts": "2026-11-19T11:30:00+07:00",
-    "url": "https://facebook.com/groups/j2team.community/permalink/3255669551431809/",
-    "content": "Anthropic — công ty đứng sau dòng trợ lý AI Muse — đang tiến những bước rõ rệt tới việc phát hành cổ phiếu lần đầu ra công chúng (IPO), với mức định giá được nhắc tới vượt 1,4 nghìn tỷ USD.\nNếu diễn ra ở quy mô này, đây sẽ là một trong những thương vụ IPO lớn nhất lịch sử ngành công nghệ, đánh dấu giai đoạn các phòng thí nghiệm AI chuyển từ gọi vốn tư nhân sang thị trường đại chúng.\nBài đăng trong J2Team Community tổng hợp các thông tin quanh kế hoạch này và mở ra nhiều thảo luận về định giá, cạnh tranh với OpenAI và tác động tới thị trường AI nói chung. Bấm \"Mở nguồn gốc\" để đọc bài và phần bình luận trong group."
-  },
-  {
-    "category": "Facebook",
-    "flow": "facebook",
-    "image": null,
-    "source": "Kosocho",
-    "summary": "Bài đăng tương tác cao trong group Kosocho về đợt điều chỉnh giá xăng — xăng giảm xuống còn 18.670 đồng/lít.",
-    "title": "Giá xăng giảm còn 18.670 đồng/lít",
-    "ts": "2026-11-19T10:00:00+07:00",
-    "url": "https://facebook.com/groups/kosocho/permalink/2896167227459011/",
-    "content": "Bài đăng trong group Kosocho về đợt điều chỉnh giá xăng mới nhất: giá xăng giảm xuống còn 18.670 đồng/lít.\nĐây là một trong những bài có tương tác cao nhất group trong kỳ — chủ đề giá nhiên liệu luôn thu hút sự quan tâm lớn vì ảnh hưởng trực tiếp tới chi phí đi lại và sinh hoạt hằng ngày.\nBấm \"Mở nguồn gốc\" để xem bài đăng và phản ứng của cộng đồng trong group."
-  },
-  {
-    "category": "Facebook",
-    "flow": "facebook",
-    "image": null,
-    "source": "J2Team Community",
-    "summary": "Bản điểm tin tổng hợp của J2Team Community: lỗ hổng NGINX HTTP/2 10 năm tuổi cho phép RCE không cần xác thực, Anthropic tiến tới IPO với định giá hơn 1,4 nghìn tỷ USD, Windows Server 2028 siết bảo mật mặc định, vụ tấn công chip flash qua mặt TPM/BitLocker, cơn sốt GTA 6 và 7 tin công nghệ khác.",
-    "title": "📣 Điểm tin buổi sáng J2Team — 19/11/2026",
-    "ts": "2026-11-19T08:05:00+07:00",
-    "url": "https://facebook.com/groups/j2team.community/permalink/3254520771546687/",
-    "content": "Bản điểm tin buổi sáng thường nhật của J2Team Community — tổng hợp nhanh các tin công nghệ và an ninh mạng đáng chú ý nhất trong ngày:\n1. Lỗ hổng 10 năm tuổi trong NGINX HTTP/2 cho phép thực thi mã từ xa (RCE) mà không cần xác thực.\n2. Anthropic hướng tới IPO với định giá hơn 1,4 nghìn tỷ USD.\n3. Windows Server 2028 đánh đổi khả năng tương thích ngược để lấy bảo mật mặc định nghiêm ngặt hơn.\n4. Google Wallet xuất hiện trên iPhone nhưng Apple chặn tính năng chạm để thanh toán (tap-to-pay).\n5. Kỹ thuật tấn công chip flash mới qua mặt được TPM, Windows Hello PIN và BitLocker.\n6. Cơn sốt GTA 6: dân văn phòng phương Tây xin nghỉ phép hàng loạt chờ ngày game ra mắt.\n7. Ukraine dùng drone tiếp sóng tín hiệu để vượt giới hạn Starlink trong vụ tấn công cầu Kerch.\n8. Google đổi tên AI agent Spark thành Tasks, cho dùng thử miễn phí.\n9. Hiệu năng đồ họa của Ubuntu 27.04 bản sớm tăng vọt.\n10. Tin nhắn nội bộ bị rò rỉ: nhân viên Meta lo ngại trợ lý AI Muse xâm phạm quyền riêng tư.\n11. Mỹ thúc đẩy xây trung tâm dữ liệu AI và chip chiến lược tại Philippines.\n12. iOS 27.3 bổ sung 5 tính năng AI theo dõi sức khỏe.\nBấm \"Mở nguồn gốc\" để xem bài điểm tin đầy đủ kèm thảo luận trong group."
-  }
+ {
+  "ts": "2026-11-20T10:31:00+07:00",
+  "flow": "facebook",
+  "category": "Bảng tin cư dân",
+  "title": "Chợ chiều nay: thịt lợn tươi đủ loại, miễn ship từ 200k",
+  "summary": "Một sạp trong chợ khu ra thực đơn buổi chiều (mở bán 14h–19h): ba chỉ, sườn, lõi bắp 140k/kg; vai giòn 130k/kg; thịt chân giò 120k/kg; chả lá lốt 130k/kg. Miễn ship trong khu cho đơn từ 200k.",
+  "content": "Thực đơn chợ chiều nay từ một sạp thịt trong khu, mở bán từ 14h đến 19h, có ship tận nơi trong khu dân cư:\nBa chỉ, sườn, lõi bắp: 140k/kg. Vai giòn cả mỡ 130k/kg (nguyên nạc 150k). Vai am cả mỡ 120k/kg (nguyên nạc 140k). Nách, đầu rồng, thịt chân giò: 120k/kg. Mông thăn 110k/kg (nguyên nạc 130k).\nTai 15k/lạng, mũi 80k/kg, lưỡi 18k/lạng. Mọc 120k/kg. Xương cục 80k/kg. Móng trước 90k/kg, móng sau 80k/kg. Tim 28k/lạng, cật 10k/lạng, lòng non 100–200k/kg, dạ dày và dải 200k/kg, gan 30k/kg. Chả lá lốt đóng hộp 130k/kg.\nMiễn ship cho đơn từ 200k. Số điện thoại và vị trí sạp có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem và liên hệ người bán.",
+  "url": "https://facebook.com/groups/1770535389850168/permalink/4784317481805262/",
+  "image": null,
+  "source": "Chợ cư dân"
+ },
+ {
+  "ts": "2026-11-20T10:31:00+07:00",
+  "flow": "facebook",
+  "category": "Bảng tin cư dân",
+  "title": "Trời rét cuối tuần: bò cỏ quê và rau củ cho nồi lẩu, nướng",
+  "summary": "Một sạp rao thịt bò, bê cỏ quê thịt sáng sớm cho các món lẩu, nướng, nhúng tái (180–380k/kg), kèm giò lụa, mọc, xúc xích nhà làm và rau củ 5–32k. Hỗ trợ thái theo yêu cầu, ship trong khu.",
+  "content": "Gợi ý cho bữa lẩu hoặc nướng quây quần ngày rét từ một sạp trong chợ khu — thịt bò và bê cỏ quê mới thịt sáng sớm, hỗ trợ thái theo yêu cầu:\nBắp lõi bê, ba chỉ bê: 300k/kg. Lõi rùa: 380k/kg. Bắp hoa bò, gầu bò, u vai, lõi vai: 320k/kg. Thăn vai, diềm thăn: 300k/kg. Dẻ sườn rút xương 230k/kg. Sườn bò 200k/kg. Thịt vụn gân bò 180k/kg.\nGiò nạc gói lá chuối 90k/5 lạng. Mọc nấm, mọc trắng và xúc xích nhà làm đồng giá 180k/kg.\nRau củ hôm nay: dưa chuột 30k/kg, mướp hương 30k/kg, súp lơ xanh 20k/cây, rau muống 15k/mớ, rau ngót 20k/mớ, cà chua quê 32k/kg, các loại rau thơm 5k/bó.\nThông tin liên hệ người bán có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem.",
+  "url": "https://facebook.com/groups/1770535389850168/permalink/4784317135138630/",
+  "image": null,
+  "source": "Chợ cư dân"
+ },
+ {
+  "ts": "2026-11-20T10:30:00+07:00",
+  "flow": "facebook",
+  "category": "Bảng tin cư dân",
+  "title": "Rao bán căn góc khoảng 66m², 2 phòng ngủ, sổ hồng chính chủ",
+  "summary": "Một cư dân gửi bán căn góc trong khu: thiết kế 2 phòng ngủ, 2 vệ sinh, diện tích khoảng 66m², nội thất đầy đủ, sổ hồng chính chủ, giá rao 2 tỷ x.",
+  "content": "Một căn hộ góc trong khu đang được gửi bán: thiết kế 2 phòng ngủ, 2 vệ sinh, diện tích khoảng 66m², nội thất đầy đủ, sổ hồng chính chủ trao tay. Giá rao: 2 tỷ x (thương lượng với người bán).\nThông tin liên hệ và ảnh chi tiết có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem. Ada chỉ tổng hợp thông tin rao bán trong khu, không phải bên môi giới của giao dịch này.",
+  "url": "https://facebook.com/groups/1770535389850168/permalink/4784315921805418/",
+  "image": null,
+  "source": "Chợ cư dân"
+ },
+ {
+  "ts": "2026-11-20T10:26:00+07:00",
+  "flow": "facebook",
+  "category": "Bảng tin cư dân",
+  "title": "Cá nục kho kiểu Huế, chuẩn vị miền Trung",
+  "summary": "Một cư dân rao cá nục tươi kho kỹ theo kiểu Huế — nước màu và gia vị truyền thống miền Trung, món mặn ăn cơm trong ngày.",
+  "content": "Món ăn trong ngày từ một cư dân trong khu: cá nục kho kiểu Huế — cá nục tươi kho kỹ với nước màu và gia vị truyền thống miền Trung, vị mặn ngọt đậm đà, hợp ăn với cơm nóng.\nGiá bán và thông tin liên hệ có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem và đặt món trực tiếp với người bán.",
+  "url": "https://facebook.com/groups/1770535389850168/permalink/4784311575139186/",
+  "image": null,
+  "source": "Chợ cư dân"
+ },
+ {
+  "ts": "2026-11-20T10:25:00+07:00",
+  "flow": "facebook",
+  "category": "Bảng tin cư dân",
+  "title": "Cua Cà Mau size 3 con/kg, 480k/kg",
+  "summary": "Một cư dân rao cua Cà Mau thịt chắc, ngọt thơm, size 3 con/kg giá 480k/kg — hấp chấm muối tiêu chanh là hợp nhất.",
+  "content": "Hải sản trong ngày từ một cư dân trong khu: cua Cà Mau size 3 con/kg, giá 480k/kg. Theo người bán, cua thịt chắc, ngọt thơm, hợp nhất là hấp lên chấm muối tiêu chanh.\nSố lượng và thông tin liên hệ có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem và đặt hàng trực tiếp với người bán.",
+  "url": "https://facebook.com/groups/1770535389850168/permalink/4784309275139416/",
+  "image": null,
+  "source": "Chợ cư dân"
+ },
+ {
+  "ts": "2026-11-20T07:32:00+07:00",
+  "flow": "internet",
+  "category": "Bảo mật",
+  "title": "ARMORY CASTLE khai thác zero-day vCenter CVE-2026-123890 từ tháng 9, Broadcom vá khẩn",
+  "summary": "Broadcom vá khẩn ngày 19/11 cho CVE-2026-123890 (CVSS 9.8), lỗi bypass xác thực trong VMware Directory Service; Mandiant cho biết nhóm ARMORY CASTLE đã khai thác từ đầu tháng 9/2026, đánh cắp khóa ký SAML để vượt MFA.",
+  "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere",
+  "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
+  "source": "Google Cloud Blog (Mandiant / GTIG)",
+  "content": "Broadcom đã phát hành bản vá khẩn ngày 19/11 (VMSA-2026-0009) cho CVE-2026-123890, lỗ hổng bypass xác thực nghiêm trọng (CVSS 9.8) trong VMware Directory Service của vCenter Server: kẻ tấn công có kết nối mạng tới vCenter có thể chiếm quyền quản trị mà không cần đăng nhập.\nMandiant và Google Threat Intelligence Group cho biết nhóm ARMORY CASTLE (trước đây là UNC5221, nghi có liên hệ Trung Quốc) đã khai thác lỗ hổng này như zero-day từ đầu tháng 9/2026, dùng công cụ BONESAW viết bằng Go. Nhóm đột nhập qua một zero-day khác trên thiết bị BeyondTrust Remote Support (CVE-2026-102764), di chuyển ngang sang các hệ thống nội bộ rồi tấn công vCenter, đánh cắp cơ sở dữ liệu thư mục và khóa ký SAML để giả mạo token đăng nhập, vượt qua cả xác thực đa yếu tố (tấn công Golden SAML).\nBản vá có cho vCenter 9.1.1.0200, 9.0.2.0200 và 8.0 U3m. Mandiant cảnh báo chỉ vá thôi chưa đủ nếu hệ thống đã bị xâm nhập trước đó, vì khóa bị đánh cắp và tài khoản cấy sẵn có thể vẫn tồn tại sau khi vá."
+ },
+ {
+  "ts": "2026-11-20T05:00:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Anthropic chào sàn Nasdaq: cổ phiếu ANT đóng cửa +17%, IPO lớn nhất lịch sử",
+  "summary": "Cổ phiếu Anthropic (mã ANT) mở cửa 111,50 USD, có lúc vốn hóa chạm ~2.000 tỷ USD, đóng cửa 97,17 USD (+17% so với giá IPO 83 USD); huy động 81,3 tỷ USD — IPO lớn nhất lịch sử.",
+  "url": "https://nypost.com/2026/11/19/business/anthropic-to-begin-trading-at-about-110-per-share-in-record-setting-ipo/",
+  "image": "https://nypost.com/wp-content/uploads/sites/2/2026/11/ipo-comp.jpg?quality=75&strip=all&w=1200",
+  "source": "New York Post",
+  "content": "Anthropic, công ty đứng sau chatbot Claude, đã có phiên giao dịch đầu tiên trên sàn Nasdaq với mã ANT. Cổ phiếu mở cửa ở 111,50 USD — cao hơn 34% so với giá IPO 83 USD — có lúc đẩy vốn hóa công ty chạm mốc ~2.000 tỷ USD, rồi đóng cửa ở 97,17 USD, vẫn tăng 17% so với giá chào bán.\nĐợt IPO huy động 81,3 tỷ USD (107 tỷ USD nếu tính cả phát hành riêng lẻ), trở thành IPO lớn nhất trong lịch sử, vượt kỷ lục của SpaceX. Hơn 813 triệu cổ phiếu đã đổi chủ trong ngày đầu, cũng vượt kỷ lục khối lượng giao dịch ngày ra mắt của SpaceX (522 triệu cổ phiếu). Đáng chú ý, ANT vẫn tăng điểm trong khi chỉ số Nasdaq giảm 2,2% cùng ngày.\nĐây là lần đầu một phòng lab AI hàng đầu niêm yết độc lập trên sàn chứng khoán. Theo các nguồn tin, đối thủ OpenAI dự kiến sẽ IPO vào năm 2027."
+ },
+ {
+  "ts": "2026-11-20T04:30:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Databricks mở public beta cho Genie ZeroOps, agent tự sửa pipeline dữ liệu",
+  "summary": "Genie ZeroOps tự động phát hiện, điều tra, xác minh, thông báo và đề xuất sửa lỗi data pipeline theo 5 bước; học từ hơn 80.000 sự cố thực tế; không tự thay đổi production khi chưa có người phê duyệt.",
+  "url": "https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer",
+  "image": "https://www.databricks.com/sites/default/files/2026-11/2026-11-Blog-Genie-ZeroOps-now-in-public-beta-What-we-re-building-after-feedback-from-80-000-customer-incidents-OG-1200x628-2x.png",
+  "source": "Databricks Blog",
+  "content": "Databricks đã mở public beta cho Genie ZeroOps, một agent tự động chuyên xử lý sự cố data pipeline. Agent này làm việc theo 5 bước: phát hiện (cả lỗi job lẫn lỗi âm thầm về độ tươi và đầy đủ của dữ liệu), điều tra (truy vấn log, code, metadata và lineage), xác minh (chạy unit test và dry-run trong sandbox), thông báo (qua Slack, Teams, PagerDuty) và đề xuất sửa chữa bằng cách tạo pull request.\nTrong giai đoạn private preview với hàng trăm khách hàng, ZeroOps đã quan sát hơn 80.000 sự cố thực tế, và Databricks rút ra rằng hơn một nửa số sự cố cần kiến thức riêng của từng tổ chức mới xử lý được — vì vậy bản public beta bổ sung hộp thư chung, thông báo, tạo PR một cú nhấp và hướng dẫn nghiệp vụ tùy chỉnh.\nĐiểm quan trọng về quản trị: ZeroOps không bao giờ tự thay đổi code hay dữ liệu production khi chưa có người phê duyệt; nó chỉ điều tra, đề xuất và đẩy bản sửa lên một branch mới để review."
+ },
+ {
+  "ts": "2026-11-20T02:53:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Amazon Polly ra mắt voice cloning: tạo giọng riêng từ vài phút ghi âm",
+  "summary": "Voice cloning trong Amazon Polly chính thức khả dụng: tạo giọng clone từ vài phút ghi âm của người đã đồng ý; 7 ngôn ngữ; tạo giọng miễn phí, tính phí theo mức dùng; giọng được mã hóa và có watermark.",
+  "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+  "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/19/ML-22432-featured-image.png",
+  "source": "AWS Machine Learning Blog",
+  "content": "Amazon Polly đã chính thức ra mắt tính năng voice cloning (dạng gated release): chỉ cần vài phút ghi âm của một người nói đã đồng ý, Polly sẽ tạo ra một giọng clone chạy trên Polly generative engine, có độ tự nhiên tương đương các giọng generative khác.\nTính năng ra mắt với 7 ngôn ngữ: tiếng Anh, Tây Ban Nha, Đức, Pháp, Ý, Bồ Đào Nha và Hindi; mỗi giọng clone chỉ nói được ngôn ngữ mà nó được ghi âm. Tạo giọng là miễn phí, phí sử dụng tính theo mức dùng; mỗi tài khoản có hạn mức ban đầu 10 giọng clone mỗi region, và cần đăng ký quyền truy cập qua đội ngũ AWS account team.\nVề an toàn: người dùng phải xác nhận sự đồng ý của người nói mỗi lần tạo giọng; giọng clone được mã hóa, gắn với tài khoản tạo ra, và âm thanh tổng hợp có gắn watermark. Polly không giữ bản ghi âm sau khi tạo giọng xong và không dùng chúng để huấn luyện mô hình."
+ },
+ {
+  "ts": "2026-11-20T01:31:00+07:00",
+  "flow": "internet",
+  "category": "Bảo mật",
+  "title": "Bitrise công bố báo cáo sự cố: nền tảng AI pentest ARTEX xâm nhập trong 25 ngày",
+  "summary": "Nền tảng AI pentest mã nguồn mở ARTEX thăm dò Bitrise 25 ngày, đăng nhập tài khoản test bot bỏ quên không có 2FA ngày 13/11 và chỉ ~11 phút sau đã dùng cloud key đánh cắp; Bitrise tắt toàn bộ nền tảng, thu hồi 919 key.",
+  "url": "https://bitrise.io/artex-incident-report",
+  "image": "https://bitrise.io/artex-incident-report/og.png",
+  "source": "Bitrise",
+  "content": "Bitrise đã công bố báo cáo sự cố chi tiết về một cuộc xâm nhập kéo dài 25 ngày (25/10–18/11/2026) do ARTEX, một nền tảng AI pentest mã nguồn mở, thực hiện. Các agent của ARTEX quét 36.698 request tới hơn 20 hostname của Bitrise, tự giới thiệu là một cuộc 'authorized pentest' mà không ai đặt hàng.\nBước quyết định diễn ra ngày 13/11: kẻ tấn công đăng nhập một tài khoản test bot nội bộ đã bỏ quên từ lâu, không có xác thực hai yếu tố, và chỉ khoảng 11 phút sau đã dùng cloud key đánh cắp để leo thang — lần lượt chạm tới file ký code, mã nguồn, trạng thái hạ tầng và build log của Bitrise. Bitrise phát hiện lúc 16:32 UTC, tắt toàn bộ nền tảng lúc 20:34 UTC, thu hồi toàn bộ 919 cloud service-account key và xoay mọi secret, rồi dựng lại hạ tầng từ nguồn tin cậy.\n15 workspace khách hàng bị truy cập trái phép (1 chứng chỉ ký code, 1 provisioning profile, 13 build log chẩn đoán); Bitrise khẳng định kho chứa secret của khách hàng không bị chạm tới. Báo cáo kèm log đầy đủ và các dấu vết nhận diện ARTEX: client string norma/0.4 và tên agent dạng i<number>."
+ },
+ {
+  "category": "Khoa học",
+  "flow": "internet",
+  "image": "https://i.ytimg.com/vi/2ovOnP_jSGo/hqdefault.jpg",
+  "source": "Thư Viện Thiên Văn (YouTube)",
+  "summary": "Video mới từ Thư Viện Thiên Văn: vật chất suy biến và áp suất suy biến electron — cơ chế giữ cho sao lùn trắng không sụp đổ dưới trọng lực của chính nó.",
+  "title": "Degenerate Matter and Electron Degeneracy Pressure | Astronomy Library",
+  "ts": "2026-11-19T15:00:00+07:00",
+  "url": "https://www.youtube.com/watch?v=2ovOnP_jSGo",
+  "content": "Video mới của kênh Thư Viện Thiên Văn (Astronomy Library) giải thích một khái niệm nền tảng của vật lý sao: vật chất suy biến và áp suất suy biến electron.\nKhi một ngôi sao như Mặt Trời cháy hết nhiên liệu, lõi của nó co lại thành sao lùn trắng. Lúc này, thứ chống lại trọng lực không còn là áp suất nhiệt mà là áp suất suy biến — hệ quả trực tiếp của nguyên lý loại trừ Pauli: hai electron không thể chiếm cùng một trạng thái lượng tử, nên chúng \"đẩy\" lại lực nén một cách cực kỳ hiệu quả dù vật chất đã nguội.\nĐây cũng là cơ chế đặt ra giới hạn Chandrasekhar (~1,4 khối lượng Mặt Trời) — ngưỡng mà nếu vượt qua, áp suất suy biến electron không còn đủ sức giữ ngôi sao và sụp đổ sẽ tiếp diễn. Bấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube."
+ },
+ {
+  "category": "Game",
+  "flow": "internet",
+  "image": "https://i.ytimg.com/vi/xkodJuHFHJc/hqdefault.jpg",
+  "source": "Phê Game (YouTube)",
+  "summary": "Video mới từ kênh Phê Game về chủ đề game gây tranh cãi (TGB).",
+  "title": "Controversial TGB",
+  "ts": "2026-11-19T15:00:00+07:00",
+  "url": "https://www.youtube.com/watch?v=xkodJuHFHJc",
+  "content": "Video mới từ kênh Phê Game với chủ đề xoay quanh \"TGB\" — một đề tài đang gây tranh cãi trong cộng đồng game thủ.\nBấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube kèm phần bình luận của cộng đồng."
+ },
+ {
+  "category": "Facebook",
+  "flow": "facebook",
+  "image": null,
+  "source": "J2Team Community",
+  "summary": "Bài thảo luận trong J2Team về kế hoạch IPO của Anthropic — một trong những thương vụ lên sàn lớn nhất lịch sử ngành AI, định giá vượt 1,4 nghìn tỷ USD.",
+  "title": "Anthropic hướng tới IPO kỷ lục",
+  "ts": "2026-11-19T11:30:00+07:00",
+  "url": "https://facebook.com/groups/j2team.community/permalink/3255669551431809/",
+  "content": "Anthropic — công ty đứng sau dòng trợ lý AI Muse — đang tiến những bước rõ rệt tới việc phát hành cổ phiếu lần đầu ra công chúng (IPO), với mức định giá được nhắc tới vượt 1,4 nghìn tỷ USD.\nNếu diễn ra ở quy mô này, đây sẽ là một trong những thương vụ IPO lớn nhất lịch sử ngành công nghệ, đánh dấu giai đoạn các phòng thí nghiệm AI chuyển từ gọi vốn tư nhân sang thị trường đại chúng.\nBài đăng trong J2Team Community tổng hợp các thông tin quanh kế hoạch này và mở ra nhiều thảo luận về định giá, cạnh tranh với OpenAI và tác động tới thị trường AI nói chung. Bấm \"Mở nguồn gốc\" để đọc bài và phần bình luận trong group."
+ },
+ {
+  "category": "Facebook",
+  "flow": "facebook",
+  "image": null,
+  "source": "Kosocho",
+  "summary": "Bài đăng tương tác cao trong group Kosocho về đợt điều chỉnh giá xăng — xăng giảm xuống còn 18.670 đồng/lít.",
+  "title": "Giá xăng giảm còn 18.670 đồng/lít",
+  "ts": "2026-11-19T10:00:00+07:00",
+  "url": "https://facebook.com/groups/kosocho/permalink/2896167227459011/",
+  "content": "Bài đăng trong group Kosocho về đợt điều chỉnh giá xăng mới nhất: giá xăng giảm xuống còn 18.670 đồng/lít.\nĐây là một trong những bài có tương tác cao nhất group trong kỳ — chủ đề giá nhiên liệu luôn thu hút sự quan tâm lớn vì ảnh hưởng trực tiếp tới chi phí đi lại và sinh hoạt hằng ngày.\nBấm \"Mở nguồn gốc\" để xem bài đăng và phản ứng của cộng đồng trong group."
+ },
+ {
+  "category": "Facebook",
+  "flow": "facebook",
+  "image": null,
+  "source": "J2Team Community",
+  "summary": "Bản điểm tin tổng hợp của J2Team Community: lỗ hổng NGINX HTTP/2 10 năm tuổi cho phép RCE không cần xác thực, Anthropic tiến tới IPO với định giá hơn 1,4 nghìn tỷ USD, Windows Server 2028 siết bảo mật mặc định, vụ tấn công chip flash qua mặt TPM/BitLocker, cơn sốt GTA 6 và 7 tin công nghệ khác.",
+  "title": "📣 Điểm tin buổi sáng J2Team — 19/11/2026",
+  "ts": "2026-11-19T08:05:00+07:00",
+  "url": "https://facebook.com/groups/j2team.community/permalink/3254520771546687/",
+  "content": "Bản điểm tin buổi sáng thường nhật của J2Team Community — tổng hợp nhanh các tin công nghệ và an ninh mạng đáng chú ý nhất trong ngày:\n1. Lỗ hổng 10 năm tuổi trong NGINX HTTP/2 cho phép thực thi mã từ xa (RCE) mà không cần xác thực.\n2. Anthropic hướng tới IPO với định giá hơn 1,4 nghìn tỷ USD.\n3. Windows Server 2028 đánh đổi khả năng tương thích ngược để lấy bảo mật mặc định nghiêm ngặt hơn.\n4. Google Wallet xuất hiện trên iPhone nhưng Apple chặn tính năng chạm để thanh toán (tap-to-pay).\n5. Kỹ thuật tấn công chip flash mới qua mặt được TPM, Windows Hello PIN và BitLocker.\n6. Cơn sốt GTA 6: dân văn phòng phương Tây xin nghỉ phép hàng loạt chờ ngày game ra mắt.\n7. Ukraine dùng drone tiếp sóng tín hiệu để vượt giới hạn Starlink trong vụ tấn công cầu Kerch.\n8. Google đổi tên AI agent Spark thành Tasks, cho dùng thử miễn phí.\n9. Hiệu năng đồ họa của Ubuntu 27.04 bản sớm tăng vọt.\n10. Tin nhắn nội bộ bị rò rỉ: nhân viên Meta lo ngại trợ lý AI Muse xâm phạm quyền riêng tư.\n11. Mỹ thúc đẩy xây trung tâm dữ liệu AI và chip chiến lược tại Philippines.\n12. iOS 27.3 bổ sung 5 tính năng AI theo dõi sức khỏe.\nBấm \"Mở nguồn gốc\" để xem bài điểm tin đầy đủ kèm thảo luận trong group."
+ }
 ]
