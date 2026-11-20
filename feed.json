@@ -1,5 +1,93 @@
 [
   {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Google đưa Genie 4 lên Gemini API — mô hình \"world model\" tạo thế giới chơi được theo thời gian thực",
+    "summary": "Google mở Genie 4 cho lập trình viên qua Gemini API và AI Studio: tạo thế giới liên tục 720p/24fps kèm âm thanh đồng bộ từ câu lệnh hoặc ảnh tham chiếu, phiên tối đa 120 giây, giá khoảng 0,10 USD/giây.",
+    "content": "Google đã mở Genie 4 cho lập trình viên qua Gemini API (Interactions API) và Google AI Studio, một ngày sau khi ra mắt trong Project Genie cho thuê bao AI Ultra.\nTừ một câu lệnh văn bản, ảnh tham chiếu hoặc cả hai, Genie 4 tạo ra thế giới liên tục độ phân giải 720p, 24 khung hình/giây, kèm âm thanh đồng bộ — âm thanh môi trường, hiệu ứng và cả lời thoại nhân vật — và phản hồi phím điều khiển trong khoảng 0,2–0,5 giây.\nMọi khung hình đều gắn watermark SynthID. Phiên làm việc tối đa 120 giây, giá khoảng 0,10 USD/giây.\nGoogle gợi ý dùng cho việc xây game tương tác, mô phỏng không gian và huấn luyện robot/agent bằng môi trường tổng hợp.",
+    "url": "https://www.testingcatalog.com/google-opens-genie-4-world-model-to-developers-in-gemini-api/",
+    "image": null,
+    "source": "TestingCatalog"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Tencent mở trọng số Hy4 — mô hình MoE 770B tham số, context 1 triệu token",
+    "summary": "Tencent công bố mở trọng số Hy4 ngày 20/11: MoE 770 tỷ tham số, 49 tỷ active mỗi token, context 1.048.576 token, ba checkpoint trên Hugging Face — nhưng dùng giấy phép riêng Tencent Hy License thay vì Apache 2.0.",
+    "content": "Tencent công bố trên X ngày 20/11 việc mở trọng số Hy4, mô hình flagship của dòng Hunyuan.\nKiến trúc mixture-of-experts với 770 tỷ tham số tổng, 49 tỷ tham số hoạt động mỗi token, cửa sổ ngữ cảnh 1.048.576 token, hỗ trợ văn bản, hình ảnh và video.\nBa checkpoint lên Hugging Face, ModelScope và GitCode: Hy4 (instruct), Hy4-FP8 và Hy4 base, kèm system card. Tổng dung lượng bản BF16 khoảng 1,55 TB nên đây là mô hình cho trung tâm dữ liệu, chạy qua vLLM/SGLang.\nLưu ý giấy phép: khác bản preview Hy4 hồi tháng 8 dùng Apache 2.0, Hy4 dùng giấy phép riêng \"Tencent Hy License\", yêu cầu giấy phép riêng cho doanh nghiệp mô hình-dịch-vụ doanh thu trên 50 triệu USD hoặc sản phẩm trên 100 triệu người dùng/tháng.",
+    "url": "https://news.sulat.com/2026/11/20/tencent-hy4-open-weights/",
+    "image": null,
+    "source": "Sulat AI & Tech News"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Điều tra của Reuters: trợ lý AI Muse của Meta lẫn lộn hội thoại, chạm tới cả tin nhắn Signal",
+    "summary": "Reuters (18/11) dẫn bài đăng nội bộ của nhân viên Meta: Muse gửi tin nhắn/số dư không phải của người nhận, thậm chí nhắc trả lời tin nhắn trên Signal; Meta gọi đây là các \"sự cố riêng lẻ\".",
+    "content": "Reuters (18/11) dẫn hơn hai chục bài đăng nội bộ của nhân viên Meta về trợ lý AI Muse — ứng dụng ra mắt tháng 9/2026, đã vượt 10 triệu lượt tải.\nNhân viên báo cáo Muse gửi cho họ những tin nhắn không phải của mình: yêu cầu trông trẻ, số dư ngân hàng, đơn hàng chưa từng đặt — thậm chí nhắc trả lời tin nhắn của người thân trên Signal, ứng dụng mã hóa đầu cuối mà Muse lẽ ra không có quyền đọc.\nReuters phối hợp với Signal và AI Now Institute tái hiện được đường truy cập qua quyền thông báo đẩy trên Android và quyền trợ năng/chụp màn hình trên macOS; trên iPhone đường này đã bị chặn.\nMeta gọi đây là các \"sự cố riêng lẻ\", cho rằng nhiều trường hợp là ảo giác đã được sửa — nhưng Reuters lưu ý chưa xác minh được các số dư hiển thị là dữ liệu thật của người khác hay số liệu bịa. Đây là lời cảnh báo thực tế về ranh giới quyền của AI agent khi nó được cấp quyền sâu trên thiết bị.",
+    "url": "https://www.reuters.com/investigations/meta-bets-big-muse-ai-agent-early-safety-mishaps-surface-2026-11-18/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Lỗ hổng Cisco Expressway CVE-2026-76466 (9.8) đã bị khai thác thực tế",
+    "summary": "F6 ghi nhận vụ khai thác đầu tiên ngày 18/11: kẻ tấn công vào một tổ chức Nga qua hai máy chủ Expressway sau khi mã khai thác công khai; lỗi cho chạy lệnh root trên cụm Expressway, vá X15.5.20 từ 21/10.",
+    "content": "Hãng bảo mật Nga F6 ghi nhận vụ khai thác đầu tiên ngày 18/11: kẻ tấn công xâm nhập một tổ chức tại Nga qua hai máy chủ Expressway hướng Internet, rồi dùng chúng làm bàn đạp lan sang các máy chủ khác trong mạng — ngay sau khi mã khai thác công khai xuất hiện trên GitHub.\nLỗ hổng CVE-2026-76466 (CVSS 9.8) cho phép kẻ chưa xác thực chạy lệnh với quyền root trên các cụm Expressway-C/E, do lỗi cookie bền vững và kiểm tra chứng chỉ client chưa đủ khi bật TLS Verify Mode.\nCisco đã vá từ 21/10 (bản X15.5.20) nhưng khuyến cáo của hãng tới sáng 20/11 vẫn ghi \"chưa biết có khai thác\" — các hệ X14 trở xuống không có bản vá tại chỗ, phải nâng cấp lên bản mới.",
+    "url": "https://www.kbytechnologies.com/news-security/cisco-expressway-cve-2026-76466-exploited-f6-november-2026",
+    "image": null,
+    "source": "KB Technologies"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Ủy ban châu Âu xác nhận bị tấn công mạng có AI hỗ trợ — công cụ ARTEX",
+    "summary": "Ủy ban châu Âu ngày 19/11 xác nhận chiến dịch mạng \"có AI hỗ trợ\" làm gián đoạn hệ thống nội bộ hơn 10 ngày: Sysper và MyPMO phải tạm ngắt; chưa có bằng chứng rò rỉ dữ liệu diện rộng.",
+    "content": "Ủy ban châu Âu ngày 19/11 xác nhận bị một chiến dịch mạng \"có AI hỗ trợ\" làm gián đoạn hệ thống nội bộ hơn 10 ngày.\nNền tảng nhân sự Sysper (bảng lương, chấm công, nghỉ phép) và hệ thống hoàn trả y tế MyPMO phải tạm ngắt, dịch vụ dịch thuật cũng bị ảnh hưởng; hầu hết đã khôi phục trong tuần, song Sysper lại sập thêm một lần hôm thứ Tư.\nTheo Politico, CERT-EU phát hiện kẻ tấn công dùng ARTEX — framework pentest tự động bằng AI mã nguồn mở, cũng là công cụ trong vụ Bitrise (đã báo ở bản 10:00) và bị FBI cảnh báo ngày 13/11.\nỦy ban cho biết chưa có bằng chứng rò rỉ dữ liệu nhân viên trên diện rộng và không có yêu cầu tiền chuộc; chưa xác định được thủ phạm hay dữ liệu nào bị lấy đi.",
+    "url": "https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103",
+    "image": null,
+    "source": "The Register"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6: ước tính cuối ngày phát hành lên 2,36 tỷ USD với 24,6 triệu bản",
+    "summary": "Sensor Tower cập nhật: cuối ngày phát hành 19/11, GTA 6 thu ước tính 2,36 tỷ USD từ 24,6 triệu bản — tăng 520 triệu USD so với buổi sáng; đặt trước riêng đã vượt 2 tỷ USD; PS5 chiếm ~75%.",
+    "content": "Sensor Tower cập nhật: tính đến cuối ngày phát hành 19/11, GTA 6 đã thu ước tính 2,36 tỷ USD từ khoảng 24,6 triệu bản kỹ thuật số trên PS5 và Xbox Series X|S (gồm cả đặt trước) — tăng thêm 520 triệu USD so với con số buổi sáng (1,84 tỷ USD / 19,05 triệu bản, đã báo ở bản 13:00).\nRiêng đặt trước đã vượt 2 tỷ USD, đưa GTA 6 thành game bán chạy nhất 2026 trước cả khi mở bán; PlayStation chiếm ~75% doanh số (18,44 triệu bản, 1,77 tỷ USD), Xbox ~25%.\nCon số gấp gần 3 lần kỷ lục ngày đầu của GTA V (815,7 triệu USD, 11,21 triệu bản). Take-Two chưa công bố số liệu chính thức nhưng cho biết sẽ chia sẻ sớm; Newzoo dự báo doanh thu tuần đầu 3,3–5,2 tỷ USD.",
+    "url": "https://www.notebookcheck.net/GTA-6-passes-2-36-billion-in-estimated-launch-day-sales.1455216.0.html",
+    "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/gta-6-netfloix-deal691087.jpg",
+    "source": "Notebookcheck"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Video Phê Game: \"Những Vụ Bê Bối Khiến Các Tựa Game BỊ CẤM CỬA Và NÉM ĐÁ\"",
+    "summary": "Video mới của Phê Game điểm lại những vụ bê bối khiến nhiều tựa game bị cấm cửa và hứng chỉ trích dữ dội. Đăng 19/11 — video chưa từng được báo trong các bản tin trước.",
+    "content": "Video mới của Phê Game điểm lại những vụ bê bối khiến nhiều tựa game bị cấm cửa và hứng chỉ trích dữ dội.\nĐăng ngày 19/11 — video nằm trong cửa sổ 48 giờ và chưa từng được báo trong các bản tin trước.",
+    "url": "https://www.youtube.com/watch?v=xkodJuHFHJc",
+    "image": "https://i.ytimg.com/vi/xkodJuHFHJc/hqdefault.jpg",
+    "source": "Phê Game"
+  },
+  {
+    "ts": "2026-11-20T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Video Phân Tích Game: \"🔴Chơi thử Grand Theft Auto 6 - NGÀY 3\"",
+    "summary": "Phân Tích Game tiếp tục livestream trải nghiệm GTA 6 sang ngày thứ ba sau khi game phát hành (sau NGÀY 2 đã báo ở bản 13:00). Đăng 20/11.",
+    "content": "Phân Tích Game tiếp tục livestream trải nghiệm GTA 6 sang ngày thứ ba sau khi game phát hành.\nĐây là phần tiếp theo của series livestream GTA 6 của kênh — NGÀY 2 đã được báo trong bản tin 13:00 cùng ngày.",
+    "url": "https://www.youtube.com/watch?v=qCvKjNXdzOI",
+    "image": "https://i.ytimg.com/vi/qCvKjNXdzOI/hqdefault.jpg",
+    "source": "Phân Tích Game"
+  },
+  {
     "ts": "2026-11-20T14:30:00+07:00",
     "flow": "facebook",
     "category": "Facebook",
