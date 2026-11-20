@@ -1,5 +1,148 @@
 [
   {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "“Siêu hacker” Arion Kurtaj nhận tội vụ rò rỉ GTA 6",
+    "summary": "Arion Kurtaj (Lapsus$) chính thức nhận tội vụ rò rỉ GTA 6 năm 2022; lúc 17 tuổi, cậu dùng TV khách sạn và Fire Stick để đánh cắp 90 video thử nghiệm. Tòa tuyên án ngày 23/11.",
+    "content": "Vào tháng 9/2022, hàng loạt dữ liệu tuyệt mật của GTA 6 bị phát tán lên mạng. Đằng sau vụ rò rỉ là Arion Kurtaj (khi đó mới 17 tuổi), thành viên nhóm tin tặc Lapsus$.\nThời điểm gây án, Kurtaj đang bị cảnh sát Anh điều tra và được bố trí ở một khách sạn giá rẻ tại Bicester (Oxfordshire), kèm lệnh cấm truy cập internet và bị tịch thu laptop. Tuy nhiên, cậu đã dùng chiếc TV trong phòng, cắm Amazon Fire Stick, kết nối thêm điện thoại, bàn phím và chuột không dây để vượt qua bảo mật của Rockstar Games.\nKurtaj đánh cắp 90 đoạn video thử nghiệm chưa hoàn thiện của GTA 6 (gần 50 phút) cùng một phần mã nguồn, rồi nhắn tin đe dọa nhân viên Rockstar qua kênh nội bộ. Khi hãng phớt lờ tối hậu thư, cậu dùng bí danh TeaPotUberHacker tung toàn bộ video lên mạng. Rockstar xác nhận sự cố tốn khoảng 5 triệu USD và hàng nghìn giờ khắc phục.\nNăm 2023, giám định y khoa kết luận Kurtaj mắc chứng tự kỷ nặng, không đủ năng lực hầu tòa thông thường; bồi thẩm đoàn vẫn xác định cậu là thủ phạm và tòa phán quyết điều trị bắt buộc vô thời hạn tại bệnh viện tâm thần an ninh cao. Gần đây sức khỏe tâm thần của Kurtaj ổn định, và trong phiên xét xử thứ Hai 16/11, Kurtaj — nay 21 tuổi — đã chính thức nhận tội. Thẩm phán sẽ tuyên án cuối cùng vào thứ Hai tuần tới (23/11).",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3256795767985854/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Bộ gõ Sen Việt (VieLotus) chính thức lên Debian Testing",
+    "summary": "Sau khi được sponsor vào Debian Unstable, bộ gõ Sen Việt (VieLotus) đã chính thức có mặt trên Debian Testing — gõ song ngữ Anh–Việt kiểu Telex, offline, hỗ trợ macOS, Windows, Linux, iOS và Android.",
+    "content": "Bộ gõ Sen Việt (VieLotus) đã chính thức có mặt trên Debian Testing, sau khi được sponsor vào Debian Unstable — một cột mốc nhỏ nhưng ý nghĩa với dự án mã nguồn mở này.\nSen Việt hướng đến trải nghiệm gõ song ngữ Anh–Việt ngay trong chế độ Telex, không cần chuyển đổi ngôn ngữ, hoạt động offline và không thu thập dữ liệu. Ví dụ, người dùng có thể gõ liên tục câu: “Check hardware, firmware và software, kiểm tra network, system logs và quyền truy cập trước khi restart server để đảm bảo hệ thống hoạt động ổn định.”\nBộ gõ hỗ trợ macOS, Windows, Linux; mobile có iOS và Android. Mã nguồn trên GitHub và gói Debian đã có trên tracker của Debian.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3256526574679440/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Học system design bằng hình trực quan",
+    "summary": "Trang designed-to-scale.vercel.app trình bày system design dạng trực quan, dễ hiểu cho người mới; tác giả Dilum Sanjaya còn nhiều nội dung khác trên X.",
+    "content": "Một bài chia sẻ trong group giới thiệu trang designed-to-scale.vercel.app của tác giả Dilum Sanjaya — nơi trình bày system design dạng trực quan hóa, dễ hiểu cho người mới bắt đầu.\nTác giả còn nhiều nội dung khác, độc giả có thể xem thêm trên X tại tài khoản của Dilum Sanjaya.\nBài đăng nhận 286 lượt tương tác trong group.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3256547008010730/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Triển khai AI agent trên Kubernetes bằng kagent",
+    "summary": "Thảo luận về cách triển khai AI agent trên Kubernetes theo hướng khai báo bằng YAML với kagent (CNCF Sandbox), quản lý qua GitOps, dùng tool qua MCP — kèm các lỗi thực tế khi setup.",
+    "content": "Bài thảo luận đặt câu hỏi: triển khai AI agent trên Kubernetes có nhất thiết phải build Docker image cho từng agent? Một hướng tiếp cận được nêu là quản lý agent dưới dạng Kubernetes Custom Resource, qua kagent — framework open-source thuộc CNCF Sandbox — thay vì viết code Python, build image và cấu hình Deployment, Service cho từng agent.\nVề kiến trúc, ba điểm đáng chú ý: cấu hình LLM tách khỏi agent qua ModelConfig giúp đổi model provider linh hoạt; agent tương tác với Kubernetes, Helm, Prometheus và Grafana qua MCP; các thao tác rủi ro như xóa resource có thể cấu hình yêu cầu phê duyệt trước.\nBài viết cũng ghi lại các lỗi thực tế khi triển khai: lệnh helm repo add lỗi 404 do chart phân phối qua OCI registry thay vì Helm repository truyền thống; PostgreSQL kẹt trạng thái Pending khi StorageClass dùng WaitForFirstConsumer, phải tạo PVC thủ công; flag --set baseURL không cập nhật đúng ModelConfig, phải patch trực tiếp field baseUrl, sai tên field khiến request gửi về endpoint mặc định của OpenAI và lỗi 401; và có đầy đủ tool chưa chắc agent đã dùng — system prompt không đủ cụ thể thì agent có thể chỉ trả lời bằng text thay vì gọi tool.\nTác giả mất khoảng 30 phút triển khai toàn bộ stack trên cluster 14 node, gồm cả thời gian debug. Bài đăng mời anh em trong group chia sẻ kinh nghiệm vận hành AI agent trên Kubernetes khi số lượng agent tăng lên.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3256559514676146/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Phu nhân Chủ tịch Trung Quốc trầm trồ trước tà áo dài tại APEC 2026",
+    "summary": "Khoảnh khắc viral tại APEC 2026: Phu nhân Chủ tịch Trung Quốc Tập Cận Bình trầm trồ trước tà áo dài của phu nhân Ngô Phương Ly — bài tương tác cao nhất nhóm Kosocho hôm nay.",
+    "content": "Bài đăng đang viral trong nhóm Kosocho ghi lại khoảnh khắc tại APEC 2026: Phu nhân Chủ tịch Trung Quốc Tập Cận Bình trầm trồ trước tà áo dài của phu nhân Ngô Phương Ly.\nĐây là bài có tương tác cao nhất nhóm trong ngày, với gần 4.000 lượt tương tác.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2897088410700226/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Drama em gái chồng: câu chuyện “bê 10 nghìn bát phở” gây tranh cãi",
+    "summary": "Bài chia sẻ của em gái chồng về anh trai đi Hàn từ 2019, vợ ở nhà với 3 con, đang khiến dân mạng dậy sóng trong nhóm Kosocho với hơn 3.000 lượt tương tác.",
+    "content": "Theo lời em gái chồng, anh trai mình sang Hàn Quốc làm việc từ năm 2019. Vì Covid nên suốt gần 3 năm không thể về Việt Nam; ở nhà lúc đó còn vợ và 3 con trai.\nTrong thời gian ở Hàn, người anh quen người phụ nữ hiện tại và đến năm 2022, khi đường bay mở lại, cả hai cùng về Việt Nam và thuê nhà ở gần gia đình. Người vợ lúc đầu không hề hay biết; thấy chồng thường xuyên ra ngoài chỉ nghĩ anh đi cà phê, uống bia, gặp bạn bè.\nCho đến khi mọi chuyện bị phát hiện. Ban đầu anh trai nói sẽ chọn vợ con, nhưng không lâu sau lại nhất quyết đòi ly hôn. Khi thấy người phụ nữ kia đăng bài kể về hành trình vất vả “bê 10 nghìn bát phở” để có căn nhà hiện tại, người em chồng đã lên tiếng phản đối gay gắt.\nBài đăng nhận hơn 3.000 lượt tương tác và 674 bình luận trong nhóm.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2897195227356211/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Hệ thống nhận diện đám cháy phun nước nhưng quên cảm biến nhiệt",
+    "summary": "Video hài đang lan truyền trong nhóm Kosocho: một nơi nào đó bên Trung lắp hệ thống nhận diện đám cháy và phun nước dập lửa ngay, nhưng có lẽ quên lắp cảm biến nhiệt.",
+    "content": "Video đang lan truyền trong nhóm cho thấy một hệ thống được lắp đặt để nhận diện đám cháy và lập tức phun nước dập lửa — nhưng có lẽ người lắp chỉ mới lắp hệ thống nhận diện mà quên cảm biến nhiệt.\nBài đăng nhận 459 lượt tương tác.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2897322690676798/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Hải sản tươi sống trong ngày: tôm sú, ghẹ, cua, mực câu tay",
+    "summary": "Một sạp hải sản trong chợ khu rao bán hải sản tươi sống đủ loại trong ngày 20/11: tôm sú 470k/kg, ghẹ xanh 580k/kg, cua tự nhiên 450–870k/kg, mực câu tay 320–540k/kg, cùng nhiều loại ốc, ngao, cá và đồ khô.",
+    "content": "Một sạp hải sản trong chợ khu rao bán hải sản tươi sống trong ngày 20/11, đủ loại:\nTôm sú sống bơi to vip 22–23 con/kg: 470k/kg; tôm bộp biển bơi to 30–40 con/kg: 430k/kg. Ốc hương to: 280k/kg; ngao hoa đen to: 190k/kg; ngao 2 cồi to: 200k/kg; ngao trắng: 40k/kg; hàu sữa to béo: 60k/kg (tách +5k/kg, ship từ 2kg).\nCá bơi sống: cá diêu hồng 90k/kg, cá chép 90k/kg, cá lóc 100k/kg, cá tầm Sapa 180k/kg, cá chép giòn 180k/kg, cá lăng đen 150k/kg, cá song hổ (cá mú) 290k/kg; cá hồi Na Uy phi lê tươi: 690k/kg.\nGhẹ xanh lưới to vip 3–4 con/kg: 580k/kg. Cua tự nhiên không dây: cua tứ + yếm đào 450k/kg, cua thịt 650–690k/kg, cua gạch 820–870k/kg, cua thịt sale 400k/kg. Cốt lẩu hải sản 70k/túi (mua kèm), set lẩu hải sản từ 400k–1 triệu.\nHải sản cấp đông: tôm sú tươi cấp rời 340k/kg, tôm bộp 280k/kg, tuộc 230–300k/kg; mực ống câu tay 320–450k/kg, mực trứng câu tay 440–540k/kg, mực lá câu 380k/kg, mực 1 nắng 440k/kg. Cá phèn hồng 1 nắng 150k/kg, cá nục 1 nắng 140k/kg, cá thu 1 nắng 320k/kg. Đồ khô: cá chỉ vàng 250–300k/kg, mực khô Quảng Ninh 1,35–1,5 triệu/kg.\nSạp miễn ship trong khu và vùng lân cận.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4784662511770759/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Giả cầy, bún giả cầy, thịt chưng mắm tép, thịt nấu đông",
+    "summary": "Một bếp trong chợ khu gửi thực đơn hôm nay: giả cầy 120k, set bún giả cầy 150k, thịt chưng mắm tép 120k, thịt nấu đông kèm dưa muối 115k, vỏ ram gói nem loại 1 giá 45k. Ship sau 11h trưa và sau 18h30 hằng ngày, có nhận ship sảnh.",
+    "content": "Một bếp trong chợ khu gửi thực đơn hôm nay:\nGiả cầy: 120k. Set bún giả cầy đầy đặn: 150k. Thịt chưng mắm tép: 120k. Bún thêm: 10k. Thịt nấu đông kèm dưa muối: 115k. Vỏ ram gói nem loại 1 (loại bếp đang dùng): 45k.\nNhận ship sau 11h trưa và sau 18h30 hằng ngày; cần sớm hơn thì nhắn bếp chủ động giao; có nhận ship sảnh.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4784666841770326/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Quýt đẹp thắp hương Rằm: 60k/2kg, 85k/3kg",
+    "summary": "Một sạp trong chợ khu về lô quýt tươi phục vụ thắp hương Rằm: quả đều, mã sáng, ngọt mọng nước; giá 60k/2kg, 85k/3kg. Nhắn số lượng, sạp ship tận nơi.",
+    "content": "Một sạp trong chợ khu về lô quýt tươi phục vụ thắp hương Rằm tháng này. Lô quýt hôm nay quả đều, mã sáng bóng, tươi ngon, bao ngon ngọt, mọng nước.\nGiá chạy số lượng: 60k/2kg; 85k/3kg (khuyến khích lấy combo 3kg cho lợi giá).\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4784665495103794/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Trứng ngâm tương 50k/hộp, kim chi cải thảo 70k/kg",
+    "summary": "Một sạp trong chợ khu bán trứng ngâm tương lòng đào 50k/hộp 5 quả và kim chi cải thảo 70k/kg (40k/0,5kg), ship từ 5 giờ chiều nay thứ 6. Trứng để ngăn mát được 3 ngày, miễn phí ship tận phòng.",
+    "content": "Một sạp trong chợ khu bán trứng ngâm tương và kim chi cải thảo, ship từ 5 giờ chiều nay thứ 6; chiều nay có mẻ mới.\nTrứng ngâm tương lòng đào béo ngậy, ngâm tương đậm đà thơm mè rang, thêm ớt, hành và gia vị ngấm từng quả; lòng đỏ sánh mịn, béo tan; nước tương mặn ngọt vừa miệng. Giá 50k/hộp 5 quả; trứng để ngăn mát được 3 ngày.\nKim chi cải thảo: 70k/kg, 40k/0,5kg. Miễn phí ship tận phòng.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4784657655104578/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Lẩu ếch: set nhỏ 380k/4 người, set lớn 500k/6 người",
+    "summary": "Một sạp trong chợ khu bán set lẩu ếch: set nhỏ 380k cho 4 người, set lớn 500k cho 6 người; nước lẩu măng cay nấu tươi mỗi ngày, thịt ếch to chắc, rau và gia vị ăn kèm tươi ngon.",
+    "content": "Một sạp trong chợ khu bán lẩu ếch:\nSet lẩu nhỏ: 380k/set cho 4 người. Set lẩu lớn: 500k/set cho 6 người.\nNước lẩu măng cay ấm nóng, đậm đà, được nấu tươi mỗi ngày, không phải loại nước lẩu công nghiệp đóng sẵn. Thịt ếch to, chắc, ngọt thịt. Rau và các gia vị ăn kèm tươi ngon, sạch.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4784656255104718/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-20T14:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Cà phê Đắk Lắk nguyên chất: bột 180k/500g, hạt rang 160k/500g",
+    "summary": "Một sạp trong chợ khu bán cà phê Đắk Lắk 100% Robusta Sẻ thuần cổ, hái chín 100%, rang mộc: cà phê bột 180k/500g (320k/kg), cà phê hạt rang 160k/500g (300k/kg); tặng kèm công thức pha chế.",
+    "content": "Một sạp trong chợ khu bán cà phê Đắk Lắk nguyên chất: 100% Robusta Sẻ thuần cổ thu hoạch từ vườn của gia đình tại Đắk Lắk. Dòng Sẻ hạt tuy nhỏ nhưng đượm dầu, vị đắng êm, thơm nồng và hậu vị ngọt sâu.\nHái chín 100%, rang mộc hoàn toàn, không hương liệu, không pha tạp. Pha phin truyền thống đậm đà; ủ Cold Brew dịu mát, ngọt hậu mượt mà.\nBảng giá ưu đãi: cà phê bột (xay sẵn) 180k/500g, 320k/kg; cà phê hạt rang 160k/500g, 300k/kg. Tặng kèm công thức pha chế độc quyền chuẩn vị quán tại nhà cho mỗi đơn hàng.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4784666581770352/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-20T13:00:00+07:00",
     "flow": "internet",
     "category": "Game",
