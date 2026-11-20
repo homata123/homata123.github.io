@@ -1,1 +1,57 @@
-[{"category":"Facebook","flow":"facebook","image":null,"source":"J2Team Community","summary":"Bản điểm tin tổng hợp của J2Team Community: lỗ hổng NGINX HTTP/2 10 năm tuổi cho phép RCE không cần xác thực, Anthropic tiến tới IPO với định giá hơn 1,4 nghìn tỷ USD, Windows Server 2028 siết bảo mật mặc định, vụ tấn công chip flash qua mặt TPM/BitLocker, cơn sốt GTA 6 và 7 tin công nghệ khác.","title":"📣 Điểm tin buổi sáng J2Team — 19/11/2026","ts":"2026-11-19T08:05:00+07:00","url":"https://facebook.com/groups/j2team.community/permalink/3254520771546687/"},{"category":"Facebook","flow":"facebook","image":null,"source":"J2Team Community","summary":"Bài thảo luận trong J2Team về kế hoạch IPO của Anthropic — một trong những thương vụ lên sàn lớn nhất lịch sử ngành AI, định giá vượt 1,4 nghìn tỷ USD.","title":"Anthropic hướng tới IPO kỷ lục","ts":"2026-11-19T11:30:00+07:00","url":"https://facebook.com/groups/j2team.community/permalink/3255669551431809/"},{"category":"Facebook","flow":"facebook","image":null,"source":"Kosocho","summary":"Bài đăng tương tác cao trong group Kosocho về đợt điều chỉnh giá xăng — xăng giảm xuống còn 18.670 đồng/lít.","title":"Giá xăng giảm còn 18.670 đồng/lít","ts":"2026-11-19T10:00:00+07:00","url":"https://facebook.com/groups/kosocho/permalink/2896167227459011/"},{"category":"Khoa học","flow":"internet","image":"https://i.ytimg.com/vi/2ovOnP_jSGo/hqdefault.jpg","source":"Thư Viện Thiên Văn (YouTube)","summary":"Video mới từ Thư Viện Thiên Văn: vật chất suy biến và áp suất suy biến electron — cơ chế giữ cho sao lùn trắng không sụp đổ dưới trọng lực của chính nó.","title":"Degenerate Matter and Electron Degeneracy Pressure | Astronomy Library","ts":"2026-11-19T15:00:00+07:00","url":"https://www.youtube.com/watch?v=2ovOnP_jSGo"},{"category":"Game","flow":"internet","image":"https://i.ytimg.com/vi/xkodJuHFHJc/hqdefault.jpg","source":"Phê Game (YouTube)","summary":"Video mới từ kênh Phê Game về chủ đề game gây tranh cãi (TGB).","title":"Controversial TGB","ts":"2026-11-19T15:00:00+07:00","url":"https://www.youtube.com/watch?v=xkodJuHFHJc"}]
+[
+ {
+  "category": "Khoa học",
+  "flow": "internet",
+  "image": "https://i.ytimg.com/vi/2ovOnP_jSGo/hqdefault.jpg",
+  "source": "Thư Viện Thiên Văn (YouTube)",
+  "summary": "Video mới từ Thư Viện Thiên Văn: vật chất suy biến và áp suất suy biến electron — cơ chế giữ cho sao lùn trắng không sụp đổ dưới trọng lực của chính nó.",
+  "title": "Degenerate Matter and Electron Degeneracy Pressure | Astronomy Library",
+  "ts": "2026-11-19T15:00:00+07:00",
+  "url": "https://www.youtube.com/watch?v=2ovOnP_jSGo",
+  "content": "Video mới của kênh Thư Viện Thiên Văn (Astronomy Library) giải thích một khái niệm nền tảng của vật lý sao: vật chất suy biến và áp suất suy biến electron.\nKhi một ngôi sao như Mặt Trời cháy hết nhiên liệu, lõi của nó co lại thành sao lùn trắng. Lúc này, thứ chống lại trọng lực không còn là áp suất nhiệt mà là áp suất suy biến — hệ quả trực tiếp của nguyên lý loại trừ Pauli: hai electron không thể chiếm cùng một trạng thái lượng tử, nên chúng \"đẩy\" lại lực nén một cách cực kỳ hiệu quả dù vật chất đã nguội.\nĐây cũng là cơ chế đặt ra giới hạn Chandrasekhar (~1,4 khối lượng Mặt Trời) — ngưỡng mà nếu vượt qua, áp suất suy biến electron không còn đủ sức giữ ngôi sao và sụp đổ sẽ tiếp diễn. Bấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube."
+ },
+ {
+  "category": "Game",
+  "flow": "internet",
+  "image": "https://i.ytimg.com/vi/xkodJuHFHJc/hqdefault.jpg",
+  "source": "Phê Game (YouTube)",
+  "summary": "Video mới từ kênh Phê Game về chủ đề game gây tranh cãi (TGB).",
+  "title": "Controversial TGB",
+  "ts": "2026-11-19T15:00:00+07:00",
+  "url": "https://www.youtube.com/watch?v=xkodJuHFHJc",
+  "content": "Video mới từ kênh Phê Game với chủ đề xoay quanh \"TGB\" — một đề tài đang gây tranh cãi trong cộng đồng game thủ.\nBấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube kèm phần bình luận của cộng đồng."
+ },
+ {
+  "category": "Facebook",
+  "flow": "facebook",
+  "image": null,
+  "source": "J2Team Community",
+  "summary": "Bài thảo luận trong J2Team về kế hoạch IPO của Anthropic — một trong những thương vụ lên sàn lớn nhất lịch sử ngành AI, định giá vượt 1,4 nghìn tỷ USD.",
+  "title": "Anthropic hướng tới IPO kỷ lục",
+  "ts": "2026-11-19T11:30:00+07:00",
+  "url": "https://facebook.com/groups/j2team.community/permalink/3255669551431809/",
+  "content": "Anthropic — công ty đứng sau dòng trợ lý AI Muse — đang tiến những bước rõ rệt tới việc phát hành cổ phiếu lần đầu ra công chúng (IPO), với mức định giá được nhắc tới vượt 1,4 nghìn tỷ USD.\nNếu diễn ra ở quy mô này, đây sẽ là một trong những thương vụ IPO lớn nhất lịch sử ngành công nghệ, đánh dấu giai đoạn các phòng thí nghiệm AI chuyển từ gọi vốn tư nhân sang thị trường đại chúng.\nBài đăng trong J2Team Community tổng hợp các thông tin quanh kế hoạch này và mở ra nhiều thảo luận về định giá, cạnh tranh với OpenAI và tác động tới thị trường AI nói chung. Bấm \"Mở nguồn gốc\" để đọc bài và phần bình luận trong group."
+ },
+ {
+  "category": "Facebook",
+  "flow": "facebook",
+  "image": null,
+  "source": "Kosocho",
+  "summary": "Bài đăng tương tác cao trong group Kosocho về đợt điều chỉnh giá xăng — xăng giảm xuống còn 18.670 đồng/lít.",
+  "title": "Giá xăng giảm còn 18.670 đồng/lít",
+  "ts": "2026-11-19T10:00:00+07:00",
+  "url": "https://facebook.com/groups/kosocho/permalink/2896167227459011/",
+  "content": "Bài đăng trong group Kosocho về đợt điều chỉnh giá xăng mới nhất: giá xăng giảm xuống còn 18.670 đồng/lít.\nĐây là một trong những bài có tương tác cao nhất group trong kỳ — chủ đề giá nhiên liệu luôn thu hút sự quan tâm lớn vì ảnh hưởng trực tiếp tới chi phí đi lại và sinh hoạt hằng ngày.\nBấm \"Mở nguồn gốc\" để xem bài đăng và phản ứng của cộng đồng trong group."
+ },
+ {
+  "category": "Facebook",
+  "flow": "facebook",
+  "image": null,
+  "source": "J2Team Community",
+  "summary": "Bản điểm tin tổng hợp của J2Team Community: lỗ hổng NGINX HTTP/2 10 năm tuổi cho phép RCE không cần xác thực, Anthropic tiến tới IPO với định giá hơn 1,4 nghìn tỷ USD, Windows Server 2028 siết bảo mật mặc định, vụ tấn công chip flash qua mặt TPM/BitLocker, cơn sốt GTA 6 và 7 tin công nghệ khác.",
+  "title": "📣 Điểm tin buổi sáng J2Team — 19/11/2026",
+  "ts": "2026-11-19T08:05:00+07:00",
+  "url": "https://facebook.com/groups/j2team.community/permalink/3254520771546687/",
+  "content": "Bản điểm tin buổi sáng thường nhật của J2Team Community — tổng hợp nhanh các tin công nghệ và an ninh mạng đáng chú ý nhất trong ngày:\n1. Lỗ hổng 10 năm tuổi trong NGINX HTTP/2 cho phép thực thi mã từ xa (RCE) mà không cần xác thực.\n2. Anthropic hướng tới IPO với định giá hơn 1,4 nghìn tỷ USD.\n3. Windows Server 2028 đánh đổi khả năng tương thích ngược để lấy bảo mật mặc định nghiêm ngặt hơn.\n4. Google Wallet xuất hiện trên iPhone nhưng Apple chặn tính năng chạm để thanh toán (tap-to-pay).\n5. Kỹ thuật tấn công chip flash mới qua mặt được TPM, Windows Hello PIN và BitLocker.\n6. Cơn sốt GTA 6: dân văn phòng phương Tây xin nghỉ phép hàng loạt chờ ngày game ra mắt.\n7. Ukraine dùng drone tiếp sóng tín hiệu để vượt giới hạn Starlink trong vụ tấn công cầu Kerch.\n8. Google đổi tên AI agent Spark thành Tasks, cho dùng thử miễn phí.\n9. Hiệu năng đồ họa của Ubuntu 27.04 bản sớm tăng vọt.\n10. Tin nhắn nội bộ bị rò rỉ: nhân viên Meta lo ngại trợ lý AI Muse xâm phạm quyền riêng tư.\n11. Mỹ thúc đẩy xây trung tâm dữ liệu AI và chip chiến lược tại Philippines.\n12. iOS 27.3 bổ sung 5 tính năng AI theo dõi sức khỏe.\nBấm \"Mở nguồn gốc\" để xem bài điểm tin đầy đủ kèm thảo luận trong group."
+ }
+]

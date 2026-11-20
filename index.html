@@ -5,101 +5,299 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ada's Feed — Tin tức mỗi ngày</title>
 <meta name="description" content="Bảng tin tổng hợp công nghệ, AI, khoa học, game và cộng đồng Facebook — cập nhật nhiều lần mỗi ngày.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f6f7f9; --card:#ffffff; --text:#1a1d21; --muted:#6b7280;
-    --border:#e5e7eb; --accent:#2563eb; --chip:#eef2ff;
+    --bg:#eef1f6; --card:#ffffff; --text:#16181d; --muted:#68707d;
+    --border:#e3e7ee; --accent:#2563eb; --accent2:#7c3aed;
+    --shadow:0 1px 2px rgba(16,24,40,.05),0 8px 24px -12px rgba(16,24,40,.12);
+    --shadow-hover:0 4px 8px rgba(16,24,40,.06),0 20px 40px -16px rgba(16,24,40,.28);
+    --chip-bg:#ffffff;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --bg:#0f1115; --card:#171a21; --text:#e8eaed; --muted:#9aa3af; --border:#262b36; --accent:#6ea8ff; --chip:#1d2739; }
+    :root{
+      --bg:#0b0e14; --card:#151a24; --text:#e9edf3; --muted:#98a2b3;
+      --border:#232b3a; --accent:#6ea8ff; --accent2:#a78bfa;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.5);
+      --shadow-hover:0 4px 8px rgba(0,0,0,.5),0 20px 40px -16px rgba(0,0,0,.7);
+      --chip-bg:#151a24;
+    }
   }
   *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text)}
-  header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--border);padding:14px 16px 10px}
-  .wrap{max-width:860px;margin:0 auto}
-  h1{font-size:22px;margin:0}
-  .sub{color:var(--muted);font-size:13px;margin-top:2px}
-  .filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-  .chip{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
-  .chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
-  #search{width:100%;margin-top:10px;padding:9px 12px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);font-size:14px}
-  main{padding:16px}
-  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:14px}
-  .card a{display:block;color:inherit;text-decoration:none}
-  .card img{width:100%;max-height:320px;object-fit:cover;display:block;background:var(--chip)}
-  .body{padding:12px 14px 14px}
-  .badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
-  .badge{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--accent);font-weight:600}
-  .badge.fb{background:transparent;border:1px solid var(--border);color:var(--muted)}
-  .title{font-size:16px;font-weight:700;line-height:1.35}
-  .summary{font-size:14px;color:var(--text);opacity:.88;line-height:1.5;margin-top:4px}
-  .meta{font-size:12px;color:var(--muted);margin-top:8px}
-  .empty{color:var(--muted);text-align:center;padding:40px 0}
-  footer{color:var(--muted);font-size:12px;text-align:center;padding:10px 16px 30px}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Be Vietnam Pro",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+
+  /* ---------- Hero ---------- */
+  .hero{background:linear-gradient(120deg,#1e3a8a 0%,#2563eb 45%,#7c3aed 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 85% -40px,rgba(255,255,255,.22),transparent 60%),radial-gradient(500px 240px at 8% 120%,rgba(255,255,255,.12),transparent 60%);pointer-events:none}
+  .hero-in{max-width:1080px;margin:0 auto;padding:30px 20px 26px;position:relative;z-index:1}
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{width:52px;height:52px;border-radius:14px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);flex:none}
+  .logo svg{width:30px;height:30px}
+  h1{font-size:30px;font-weight:900;margin:0;letter-spacing:-.02em}
+  .tagline{opacity:.85;font-size:14px;margin-top:3px;font-weight:500}
+  .stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:6px}
+  .dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 3px rgba(74,222,128,.25);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.35)}70%{box-shadow:0 0 0 6px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+
+  /* ---------- Toolbar ---------- */
+  .toolbar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .toolbar-in{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .filters{display:flex;gap:8px;flex-wrap:wrap;flex:1}
+  .chip{border:1px solid var(--border);background:var(--chip-bg);color:var(--text);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .15s;font-family:inherit}
+  .chip svg{width:14px;height:14px}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+  .chip.active{background:linear-gradient(120deg,var(--accent),var(--accent2));border-color:transparent;color:#fff}
+  .searchbox{position:relative;flex:0 1 260px;min-width:180px}
+  .searchbox svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+  #search{width:100%;padding:9px 12px 9px 34px;border:1px solid var(--border);border-radius:999px;background:var(--chip-bg);color:var(--text);font-size:13.5px;font-family:inherit;outline:none}
+  #search:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 20%,transparent)}
+
+  /* ---------- Feed grid ---------- */
+  main{max-width:1080px;margin:0 auto;padding:22px 20px 8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;cursor:pointer;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+  .card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#1e293b,#334155);overflow:hidden}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+  .card:hover .thumb img{transform:scale(1.04)}
+  .thumb .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .thumb .ph svg{width:52px;height:52px;opacity:.5}
+  .thumb::after{content:"";position:absolute;inset:auto 0 0 0;height:55%;background:linear-gradient(to top,rgba(0,0,0,.45),transparent)}
+  .badges{position:absolute;left:10px;bottom:10px;z-index:2;display:flex;gap:6px;flex-wrap:wrap}
+  .badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff;letter-spacing:.01em}
+  .badge.fb{background:#1877f2}
+  .play{position:absolute;right:10px;bottom:10px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center}
+  .play svg{width:16px;height:16px;margin-left:2px}
+  .cbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+  .ctitle{font-size:16.5px;font-weight:700;line-height:1.38;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .csum{font-size:13.5px;line-height:1.55;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .cmeta{margin-top:auto;padding-top:6px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+  .avatar{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex:none}
+  .readmore{margin-left:auto;color:var(--accent);font-weight:700;font-size:12.5px;white-space:nowrap}
+  .skel{border-radius:18px;background:var(--card);border:1px solid var(--border);overflow:hidden}
+  .skel .a{aspect-ratio:16/9;background:color-mix(in srgb,var(--muted) 18%,transparent)}
+  .skel .b{height:14px;margin:14px 16px 0;border-radius:6px;background:color-mix(in srgb,var(--muted) 18%,transparent)}
+  .skel .c{height:14px;margin:8px 16px 18px;width:60%;border-radius:6px;background:color-mix(in srgb,var(--muted) 14%,transparent)}
+  .empty{text-align:center;color:var(--muted);padding:56px 0;font-size:15px}
+  footer{max-width:1080px;margin:0 auto;color:var(--muted);font-size:12.5px;text-align:center;padding:18px 20px 36px}
+
+  /* ---------- Modal (focus view) ---------- */
+  .overlay{position:fixed;inset:0;background:rgba(8,10,14,.62);backdrop-filter:blur(6px);z-index:50;display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:28px 14px}
+  .overlay.open{display:flex}
+  .dialog{background:var(--card);color:var(--text);width:100%;max-width:780px;border-radius:20px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,.55);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);position:relative}
+  @keyframes pop{from{opacity:0;transform:scale(.96) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+  .closebtn{position:absolute;top:12px;right:12px;z-index:5;width:38px;height:38px;border-radius:50%;border:none;background:rgba(10,12,16,.55);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+  .closebtn:hover{background:rgba(10,12,16,.8)}
+  .closebtn svg{width:18px;height:18px}
+  .media{position:relative;background:#000}
+  .media img{width:100%;max-height:430px;object-fit:cover;display:block}
+  .media .video{aspect-ratio:16/9;width:100%}
+  .media iframe{width:100%;height:100%;border:0;display:block}
+  .dbody{padding:22px 26px 26px}
+  .dbadges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+  .dbadge{font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;color:#fff}
+  .dbadge.flow{background:#475569}
+  .dtitle{font-size:24px;font-weight:800;line-height:1.3;margin:0 0 8px;letter-spacing:-.01em}
+  .dmeta{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);padding-bottom:14px;border-bottom:1px solid var(--border);margin-bottom:16px}
+  .dcontent{font-size:15.5px;line-height:1.75}
+  .dcontent p{margin:0 0 12px}
+  .dcontent p.li{padding-left:2px}
+  .dactions{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:700;font-size:14px;border-radius:12px;padding:11px 18px;transition:filter .15s}
+  .btn:hover{filter:brightness(1.08)}
+  .btn-primary{background:linear-gradient(120deg,var(--accent),var(--accent2));color:#fff}
+  .btn svg{width:15px;height:15px}
+  @media (max-width:560px){
+    h1{font-size:24px}
+    .dbody{padding:18px 18px 22px}
+    .dtitle{font-size:20px}
+    .grid{grid-template-columns:1fr}
+  }
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>📰 Ada's Feed</h1>
-    <div class="sub">Tin công nghệ, AI, khoa học, game &amp; cộng đồng — cập nhật nhiều lần mỗi ngày</div>
-    <div class="filters" id="filters"></div>
-    <input id="search" type="search" placeholder="Tìm trong bảng tin…">
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0V9"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8z"/></svg>
+      </div>
+      <div>
+        <h1>Ada's Feed</h1>
+        <div class="tagline">Tin công nghệ, AI, khoa học, game &amp; cộng đồng — cập nhật nhiều lần mỗi ngày</div>
+      </div>
+    </div>
+    <div class="stats">
+      <span class="stat"><span class="dot"></span> Đang cập nhật tự động</span>
+      <span class="stat" id="stat-count">… tin đã đăng</span>
+      <span class="stat" id="stat-latest">Mới nhất: …</span>
+    </div>
   </div>
 </header>
+
+<div class="toolbar">
+  <div class="toolbar-in">
+    <div class="filters" id="filters"></div>
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" type="search" placeholder="Tìm trong bảng tin…">
+    </div>
+  </div>
+</div>
+
 <main>
-  <div class="wrap" id="feed"></div>
-  <div class="wrap empty" id="empty" hidden>Chưa có tin nào khớp bộ lọc.</div>
+  <div class="grid" id="feed"></div>
+  <div class="empty" id="empty" hidden>Chưa có tin nào khớp bộ lọc.</div>
 </main>
-<footer>Tổng hợp tự động bởi Ada • Mọi tin đều dẫn về nguồn gốc — bấm vào thẻ để đọc bài đầy đủ.</footer>
+<footer>Tổng hợp tự động bởi Ada từ internet &amp; Facebook • Bấm vào thẻ tin để đọc nội dung đầy đủ, hoặc mở nguồn gốc để xem bài tại nơi đăng.</footer>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true">
+  <div class="dialog" id="dialog"></div>
+</div>
+
 <script>
-const CATS = ["Tất cả","AI & Công nghệ","Bảo mật","Khoa học","Game","Video","Facebook"];
+const CATS = [
+  {name:"Tất cả",        color:"#2563eb", icon:'<path d="M3 5h18M3 12h18M3 19h18"/>'},
+  {name:"AI & Công nghệ",color:"#7c3aed", icon:'<path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.2"/>'},
+  {name:"Bảo mật",       color:"#dc2626", icon:'<path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9.5 12l2 2 3.5-4"/>'},
+  {name:"Khoa học",      color:"#0891b2", icon:'<path d="M9 3h6M10 3v6L4.8 18a2 2 0 0 0 1.8 3h10.8a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7.5 15h9"/>'},
+  {name:"Game",          color:"#16a34a", icon:'<path d="M6 9h12a4 4 0 0 1 4 4.6C22 16 20.4 17.5 18.6 17c-1-.3-1.7-1-2.3-2H7.7c-.6 1-1.3 1.7-2.3 2C3.6 17.5 2 16 2 13.6A4 4 0 0 1 6 9z"/><path d="M7.5 11.5v4M5.5 13.5h4"/><circle cx="15.8" cy="12.8" r=".6" fill="currentColor"/><circle cx="17.8" cy="14.8" r=".6" fill="currentColor"/>'},
+  {name:"Video",         color:"#ea580c", icon:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/>'},
+  {name:"Facebook",      color:"#1877f2", icon:'<path d="M15.5 3H13a4 4 0 0 0-4 4v3H6.5v4H9v7h4v-7h3l.5-4H13V7.5A1.5 1.5 0 0 1 14.5 6h1z"/>'}
+];
+const catColor = n => (CATS.find(c=>c.name===n)||{}).color || "#2563eb";
 let items = [], activeCat = "Tất cả", query = "";
 
+function esc(t){ const d=document.createElement("div"); d.textContent=t||""; return d.innerHTML; }
 function relTime(iso){
   const s = (Date.now() - new Date(iso).getTime())/1000;
+  if (isNaN(s)) return "";
   if (s < 3600) return Math.max(1, Math.floor(s/60)) + " phút trước";
   if (s < 86400) return Math.floor(s/3600) + " giờ trước";
-  const d = new Date(iso);
-  return Math.floor(s/86400) + " ngày trước • " + d.toLocaleDateString("vi-VN");
+  return Math.floor(s/86400) + " ngày trước • " + new Date(iso).toLocaleDateString("vi-VN");
 }
-function esc(t){ const d=document.createElement("div"); d.textContent=t||""; return d.innerHTML; }
+function fullDate(iso){
+  const d = new Date(iso); if (isNaN(d)) return "";
+  return d.toLocaleString("vi-VN",{hour:"2-digit",minute:"2-digit",day:"2-digit",month:"2-digit",year:"numeric"});
+}
+function videoId(it){
+  if (it.video) return it.video;
+  const m = (it.url||"").match(/[?&]v=([\w-]{6,})/) || (it.url||"").match(/youtu\.be\/([\w-]{6,})/);
+  return m ? m[1] : null;
+}
+function initial(name){ return (name||"?").trim().charAt(0).toUpperCase(); }
 
 function render(){
   const feed = document.getElementById("feed");
   const list = items.filter(it =>
-    (activeCat==="Tất cả" || it.category===activeCat || (activeCat==="Facebook" && it.flow==="facebook")) &&
-    (!query || (it.title+" "+it.summary).toLowerCase().includes(query))
+    (activeCat==="Tất cả" || it.category===activeCat) &&
+    (!query || (it.title+" "+it.summary+" "+(it.content||"")).toLowerCase().includes(query))
   );
   document.getElementById("empty").hidden = list.length>0;
-  feed.innerHTML = list.map(it => `
-    <article class="card"><a href="${esc(it.url)}" target="_blank" rel="noopener">
-      ${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy">` : ""}
-      <div class="body">
+  feed.innerHTML = list.map(it => {
+    const idx = items.indexOf(it);
+    const vid = videoId(it);
+    return `
+    <article class="card" tabindex="0" role="button" aria-label="${esc(it.title)}" onclick="openItem(${idx})" onkeydown="if(event.key==='Enter')openItem(${idx})">
+      <div class="thumb">
+        ${it.image ? `<img src="${esc(it.image)}" alt="" loading="lazy" onerror="this.remove()">`
+                   : `<div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0V9"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8z"/></svg></div>`}
         <div class="badges">
-          <span class="badge">${esc(it.category)}</span>
+          <span class="badge" style="background:${catColor(it.category)}">${esc(it.category)}</span>
           ${it.flow==="facebook" ? `<span class="badge fb">Facebook</span>` : ""}
         </div>
-        <div class="title">${esc(it.title)}</div>
-        <div class="summary">${esc(it.summary)}</div>
-        <div class="meta">${relTime(it.ts)} • Nguồn: ${esc(it.source)}</div>
+        ${vid ? `<span class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5.5v13l11-6.5z"/></svg></span>` : ""}
       </div>
-    </a></article>`).join("");
+      <div class="cbody">
+        <div class="ctitle">${esc(it.title)}</div>
+        <div class="csum">${esc(it.summary)}</div>
+        <div class="cmeta">
+          <span class="avatar">${esc(initial(it.source))}</span>
+          <span>${esc(it.source)} • ${relTime(it.ts)}</span>
+          <span class="readmore">Đọc tiếp →</span>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
 }
+
+function contentHtml(it){
+  const raw = (it.content && it.content.trim()) ? it.content : it.summary;
+  return raw.split(/\n+/).map(line => {
+    const t = line.trim(); if (!t) return "";
+    const isLi = /^\d+[.)]/.test(t) || /^[-•]/.test(t);
+    return `<p class="${isLi ? "li" : ""}">${esc(t)}</p>`;
+  }).join("");
+}
+
+function openItem(idx){
+  const it = items[idx]; if (!it) return;
+  const vid = videoId(it);
+  const media = vid
+    ? `<div class="video"><iframe src="https://www.youtube.com/embed/${vid}?rel=0" title="${esc(it.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+    : (it.image ? `<img src="${esc(it.image)}" alt="">` : "");
+  document.getElementById("dialog").innerHTML = `
+    <button class="closebtn" onclick="closeItem()" aria-label="Đóng">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    ${media ? `<div class="media">${media}</div>` : ""}
+    <div class="dbody">
+      <div class="dbadges">
+        <span class="dbadge" style="background:${catColor(it.category)}">${esc(it.category)}</span>
+        ${it.flow==="facebook" ? `<span class="dbadge" style="background:#1877f2">Facebook</span>` : `<span class="dbadge flow">Internet</span>`}
+      </div>
+      <h2 class="dtitle">${esc(it.title)}</h2>
+      <div class="dmeta">
+        <span class="avatar">${esc(initial(it.source))}</span>
+        <span><strong>${esc(it.source)}</strong> • ${fullDate(it.ts)} (${relTime(it.ts)})</span>
+      </div>
+      <div class="dcontent">${contentHtml(it)}</div>
+      <div class="dactions">
+        <a class="btn btn-primary" href="${esc(it.url)}" target="_blank" rel="noopener">
+          Mở nguồn gốc
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>`;
+  document.getElementById("overlay").classList.add("open");
+  document.body.style.overflow = "hidden";
+  document.getElementById("overlay").scrollTop = 0;
+}
+function closeItem(){
+  document.getElementById("overlay").classList.remove("open");
+  document.getElementById("dialog").innerHTML = "";
+  document.body.style.overflow = "";
+}
+document.getElementById("overlay").addEventListener("click", e => { if (e.target.id === "overlay") closeItem(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeItem(); });
 
 const filtersEl = document.getElementById("filters");
 CATS.forEach(c=>{
   const b=document.createElement("button");
-  b.className="chip"+(c==="Tất cả"?" active":""); b.textContent=c;
-  b.onclick=()=>{ activeCat=c; document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b)); render(); };
+  b.className="chip"+(c.name==="Tất cả"?" active":"");
+  b.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg>${c.name}`;
+  b.onclick=()=>{ activeCat=c.name; document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b)); render(); };
   filtersEl.appendChild(b);
 });
 document.getElementById("search").addEventListener("input", e=>{ query=e.target.value.trim().toLowerCase(); render(); });
 
+const feedEl = document.getElementById("feed");
+feedEl.innerHTML = Array.from({length:6},()=>`<div class="skel"><div class="a"></div><div class="b"></div><div class="c"></div></div>`).join("");
 fetch("feed.json", {cache:"no-store"})
   .then(r=>r.json())
-  .then(data=>{ items = data.sort((a,b)=> new Date(b.ts)-new Date(a.ts)); render(); })
-  .catch(()=>{ document.getElementById("empty").hidden=false; document.getElementById("empty").textContent="Chưa tải được dữ liệu tin."; });
+  .then(data=>{
+    items = data.sort((a,b)=> new Date(b.ts)-new Date(a.ts));
+    document.getElementById("stat-count").textContent = items.length + " tin đã đăng";
+    if (items.length) document.getElementById("stat-latest").textContent = "Mới nhất: " + relTime(items[0].ts);
+    render();
+  })
+  .catch(()=>{ feedEl.innerHTML=""; const e=document.getElementById("empty"); e.hidden=false; e.textContent="Chưa tải được dữ liệu tin."; });
 </script>
 </body>
 </html>
