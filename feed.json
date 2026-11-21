@@ -1,5 +1,115 @@
 [
   {
+    "ts": "2026-11-21T07:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Nhà toán học Anthropic tuyên bố cùng Claude đã chứng minh giả thuyết Riemann",
+    "summary": "Levent Alpöge (Anthropic) tuyên bố đã cùng Claude chứng minh giả thuyết Riemann — bài toán mở 167 năm, trị giá 1 triệu USD — kèm cả giả thuyết Riemann tổng quát; cùng ngày có tuyên bố độc lập thứ hai từ Stanford. Cả hai đều chưa được kiểm chứng độc lập.",
+    "content": "Levent Alpöge, nhà toán học làm việc tại Anthropic, công bố ngày 20/11 rằng ông tin mình cùng Claude đã chứng minh được giả thuyết Riemann — bài toán về phân bố số nguyên tố tồn tại từ 1859, một trong 7 bài toán Thiên niên kỷ trị giá 1 triệu USD — kèm cả giả thuyết Riemann tổng quát.\nCùng ngày còn có một tuyên bố độc lập thứ hai từ Alessandro Masullo, nghiên cứu sinh sau tiến sĩ tại Stanford, theo con đường thuần con người, được chủ tịch Hội Toán học Mỹ Ravi Vakil công bố.\nCả hai đều CHƯA được kiểm chứng độc lập: bản của Alpöge mới chỉ ở dạng mã Lean để máy kiểm tra từng bước, chưa có bài báo chính thức hay phản biện ngoài; giới chuyên môn kêu gọi thẩm định chặt chẽ trước khi kết luận, và một số ý kiến hoài nghi về thời điểm công bố ngay sau IPO kỷ lục của Anthropic.",
+    "url": "https://www.nature.com/articles/d41586-026-03812-7",
+    "image": "https://media.nature.com/lw1200/magazine-assets/d41586-026-03812-7/d41586-026-03812-7_54003400.jpg",
+    "source": "Nature"
+  },
+  {
+    "ts": "2026-11-21T07:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "RadixArk ra mắt DaisyRose-27B — mô hình coding agent chỉ huấn luyện bằng RL",
+    "summary": "Mô hình coding agent 27B xây trên Qwen3.8-27B, chỉ hậu huấn luyện bằng reinforcement learning (không SFT, không distillation); Terminal Bench 4.1 pass@1 tăng gấp đôi từ 5,6 lên 12,0, chạy trên 1 GPU, giấy phép Apache 2.0.",
+    "content": "RadixArk phát hành DaisyRose-27B, mô hình coding agent 27B xây trên Qwen3.8-27B, chỉ hậu huấn luyện bằng reinforcement learning — không supervised fine-tuning, không distillation.\nMô hình được huấn luyện trên 1.200 tác vụ agent dài hơi trong 18 ngày với 144 GPU H200; mỗi lần thử trong sandbox kéo dài tới 1,5 giờ với hơn 100 lần gọi công cụ.\nKết quả: Terminal Bench 4.1 pass@1 tăng gấp đôi từ 5,6 lên 12,0; các benchmark coding, suy luận và làm theo hướng dẫn khác cũng cải thiện so với mô hình gốc. Chạy trên 1 GPU, giấy phép Apache 2.0.",
+    "url": "https://www.radixark.com/blog/daisyrose-27b",
+    "image": null,
+    "source": "RadixArk"
+  },
+  {
+    "ts": "2026-11-20T21:44:52+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "NVIDIA mở Nemotron-Labs-Sigma — họ mô hình ngôn ngữ khuếch tán liên tục 3B/8B",
+    "summary": "14 checkpoint mở ở quy mô 3B và 8B: thay vì sinh từng token, Sigma khử nhiễu văn bản trong không gian embedding liên tục 16 chiều, sinh theo khối song song, giải mã nhanh hơn tới 4,2 lần theo NVIDIA.",
+    "content": "NVIDIA công bố Nemotron-Labs-Sigma, họ mô hình ngôn ngữ khuếch tán liên tục với 14 checkpoint mở ở quy mô 3B và 8B.\nThay vì sinh từng token như mô hình tự hồi quy, Sigma khử nhiễu văn bản trong không gian embedding liên tục 16 chiều, sinh theo khối song song; theo NVIDIA, giải mã nhanh hơn tới 4,2 lần so với giải mã tự hồi quy truyền thống.\nCó bản base, instruct và bản chưng cất few-step; các checkpoint dùng được cho mục đích thương mại theo giấy phép mở của NVIDIA.",
+    "url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
+    "image": null,
+    "source": "MarkTechPost"
+  },
+  {
+    "ts": "2026-11-21T07:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Signal chặn chụp màn hình mặc định để ngăn AI agent đọc trộm tin nhắn",
+    "summary": "Signal chặn chụp màn hình mặc định trên iOS 27 và tự bật Screen Security trên Android khi phát hiện trợ lý AI đọc màn hình, nhằm ngăn Siri AI, Gemini Intelligence hay Meta Muse quét nội dung chat mã hóa đầu cuối.",
+    "content": "Signal (chủ tịch Meredith Whittaker) công bố ngày 20/11: chặn chụp màn hình mặc định trên iOS 27 qua cài đặt 'Block Siri AI' và tự bật Screen Security trên Android khi phát hiện trợ lý AI đọc màn hình.\nMục tiêu là ngăn các trợ lý AI tích hợp hệ điều hành — Siri AI của Apple, Gemini Intelligence của Google hay Meta Muse — quét nội dung chat mã hóa đầu cuối rồi đưa ra khỏi môi trường an toàn của Signal.\nSignal thừa nhận biện pháp chưa hoàn hảo: không chặn được trên macOS, không ngăn được truy cập file hay thông báo; hãng kêu gọi Apple, Google, Microsoft cho nhà phát triển cách từ chối AI truy cập dữ liệu ứng dụng.",
+    "url": "https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/",
+    "image": null,
+    "source": "Engadget"
+  },
+  {
+    "ts": "2026-11-21T07:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Sao lùn trắng quay 8 phút/lần hé lộ nguồn gốc tín hiệu radio bí ẩn cách 5.000 năm ánh sáng",
+    "summary": "Hệ sao GPM J071507−114153 gồm sao lùn trắng quay mỗi 8 phút và một ngôi sao giống Mặt Trời: lần đầu xác định rõ xung radio bí ẩn phát ra từ vùng gần sao lùn trắng, đồng thời phát hiện bão sao trên ngôi sao bạn.",
+    "content": "Hệ sao GPM J071507−114153, cách hơn 5.000 năm ánh sáng, gồm một sao lùn trắng quay mỗi 8 phút và một ngôi sao giống Mặt Trời.\nĐây là lần đầu các nhà thiên văn xác định rõ các xung radio bí ẩn thuộc nhóm long-period transient phát ra từ vùng gần sao lùn trắng — hoặc từ chính nó — nhờ quan sát được sao lùn trắng chuyển động trên quỹ đạo quanh ngôi sao bạn.\nCác xung radio còn hé lộ bão sao trên ngôi sao giống Mặt Trời, cho thấy sóng radio có thể dùng để nghiên cứu hoạt động từ tính của sao ở khoảng cách hàng nghìn năm ánh sáng.",
+    "url": "https://scitechdaily.com/mysterious-radio-signals-from-5000-light-years-away-lead-scientists-to-a-surprising-discovery/",
+    "image": null,
+    "source": "SciTechDaily"
+  },
+  {
+    "ts": "2026-11-21T07:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Mây natri quanh Europa có nguồn gốc từ đại dương bên dưới",
+    "summary": "Quan sát 20 năm tại đài Keck cho thấy đám mây natri khổng lồ bao quanh Europa ổn định qua nhiều thập kỷ và bắt nguồn từ đại dương ngầm, không phải từ bề mặt; nhóm đang dùng Hubble tìm magie trong khí quyển Europa.",
+    "content": "Quan sát hơn 20 năm tại đài W. M. Keck (Hawaii) cho thấy đám mây natri khổng lồ bao quanh Europa — mặt trăng băng của sao Mộc — ổn định đáng ngạc nhiên qua nhiều thập kỷ, dù môi trường quanh sao Mộc rất biến động.\nNghiên cứu, công bố trên Journal of Geophysical Research: Space Physics, kết nối lần đầu dữ liệu natri ở độ cao lớn với natri gần bề mặt Europa, cho thấy đám mây có nguồn gốc từ đại dương ngầm bên dưới lớp băng.\nNhóm nghiên cứu đang dùng kính Hubble tìm magie trong khí quyển Europa trong tháng 11 này — một thành phần muối đại dương khác.",
+    "url": "https://phys.org/news/2026-11-astronomers-reveal-oceanic-europa-sodium.html",
+    "image": null,
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-21T07:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6 chính thức: 3,79 tỷ USD trong ngày đầu — kỷ lục mọi thời đại của ngành giải trí",
+    "summary": "Take-Two và Rockstar công bố GTA VI đạt 3,79 tỷ USD sau ngày phát hành đầu tiên, với 32,5 triệu bản đặt trước và hơn 132 triệu giờ xem livestream; tối nay 21/11 có GTA VI: The Festival tại Miami.",
+    "content": "Take-Two và Rockstar công bố ngày 20/11: GTA VI đạt 3,79 tỷ USD doanh thu sau ngày phát hành đầu tiên, với 32,5 triệu bản đặt trước — trở thành một trong những đợt ra mắt giải trí lớn nhất lịch sử.\nNgười chơi đã xem hơn 132 triệu giờ livestream GTA VI trong ngày ra mắt, phá kỷ lục streaming (gần 7,9 triệu người xem cùng lúc đã được ghi nhận trước đó).\nCon số chính thức vượt xa ước tính 2,36 tỷ USD của Sensor Tower. Tối nay (21/11) Rockstar tổ chức GTA VI: The Festival với PlayStation tại Miami, show nhạc sống với các nghệ sĩ trong soundtrack game.",
+    "url": "https://www.cnn.com/2026/11/20/media/gta-vi-launch-sales-numbers?cid=external-feeds_iluminar_meta",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2305271011.jpg?c=16x9&q=w_800,c_fill",
+    "source": "CNN"
+  },
+  {
+    "ts": "2026-11-20T18:11:17+07:00",
+    "flow": "internet",
+    "category": "Video",
+    "title": "Review Game: GTA 6 Quá PEAK, Tôi Đã Khóc - Game Hay Nhất Lịch Sử? | meGAME",
+    "summary": "Video review GTA 6 mới của meGAME, đăng 20/11 18:11 +07.",
+    "content": "Video review GTA 6 mới của meGAME, đăng 20/11 18:11 +07.\nTiêu đề: 'Review Game: GTA 6 Quá PEAK, Tôi Đã Khóc - Game Hay Nhất Lịch Sử? | meGAME'.",
+    "url": "https://www.youtube.com/watch?v=oj16Qj87vbs",
+    "image": "https://i.ytimg.com/vi/oj16Qj87vbs/hqdefault.jpg",
+    "source": "meGAME"
+  },
+  {
+    "ts": "2026-11-20T17:38:26+07:00",
+    "flow": "internet",
+    "category": "Video",
+    "title": "DOCTOR NOWHERE: What are Heliogenes? - Đừng dại dột nhìn vào mặt trời! | Cờ Su",
+    "summary": "Video mới của Cờ Su về Doctor Nowhere và Heliogenes, đăng 20/11 17:38 +07.",
+    "content": "Video mới của Cờ Su, đăng 20/11 17:38 +07.\nTiêu đề: 'DOCTOR NOWHERE: What are Heliogenes? - Đừng dại dột nhìn vào mặt trời!'.",
+    "url": "https://www.youtube.com/watch?v=T_xS5SFu7M8",
+    "image": "https://i.ytimg.com/vi/T_xS5SFu7M8/hqdefault.jpg",
+    "source": "Cờ Su"
+  },
+  {
+    "ts": "2026-11-20T18:27:17+07:00",
+    "flow": "internet",
+    "category": "Video",
+    "title": "Vì Sao Không Có Trẻ Em Trong GTA? | Game Cực Hay",
+    "summary": "Video mới của Game Cực Hay, đăng 20/11 18:27 +07.",
+    "content": "Video mới của Game Cực Hay, đăng 20/11 18:27 +07.\nTiêu đề: 'Vì Sao Không Có Trẻ Em Trong GTA?'.",
+    "url": "https://www.youtube.com/watch?v=aoTG7jDyurU",
+    "image": "https://i.ytimg.com/vi/aoTG7jDyurU/hqdefault.jpg",
+    "source": "Game Cực Hay"
+  },
+  {
     "ts": "2026-11-20T20:29:01+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
