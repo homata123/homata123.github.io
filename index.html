@@ -103,6 +103,34 @@
   .resitem:hover h3{text-decoration:underline;text-underline-offset:3px}
   .resitem .sum{font-size:13px;line-height:1.55;color:var(--ink-soft);margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 
+  /* ---------- YouTube Favorite & Live ---------- */
+  .ytband{margin-top:32px;border-top:1px solid var(--ink);padding-top:20px}
+  .ytband h2,.ytview h2{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:25px;margin:0 0 4px}
+  .ytsub{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.55}
+  .ytsub a{color:var(--ink-soft);font-weight:600}
+  .ytgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px 24px}
+  .ytcard figure{margin:0;position:relative}
+  .ytcard figure img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:6px;background:#000}
+  .ytcard h3{font-family:"Newsreader",Georgia,serif;font-weight:600;font-size:16.5px;line-height:1.35;margin:9px 0 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .ytcard:hover h3{text-decoration:underline;text-underline-offset:3px}
+  .ytcard .meta{gap:9px}
+  .livebadge{position:absolute;left:10px;top:10px;background:#C4302B;color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:4px 9px;border-radius:4px;display:inline-flex;align-items:center;gap:6px}
+  .livebadge .dot{width:7px;height:7px;border-radius:50%;background:#fff;animation:pulse 1.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  .upbadge{position:absolute;left:10px;top:10px;background:var(--ink);color:var(--paper);font-size:11px;font-weight:700;letter-spacing:.06em;padding:4px 9px;border-radius:4px}
+  .ytlive{margin:0 0 22px}
+  .ytlive .frame{aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden}
+  .ytlive iframe{width:100%;height:100%;border:0;display:block}
+  .ytlive h3{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:21px;line-height:1.3;margin:12px 0 6px}
+  .ytchips{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 18px}
+  .ytchip{border:1px solid var(--line);background:none;color:var(--ink-soft);font-family:inherit;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;cursor:pointer}
+  .ytchip:hover{border-color:var(--ink);color:var(--ink)}
+  .ytchip.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .ytsec{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:20px;margin:22px 0 12px}
+  .expandbtn{margin-top:16px;border:1px solid var(--ink);background:none;color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:6px;cursor:pointer}
+  .expandbtn:hover{background:var(--ink);color:var(--paper)}
+  @media (prefers-reduced-motion: reduce){ .livebadge .dot{animation:none} }
+
   /* ---------- List mode ---------- */
   .listwrap{max-width:880px}
   .listwrap .story:first-child{border-top:none}
@@ -222,17 +250,20 @@
 </div>
 
 <script>
-const CATS = ["Tất cả","AI & Công nghệ","Bảo mật","Khoa học","Game","Video","Facebook","Bảng tin cư dân"];
+const YTCAT = "YouTube Favorite & Live";
+const CATS = ["Tất cả","AI & Công nghệ","Bảo mật","Khoa học","Game","Video",YTCAT,"Facebook","Bảng tin cư dân"];
 const CATCOLOR = {
   "AI & Công nghệ":"#205E3B",
   "Bảo mật":"#BC3318",
   "Khoa học":"#1F5F7A",
   "Game":"#8A6D1F",
   "Video":"#A34A1F",
+  "YouTube Favorite & Live":"#C4302B",
   "Facebook":"#2B4C9A",
   "Bảng tin cư dân":"#5F7422"
 };
 let items = [], activeCat = "Tất cả", query = "";
+let yt = null, ytChan = "all", ytExp = { latest:false, popular:false };
 
 function esc(t){ const d=document.createElement("div"); d.textContent=t||""; return d.innerHTML; }
 function relTime(iso){
@@ -304,6 +335,10 @@ function leadBlock(it){
 
 function render(){
   const main = document.getElementById("main");
+  if (activeCat === YTCAT){
+    main.innerHTML = ytViewHtml();
+    return;
+  }
   const filtered = items.filter(it =>
     (activeCat==="Tất cả" || it.category===activeCat) &&
     (!query || (it.title+" "+it.summary+" "+(it.content||"")).toLowerCase().includes(query))
@@ -345,6 +380,7 @@ function render(){
       <div class="resgrid">${residents.map(resItem).join("")}</div>
     </section>`;
   }
+  html += ytBandHtml();
   main.innerHTML = html || `<div class="empty">Chưa có tin nào khớp với lựa chọn này.<br>Thử bỏ bộ lọc hoặc đổi từ khóa tìm kiếm.</div>`;
 }
 
@@ -357,6 +393,110 @@ function resItem(it){
     <p class="sum">${esc(it.summary)}</p>
     ${metarow(it)}
   </article>`;
+}
+
+/* ---------- YouTube Favorite & Live ---------- */
+function fmtViews(n){
+  if (n == null) return "";
+  try { return new Intl.NumberFormat("vi-VN",{notation:"compact",maximumFractionDigits:1}).format(n) + " lượt xem"; }
+  catch(e){ return n.toLocaleString("vi-VN") + " lượt xem"; }
+}
+function ytMatches(it){
+  return (ytChan === "all" || it.channel === ytChan) &&
+    (!query || (it.title + " " + it.channel).toLowerCase().includes(query));
+}
+function ytCard(it){
+  const badge = it.live ? `<span class="livebadge"><span class="dot"></span>TRỰC TIẾP</span>`
+    : (it.upcoming ? `<span class="upbadge">SẮP PHÁT</span>` : "");
+  const views = it.live && it.viewers ? fmtViews(it.viewers).replace("lượt xem","đang xem") : fmtViews(it.views);
+  return `
+  <article class="ytcard clickable" tabindex="0" role="button" onclick="openYT('${it.video}')" onkeydown="if(event.key==='Enter')openYT('${it.video}')">
+    <figure><img src="${esc(it.image)}" alt="" loading="lazy" onerror="this.parentElement.remove()">${badge}${playbadge()}</figure>
+    <h3>${esc(it.title)}</h3>
+    <div class="meta"><span class="src">${esc(it.channel)}</span>${views ? `<span>${views}</span>` : ""}<span>${relTime(it.ts)}</span></div>
+  </article>`;
+}
+function ytLiveBlock(it){
+  return `
+  <div class="ytlive">
+    <div class="frame"><iframe src="https://www.youtube.com/embed/${it.video}?rel=0" title="${esc(it.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    <h3>${esc(it.title)}</h3>
+    <div class="meta"><span class="livebadge" style="position:static"><span class="dot"></span>ĐANG PHÁT TRỰC TIẾP</span><span class="src">${esc(it.channel)}</span>${it.viewers ? `<span>${fmtViews(it.viewers).replace("lượt xem","người đang xem")}</span>` : ""}<span>Bắt đầu ${relTime(it.ts)}</span></div>
+  </div>`;
+}
+function ytSubLine(){
+  if (!yt) return "";
+  const chans = (yt.channels || []).map(c => `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)}</a>`).join(" · ");
+  const upd = yt.updated_at ? ` Cập nhật lúc ${new Date(yt.updated_at).toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"})} ngày ${new Date(yt.updated_at).toLocaleDateString("vi-VN")}.` : "";
+  return `<p class="ytsub">Các kênh đang theo dõi: ${chans}.${upd} Muốn thêm kênh, cứ nhắn Ada — mục này mở rộng được.</p>`;
+}
+function ytGridSection(key, title, list){
+  const shown = ytExp[key] ? list : list.slice(0, 6);
+  let h = `<div class="ytsec">${title}</div>`;
+  if (!list.length) return h + `<p class="ytsub">Chưa có video nào.</p>`;
+  h += `<div class="ytgrid">${shown.map(ytCard).join("")}</div>`;
+  if (list.length > 6) h += `<button class="expandbtn" onclick="toggleYtExp('${key}')">${ytExp[key] ? "Thu gọn" : "Xem thêm " + (list.length - 6) + " video"}</button>`;
+  return h;
+}
+function toggleYtExp(key){ ytExp[key] = !ytExp[key]; render(); }
+function setYtChan(name){ ytChan = name; render(); }
+function ytViewHtml(){
+  if (!yt) return `<div class="loading">Đang tải mục YouTube Favorite &amp; Live…</div>`;
+  const live = (yt.live || []).filter(ytMatches);
+  const latest = (yt.latest || []).filter(ytMatches);
+  const popular = (yt.popular || []).filter(ytMatches);
+  const chips = [`<button class="ytchip ${ytChan==="all"?"active":""}" onclick="setYtChan('all')">Tất cả kênh</button>`]
+    .concat((yt.channels || []).map(c => `<button class="ytchip ${ytChan===c.name?"active":""}" onclick="setYtChan('${esc(c.name)}')">${esc(c.name)}</button>`)).join("");
+  let h = `<div class="ytview"><h2>YouTube Favorite &amp; Live</h2>${ytSubLine()}<div class="ytchips">${chips}</div>`;
+  live.forEach(it => { h += ytLiveBlock(it); });
+  if (!live.length) h += `<p class="ytsub">Hiện không có kênh nào đang phát trực tiếp. Khi có livestream, trình phát sẽ hiện ngay tại đây để xem luôn trên Ada's Feed.</p>`;
+  h += ytGridSection("latest", "Video mới", latest);
+  h += ytGridSection("popular", "Video nổi bật", popular);
+  return h + `</div>`;
+}
+function ytBandHtml(){
+  if (!yt || activeCat !== "Tất cả" || query) return "";
+  const live = yt.live || [];
+  const latest = (yt.latest || []).slice(0, 4);
+  if (!live.length && !latest.length) return "";
+  let h = `<section class="ytband"><h2>YouTube Favorite &amp; Live</h2>${ytSubLine()}`;
+  live.forEach(it => { h += ytLiveBlock(it); });
+  if (latest.length) h += `<div class="ytgrid">${latest.map(ytCard).join("")}</div>`;
+  h += `<button class="expandbtn" onclick="gotoYtTab()">Mở mục YouTube Favorite &amp; Live</button></section>`;
+  return h;
+}
+function gotoYtTab(){
+  activeCat = YTCAT;
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x.textContent === YTCAT));
+  render();
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
+function findYt(video){
+  if (!yt) return null;
+  return (yt.live || []).concat(yt.latest || [], yt.popular || []).find(x => x.video === video) || null;
+}
+function openYT(video){
+  const it = findYt(video); if (!it) return;
+  document.getElementById("dialog").innerHTML = `
+    <button class="closebtn" onclick="closeItem()" aria-label="Đóng">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="media"><div class="video"><iframe src="https://www.youtube.com/embed/${video}?rel=0&autoplay=1" title="${esc(it.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+    <div class="dbody">
+      <span class="catmark"><span class="sq" style="background:#C4302B"></span>YouTube Favorite &amp; Live</span>
+      <h2>${esc(it.title)}</h2>
+      <div class="meta dmeta"><span class="src">${esc(it.channel)}</span><span>${fullDate(it.ts)}</span>${it.views ? `<span>${fmtViews(it.views)}</span>` : ""}</div>
+      <div class="dactions"><a class="btn" href="${esc(it.url)}" target="_blank" rel="noopener">Mở trên YouTube</a></div>
+    </div>`;
+  document.getElementById("overlay").classList.add("open");
+  document.body.style.overflow = "hidden";
+  document.getElementById("overlay").scrollTop = 0;
+}
+function loadYt(){
+  return fetch("youtube.json", {cache:"no-store"})
+    .then(r => r.ok ? r.json() : null)
+    .then(d => { if (d) yt = d; })
+    .catch(() => {});
 }
 
 function contentHtml(it){
@@ -427,6 +567,7 @@ fetch("feed.json", {cache:"no-store"})
       `<div class="empty">Chưa tải được dữ liệu tin.<br>Kiểm tra kết nối rồi tải lại trang.</div>`;
     document.getElementById("edition-line").textContent = "Chưa rõ ấn bản gần nhất";
   });
+loadYt().then(()=>{ render(); });
 </script>
 <script>
 // Realtime client — a WebSocket to the adas-relay Worker (Durable Object hub).
@@ -475,7 +616,7 @@ window.RT = (function(){
 // /api/refresh Pages Function exists behind Cloudflare Access.
 (function(){
   if (location.hostname !== "adas-feed.pages.dev") return;
-  const TOPIC_BY_CAT = {"Tất cả":"all","AI & Công nghệ":"ai","Bảo mật":"ai","Khoa học":"science","Game":"game","Video":"video","Facebook":"facebook","Bảng tin cư dân":"residents"};
+  const TOPIC_BY_CAT = {"Tất cả":"all","AI & Công nghệ":"ai","Bảo mật":"ai","Khoa học":"science","Game":"game","Video":"video","YouTube Favorite & Live":"youtube","Facebook":"facebook","Bảng tin cư dân":"residents"};
   const toolbar = document.querySelector(".toolbar");
   if (!toolbar) return;
   const btn = document.createElement("button");
@@ -508,10 +649,22 @@ window.RT = (function(){
     if (watching) return; watching = true;
     const t = topic();
     const before = items.length ? items[0].ts : null;
+    const ytBefore = yt ? yt.updated_at : null;
     let tries = 0;
     const iv = setInterval(async ()=>{
       tries++;
-      try{
+      if (t === "youtube"){
+        try{
+          const r = await fetch("youtube.json?cb=" + Date.now(), {cache:"no-store"});
+          const data = await r.json();
+          if (data.updated_at && ytBefore && data.updated_at > ytBefore){
+            yt = data; render();
+            toast("Đã cập nhật xong mục YouTube Favorite & Live.");
+            clearInterval(iv); watching = false; syncBtn();
+            return;
+          }
+        }catch(e){}
+      } else try{
         const r = await fetch("feed.json?cb=" + Date.now(), {cache:"no-store"});
         const data = await r.json();
         const sorted = data.sort((a,b)=> new Date(b.ts) - new Date(a.ts));
@@ -569,6 +722,7 @@ window.RT = (function(){
     if (d.type === "progress"){
       toast(d.text || "Đang quét…");
     } else if (d.type === "result" && d.kind === "refresh"){
+      if (rtRefreshReq.topic === "youtube"){ loadYt().then(()=>render()); return; }
       const fresh = (d.items || []).filter((n)=> !items.some((o)=> o.url === n.url));
       if (fresh.length){
         items = fresh.concat(items).sort((a,b)=> new Date(b.ts) - new Date(a.ts)).slice(0, 300);
@@ -578,8 +732,10 @@ window.RT = (function(){
         render();
       }
     } else if (d.type === "done"){
+      const wasYt = rtRefreshReq.topic === "youtube";
       clearTimeout(rtRefreshReq.timer); rtRefreshReq = null;
       setBtn(false, "Cập nhật tin mới");
+      if (wasYt) loadYt().then(()=>render());
       toast(d.summary || "Đã cập nhật xong.");
     } else if (d.type === "error"){
       clearTimeout(rtRefreshReq.timer); rtRefreshReq = null;
@@ -590,7 +746,7 @@ window.RT = (function(){
   btn.addEventListener("click", ()=>{
     if (window.RT && RT.connected && !rtRefreshReq){
       const reqId = "r" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
-      rtRefreshReq = { id: reqId, timer: setTimeout(()=>{ rtRefreshReq = null; legacyRefresh(); }, 240000) };
+      rtRefreshReq = { id: reqId, topic: topic(), timer: setTimeout(()=>{ rtRefreshReq = null; legacyRefresh(); }, 240000) };
       setBtn(true, "Đang cập nhật…");
       toast("Đã gửi yêu cầu — Ada đang quét ngay bây giờ…");
       RT.send({type:"request", reqId: reqId, kind:"refresh", topic: topic()});

@@ -5,7 +5,7 @@
 // An agent-side scheduled job polls the KV mailbox, runs the scoped collection
 // and deletes the key when done. Requests expire on their own after 2 hours.
 
-const TOPICS = ["all", "ai", "science", "game", "video", "facebook", "residents"];
+const TOPICS = ["all", "ai", "science", "game", "video", "youtube", "facebook", "residents"];
 
 function json(obj, status) {
   return new Response(JSON.stringify(obj), {
