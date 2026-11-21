@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T16:17:56.093972+07:00",
+ "updated_at": "2026-11-21T18:56:59.469324+07:00",
  "channels": [
   {
    "channel_id": "UCrCqu1n0H52uGETAoSmgNdQ",
@@ -14,24 +14,23 @@
    "url": "https://www.youtube.com/@suluoc"
   }
  ],
- "live": [
+ "live": [],
+ "latest": [
   {
    "video": "-JpgzOvddi0",
    "title": "[NHÁNH 1:1] NỘI CHIẾN SEVEN TV, LUCERO THÁCH THỨC THÀNH MAN | ALL-STAR VIỆT NAM 2026",
    "channel": "EA Sports FC Online Vietnam",
    "handle": "@EASPORTSFCONLINEVN",
    "channel_url": "https://www.youtube.com/@EASPORTSFCONLINEVN",
-   "ts": "2026-11-21T10:35:49+07:00",
-   "views": 65980,
-   "viewers": 66523,
-   "duration": null,
-   "live": true,
+   "ts": "2026-11-21T17:18:17+07:00",
+   "views": 179000,
+   "viewers": null,
+   "duration": 12966,
+   "live": false,
    "upcoming": false,
    "url": "https://www.youtube.com/watch?v=-JpgzOvddi0",
    "image": "https://i.ytimg.com/vi/-JpgzOvddi0/hqdefault.jpg"
-  }
- ],
- "latest": [
+  },
   {
    "video": "9Jt5iVx4RsQ",
    "title": "🔥 [TRASHTALK] TAGxLUCERO VS NKxTHANHMAN – HEATED VERBAL WAR, WHO WILL BE SILENCED?",
@@ -69,7 +68,7 @@
    "handle": "@EASPORTSFCONLINEVN",
    "channel_url": "https://www.youtube.com/@EASPORTSFCONLINEVN",
    "ts": "2026-11-19T19:00:05+07:00",
-   "views": 4000,
+   "views": 4100,
    "viewers": null,
    "duration": 316,
    "live": false,
@@ -144,7 +143,7 @@
    "handle": "@EASPORTSFCONLINEVN",
    "channel_url": "https://www.youtube.com/@EASPORTSFCONLINEVN",
    "ts": "2026-11-15T17:35:02+07:00",
-   "views": 243000,
+   "views": 244000,
    "viewers": null,
    "duration": 13119,
    "live": false,
@@ -196,21 +195,6 @@
    "upcoming": false,
    "url": "https://www.youtube.com/watch?v=OmiamPRwZ1I",
    "image": "https://i.ytimg.com/vi/OmiamPRwZ1I/hqdefault.jpg"
-  },
-  {
-   "video": "rwDN-3WfFiM",
-   "title": "🔥 [HIGHLIGHTS 0:0 MATCH] VIETNAM ALL-STAR 2026 – STUNNING TOP-TIER CLASHES",
-   "channel": "EA Sports FC Online Vietnam",
-   "handle": "@EASPORTSFCONLINEVN",
-   "channel_url": "https://www.youtube.com/@EASPORTSFCONLINEVN",
-   "ts": "2026-11-14T12:00:14+07:00",
-   "views": 9700,
-   "viewers": null,
-   "duration": 1047,
-   "live": false,
-   "upcoming": false,
-   "url": "https://www.youtube.com/watch?v=rwDN-3WfFiM",
-   "image": "https://i.ytimg.com/vi/rwDN-3WfFiM/hqdefault.jpg"
   },
   {
    "video": "Q09ocU5vEgg",
@@ -566,7 +550,7 @@
    "handle": "@EASPORTSFCONLINEVN",
    "channel_url": "https://www.youtube.com/@EASPORTSFCONLINEVN",
    "ts": "2026-11-15T17:35:02+07:00",
-   "views": 243000,
+   "views": 244000,
    "viewers": null,
    "duration": 13119,
    "live": false,
@@ -581,7 +565,7 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-08-02T16:00:05+07:00",
-   "views": 213293,
+   "views": 213307,
    "viewers": null,
    "duration": null,
    "live": false,
@@ -656,7 +640,7 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-07-11T09:00:11+07:00",
-   "views": 119764,
+   "views": 119781,
    "viewers": null,
    "duration": null,
    "live": false,
@@ -671,7 +655,7 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-07-22T10:30:35+07:00",
-   "views": 110517,
+   "views": 110518,
    "viewers": null,
    "duration": null,
    "live": false,
@@ -701,7 +685,7 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-07-13T11:30:10+07:00",
-   "views": 99228,
+   "views": 99230,
    "viewers": null,
    "duration": null,
    "live": false,
