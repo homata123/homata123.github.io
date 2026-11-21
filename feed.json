@@ -1,5 +1,148 @@
 [
   {
+    "ts": "2026-11-21T20:11:01+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "BenQ ra mắt màn hình lập trình RD270Q 27\" 2K kèm giveaway cho cộng đồng J2Team",
+    "summary": "BenQ ra mắt màn hình lập trình RD270Q 27 inch 2K giá khoảng 6,2 triệu đồng; kèm giveaway tặng 01 màn hình cho bài chia sẻ góc làm việc thật nổi bật nhất, tham gia đến hết 5/12.",
+    "content": "BenQ vừa ra mắt mẫu màn hình lập trình mới RD270Q, cùng dòng với RD280U đã được review trước đây nhưng dễ tiếp cận hơn: 27 inch, độ phân giải 2K, giá trên Shopee hiện khoảng 6,2 triệu đồng.\nMẫu này hợp với người cần một màn hình chính 27 inch để code hằng ngày, dùng laptop và muốn cắm một dây cho gọn, hoặc hay phải đọc log, tài liệu dài. Người cần độ phân giải 4K trở lên, hoặc dùng Mac và khắt khe với độ nét chữ (macOS hiển thị đẹp nhất trên màn mật độ điểm ảnh cao), thì các mẫu cao hơn như RD280U sẽ hợp hơn.\nGiveaway: BenQ tặng 01 màn hình RD270Q cho bài chia sẻ góc làm việc thật nổi bật nhất trong cộng đồng J2Team — tham gia bằng cách bình luận ảnh góc làm việc tự chụp kèm vài dòng chia sẻ về công việc và góc làm việc hiện tại. Thời gian tham gia từ 21/11 đến hết 5/12, công bố kết quả 8/12. Bài đăng được thực hiện trong khuôn khổ hợp tác với BenQ.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3259588291039935/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-21T16:59:02+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "MAMA 2026: khoảnh khắc Daesung và Taeyang vén tóc cho Phạm Băng Băng gây sốt",
+    "summary": "Khoảnh khắc Daesung và Taeyang (BIGBANG) vén tóc cho Phạm Băng Băng tại MAMA 2026 đang viral với 6.870 tương tác và 122 bình luận.",
+    "content": "Khoảnh khắc Daesung và Taeyang (BIGBANG) vén tóc cho Phạm Băng Băng tại lễ trao giải MAMA 2026 đang lan truyền mạnh trong cộng đồng, thu về 6.870 tương tác và 122 bình luận.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2898701273872273/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-21T15:14:17+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "\"Hẹn gặp lại em kỳ thi tiếp theo\" — video xe thi sát hạch gây cười",
+    "summary": "Video xe thi sát hạch với dòng chú thích \"Hẹn gặp lại em kỳ thi tiếp theo\" thu hút 3.678 tương tác và 550 bình luận.",
+    "content": "Video ghi lại cảnh một xe thi sát hạch lái xe với dòng chú thích \"Hẹn gặp lại em kỳ thi tiếp theo\" đang gây cười trong cộng đồng, thu hút 3.678 tương tác và 550 bình luận.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2898599710549096/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-21T14:43:44+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Chợ Ninh Hiệp ế khách lạ thường giữa đợt rét ngọt cuối tuần",
+    "summary": "Chợ đầu mối Ninh Hiệp vắng tanh lúc 10h sáng cuối tuần dù Hà Nội rét ngọt — trái hẳn mọi năm cứ lạnh là khách ùn ùn về, khiến nhiều chủ sạp lo lắng.",
+    "content": "Chợ Ninh Hiệp — từng được mệnh danh là nơi đổ sỉ phải giành nhau từng bao quần áo — vắng khách lạ thường vào sáng cuối tuần: 10h sáng mà các quầy hàng vẫn thưa thớt, chủ sạp ngồi co ro trong gió lạnh.\nMọi năm, cứ trời lạnh là khách lại ùn ùn về Ninh Hiệp, vì rét được coi là mùa vàng của chợ. Năm nay thì khác: cũng lạnh, cũng rét, nhưng khách đâu chẳng thấy — một dấu hiệu đáng chú ý về sức mua tại chợ đầu mối này.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2898575060551561/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-21T14:48:15+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "\"Java4Shell\" — lỗ hổng OpenJDK CVE-2026-114938 cho phép thực thi mã từ xa",
+    "summary": "Lỗ hổng bộ nhớ trong chức năng giải mã Base64 của OpenJDK, định danh CVE-2026-114938, cho phép thực thi mã từ xa không cần xác thực; NVD chấm 8,1/10, CISA yêu cầu vá ngay.",
+    "content": "Công ty an ninh mạng Calif phát hiện lỗ hổng bảo mật trong OpenJDK, bộ công cụ mã nguồn mở dùng để phát triển và vận hành ứng dụng Java. Lỗ hổng được đặt tên \"Java4Shell\", định danh CVE-2026-114938, với điểm nghiêm trọng 8,1/10 theo thang CVSS 3.1 của NVD; Calif đánh giá độ nguy hiểm 9,2/10 theo thang CVSS 4.0.\nLỗ hổng xuất phát từ lỗi hỏng bộ nhớ trong chức năng giải mã Base64 của OpenJDK, khiến chương trình ghi dữ liệu vượt quá vùng bộ nhớ được cấp phát, tạo điều kiện để tin tặc đọc thông tin nhạy cảm hoặc thực thi mã từ xa mà không cần xác thực tài khoản.\nLỗ hổng ảnh hưởng OpenJDK từ bản 17.0.6 trở lên cùng nhiều bản phân phối như Amazon Corretto, Eclipse Temurin, Microsoft Build of OpenJDK và Red Hat OpenJDK. Calif cho biết đã thử nghiệm thành công thực thi mã từ xa trên nhiều phần mềm doanh nghiệp.\nGiới chức Mỹ, Hàn Quốc, Đức, Anh đã phát cảnh báo; CISA (Mỹ) yêu cầu các đơn vị liên quan vá lỗi ngay lập tức. Tại Hàn Quốc, Văn phòng Tổng thống đã tổ chức cuộc họp khẩn hôm 17/11 với các cơ quan chính phủ để thảo luận biện pháp ứng phó.",
+    "url": "https://facebook.com/groups/vgu.tech.alumni/permalink/1512154910821018/",
+    "image": null,
+    "source": "VGU Tech Alumni"
+  },
+  {
+    "ts": "2026-11-21T19:19:32+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Tìm hiểu từ khóa strictfp trong Java: chuẩn hóa tính toán số thực theo IEEE 754",
+    "summary": "Từ khóa strictfp giúp chuẩn hóa phép tính số thực dấu phẩy động để kết quả nhất quán trên mọi nền tảng — bài viết giải thích khái niệm, cú pháp và ví dụ.",
+    "content": "Trong Java, các phép tính số thực dấu phẩy động đôi khi cho kết quả chênh lệch nhỏ khi chạy trên các phần cứng hoặc nền tảng khác nhau. Từ khóa strictfp (strict floating-point) là giải pháp cho vấn đề này: nó chuẩn hóa các phép tính số thực, đảm bảo kết quả luôn nhất quán và chính xác tuyệt đối trên mọi hệ điều hành.\nBài viết giới thiệu khái niệm và mục đích của strictfp, cách nó đảm bảo tính toán phẩy động tuân thủ nghiêm ngặt chuẩn IEEE 754, cú pháp và vị trí sử dụng (cho class, interface, method), cùng ví dụ minh họa và các trường hợp không được phép áp dụng.",
+    "url": "https://facebook.com/groups/vgu.tech.alumni/permalink/1512351027468073/",
+    "image": null,
+    "source": "VGU Tech Alumni"
+  },
+  {
+    "ts": "2026-11-21T19:33:48+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "SEO Skills: bộ 30 skill SEO miễn phí cho Claude Code, làm xong ra bản sửa code",
+    "summary": "Repo mã nguồn mở (MIT) gom 30 skill SEO cho Claude Code: mỗi skill kết thúc bằng một PR hoặc file dùng được ngay, có cả agent SEO chạy hằng ngày tự mở PR.",
+    "content": "Skill là file hướng dẫn dạy AI Agent làm một việc cụ thể. Repo này gom 30 skill SEO, mã nguồn mở, giấy phép MIT.\nĐiểm đáng chú ý: mỗi skill kết thúc bằng thứ dùng được ngay — một PR (bản sửa code chờ duyệt) hoặc một file trong repo, không phải file audit PDF. Các skill bao gồm: sửa tiêu đề, thẻ H1, robots.txt, viết lại bài blog đang tụt hạng; mảng tìm kiếm bằng AI — xem ChatGPT, Perplexity, Gemini đang trích dẫn ai, rồi làm trang cho những câu hỏi còn thiếu; skill seo-autopilot chạy như một agent SEO hằng ngày trên repo, tự mở PR.\nCài đặt bằng một lệnh cho Claude Code, Cursor, Codex; dùng ChatGPT hay Claude.ai thì copy prompt từ trang web của tác giả. Lưu ý: vài skill chạy dựa trên dịch vụ bên ngoài như Ahrefs hay LinkDR, trong đó LinkDR là nhà tài trợ của repo.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4622799454599569/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-21T20:28:33+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Rượu cốm nhà làm cho mùa đông",
+    "summary": "Một sạp trong chợ khu có rượu cốm nhà làm: uống êm, thoang thoảng mùi cốm, hợp nhâm nhi cho ấm bụng mùa đông; có sẵn tại Hà Đông và gửi đi các tỉnh. Thông tin liên hệ nằm trong bài gốc tại group.",
+    "content": "Một sạp trong chợ khu giới thiệu rượu cốm nhà làm cho mùa đông: tửu cốm uống êm, thoang thoảng mùi cốm, hợp làm tý tửu cho ấm bụng.\nHàng có sẵn tại Hà Đông và gửi đi tất cả các tỉnh.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4787580411478969/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-21T20:25:39+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Xiên chiên 2.000 đồng và mì trộn, ship tới 3h sáng",
+    "summary": "Một quán trong khu bán xiên chiên 2.000 đồng và mì trộn, mở từ 6h chiều tới 3h sáng, ship tới 3h sáng; hóa đơn ăn tại quán trên 50.000 đồng được tặng 1 nước bất kỳ và free dưa góp. Thông tin liên hệ nằm trong bài gốc tại group.",
+    "content": "Một quán trong khu bán xiên chiên 2.000 đồng và mì trộn, phục vụ từ 6h chiều tới 3h sáng, có bán tại quán và ship tới 3h sáng.\nĂn tại quán, hóa đơn trên 50.000 đồng (áp dụng với xiên chiên) được tặng 1 nước bất kỳ (trà chanh, trà tắc, nước me) và free dưa góp ăn kèm.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4787577231479287/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-21T20:24:01+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Cải bắp ta và su hào, ship tận cửa ngày mai",
+    "summary": "Một sạp trong chợ khu rao trước rau ship ngày mai: su hào 22.000 đồng/2 củ, cải bắp ta cây to 23.000 đồng/cây, 45.000 đồng/2 cây, ship tận cửa. Thông tin liên hệ nằm trong bài gốc tại group.",
+    "content": "Một sạp trong chợ khu rao trước rau củ ship ngày mai, giao tận cửa: su hào 22.000 đồng/2 củ; cải bắp ta cây to 23.000 đồng/cây, 45.000 đồng/2 cây.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4787575058146171/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-21T20:22:08+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Bánh Khoai Mật Phomai 75.000 đồng/set cho bữa sáng và bữa xế",
+    "summary": "Một sạp trong chợ khu bán bánh Khoai Mật Phomai 75.000 đồng/set: khoai lang mật vàng dẻo thơm kết hợp phô mai tan chảy, cho vào nồi chiên không dầu 10 phút là có bữa sáng. Thông tin liên hệ nằm trong bài gốc tại group.",
+    "content": "Một sạp trong chợ khu bán Bánh Khoai Mật Phomai, hợp cho bữa sáng và bữa xế, giá 75.000 đồng/set.\nBánh nhỏ với khoai lang mật vàng óng, dẻo thơm kết hợp phô mai béo ngậy tan chảy trong lòng bánh; cho vào nồi chiên không dầu 10 phút là có bữa sáng.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4787571358146541/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-21T20:19:07+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Set yến tự chưng và yến công ty cho cuối tuần, có đóng set đi biếu",
+    "summary": "Một sạp trong chợ khu có set yến tự chưng nóng từ yến thô (55.000 đồng/hũ 8g, 80.000 đồng/hũ 11g), yến công ty Khánh Hòa nhiều vị, set đóng hộp biếu từ 220.000 đồng, gói tự chưng 370.000–500.000 đồng/10 gói. Thông tin liên hệ nằm trong bài gốc tại group.",
+    "content": "Một sạp trong chợ khu giới thiệu set yến cho cuối tuần, vừa ăn vừa biếu: set yến hũ tự chưng nóng nguyên chất từ yến thô — 55.000 đồng/hũ (8g yến tươi), 80.000 đồng/hũ (11g yến tươi); yến công ty Khánh Hòa 11 vị, mix vị thoải mái cho người lớn và trẻ em — loại 39%: 10 hũ 300.000 đồng, set đóng hộp biếu 10 hũ 320.000 đồng, 8 hũ 260.000 đồng, 6 hũ 220.000 đồng; loại 68%: 10 hũ 400.000 đồng; có set giỏ 10–20 hũ.\nSet yến từng gói nhỏ tự chưng đủ nguyên liệu (10 gói): loại 1 nhiều sợi dài 500.000 đồng, loại 2 vụn ít sợi 370.000 đồng. Ngoài ra còn yến thô già nở, yến tinh và chân yến thô.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4787564751480535/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-21T20:16:55+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Mực ống tươi giá rẻ 159.000 đồng/kg, mai có hàng",
+    "summary": "Một sạp trong chợ khu có mực ống tươi giá rẻ 159.000 đồng/kg, size tầm 25–27 con/kg, mực dày, xào ngon; hàng ít vì thuyền gần bờ đi về được ít, mực bị xước da nên giá rẻ. Thông tin liên hệ nằm trong bài gốc tại group.",
+    "content": "Một sạp trong chợ khu có mực ống tươi giá rẻ: tranh thủ trời lặng, thuyền gần bờ đi về được ít mực, mai có hàng.\nMực ống dân kéo lưới gần bờ, tươi, nhưng bị xước da nên giá rẻ: size tầm 25–27 con/kg, chỉ 159.000 đồng/kg. Mực dày, xào ngon.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4787560634814280/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-21T04:07:00+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
