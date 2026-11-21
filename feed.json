@@ -1,5 +1,71 @@
 [
   {
+    "ts": "2026-11-21T01:57:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Trump dọa áp \"thuế khổng lồ\" với công ty Mỹ xây trung tâm dữ liệu AI ở nước ngoài",
+    "summary": "Tổng thống Trump tuyên bố sẽ phạt các công ty Mỹ xây trung tâm dữ liệu AI bên ngoài nước Mỹ bằng một mức thuế \"tremendous\", nhằm giữ lợi thế trong cuộc đua AI với Trung Quốc — nhưng chưa có chi tiết thực thi.",
+    "content": "Tổng thống Donald Trump tuyên bố Mỹ sẽ phạt các công ty Mỹ xây trung tâm dữ liệu AI bên ngoài nước Mỹ bằng một mức thuế \"tremendous\". Phát biểu tại họp báo Nhà Trắng sau chuyến công du châu Á, ông nói: \"We're not going to allow our companies to build data centers outside of our country.\"\nTrung tâm dữ liệu là hạ tầng then chốt của cơn bùng nổ AI, cung cấp sức mạnh tính toán để huấn luyện và vận hành các mô hình ngày càng phức tạp — một hình phạt như vậy có thể làm phức tạp kế hoạch mở rộng toàn cầu của ngành.\nÔng Trump thừa nhận chưa báo cho chính nhân viên của mình về đề xuất này và chưa rõ cách thực thi. Bối cảnh: Bộ Thương mại Mỹ vừa siết xuất khẩu chip AI sang một số nước Đông Nam Á; Alphabet vừa công bố đầu tư 15 tỷ USD vào trung tâm dữ liệu tại Malaysia.",
+    "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-21T05:11:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Oracle: hợp đồng hạ tầng với OpenAI đã được cấp đủ vốn",
+    "summary": "Oracle thông báo hợp đồng hạ tầng đám mây với OpenAI đã được tài trợ đầy đủ sau đợt huy động vốn cuối cùng 20 tỷ USD; đây là hợp đồng điện toán 5 năm trị giá khoảng 300 tỷ USD.",
+    "content": "Oracle thông báo hợp đồng hạ tầng đám mây với OpenAI đã được tài trợ đầy đủ sau đợt huy động vốn cuối cùng 20 tỷ USD (10 tỷ USD cổ phiếu + 10 tỷ USD nợ) hồi đầu tháng.\nĐây là hợp đồng điện toán 5 năm trị giá khoảng 300 tỷ USD. Cơ sở Abilene, Texas — nơi huấn luyện mô hình GPT-6 Astra của OpenAI — sắp hoàn thành; hai bên dự kiến phát triển thêm 4,5 GW công suất trung tâm dữ liệu tại Mỹ.",
+    "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-21T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "CrowdStrike đàm phán mua lại Zscaler",
+    "summary": "CrowdStrike đang đàm phán mua lại đối thủ Zscaler; thực thể hợp nhất sẽ có vốn hóa khoảng 265 tỷ USD — có thể là một trong những thương vụ lớn nhất ngành an ninh mạng.",
+    "content": "Bloomberg (Reuters xác nhận độc lập) đưa tin CrowdStrike đang đàm phán mua lại đối thủ Zscaler; thực thể hợp nhất sẽ có vốn hóa khoảng 265 tỷ USD (CrowdStrike ~235 tỷ USD, Zscaler ~32 tỷ USD).\nCổ phiếu Zscaler tăng ~18% sau giờ giao dịch, CrowdStrike giảm ~8%. Đàm phán vẫn đang diễn ra, chưa chắc thành thỏa thuận; CrowdStrike từ chối bình luận.",
+    "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-21T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Startup coding Cognition AI đàm phán vòng gọi vốn mới ở định giá 75 tỷ USD",
+    "summary": "Cognition AI (hãng đứng sau Devin, nền tảng coding agent) đang đàm phán huy động 2 tỷ USD trở lên ở mức định giá 75 tỷ USD — chỉ ~2 tháng sau vòng Series E ở định giá 48 tỷ USD.",
+    "content": "Bloomberg đưa tin Cognition AI (hãng đứng sau Devin, nền tảng coding agent) đang đàm phán huy động 2 tỷ USD trở lên ở mức định giá 75 tỷ USD — chỉ ~2 tháng sau vòng Series E 2 tỷ USD ở định giá 48 tỷ USD.\nĐàm phán chưa ngã ngũ, chi tiết có thể thay đổi. Mức định giá tăng vọt phản ánh cơn sốt đầu tư vào các coding agent.",
+    "url": "https://www.reuters.com/technology/cognition-ai-talks-be-valued-75-billion-latest-funding-round-bloomberg-news-2026-11-20/",
+    "image": null,
+    "source": "Reuters / Bloomberg"
+  },
+  {
+    "ts": "2026-11-21T08:51:51+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Mistral AI mở trung tâm châu Á–Thái Bình Dương tại Singapore",
+    "summary": "Mistral AI khai trương trụ sở khu vực và trung tâm nghiên cứu tại Singapore ngày 20/11, dự kiến tăng nhân sự khu vực từ khoảng 100 lên 200 người vào năm 2027.",
+    "content": "Công ty AI Pháp Mistral AI khai trương trụ sở khu vực châu Á–Thái Bình Dương và trung tâm nghiên cứu tại Asia Square Tower 1, Singapore ngày 20/11, dự kiến tăng nhân sự khu vực từ khoảng 100 lên 200 người vào năm 2027, phần lớn ở Singapore.\nTrung tâm sẽ phát triển mô hình và công cụ AI cho dịch vụ công, robot và sản xuất công nghệ cao — theo hướng \"sovereign AI\" để chính phủ và doanh nghiệp giữ quyền kiểm soát hạ tầng và dữ liệu của mình. Mistral đang hợp tác với cơ quan an toàn công cộng Singapore HTX phát triển dòng mô hình Phoenix.",
+    "url": "https://asiadaily.org/news/19304/",
+    "image": "https://asiadaily.org/media/uploads/2026/11/19304-1355095504-1200x675.webp",
+    "source": "Asia Daily"
+  },
+  {
+    "ts": "2026-11-21T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Nhóm hacker liên hệ Trung Quốc khai thác zero-day VMware vCenter từ tháng 9 để chiếm quyền admin",
+    "summary": "Broadcom đã vá CVE-2026-123890 (CVSS 9.8) — lỗ hổng bypass xác thực trong VMware Directory Service. Nhóm gián điệp Armory Castle đã khai thác từ đầu tháng 9/2026, hơn 2 tháng trước khi công bố.",
+    "content": "Broadcom đã vá CVE-2026-123890 (CVSS 9.8) — lỗ hổng bypass xác thực trong VMware Directory Service, cho phép kẻ tấn công không cần đăng nhập vẫn mở phiên với quyền administrator@vsphere.local.\nGoogle Mandiant/GTIG công bố ngày 20/11: nhóm gián điệp Armory Castle (từng là UNC5221/Warp Panda, nghi liên hệ Trung Quốc) đã khai thác lỗ hổng này từ đầu tháng 9/2026 — hơn 2 tháng trước khi công bố — bằng công cụ BONESAW, sau khi đột nhập qua zero-day BeyondTrust (CVE-2026-102764).\nBản vá có trong vCenter 8.0 U3m, 9.0.2.0200, 9.1.1.0200; vCenter 7.0 đã hết hỗ trợ nên không có bản vá.",
+    "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+    "image": "https://www.bleepstatic.com/content/hl-images/2023/10/25/VMware_red.jpg",
+    "source": "BleepingComputer"
+  },
+  {
     "ts": "2026-11-21T11:32:00+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
