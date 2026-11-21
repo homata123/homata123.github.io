@@ -1,5 +1,93 @@
 [
   {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Thinking Machines ra mắt Inkling 2 Mini — mô hình mở 26B tham số chạy được trên laptop",
+    "summary": "Thinking Machines Lab phát hành Inkling 2 Mini ngày 20/11: mô hình đa phương thức MoE 26,4B tham số (3,4B active/token), kiến trúc 'looped transformer' với checkpoint chỉ ~20GB, context 1 triệu token, giấy phép Apache 2.0 — dẫn đầu 32/48 benchmark trong phân khúc.",
+    "url": "https://huggingface.co/blog/inkling2mini",
+    "image": "https://huggingface.co/blog/assets/inkling2mini/thumbnail.png",
+    "source": "Hugging Face Blog",
+    "content": "Thinking Machines Lab phát hành Inkling 2 Mini ngày 20/11: mô hình đa phương thức (nhận text + ảnh) dạng mixture-of-experts với 26,4 tỷ tham số tổng, chỉ 3,4 tỷ tham số hoạt động mỗi token.\nĐiểm đặc biệt là kiến trúc 'looped transformer': trong 24 lớp decoder, 12 lớp giữa được chạy lặp 3 lần nên mô hình hoạt động như có 48 lớp logic mà chỉ lưu 24 lớp vật lý, checkpoint chỉ khoảng 20GB. Context 1 triệu token, giấy phép Apache 2.0, chạy local qua transformers, llama.cpp, MLX và SGLang (hỗ trợ ngay từ ngày đầu).\nTheo Artificial Analysis, mô hình dẫn đầu 32/48 benchmark trong phân khúc so với Gemma 4 31B, Qwen3.8-27B, Muse Glimmer; đạt 20,1 điểm Intelligence Index. Một biến thể nghiên cứu với số vòng lặp thay đổi được cũng được phát hành kèm."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Mỹ phê duyệt bán gần 880.000 chip AI cho các công ty Trung Quốc",
+    "summary": "Hạ viện Mỹ ngày 19/11 công bố hồ sơ Bộ Thương mại: 879.868 chip Nvidia H200 và AMD MI325X được duyệt bán cho doanh nghiệp Trung Quốc (12/2025–5/2026); Tencent 150.000, Alibaba 75.000, Baidu 43.000, BYD 4.000 — chưa lô nào được giao tính đến 11/5.",
+    "url": "https://www.aljazeera.com/economy/2026/11/19/us-signed-off-on-sales-of-nearly-900000-ai-chips-to-china-in-six-months",
+    "image": null,
+    "source": "Al Jazeera",
+    "content": "Ủy ban Đối ngoại Hạ viện Mỹ ngày 19/11 công bố hồ sơ của Bộ Thương mại: từ tháng 12/2025 đến tháng 5/2026, Mỹ đã phê duyệt bán 879.868 chip AI tiên tiến của Nvidia (H200) và AMD (MI325X) cho các công ty Trung Quốc, trong tổng số 3,44 triệu chip được xin phép.\nCác bên mua lớn nhất: Tencent 150.000, Alibaba 75.000, Baidu 43.000, BYD 4.000 — đều nằm trong danh sách công ty quân sự Trung Quốc của Lầu Năm Góc.\nHồ sơ cho thấy chưa có lô hàng nào được giao tính đến 11/5. Chủ tịch ủy ban Brian Mast dùng quyền theo Đạo luật Cải cách Kiểm soát Xuất khẩu để công khai dữ liệu vốn được bảo mật."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Meta Muse Code thêm khả năng tạo mô hình 3D ngay trong terminal",
+    "summary": "Meta ra mắt ngày 20/11 khả năng tạo mô hình 3D gốc trong Muse Code: từ mô tả chữ hoặc ảnh tham chiếu tạo mesh GLB có texture lưu thẳng vào repo; dùng chung hạn mức gói đăng ký, có thêm bản Pro 3D.",
+    "url": "https://ashutoshai.com/ai-compass/2026/11/20/",
+    "image": null,
+    "source": "Meta for Developers",
+    "content": "Meta ra mắt ngày 20/11 khả năng tạo mô hình 3D gốc trong Muse Code, coding agent chạy trên CLI (macOS, Linux, Windows): các model Muse Wonder, Muse Spark và Muse Ember có thể gọi tool 3D tích hợp để biến mô tả bằng chữ hoặc một ảnh tham chiếu thành mesh GLB có texture, lưu thẳng vào repo của dự án — phục vụ làm game, in 3D hoặc trực quan hóa web.\nTính năng dùng chung hạn mức gói đăng ký Muse Code, không cần plugin hay dịch vụ 3D bên ngoài: gói Everyday 5 USD/tháng tạo khoảng 30 mô hình/5 giờ với model Nano 3D, các gói cao hơn mở thêm bản Pro 3D độ phân giải cao.\nChưa có tool rigging xương hay animation nhân vật tích hợp; Meta công bố workflow gợi ý kết hợp Muse Wonder Full với Mesh2Motion và Blender."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "CISA đưa 4 lỗ hổng đang bị khai thác vào danh mục KEV, hạn khắc phục 23/11",
+    "summary": "CISA ngày 20/11 bổ sung 4 lỗ hổng vào danh mục Known Exploited Vulnerabilities vì có bằng chứng đang bị khai thác thực tế, hạn khắc phục 23/11: VMware vCenter, Cisco Expressway, Apache Roller và SAP NetWeaver.",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "image": null,
+    "source": "CISA",
+    "content": "CISA ngày 20/11 bổ sung 4 lỗ hổng vào danh mục Known Exploited Vulnerabilities (KEV) vì có bằng chứng đang bị khai thác thực tế, yêu cầu các cơ quan liên bang khắc phục trước 23/11.\nBốn lỗ hổng: VMware vCenter CVE-2026-123890 (CVSS 9.8, bypass xác thực), Cisco Expressway CVE-2026-76466 (9.8, hard-coded credentials dẫn tới thực thi lệnh với quyền root), Apache Roller CVE-2026-129448 (9.8, deserialization dữ liệu không tin cậy qua XML-RPC) và SAP NetWeaver CVE-2025-42884 (6.5, JNDI injection).\nHai lỗ hổng VMware và Cisco đã được báo trong các bản tin trước, nhưng việc CISA xác nhận cả 4 đang bị khai thác — trong đó SAP NetWeaver và Apache Roller là mới được xác nhận — cùng hạn chót 3 ngày là diễn biến mới."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "PHP vá 18 lỗ hổng, trong đó 7 lỗi RCE nghiêm trọng",
+    "summary": "Nhóm phát triển PHP phát hành ngày 19/11 bản vá cho 18 lỗ hổng trên mọi nhánh được hỗ trợ (8.5.13, 8.4.28, 8.3.37, 8.2.36), trong đó 7 lỗi critical CVSS 9.2 có thể dẫn tới thực thi mã từ xa.",
+    "url": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+    "image": null,
+    "source": "BleepingComputer",
+    "content": "Nhóm phát triển PHP phát hành ngày 19/11 bản vá cho 18 lỗ hổng trên mọi nhánh được hỗ trợ (8.5.13, 8.4.28, 8.3.37, 8.2.36), trong đó 7 lỗi được xếp critical với CVSS 9.2 và có thể dẫn tới thực thi mã từ xa.\nCác lỗi nghiêm trọng nhất: session serializer mismatch (CVE-2026-115560), 'phpAfterShell' (CVE-2026-126714, ghi session file không nguyên tử), PHP-FPM request smuggling (CVE-2026-129289) cùng các lỗi use-after-free trong session, core và timezone cache.\nCác bản vá là một phần của chu kỳ phát hành 4 tuần của PHP, sau cảnh báo ngày 18/11; quản trị viên được khuyến nghị nâng cấp ngay và không để PHP-FPM/LSAPI tiếp xúc trực tiếp với mạng không tin cậy."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "OpenAI siết chặt chống 'adversarial distillation' — tỉ lệ trích xuất reasoning rơi từ 54% xuống 0,2%",
+    "summary": "OpenAI ngày 20/11 công bố cách chống adversarial distillation: gắn reasoning được bảo vệ vào lịch sử hội thoại, chặn model cũ đọc reasoning của Astra/Sol; tỉ lệ tấn công thành công trong red-team nội bộ giảm từ 54,0% xuống 0,2%.",
+    "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+    "image": null,
+    "source": "The Decoder",
+    "content": "OpenAI ngày 20/11 công bố chi tiết cách chống adversarial distillation — việc dùng trái phép đầu ra của model tiên tiến để huấn luyện model khác có biện pháp bảo vệ yếu hơn.\nTrọng tâm là bảo vệ chain-of-thought: reasoning của GPT-6.2 Astra và GPT-6.2 Sol được gắn với lịch sử hội thoại đã tạo ra nó (sửa message cũ sẽ làm mất reasoning theo sau), các dòng model cũ bị chặn đọc reasoning của model mới, kết hợp huấn luyện đối kháng, classifier đầu vào/đầu ra và điều tra các chiến dịch trích xuất có tổ chức.\nTrong red-team nội bộ, tỉ lệ tấn công trích xuất reasoning từ yêu cầu trước đó giảm từ 54,0% (GPT-6 Astra) xuống 0,2% (GPT-6.2 Astra), và với yêu cầu hiện tại giảm từ 22,9% xuống 0,9%. OpenAI cho biết mỗi tuần khóa từ hàng nghìn đến hàng chục nghìn tài khoản liên quan."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6 gặp lỗi crash CE-108255-1 trên PS5, Rockstar chưa có bản vá",
+    "summary": "Nhiều người chơi GTA 6 trên PS5 báo lỗi CE-108255-1 khiến game văng về màn hình chính, lặp lại đúng tại cùng một điểm (mở đầu, nhiệm vụ 'Pipework'); xóa cache, cài lại hay reset máy đều không sửa được. Rockstar chưa có phản hồi chính thức.",
+    "url": "https://www.polygon.com/gta-6-crash-ps5-error-code-ce-108255-1/",
+    "image": null,
+    "source": "Polygon",
+    "content": "Nhiều người chơi GTA 6 trên PS5 báo lỗi CE-108255-1 khiến game văng về màn hình chính, lặp lại đúng tại cùng một điểm — đoạn mở đầu, hoặc nhiệm vụ 'Pipework' khi Jason dùng cây thụt bồn rửa — khiến không thể tiếp tục cốt truyện.\nCác cách khắc phục thông thường (xóa cache, rebuild database, cài lại game, thậm chí reset máy) đều không hiệu quả. Rockstar chưa đưa ra phản hồi chính thức; trang hỗ trợ của hãng chỉ dẫn người chơi sang bộ phận hỗ trợ PlayStation/Xbox.\nMột số người chơi Xbox Series X cũng báo crash sau vài phút đến vài giờ chơi. Nguyên nhân chưa rõ — giả thuyết phổ biến là game quá nặng khiến lỗi phần cứng cũ (kể cả dung dịch tản nhiệt liquid metal khô) bộc lộ."
+  },
+  {
+    "ts": "2026-11-21T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Nexon mở preload MMORPG 'Overgeared', ra mắt ngày 26/11",
+    "summary": "Nexon mở tải trước MMORPG 'Overgeared' — chuyển thể từ web novel/webtoon cùng tên với 1,3 tỉ lượt xem — tại Hàn Quốc, Đài Loan, Hong Kong và Macau, trước ngày ra mắt chính thức 26/11 trên PC và mobile.",
+    "url": "https://en.sedaily.com/business/2026/11/21/nexon-opens-preloads-for-mmorpg-based-on-hit-webtoon",
+    "image": null,
+    "source": "Seoul Economic Daily",
+    "content": "Nexon mở tải trước MMORPG 'Overgeared' — chuyển thể từ web novel/webtoon cùng tên với 1,3 tỉ lượt xem — tại Hàn Quốc, Đài Loan, Hong Kong và Macau, trước ngày ra mắt chính thức 26/11 trên PC (qua Google Play Games) và mobile.\nGame xây dựng quanh hệ thống trang bị, tùy biến vũ khí và chiến đấu quy mô lớn trong vũ trụ của nguyên tác; 20 máy chủ đã đầy trong đợt đăng ký tên nhân vật trước."
+  },
+  {
     "category": "Facebook",
     "content": "Một bài đăng trên J2Team Community (304 lượt tương tác, 19 bình luận) lan truyền tin đồn từ X rằng Anthropic, sau khi IPO, đang chuẩn bị 'nhả' mô hình mới — được gọi là 'Claude Saga 6' trong bài đăng.\nBài đăng không kèm link hay chi tiết kỹ thuật nào, và hiện chưa có thông tin chính thức từ Anthropic. Nội dung này mới chỉ ở mức tin đồn/teaser, chưa được xác thực.",
     "flow": "facebook",
