@@ -1,5 +1,71 @@
 [
   {
+    "ts": "2026-11-21T08:38:13+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "BepiColombo vào quỹ đạo Sao Thủy sau hành trình 8 năm",
+    "summary": "Sứ mệnh BepiColombo của ESA và JAXA được Sao Thủy \"bắt\" vào quỹ đạo trong ngày hôm nay 21/11, sau hành trình gần 10 tỷ km kéo dài 8 năm — tàu thứ hai trong lịch sử vào quỹ đạo Sao Thủy, sau Messenger của NASA.",
+    "url": "https://skyandtelescope.org/astronomy-news/bepicolombo-arrives-at-mercury-after-8-year-odyssey/",
+    "image": "https://dq0hsqwjhea1.cloudfront.net/Lead-image.jpg",
+    "source": "Sky & Telescope",
+    "content": "Sứ mệnh BepiColombo của ESA và JAXA chính thức được Sao Thủy \"bắt\" vào quỹ đạo trong ngày hôm nay 21/11, sau hành trình gần 10 tỷ km kéo dài 8 năm kể từ khi phóng tháng 10/2018, qua 9 lần bay ngang (1 lần Trái Đất, 2 lần Sao Kim, 6 lần Sao Thủy) và một lần trì hoãn gần một năm do sự cố động cơ ion.\nĐây mới là tàu thứ hai trong lịch sử vào quỹ đạo Sao Thủy, sau Messenger của NASA. Hai tàu quỹ đạo MPO (ESA) và Mio (JAXA) vẫn gắn liền nhau, sẽ tách ra ngày 9–10/12 và bắt đầu giai đoạn khoa học từ tháng 4/2027.\nCùng nhau, MPO và Mio sẽ nghiên cứu lõi, từ trường, băng ở cực và bề mặt của hành tinh trong cùng hệ Mặt Trời — trong đó Sao Thủy nặng hơn nhiều so với kích thước của nó, có từ trường toàn cầu (hành tinh đá duy nhất ngoài Trái Đất có từ trường), và có thể chứa băng nước trong các miệng hố tối vĩnh viễn ở hai cực."
+  },
+  {
+    "ts": "2026-11-21T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Chip lượng tử Willow của Google thắng trò chơi mà máy cổ điển không thể thắng nhiều đến thế",
+    "summary": "Google Quantum AI công bố trên tạp chí Science (19/11, bài bìa): chip siêu dẫn Willow thắng trò chơi \"magic square\" 98,3% trong 900.000 ván, vượt xa giới hạn cổ điển 88,9% — chứng minh tính ngữ cảnh lượng tử ở quy mô tới 105 qubit.",
+    "url": "https://research.google/blog/a-game-you-cannot-win-unless-you-have-a-quantum-computer/",
+    "image": null,
+    "source": "Google Research Blog",
+    "content": "Google Quantum AI công bố trên tạp chí Science (19/11, bài bìa) rằng chip siêu dẫn Willow đã chứng minh được tính ngữ cảnh lượng tử (measurement contextuality) ở quy mô lớn: trong trò chơi \"magic square\" của Mermin–Peres, Willow thắng 98,3% trong 900.000 ván, vượt xa giới hạn cổ điển 8/9 (88,9%).\nNhóm còn đo chỉ số bất đẳng thức Bell–Kochen–Specker χ = 5,59 (cổ điển tối đa 4, lượng tử tối đa 6) và mở rộng thử nghiệm lên tới 105 qubit, cho thấy tính ngữ cảnh — được xem là tài nguyên sâu hơn cả rối lượng tử cho sức mạnh của máy tính lượng tử — vẫn tồn tại ở quy mô nhiều hạt.\nTheo Google, các bài kiểm tra này đồng thời tạo ra một phép đo chuẩn phần cứng mới, nhạy với những lỗi điều khiển tinh vi mà các phép kiểm tra mạch ngẫu nhiên thường bỏ sót."
+  },
+  {
+    "ts": "2026-11-21T12:29:12+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Video Phê Game: \"RED DEAD REDEMPTION 2 Xây Dựng Nhân Vật Đỉnh Thế Nào? | DUTCH VAN DER LINDE\"",
+    "summary": "Phê Game ra video mới phân tích cách Red Dead Redemption 2 xây dựng nhân vật, tập trung vào Dutch van der Linde — thủ lĩnh băng Van der Linde. Đăng 21/11 lúc 12:29.",
+    "url": "https://www.youtube.com/watch?v=s_23lJnKatE",
+    "image": "https://i.ytimg.com/vi/s_23lJnKatE/hqdefault.jpg",
+    "source": "Phê Game",
+    "content": "Phê Game ra video mới phân tích cách Red Dead Redemption 2 xây dựng nhân vật, tập trung vào Dutch van der Linde — thủ lĩnh băng Van der Linde.\nVideo đăng ngày 21/11 lúc 12:29 (giờ Việt Nam), là video mới nhất của kênh trong 48 giờ qua."
+  },
+  {
+    "ts": "2026-11-21T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Cronos: Lazarus — DLC tiền truyện của Cronos: The New Dawn ra mắt ngày 3/12",
+    "summary": "Bloober Team công bố Cronos: Lazarus, bản mở rộng cốt truyện của game kinh dị Cronos: The New Dawn, phát hành ngày 3/12/2026 trên PC, PS5 và Xbox Series X|S; bản Nintendo Switch 2 dự kiến quý I/2027.",
+    "url": "https://explosionnetwork.com/cronos-lazarus-dlc-reveals-december-2026-release-date-and-new-story-trailer/",
+    "image": "https://explosionnetwork.com/wp-content/smush-webp/2026/11/cronos-lazarus-story-trailer-news-fi.png.webp",
+    "source": "Explosion Network",
+    "content": "Bloober Team công bố Cronos: Lazarus, bản mở rộng cốt truyện của game kinh dị Cronos: The New Dawn, phát hành ngày 3/12/2026 trên PC, PS5 và Xbox Series X|S (bản Nintendo Switch 2 dự kiến quý I/2027).\nDLC lấy bối cảnh trước sự kiện game gốc, theo chân Pathfinder — đặc vụ tinh nhuệ của Collective — và hành trình dẫn tới việc anh biến thành Warden.\nTrailer mới giới thiệu Tracker, một đặc vụ khác được cử đi ngăn Pathfinder hoàn thành nhiệm vụ hồi sinh bí mật."
+  },
+  {
+    "ts": "2026-11-21T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Riders Republic lên Nintendo Switch 2 ngày 9/12, thêm chế độ offline Nomad cho mọi nền tảng",
+    "summary": "Ubisoft đưa Riders Republic lên Nintendo Switch 2 vào ngày 9/12/2026, đồng thời bổ sung chế độ Nomad mới cho mọi nền tảng cùng ngày: chơi đơn offline trong thế giới mở mà không cần internet.",
+    "url": "https://explosionnetwork.com/riders-republic-coming-to-nintendo-switch-2-on-december-9-with-new-offline-mode/",
+    "image": "https://explosionnetwork.com/wp-content/smush-webp/2026/11/riders-republic-coming-to-nintendo-switch-december-news-fi.png.webp",
+    "source": "Explosion Network",
+    "content": "Ubisoft đưa Riders Republic lên Nintendo Switch 2 vào ngày 9/12/2026, đồng thời bổ sung chế độ Nomad mới cho mọi nền tảng cùng ngày.\nChế độ Nomad cho phép khám phá thế giới mở và hoàn thành phần lớn nội dung chơi đơn mà không cần kết nối internet — tính năng người chơi chờ đợi từ lâu, đặc biệt hợp với lối chơi di động trên Switch 2."
+  },
+  {
+    "ts": "2026-11-21T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6: dàn cameo sao lộ diện — Bad Bunny lồng tiếng hai vai, Lana Del Rey làm DJ radio",
+    "summary": "Sau khi game ra mắt 19/11, người chơi nhận ra hàng loạt gương mặt quen thuộc trong GTA 6: Bad Bunny lồng tiếng hai nhân vật, Lana Del Rey làm DJ radio, Bobby Moynihan thủ vai Cal Hampton — bạn thân của Jason Duval.",
+    "url": "https://pagesix.com/celebrity-news/gta-6-cast-celebrity-cameos/",
+    "image": null,
+    "source": "Page Six",
+    "content": "Sau khi game ra mắt 19/11, người chơi đã nhận ra hàng loạt gương mặt quen thuộc trong GTA 6.\nBad Bunny lồng tiếng hai nhân vật: DJ El Martillo của đài Cocoteo FM và vũ công Mitico Mario; hai ca khúc \"EoO\" và \"Otra Noche en Miami\" của anh cũng xuất hiện trên đài trong game.\nLana Del Rey làm DJ Delta Dawne của Back Country Radio, kèm ca khúc chưa phát hành \"Crazy for You\" trong album 34 bài của game. Bobby Moynihan thủ vai Cal Hampton — bạn thân của Jason Duval — với cả lồng tiếng lẫn motion capture.\nNgoài ra còn có Denzel Curry (rapper DWNPLY), Taryn Manning (Vicki), Freddie Gibbs (Freddie, dẫn podcast \"The Safe Trap\" trong game), Stephen Root (Brian Heder) và Janelle James (Tish). Bản PC vẫn dự kiến đầu 2027."
+  },
+  {
     "ts": "2026-11-21T01:57:00+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
