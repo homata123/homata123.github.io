@@ -1,5 +1,27 @@
 [
   {
+    "ts": "2026-11-21T04:07:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "SEC điều tra kế toán Nvidia, cổ phiếu lao dốc 14% trong một phiên",
+    "summary": "Reuters đưa tin SEC đang xem xét các vấn đề kế toán tại Nvidia; cổ phiếu giảm 14% trong một phiên, bốc hơi khoảng 491 tỷ USD vốn hóa — tuần giảm thứ 7 liên tiếp, tệ nhất kể từ 2008.",
+    "content": "Reuters đưa tin chiều thứ Sáu 20/11 (giờ Mỹ) rằng nhân viên thực thi của Ủy ban Chứng khoán Mỹ (SEC) đang xem xét các vấn đề kế toán tiềm ẩn tại Nvidia. Tờ Wall Street Journal trước đó (thứ Ba) đã đưa tin về cuộc điều tra nhưng chưa rõ trọng tâm.\nCổ phiếu NVDA giảm 14,01% trong phiên, đóng cửa ở 125,53 USD, bốc hơi khoảng 491 tỷ USD vốn hóa chỉ trong một ngày. Đây là tuần giảm thứ 7 liên tiếp của cổ phiếu, tệ nhất kể từ 2008, và giá đã mất khoảng 48% so với đỉnh kỷ lục ngày 6/10 (tương đương khoảng 2,7 nghìn tỷ USD vốn hóa).\nDiễn biến này nối tiếp chuỗi khủng hoảng của Nvidia: CEO Jensen Huang từ chức ngày 11-12/11, Tổng chưởng lý California gửi trát điều tra ngày 19/11, và Bộ Tư pháp Mỹ đang xem xét thương vụ mua Hugging Face trị giá 12,9 tỷ USD. Reuters lưu ý rằng một cuộc điều tra chưa phải bằng chứng sai phạm, và nhiều cuộc điều tra kết thúc mà không có hành động thực thi.",
+    "url": "https://www.fool.com/investing/2026/11/20/nvidia-stock-plunge-wipes-out-nearly-usd500-billion-in-one-day-as-sec-reportedly-probes-its-accounting/",
+    "image": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F5129cc85e67acf9267c99f604e89668cf96e455d-1290x860.jpg&w=1200&op=resize",
+    "source": "Motley Fool / Reuters"
+  },
+  {
+    "ts": "2026-11-21T22:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "RIKEN xác nhận vụ xâm nhập siêu máy tính Fugaku: 430 khóa xác thực bị đánh cắp",
+    "summary": "Báo cáo thứ hai của RIKEN xác nhận kẻ xâm nhập đã lấy đi 430 thông tin xác thực của người dùng Fugaku, trong đó 233 khóa SSH không đặt passphrase; thông tin cá nhân của 4.222 người dùng bị lộ.",
+    "content": "Viện RIKEN (Nhật Bản) công bố báo cáo điều tra thứ hai ngày 20/11 về vụ xâm nhập siêu máy tính Fugaku, xác nhận kẻ xâm nhập đã lấy đi 430 thông tin xác thực từ thư mục cá nhân của người dùng — gồm khóa riêng SSH dùng để kết nối tới các siêu máy tính và dịch vụ đám mây bên ngoài — trong đó 233 khóa không đặt passphrase.\nThông tin cá nhân của 4.222 người dùng Fugaku (tên, email, ID, địa chỉ, đơn vị, số điện thoại) cũng bị xác nhận đã lộ. Kẻ tấn công xâm nhập qua một trang web công khai hiển thị trạng thái vận hành của Fugaku trong các ngày 10–13/11 và đã thử dùng một số khóa để kết nối ra hệ thống bên ngoài.\nFugaku ngừng hoạt động từ 14/11 và chưa có ngày khởi động lại. RIKEN đang liên hệ từng người dùng để thu hồi và cấp lại khóa tại từng dịch vụ đích, đồng thời cảnh báo về email giả mạo mang tên Fugaku/RIKEN.",
+    "url": "https://www.abijita.com/fugaku-breach-430-ssh-keys/",
+    "image": "https://www.abijita.com/wp-content/uploads/2026/11/fugaku-supercomputer-breach.jpg",
+    "source": "Abijita / RIKEN"
+  },
+  {
     "ts": "2026-11-21T21:24:08+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
