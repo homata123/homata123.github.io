@@ -1,5 +1,82 @@
 [
   {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Google ra mắt Tool Retrieval cho Gemini API: agent chỉ tải schema tool khi cần",
+    "summary": "Agent giữ cả thư viện tool lớn mà model chỉ tải schema đầy đủ của đúng tool cần dùng, thay vì nhét mọi schema vào mỗi prompt — giảm token và độ trễ cho agent.",
+    "content": "Google đã ra mắt tính năng Tool Retrieval cho Gemini API, hiện ở bản preview trong Interactions API (v1beta).\nAgent có thể giữ cả một thư viện tool lớn ở trạng thái chờ: model chỉ thấy tên và mô tả ngắn của mỗi tool, và chỉ khi nhiệm vụ thực sự cần tool nào thì API mới tải schema tham số đầy đủ của tool đó — trong cùng một request, qua ba bước tool_search_call, tool_search_result rồi function_call.\nTính năng nhắm tới bài toán quen thuộc của agent: vài chục function declaration có thể ngốn hàng chục nghìn token mỗi request. Google khuyên vẫn tải tĩnh với thư viện dưới 20 tool ổn định, và dùng retrieval cho phần còn lại. Server-side không cần tự xây index; client-side cho phép tự xếp hạng. Tính năng cũng áp dụng được cho MCP server từ xa (defer cả server), không thu phí riêng, và hoạt động từ Gemini 3.6 trở lên cùng toàn bộ dòng Gemini 4.",
+    "url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+    "image": null,
+    "source": "MarkTechPost"
+  },
+  {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Ruby2Shell: tràn bộ đệm heap trong Ruby cho phép RCE pre-auth trên Rails mặc định",
+    "summary": "Lỗi nghiêm trọng CVE-2026-132825: tràn bộ đệm heap 1 byte khi đổi chữ hoa/thường của chuỗi ở encoding single-byte; đã có PoC chạy mã từ xa, chạm được mà không cần đăng nhập trong Rails mặc định.",
+    "content": "Ruby đã vá 7 lỗi an toàn bộ nhớ, trong đó nghiêm trọng nhất là CVE-2026-132825 (biệt danh Ruby2Shell, mức critical): khi đổi chữ hoa/thường của chuỗi ở các encoding single-byte như ISO-8859-1 hay Windows-1252, ký tự ß (byte 0xDF) khi viết hoa thành \"SS\" hai ký tự nhưng Ruby chỉ chừa 1 byte trống, gây tràn bộ đệm heap 1 byte.\nNhóm Ruby xác nhận đã có PoC chứng minh một số lỗi trong đợt này chạy được mã từ xa. Nghiên cứu Ruby2Shell của Veria Labs (công bố 19/11) cho thấy lỗi chạm được mà không cần đăng nhập trong cấu hình mặc định của Rails — Rack đổi case một trường của request trong quá trình xử lý form, trước cả khi code của ứng dụng chạy — cùng Sinatra kiểu cổ điển và các phần mềm tự host như GitLab, Mastodon, Discourse. Chuỗi UTF-8 không bị ảnh hưởng.\nBản vá nằm ở Ruby 3.3.14, 3.4.13 và 4.0.10, phát hành ngày 18/11. Lỗi tồn tại từ Ruby 2.4.0; các phiên bản 3.2 trở xuống đã hết hỗ trợ và không có bản vá.",
+    "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7rmcgZ7yffFsn_7SX4iQcfMhw1dgsxPFXXh6TUunbQ9VaxZh8O5-AFT2V3q0PE7Wx0rW9nLKuB73eluixYuM9N38Dvq_Gjs1nNOXVk3e71jjfhHoP7W97eeuc5AivI3CQNxIrwSaPR9IGV0f2NZ7900Ihtkdgiw1ZivTvgVrXWH2CrX2X5MZGjos6-bs/s1600/ruby.jpg",
+    "source": "The Hacker News"
+  },
+  {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Upload2Shell: lỗi Ghostscript chạy lệnh qua WordPress, Roundcube và máy in CUPS",
+    "summary": "Lỗi CVE-2026-125396 (CVSS 8.5) phá vỡ sandbox -dSAFER của Ghostscript, cho phép chạy lệnh qua quá trình xử lý file thông thường trên nhiều dịch vụ phổ biến.",
+    "content": "Nghiên cứu Upload2Shell (Paulos Yibelo và pwn.ai, công bố 17/11) phát hiện lỗi use-after-free trong Ghostscript, tracked CVE-2026-125396 (CVSS 4.0: 8.5), phá vỡ chế độ sandbox -dSAFER vốn giới hạn những gì mã PostScript được phép truy cập.\nCác dịch vụ mạng chuyển file do người dùng gửi tới Ghostscript để xử lý đều có thể bị lợi dụng: trên WordPress, Ghostscript được gọi qua quá trình tạo ảnh xem trước bằng Imagick/ImageMagick, và một số cấu hình của Forminator hay Essential Addons for Elementor cho phép tải lên mà không cần đăng nhập; trên Roundcube 1.7.2, người gửi không cần tài khoản webmail; trên Debian 13, hàng đợi CUPS dùng chung nhận lệnh in qua mạng không cần xác thực và chuyển tài liệu cho Ghostscript.\nArtifex đã sửa lỗi trong Ghostscript 10.08.0. Đây là nghiên cứu trình diễn, chưa ghi nhận khai thác thực tế; quản trị viên cần kiểm tra phiên bản Ghostscript mà từng dịch vụ đang dùng.",
+    "url": "https://cybersecuritynews.com/upload2shell-flaw/",
+    "image": null,
+    "source": "Cyber Security News"
+  },
+  {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Hố đen \"Black Saturn\" 5 chiều: hố đen cầu trong vòng hố đen, cùng quay hai mặt phẳng",
+    "summary": "Nhà vật lý Jay Armas trình bày họ nghiệm 6 tham số cho phương trình Einstein: hố đen hình cầu ở giữa, bao quanh bởi vòng hố đen, cả hai cùng quay theo hai mặt phẳng độc lập.",
+    "content": "Một nghiên cứu lý thuyết mới của nhà vật lý Jay Armas, gửi lên arXiv ngày 16/11/2026 với tựa đề \"Doubly-spinning Black Saturns\", mô tả một cấu trúc kỳ lạ trong không-thời gian 5 chiều: một hố đen hình cầu nằm ở trung tâm, bao quanh bởi một hố đen hình vòng — trông như sao Thổ với vành đai, nhưng cả hai thành phần đều là hố đen.\nĐiểm mới so với mô hình Black Saturn trước đây: họ nghiệm 6 tham số này cho phép cả hố đen trung tâm lẫn vòng hố đen cùng quay theo hai mặt phẳng độc lập, mỗi cái giữ chân trời sự kiện riêng, và cả hai có thể cùng đạt trạng thái cực trị.\nĐây vẫn là một nghiệm toán học của phương trình Einstein trong chân không 5 chiều — một hệ như vậy chưa từng được quan sát, và sự tồn tại của chiều không gian thứ 5 cũng chưa được xác nhận. Giá trị của nó nằm ở việc thăm dò cách hấp dẫn và chuyển động quay của hố đen vận hành ngoài 4 chiều quen thuộc.",
+    "url": "https://www.jagranjosh.com/general-knowledge/five-dimensional-black-saturn-spacetime-1820014028-1",
+    "image": "https://img.jagranjosh.com/images/2026/11/22/template/image/_Five-Dimensional-Black-Saturn-Spacetime-1795330627632.webp",
+    "source": "Jagran Josh"
+  },
+  {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Dải Ngân Hà có thể phải vẽ lại: sao hình thành dọc sóng xung kích của thanh trung tâm",
+    "summary": "Các maser từng được gán cho tay xoắn Norma thực ra khớp với mặt sóng xung kích do thanh trung tâm tạo ra — một phần bản đồ tay xoắn có thể là vùng tạo sao dọc thanh.",
+    "content": "Các nhà thiên văn đã tìm thấy bằng chứng sao đang hình thành ở một vị trí bất ngờ trong Dải Ngân Hà, khiến cách vẽ tay xoắn của thiên hà có thể phải xem lại. Nghiên cứu do Hillary Davis (Đại học Sydney) dẫn đầu, đăng trên Nature Astronomy.\nNhóm nghiên cứu so sánh mô hình máy tính của thiên hà với quan sát các maser — nguồn phát vi sóng tự nhiên. Các maser trước đây được gán cho tay xoắn Norma lại khớp chặt với mặt sóng xung kích mà mô hình dự đoán do thanh trung tâm tạo ra, cho thấy ít nhất một phần của cái gọi là tay Norma thực ra là vùng tạo sao dọc theo sóng xung kích của thanh.\nNghiên cứu cũng giúp ước lượng thanh trung tâm: dài khoảng 14.000 năm ánh sáng tính từ tâm thiên hà dọc trục dài và quay tương đối chậm. Đây chưa phải bản đồ mới cuối cùng, nhưng là một bước điều chỉnh quan trọng trong cách hiểu cấu trúc thiên hà của chúng ta.",
+    "url": "https://knowridge.com/2026/11/milky-way-discovery-may-change-how-astronomers-map-its-spiral-arms/",
+    "image": "https://knowridge.com/wp-content/uploads/2026/11/ksr-76e9788b4ca007330f962648.jpg",
+    "source": "Knowridge / Đại học Sydney"
+  },
+  {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Parker Solar Probe: từ trường gió Mặt Trời đổi chiều quay ở thang rất nhỏ",
+    "summary": "Lần đầu quan sát trực tiếp từ trường gió Mặt Trời chuyển từ quay ngược chiều kim đồng hồ sang cùng chiều khi xuống thang rất nhỏ — ranh giới plasma chuyển sang động lực hạt riêng lẻ.",
+    "content": "Dữ liệu từ Parker Solar Probe — tàu vũ trụ bay gần Mặt Trời nhất từ trước đến nay — cho thấy từ trường trong gió Mặt Trời đổi chiều quay từ ngược chiều kim đồng hồ sang cùng chiều kim đồng hồ khi xuống tới các thang không gian rất nhỏ.\nĐây là lần đầu tiên hiện tượng này được quan sát trực tiếp trong nhiễu loạn không gian, theo nghiên cứu công bố trên The Astrophysical Journal Letters. Điểm đảo chiều đánh dấu ranh giới nơi plasma chuyển từ hành vi tập thể của chất lưu sang động lực của từng hạt riêng lẻ — một quá trình khó nghiên cứu vì các hạt trong plasma vũ trụ hiếm khi va chạm với nhau.\nPhát hiện dựa trên các phép đo từ trường và hạt có độ chính xác cao khi tàu bay qua gió Mặt Trời phía trong, và mở rộng những quan sát cấu trúc nhiễu loạn gió Mặt Trời mà các lần tiếp cận gần trước đây của Parker đã mang lại.",
+    "url": "https://wisevoter.com/world/2026/11/22/solar-wind-magnetic-field-rotation-reversal",
+    "image": null,
+    "source": "The Astrophysical Journal Letters"
+  },
+  {
+    "ts": "2026-11-22T19:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Truyền tin bằng trọng lực: thang máy 1,8 tấn gửi mã nhị phân qua trường hấp dẫn",
+    "summary": "Nhóm Đại học Queensland dùng đối trọng thang máy di chuyển giữa hai tầng, biến đổi trường hấp dẫn thành mã nhị phân và đọc bằng gravimeter — kênh liên lạc \"gần như không thể chặn\".",
+    "content": "Các nhà vật lý tại Đại học Queensland đã chứng minh khả thi việc dùng trọng lực làm phương tiện liên lạc, theo nghiên cứu đăng trên tạp chí Science Advances.\nNhóm dùng một gravimeter — thiết bị đo nhạy biến đổi trường hấp dẫn — để theo dõi đối trọng thang máy nặng 1,8 tấn di chuyển giữa hai tầng. Sự thay đổi vị trí của đối trọng được dịch thành mã nhị phân (0 và 1), cho phép gửi đi một thông điệp.\nVì trọng lực xuyên qua gần như mọi vật chất, kênh liên lạc kiểu này được mô tả là \"gần như không thể chặn\" — một hướng đi khác hẳn với sóng điện từ hay cáp quang, dù tốc độ và ứng dụng thực tế vẫn còn là câu hỏi mở.",
+    "url": "https://www.newsbytesapp.com/news/science/gravity-can-be-used-to-send-practically-unblockable-messages/story",
+    "image": null,
+    "source": "NewsBytes / Đại học Queensland"
+  },
+  {
     "ts": "2026-11-22T18:59:01+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3221,82 +3298,5 @@
     "url": "https://www.youtube.com/watch?v=2VcOJvWt8xo",
     "image": "https://i.ytimg.com/vi/2VcOJvWt8xo/hqdefault.jpg",
     "source": "haitenpasta"
-  },
-  {
-    "ts": "2026-11-20T13:03:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Google đưa computer-use lên Gemini cho Mac: agent tự thao tác app, file và web",
-    "summary": "Google công bố ngày 19/11: ứng dụng Gemini trên Mac nay có khả năng computer-use, thực hiện tác vụ nhiều bước qua ứng dụng máy tính, file cục bộ và trình duyệt thay vì chỉ trả lời trong khung chat.",
-    "url": "https://sxf.si/brief/",
-    "image": null,
-    "source": "SXF Brief",
-    "content": "Google đã công bố ngày 19/11 khả năng computer-use trong ứng dụng Gemini cho Mac, đưa trợ lý vượt ra khỏi khung chat để trực tiếp thao tác trên máy tính: agent có thể thực hiện các tác vụ nhiều bước qua ứng dụng Mac, file cục bộ và trang web. Đây là bước chuyển từ trợ lý chỉ đưa hướng dẫn sang agent có thể tự thay đổi dữ liệu, mở file và tương tác với dịch vụ trong lúc người dùng làm việc khác.\nĐiểm đáng chú ý là mặt trái bảo mật: quyền thao tác app và file giúp tự động hóa mạnh nhưng cũng khuếch đại rủi ro prompt injection — một chỉ dẫn độc hại trong trang web hay tài liệu có thể tác động tới agent đang có quyền truy cập file cục bộ. Người dùng nên thử trên tác vụ ít rủi ro, rà soát quyền ứng dụng và yêu cầu xác nhận trước khi agent gửi tin nhắn, đổi thiết lập bảo mật hay hoàn tất giao dịch."
-  },
-  {
-    "ts": "2026-11-20T13:03:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "NVIDIA dừng xuất chip AI H200 sang Trung Quốc dù đã có giấy phép Mỹ",
-    "summary": "Reuters ngày 18/11: NVIDIA xác nhận không còn xuất các chip Hopper được cấp phép, gồm H200, sang Trung Quốc; khoảng 600.000 chip H200 được cho là đang chờ xuất tại Hong Kong.",
-    "url": "https://sxf.si/brief/",
-    "image": null,
-    "source": "SXF Brief",
-    "content": "Reuters ngày 18/11 đưa tin NVIDIA đã dừng gửi các chip AI thế hệ Hopper được cấp phép, trong đó có H200, sang Trung Quốc đại lục dù một phần lô hàng đã có phê duyệt xuất khẩu của Mỹ, và hiện không có kế hoạch xuất thêm. Hồ sơ tài chính trước đó của NVIDIA cũng mô tả sự giằng co giữa giấy phép xuất khẩu của Mỹ và các hạn chế nhập khẩu phía Trung Quốc — được phép xuất không đồng nghĩa được phép nhập.\nReuters trước đó đưa tin khoảng 600.000 chip H200 đang chờ xuất tại Hong Kong (con số ước tính, chưa được xác nhận chính thức). Đây là câu chuyện về chuỗi cung ứng và kế hoạch hạ tầng AI xuyên biên giới hơn là một thông báo kiến trúc GPU mới."
-  },
-  {
-    "ts": "2026-11-20T13:03:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Gemini Interactions API thử nghiệm Tool Retrieval: agent chỉ tải schema tool khi cần",
-    "summary": "Google giới thiệu ngày 19/11 tính năng Tool Retrieval (preview) cho Gemini Interactions API: agent chỉ tải đầy đủ schema của tool khi thực sự cần, thay vì nhét toàn bộ catalogue hàm vào prompt mỗi lượt.",
-    "url": "https://sxf.si/brief/",
-    "image": null,
-    "source": "SXF Brief",
-    "content": "Google giới thiệu ngày 19/11 tính năng Tool Retrieval ở dạng preview cho Gemini Interactions API, nhắm tới bài toán agent có catalogue tool lớn: thay vì truyền toàn bộ schema tham số của mọi hàm trong mỗi lượt, nhà phát triển có thể đánh dấu các hàm defer_loading và để model chỉ tải schema chi tiết khi cần dùng. Tính năng hỗ trợ Gemini 3.6 trở lên, gồm Gemini 4, với mục tiêu giảm token prompt và độ trễ.\nVới agent kết nối hàng chục đến hàng trăm dịch vụ, việc tải schema chọn lọc có thể cải thiện đáng kể chi phí và bảo trì. Lưu ý: mô tả tool vẫn hiển thị trước và ảnh hưởng tới lựa chọn tool, và với hàm nguy hiểm thì kiểm tra quyền vẫn phải nằm ở phía ứng dụng — tool search không phải là hệ thống phân quyền."
-  },
-  {
-    "ts": "2026-11-20T13:03:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "NGINX2Root: khoảng 8,8 triệu dịch vụ NGINX còn lộ 5 lỗi bộ nhớ nghiêm trọng",
-    "summary": "Nhóm Xint công bố ngày 18/11 năm lỗi bộ nhớ trong NGINX (NGINX2Root), nghiêm trọng nhất CVE-2026-123007 (CVSS 9.2 v4) cho phép thực thi mã từ xa không cần đăng nhập qua HTTP/2; Censys đếm 8,8 triệu dịch vụ đang chạy bản bị ảnh hưởng.",
-    "url": "https://cybersecuritynews.com/nginx2root-vulnerability/",
-    "image": null,
-    "source": "Cyber Security News",
-    "content": "Nhóm nghiên cứu Xint công bố ngày 18/11 bộ 5 lỗi bộ nhớ trong NGINX mang tên NGINX2Root, mỗi lỗi nằm trong worker process và cần một tính năng cụ thể được bật. Nghiêm trọng nhất là CVE-2026-123007: chỉ cần HTTP/2 là kẻ tấn công từ xa không cần đăng nhập có thể thực thi mã với quyền của worker; F5 chấm cả 5 lỗi 8.1 (CVSS v3.1) và 9.2 (CVSS v4.0). Xint còn xâu chuỗi lỗi này với một lỗi kernel Linux để leo lên root và thoát khỏi container Docker.\nCensys đếm được 8.823.450 dịch vụ đang chạy phiên bản bị ảnh hưởng và mở HTTP/2; trong số các host NGINX lộ version, 98,9% nằm trong dải bị ảnh hưởng của CVE-2026-123007, mà đoạn mã lỗi đã tồn tại từ khi HTTP/2 ra mắt năm 2015 (bản 1.9.5–1.31.8). Cách khắc phục: nâng NGINX Open Source lên 1.30.7+ (nhánh stable) hoặc 1.31.9+ (mainline). Tính đến 18/11 chưa ghi nhận khai thác thực tế và chưa có CVE nào trong danh sách KEV của CISA."
-  },
-  {
-    "ts": "2026-11-20T13:03:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "OpenSSL CVE-2026-121481 (CVSS 9.8): tràn bộ nhớ đệm trong EVP_EncodeBlock, bản vá ra ngày 1/12",
-    "summary": "OpenSSL công bố ngày 18/11 lỗi tràn số nguyên trong EVP_EncodeBlock() khi độ dài đầu vào gần INT_MAX, có thể ghi tràn bộ nhớ heap; ảnh hưởng OpenSSL 4.0.0–4.0.3 và 4.1.0, bản vá dự kiến 1/12/2026.",
-    "url": "https://thecybersecguru.com/exploits/cve-2026-121481-openssl-evp-encodeblock-overflow/",
-    "image": null,
-    "source": "The CyberSec Guru",
-    "content": "Ngày 18/11, dự án OpenSSL công bố CVE-2026-121481: gọi EVP_EncodeBlock() với độ dài đầu vào gần INT_MAX có thể làm tràn phép tính kích thước đầu ra đã mã hóa và ghi vượt ra ngoài bộ đệm do phía gọi cấp phát — lỗi tràn heap (CWE-122). CISA chấm CVSS 3.1 là 9.8 (Critical), vector AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H. Lỗi nằm trong phép toán số nguyên có dấu tồn tại từ thời SSLeay, và bản sửa được duyệt là một assertion thay vì mã lỗi mới.\nPhạm vi ảnh hưởng: OpenSSL 4.0.0 đến dưới 4.0.4 và 4.1.0 đến dưới 4.1.1. Tính đến 20/11 chưa có bản phát hành chứa bản vá để tải về — bản sửa nằm trong pull request công khai #33652 và sẽ đi kèm các bản 4.0.4 và 4.1.1 dự kiến phát hành ngày 1/12/2026. Chưa ghi nhận khai thác thực tế và chưa có trong danh sách KEV."
-  },
-  {
-    "ts": "2026-11-20T13:03:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Spring vá 50 lỗi trong đợt cập nhật tháng 11, gồm RCE CVSS 9.8 qua SpEL",
-    "summary": "Spring công bố bản vá cho 50 lỗi bảo mật, nghiêm trọng nhất CVE-2026-59273 (CVSS 9.8) cho phép thực thi mã từ xa qua SpEL injection trong Spring Security; nâng cấp lên Spring Security 7.1.3/7.0.9.",
-    "url": "https://securityonline.info/spring-security-vulnerabilities-november-2026/",
-    "image": null,
-    "source": "SecurityOnline.info",
-    "content": "Nhóm Spring đã công bố bản vá cho 50 lỗi bảo mật trong các công cụ Java cốt lõi của mình. Nghiêm trọng nhất là CVE-2026-59273 (CVSS 9.8): trong Spring Security Web, ELRequestMatcher chạy mã SpEL trong ngữ cảnh mở với đầy đủ quyền truy cập class — khi ứng dụng gắn dữ liệu người dùng thô vào matcher này, kẻ tấn công từ xa có thể chạy mã mà không cần đăng nhập. Một lỗi nghiêm trọng khác nằm trong spring-ldap-test, mở quyền admin LDAP cho môi trường test.\nĐợt vá còn gồm 9 lỗi trong các add-on Spring AI (filter injection ở các store Typesense, Redis, Coherence phá vỡ ranh giới tenant) và lỗi bypass đăng nhập trên đường dẫn health của Spring Boot Actuator với Jersey. Chưa ghi nhận khai thác thực tế. Cần nâng cấp ngay lên Spring Security 7.1.3 hoặc 7.0.9, Spring Data Elasticsearch 6.1.3/6.0.9 và Spring AI 2.0.3."
-  },
-  {
-    "ts": "2026-11-20T11:30:00+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "📣 ĐIỂM TIN BUỔI SÁNG THỨ SÁU (20/11/2026)",
-    "summary": "Điểm tin buổi sáng của J2Team: VMware vCenter dính lỗ hổng CVSS 9.8, Anthropic huy động kỷ lục 81 tỷ USD ngày chào sàn, Google thuê tên lửa New Glenn và dựng mạng internet giả lập huấn luyện AI, cùng 8 tin công nghệ và an ninh mạng khác.",
-    "content": "1. VMware vCenter dính lỗ hổng cực kỳ nghiêm trọng (CVSS 9.8) cho phép hacker qua mặt lớp xác thực từ xa.\n2. Anthropic huy động kỷ lục 81 tỷ USD ngày chào sàn, trở thành một trong những công ty đại chúng giá trị nhất thế giới.\n3. Google bắt tay Blue Origin thuê tên lửa đẩy New Glenn phóng vệ tinh, nhưng bài toán dài hạn vẫn còn bỏ ngỏ.\n4. Google dựng mạng internet giả lập \"Mirror Dimension\" khổng lồ để huấn luyện và kiểm thử tác tử AI trên Chrome.\n5. Anh triển khai chiến dịch bí mật toàn quốc để vá lỗi và bảo vệ hàng chục nghìn tủ lạnh thông minh khỏi hacker.\n6. Google ấn định tháng 1/2027 áp dụng quy định bắt buộc xác minh nhà phát triển ứng dụng Android trên toàn cầu.\n7. Flipper One gọi vốn 13 triệu USD trên Kickstarter, lột xác thành máy tính Linux bỏ túi giá 399 USD.\n8. Meta chính thức mở bán và cho thuê phim điện ảnh 3D trực tiếp trên dòng kính thực tế ảo Quest.\n9. Trợ lý AI Meta Muse tự ý đặt phòng Airbnb khi chưa được phép, làm dấy lên lo ngại về quyền kiểm soát dữ liệu.\n10. PHP tung bản vá khẩn cấp cho 7 lỗ hổng nghiêm trọng, chặn đứng nguy cơ thực thi mã độc từ xa trên máy chủ web.\n11. Nghịch lý tuyển dụng: 90% doanh nghiệp loại bỏ CV nghi do AI viết nhưng một nửa lại dùng AI để phỏng vấn.\n12. Nhóm học sinh Mỹ kiện nhà trường và cảnh sát vì camera AI nhận diện nhầm túi snack Doritos thành súng.",
-    "url": "https://facebook.com/groups/j2team.community/permalink/3256371911361573/",
-    "image": null,
-    "source": "J2Team Community"
   }
 ]
