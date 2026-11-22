@@ -1,5 +1,115 @@
 [
   {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Bé chọn kem thay iPad tại phố đi bộ Nguyễn Huệ",
+    "summary": "Tại phố đi bộ Nguyễn Huệ, một em bé được tặng chọn giữa cây kem và iPad — bé nhất quyết chọn cây kem, bố mẹ cười vui vì lựa chọn của con. Bài đăng nhận 2.460 tương tác.",
+    "content": "Tại phố đi bộ Nguyễn Huệ, một em bé đang ngồi chơi cùng gia đình thì được tặng chọn giữa cây kem và iPad.\nEm bé nhanh như chớp chỉ tay vào cây kem, hỏi lại lần nữa vẫn nhất quyết chọn cây kem.\nBố mẹ của em đều cười rất vui vì lựa chọn của con, và liên tục nhắc bé nói cảm ơn.\nBài đăng nhận 2.460 tương tác và 134 bình luận.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2899041550504912/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Tài xế Grab tử tế bỏ qua va chạm, không lấy tiền đền bù",
+    "summary": "Sau va chạm nhẹ trên đường, tài xế Grab đã bỏ qua, không lấy tiền đền bù mà chỉ nhắc nhở đối phương đừng bắt nạt người yếu thế. Bài đăng nhận 1.266 tương tác.",
+    "content": "Sau một va chạm nhẹ trên đường, tài xế Grab đã bỏ qua cho đối phương.\nAnh từ chối nhận tiền đền bù dù xe có hư hỏng, nói rằng không cần đồng tiền của đối phương và chỉ muốn nhắc nhở một bài học: lần sau đừng bắt nạt những người yếu thế hơn mình.\nBài đăng nhận 1.266 tương tác và 119 bình luận.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2898967043845696/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Bài tri ân thầy dạy hóa online nhận gần 600 tương tác",
+    "summary": "Bài đăng tri ân một thầy giáo dạy hóa online, nhiều học viên bày tỏ tiếc nuối vì thầy không còn dạy; bài nhận 586 tương tác và 117 bình luận.",
+    "content": "Bài đăng chia sẻ lời tri ân gửi tới một thầy giáo dạy hóa online được nhiều học viên yêu quý.\nDù mất tiền học nhưng không còn được thầy dạy nữa, nhiều học viên vẫn trân quý thầy và bày tỏ tiếc nuối nếu một nhân tài như thầy bị lãng quên, mong thầy bình an và sớm trở lại.\nBài đăng nhận 586 tương tác và 117 bình luận.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2899468797128854/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Ôn thi AWS SAP C03: Tuân thủ PCI DSS và SOC 2 với 40 tài khoản AWS",
+    "summary": "Một công ty xử lý thẻ với 40 tài khoản AWS chuẩn bị đánh giá PCI DSS và SOC 2. Bài đăng phân tích đáp án: lấy báo cáo tuân thủ của AWS từ AWS Artifact, dùng AWS Audit Manager thu thập bằng chứng liên tục từ Config, Security Hub CSPM và CloudTrail.",
+    "content": "Đề bài: một công ty xử lý thẻ chạy môi trường dữ liệu chủ thẻ trên 40 tài khoản AWS, chuẩn bị đánh giá PCI DSS và kiểm toán SOC 2 Type II. Kiểm toán viên yêu cầu: báo cáo tuân thủ của AWS (PCI DSS AOC và SOC 2), bằng chứng liên tục có dấu thời gian từ cả 40 tài khoản ánh xạ theo chuẩn PCI DSS (kể cả bằng chứng tải lên thủ công như tài liệu chính sách), và quyền đọc báo cáo đánh giá cuối cùng.\nĐáp án phân tích trong bài: tải PCI DSS AOC và SOC 2 report của AWS từ AWS Artifact, cấu hình thông báo khi có báo cáo mới hoặc cập nhật; chỉ định tài khoản delegated administrator cho AWS Audit Manager, tạo assessment từ khung PCI DSS có sẵn cho toàn bộ 40 tài khoản, với AWS Config, Security Hub CSPM và CloudTrail làm nguồn bằng chứng; tải bằng chứng thủ công lên các control phù hợp và xuất assessment report cho kiểm toán viên.",
+    "url": "https://facebook.com/groups/vgu.tech.alumni/permalink/1512452367457939/",
+    "image": null,
+    "source": "VGU Tech Alumni"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Hoa quả dâng hương Rằm tháng 10",
+    "summary": "Một sạp trong chợ khu lên menu hoa quả dâng hương Rằm tháng 10 với 12 loại quả, giá từ 55k/3kg cam sành đến 109k/2kg nhãn thái vip.",
+    "content": "Một sạp trong chợ khu lên menu các loại quả dâng hương Rằm tháng 10 (nay là 14 âm lịch).\nNho sữa vip 95k/1kg; nho đỏ đột biến 99k/1kg; hồng sấy dẻo 105k/1kg (58k/0,5kg); nhãn thái vip 109k/2kg; xoài hạt lép An Giang 60k/2kg; lê đường 59k/2kg; thanh long đỏ 79k/2kg; hồng mật socola 59k/2kg; quýt hương nhí 85k/2kg; táo đá vip 75k/2kg; lựu nữ hoàng hạt mềm vip 89k/2kg; cam sành miền Tây 55k/3kg.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4788647941372216/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Rau củ quả và trứng tươi trong ngày",
+    "summary": "Một sạp trong chợ khu có sẵn chuối tiêu, ổi, mít Thái, dứa Ba Vì, nước dừa cùng nhiều loại rau củ và trứng gà ta, trứng vịt lộn.",
+    "content": "Một sạp trong chợ khu có sẵn nhiều chuối tiêu, ổi, mít Thái, rau củ trong ngày.\nChuối tiêu xanh, ương 35k/2kg; ổi lê Di Trạch 70k/2kg; mít Thái bóc sẵn, chia khay 35k/khay; dứa Ba Vì chín, gọt sẵn 20k/quả; nước dừa tươi nguyên chất 35k/chai to.\nSắn nếp bở 18k/kg (35k/2kg); củ từ bở 40k/kg; cải bẹ muối dưa 35k/2kg; cà pháo giòn 25k/kg; đỗ cove non 35k/kg; bắp cải ta 35k/2 cây; su hào non 22k/2 củ; su su non 45k/2kg; cà chua ta Mộc Châu 28k/kg.\nRau cần 18k/mớ; muống ta 20k/mớ; ngót quế 15k/mớ; mùng tơi ta 15k/mớ; măng nứa luộc 40k/kg; dưa chuột non 30k/kg; củ dền Mộc Châu 38k/kg; gừng ta Mộc Châu 30k/kg; chanh tươi 40k/kg; hành tây 25k/kg; cà rốt 20k/kg; bí hạt dẻ 28k/kg; bí đỏ 20k/kg; bầu non 30k/kg; bí xanh Mộc Châu 25k/kg; khoai tây ta 45k/2kg; khoai lang Nhật 60k/2kg; khoai lang mật 65k/2kg; tỏi tía khô 45k/kg; lá chè xanh 20k/nửa kg.\nTrứng gà ta 125k/30 quả; trứng vịt lộn 55k/10 quả.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4788647624705581/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Hoa quả dâng hương Rằm tháng 10",
+    "summary": "Một sạp khác trong chợ khu nhận đặt hoa quả dâng hương Rằm: nho đỏ Ruby 90k/kg, thanh long đỏ Ba Vì 65k/2kg, cam Cao Phong 65k/2kg, na 115k/2kg, quýt hương 80k/2kg, hồng mật 60k/2kg, táo đá 80k/2kg, dưa hấu 28k.",
+    "content": "Một sạp khác trong chợ khu nhận đặt hoa quả dâng hương Rằm tháng 10.\nNho đỏ Ruby 90k/kg; thanh long đỏ Ba Vì 65k/2kg; cam Cao Phong 65k/2kg; na Đồng Bành 115k/2kg (size 4); quýt hương VIP 80k/2kg; hồng mật Vân Sơn 60k/2kg; táo đá Hà Giang VIP 80k/2kg; dưa hấu Sài Gòn 28k.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4788646638039013/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Hoa và đồ chay cúng Rằm tháng 10",
+    "summary": "Một sạp trong chợ khu bán hoa ly vàng, cúc thạch bích, cúc mai cam cùng giò lụa nấm chay và lễ cau, lễ tiên vang cho ngày Rằm, giao trong ngày 14 âm lịch.",
+    "content": "Một sạp trong chợ khu bán hoa và đồ chay cúng Rằm tháng 10, giao trong ngày hôm nay 14 âm lịch (Chủ nhật).\nLy vàng thơm vườn 50k/3 cành (3-4 tai, 11-12 bông, cành dài 75-90cm); cúc thạch bích vườn 35k/bó; cúc mai cam, cúc tứ quý vườn 25k/bó.\nGiò lụa nấm (giò chay) 37k/khoanh 250g, không chất phụ gia, không chất bảo quản, tự gói thuần chay.\nLễ cau 8k/lễ; lễ tiên vang 10k/lễ.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4788645734705770/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Set cá lăng ướp nướng sẵn 125k/set",
+    "summary": "Một sạp trong chợ khu bán set cá lăng ướp nướng 125k/set 1kg (2 hộp), mua về chỉ cần nướng nồi chiên không dầu, lò nướng, than hoa hoặc áp chảo; gợi ý làm chả cá Lã Vọng.",
+    "content": "Một sạp trong chợ khu bán set cá lăng ướp nướng sẵn: 125k/set 1kg (2 hộp).\nCá ướp sẵn, mua về chỉ cần bỏ vào nồi chiên không dầu, lò nướng, nướng than hoa hoặc áp chảo.\nGợi ý vào bếp làm món chả cá Lã Vọng.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4788642978039379/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T08:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Chim câu hầm và gà ác hầm",
+    "summary": "Một sạp trong chợ khu bán chim câu hầm 160k/con và gà ác hầm 110k/con, hầm cùng đông trùng hạ thảo, hạt sen, táo đỏ — món bổ dưỡng cho người lớn tuổi, người mới ốm dậy.",
+    "content": "Một sạp trong chợ khu bán chim câu hầm và gà ác hầm.\nChim câu 160k/1 con (300k/2 con); gà ác 110k/1 con (200k/2 con).\nHầm cùng đông trùng hạ thảo, hạt sen, táo đỏ — công thức bổ dưỡng, thịt mềm rục, nước dùng ngọt thanh, hợp cho người lớn tuổi, người mới ốm dậy, dân văn phòng cần bữa chiều bổ dưỡng.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4788642404706103/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-21T23:45:03+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
