@@ -1,5 +1,148 @@
 [
   {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Tesla bắt đầu triển khai FSD v15",
+    "summary": "Tesla triển khai FSD v15 với khả năng xử lý tình huống an toàn tốt hơn tới 25 lần (theo Tesla), thêm Reality View trực quan hóa hành trình và điều hướng học end-to-end.",
+    "content": "Tesla chính thức bắt đầu triển khai FSD v15 với hàng loạt cải tiến:\n- An toàn: cải thiện khả năng xử lý các tình huống an toàn quan trọng lên tới 25 lần theo Tesla.\n- Reality View: trực quan hóa hành trình, giúp người lái quan sát những gì FSD dự định thực hiện.\n- Điều hướng thông minh: học end-to-end từ sở thích lựa chọn tuyến đường của đội xe.\n- Nhận diện tốt hơn: biển báo, động vật, ổ gà, vật cản và vùng ngập nước.\n- Lái xe tự nhiên hơn: điều chỉnh tốc độ phù hợp tại khu vực trường học, thời tiết xấu và trước camera tốc độ.\n- Chế độ giá đỡ xe đạp: hỗ trợ sử dụng FSD khi xe gắn thêm giá đỡ xe đạp hoặc phụ kiện kéo tương tự.\nVideo kèm bài đăng ghi lại Tesla FSD v15 với Reality View khi di chuyển giữa khu vực trung tâm thành phố đông đúc.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3261379440860820/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "NIMAP ngày thứ 10: thách thức Google ở dữ liệu bản đồ",
+    "summary": "Lập trình viên Việt xây app bản đồ NIMAP: AI render bản đồ ngay trên điện thoại, dữ liệu 3D toàn cầu, tác giả khẳng định chạy nhẹ hơn Google gấp 20 lần.",
+    "content": "Ngày thứ 10 của dự án NIMAP — thử thách mới: đánh bại Google ở dữ liệu bản đồ.\n- AI chạy trên điện thoại render và tạo bản đồ khá tốt, nhưng do lượng tử hóa để tiết kiệm bộ nhớ và giới hạn bởi tham số huấn luyện nên độ chính xác không bằng phiên bản chạy trên máy chủ AI. Tác giả quyết định phá đi xây lại vì nguy cơ bị dịch ngược và chôm công nghệ bằng AI.\n- Một vấn đề nữa: phải đợi người dùng đi qua khu vực đó AI mới dựng và xây bản đồ gửi về server để dựng tuyến; thời gian đầu chưa có người dùng hoặc người dùng không đủ kiên nhẫn sẽ rời bỏ app vì dẫn đường không chính xác.\n- Dữ liệu 3D toàn cầu có thể lên đến 40.000 GB, gấp nhiều lần dữ liệu 2D. Tác giả khẳng định app chạy nhẹ hơn Google gấp 20 lần và mời so sánh tọa độ demo (một trong những giao lộ phức tạp nhất thế giới) với Google và Amap.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4624376451108536/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Colgate dùng AI giả lập khách hàng để khảo sát",
+    "summary": "Colgate thử phương pháp Semantic Similarity Rating: bắt AI đóng vai khách hàng thật để khảo sát, độ tin cậy tương đương 90% so với khảo sát người thật.",
+    "content": "Colgate vừa công bố một nghiên cứu: thay vì tốn hàng tuần, thậm chí hàng tháng để khảo sát xem khách hàng có muốn mua sản phẩm hay không, họ thử dùng AI để giả lập người tiêu dùng.\nVấn đề là nếu hỏi AI kiểu chấm điểm 1–5, AI thường trả lời chung chung, cái gì cũng 3–4 điểm cho an toàn. Các nhà nghiên cứu dùng cách khác gọi là Semantic Similarity Rating (SSR): bắt AI đóng vai khách hàng thật — ví dụ một bà mẹ 35 tuổi, thu nhập 15 triệu/tháng, có 2 con nhỏ — rồi đưa sản phẩm kem đánh răng mới và hỏi cảm nhận, có muốn mua không, giá có đắt quá không. Một mô hình khác phân tích những câu trả lời đó và chuyển thành điểm số.\nKết quả: AI đạt mức tương đương 90% độ tin cậy khi khảo sát lặp lại trên người thật. Colgate thử nghiệm phương pháp này với 57 khảo sát thực tế, tổng cộng 9.300 phản hồi từ người tiêu dùng. AI còn mô phỏng được cách những nhóm khách hàng khác nhau phản ứng khi giá sản phẩm tăng hoặc giảm, thậm chí có những nhận xét chi tiết và khó tính hơn cả người tham gia khảo sát thật.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4624592734420241/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Mỹ và Trung Quốc âm thầm học hỏi công nghệ AI của nhau",
+    "summary": "Theo Sebastian Raschka: các mô hình AI hàng đầu kế thừa kỹ thuật lẫn nhau theo cả hai chiều qua vòng phản hồi mô hình mở — RoPE, GQA, DeepSeekMoE.",
+    "content": "Theo Sebastian Raschka (The US-China Open-Weight Feedback Loop, 2026), các mô hình AI hàng đầu thế giới không phát triển độc lập mà liên tục kế thừa công nghệ của nhau, theo cả hai chiều Mỹ và Trung Quốc.\nGiai đoạn 2021–2023: nhóm nghiên cứu Trung Quốc giới thiệu RoPE (Rotary Position Embedding) năm 2021; đến 2023 Meta đưa RoPE vào LLaMA, kết hợp với RMSNorm và SwiGLU. Cũng năm 2023, Google công bố Grouped-query Attention (GQA); chỉ vài tháng sau DeepSeek ứng dụng GQA vào DeepSeek LLM 67B.\nNăm 2024: DeepSeek bắt đầu tạo ảnh hưởng ngược lại với nhiều cải tiến kiến trúc, trong đó có DeepSeekMoE (tháng 1/2024) với thiết kế Mixture of Experts.\nBài đăng là tóm tắt do AI viết trong lúc tác giả tìm hiểu, đăng lại vì thấy hay.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4624631761083005/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Dùng Opus 5.5 giải mã giao thức máy lạnh Panasonic",
+    "summary": "Có người dùng Opus 5.5 giải mã giao thức điều khiển của máy lạnh Panasonic, điều khiển bật/tắt từ xa qua thiết bị ESP32.",
+    "content": "Có người vừa dùng Opus 5.5 để giải mã giao thức điều khiển của chiếc máy lạnh Panasonic, từ đó có thể bật/tắt và điều khiển máy lạnh từ xa thông qua một thiết bị ESP32.\nESP32 là một con chip điều khiển nhỏ, giá chỉ khoảng vài chục đến hơn 100 nghìn đồng, có thể kết nối Wi-Fi và Bluetooth, thường dùng để tự chế các thiết bị nhà thông minh như điều khiển đèn, quạt hay máy lạnh bằng điện thoại.\n5 tháng trước, người này từng thử làm điều tương tự nhưng các mô hình AI lúc đó không giải quyết được; bây giờ thì quá dễ.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4624645591081622/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Xây lại giao diện đồng hồ kiểu Pixel Watch bằng Claude Code",
+    "summary": "Lập trình viên dùng bo ESP32-S3 giá 40 USD và Claude Code viết lại giao diện đồng hồ thông minh kiểu Pixel Watch, chạy mượt 60 FPS.",
+    "content": "Google từng chi 40 triệu USD để mua công nghệ đồng hồ thông minh của Fossil và 2,1 tỷ USD để thâu tóm Fitbit. Trong khi đó, một lập trình viên chỉ cần một bo mạch giá 40 USD và 2 buổi tối sử dụng Claude Code để tạo ra giao diện đồng hồ thông minh giống Pixel Watch, chạy mượt ở 60 FPS.\nThiết bị dùng là Waveshare ESP32-S3, bo mạch dùng chip Espressif, trang bị màn hình AMOLED tròn độ phân giải 466 × 466 pixel và không có GPU riêng. Phần mềm gốc của nhà sản xuất hoạt động khá tệ: khi cuộn màn hình, các biểu tượng bị xé hình, giật lag và không thể dùng ngón tay để kéo.\nAnh quyết định bỏ toàn bộ thư viện của nhà sản xuất, kể cả LVGL và Arduino_GFX, rồi dùng Claude Code để viết lại từ đầu driver màn hình, driver cảm ứng và thư viện đồ họa riêng. Tiếp theo, Claude Opus 5.5 giúp chuyển các giao diện mẫu Wear OS mã nguồn mở của Google sang phần cứng này, bao gồm hiệu ứng cuộn số, giao diện thẻ giống Pixel Watch, ứng dụng thời tiết và trình phát nhạc.\nBài đăng cũng lưu ý: Google thực chất không mua công nghệ của Fossil mà mua tài sản trí tuệ và quyền cấp phép; và không mua Fitbit chỉ vì công nghệ mà để tiếp cận 29 triệu người dùng đang hoạt động của nền tảng.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4624700024409512/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Baidu mở mã nguồn Unlimited-OCR, trích xuất PDF 100 trang/lần",
+    "summary": "Baidu mở mã nguồn mô hình Unlimited-OCR (3 tỷ tham số): trích xuất PDF tới 100 trang trong một lần xử lý, đạt 93% trên OmniDocBench, chạy offline được.",
+    "content": "Baidu vừa mở mã nguồn một mô hình AI tên Unlimited-OCR, chỉ có 3 tỷ tham số nhưng có thể đọc và trích xuất nội dung từ file PDF dài tới 100 trang trong một lần xử lý.\nĐiểm hay là thay vì đọc từng trang riêng lẻ như nhiều công cụ OCR truyền thống, mô hình này có thể xử lý nhiều trang cùng lúc, giúp giữ được ngữ cảnh xuyên suốt tài liệu.\nMột vài thông số đáng chú ý: context 32K, hỗ trợ nhiều ngôn ngữ; đạt 93% trên OmniDocBench v1.5, cao hơn DeepSeek-OCR 6 điểm phần trăm; có thể chạy offline trên máy cá nhân nếu phần cứng đáp ứng; hỗ trợ Transformers, vLLM, SGLang và Docker.\nTrước giờ, nếu cần xử lý lượng lớn PDF bằng các dịch vụ OCR đám mây thì phải trả phí theo số trang. Với Unlimited-OCR, có thể tự chạy trên máy mà không tốn phí API, tất nhiên vẫn tốn tài nguyên phần cứng.\nGitHub: https://github.com/baidu/Unlimited-OCR",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4624711984408316/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Tối nay khỏi nấu: bún đậu, cơm, mì cay ship tận nơi",
+    "summary": "Một sạp trong chợ khu nhận ship buổi tối: bún đậu 35–45k, cơm 45–55k, mì cay 35–57k, nước ép 15–35k, miễn phí ship sảnh.",
+    "content": "Một sạp trong chợ khu nhận ship buổi tối, thực đơn:\n- Bún đậu: truyền thống 35k, nem chả 40k, đầy đủ 45k, thịt 45k, cốm 45k.\n- Cơm: gà sốt Thái 55k, ba chỉ sốt Thái 55k, thịt kho trứng cút 45k, sườn 55k.\n- Mì cay: hải sản 50k, thập cẩm 57k, bò 45k, xúc xích 35k.\n- Nước uống: trà tắc 15k, sữa đậu nành 15k, dứa ép 35k, dưa hấu ép 35k, ổi ép 30k.\n- Gọi thêm: thịt thêm 20k, nem rán 15k, chả cốm 15k, đậu 15k, bún 10k.\nMiễn phí ship sảnh.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4789412277962449/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Cua Cà Mau loại 1: cua thịt, cua gạch, cua cốm",
+    "summary": "Một sạp trong chợ khu bán cua Cà Mau: cua thịt 180–280k/con, cua gạch 200–300k/con, cua cốm 130–180k/con; hấp sẵn miễn phí từ 1 con kèm nước chấm.",
+    "content": "Một sạp trong chợ khu bán cua Cà Mau loại 1, bao ăn từng cái chân, menu hôm nay:\n- Cua thịt: 450g 180k/con, 500g 200k/con, 600g 240k/con, 700g 280k/con.\n- Cua gạch (full gạch đỏ): 400g 200k/con, 450g 230k/con, 500g 250k/con, 560g 270k/con, VIP 600g 300k/con.\n- Cua cốm (gạch nhũ vàng): 250g 130k/con, 280g 150k/con, 350g 180k/con.\nHấp sẵn miễn phí từ 1 con kèm nước chấm; trọng lượng cân lúc sống có dây.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4789405051296505/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Buổi chiều có ba chỉ quay, thịt xiên nướng, vịt rang giềng",
+    "summary": "Một sạp trong chợ khu có vào buổi chiều: ba chỉ quay, thịt lợn xiên nướng, thịt lợn chao giềng móc mật, vịt rang giềng, vịt nướng, vịt luộc.",
+    "content": "Một sạp trong chợ khu có vào buổi chiều:\n- Ba chỉ quay.\n- Thịt lợn xiên nướng.\n- Thịt lợn chao giềng móc mật.\n- Vịt rang giềng.\n- Vịt nướng.\n- Vịt luộc.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4789405634629780/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Đặc sản Nam Định: bánh xíu páo, bánh mỳ, pate thịt nhừ",
+    "summary": "Một sạp trong chợ khu ship đặc sản Nam Định: bánh xíu páo 80k/10 chiếc, bánh mỳ 35k/chiếc (combo 2 chiếc 65k), pate thịt nhừ 150k/hộp 500g.",
+    "content": "Một sạp trong chợ khu ship đặc sản Nam Định:\n- Bánh xíu páo: vỏ giòn thơm, nhân thịt xá xíu đậm đà; quay vi sóng vài phút là xong bữa sáng. 80k/10 chiếc, cấp đông ăn dần thoải mái.\n- Bánh mỳ: pate + ruốc/xá xíu, nhân ngập tràn, sốt đậm đà, pate siêu ngậy (rau, dưa góp để riêng). 35k/chiếc, combo 2 chiếc chỉ 65k.\n- Pate thịt nhừ (hộp 500g): ngậy thơm mùi gan xào quyện thịt nhừ, ăn với bánh mỳ hay cơm nóng đều hợp. 150k/hộp 500g.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4789410061296004/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Giải cứu quýt hương: 80k/2kg",
+    "summary": "Một sạp trong chợ khu bán giải cứu quýt hương 80k/2kg: quýt to, ngọt thơm, vườn gửi nhiều nên bán giá giải cứu.",
+    "content": "Một sạp trong chợ khu bán giải cứu quýt hương 80k/2kg.\nLô quýt to, ngọt thơm; vườn gửi nhiều (1,5 tạ) nên sạp bán giá giải cứu, loại mã to VIP đẹp.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4789410424629301/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-22T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Rau củ, trái cây buổi tối: sắn nếp 35k/2kg, trứng gà ta 125k/30 quả",
+    "summary": "Một sạp trong chợ khu còn nhiều rau củ buổi tối: sắn nếp bở 35k/2kg, bắp cải 15k/cây, su su 23k/kg, rau các loại 15–20k/mớ, trứng gà ta 125k/30 quả.",
+    "content": "Một sạp trong chợ khu còn nhiều rau củ buổi tối, nhờ ủng hộ:\n- Sắn nếp bở: 18k/kg, 35k/2kg.\n- Bắp cải ta cây nhỏ: 15k/cây; su su: 23k/kg; rau cần mớ to 15k/mớ; muống ta mớ to 20k/mớ; ngót quế 15k/mớ; mùng tơi ta 15k/mớ.\n- Chuối tiêu xanh/ương nải đẹp 40k; chuối tây 30k/2 nải nhỏ; dứa Ba Vì chín gọt sẵn 20k/quả; nước dừa tươi nguyên chất 35k/chai to.\n- Cải bẹ muối dưa 30k/2kg; cà pháo giòn 25k/kg; măng nứa luộc 40k/kg; dưa chuột non 30k/kg; củ dền Mộc Châu 38k/kg; gừng ta 30k/kg; cà rốt 20k/kg; bí đỏ 20k/kg; bí xanh 25k/kg; khoai tây ta 45k/2kg; khoai lang Nhật 60k/2kg; khoai lang mật 65k/2kg; tỏi tía khô 45k/kg; hành lá ship kèm từ 5k.\n- Trứng gà ta quả nhỏ, lòng vàng ươm: 125k/30 quả.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4789401637963513/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-22T18:00:00+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3155,148 +3298,5 @@
     "url": "https://facebook.com/groups/1770535389850168/permalink/4784400118463665/",
     "image": null,
     "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T10:31:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Chợ chiều nay: thịt lợn tươi đủ loại, miễn ship từ 200k",
-    "summary": "Một sạp trong chợ khu ra thực đơn buổi chiều (mở bán 14h–19h): ba chỉ, sườn, lõi bắp 140k/kg; vai giòn 130k/kg; thịt chân giò 120k/kg; chả lá lốt 130k/kg. Miễn ship trong khu cho đơn từ 200k.",
-    "content": "Thực đơn chợ chiều nay từ một sạp thịt trong khu, mở bán từ 14h đến 19h, có ship tận nơi trong khu dân cư:\nBa chỉ, sườn, lõi bắp: 140k/kg. Vai giòn cả mỡ 130k/kg (nguyên nạc 150k). Vai am cả mỡ 120k/kg (nguyên nạc 140k). Nách, đầu rồng, thịt chân giò: 120k/kg. Mông thăn 110k/kg (nguyên nạc 130k).\nTai 15k/lạng, mũi 80k/kg, lưỡi 18k/lạng. Mọc 120k/kg. Xương cục 80k/kg. Móng trước 90k/kg, móng sau 80k/kg. Tim 28k/lạng, cật 10k/lạng, lòng non 100–200k/kg, dạ dày và dải 200k/kg, gan 30k/kg. Chả lá lốt đóng hộp 130k/kg.\nMiễn ship cho đơn từ 200k. Số điện thoại và vị trí sạp có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem và liên hệ người bán.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4784317481805262/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T10:31:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Trời rét cuối tuần: bò cỏ quê và rau củ cho nồi lẩu, nướng",
-    "summary": "Một sạp rao thịt bò, bê cỏ quê thịt sáng sớm cho các món lẩu, nướng, nhúng tái (180–380k/kg), kèm giò lụa, mọc, xúc xích nhà làm và rau củ 5–32k. Hỗ trợ thái theo yêu cầu, ship trong khu.",
-    "content": "Gợi ý cho bữa lẩu hoặc nướng quây quần ngày rét từ một sạp trong chợ khu — thịt bò và bê cỏ quê mới thịt sáng sớm, hỗ trợ thái theo yêu cầu:\nBắp lõi bê, ba chỉ bê: 300k/kg. Lõi rùa: 380k/kg. Bắp hoa bò, gầu bò, u vai, lõi vai: 320k/kg. Thăn vai, diềm thăn: 300k/kg. Dẻ sườn rút xương 230k/kg. Sườn bò 200k/kg. Thịt vụn gân bò 180k/kg.\nGiò nạc gói lá chuối 90k/5 lạng. Mọc nấm, mọc trắng và xúc xích nhà làm đồng giá 180k/kg.\nRau củ hôm nay: dưa chuột 30k/kg, mướp hương 30k/kg, súp lơ xanh 20k/cây, rau muống 15k/mớ, rau ngót 20k/mớ, cà chua quê 32k/kg, các loại rau thơm 5k/bó.\nThông tin liên hệ người bán có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4784317135138630/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T10:30:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rao bán căn góc khoảng 66m², 2 phòng ngủ, sổ hồng chính chủ",
-    "summary": "Một cư dân gửi bán căn góc trong khu: thiết kế 2 phòng ngủ, 2 vệ sinh, diện tích khoảng 66m², nội thất đầy đủ, sổ hồng chính chủ, giá rao 2 tỷ x.",
-    "content": "Một căn hộ góc trong khu đang được gửi bán: thiết kế 2 phòng ngủ, 2 vệ sinh, diện tích khoảng 66m², nội thất đầy đủ, sổ hồng chính chủ trao tay. Giá rao: 2 tỷ x (thương lượng với người bán).\nThông tin liên hệ và ảnh chi tiết có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem. Ada chỉ tổng hợp thông tin rao bán trong khu, không phải bên môi giới của giao dịch này.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4784315921805418/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T10:26:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cá nục kho kiểu Huế, chuẩn vị miền Trung",
-    "summary": "Một cư dân rao cá nục tươi kho kỹ theo kiểu Huế — nước màu và gia vị truyền thống miền Trung, món mặn ăn cơm trong ngày.",
-    "content": "Món ăn trong ngày từ một cư dân trong khu: cá nục kho kiểu Huế — cá nục tươi kho kỹ với nước màu và gia vị truyền thống miền Trung, vị mặn ngọt đậm đà, hợp ăn với cơm nóng.\nGiá bán và thông tin liên hệ có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem và đặt món trực tiếp với người bán.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4784311575139186/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T10:25:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cua Cà Mau size 3 con/kg, 480k/kg",
-    "summary": "Một cư dân rao cua Cà Mau thịt chắc, ngọt thơm, size 3 con/kg giá 480k/kg — hấp chấm muối tiêu chanh là hợp nhất.",
-    "content": "Hải sản trong ngày từ một cư dân trong khu: cua Cà Mau size 3 con/kg, giá 480k/kg. Theo người bán, cua thịt chắc, ngọt thơm, hợp nhất là hấp lên chấm muối tiêu chanh.\nSố lượng và thông tin liên hệ có trong bài gốc tại group — bấm \"Mở bài gốc\" để xem và đặt hàng trực tiếp với người bán.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4784309275139416/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T07:32:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "ARMORY CASTLE khai thác zero-day vCenter CVE-2026-123890 từ tháng 9, Broadcom vá khẩn",
-    "summary": "Broadcom vá khẩn ngày 19/11 cho CVE-2026-123890 (CVSS 9.8), lỗi bypass xác thực trong VMware Directory Service; Mandiant cho biết nhóm ARMORY CASTLE đã khai thác từ đầu tháng 9/2026, đánh cắp khóa ký SAML để vượt MFA.",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-vsphere",
-    "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/03_ThreatIntelligenceWebsiteBannerIdeas_BA.max-2600x2600.png",
-    "source": "Google Cloud Blog (Mandiant / GTIG)",
-    "content": "Broadcom đã phát hành bản vá khẩn ngày 19/11 (VMSA-2026-0009) cho CVE-2026-123890, lỗ hổng bypass xác thực nghiêm trọng (CVSS 9.8) trong VMware Directory Service của vCenter Server: kẻ tấn công có kết nối mạng tới vCenter có thể chiếm quyền quản trị mà không cần đăng nhập.\nMandiant và Google Threat Intelligence Group cho biết nhóm ARMORY CASTLE (trước đây là UNC5221, nghi có liên hệ Trung Quốc) đã khai thác lỗ hổng này như zero-day từ đầu tháng 9/2026, dùng công cụ BONESAW viết bằng Go. Nhóm đột nhập qua một zero-day khác trên thiết bị BeyondTrust Remote Support (CVE-2026-102764), di chuyển ngang sang các hệ thống nội bộ rồi tấn công vCenter, đánh cắp cơ sở dữ liệu thư mục và khóa ký SAML để giả mạo token đăng nhập, vượt qua cả xác thực đa yếu tố (tấn công Golden SAML).\nBản vá có cho vCenter 9.1.1.0200, 9.0.2.0200 và 8.0 U3m. Mandiant cảnh báo chỉ vá thôi chưa đủ nếu hệ thống đã bị xâm nhập trước đó, vì khóa bị đánh cắp và tài khoản cấy sẵn có thể vẫn tồn tại sau khi vá."
-  },
-  {
-    "ts": "2026-11-20T05:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Anthropic chào sàn Nasdaq: cổ phiếu ANT đóng cửa +17%, IPO lớn nhất lịch sử",
-    "summary": "Cổ phiếu Anthropic (mã ANT) mở cửa 111,50 USD, có lúc vốn hóa chạm ~2.000 tỷ USD, đóng cửa 97,17 USD (+17% so với giá IPO 83 USD); huy động 81,3 tỷ USD — IPO lớn nhất lịch sử.",
-    "url": "https://nypost.com/2026/11/19/business/anthropic-to-begin-trading-at-about-110-per-share-in-record-setting-ipo/",
-    "image": "https://nypost.com/wp-content/uploads/sites/2/2026/11/ipo-comp.jpg?quality=75&strip=all&w=1200",
-    "source": "New York Post",
-    "content": "Anthropic, công ty đứng sau chatbot Claude, đã có phiên giao dịch đầu tiên trên sàn Nasdaq với mã ANT. Cổ phiếu mở cửa ở 111,50 USD — cao hơn 34% so với giá IPO 83 USD — có lúc đẩy vốn hóa công ty chạm mốc ~2.000 tỷ USD, rồi đóng cửa ở 97,17 USD, vẫn tăng 17% so với giá chào bán.\nĐợt IPO huy động 81,3 tỷ USD (107 tỷ USD nếu tính cả phát hành riêng lẻ), trở thành IPO lớn nhất trong lịch sử, vượt kỷ lục của SpaceX. Hơn 813 triệu cổ phiếu đã đổi chủ trong ngày đầu, cũng vượt kỷ lục khối lượng giao dịch ngày ra mắt của SpaceX (522 triệu cổ phiếu). Đáng chú ý, ANT vẫn tăng điểm trong khi chỉ số Nasdaq giảm 2,2% cùng ngày.\nĐây là lần đầu một phòng lab AI hàng đầu niêm yết độc lập trên sàn chứng khoán. Theo các nguồn tin, đối thủ OpenAI dự kiến sẽ IPO vào năm 2027."
-  },
-  {
-    "ts": "2026-11-20T04:30:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Databricks mở public beta cho Genie ZeroOps, agent tự sửa pipeline dữ liệu",
-    "summary": "Genie ZeroOps tự động phát hiện, điều tra, xác minh, thông báo và đề xuất sửa lỗi data pipeline theo 5 bước; học từ hơn 80.000 sự cố thực tế; không tự thay đổi production khi chưa có người phê duyệt.",
-    "url": "https://www.databricks.com/blog/genie-zeroops-now-public-beta-autonomous-agent-fixes-data-pipelines-lessons-80000-customer",
-    "image": "https://www.databricks.com/sites/default/files/2026-11/2026-11-Blog-Genie-ZeroOps-now-in-public-beta-What-we-re-building-after-feedback-from-80-000-customer-incidents-OG-1200x628-2x.png",
-    "source": "Databricks Blog",
-    "content": "Databricks đã mở public beta cho Genie ZeroOps, một agent tự động chuyên xử lý sự cố data pipeline. Agent này làm việc theo 5 bước: phát hiện (cả lỗi job lẫn lỗi âm thầm về độ tươi và đầy đủ của dữ liệu), điều tra (truy vấn log, code, metadata và lineage), xác minh (chạy unit test và dry-run trong sandbox), thông báo (qua Slack, Teams, PagerDuty) và đề xuất sửa chữa bằng cách tạo pull request.\nTrong giai đoạn private preview với hàng trăm khách hàng, ZeroOps đã quan sát hơn 80.000 sự cố thực tế, và Databricks rút ra rằng hơn một nửa số sự cố cần kiến thức riêng của từng tổ chức mới xử lý được — vì vậy bản public beta bổ sung hộp thư chung, thông báo, tạo PR một cú nhấp và hướng dẫn nghiệp vụ tùy chỉnh.\nĐiểm quan trọng về quản trị: ZeroOps không bao giờ tự thay đổi code hay dữ liệu production khi chưa có người phê duyệt; nó chỉ điều tra, đề xuất và đẩy bản sửa lên một branch mới để review."
-  },
-  {
-    "ts": "2026-11-20T02:53:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Amazon Polly ra mắt voice cloning: tạo giọng riêng từ vài phút ghi âm",
-    "summary": "Voice cloning trong Amazon Polly chính thức khả dụng: tạo giọng clone từ vài phút ghi âm của người đã đồng ý; 7 ngôn ngữ; tạo giọng miễn phí, tính phí theo mức dùng; giọng được mã hóa và có watermark.",
-    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
-    "image": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/11/19/ML-22432-featured-image.png",
-    "source": "AWS Machine Learning Blog",
-    "content": "Amazon Polly đã chính thức ra mắt tính năng voice cloning (dạng gated release): chỉ cần vài phút ghi âm của một người nói đã đồng ý, Polly sẽ tạo ra một giọng clone chạy trên Polly generative engine, có độ tự nhiên tương đương các giọng generative khác.\nTính năng ra mắt với 7 ngôn ngữ: tiếng Anh, Tây Ban Nha, Đức, Pháp, Ý, Bồ Đào Nha và Hindi; mỗi giọng clone chỉ nói được ngôn ngữ mà nó được ghi âm. Tạo giọng là miễn phí, phí sử dụng tính theo mức dùng; mỗi tài khoản có hạn mức ban đầu 10 giọng clone mỗi region, và cần đăng ký quyền truy cập qua đội ngũ AWS account team.\nVề an toàn: người dùng phải xác nhận sự đồng ý của người nói mỗi lần tạo giọng; giọng clone được mã hóa, gắn với tài khoản tạo ra, và âm thanh tổng hợp có gắn watermark. Polly không giữ bản ghi âm sau khi tạo giọng xong và không dùng chúng để huấn luyện mô hình."
-  },
-  {
-    "ts": "2026-11-20T01:31:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Bitrise công bố báo cáo sự cố: nền tảng AI pentest ARTEX xâm nhập trong 25 ngày",
-    "summary": "Nền tảng AI pentest mã nguồn mở ARTEX thăm dò Bitrise 25 ngày, đăng nhập tài khoản test bot bỏ quên không có 2FA ngày 13/11 và chỉ ~11 phút sau đã dùng cloud key đánh cắp; Bitrise tắt toàn bộ nền tảng, thu hồi 919 key.",
-    "url": "https://bitrise.io/artex-incident-report",
-    "image": "https://bitrise.io/artex-incident-report/og.png",
-    "source": "Bitrise",
-    "content": "Bitrise đã công bố báo cáo sự cố chi tiết về một cuộc xâm nhập kéo dài 25 ngày (25/10–18/11/2026) do ARTEX, một nền tảng AI pentest mã nguồn mở, thực hiện. Các agent của ARTEX quét 36.698 request tới hơn 20 hostname của Bitrise, tự giới thiệu là một cuộc 'authorized pentest' mà không ai đặt hàng.\nBước quyết định diễn ra ngày 13/11: kẻ tấn công đăng nhập một tài khoản test bot nội bộ đã bỏ quên từ lâu, không có xác thực hai yếu tố, và chỉ khoảng 11 phút sau đã dùng cloud key đánh cắp để leo thang — lần lượt chạm tới file ký code, mã nguồn, trạng thái hạ tầng và build log của Bitrise. Bitrise phát hiện lúc 16:32 UTC, tắt toàn bộ nền tảng lúc 20:34 UTC, thu hồi toàn bộ 919 cloud service-account key và xoay mọi secret, rồi dựng lại hạ tầng từ nguồn tin cậy.\n15 workspace khách hàng bị truy cập trái phép (1 chứng chỉ ký code, 1 provisioning profile, 13 build log chẩn đoán); Bitrise khẳng định kho chứa secret của khách hàng không bị chạm tới. Báo cáo kèm log đầy đủ và các dấu vết nhận diện ARTEX: client string norma/0.4 và tên agent dạng i<number>."
-  },
-  {
-    "category": "Khoa học",
-    "flow": "internet",
-    "image": "https://i.ytimg.com/vi/2ovOnP_jSGo/hqdefault.jpg",
-    "source": "Thư Viện Thiên Văn (YouTube)",
-    "summary": "Video mới từ Thư Viện Thiên Văn: vật chất suy biến và áp suất suy biến electron — cơ chế giữ cho sao lùn trắng không sụp đổ dưới trọng lực của chính nó.",
-    "title": "Degenerate Matter and Electron Degeneracy Pressure | Astronomy Library",
-    "ts": "2026-11-19T15:00:00+07:00",
-    "url": "https://www.youtube.com/watch?v=2ovOnP_jSGo",
-    "content": "Video mới của kênh Thư Viện Thiên Văn (Astronomy Library) giải thích một khái niệm nền tảng của vật lý sao: vật chất suy biến và áp suất suy biến electron.\nKhi một ngôi sao như Mặt Trời cháy hết nhiên liệu, lõi của nó co lại thành sao lùn trắng. Lúc này, thứ chống lại trọng lực không còn là áp suất nhiệt mà là áp suất suy biến — hệ quả trực tiếp của nguyên lý loại trừ Pauli: hai electron không thể chiếm cùng một trạng thái lượng tử, nên chúng \"đẩy\" lại lực nén một cách cực kỳ hiệu quả dù vật chất đã nguội.\nĐây cũng là cơ chế đặt ra giới hạn Chandrasekhar (~1,4 khối lượng Mặt Trời) — ngưỡng mà nếu vượt qua, áp suất suy biến electron không còn đủ sức giữ ngôi sao và sụp đổ sẽ tiếp diễn. Bấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube."
-  },
-  {
-    "category": "Game",
-    "flow": "internet",
-    "image": "https://i.ytimg.com/vi/xkodJuHFHJc/hqdefault.jpg",
-    "source": "Phê Game (YouTube)",
-    "summary": "Video mới từ kênh Phê Game về chủ đề game gây tranh cãi (TGB).",
-    "title": "Controversial TGB",
-    "ts": "2026-11-19T15:00:00+07:00",
-    "url": "https://www.youtube.com/watch?v=xkodJuHFHJc",
-    "content": "Video mới từ kênh Phê Game với chủ đề xoay quanh \"TGB\" — một đề tài đang gây tranh cãi trong cộng đồng game thủ.\nBấm vào video trong cửa sổ này để xem trực tiếp, hoặc \"Mở nguồn gốc\" để xem trên YouTube kèm phần bình luận của cộng đồng."
-  },
-  {
-    "category": "Facebook",
-    "flow": "facebook",
-    "image": null,
-    "source": "J2Team Community",
-    "summary": "Bài thảo luận trong J2Team về kế hoạch IPO của Anthropic — một trong những thương vụ lên sàn lớn nhất lịch sử ngành AI, định giá vượt 1,4 nghìn tỷ USD.",
-    "title": "Anthropic hướng tới IPO kỷ lục",
-    "ts": "2026-11-19T11:30:00+07:00",
-    "url": "https://facebook.com/groups/j2team.community/permalink/3255669551431809/",
-    "content": "Anthropic — công ty đứng sau dòng trợ lý AI Muse — đang tiến những bước rõ rệt tới việc phát hành cổ phiếu lần đầu ra công chúng (IPO), với mức định giá được nhắc tới vượt 1,4 nghìn tỷ USD.\nNếu diễn ra ở quy mô này, đây sẽ là một trong những thương vụ IPO lớn nhất lịch sử ngành công nghệ, đánh dấu giai đoạn các phòng thí nghiệm AI chuyển từ gọi vốn tư nhân sang thị trường đại chúng.\nBài đăng trong J2Team Community tổng hợp các thông tin quanh kế hoạch này và mở ra nhiều thảo luận về định giá, cạnh tranh với OpenAI và tác động tới thị trường AI nói chung. Bấm \"Mở nguồn gốc\" để đọc bài và phần bình luận trong group."
   }
 ]
