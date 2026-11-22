@@ -1,5 +1,82 @@
 [
   {
+    "ts": "2026-11-21T23:45:03+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Cập nhật Riemann: cộng đồng Lean/Mathlib chứng nhận chứng minh đúng, Scientific American cho biết comparator run đã hoàn tất",
+    "summary": "Cộng đồng Lean và Mathlib ra tuyên bố chung chứng nhận chứng minh giả thuyết Riemann của Levent Alpöge là đúng; Scientific American cho biết comparator run đã hoàn tất — dù trang xác minh của MIT vẫn ghi vòng kiểm tra chính thức đang chạy, và Viện Clay vẫn liệt kê chưa giải.",
+    "content": "Scientific American cập nhật bài ngày 21/11 (16:45 UTC): cộng đồng Lean và Mathlib ra tuyên bố chung — \"We have full confidence that Alpöge's proof of the Riemann Hypothesis is correct... We hereby certify that both the statement and the proof of the Riemann Hypothesis are correct.\"\nTạp chí cũng viết comparator run — bước kiểm tra xem mã có đánh tráo định nghĩa trong phát biểu định lý hay khai thác lỗi kernel Lean hay không — \"has now been completed\".\nLưu ý thận trọng: trang xác minh của Andrew Sutherland (MIT), cập nhật lần cuối 12:55 UTC 21/11 (trước bản cập nhật của SciAm), vẫn ghi `lake comparator` chính thức đang chạy; nhưng chế độ `--compare` độc lập của con-leche đã chấp nhận cả 5 định lý, lean4lean đạt 175.187/175.187 module, và 3 kernel độc lập đều chấp nhận. Viện Clay vẫn liệt kê giả thuyết chưa được giải — vẫn là \"đã qua kiểm tra máy\", chưa phải chứng minh được chấp nhận chính thức.",
+    "url": "https://www.scientificamerican.com/article/the-ai-riemann-hypothesis-proof-is-almost-certainly-true-independent-mathematicians-attest/",
+    "image": "https://static.scientificamerican.com/dam/asset/64e45f50-d1c5-4a9f-ad48-60b52541abcc/riemann-proven.jpg?m=1795211310.647&w=1200",
+    "source": "Scientific American"
+  },
+  {
+    "ts": "2026-11-22T02:24:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Tesla bắt đầu triển khai FSD v15, tuyên bố cải thiện 25 lần các tình huống an toàn trọng yếu",
+    "summary": "Tesla thông báo FSD v15 tới tay đợt khách hàng đầu tiên, với bộ mã hóa thị giác mới dùng chung cho FSD, Robotaxi và robot Optimus; con số \"cải thiện 25 lần\" chưa kèm dữ liệu gốc. Thêm giao diện trực quan Reality View; bản phát hành rộng dự kiến tháng 12.",
+    "content": "Tesla thông báo trên X tối thứ Bảy 21/11 (19:24 UTC): FSD v15 \"nâng cấp mọi phần của mạng lái xe end-to-end\", tới tay đợt khách hàng đầu tiên.\nĐiểm mới chính: bộ mã hóa thị giác (vision encoder) nâng cấp, dùng chung cho FSD, Robotaxi và robot Optimus, huấn luyện trên hàng triệu video internet; Tesla nói tỉ lệ can thiệp trong tình huống trọng yếu cải thiện 25 lần — nhưng không công bố dữ liệu gốc hay phương pháp đo.\nThêm \"Reality View\": hình ảnh trực quan trực tiếp cho thấy xe thấy gì và FSD định làm gì; cải thiện nhận diện biển báo, ổ gà, động vật nhỏ, mảnh vỡ đường, nước đọng sâu; FSD giờ giảm tốc trước camera tốc độ; thêm Bike Rack Mode. Vẫn là FSD (Supervised) — tài xế phải giám sát liên tục. Elon Musk nói bản phát hành rộng vào tháng 12.",
+    "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/",
+    "image": "https://electrek.co/wp-content/uploads/sites/3/2026/11/Tesla-FSD-v15-update.jpeg?quality=82&strip=all&resize=1200,628",
+    "source": "Electrek"
+  },
+  {
+    "ts": "2026-11-21T12:46:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Kẻ xấu lợi dụng cơn sốt GTA 6: client PC giả phát tán mã độc, lừa đảo phishing game tăng 1.300%",
+    "summary": "GTA 6 chưa có bản PC nhưng kẻ tấn công đang rao \"client PC\" giả để phát tán mã độc qua tấn công ClickFix; email phishing chủ đề game tăng tới 1.300%, phần lớn nhắm vào nhân viên doanh nghiệp.",
+    "content": "GTA 6 chưa có bản PC (dự kiến đầu 2027) nhưng kẻ tấn công đang rao \"client PC GTA 6\" giả: thực chất là tấn công ClickFix — dụ nạn nhân bấm Win+R, dán lệnh PowerShell và chạy, từ đó cài infostealer, trojan điều khiển từ xa hoặc ransomware.\nESET trước đó đã cảnh báo các file GTA 6 giả chứa infostealer, trojan điều khiển từ xa và ransomware. Không có bản PC, bản demo hay truy cập sớm nào — mọi trình cài đặt PC đang được rao đều là giả.\nTheo nền tảng KnowBe4, email phishing chủ đề game tăng tới 1.300% so với trung bình tháng 3–8/2026, trong đó 83,2% nhắm vào nhân viên doanh nghiệp bằng ưu đãi đặt trước GTA 6 giả để đánh cắp thông tin đăng nhập; phần lớn diễn ra vào cuối tuần.",
+    "url": "https://www.etvbharat.com/en/technology/as-gta-6-shatters-sales-records-at-3-79-billion-hackers-exploit-hype-with-pc-malware-corporate-phishing-enn26112101208",
+    "image": "https://imgs.etvbharat.com/etvbharat/prod-images/21-11-2026/1200-675-28160503-589-28160503-1795239924453.jpg",
+    "source": "ETV Bharat"
+  },
+  {
+    "ts": "2026-11-22T07:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Fermi lập bản đồ tia gamma năng lượng thấp sau 14 năm: 450 nguồn, lấp \"khoảng trống MeV\"",
+    "summary": "Danh mục 2FLE từ 14 năm dữ liệu của kính viễn vọng Fermi-LAT xác định 450 nguồn tia gamma trong dải 20–200 MeV — cái nhìn rõ nhất từ trước đến nay về tia gamma năng lượng thấp, trong đó 60 nguồn có vẻ là phát hiện hoàn toàn mới.",
+    "content": "Nhóm quốc tế dùng kính viễn vọng Fermi-LAT (NASA) công bố trên The Astrophysical Journal Supplement Series danh mục 2FLE — Second Catalog of Low-Energy Fermi-LAT Sources: 450 nguồn tia gamma riêng biệt trong dải 20–200 MeV, từ 14 năm dữ liệu.\nĐây là cái nhìn rõ nhất từ trước đến nay về tia gamma năng lượng thấp, vùng mà Fermi-LAT vốn chỉ định vị được một photon 20 MeV trong khoảng trời rộng ~20 độ — hơn 40 lần kích thước Mặt Trăng tròn. Phần lớn năng lượng của các blazar FSRQ nằm trong cửa sổ này; 52 nguồn thuộc Dải Ngân Hà.\n73 nguồn chưa có đối tác rõ ràng ở năng lượng khác, trong đó 60 nguồn có vẻ là phát hiện tia gamma hoàn toàn mới. Một nguồn bí ẩn (2FLE J0340.8+5258) dường như phát sáng trên 9 bậc độ lớn năng lượng.",
+    "url": "https://phys.org/news/2026-11-fermi-year-sky-bridges-astronomy.html",
+    "image": null,
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-21T19:23:55+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Video meGAME: \"Giải mã lý do MMORPG Việt Nam khó sống thọ: VNG là 'thủ phạm'? | Review Nghịch Thuỷ Hàn\"",
+    "summary": "meGAME ra video mới tối 21/11 phân tích vì sao các MMORPG tại Việt Nam thường \"chết yểu\", lấy Nghịch Thuỷ Hàn (Justice Online) làm ví dụ và đặt câu hỏi về vai trò của nhà phát hành VNG.",
+    "content": "meGAME ra video mới tối 21/11 (19:23 +07) phân tích vì sao các MMORPG tại Việt Nam thường \"chết yểu\", lấy Nghịch Thuỷ Hàn (Justice Online) làm ví dụ.\nVideo đặt câu hỏi về vai trò của nhà phát hành VNG trong vòng đời ngắn ngủi của các MMORPG tại thị trường Việt Nam.",
+    "url": "https://www.youtube.com/watch?v=tg65WGgIlr4",
+    "image": "https://i.ytimg.com/vi/tg65WGgIlr4/hqdefault.jpg",
+    "source": "meGAME"
+  },
+  {
+    "ts": "2026-11-21T23:23:35+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Rockstar bị tố \"trace\" tranh furry cho decal súng SMG trong GTA 6",
+    "summary": "Người dùng X so sánh decal trên khẩu SMG tùy chỉnh trong GTA 6 với tranh minh họa của họa sĩ furry GabyT từ năm 2021 và đặt câu hỏi về việc sao chép; Rockstar chưa lên tiếng.",
+    "content": "Dexerto (21/11 16:23 UTC): người dùng X Glacius chia sẻ artwork trích từ file game GTA 6 — decal trên một khẩu SMG tùy chỉnh nhận được từ nhiệm vụ gặp gỡ nhân vật cáo Chase — và so sánh với tranh minh họa của họa sĩ furry GabyT đăng ngày 8/12/2021, đặt câu hỏi \"IT WAS TRACED????\".\nChưa rõ Rockstar có xin phép hay liên hệ GabyT hay không; Rockstar chưa lên tiếng về cáo buộc.",
+    "url": "https://www.dexerto.com/gta/rockstar-accused-of-tracing-furry-artwork-for-gta-6s-custom-smg-3430332/",
+    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/11/21/furry-gat-6-artwork-traced.jpg",
+    "source": "Dexerto"
+  },
+  {
+    "ts": "2026-11-22T07:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "\"Florida Joker\" có tên trong credits chính thức của GTA 6",
+    "summary": "Lawrence Sullivan — \"Florida Joker\" — có tên trong credits chính thức của GTA 6, nhóm \"The Local Population\" (1 trong 1.127 tên). Rockstar không ghi tên nhân vật và vẫn chưa từng xác nhận nhân vật tóc tím xăm mặt trong trailer lấy cảm hứng từ anh.",
+    "content": "Lawrence Sullivan — người được biết đến với biệt danh Florida Joker từ bức ảnh mugshot viral năm 2017 — có tên trong credits chính thức của GTA 6, mục Cast, nhóm \"The Local Population\" (1 trong 1.127 tên).\nRockstar không ghi tên nhân vật, không có mục \"special voice actor\", và vẫn chưa từng xác nhận nhân vật tóc tím xăm mặt trong trailer đầu tiên lấy cảm hứng từ Sullivan. Bản thân Sullivan tự gọi mình là \"diễn viên lồng tiếng chính thức\" trong video của anh — đó là cách anh tự mô tả, không phải của Rockstar.\nCredits cũng xác nhận diễn viên lồng tiếng cho Jason và Lucia, và ghi tên cả 34 nhân viên Rockstar từng bị sa thải trong vụ việc đang được tòa lao động Scotland xem xét.",
+    "url": "https://www.gta6map.net/news/gta-6-credits-florida-joker-lawrence-sullivan",
+    "image": "https://www.gta6map.net/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F1nxwnq43%2Fproduction%2Fe78390b18d3dbd109a9f453e7fcbc1c382c7b241-2800x1575.jpg%3Fauto%3Dformat%26fit%3Dmax%26w%3D1400%26q%3D70&w=3840&q=75",
+    "source": "GTA6Map"
+  },
+  {
     "ts": "2026-11-21T20:11:01+07:00",
     "flow": "facebook",
     "category": "Facebook",
