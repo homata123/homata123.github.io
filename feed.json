@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-22T08:45:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Thuật toán mật mã lưới tìm ra pulsar tia gamma nhanh hơn khoảng một triệu lần",
+    "summary": "Nhóm Max Planck/Weizmann/Chalmers dùng thuật toán mật mã lưới tìm pulsar PSR J1622-7204 quay 261 vòng/giây trong dữ liệu 15 năm của kính Fermi — việc cũ tốn ~600 năm CPU, nay chỉ ~10 giờ.",
+    "content": "Nhóm nghiên cứu quốc tế từ Viện Max Planck về Vật lý hấp dẫn (Viện Albert Einstein), Viện Khoa học Weizmann và Đại học Công nghệ Chalmers công bố trên Physical Review Letters ngày 19/11: dùng thuật toán mật mã lưới (lattice) để tìm pulsar tia gamma mù trong dữ liệu 15 năm của kính viễn vọng Fermi, phát hiện pulsar PSR J1622-7204 quay 261 vòng/giây mà các phương pháp cũ bỏ sót dù tốn tương đương khoảng 600 năm CPU.\nPhương pháp mới chỉ cần khoảng 10 giờ CPU trên một lõi (sàng lọc ban đầu khoảng 100 phút trên máy trạm thường) và xác định được tín hiệu chỉ từ 80 photon mẫu ngẫu nhiên, bằng cách biến bài toán dò tín hiệu thành bài toán tìm vector ngắn nhất trong lưới nhiều chiều — kỹ thuật các nhà mật mã dùng để kiểm tra mã hóa hậu lượng tử.\nHướng tiếp theo: đầu năm 2027 nhóm sẽ khảo sát mù khoảng 2.000 nguồn tia gamma chưa xác định, nhắm tới các pulsar milligiây trong hệ đôi; thuật toán cũng sẽ được tích hợp vào dự án tính toán phân tán Einstein@Home từ tháng 12/2026.",
+    "url": "https://casrai.org/news/fermi-gamma-ray-telescope-cryptography-algorithm-accelerates-pulsar-discovery-2026",
+    "image": "https://objectstorage.us-ashburn-1.oraclecloud.com/n/ido7qwlr5kaw/b/casrai-news-images/o/fermi-gamma-ray-telescope-cryptography-algorithm-accelerates-pulsar-discovery-20-13fb.jpg",
+    "source": "CASRAI"
+  },
+  {
+    "ts": "2026-11-22T06:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Google chứng minh tính ngữ cảnh lượng tử trên bộ xử lý siêu dẫn 71 qubit",
+    "summary": "Nhóm Google Quantum AI chứng minh tính ngữ cảnh lượng tử ở quy mô tới 71 qubit trên tạp chí Science (19/11), lập kỷ lục cả về quy mô lẫn độ chính xác — chuẩn mực mới cho hoạt động 'thật sự lượng tử'.",
+    "content": "Nhóm Google Quantum AI công bố trên tạp chí Science ngày 19/11: lần đầu chứng minh tính ngữ cảnh lượng tử (quantum contextuality) — tính chất phi cổ điển được xem là nguồn sức mạnh tính toán lượng tử — ở quy mô lớn, trên bộ xử lý siêu dẫn tới 71 qubit.\nNhóm chạy trò chơi parity hợp tác nhiều người chơi và bài toán hàm tuyến tính ẩn hai chiều (nền tảng của phá mã), đạt xác suất thắng và độ chính xác vượt mọi giới hạn cổ điển, lập kỷ lục cả về quy mô hệ thống lẫn độ chính xác so với mọi thí nghiệm trước đây (trước đó chỉ làm được trên hệ vài qubit do trạng thái lượng tử rất dễ nhiễu).\nBình luận kèm theo trên Science đánh giá công trình vượt khỏi cuộc đua thuần túy tăng số qubit, thiết lập chuẩn mực mới: kiểm chứng hoạt động 'thật sự lượng tử' — tức phi cổ điển — của máy tính lượng tử.",
+    "url": "https://dongascience.com/en/news/80991",
+    "image": "https://image.dongascience.com/Photo/2026/11/7935dba83d155e727aebdd26f0480c67.jpg",
+    "source": "DongA Science"
+  },
+  {
+    "ts": "2026-11-21T23:01:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Nvidia, IBM và Fermilab hợp tác xây nền tảng lượng tử lai",
+    "summary": "Ba bên xây nền tảng đồng thiết kế máy tính lượng tử mô-đun kết hợp máy IBM với hệ Nvidia DGX B200; Nvidia công bố thuật toán giải mã TCBP-JOBS nhanh hơn tới 13.000 lần.",
+    "content": "Nvidia, IBM và Phòng thí nghiệm quốc gia Fermi (Fermilab, thuộc Bộ Năng lượng Mỹ) đang phát triển nền tảng đồng thiết kế máy tính lượng tử mô-đun: kết hợp máy tính lượng tử IBM với hệ thống Nvidia DGX B200 để phục vụ nghiên cứu sửa lỗi lượng tử, ứng dụng khoa học và tính toán lai lượng tử–cổ điển, trong đó có vật lý năng lượng cao và hạt nhân.\nRiêng Nvidia công bố thuật toán giải mã mới TCBP-JOBS, tuyên bố tăng tốc nghiên cứu sửa lỗi lượng tử tới 13.000 lần so với thuật toán hàng đầu hiện nay — rút thời gian tính toán cho một thiết kế từ khoảng 12 tuần xuống 45 phút — phát hành qua thư viện CUDA-Q QEC 0.9.0.\nHợp tác còn mở rộng Slurm (trình quản lý công việc siêu máy tính mã nguồn mở) để các trung tâm nghiên cứu lập lịch bộ xử lý lượng tử cùng CPU và GPU bằng lệnh quen thuộc.",
+    "url": "https://www.manilatimes.net/2026/11/22/business/sunday-business-it/nvidia-ibm-fermilab-build-quantum-platform/2475425/amp",
+    "image": null,
+    "source": "Manila Times"
+  },
+  {
+    "ts": "2026-11-22T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Người tham gia thử nghiệm Neuralink chơi GTA 6 bằng suy nghĩ, không cần tay cầm",
+    "summary": "Neuralink đăng video 20/11: người tham gia thử nghiệm lâm sàng chơi GTA 6 bằng chip cấy não Telepathy — lái xe, bay máy bay, đánh nhau chỉ bằng cách tưởng tượng các cử động nhỏ.",
+    "content": "Neuralink đăng video 2 phút ngày 20/11, một ngày sau khi GTA 6 ra mắt: một người tham gia thử nghiệm lâm sàng chơi GTA 6 bằng chip cấy não Telepathy — lái xuồng cao tốc, lái xe, bay máy bay, đánh nhau — chỉ bằng cách tưởng tượng các cử động nhỏ, ví dụ nghĩ tới việc gõ ngón áp út để ra đòn.\nTín hiệu não được giải mã thành lệnh tay cầm qua phần mềm JoypadOS, hiển thị trực tiếp trên bảng 'Live neural decoding' và hình tay cầm PS5 DualSense sáng theo từng lệnh được ghi nhận.\nTrước khi cấy chip, người này chơi game bằng gậy ngậm miệng và iPad, cách làm khiến hàm bị mỏi. Thiết bị vẫn đang trong giai đoạn thử nghiệm, chưa được FDA hay cơ quan quản lý nào phê duyệt.",
+    "url": "https://interestingengineering.com/culture/neuralink-brain-implant-gta-vi-blindsight-approval",
+    "image": null,
+    "source": "Interesting Engineering"
+  },
+  {
+    "ts": "2026-11-22T00:46:36+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Phân Tích Game: Chơi tiếp Grand Theft Auto 6 - NGÀY 4",
+    "summary": "Phân Tích Game tiếp tục series chơi GTA 6 với tập NGÀY 4, đăng rạng sáng nay — video mới duy nhất trong 48h từ các kênh game Việt đang theo dõi.",
+    "content": "Phân Tích Game tiếp tục series livestream chơi Grand Theft Auto 6 với tập NGÀY 4, đăng rạng sáng nay (22/11 00:46 giờ Việt Nam).\nĐây là video mới duy nhất trong 48 giờ qua từ các kênh game Việt đang theo dõi: meGAME mới nhất đã báo ở bản 07:00 hôm nay, Cờ Su và Game Cực Hay mới nhất đều từ 20/11 và đã báo; livestream GTA VI #08 của Phê Game không đưa vào vì trùng nội dung series NGÀY của Phân Tích Game (theo tiền lệ các bản trước).",
+    "url": "https://www.youtube.com/watch?v=2RBd2EzQNY0",
+    "image": "https://i.ytimg.com/vi/2RBd2EzQNY0/hqdefault.jpg",
+    "source": "Phân Tích Game"
+  },
+  {
     "ts": "2026-11-22T11:30:00+07:00",
     "flow": "facebook",
     "category": "Facebook",
