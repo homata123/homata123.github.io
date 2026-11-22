@@ -1,5 +1,49 @@
 [
   {
+    "ts": "2026-11-22T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Together AI: AI coding agent làm lộ credential, prompt của khách hàng bị tải trộm",
+    "summary": "AI coding agent commit nhầm credential vào repo GitHub công khai xorl, để lộ repo Hugging Face chứa mẫu prompt khách hàng (MiniMax M3, GLM-5.2, Kimi K2.6); kẻ lạ đã tải trộm toàn bộ trước khi commit bị revert. Together AI đặt zero data retention làm mặc định cho tài khoản mới.",
+    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+    "image": "https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6b022ac06b3b148585570c47_OG-image_20261121-security-event-prompt-leakage2.png",
+    "source": "Together AI",
+    "content": "Together AI công bố ngày 21/11: một AI coding agent trong lúc phát triển repo công khai xorl trên GitHub đã commit một credential cho phép truy cập repo Hugging Face riêng tư chứa các mẫu prompt khách hàng (được thu thập cho kiểm thử phần mềm, đã được cho phép).\nMáy quét tự động phát hiện và revert commit, nhưng trong khoảng thời gian credential bị lộ, một bên thứ ba đã lấy được nó và tải toàn bộ mẫu prompt — chủ yếu từ các yêu cầu tới MiniMax M3, GLM-5.2 và Kimi K2.6 trong các ngày 24/6, 4/7, 8/7 và 14/7/2026.\nKẻ xâm nhập còn rà soát các mẫu prompt để tìm credential của dịch vụ khác và thử dùng chúng; 5 credential bị thử là \"canary\" do Dragos cài trong một thí nghiệm bảo mật — chưa rõ có credential thật nào bị dùng thành công hay không. Together AI nói không có bằng chứng dữ liệu bị phát tán thêm và hiểu rằng dữ liệu đã bị xóa; công ty đã thuê đơn vị pháp y bên ngoài, làm việc với cơ quan thực thi pháp luật, và đặt zero data retention (ZDR) làm mặc định cho tài khoản mới."
+  },
+  {
+    "ts": "2026-11-21T10:54:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "OpenRouter cảnh báo: prompt gửi tới mô hình MiniMax có thể đã bị bên thứ ba đọc",
+    "summary": "Nhà nghiên cứu bảo mật cài link kiểm tra duy nhất vào prompt gửi tới MiniMax từ tháng 7 đến tháng 10/2026; bên thứ ba mở các link đó 40–130 giờ sau khi gửi. OpenRouter đã gỡ nhãn Zero Data Retention khỏi các endpoint MiniMax trong lúc điều tra.",
+    "url": "https://www.privacyaffairs.com/openrouter-minimax-prompts/",
+    "image": "https://www.privacyaffairs.com/wp-content/uploads/2026/11/paper-shredder-unshredded-sheets-magnifier-c1.webp",
+    "source": "Privacy Affairs",
+    "content": "OpenRouter gửi email cảnh báo khách hàng (tin đầu tiên từ RuntimeWire 03:54 UTC 21/11): prompt và output gửi tới các mô hình MiniMax có thể đã bị đọc.\nMột nhà nghiên cứu bảo mật đã cài các link kiểm tra duy nhất (\"canary\") vào prompt gửi tới MiniMax từ tháng 7 đến tháng 10/2026; bên thứ ba đã mở các link đó 40–130 giờ sau khi gửi — cho thấy prompt được lưu và đọc lại chứ không phải kiểm duyệt thời gian thực. Hiện tượng xảy ra dù gọi trực tiếp MiniMax hay qua các nhà cung cấp trung gian AtlasCloud, Novita, StreamLake; các mô hình khác qua cùng nhà cung cấp gần như không bị.\nOpenRouter đã gỡ nhãn Zero Data Retention (ZDR) khỏi các endpoint MiniMax trong lúc điều tra và cho biết lỗi thuộc về MiniMax và các bên chuyển tiếp, không phải OpenRouter. MiniMax giải thích với StreamLake rằng chế độ kiểm duyệt nội dung đã bật trên các endpoint trước 22/10 và ZDR đã được bật sau đó.\nNghiên cứu gốc là của HD Moore (Dragos), công bố 19/11: khoảng 2 triệu prompt mồi nhử gửi tới nhiều dịch vụ AI, phát hiện ít nhất 3 nhà cung cấp hosting bị xâm phạm dữ liệu."
+  },
+  {
+    "ts": "2026-11-21T00:30:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Agent AI của tin tặc tự tìm ra zero-day MONAI Label trong 11 phút, chiếm quyền root máy chủ đại học",
+    "summary": "Các agent của framework pentest tự động Cairn tự tìm lỗi path traversal trong MONAI Label và chiếm quyền root máy chủ đại học. Lỗ hổng là CVE-2026-133968 (CVSS 9.8); bản sửa đã merge ngày 19/10 nhưng tới nay vẫn chưa có bản phát hành nào chứa bản vá.",
+    "url": "https://venturebeat.com/security/amazon-says-attackers-ai-agents-found-and-exploited-a-zero-day-in-11-minutes-but-no-patched-release-is-available",
+    "image": null,
+    "source": "VentureBeat",
+    "content": "Amazon Threat Intelligence (blog của CISO đăng 20/11 17:30 UTC): một tác nhân (đánh giá \"Chinese-nexus\" với độ tin cậy vừa phải) để framework pentest tự động mã nguồn mở Cairn chạy không cần xác thực trên internet, giao mục tiêu \"obtain shell access\" và nhắm vào các đại học ở Đông Á ngoài Trung Quốc đại lục trong ~48 giờ từ 8/9.\nCác agent tự lập bản đồ API của MONAI Label (máy chủ gán nhãn ảnh y tế mã nguồn mở), phát hiện lỗi path traversal ở endpoint upload và đi từ lập bản đồ API tới ghi file tùy ý chỉ trong ~11 phút, rồi trong phiên sau chèn reverse shell Python (qua sitecustomize.py) và chiếm quyền root.\nAmazon đánh giá với độ tin cậy cao đây là zero-day (CVE-2026-133968, CVSS 9.8) vì khi đó chưa có bản vá, issue hay advisory nào. Bản sửa đã merge vào nhánh chính ngày 19/10 (PR #1915) nhưng tới nay vẫn CHƯA có bản phát hành nào chứa bản vá — bản mới nhất trên PyPI vẫn là 0.8.5 từ tháng 11/2024; advisory khuyến nghị các biện pháp tạm thời."
+  },
+  {
+    "ts": "2026-11-20T20:37:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Buckmaster và Alpöge tuyên bố chứng minh Navier-Stokes \"thật\" với sự trợ giúp của AI — chưa kiểm chứng",
+    "summary": "Tiếp nối tuyên bố chứng minh giả thuyết Riemann (20/11), hai nhà toán học công bố chứng minh blow-up Navier-Stokes hình thành mà không cần ngoại lực — khép lại \"lỗ hổng\" trong lời giải của OpenAI hồi tháng 9. Chứng chỉ kiểm chứng chưa được công bố, tính đúng đắn chưa xác nhận độc lập.",
+    "url": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/",
+    "image": "https://static.scientificamerican.com/dam/asset/db38600e-6f8e-47d4-b6e4-0f8cecf97259/New-navier-stokes-fluid-dynamics.jpg?m=1795195169.637&w=1200",
+    "source": "Scientific American",
+    "content": "Tiếp nối tuyên bố chứng minh giả thuyết Riemann (20/11), Levent Alpöge (Anthropic) và Tristan Buckmaster (NYU) cùng ngày 20/11 công bố một chứng minh có sự hỗ trợ của AI cho bài toán Navier-Stokes \"thật\": blow-up hình thành mà KHÔNG cần ngoại lực can thiệp — khép lại \"lỗ hổng\" trong lời giải của OpenAI hồi tháng 9/2026 (chứng minh đó dùng một ngoại lực được tinh chỉnh để \"khuấy\" chất lỏng).\nBuckmaster đăng chứng minh lên Mastodon lúc 8:37 sáng EST 20/11, thừa nhận bản viết còn thô vì \"sau lần trước\" họ \"không thể mạo hiểm chờ đợi\" do lo bị \"scoop\"; chứng chỉ kiểm chứng (certificate) chưa được công bố, hứa sẽ phát hành sớm.\nĐúng như với Riemann: tính đúng đắn chưa được xác nhận độc lập, và Viện Clay vẫn liệt kê bài toán chưa được giải."
+  },
+  {
     "ts": "2026-11-22T08:30:00+07:00",
     "flow": "facebook",
     "category": "Facebook",
