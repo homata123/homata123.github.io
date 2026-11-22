@@ -1,5 +1,93 @@
 [
   {
+    "ts": "2026-11-22T11:35:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Riemann: kiểm chứng chéo số học mới qua tiêu chuẩn Robin 1984 — comparator chính vẫn đang chạy",
+    "summary": "Trang xác minh của Andrew Sutherland (MIT), cập nhật 04:35 UTC hôm nay, bổ sung kiểm chứng chéo số học: chứng minh Riemann ghép với Robin1984 cho ra hai bất đẳng thức về tổng ước không nhắc tới hàm zeta; lake comparator toàn trình và kernel Lean vẫn đang chạy.",
+    "content": "Trang xác minh của Andrew Sutherland (MIT), cập nhật 04:35 UTC ngày 22/11, bổ sung mục \"Arithmetic consequences\": chứng minh Riemann được ghép với Robin1984 — bản hình thức hóa độc lập tiêu chuẩn Robin (1984) và Lagarias — cho ra hai bất đẳng thức về tổng ước σ(n) mà không nhắc tới hàm zeta: bất đẳng thức Robin (σ(n) < e^γ·n·log log n với n > 5040) và bất đẳng thức Lagarias.\nRobin1984 tự thân đã qua trọn vẹn lake comparator v4.36.0 (\"Your solution is okay!\", 04:16:52 UTC); bản ghép được con-leche và con-ron --compare chấp nhận cả hai bất đẳng thức, nanoda chấp nhận; lake comparator trên bản ghép vẫn đang chạy (so khớp mệnh đề và kiểm tra tiên đề đã qua).\nVới chứng minh chính: lake comparator toàn trình và kernel Lean vẫn đang chạy — trái với dòng \"has now been completed\" mà Scientific American viết. Viện Clay vẫn liệt kê bài toán chưa giải.\nKết luận: vẫn là \"đã qua kiểm tra máy\", chưa phải chứng minh được chấp nhận chính thức.",
+    "url": "https://math.mit.edu/~drew/grh/",
+    "image": null,
+    "source": "MIT (Andrew Sutherland)"
+  },
+  {
+    "ts": "2026-11-22T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Tencent mở trọng số Hy4: flagship MoE 770 tỉ tham số, ngữ cảnh 1 triệu token",
+    "summary": "Tencent phát hành trọng số mô hình flagship Hy4 (770 tỉ tham số, 49 tỉ kích hoạt mỗi token), hiểu văn bản–ảnh–video, giấy phép Apache 2.0, kèm bản FP8.",
+    "content": "Tencent đã phát hành trọng số của mô hình flagship Hy4 vào thứ Sáu 20/11, cho phép nhà phát triển tự tải về và triển khai. Đây là mô hình Mixture-of-Experts với 770 tỉ tham số (49 tỉ kích hoạt cho mỗi token), hỗ trợ hiểu văn bản, hình ảnh và video, với cửa sổ ngữ cảnh khoảng 1 triệu token.\nMô hình được phát hành theo giấy phép Apache 2.0 (cho phép dùng thương mại và chỉnh sửa), kèm bản FP8 nhẹ hơn và bản base tiền huấn luyện. Tencent cho biết Hy4 dẫn đầu các mô hình mở trên nhiều benchmark nội bộ, nhưng vẫn thua các mô hình đóng ở toán nghiên cứu và coding dài hạn.",
+    "url": "https://technode.com/2026/11/20/tencent-releases-hy4-model-weights-with-million-token-context/",
+    "image": null,
+    "source": "TechNode"
+  },
+  {
+    "ts": "2026-11-22T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "OpenAI đưa GPT-Live-1.1 lên API: thoại full-duplex, chế độ chờ rẻ hơn 60%",
+    "summary": "GPT-Live-1.1 là mô hình thoại full-duplex qua API, vừa nghe vừa nói và ủy quyền suy luận cho backend model; giá $0,05/phút lúc nói, $0,02/phút ở chế độ chờ khi cuộc gọi im lặng.",
+    "content": "OpenAI đã đưa GPT-Live-1.1 lên API từ ngày 20/11. Đây là mô hình thoại full-duplex: vừa nghe vừa nói, cho phép người gọi ngắt lời giữa câu, trong khi việc suy luận nặng và gọi công cụ được ủy quyền cho một backend model do nhà phát triển chọn.\nĐiểm mới đáng chú ý là chế độ chờ (standby) cho phiên WebRTC: khi cuộc gọi im lặng, suy luận tạm dừng nhưng kết nối vẫn giữ, giá chỉ $0,02/phút thay vì $0,05/phút lúc nói — rẻ hơn 60% cho thời gian chờ. Tính phí theo giây, backend model tính riêng.",
+    "url": "https://apidog.com/blog/what-is-gpt-live-1-1/",
+    "image": null,
+    "source": "Apidog"
+  },
+  {
+    "ts": "2026-11-22T04:37:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Signal chặn chụp màn hình trên iOS và Android để ngăn AI của hệ điều hành đọc trộm tin nhắn",
+    "summary": "Signal hạn chế chụp màn hình trong ứng dụng trên iOS và Android nhằm ngăn các AI agent cấp hệ điều hành quét tin nhắn; chủ tịch Meredith Whittaker gọi đây là \"mối đe dọa hiện hữu\", đồng thời thừa nhận biện pháp chưa đủ.",
+    "content": "Signal thông báo ngày 20–21/11 sẽ hạn chế chụp màn hình trong ứng dụng trên iPhone và Android để ngăn AI agent của hệ điều hành đọc trộm tin nhắn riêng tư. Trên iOS 27 có nút \"Block Siri AI\" bật mặc định; trên Android, tính năng Screen Security sẽ tự bật khi phát hiện trợ lý AI đang đọc màn hình.\nChủ tịch Meredith Whittaker gọi các AI agent cấp hệ điều hành là \"mối đe dọa hiện hữu\" đối với khả năng bảo đảm riêng tư của Signal, vì chúng \"quét\" nội dung màn hình rồi lưu trữ và đưa vào cơ sở dữ liệu cục bộ hoặc máy chủ từ xa.\nSignal thừa nhận biện pháp chưa đầy đủ: trên macOS không có cách chặn đáng tin cậy, và agent vẫn có thể lấy dữ liệu qua thông báo hay hệ thống tập tin. Bối cảnh: Reuters ngày 18/11 đưa tin Meta Muse đọc được nội dung tin nhắn Signal qua thông báo trên Android.",
+    "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+    "image": null,
+    "source": "TechCrunch"
+  },
+  {
+    "ts": "2026-11-22T13:48:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "CISA bổ sung 3 lỗ hổng vào danh sách đang bị khai thác, hạn vá 23/11",
+    "summary": "CISA đưa VMware vCenter CVE-2026-123890 (9.8), Apache Roller CVE-2026-129448 (9.8, RCE) và SAP NetWeaver CVE-2025-42884 vào danh sách KEV; các cơ quan liên bang phải vá trước 23/11.",
+    "content": "Cơ quan An ninh mạng Mỹ (CISA) ngày 20/11 bổ sung ba lỗ hổng vào danh sách Known Exploited Vulnerabilities (KEV), yêu cầu các cơ quan liên bang vá trước ngày 23/11:\n- VMware vCenter CVE-2026-123890 (9.8): vượt qua xác thực, cho phép kẻ tấn công chưa xác thực truy cập trái phép; nghi liên quan nhóm gián điệp Armory Castle.\n- Apache Roller CVE-2026-129448 (9.8): thực thi mã từ xa qua endpoint XML-RPC, chưa xác thực.\n- SAP NetWeaver CVE-2025-42884 (6.5): chèn JNDI trong Enterprise Portal 7.50 — đã vá từ tháng 11/2025 nhưng nhiều hệ thống chưa vá nên vẫn bị khai thác.\nCùng đợt với Cisco Expressway CVE-2026-76466 (đã báo ở bản 19:00 ngày 21/11).",
+    "url": "https://thenewswire.in/cisa-adds-cisco-vmware-apache-sap-flaws-exploited-list/",
+    "image": null,
+    "source": "The Newswire"
+  },
+  {
+    "ts": "2026-11-22T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6 thu 3,79 tỉ USD doanh số bán lẻ trong ngày đầu — kỷ lục mọi thời đại",
+    "summary": "Take-Two công bố GTA 6 đạt 3,79 tỉ USD doanh số bán lẻ ngày đầu với 32,5 triệu bản bán trước — kỷ lục ra mắt lớn nhất mọi loại hình giải trí, gấp gần 5 lần ngày đầu của GTA V.",
+    "content": "Take-Two Interactive và Rockstar Games công bố ngày 20/11: Grand Theft Auto VI đạt 3,79 tỉ USD doanh số bán lẻ trong ngày đầu phát hành (19/11), với 32,5 triệu bản bán trước ngày ra mắt — kỷ lục trên mọi nền tảng.\nĐây là màn ra mắt lớn nhất trong lịch sử giải trí, mọi loại hình: vượt tổng doanh thu phòng vé toàn cầu của Avengers: Endgame (~2,9 tỉ USD) và gấp gần 5 lần ngày đầu của GTA V năm 2013 (~800 triệu USD). Tổng doanh số toàn series GTA hiện gần 480 triệu bản.\nLưu ý: con số là ước tính doanh số bán lẻ của hãng (tiền người mua chi tại cửa hàng), không phải doanh thu thực nhận của Take-Two sau khi chia sẻ với nền tảng và nhà bán lẻ.",
+    "url": "https://www.usatoday.com/story/tech/gaming/2026/11/21/gta-6-first-day-sales-record/92897054007/",
+    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/25de5f8a84c1da5066f9256ae8e1e6c5f838caa801fd0d5f40d91f40d6b91c62?t=og",
+    "source": "USA Today"
+  },
+  {
+    "ts": "2026-11-22T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Lộ diện giọng Jason và Lucia trong GTA 6: Dylan Rourke và Manni L. Perez",
+    "summary": "Rockstar xác nhận qua credits chính thức: Dylan Rourke lồng tiếng Jason, Manni L. Perez lồng tiếng Lucia — chấm dứt nhiều năm đồn đoán về hai nhân vật chính.",
+    "content": "Sau nhiều năm giữ kín, Rockstar đã xác nhận qua credits chính thức của Grand Theft Auto VI: Dylan Rourke lồng tiếng Jason Duval và Manni L. Perez lồng tiếng Lucia Caminos — hai nhân vật chính của game. Cả hai cùng xác nhận trên mạng xã hội sau nhiều năm theo dõi quá trình phát triển mà không được công khai vai trò.\nDàn cast còn nhiều cái tên đáng chú ý: cựu diễn viên Saturday Night Live Bobby Moynihan vai Cal, Stephen Root vai Brian Heder, \"Weird Al\" Yankovic dẫn đài Vice City FM kiêm viết quảng cáo trong game, cùng các nghệ sĩ như Bad Bunny, Lana Del Rey và Charlamagne tha God trong hệ thống đài phát thanh của game.",
+    "url": "https://www.scmp.com/lifestyle/entertainment/article/3375221/dylan-rourke-manni-l-perez-revealed-gta-6s-jason-and-lucia-voices",
+    "image": null,
+    "source": "SCMP"
+  },
+  {
+    "ts": "2026-11-22T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "miHoYo công bố Gamer: agent AI chơi game chỉ bằng màn hình và bàn phím/chuột",
+    "summary": "Đội Honkai AI R&D của miHoYo ra mắt mô hình vision-language-action Gamer (arXiv 13/11): chơi Honkai: Star Rail chỉ từ ảnh chụp màn hình, hoàn thành tới 83,6% nhiệm vụ phụ.",
+    "content": "Đội Honkai AI R&D của miHoYo công bố Gamer — mô hình vision-language-action (VLA) chơi game dài hơi theo thời gian thực chỉ bằng ảnh chụp màn hình và thao tác bàn phím/chuột, không cần API trạng thái game ẩn. Preprint đăng trên arXiv ngày 13/11, bản sửa 18/11.\nGamer dựa trên Qwen3-VL-8B, qua ba giai đoạn: tiền huấn luyện tiếp nối trên hàng chục nghìn giờ gameplay, tinh chỉnh suy luận thưa + ghi nhớ, và học tăng cường TA-GRPO; hệ thống suy luận Streaming-vLLM cho vòng quyết định dưới 100 ms.\nTrong thử nghiệm hai nhiệm vụ phụ chưa từng thấy của Honkai: Star Rail, bản RL hoàn thành tới 83,6% thử thách, gấp đôi baseline mạnh nhất (45,5%). Engine suy luận và checkpoint đã mở mã nguồn; dữ liệu Honkai: Star Rail không được công bố.",
+    "url": "https://arxiv.org/html/2611.18397v2",
+    "image": null,
+    "source": "arXiv"
+  },
+  {
     "ts": "2026-11-22T14:30:00+07:00",
     "flow": "facebook",
     "category": "Facebook",
