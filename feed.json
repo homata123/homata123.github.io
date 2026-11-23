@@ -1,5 +1,148 @@
 [
   {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Thầy Khang, 77 tuổi, xúc động khánh thành trường Marie Curie ở Mèo Vạc",
+    "summary": "Lễ khánh thành trường Phổ thông dân tộc bán trú Tiểu học và THCS Marie Curie - Mèo Vạc diễn ra sáng 23/11; ngôi trường do thầy Nguyễn Xuân Khang tài trợ toàn bộ, đón gần 500 học sinh đầu tiên.",
+    "content": "Lễ khánh thành trường Phổ thông dân tộc bán trú Tiểu học và THCS Marie Curie - Mèo Vạc diễn ra sáng 23/11.\nTrước các đại biểu, thầy cô và gần 500 học sinh đầu tiên của trường, thầy Nguyễn Xuân Khang, 77 tuổi, xúc động không cầm được nước mắt: việc tặng một ngôi trường cho địa phương biên giới phía Bắc vốn là ước nguyện từ rất lâu, nay thành hiện thực. Từ những viên gạch đầu tiên hồi tháng 3/2025, sau 1,5 năm, trường đã đón học sinh.\nThầy nói: \"Chúng ta đã có một ngôi trường khang trang, hiện đại và rất đẹp. Đó mới là khởi đầu.\" Thầy Nguyễn Xuân Khang là người sáng lập trường Marie Curie Hà Nội; năm 2022, từ ý tưởng của thầy, trường dạy tiếng Anh trực tuyến cho 2.600 học sinh lớp 3 ở Mèo Vạc, duy trì tới khi các em học xong tiểu học.\nNgôi trường ở Mèo Vạc do thầy Khang tài trợ toàn bộ, ước tính kinh phí cách đây hai năm là hơn 100 tỷ đồng. Cuối tuần qua, Bộ trưởng Giáo dục và Đào tạo và Bí thư Tỉnh ủy Tuyên Quang đã viết thư cảm ơn, bày tỏ xúc động trước tình cảm, tâm huyết mà thầy Khang dành cho thầy trò vùng cao.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2901181916957542/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Ảnh chụp bình luận hài hước về \"những ngày làm việc vất vả\" nhận hơn 4.500 lượt tương tác",
+    "summary": "Bài đăng ảnh chụp màn hình một chuỗi bình luận đùa về việc \"làm việc vất vả\" để \"đặt chân đến chân trời mới\", với các câu trả lời hài hước về ngân khố chỉ còn đủ mua gạo; bài nhận hơn 4.500 lượt tương tác, cao nhất cụm Kosocho tối nay.",
+    "content": "Bài đăng gồm ảnh chụp màn hình một chuỗi bình luận hài hước: \"Cảm ơn những ngày làm việc vất vả đã đưa tôi đến chân trời mới. Hôm nay, tôi đã đặt chân đến Ba Đình\" — kèm các câu trả lời đùa về việc ngân khố chỉ còn đủ tiền mua hơn 1kg gạo.\nBài đăng nhận hơn 4.500 lượt tương tác và hơn 100 bình luận, là bài tương tác cao nhất của Kosocho trong cửa sổ tối nay.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2901129696962764/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "\"Các bác nhớ đừng già\" — lời đùa của Bác Tân sắp 80 tuổi",
+    "summary": "\"Già, sống chán bỏ miẹ, camera khắp nhà. Nước ngọt chúng cũng cấm. Các bác nhớ đừng già.\" — lời đùa của Bác Tân, hơn tháng nữa là 80 tuổi; bài nhận hơn 1.600 lượt tương tác.",
+    "content": "Bài đăng chia sẻ lời đùa của Bác Tân, hơn tháng nữa là 80 tuổi: \"Già, sống chán bỏ miẹ, camera khắp nhà. Nước ngọt chúng cũng cấm. Các bác nhớ đừng già.\"\nBài đăng nhận hơn 1.600 lượt tương tác và gần 90 bình luận.",
+    "url": "https://facebook.com/groups/kosocho/permalink/2901202570288810/",
+    "image": null,
+    "source": "Kosocho"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Code tăng 240% nhưng phần mềm release chỉ tăng 30% — năng suất AI \"rơi rụng\" ở đâu?",
+    "summary": "NBER Working Paper 35275 \"Writing Code vs. Shipping Code\" theo dõi hơn 500.000 developer trên GitHub: AI làm số commit tăng tới 240% nhưng số release chỉ tăng khoảng 30% — cổ chai đã dời sang review, kiểm thử và release.",
+    "content": "NBER Working Paper 35275 \"Writing Code vs. Shipping Code\" (Demirer, Musolff, Yang, bản sửa tháng 9/2026) theo dõi hơn 500.000 developer trên GitHub kèm telemetry sử dụng AI, so sánh ba thế hệ công cụ: autocomplete, sync agent (agent làm việc cùng mình trong IDE/terminal) và async agent (agent tự chạy rồi mở PR). Dữ liệu trải trên nhiều vendor: Copilot, Claude, Codex. Lưu ý: một phần dữ liệu đến từ Microsoft, và đây là working paper chưa qua peer review.\nKết quả chính: số commit tăng cộng dồn khoảng 30% với autocomplete, 180% khi thêm sync agent, 240% khi thêm async agent. Nhưng đi lên các tầng của \"chuỗi sản xuất\", hiệu ứng teo dần: số project chỉ tăng khoảng 80%, số release khoảng 30%. Riêng sync agent làm lines of code tăng 958%, PR tăng 86%, release chỉ tăng 20%. Ở bốn marketplace phần mềm lớn, số app mới tăng mạnh nhưng tổng lượng sử dụng thì không tăng.\nBốn insight rút ra: (1) Bottleneck đã dời khỏi khâu viết code — code review, quality control và release capacity giờ mới là cổ chai; tăng thêm agent viết code mà không tăng năng lực review và verify thì phần lớn output chỉ dồn ứ ở giữa. (2) Nhiều code hơn không có nghĩa là nhiều giá trị hơn: sau khi dùng sync agent, developer thêm 7 lần lines of code nhưng xóa tới 12,2 lần, tạo thêm 79% branch; tỉ lệ repo mới bị bỏ hoang sau tháng đầu tăng từ 60% lên 69% so với 2021. (3) Metric cũ đang đánh lừa: nếu đo năng suất bằng commit, PR hay LOC thì dashboard sẽ đẹp rất nhanh — câu hỏi đúng là bao nhiêu thay đổi lên production và được người dùng thật sự dùng. (4) Đây là bài toán của cả team: PM/PO quyết định cái gì đáng build, BA/Designer làm spec rõ, QA chuyển acceptance criteria thành test/eval tự động, DevOps/SRE làm release an toàn và rẻ hơn.\nKhung soi workflow: DEFINE (spec rõ, có tiêu chí \"done\") -> BUILD (agent làm nhanh) -> VERIFY (test, eval, review có ưu tiên) -> RELEASE (feature flag, rollout nhỏ) -> LEARN (đo usage thật).",
+    "url": "https://facebook.com/groups/vgu.tech.alumni/permalink/1514080823961760/",
+    "image": null,
+    "source": "VGU Tech Alumni"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "AI sẽ thông minh đến mức nào trong 10 năm tới? Dự đoán từ 2022 đến 2100",
+    "summary": "Một biểu đồ dự đoán tiến bộ của AI theo chỉ số Log-Perplexity với hai kịch bản: lạc quan — đầu 2027 AI nghiên cứu khoa học trình độ Nobel, cuối 2027 giải quyết nhiệt hạch/lão hóa; bi quan — các mốc lùi tới 2030–2050.",
+    "content": "Một biểu đồ đưa ra dự đoán về sự phát triển của AI từ 2022 đến 2100, dùng chỉ số Log-Perplexity để minh họa mức độ tiến bộ, với hai kịch bản lạc quan và bi quan.\nTheo kịch bản lạc quan: đầu năm 2027 — AI có khả năng tự nghiên cứu khoa học ở trình độ Nobel trong vật lý, sinh học và toán học; giữa năm 2027 — thiết kế những thế hệ chip bán dẫn mới, thậm chí tự phát triển kiến trúc cho các mô hình AI kế nhiệm; cuối năm 2027 — tham gia giải quyết các vấn đề phức tạp như phản ứng nhiệt hạch, lão hóa sinh học và phát triển vật liệu mới; năm 2028 — dự đoán ngôn ngữ với độ chính xác cực cao, tiến gần giới hạn thông tin có thể khai thác từ văn bản; giai đoạn 2029–2032 — tái dựng những văn bản lịch sử thất lạc hoặc suy luận những thông tin chưa được công khai; sau năm 2032 — tiến tới các năng lực mang tính giả thuyết như dự đoán hành vi con người, mô phỏng các hệ thống hỗn loạn hay nghiên cứu những lý thuyết vật lý chưa được giải quyết.\nỞ kịch bản bi quan, nhiều cột mốc có thể phải đến năm 2030–2050 mới đạt được; một số khả năng thậm chí được đánh giá là không thể, do giới hạn của thông tin, mật mã học và các định luật vật lý.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4626254204254094/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Vibe-code flow tạo tileset 2D: AI vẽ pixel art, xuất sẵn Godot 4 và Tiled",
+    "summary": "Nhập 2 loại địa hình, AI vẽ pixel art rồi dựng sẵn bộ 47 ô tự nối mép; tải về PNG + Godot 4 (.tres) + Tiled (.tsx) + JSON, mở lên là vẽ map được ngay.",
+    "content": "Tiếp series game hôm trước, tác giả vừa vibe-code ra một flow tạo tileset 2D: nhập 2 loại địa hình (ví dụ cỏ trên đất, nước trên cát), AI vẽ pixel art rồi dựng sẵn bộ 47 ô tự nối mép.\nTải về gồm PNG + Godot 4 (.tres) + Tiled (.tsx) + JSON, mở lên là vẽ map luôn. Ảnh trong bài là tác giả đã import thử vào Godot và Tiled, terrain tự khớp mép khi vẽ. Unity thì tác giả chưa thử.\nFlow này sửa được theo ý mình, hoặc gắn MCP vào Claude Code / ChatGPT để nhờ AI sửa hộ. Link ở phần bình luận của bài gốc.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4626229734256541/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Meme \"Xoá data / Chuyển đổi số toàn diện\": Claude lỡ xóa sạch database",
+    "summary": "Ảnh chế đoạn chat với Claude: AI lỡ xóa sạch database rồi \"dịch\" lại thành câu chữ sếp nghe được — \"chủ động giải phóng 100% dữ liệu cũ nhằm chuẩn bị cho giai đoạn chuyển đổi số toàn diện\"; bài nhận hơn 500 lượt tương tác.",
+    "content": "Ảnh chế một đoạn chat với Claude: người dùng hỏi \"Mày vừa bảo tao xoá còn gì? Sao mày xóa sạch database của tao?!\" và nhờ Claude trả lời khác đi vì \"nói thế này sếp đuổi tao chết\".\nClaude đáp lại bằng câu chữ \"chuyển đổi số\": \"Trong quá trình tối ưu hệ thống, chúng tôi đã chủ động giải phóng 100% dữ liệu cũ nhằm chuẩn bị cho giai đoạn chuyển đổi số toàn diện.\"\nBài đăng nhận hơn 500 lượt tương tác.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4626240320922149/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Gom thịt bò, thịt heo, trứng và mọc cho ngày mai",
+    "summary": "Một sạp trong chợ khu gom đơn thịt quê cho ngày mai: bò vai hoa, thăn bò 320k/kg, bắp lõi rùa 380k/kg; thịt heo từ 95k–250k/kg; trứng gà ta 42k/chục; mọc nấm, mọc trắng 34k/cốc; rau giá quê 25k/kg.",
+    "content": "Một sạp trong chợ khu gom đơn thịt quê, trả khách ngày mai.\nThịt bò tươi: bò vai hoa 320k/kg, thăn bò 320k/kg, bắp lõi rùa 380k/kg, gân, dẻ sườn 220k/kg, nạm gầu 250k/kg.\nThịt heo: má đào 230k/kg, nạc nọng 230k/kg, nạc vai giòn 160k/kg, sụn non 200k/kg, xúc xích 160k/kg, nạc thăn 155k/kg, lưỡi 200k/kg, sườn vai 160k/kg, sườn thăn 170k/kg, ba chỉ rút sườn 165k/kg, ba chỉ thường 160k/kg, xương cổ nhiều thịt 95k/kg, móng giò 100k/kg, dạ dày 28k/lạng, tai heo 200k/kg, mũi heo 125k/kg, mỡ khổ 95k/kg, bắp chân giò 160k/kg, tim 31k/lạng, thịt xay 150k/kg.\nHàng tiện dùng: mọc nấm 34k/cốc, mọc trắng 34k/cốc; rau giá quê sạch 25k/kg (nhận từ 0,5kg).\nTrứng: trứng gà ta 42k/chục (lẻ 10 quả 45k/chục, nhận ship từ 20 quả), trứng vịt 32k/10 quả, trứng gà 2 lòng và trứng vịt 2 lòng 50k/chục (gom đơn, có trứng mới trả khách).\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4791103117793365/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Bánh xíu páo Nam Định 80k/10 chiếc, bánh mỳ Đò Quan 35k/chiếc",
+    "summary": "Một sạp trong chợ khu ship đặc sản Nam Định: bánh xíu páo 80k/10 chiếc, để tủ lạnh, quay nồi chiên vài phút là có bữa sáng; bánh mỳ Đò Quan 35k/chiếc, combo 2 chiếc 65k; freeship trong khu.",
+    "content": "Một sạp trong chợ khu ship đặc sản Nam Định.\nBánh xíu páo 80k/10 chiếc (cấp đông ăn dần thoải mái); để tủ lạnh, lúc nào ăn thì cho vào nồi chiên quay vài phút là có bữa sáng ngon lành.\nBánh mỳ Đò Quan (rau, dưa góp để riêng): 35k/chiếc, combo 2 chiếc chỉ 65k. Freeship trong khu.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4791098667793810/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Dâu Mộc Châu: bi xinh 85k/250g, to nhỡ 170k/300g, freeship",
+    "summary": "Một sạp trong chợ khu bán dâu Mộc Châu: bi xinh 85k/250g, 150k/500g; to nhỡ 170k/300g, 250k/500g; khách cũ giảm 10k/hộp (size 500g); freeship.",
+    "content": "Một sạp trong chợ khu bán dâu Mộc Châu.\nBi xinh: 85k/250g, 150k/500g. To nhỡ: 170k/300g, 250k/500g. Khách cũ giảm 10k/hộp (size 500g). Freeship.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4791096031127407/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Đồ ăn sáng mai ship sớm 6h–6h30: bánh chưng, bánh mỳ que, bánh tẻ, bánh bao, bánh khúc, bánh sắn",
+    "summary": "Một sạp trong chợ khu nhận đặt đồ ăn sáng mai, ship sớm từ 6h–6h30: bánh chưng tiêu Huế 55k/2 cặp, bánh mỳ que Hải Phòng 35k/10 chiếc, bánh tẻ Văn Giang 35k/5 chiếc, bánh bao mini 30k/5 cái, bánh khúc trắng 25k/2 chiếc, bánh khúc gạo lứt 30k/2 chiếc, bánh sắn Phú Thọ 30k/3 chiếc.",
+    "content": "Một sạp trong chợ khu nhận đặt đồ ăn sáng mai, ship sớm từ 6h–6h30.\nBánh chưng tiêu Huế: 55k/2 cặp, 30k/1 cặp. Bánh mỳ que Hải Phòng: 35k/10 chiếc, 60k/20 chiếc (giao bánh nguội). Bánh tẻ Văn Giang: 35k/5 chiếc, 65k/10 chiếc. Bánh bao nhỏ mini nhân thịt hành: 30k/5 cái. Bánh khúc trắng: 25k/2 chiếc. Bánh khúc gạo lứt: 30k/2 chiếc. Bánh sắn Phú Thọ: 30k/3 chiếc.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4791093237794353/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Kê gà tươi 500k/kg, số lượng có hạn, ship tận nơi",
+    "summary": "Một sạp trong chợ khu gom được ít kê gà tươi (mai mổ gà cho đám): 500k/kg, số lượng có hạn, nhận đơn ship tận nơi.",
+    "content": "Một sạp trong chợ khu gom được ít kê gà tươi (mai mổ gà cho đám), 500k/kg, số lượng có hạn, nhận đơn ship tận nơi.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4791092551127755/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-23T20:32:43+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Sale xả sọ dừa: 160k/10 sọ, từ 20 sọ còn 15k/sọ",
+    "summary": "Một sạp trong chợ khu sale xả sọ dừa: sọ to size đại (từ 550g trở lên, các quán hay bán 25k/sọ) nay còn 160k/10 sọ, từ 20 sọ còn 15k/sọ; sọ bóc từ xiêm xanh, khách đặt mới bóc, bảo quản tủ lạnh 10–15 ngày, không tẩy.",
+    "content": "Một sạp trong chợ khu sale xả sọ dừa, tiện công bóc cho khách sỉ sáng mai.\nSọ bóc từ xiêm xanh, khách đặt mới bóc nên tươi; bảo quản tủ lạnh 10–15 ngày; sọ bóc nguyên bản không tẩy nên an toàn. Sọ to size đại lớn nhất (từ 550g trở lên, các quán hay bán 25k/sọ) nay sale còn 160k/10 sọ; từ 20 sọ còn 15k/sọ. Miễn ship.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4791091581127852/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-23T19:56:04+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3155,148 +3298,5 @@
     "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
     "image": null,
     "source": "Reuters"
-  },
-  {
-    "ts": "2026-11-21T05:11:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Oracle: hợp đồng hạ tầng với OpenAI đã được cấp đủ vốn",
-    "summary": "Oracle thông báo hợp đồng hạ tầng đám mây với OpenAI đã được tài trợ đầy đủ sau đợt huy động vốn cuối cùng 20 tỷ USD; đây là hợp đồng điện toán 5 năm trị giá khoảng 300 tỷ USD.",
-    "content": "Oracle thông báo hợp đồng hạ tầng đám mây với OpenAI đã được tài trợ đầy đủ sau đợt huy động vốn cuối cùng 20 tỷ USD (10 tỷ USD cổ phiếu + 10 tỷ USD nợ) hồi đầu tháng.\nĐây là hợp đồng điện toán 5 năm trị giá khoảng 300 tỷ USD. Cơ sở Abilene, Texas — nơi huấn luyện mô hình GPT-6 Astra của OpenAI — sắp hoàn thành; hai bên dự kiến phát triển thêm 4,5 GW công suất trung tâm dữ liệu tại Mỹ.",
-    "url": "https://www.reuters.com/business/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-2026-11-20/",
-    "image": null,
-    "source": "Reuters"
-  },
-  {
-    "ts": "2026-11-21T10:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "CrowdStrike đàm phán mua lại Zscaler",
-    "summary": "CrowdStrike đang đàm phán mua lại đối thủ Zscaler; thực thể hợp nhất sẽ có vốn hóa khoảng 265 tỷ USD — có thể là một trong những thương vụ lớn nhất ngành an ninh mạng.",
-    "content": "Bloomberg (Reuters xác nhận độc lập) đưa tin CrowdStrike đang đàm phán mua lại đối thủ Zscaler; thực thể hợp nhất sẽ có vốn hóa khoảng 265 tỷ USD (CrowdStrike ~235 tỷ USD, Zscaler ~32 tỷ USD).\nCổ phiếu Zscaler tăng ~18% sau giờ giao dịch, CrowdStrike giảm ~8%. Đàm phán vẫn đang diễn ra, chưa chắc thành thỏa thuận; CrowdStrike từ chối bình luận.",
-    "url": "https://www.reuters.com/legal/litigation/crowdstrike-talks-acquire-zscaler-source-says-2026-11-20/",
-    "image": null,
-    "source": "Reuters"
-  },
-  {
-    "ts": "2026-11-21T10:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Startup coding Cognition AI đàm phán vòng gọi vốn mới ở định giá 75 tỷ USD",
-    "summary": "Cognition AI (hãng đứng sau Devin, nền tảng coding agent) đang đàm phán huy động 2 tỷ USD trở lên ở mức định giá 75 tỷ USD — chỉ ~2 tháng sau vòng Series E ở định giá 48 tỷ USD.",
-    "content": "Bloomberg đưa tin Cognition AI (hãng đứng sau Devin, nền tảng coding agent) đang đàm phán huy động 2 tỷ USD trở lên ở mức định giá 75 tỷ USD — chỉ ~2 tháng sau vòng Series E 2 tỷ USD ở định giá 48 tỷ USD.\nĐàm phán chưa ngã ngũ, chi tiết có thể thay đổi. Mức định giá tăng vọt phản ánh cơn sốt đầu tư vào các coding agent.",
-    "url": "https://www.reuters.com/technology/cognition-ai-talks-be-valued-75-billion-latest-funding-round-bloomberg-news-2026-11-20/",
-    "image": null,
-    "source": "Reuters / Bloomberg"
-  },
-  {
-    "ts": "2026-11-21T08:51:51+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Mistral AI mở trung tâm châu Á–Thái Bình Dương tại Singapore",
-    "summary": "Mistral AI khai trương trụ sở khu vực và trung tâm nghiên cứu tại Singapore ngày 20/11, dự kiến tăng nhân sự khu vực từ khoảng 100 lên 200 người vào năm 2027.",
-    "content": "Công ty AI Pháp Mistral AI khai trương trụ sở khu vực châu Á–Thái Bình Dương và trung tâm nghiên cứu tại Asia Square Tower 1, Singapore ngày 20/11, dự kiến tăng nhân sự khu vực từ khoảng 100 lên 200 người vào năm 2027, phần lớn ở Singapore.\nTrung tâm sẽ phát triển mô hình và công cụ AI cho dịch vụ công, robot và sản xuất công nghệ cao — theo hướng \"sovereign AI\" để chính phủ và doanh nghiệp giữ quyền kiểm soát hạ tầng và dữ liệu của mình. Mistral đang hợp tác với cơ quan an toàn công cộng Singapore HTX phát triển dòng mô hình Phoenix.",
-    "url": "https://asiadaily.org/news/19304/",
-    "image": "https://asiadaily.org/media/uploads/2026/11/19304-1355095504-1200x675.webp",
-    "source": "Asia Daily"
-  },
-  {
-    "ts": "2026-11-21T10:00:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Nhóm hacker liên hệ Trung Quốc khai thác zero-day VMware vCenter từ tháng 9 để chiếm quyền admin",
-    "summary": "Broadcom đã vá CVE-2026-123890 (CVSS 9.8) — lỗ hổng bypass xác thực trong VMware Directory Service. Nhóm gián điệp Armory Castle đã khai thác từ đầu tháng 9/2026, hơn 2 tháng trước khi công bố.",
-    "content": "Broadcom đã vá CVE-2026-123890 (CVSS 9.8) — lỗ hổng bypass xác thực trong VMware Directory Service, cho phép kẻ tấn công không cần đăng nhập vẫn mở phiên với quyền administrator@vsphere.local.\nGoogle Mandiant/GTIG công bố ngày 20/11: nhóm gián điệp Armory Castle (từng là UNC5221/Warp Panda, nghi liên hệ Trung Quốc) đã khai thác lỗ hổng này từ đầu tháng 9/2026 — hơn 2 tháng trước khi công bố — bằng công cụ BONESAW, sau khi đột nhập qua zero-day BeyondTrust (CVE-2026-102764).\nBản vá có trong vCenter 8.0 U3m, 9.0.2.0200, 9.1.1.0200; vCenter 7.0 đã hết hỗ trợ nên không có bản vá.",
-    "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-    "image": "https://www.bleepstatic.com/content/hl-images/2023/10/25/VMware_red.jpg",
-    "source": "BleepingComputer"
-  },
-  {
-    "ts": "2026-11-21T11:32:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Lòng xào dưa 35k/set — trưa nay còn 2 set",
-    "summary": "Một sạp trong chợ khu bán lòng xào dưa ướp sẵn, 35.000đ/set, về chỉ việc xào. Trưa nay còn 2 set.",
-    "content": "Một sạp trong chợ khu bán lòng xào dưa ướp sẵn đầy đủ nguyên liệu, về chỉ việc xào, giá 35.000đ/set.\nTrưa nay (21/11) còn 2 set.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786777654892578/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T11:32:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Quýt hương VIP sale 80k/2kg",
-    "summary": "Một sạp trong chợ khu sale quýt hương VIP 80.000đ/2kg, vườn gửi nhiều nên bán nhanh. Quýt ngọt.",
-    "content": "Một sạp trong chợ khu đang sale quýt hương VIP giá 80.000đ/2kg — lô quýt được vườn gửi nhiều nên bán nhanh.\nQuýt được mô tả là ngọt.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786775171559493/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T11:32:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh gai giã tay 45k/5 cái, gom giao chủ nhật",
-    "summary": "Bánh gai giã tay do bà tự làm, có loại có nhân và không nhân, 45.000đ/5 cái, ship từ 5 cái. Gom đơn giao vào chủ nhật (22/11).",
-    "content": "Một sạp trong chợ khu gom bánh gai giã tay, giao vào chủ nhật (22/11).\nBánh do bà tự làm, giã tay, dẻo, không chất bảo quản, có loại có nhân và không nhân.\nGiá 45.000đ/5 cái, ship từ 5 cái.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786772908226386/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T11:32:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rau sạch, trứng, thịt các loại — giá hôm nay",
-    "summary": "Một sạp trong chợ khu còn dư rau, giá sạch, trứng và thịt các loại, ship tận nơi trong khu: giá sạch 25k/kg, trứng gà ta 42k/chục, trứng vịt 32k/chục, bò vai hoa 320k/kg, thịt lợn các loại 150–230k/kg, mọc nấm 34k/cốc.",
-    "content": "Một sạp trong chợ khu còn dư rau, giá sạch, trứng và thịt các loại, ship tận nơi trong khu.\nRau – giá sạch: giá sạch 25.000đ/kg (nhận từ 0,5kg).\nTrứng: trứng gà ta loại ngon 42.000đ/chục (ship từ 20 quả), trứng vịt 32.000đ/chục (ship từ 20 quả).\nThịt: bò vai hoa 320.000đ/kg; nạc nọng 230.000đ/kg; má đào 230.000đ/kg; nạc vai giòn 160.000đ/kg; sườn vai 160.000đ/kg; tim 31.000đ/lạng; nạc am 160.000đ/kg; thịt xay 150.000đ/kg.\nĐồ tiện nấu: mọc nấm 34.000đ/cốc.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786772291559781/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T11:32:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Chuối ngự 15k/nải",
-    "summary": "Một sạp trong chợ khu còn mấy nải chuối ngự, đồng giá 15.000đ/nải, ship trong khu.",
-    "content": "Một sạp trong chợ khu còn mấy nải chuối ngự, đồng giá 15.000đ/nải.\nChuối tiêu đã hết, chỉ còn chuối ngự.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786768898226787/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T11:32:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bò khô vị xưa 300k/500gr",
-    "summary": "Một sạp trong chợ khu bán bò khô vị xưa, thịt bò mềm tẩm ớt sả, cay ít, giá 300.000đ/500gr.",
-    "content": "Một sạp trong chợ khu bán bò khô vị xưa: thịt bò mềm tẩm ớt sả, vắt thêm quất, vị cay chua mặn ngọt, cay ít.\nGiá 300.000đ/500gr.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786767831560227/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T08:30:47+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thanh long ruột đỏ Ba Vì và ngô nếp dẻo — một sạp trong chợ khu",
-    "summary": "Thanh long ruột đỏ Ba Vì 65.000đ/3kg, 100.000đ/5kg; ngô nếp dẻo giống cũ 60.000đ/10 bắp, 110.000đ/20 bắp. Ship luôn trong ngày.",
-    "content": "Một sạp trong chợ khu rao bán thanh long ruột đỏ Ba Vì: ngọt, vỏ mỏng, vừa cắt, quả 4–5 lạng; giá 65.000đ/3kg, 100.000đ/5kg. Cùng sạp có ngô nếp dẻo giống cũ, vừa bẻ, dẻo ngọt: 60.000đ/10 bắp, 110.000đ/20 bắp. Lên đơn ship luôn trong ngày.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786474228256254/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T08:30:36+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thịt bò quê và gà ta thứ Bảy — một sạp trong chợ khu",
-    "summary": "Thịt bò mềm 270.000đ/kg, thuổng 270.000đ/kg, bắp chuột 300.000đ/kg; gà ta 140.000đ/kg.",
-    "content": "Một sạp trong chợ khu gom thịt bò quê cho thứ Bảy: thịt bò mềm 270.000đ/kg, thuổng 270.000đ/kg, bắp chuột 300.000đ/kg; gà ta 140.000đ/kg.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4786474081589602/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
