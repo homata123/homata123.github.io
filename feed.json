@@ -1,5 +1,38 @@
 [
   {
+    "ts": "2026-11-23T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "OpenAI công bố đường cong pretraining, đề xuất \"giới hạn chung\" cho các lab AI",
+    "summary": "Nhà khoa học trưởng Jakub Pachocki công bố lần đầu số liệu log-perplexity nội bộ từ GPT-3.5 (~0,99) xuống dưới 0,8 hiện nay, và đề xuất các lab dùng perplexity làm chuẩn chung, cam kết không vượt ngưỡng ~0,68–0,70 cho tới khi giám sát AI theo kịp.",
+    "content": "Nhà khoa học trưởng OpenAI Jakub Pachocki đăng bài \"Perplexity and Intelligence\" (22/11), công bố lần đầu số liệu log-perplexity nội bộ của các mô hình từ GPT-3.5 (~0,99) qua GPT-4 (~0,91) xuống dưới 0,8 ở các mô hình hiện nay; ở mức ~0,76, mô hình bắt đầu cho ra các kết quả toán học mới.\nÔng đề xuất các lab dùng perplexity — thước đo khả năng dự đoán token tiếp theo, càng thấp càng tốt — làm chuẩn chung để đo tiến bộ, và cam kết không vượt ngưỡng ~0,68–0,70 cho tới khi khả năng hiểu và giám sát hành vi AI đạt một mốc cụ thể (ví dụ thế hệ kế tiếp của chain-of-thought monitoring). Sam Altman gọi đây là \"thứ quan trọng nhất OpenAI công bố trong một thời gian\".\nPachocki thừa nhận perplexity khó so sánh giữa các lab (tập dữ liệu khác nhau) và không phản ánh trực tiếp năng lực thực tế của tác vụ.",
+    "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/05/openai-logo-code-background.jpg?resize=1200,798",
+    "source": "TechCrunch"
+  },
+  {
+    "ts": "2026-11-23T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Hàn Quốc: Bộ trưởng Giáo dục từ chức sau bê bối gian lận thi cử bằng AI",
+    "summary": "Bộ trưởng Giáo dục Choi Kyo-jin từ chức sau khi bộ liên tục đổi quy tắc chống gian lận sát giờ thi Suneung; 111 thí sinh bị phát hiện mang thiết bị điện tử trái phép trong kỳ thi đại học quốc gia.",
+    "content": "Bộ trưởng Giáo dục Choi Kyo-jin từ chức ngày 22/11, Tổng thống Lee Jae Myung chấp nhận trong vòng một giờ, sau khi bộ liên tục thay đổi quy tắc chống gian lận sát giờ thi Suneung — kỳ thi đại học quốc gia tổ chức ngày 19/11 với khoảng 500.000 thí sinh: chỉ cho mang bút chì vào phòng thi, dán sticker che nút áo để chặn camera mini, chặn Wi-Fi công cộng quanh điểm thi.\nBối cảnh: thủ khoa kỳ thi kế toán thuế quốc gia thừa nhận ngày 15/11 đã gian lận bằng camera siêu nhỏ, smartphone và AI tạo sinh để đạt gần như tuyệt đối (chỉ sai 1/160 câu).\nBộ Giáo dục cho biết 111 thí sinh bị phát hiện mang thiết bị điện tử trái phép trong kỳ Suneung.",
+    "url": "https://en.yna.co.kr/view/AEN20261122001051315",
+    "image": "https://img5.yna.co.kr/etc/inner/EN/2026/11/22/AEN20261122001051315_02_i_P4.jpg",
+    "source": "Yonhap"
+  },
+  {
+    "ts": "2026-11-23T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Cleverbridge bị hack, lộ số thẻ tín dụng và mã CVV của khách hàng",
+    "summary": "Nền tảng thanh toán cho các hãng phần mềm/SaaS bị xâm nhập; dữ liệu thẻ bị sao chép gồm số thẻ, ngày hết hạn và mã CVV/CVC. Công ty bắt đầu thông báo cho người bị ảnh hưởng từ 20/11.",
+    "content": "Nền tảng thương mại điện tử Cleverbridge — xử lý thanh toán cho các hãng phần mềm/SaaS như Red Hat, SUSE, Tenable, Veeam, Jamf, Sony, Parallels — cảnh báo hacker đã xâm nhập hệ thống và sao chép dữ liệu thẻ thanh toán của khách hàng.\nCông ty phát hiện hoạt động trái phép ngày 4/11/2026 và bắt đầu thông báo cho người bị ảnh hưởng từ 20/11. Thông báo gửi khách hàng (BleepingComputer xem được) nêu rõ dữ liệu bị lấy gồm số thẻ, ngày hết hạn và mã CVV/CVC; tên, thông tin liên hệ và địa chỉ thanh toán không bị sao chép.\nChưa rõ số người ảnh hưởng và cách xâm nhập; công ty khẳng định đây không phải ransomware và không hệ thống nào bị mã hóa. Cleverbridge đang phối hợp với TransUnion (Cyberscout) để giám sát tín dụng miễn phí cho người bị ảnh hưởng.",
+    "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+    "image": "https://www.bleepstatic.com/content/hl-images/2026/11/22/credit-cards.jpg",
+    "source": "BleepingComputer"
+  },
+  {
     "ts": "2026-11-23T07:00:00+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
@@ -3263,39 +3296,6 @@
     "summary": "Một sạp trong chợ khu bán các món từ cốm Mễ Trì cho cuối tuần: xôi cốm, cốm mộc, chả cốm, cốm xào, bánh cốm, mochi cốm và xu xê cốm, giá từ 65.000đ đến 220.000đ.",
     "content": "Một sạp trong chợ khu giới thiệu các món ngon từ cốm, phù hợp thưởng thức hay mua biếu dịp cuối tuần.\nXôi cốm: 220.000đ/kg.\nCốm mộc: 220.000đ/kg.\nChả cốm: 200.000đ/kg.\nCốm xào: 220.000đ/kg.\nBánh cốm: 80.000đ/10 chiếc.\nMochi cốm: 65.000đ/hộp 6 viên.\nXu xê cốm: 80.000đ/10 chiếc.\nThông tin liên hệ nằm trong bài gốc tại group.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4785107978392879/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T18:53:23+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thực đơn bữa tối: gà luộc, cá kho, thịt quay và cánh gà 99.000–115.000đ/hộp",
-    "summary": "Một bếp ăn trong chợ khu gửi thực đơn bữa tối với món mới: gà đồi luộc sẵn, cá nục kho, thịt kho dừa, giả cầy, thịt chưng mắm tép, ba chỉ rang cháy cạnh, thịt quay giòn bì, cá chiên xù, lòng xào dưa và cuống tim xào dưa; cánh gà các vị 99.000–115.000đ/hộp.",
-    "content": "Nội dung chính nằm trong ảnh thực đơn, đã đọc qua OCR.\nMột bếp ăn trong chợ khu gửi thực đơn bữa tối, có thêm món mới, mời đặt sớm.\nCác món chính: gà đồi luộc sẵn (tặng kèm lá chanh, quất, ớt), cá nục kho, thịt kho dừa, giả cầy, thịt chưng mắm tép, ba chỉ rang cháy cạnh, thịt quay giòn bì, cá chiên xù, thịt xay rim mắm hành, thịt kho củ cải, lòng xào dưa, cuống tim xào dưa.\nCánh gà rang muối: 99.000đ/hộp.\nCánh gà chiên mắm: 115.000đ/hộp.\nCánh gà sốt phô mai: 99.000đ/hộp.\nMăng tiết: 40.000đ; bì xanh nấu xương: 50.000đ; củ cải chua ngọt: 15.000đ (hộp nhỏ), 45.000đ (hộp to, có ship lẻ).\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785107228392954/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T18:53:18+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh ít, bánh bột lọc và bánh nậm Huế 70.000–80.000đ/set",
-    "summary": "Một sạp trong chợ khu vừa về bánh ít tôm thịt Huế, bánh bột lọc Huế và bánh nậm Huế, đóng túi hút chân không, bảo quản được trong tủ đá, khi ăn hấp khoảng 15 phút.",
-    "content": "Một sạp trong chợ khu vừa về bánh ít tôm thịt Huế, bánh bột lọc Huế và bánh nậm Huế.\nBánh đóng túi hút chân không, có thể bảo quản trong tủ đá; khi ăn hấp khoảng 15 phút là ngon. Phù hợp ăn sáng, ăn trưa hay ăn tối.\nGiá: bánh ít 75.000đ/set 20 chiếc; bánh bột lọc Huế 80.000đ/30 chiếc; bánh nậm 70.000đ/set 20 chiếc.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785107111726299/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T18:50:19+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Táo đỏ Hàn 165.000đ",
-    "summary": "Một sạp trong chợ khu bán táo đỏ Hàn, giá 165.000đ.",
-    "content": "Một sạp trong chợ khu bán táo đỏ Hàn, giá 165.000đ.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785100905060253/",
     "image": null,
     "source": "Chợ cư dân"
   }
