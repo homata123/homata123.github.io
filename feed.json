@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-23T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Z.ai ra mắt GLM-5.4 — mô hình coding có thêm thị giác",
+    "summary": "Zhipu mở mô hình coding thế hệ mới GLM-5.4 cho toàn bộ người dùng gói GLM Coding Plan, bổ sung khả năng xử lý hình ảnh và tăng hạn mức sử dụng tuần thêm 50%.",
+    "content": "Zhipu (Z.ai) ngày 23/11 mở mô hình coding thế hệ mới GLM-5.4 cho toàn bộ người dùng gói GLM Coding Plan.\nĐiểm mới so với GLM-5.3: mô hình xử lý được đầu vào hình ảnh (vision) thay vì chỉ text, và hạn mức sử dụng tuần tăng 50%.\nMô hình dùng được ngay trong các coding agent như Claude Code.\nChưa công bố số tham số, điểm benchmark (SWE-bench, Terminal Bench) hay giá API trả theo lượt dùng.",
+    "url": "https://medium.com/@zhwan85/z-ai-unveils-glm-5-4-full-rollout-to-coding-plan-subscribers-and-the-addition-of-vision-b4badacb6626",
+    "image": null,
+    "source": "Z.ai / Medium"
+  },
+  {
+    "ts": "2026-11-23T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "X Square Robot ra mắt WALL-OSS-1.0 — mô hình nền cho robot",
+    "summary": "Mô hình vision-language-action huấn luyện hợp nhất thị giác, ngôn ngữ và hành động vật lý, đạt 55,1% thành công zero-shot trên 312 tác vụ robot thật.",
+    "content": "X Square Robot (Thâm Quyến) ngày 23/11 công bố WALL-OSS-1.0, mô hình vision-language-action (VLA) huấn luyện hợp nhất thị giác, ngôn ngữ và hành động vật lý ngay từ đầu, thay vì gắn mô hình ngôn ngữ lên bộ điều khiển robot như cách thường làm.\nTrong đánh giá trên robot thật, mô hình đạt 55,1% tỉ lệ thành công zero-shot trên 312 tác vụ do người đánh giá tự chọn, không cần demo hay fine-tune riêng cho từng tác vụ.\nKèm theo là framework XR Harness nối lập kế hoạch với điều khiển, API WALL-API-1.0, và các bản nhỏ Lite 4B, Nano 2B; mã nguồn và trọng số sẽ mở trong thời gian tới.",
+    "url": "https://www.manilatimes.net/2026/11/23/tmt-newswire/globenewswire/x-square-robot-introduces-wall-oss-10-understand-more-act-better-a-native-foundation-model-for-the-physical-world/2475923",
+    "image": null,
+    "source": "X Square Robot / Manila Times"
+  },
+  {
+    "ts": "2026-11-23T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "MoEngage bị tấn công qua tài khoản nhà cung cấp thứ ba",
+    "summary": "Startup SaaS MoEngage xác nhận bị xâm nhập qua tài khoản nhà cung cấp thứ ba bị lộ; dữ liệu người dùng của WazirX và ZebPay bị ảnh hưởng.",
+    "content": "Startup SaaS MoEngage (nền tảng tương tác khách hàng) xác nhận bị xâm nhập qua tài khoản của một nhà cung cấp thứ ba bị lộ, ảnh hưởng dưới 1% tài khoản khách hàng.\nHai sàn tiền số WazirX và ZebPay (khách hàng của MoEngage) cho biết dữ liệu người dùng bị lộ gồm email, thông tin liên hệ cơ bản, metadata thiết bị và dữ liệu tương tác.\nMoEngage đã thuê chuyên gia độc lập xác minh, khắc phục và tăng cường bảo mật.\nVụ việc là lời nhắc về rủi ro chuỗi cung ứng: kẻ tấn công không cần đột nhập trực tiếp mà đi qua nhà cung cấp.",
+    "url": "https://inc42.com/buzz/now-moengage-suffers-cybersecurity-attack-due-to-compromised-third-party-vendor/",
+    "image": null,
+    "source": "Inc42"
+  },
+  {
+    "ts": "2026-11-18T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "NGINX2ROOT — 5 lỗ hổng nghiêm trọng trong NGINX, ~8,8 triệu máy chủ phơi nhiễm",
+    "summary": "Năm lỗ hổng hỏng bộ nhớ trong NGINX (F5 chấm 9.2/10) cho phép kẻ tấn công chưa xác thực chạy mã trên máy chủ; chỉ cần bật HTTP/2 là khai thác được, PoC công khai đã có.",
+    "content": "F5 và nginx.org ngày 18/11 công bố 10 lỗ hổng trong NGINX, trong đó 5 lỗ hổng mang tên NGINX2ROOT (CVE-2026-123007, CVE-2026-123633, CVE-2026-123634, CVE-2026-121810, CVE-2026-113425) — lỗi hỏng bộ nhớ trong HTTP/2, HTTP/3, resolver và mail proxy, cho phép kẻ tấn công chưa xác thực chạy mã trên máy chủ; F5 chấm mỗi lỗi 9.2/10 (Critical, CVSS v4.0).\nĐáng chú ý nhất là CVE-2026-123007: chỉ cần bật HTTP/2 là khai thác được, tồn tại từ bản 1.9.5 (2015). Nhóm nghiên cứu Xint còn xâu chuỗi với một lỗi kernel Linux SCTP chưa có bản vá để leo lên quyền root ngay cả trong Docker.\nTính đến 19/11, Censys đếm ~8,8 triệu dịch vụ đang chạy bản NGINX có thể bị ảnh hưởng với HTTP/2 bật; PoC công khai đã có cho CVE-2026-123007, chưa ghi nhận khai thác thực tế.\nCách khắc phục: nâng lên NGINX 1.30.7 hoặc 1.31.9 (Plus: 37.0.8.1/37.3.0.1) rồi khởi động lại.",
+    "url": "https://blog.cloudflare.com/nginx2root/",
+    "image": "https://blog.cloudflare.com/_image?href=https%3A%2F%2Fblog.cloudflare.com%2F_emdash%2Fapi%2Fmedia%2Ffile%2F01M7V6PBMMASJ99J87WNTE9952.01M7V6PC208D1TXDQ4BTCAJDD5.png&w=1600&h=761&q=100&f=webp",
+    "source": "Cloudflare Blog"
+  },
+  {
+    "ts": "2026-11-22T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Jordan đề xuất cấm GTA 6 vì lo ngại an toàn trẻ em",
+    "summary": "Cơ quan quản lý viễn thông Jordan đang chuẩn bị quyết định cấm chính thức GTA 6 vì lo ngại trẻ em tiếp xúc nội dung không phù hợp qua chat mở trong game; lệnh cấm chưa có hiệu lực.",
+    "content": "Cơ quan quản lý viễn thông Jordan (TRC) đang phối hợp với các cơ quan liên quan để ban hành quyết định cấm chính thức Grand Theft Auto VI, sau nhiều lời kêu gọi từ công chúng về bảo vệ trẻ em và thanh thiếu niên.\nChủ tịch TRC Lara Al-Khatib cho biết xếp hạng độ tuổi người lớn là chưa đủ, vì các phòng chat thoại và text mở trong game có thể khiến trẻ tiếp xúc với tương tác không phù hợp và rủi ro an ninh.\nLệnh cấm chưa chính thức có hiệu lực; TRC đang xây dựng hệ thống giám sát/chặn tích hợp.\nTại UAE, game được phát hành với xếp hạng 21+, mức cao nhất của cơ quan truyền thông nước này, kèm cảnh báo phụ huynh về nội dung ma túy.",
+    "url": "https://en.royanews.tv/news/76357/Jordan-moves-to-ban-'GTA-6'-in-response-to-public-calls",
+    "image": null,
+    "source": "Roya News"
+  },
+  {
     "ts": "2026-11-23T14:35:42+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3243,60 +3298,5 @@
     "url": "https://facebook.com/groups/j2team.community/permalink/3257045217960909/",
     "image": null,
     "source": "J2Team Community"
-  },
-  {
-    "ts": "2026-11-20T15:47:55+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "Những thứ không nên được bình thường hoá ở đại đa số công ty Việt Nam",
-    "summary": "Bài viết liệt kê các thực trạng nơi làm việc: dùng laptop cá nhân không hỗ trợ chi phí, xin nghỉ phép qua 2–3 cấp, giao việc ngoài giờ mặc định phải trả lời ngay, làm thêm giờ không chế độ OT rõ ràng, đánh giá theo độ thân thiết với sếp. Thu hút 2.197 tương tác, 337 bình luận.",
-    "content": "Bài viết liệt kê những điều không nên được bình thường hoá ở đại đa số công ty Việt Nam:\n- Nhân viên phải dùng laptop cá nhân để làm việc nhưng công ty không hỗ trợ chi phí thiết bị, thậm chí còn yêu cầu cài phần mềm bảo mật lên máy riêng.\n- Xin nghỉ phép vài ngày phải qua 2–3 cấp lãnh đạo phê duyệt, dù đó là quyền lợi của nhân viên.\n- Nhắn tin, gọi điện giao việc ngoài giờ nhưng mặc định nhân viên phải phản hồi ngay.\n- Thường xuyên yêu cầu nhân viên làm thêm giờ nhưng không có chế độ OT rõ ràng.\n- Đánh giá nhân viên dựa trên mức độ nhiệt tình, sự thân thiết với sếp thay vì kết quả công việc.\n- Coi việc đi ăn uống, tham gia tiệc tùng, hiếu hỉ của công ty là nghĩa vụ thay vì lựa chọn cá nhân.\nBài viết thu hút 2.197 tương tác và 337 bình luận.",
-    "url": "https://facebook.com/groups/kosocho/permalink/2897408020668265/",
-    "image": null,
-    "source": "Kosocho"
-  },
-  {
-    "ts": "2026-11-20T05:00:13+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Apple phát triển AI agent tự dùng máy tính",
-    "summary": "Apple đang tuyển quản lý cấp cao cho AI agent có thể duyệt web, dùng app, viết code thay người dùng; nhắm ra mắt sớm nhất cuối 2027, đồng thời macOS 27.3 siết quyền của agent bên thứ ba.",
-    "content": "Apple đang tuyển quản lý kỹ thuật cấp cao cho một \"AI agent that can use a computer\" — duyệt web, dùng app, chạy lệnh, viết và gỡ lỗi code, gọi dịch vụ, tự chọn công cụ phù hợp từng bước; đội ngũ đang xây nền tảng \"general-purpose computer-use agents\".\nBloomberg cho biết Apple nhắm ra mắt sớm nhất cuối năm 2027, hiện vẫn ở giai đoạn đầu. Cùng lúc, macOS 27.3 sẽ siết quyền của agent bên thứ ba, hiển thị cảnh báo khi người dùng cấp quyền kiểm soát toàn bộ máy.\nCổ phiếu Meta giảm khoảng 2%, Anthropic khoảng 3% sau khi tin được đăng.",
-    "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-    "image": "https://techcrunch.com/wp-content/uploads/2026/06/iphone-usb-cable.jpg?resize=1200,800",
-    "source": "TechCrunch"
-  },
-  {
-    "ts": "2026-11-20T05:30:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Nvidia đàm phán mua Inception với giá hơn 500 triệu USD",
-    "summary": "Nvidia đàm phán nâng cao để mua startup đứng sau mô hình ngôn ngữ khuếch tán Mercury, đạt hơn 1.000 token/giây; cả 3 nhà đồng sáng lập dự kiến gia nhập Nvidia.",
-    "content": "Nvidia đang đàm phán nâng cao để mua Inception, startup 2 tuổi đứng sau họ mô hình ngôn ngữ khuếch tán (diffusion LLM) Mercury — tạo văn bản song song thay vì từng token, đạt hơn 1.000 token/giây (Mercury 3: 1.068 token/giây trên GPU Nvidia), chất lượng ngang GPT-6 Luna và Claude Haiku 5.5 theo benchmark của hãng.\nThỏa thuận gồm khoản earnout theo hiệu suất; cả 3 nhà đồng sáng lập (Stefano Ermon, Aditya Grover, Volodymyr Kuleshov) dự kiến gia nhập Nvidia, công nghệ sẽ bổ sung cho dòng Nemotron và AI robot.\nChưa ký kết, hai bên chưa xác nhận. API Mercury sẽ đóng ngày 28/12.",
-    "url": "https://www.tipranks.com/news/nvidia-nears-500m-deal-for-ai-startup-inception-to-strengthen-ai-models",
-    "image": null,
-    "source": "TipRanks"
-  },
-  {
-    "ts": "2026-11-20T03:13:59+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Meta định giá thiết bị Muse Charm 300 USD, kèm 5G Verizon miễn phí 1 năm",
-    "summary": "Thiết bị bỏ túi mang trợ lý Muse có màn hình khoảng 2 inch, modem 5G tích hợp; Meta dự kiến bán kịp mùa mua sắm tháng 12.",
-    "content": "Meta dự kiến bán thiết bị bỏ túi mang trợ lý Muse với giá 300 USD và tặng tối đa 12 tháng dữ liệu 5G Verizon, theo The Information.\nThiết bị có màn hình khoảng 2 inch điều khiển bằng ngón cái, nhân vật Muse tùy chỉnh ở giữa, modem 5G tích hợp (không gọi điện được), đeo cổ hoặc móc khóa.\nMeta dự kiến bán kịp mùa mua sắm tháng 12. Người phát ngôn Meta không phủ nhận mức giá.",
-    "url": "https://www.reuters.com/business/media-telecom/meta-price-muse-charm-gadget-300-information-reports-2026-11-19/",
-    "image": null,
-    "source": "Reuters"
-  },
-  {
-    "ts": "2026-11-20T09:29:29+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Lần đầu quan sát agent AI tự động khai thác lỗ hổng gần như không cần con người",
-    "summary": "Google Threat Intelligence Group phát hiện framework \"exploit_agent\" tự động tìm và weaponize lỗ hổng từ mã nguồn trước/sau bản vá, không có người trong vòng lặp.",
-    "content": "Google Threat Intelligence Group (GTIG) phát hiện một máy chủ staging chạy framework \"exploit_agent\" — kết nối nhiều LLM, liên tục so sánh mã nguồn các ứng dụng web phổ biến trước và sau bản vá để tìm rồi weaponize lỗ hổng, tự động trinh sát, brute-force mật khẩu, cài webshell.\nGTIG cho biết đây là lần đầu quan sát LLM tự động cả khâu phát hiện lẫn khai thác mà không có người trong vòng lặp; AI đang rút ngắn khoảng thời gian từ lúc phát hành bản vá đến lúc bị khai thác.\nCác framework pentest AI mã nguồn mở khác như ARTEX, CAIRN và PentAGI cũng đã bị lạm dụng ngoài thực địa.",
-    "url": "https://cybersecasia.net/news/autonomous-ai-agents-now-exploit-software-vulnerabilities-with-little-human-involvement-report-2/",
-    "image": null,
-    "source": "CybersecAsia"
   }
 ]
