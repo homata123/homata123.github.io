@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-23T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Tàu ngầm robot phát hiện núi lửa phun trào sâu nhất thế giới ở rãnh Mariana",
+    "summary": "Tàu lặn Jason/Medea phát hiện đá pyroclastic ở độ sâu 6.148 m tại rãnh Mariana — bằng chứng vụ phun trào nổ dưới nước sâu nhất từng ghi nhận, gần Challenger Deep.",
+    "content": "Tàu lặn điều khiển từ xa Jason/Medea (khảo sát cuối 2024, 7 lần lặn dọc ~300 km) phát hiện đá pyroclastic — bằng chứng vụ phun trào nổ dưới nước sâu nhất từng ghi nhận — ở độ sâu 6.148 m tại rãnh Mariana, gần Challenger Deep (điểm sâu nhất đại dương, ~11.000 m).\nNhóm Đại học Texas tại Dallas (Robert J. Stern, chủ biên) công bố trên Frontiers in Earth Science ngày 23/11: các lớp đá mỏng, phẳng trên đáy biển là dấu vết phun trào nổ siêu sâu; phía đông rãnh sâu hơn, vách dốc hơn, còn phía tây tích tụ magma và trẻ hơn về địa chất.\nPhát hiện cũng góp phần giải thích vì sao Challenger Deep lại sâu đến vậy.",
+    "url": "https://phys.org/news/2026-11-robot-submarine-exploring-world-deepest.html",
+    "image": "https://scx2.b-cdn.net/gfx/news/hires/2026/robot-submarine-explor.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-22T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "BepiColombo vào quỹ đạo Sao Thủy sau hành trình 8 năm",
+    "summary": "Cặp tàu vũ trụ châu Âu–Nhật Bản BepiColombo đã vào quỹ đạo Sao Thủy hôm 21/11 sau 8 năm bay hơn 10 tỷ km — tàu đầu tiên vào quỹ đạo hành tinh này sau hơn một thập kỷ.",
+    "content": "Cặp tàu vũ trụ châu Âu–Nhật Bản BepiColombo đã vào quỹ đạo Sao Thủy hôm thứ Bảy (21/11) sau 8 năm bay, hơn 10 tỷ km với 1 lần bay qua Trái Đất, 2 lần qua Sao Kim và 6 lần qua Sao Thủy để trợ lực hấp dẫn.\nĐây mới là tàu thứ ba tới Sao Thủy và là tàu đầu tiên vào quỹ đạo hành tinh này sau hơn một thập kỷ (sau Mariner 10 bay qua thập niên 1970 và Messenger vào quỹ đạo 2011, rơi xuống Sao Thủy 2015). Hai tàu sẽ tách nhau vào tháng sau để lập bản đồ và nghiên cứu hành tinh từ hai độ cao khác nhau.\nSứ mệnh trị giá 2 tỷ USD dự kiến kéo dài ít nhất 1 năm Trái Đất (tương đương 4 năm Sao Thủy); dữ liệu khoa học mới bắt đầu đổ về từ mùa xuân.",
+    "url": "https://phys.org/news/2026-11-mercury-visitor-years-pair-spacecraft.html",
+    "image": "https://scx2.b-cdn.net/gfx/news/2026/mercury-mission.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-20T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Khoáng vật trên Sao Kim có thể giữ dấu vết của nước cổ đại",
+    "summary": "Thí nghiệm 60 ngày trong buồng mô phỏng Sao Kim của NASA: hydro florua biến khoáng vật chứa nước thành mica chứa flo bền vững — dấu vết quá khứ ẩm ướt của Sao Kim có thể vẫn còn lưu giữ trên bề mặt.",
+    "content": "Nhóm nghiên cứu (Đại học Texas tại San Antonio, NASA, Đại học bang Arizona) phơi 6 khoáng vật tạo đá trong buồng mô phỏng GEER của NASA Glenn suốt 60 ngày liên tục, tái tạo điều kiện bề mặt Sao Kim (nóng đủ chảy chì, áp suất gấp ~100 lần Trái Đất, 9 loại khí).\nKết quả công bố trên The Planetary Science Journal (20/11): khí quyển Sao Kim biến đổi mạnh khoáng vật bề mặt, nhưng một số biến đổi lại lưu giữ được bằng chứng quá khứ ẩm ướt — hydro florua trong khí quyển phản ứng với khoáng vật chứa nước, tạo thành mica chứa flo bền vững trong điều kiện khắc nghiệt.\nPhát hiện giúp xác định mục tiêu cụ thể cho các sứ mệnh DAVINCI, VERITAS (NASA) và EnVision (ESA) sắp tới.",
+    "url": "https://phys.org/news/2026-11-venus-conditions-reveal-minerals-ancient.html",
+    "image": "https://scx2.b-cdn.net/gfx/news/hires/2026/venus.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-22T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6 có hơn 60 mã cheat — nhưng chỉ mở sau khi phá đảo cốt truyện",
+    "summary": "Rockstar giấu hơn 60 mã cheat trong GTA 6, nhưng menu cheat chỉ xuất hiện sau khi phá đảo; mỗi mã còn phải mở khóa riêng bằng thử thách, và khi bật cheat thì không lưu được game, tắt trophy/achievement.",
+    "content": "Rockstar giấu hơn 60 mã cheat trong GTA 6 (ra mắt 19/11), nhưng người chơi không thể dùng bất kỳ mã nào trong lúc chơi cốt truyện chính. Chỉ sau khi phá đảo và xem hết credit, menu cheat mới xuất hiện trong tab Progress; mỗi mã còn phải mở khóa riêng bằng cách hoàn thành thử thách tương ứng.\nVí dụ: mã 250.000 USD mở khi phá đảo; Max Ammo cần 25 huy chương đồng ở trường bắn; xe tăng Rhino cần hoàn thành mọi thử thách sinh tồn. Khi bật cheat, game không lưu được tiến trình và tắt tính năng trophy/achievement.\nMột số mã kỳ lạ: Golden Hour (lọc vàng + tỉ lệ điện ảnh sau 4 giờ nắm tay), Dark Mirror (lật ngược thế giới sau khi bán xe được 500.000 USD), Hellscape (thế giới đỏ rực sau khi trộm 100 xe cảnh sát).",
+    "url": "https://www.unilad.com/technology/gta-6-cheat-codes-unlock-830813-20261120",
+    "image": "https://resizer.ladbiblegroup.com/ogimage/v3/assets/blt949ea8e16e463049/blt82e26e931949ed75/6b001a8734c63d3f5c4e64e4/images.jpeg",
+    "source": "UNILAD"
+  },
+  {
+    "ts": "2026-11-23T12:56:39+07:00",
+    "flow": "internet",
+    "category": "Video",
+    "title": "Phê Game: Những NPC Bí Ẩn Bậc Nhất Làng Game",
+    "summary": "Phê Game đăng video mới trưa nay (23/11 12:56): điểm mặt những NPC bí ẩn nhất trong làng game — video mới duy nhất trong 48 giờ qua từ các kênh game Việt đang theo dõi.",
+    "content": "Phê Game đăng video mới trưa nay (23/11 12:56): điểm mặt những NPC bí ẩn nhất trong làng game.\nĐây là video mới duy nhất trong 48 giờ qua từ các kênh game Việt đang theo dõi, không phải livestream series chơi GTA 6 theo ngày.",
+    "url": "https://www.youtube.com/watch?v=dfvVxlKEBJM",
+    "image": "https://i.ytimg.com/vi/dfvVxlKEBJM/hqdefault.jpg",
+    "source": "Phê Game"
+  },
+  {
     "ts": "2026-11-23T11:54:58+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3241,61 +3296,6 @@
     "summary": "Một quán đối diện tòa T2 phục vụ bánh cuốn nóng đặc sản Tây Bắc vào thứ Bảy: bánh cuốn nóng các loại, bún chả, trứng vịt lộn và trứng vịt lộn hầm ngải cứu, bánh cuốn chả quế, chả mỡ và giò. Bài gốc không ghi giá.",
     "content": "Bánh cuốn nóng đặc sản Tây Bắc, phục vụ vào thứ Bảy.\nCác món: bánh cuốn nóng các loại, bún chả các loại, trứng vịt lộn, trứng vịt lộn hầm ngải cứu, bánh cuốn chả quế, bánh cuốn chả mỡ, bánh cuốn giò.\nQuán ở đối diện tòa T2 trong khu. Bài gốc không ghi giá.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4785293585040985/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T19:58:29+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bột ngũ hắc mới làm: đậu đen, vừng đen, gạo đen",
-    "summary": "Một sạp trong chợ khu vừa làm mẻ bột ngũ hắc mới, gồm đậu đen, vừng đen, gạo đen, hắc kỳ tử và dâu tằm.",
-    "content": "Một sạp trong chợ khu vừa làm mẻ bột ngũ hắc mới.\n\nThành phần gồm đậu đen, vừng đen, gạo đen, hắc kỳ tử và dâu tằm. Theo bài đăng, bột có tác dụng bổ thận, dưỡng nhan, hỗ trợ làm đen và giảm rụng tóc, làm đẹp da, thanh nhiệt giải độc, hỗ trợ tim mạch, tiêu hóa và cung cấp năng lượng.\n\nBài đăng không ghi giá. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785213331715677/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T19:55:35+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Sáng mai mổ lợn: thịt tươi, giò chả, giả cầy đặt trước",
-    "summary": "Một sạp trong chợ khu nhận đặt thịt lợn mổ sáng mai thứ Bảy: thịt tươi, xay giò, chả, mọc, làm giả cầy ướp sẵn và sơ chế ruốc theo yêu cầu.",
-    "content": "Sáng mai (thứ Bảy) một sạp trong chợ khu mổ lợn ăn bỗng rượu, quậy cám gạo; thịt được giới thiệu là thơm, nạc ngon.\n\nSau khi mổ, sạp xay thịt làm giò, chả, mọc. Ai muốn ăn giả cầy thì sạp thui và ướp gia vị sẵn, về chỉ việc đun; ai muốn tự sao ruốc thì sạp sơ chế, đánh ruốc sẵn, về chỉ việc sao. Gia vị làm theo yêu cầu của khách, khách đặt mới làm, không làm sẵn.\n\nThực đơn chi tiết nằm trong phần bình luận của bài gốc; bài đăng không ghi giá trong phần nội dung chính. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785209265049417/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T19:55:24+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh bèo Nghệ An ship đến 12 giờ đêm",
-    "summary": "Một sạp trong chợ khu bán bánh bèo Nghệ An đến 12 giờ đêm, bánh tự vắt mới mỗi ngày, nhân thịt mộc nhĩ, ăn kèm nước mắm nóng.",
-    "content": "Bánh bèo Nghệ An nóng hổi, sẵn ship đến 12 giờ đêm. Bánh tự vắt mới mỗi ngày, nhân thịt mộc nhĩ, ăn kèm nước mắm nóng.\n\nGiá: bánh bèo luộc 30.000đ hoặc 50.000đ; bánh bèo rán 40.000đ; set bánh bèo sống đang sale 90.000đ/set 60 cái, kèm đầy đủ gia vị và nước mắm ăn kèm.\n\nĐơn dưới 70.000đ cộng thêm 5.000đ tiền ship. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785209015049442/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T19:54:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh sầu ngày mai: crepe sầu tươi và bánh ngàn lớp",
-    "summary": "Một sạp trong chợ khu nhận đặt bánh sầu làm ngày mai: bánh crepe sầu tươi 60.000đ/hộp, các loại bánh ngàn lớp 75.000đ/ổ.",
-    "content": "Ngày mai một sạp trong chợ khu làm bánh sầu, nhận đặt trước.\n\nBánh crepe siêu sầu tươi: 60.000đ/hộp. Bánh ngàn lớp sầu: 75.000đ/ổ. Bánh ngàn lớp phú sĩ: 75.000đ/ổ. Bánh ngàn lớp kem trứng dừa nướng: 75.000đ/ổ.\n\nBánh nhà làm theo số lượng khách đặt. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785207875049556/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-20T19:54:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Gấc nếp siêu đỏ 20.000đ/kg, free ship quanh Ngãi Cầu",
-    "summary": "Một sạp trong chợ khu bán gấc nếp siêu đỏ, giá 20.000đ/kg, miễn phí ship quanh khu vực Ngãi Cầu.",
-    "content": "Một sạp trong chợ khu có gấc nếp siêu đỏ, đẹp, giá 20.000đ/kg.\n\nMiễn phí ship quanh khu vực Ngãi Cầu; sạp cũng nhận bán sỉ. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4785206161716394/",
     "image": null,
     "source": "Chợ cư dân"
   }
