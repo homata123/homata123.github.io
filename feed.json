@@ -1,5 +1,27 @@
 [
  {
+  "ts": "2026-11-24T13:00:40+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Meta ra mắt trợ lý AI Muse tại Anh, mở rộng sang châu Âu",
+  "summary": "Từ hôm nay, người từ 18 tuổi tại Anh có thể dùng Muse — trợ lý AI cá nhân của Meta — trên iOS, Android, muse.ai và WhatsApp; chạy trên mô hình Muse Spark, kết nối Spotify, OpenTable và 14 đối tác bán lẻ Anh, thanh toán qua Stripe Link và Shop Pay.",
+  "content": "Meta chính thức đưa trợ lý AI cá nhân Muse tới Anh từ hôm nay. Người dùng từ 18 tuổi có thể dùng Muse trên iOS, Android, muse.ai và WhatsApp, không cần kinh nghiệm kỹ thuật: chỉ cần trò chuyện, giao việc, kiểm tra kết quả rồi Muse tự thực hiện.\nMuse chạy trên Muse Spark, mô hình đầu tiên của Meta Superintelligence Labs, và có thể tự làm các việc như gửi email, đặt vé du lịch, mua sắm, thương lượng hoàn tiền hay xây dựng một kế hoạch cá nhân. Người dùng quyết định Muse được truy cập gì, phê duyệt trước các hành động quan trọng, và có thể yêu cầu Muse ghi nhớ hoặc quên thông tin.\nTại Anh, Muse kết nối Spotify, OpenTable và 14 đối tác bán lẻ gồm Marks & Spencer, Debenhams Group, Currys, Ocado Retail, Trainline, Argos, Sainsbury's, ASOS, Jet2, LOOKFANTASTIC, MyProtein, Cult Beauty, JustPark, easyJet và JD Sports; thanh toán qua Stripe Link và Shop Pay. Cơ quan Cạnh tranh và Thị trường Anh (CMA) cũng ra tuyên bố nhắc luật bảo vệ người tiêu dùng áp dụng cho các trợ lý AI cá nhân, sau khi Meta điều chỉnh điều khoản theo yêu cầu của CMA.",
+  "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/amp/",
+  "image": "https://about.fb.com/wp-content/uploads/2026/11/England_v2a_4x3.png?w=1200",
+  "source": "Meta Newsroom"
+ },
+ {
+  "ts": "2026-11-24T16:35:08+07:00",
+  "flow": "internet",
+  "category": "Bảo mật",
+  "title": "Cả 8 API tìm kiếm đều đưa nội dung độc hại cho coding agent, nghiên cứu WebSec Benchmark cảnh báo",
+  "summary": "Nghiên cứu WebSec Benchmark của AIR Research Lab chạy 4.719 truy vấn thực tế của coding agent qua 8 API tìm kiếm phổ biến: tất cả đều trả về nội dung độc hại đã biết ít nhất một lần, với 1.026 lần tiếp xúc trong hơn 282.000 kết quả; tỉ lệ gặp nội dung xấu là 0,8–2,2%.",
+  "content": "AIR Research Lab công bố WebSec Benchmark, nghiên cứu đo mức độ kết quả tìm kiếm trên web gây nguy hiểm cho coding agent. Nhóm lấy 4.719 truy vấn từ các tác vụ coding-agent thực tế và gửi mỗi truy vấn tới 8 API tìm kiếm thương mại: Firecrawl, Tavily, Perplexity, Parallel, Exa, Nimble, Brave và You.com, rồi kiểm tra hơn 282.000 kết quả trả về.\nKết quả: cả 8 API đều đưa nội dung độc hại đã biết ít nhất một lần. Tổng cộng có 1.026 lần agent được đưa nội dung độc hại hoặc rủi ro; tỉ lệ theo từng API là 0,8–2,2%, tức cứ 45–125 lần tìm kiếm thì có 1 lần gặp nội dung xấu. Chỉ số an toàn WebSec Index: Firecrawl cao nhất (21,59), Tavily tiếp theo (18,59), You.com thấp nhất (5,02).\nVí dụ điển hình: repo GitHub \"SolanaCry\" có 286 sao, nhắm tới các dự án crypto Solana; README hướng dẫn chạy một lệnh PowerShell cài đặt công cụ truy cập từ xa NetSupport Manager, tự khởi động lại mỗi lần đăng nhập. Nhóm nghiên cứu khuyến nghị coi mọi thứ agent đọc — kể cả kết quả tìm kiếm và README — là đầu vào không đáng tin, tắt phê duyệt tự động cho lệnh tải-và-chạy (curl | sh), kiểm tra package trước khi cài và ghi log những gì agent đã đọc, không chỉ những gì nó đã chạy.",
+  "url": "https://thehackernews.com/expert-insights/2026/11/ai-coding-agents-are-getting-malicious.html",
+  "image": null,
+  "source": "The Hacker News"
+ },
+ {
   "ts": "2026-11-24T21:27:12+07:00",
   "flow": "facebook",
   "category": "Bảng tin cư dân",
@@ -3274,28 +3296,6 @@
   "summary": "Một sạp trong chợ khu bán set lẩu chép giòn 500k cho 4–5 người ăn: cá chép giòn size đại, kèm đậu phụ, chả cá chiên, canh tiết, nước lẩu, rau, bún, nấm và váng đậu.",
   "content": "Một sạp trong chợ khu bán set lẩu chép giòn 500k (4–5 người ăn): cá chép giòn chuẩn, size đại, thịt dày, bao giòn.\nLẩu cá chép giòn có vị chua chua, the the nơi đầu lưỡi kết hợp với độ săn chắc của cá.\nMỗi set gồm: 2 khay cá chép (cho 4–5 người ăn), 1 khay đậu phụ + chả cá chiên, 1 khay canh tiết, nước lẩu + rau + bún + nấm + váng đậu.\nThông tin liên hệ nằm trong bài gốc tại group.",
   "url": "https://facebook.com/groups/1770535389850168/permalink/4789207444649599/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-22T14:30:00+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Lẩu cá tầm Sapa — 550k (4–5 người)",
-  "summary": "Một sạp trong chợ khu bán combo lẩu cá tầm Sapa tươi sống 550k cho 4–5 người ăn, kèm nước lẩu; cá nạc thịt, xương là sụn mềm nên già trẻ đều ăn được.",
-  "content": "Một sạp trong chợ khu bán cá tầm Sapa tươi sống, kết hợp combo nước lẩu.\nLẩu cá tầm 550k/4–5 người ăn. Cá nạc thịt, xương cá là sụn mềm nên già trẻ đều ăn được.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4789205461316464/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-22T14:30:00+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Chả cốm mộc — 165k/kg",
-  "summary": "Một sạp trong chợ khu bán chả cốm mộc 165k/kg: miếng chả rán lên nở thịt, mềm ngon, béo ngậy, thơm vị cốm.",
-  "content": "Một sạp trong chợ khu bán chả cốm mộc, 165k/kg.\nMiếng chả rán lên nở thịt, mềm ngon, béo ngậy, thơm vị cốm rất ngon.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4789207094649634/",
   "image": null,
   "source": "Chợ cư dân"
  }
