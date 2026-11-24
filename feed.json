@@ -1,5 +1,71 @@
 [
   {
+    "ts": "2026-11-24T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "NVIDIA phục chức Jensen Huang làm CEO, cổ phiếu tăng hơn 31%",
+    "summary": "Hội đồng quản trị NVIDIA bỏ phiếu nhất trí phục chức Jensen Huang làm CEO, chủ tịch kiêm thành viên hội đồng, có hiệu lực ngay — chỉ 11 ngày sau khi ông từ chức (12/11). Cổ phiếu tăng hơn 31% trong phiên thứ Hai, cộng thêm hơn 900 tỷ USD vốn hóa.",
+    "content": "Hội đồng quản trị NVIDIA bỏ phiếu nhất trí phục chức Jensen Huang làm CEO, chủ tịch kiêm thành viên hội đồng, có hiệu lực ngay — chỉ 11 ngày sau khi ông từ chức (12/11) giữa bê bối ngoại tình, trong đó có một người bị nghi là gián điệp Trung Quốc. Hội đồng cho biết đã hài lòng với sự thẳng thắn và năng lực lãnh đạo của Huang và không thấy rủi ro an ninh quốc gia sau khi tham khảo quan chức cấp cao Mỹ. Cổ phiếu NVIDIA tăng hơn 31% trong phiên thứ Hai, cộng thêm hơn 900 tỷ USD vốn hóa; Nasdaq tăng hơn 6%.",
+    "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-24T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Ladybird ra mắt bản alpha đầu tiên",
+    "summary": "Trình duyệt mã nguồn mở với engine viết lại hoàn toàn từ đầu (không fork Chromium, WebKit hay Gecko) đã ra bản alpha đầu tiên cho macOS và Linux, sau hơn 4 năm phát triển.",
+    "content": "Trình duyệt mã nguồn mở với engine viết lại hoàn toàn từ đầu (không fork Chromium, WebKit hay Gecko) đã ra bản alpha đầu tiên cho macOS và Linux, sau hơn 4 năm phát triển. Đây là kênh rolling với cập nhật tự động — trước đây muốn dùng phải tự build từ source. Nhóm phát triển gọi bản này là \"khiêm tốn nhưng dùng được\": một số trang web chưa chạy, có thể crash, chưa có cam kết bảo mật; bản Windows đến sau, beta dự kiến 2027.",
+    "url": "https://www.neowin.net/news/ladybirds-first-alpha-brings-a-truly-independent-browser-to-macos-and-linux/",
+    "image": null,
+    "source": "Neowin"
+  },
+  {
+    "ts": "2026-11-24T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Google đưa Personal Intelligence vào AI Mode",
+    "summary": "Google bắt đầu triển khai kết nối Google Wallet vào Personal Intelligence trong AI Mode của Search (tự nguyện bật); Drive và ứng dụng Gemini nối tiếp trong vài tuần tới.",
+    "content": "Google bắt đầu triển khai kết nối Google Wallet vào Personal Intelligence trong AI Mode của Search (tự nguyện bật); Drive và ứng dụng Gemini nối tiếp trong vài tuần tới. AI Mode có thể dùng dữ liệu chi tiêu để gợi ý tiết kiệm và tối ưu hoàn tiền thẻ; kết nối Wallet chỉ đọc, không thể chuyển, quản lý hay đầu tư tiền. Kết nối Drive giúp AI Mode trả lời dựa trên tài liệu, bảng tính, PDF của người dùng; kết nối Gemini app cho phép hai bên chia sẻ ngữ cảnh trò chuyện.",
+    "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "image": null,
+    "source": "Google"
+  },
+  {
+    "ts": "2026-11-24T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "DeepMind: đội agent Gemini 4 tìm thuật toán lượng tử nhanh hơn, chứng minh bằng Lean",
+    "summary": "Google DeepMind và Google Quantum AI dùng các đội agent Gemini 4 để cải tiến thuật toán lượng tử, mọi kết quả đều được chứng minh đúng đắn và chứng minh chi phí bằng trình chứng minh định lý Lean.",
+    "content": "Google DeepMind và Google Quantum AI dùng các đội agent Gemini 4 để cải tiến thuật toán lượng tử, mọi kết quả đều được chứng minh đúng đắn và chứng minh chi phí bằng trình chứng minh định lý Lean. Mô phỏng tổng hợp hạt nhân (fusion) rẻ hơn 11,8 lần, thuật toán arcsin nhanh hơn 290 lần, Grover song song nhanh hơn 2,57 lần. Nhóm đã mã nguồn mở thư viện Lean, đặc tả bài toán và lời giải đã kiểm chứng. Lưu ý: đây là ước tính tài nguyên cho máy lượng tử sửa lỗi trong tương lai, chưa chạy trên phần cứng thật.",
+    "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "image": null,
+    "source": "DeepMind"
+  },
+  {
+    "ts": "2026-11-24T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Virginia và Oregon kiện SpaceX vì Grok tạo ảnh lạm dụng trẻ em",
+    "summary": "Hai bang Virginia và Oregon kiện SpaceX Super Intelligence theo luật bảo vệ người tiêu dùng, cáo buộc Grok tạo ảnh/video lạm dụng tình dục trẻ em và ảnh khỏa thân không đồng thuận từ ảnh thật. Đây là vụ kiện cấp bang đầu tiên nhắm vào Grok.",
+    "content": "Hai bang Virginia và Oregon kiện SpaceX Super Intelligence (công ty mẹ của X/xAI/Grok) theo luật bảo vệ người tiêu dùng, cáo buộc Grok tạo ảnh/video lạm dụng tình dục trẻ em và ảnh khỏa thân không đồng thuận từ ảnh thật, trong khi quảng bá chế độ \"spicy mode\" và cam kết an toàn không đúng thực tế. Đây là vụ kiện cấp bang đầu tiên nhắm vào Grok. Đơn kiện dẫn nghiên cứu của Center for Countering Digital Hate: Grok đã tạo và đăng khoảng 3 triệu ảnh khêu gợi trên X trong 29/12/2025–8/1/2026, trong đó ~23.000 ảnh có dấu hiệu mô tả trẻ em.",
+    "url": "https://www.reuters.com/legal/government/virginia-oregon-sue-musks-spacex-over-grok-ais-creation-child-sexual-abuse-2026-11-23/",
+    "image": null,
+    "source": "Reuters"
+  },
+  {
+    "ts": "2026-11-24T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Lỗ hổng Azure API Management Classic bị khai thác, lộ secrets",
+    "summary": "Microsoft cảnh báo lỗ hổng trong Azure API Management (APIM) bản Classic đã bị khai thác để đọc secrets lưu trong dịch vụ: Named Values, client secret của identity provider/OpenID Connect, subscription key và token gọi API quản lý.",
+    "content": "Microsoft cảnh báo lỗ hổng trong Azure API Management (APIM) bản Classic đã bị khai thác để đọc secrets lưu trong dịch vụ: Named Values, client secret của identity provider/OpenID Connect, subscription key và token gọi API quản lý. Vụ việc liên quan đến các cuộc tấn công vào hai công ty năng lượng Na Uy Equinor và Skagerak Energi; cơ quan an ninh Na Uy (NSM) ghi nhận ngành năng lượng nước này là bên đầu tiên phát hiện lỗ hổng. Microsoft phát hiện ngày 18/11 và đóng đường truy cập ngày 19/11, nhưng credential đã bị lấy trước đó vẫn còn hiệu lực — NSM khuyến nghị mọi người dùng APIM coi secrets đã lộ và xoay toàn bộ. Chưa có mã CVE; bản v2 không bị ảnh hưởng.",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+    "image": null,
+    "source": "BleepingComputer"
+  },
+  {
     "ts": "2026-11-24T08:39:45+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3230,72 +3296,6 @@
     "summary": "Một sạp trong chợ khu bán chân gà rút xương tươi trong ngày, chân to, chia khay đủ cân: 130.000đ/kg.",
     "content": "Một sạp trong chợ khu bán chân gà rút xương tươi mới trong ngày, chân to, chia khay đủ cân, không kèm nước nên 1kg được nhiều. Giá 130.000đ/kg.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4787338044836539/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T17:57:32+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ba chỉ bò Mỹ và mực nháy VIP cho lẩu, nướng cuối tuần",
-    "summary": "Một sạp trong chợ khu bán ba chỉ bò Mỹ 225.000đ/kg (2 khay) và mực nháy VIP 280.000đ/kg, phù hợp ăn lẩu hoặc nướng cuối tuần.",
-    "content": "Một sạp trong chợ khu bán ba chỉ bò Mỹ 225.000đ/kg (2 khay, đủ cân), thịt mềm, ngọt, thơm, hợp cả lẩu và nướng. Mực nháy VIP 280.000đ/kg, dùng cho lẩu hoặc nướng.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787337778169899/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T17:56:02+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Chân gà sốt thái 65.000đ/hộp, còn 5 hộp",
-    "summary": "Một cư dân trong khu còn dư 5 hộp chân gà sốt thái, giá 65.000đ/hộp.",
-    "content": "Một cư dân trong khu còn dư 5 hộp chân gà sốt thái, giá 65.000đ/hộp.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787335441503466/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T17:55:56+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thực đơn cuối tuần: vịt quay, gà luộc, cánh gà các vị",
-    "summary": "Một bếp trong khu nhận ship đồ ăn cuối tuần: vịt quay Lạng Sơn, gà đồi luộc sẵn, cánh gà rang muối, chiên mắm và sốt phô mai 99.000đ/hộp, khúc giữa chiên mắm 115.000đ/hộp.",
-    "content": "Một bếp trong khu nhận ship đồ ăn cuối tuần, theo thực đơn trong ảnh: vịt quay Lạng Sơn; gà đồi luộc sẵn (kèm lá chanh, quất, ớt); cánh gà rang muối 99.000đ/hộp; cánh gà chiên mắm 99.000đ/hộp; cánh gà sốt phô mai 99.000đ/hộp; khúc giữa chiên mắm 115.000đ/hộp; tiết 35.000đ; măng tiết 40.000đ; bí xanh nấu xương 50.000đ; củ cải chua ngọt 15.000đ/hộp nhỏ.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787335338170143/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T17:28:41+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Đồ ăn vặt: bánh giấy, bỏng ngô, hạt bí, hướng dương, ngô cay, quẩy xoắn",
-    "summary": "Một sạp trong chợ khu bán đồ ăn vặt: bánh giấy tuổi thơ 35k/2 bịch, bỏng ngô 30k/2 bịch to, hạt bí loại 1 130k/kg, hướng dương 85k/kg, ngô cay sấy giòn 80k/kg, quẩy xoắn tẩm gừng đường 52k/kg.",
-    "content": "Một sạp trong chợ khu bán đồ ăn vặt:\n- Bánh giấy tuổi thơ: 35k/2 bịch.\n- Bỏng ngô: 30k/2 bịch to.\n- Hạt bí loại 1: 130k/kg, 0,5kg 70k.\n- Hướng dương thơm giòn: 85k/kg, 0,5kg 45k.\n- Ngô cay sấy giòn: 80k/kg, 0,5kg 45k.\n- Quẩy xoắn tẩm gừng đường: 52k/kg, 0,5kg 28k.\n- Combo 0,5kg ngô cay + 0,5kg hướng dương: 87k.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787294591507551/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T17:27:47+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Nem chua rán Trần Công Châu — 25 cái 110k, 50 cái 190k",
-    "summary": "Một sạp trong chợ khu bán nem chua rán: 25 cái 110k, 50 cái 190k; nem phomai 100k/15 viên; bán nem sống.",
-    "content": "Một sạp trong chợ khu bán nem chua rán:\n- Nem Trần Công Châu: 25 cái 110k, 50 cái 190k.\n- Nem phomai: 100k/15 viên.\nBán nem sống, trời lạnh ăn nem chua rán rất hợp.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787293184841025/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T17:26:44+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Mực, tuộc tươi tuyển chọn — hàng sẵn ship trong khu",
-    "summary": "Một sạp hải sản trong chợ khu có mực, tuộc tươi sẵn ship: mực ống to 360k/kg, mực trứng nháy 220k/khay, mực lá 195k/khay, tuộc câu to 160k/khay, tuộc sữa mini 110k/khay.",
-    "content": "Một sạp hải sản trong chợ khu có mực, tuộc tươi sẵn ship, đủ loại để hấp, nướng, xào hay ăn lẩu:\n- Mực ống to size 5–6: 360k/kg.\n- Mực trứng nháy: 220k/khay.\n- Mực nháy thường: 170k/khay.\n- Mực ống sống: 240k/khay.\n- Mực câu size 12–14: 170k/khay.\n- Mực trứng chã: 170k/khay.\n- Mực lá: 195k/khay.\n- Tuộc câu to: 160k/khay.\n- Tuộc sữa mini: 110k/khay.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787290924841251/",
     "image": null,
     "source": "Chợ cư dân"
   }
