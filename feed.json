@@ -1,5 +1,104 @@
 [
   {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Cảnh báo bảo mật Minecraft Java: resource-pack có thể chạy mã trên máy người chơi",
+    "summary": "Thử nghiệm bảo mật trên Minecraft Java MC 26.3 (Windows x64) cho thấy kẻ xấu có thể lợi dụng gói tài nguyên máy chủ chứa font TrueType đặc biệt để khai thác lỗi FreeType và chạy mã trực tiếp trên máy người chơi, không cần mod hay quyền quản trị.",
+    "content": "Thử nghiệm bảo mật trên Minecraft Java MC 26.3 (Windows x64) cho thấy kẻ xấu có thể lợi dụng gói tài nguyên máy chủ (resource-pack) để chạy chương trình trực tiếp trên máy tính của người chơi.\nCách thức hoạt động: kẻ tấn công tạo một gói tài nguyên chứa nhiều font chữ TrueType được chỉnh sửa đặc biệt; người chơi vào máy chủ và chấp nhận tải gói tài nguyên theo yêu cầu máy chủ; máy chủ lần lượt gửi những ký tự đã chuẩn bị sẵn qua Action bar; Minecraft sử dụng FreeType để xử lý font chữ và một lỗi trong quá trình này bị lợi dụng để can thiệp vào bộ nhớ của trò chơi; kẻ tấn công tận dụng lỗi đó để điều khiển chương trình và thực thi lệnh trên Windows. Trong thử nghiệm, Calculator được mở lên, sau đó Minecraft tự thoát.\nKhông cần cài thêm mod hay tiện ích nào, không cần quyền quản trị viên trên máy chủ. Repository thử nghiệm sử dụng 144 biến thể font chữ và gửi các ký tự theo một trình tự cố định nhằm tăng khả năng khai thác thành công.\nNgười chơi nên cẩn thận khi tải gói tài nguyên từ những máy chủ không rõ nguồn gốc. Nguồn: repo github.com/bikini/minecraft2shell.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3264290930569671/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Tự tạo game chỉ với 1 câu lệnh cho Claude Code",
+    "summary": "Repo goofyfish cho Claude Code cho phép tạo các tựa game người que đơn giản chỉ bằng một câu lệnh mô tả; repo có sẵn 19 game, đã việt hoá tiếng Việt, có hướng dẫn cài và sử dụng.",
+    "content": "Một repo cho phép tạo ra các tựa game người que đơn giản chỉ bằng cách ra một câu lệnh cho Claude Code.\nCách dùng: cài repo goofyfish lên Claude Code (một lần duy nhất), sau đó mô tả tựa game mong muốn, ví dụ: \"Tạo 1 game hứng dừa, có gió thổi, người dùng phải di chuyển để hứng dừa đang rơi khi bị gió thổi\".\nCó thể chơi ngay trên máy, gửi file cho người khác cùng chơi, hoặc yêu cầu Claude đẩy lên webserver miễn phí để chơi ở bất kỳ đâu. Repo có sẵn 19 game để chơi ngay, bản đã được việt hoá tiếng Việt, có hướng dẫn cài và sử dụng.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4627366247476223/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "niMap ngày thứ 12: backend AI dẫn đường thử nghiệm hoạt động như mong đợi",
+    "summary": "Server AI của dự án niMap kết hợp GPS, quán tính, con quay hồi chuyển, BTS, WiFi để xác định vị trí cả khi mất GPS; tự vẽ đường theo dữ liệu di chuyển thực tế và đối chiếu ảnh vệ tinh, định tuyến thời gian thực. Đã có dữ liệu 2,8 triệu đoạn đường toàn Việt Nam.",
+    "content": "Cập nhật dự án niMap, ngày thứ 12: backend AI thử nghiệm hoạt động như mong đợi.\nServer AI kết hợp GPS, quán tính, con quay hồi chuyển, BTS, WiFi (la bàn chỉ dùng cho đi bộ vì nhiễu từ tính do xe có nhiều sắt) để xác định phương hướng, tọa độ tốt nhất ngay cả khi mất GPS.\nKết hợp dữ liệu trekking GPS từ phương tiện và ảnh vệ tinh chất lượng cao, server AI không chỉ vẽ mà còn định tuyến thời gian thực: nếu phương tiện đi vào một con đường chưa có bản đồ, AI tự xử lý để vẽ đường thời gian thực và xác minh lại bằng ảnh vệ tinh mới nhất; nếu lộ trình của các phương tiện đổi hướng, hệ thống tự dựng biển cấm hoặc dẫn đường qua lộ trình khác. Hệ thống hoạt động tốt hơn khi có đông người sử dụng.\nTác giả cho biết đã xác nhận 2,8 triệu đoạn đường ở toàn Việt Nam có đầy đủ dữ liệu 3D (từ độ cao tới chiều rộng của một con hẻm) xây dựng từ ảnh vệ tinh qua AI server, và AI đang xây bản đồ Thổ Nhĩ Kỳ. Tiếp tục nghiên cứu thuật toán dẫn đường cho ô tô, xe tải tránh đi vào đường hẹp hoặc quá tải.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4627296607483187/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Bánh khoai sọ nhân đỗ thịt, bánh khúc — chiều nay trong chợ khu",
+    "summary": "Một sạp trong chợ khu có bánh khoai sọ nhân đỗ thịt nóng: 110k/4 chiếc, 60k/2 chiếc; bánh khúc 75k/hộp 6 chiếc. Bánh làm từ khoai sọ không độn bột, nhân thịt béo hạt tiêu; bảo quản ngăn mát 3 ngày, ngăn đông thoải mái, khi ăn quay nóng lại.",
+    "content": "Một sạp trong chợ khu có bánh khoai sọ nhân đỗ thịt nóng, chiều nay về dư 20 bánh: 110k/4 chiếc, 60k/2 chiếc; bánh khúc 75k/hộp 6 chiếc.\nBánh được làm từ khoai sọ không độn bột, ăn thơm đỗ bở bùi, nhân thịt béo hạt tiêu ngậy mềm nhừ hòa quyện cùng vỏ bánh khoai sọ, ăn không bị ngán. Bảo quản ngăn mát 3 ngày, ngăn đông thoải mái, lúc ăn quay nóng là được.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4792362197667457/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Nộm bò khô phố cổ, chả phố cổ — chia đơn trong chợ khu",
+    "summary": "Một sạp trong chợ khu chia đơn nộm bò khô phố cổ: 58k/suất; chả phố cổ 120k/0,5kg. Nộm gồm thịt bò khô, tỏi phi, đu đủ, lá lách, gân bò, lạc rang, rau kinh giới với nước nộm công thức gia truyền; đóng gói tiện lợi.",
+    "content": "Một sạp trong chợ khu chia đơn nộm bò khô phố cổ, còn dư vài túi: 58k/suất; chả phố cổ 120k/0,5kg.\nThành phần nộm gồm: thịt bò khô, tỏi phi, đu đủ, lá lách, gân bò, lạc rang, rau kinh giới kết hợp với nước nộm công thức gia truyền. Đóng gói tiện lợi.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4792362077667469/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Menu đồ Huế sẵn trong chợ khu: bánh lọc, chả cua, nem lụi, cá nục kho tiêu",
+    "summary": "Một sạp trong chợ khu có menu đồ Huế sẵn: bánh lọc, bánh ít mặn — ngọt kèm nước chấm; chả cua Huế 115k/500g; nem lụi Huế bọc sả 120k/500g; cá nục Huế kho tiêu 95k/500g. Bảo quản ngăn đông, khi ăn hấp lại và dùng nóng.",
+    "content": "Một sạp trong chợ khu có menu đồ Huế sẵn: bánh lọc, bánh ít mặn — ngọt đều kèm nước chấm; chả cua Huế 115k/500g; nem lụi Huế bọc sả 120k/500g; cá nục Huế kho tiêu 95k/500g.\nBảo quản ngăn đông, khi ăn hấp lại và dùng nóng.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4792356911001319/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Lẩu ếch làm mới theo đơn trong chợ khu, set từ 250k",
+    "summary": "Một sạp trong chợ khu nhận đặt lẩu ếch, set 250k/350k/420k/500k, làm mới khi đặt; nước lẩu thanh, hợp thả bò, gà, hải sản. Có món ếch lẻ: ếch xào măng, ếch chua ngọt, ếch chiên lá lốt; set lẻ từ 170k.",
+    "content": "Một sạp trong chợ khu nhận đặt lẩu ếch, set 250k/350k/420k/500k, làm mới khi đặt; nước lẩu thanh, mix đồ thả lẩu bò, gà, hải sản đều hợp. Măng được luộc, ngâm chua ngọt và để ráo trong tủ mát, làm trong 2 ngày.\nCó món ếch lẻ: ếch xào măng, ếch chua ngọt, ếch chiên lá lốt; set lẻ từ 170k. Ếch chỉ làm trong ngày, hết lẩu lúc 8h tối.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4792355707668106/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Sầu riêng Ri6 miền Tây: cơm sầu VIP 179k/nửa kg",
+    "summary": "Một sạp trong chợ khu có sầu riêng Ri6 miền Tây: cơm sầu VIP 179k/nửa kg, 349k/1kg; cam kết dăm sượng bù 1:1.",
+    "content": "Một sạp trong chợ khu có sầu riêng Ri6 miền Tây: cơm mềm, béo, ngậy, ngọt.\nGiá cơm sầu VIP: 179k/nửa kg, 349k/1kg. Cam kết dăm sượng bù 1:1.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4792353667668310/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-24T17:30:00+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Lòng chín, dồi tiết, vịt nướng buổi chiều trong chợ khu",
+    "summary": "Một sạp trong chợ khu có lòng chín buổi chiều: hộp lòng đầy đủ 70k (dồi nhân tiết, lòng non, gan, cuống họng, lá mía kèm nước dùng); dồi tiết 55k/0,5kg; giò xào 95k/0,5kg; vịt nướng 125k/nửa con, 240k/1 con; gà nướng 140k/nửa con; ba chỉ quay giòn bì, cá diếc, chả cốm, chả mỡ, nầm lợn.",
+    "content": "Một sạp trong chợ khu có lòng chín buổi chiều: hộp lòng đầy đủ 70k gồm dồi nhân tiết, lòng non, gan, cuống họng, lá mía kèm nước dùng.\nGiá các món khác: dồi tiết 55k/0,5kg; giò xào 95k/0,5kg; vịt nướng 125k/nửa con, 240k/1 con; gà nướng 140k/nửa con, 270k/1 con; ba chỉ quay giòn bì 110k/300g; cá diếc 85k/niêu; cá trắm 115–130k/khúc; chạch 110k/niêu; nem bùi 55k/2 chiếc; cá nướng Tây Bắc 90k/con; chả cốm, chả mỡ phố cổ 100k/0,5kg, 190k/1kg; nầm lợn 135k/0,5kg, 260k/1kg.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4792352944335049/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-24T17:58:28+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3199,104 +3298,5 @@
     "url": "https://facebook.com/groups/aiartworksvn/permalink/4622799454599569/",
     "image": null,
     "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-21T20:28:33+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rượu cốm nhà làm cho mùa đông",
-    "summary": "Một sạp trong chợ khu có rượu cốm nhà làm: uống êm, thoang thoảng mùi cốm, hợp nhâm nhi cho ấm bụng mùa đông; có sẵn tại Hà Đông và gửi đi các tỉnh. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "content": "Một sạp trong chợ khu giới thiệu rượu cốm nhà làm cho mùa đông: tửu cốm uống êm, thoang thoảng mùi cốm, hợp làm tý tửu cho ấm bụng.\nHàng có sẵn tại Hà Đông và gửi đi tất cả các tỉnh.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787580411478969/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T20:25:39+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Xiên chiên 2.000 đồng và mì trộn, ship tới 3h sáng",
-    "summary": "Một quán trong khu bán xiên chiên 2.000 đồng và mì trộn, mở từ 6h chiều tới 3h sáng, ship tới 3h sáng; hóa đơn ăn tại quán trên 50.000 đồng được tặng 1 nước bất kỳ và free dưa góp. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "content": "Một quán trong khu bán xiên chiên 2.000 đồng và mì trộn, phục vụ từ 6h chiều tới 3h sáng, có bán tại quán và ship tới 3h sáng.\nĂn tại quán, hóa đơn trên 50.000 đồng (áp dụng với xiên chiên) được tặng 1 nước bất kỳ (trà chanh, trà tắc, nước me) và free dưa góp ăn kèm.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787577231479287/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T20:24:01+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cải bắp ta và su hào, ship tận cửa ngày mai",
-    "summary": "Một sạp trong chợ khu rao trước rau ship ngày mai: su hào 22.000 đồng/2 củ, cải bắp ta cây to 23.000 đồng/cây, 45.000 đồng/2 cây, ship tận cửa. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "content": "Một sạp trong chợ khu rao trước rau củ ship ngày mai, giao tận cửa: su hào 22.000 đồng/2 củ; cải bắp ta cây to 23.000 đồng/cây, 45.000 đồng/2 cây.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787575058146171/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T20:22:08+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh Khoai Mật Phomai 75.000 đồng/set cho bữa sáng và bữa xế",
-    "summary": "Một sạp trong chợ khu bán bánh Khoai Mật Phomai 75.000 đồng/set: khoai lang mật vàng dẻo thơm kết hợp phô mai tan chảy, cho vào nồi chiên không dầu 10 phút là có bữa sáng. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "content": "Một sạp trong chợ khu bán Bánh Khoai Mật Phomai, hợp cho bữa sáng và bữa xế, giá 75.000 đồng/set.\nBánh nhỏ với khoai lang mật vàng óng, dẻo thơm kết hợp phô mai béo ngậy tan chảy trong lòng bánh; cho vào nồi chiên không dầu 10 phút là có bữa sáng.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787571358146541/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T20:19:07+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Set yến tự chưng và yến công ty cho cuối tuần, có đóng set đi biếu",
-    "summary": "Một sạp trong chợ khu có set yến tự chưng nóng từ yến thô (55.000 đồng/hũ 8g, 80.000 đồng/hũ 11g), yến công ty Khánh Hòa nhiều vị, set đóng hộp biếu từ 220.000 đồng, gói tự chưng 370.000–500.000 đồng/10 gói. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "content": "Một sạp trong chợ khu giới thiệu set yến cho cuối tuần, vừa ăn vừa biếu: set yến hũ tự chưng nóng nguyên chất từ yến thô — 55.000 đồng/hũ (8g yến tươi), 80.000 đồng/hũ (11g yến tươi); yến công ty Khánh Hòa 11 vị, mix vị thoải mái cho người lớn và trẻ em — loại 39%: 10 hũ 300.000 đồng, set đóng hộp biếu 10 hũ 320.000 đồng, 8 hũ 260.000 đồng, 6 hũ 220.000 đồng; loại 68%: 10 hũ 400.000 đồng; có set giỏ 10–20 hũ.\nSet yến từng gói nhỏ tự chưng đủ nguyên liệu (10 gói): loại 1 nhiều sợi dài 500.000 đồng, loại 2 vụn ít sợi 370.000 đồng. Ngoài ra còn yến thô già nở, yến tinh và chân yến thô.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787564751480535/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T20:16:55+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Mực ống tươi giá rẻ 159.000 đồng/kg, mai có hàng",
-    "summary": "Một sạp trong chợ khu có mực ống tươi giá rẻ 159.000 đồng/kg, size tầm 25–27 con/kg, mực dày, xào ngon; hàng ít vì thuyền gần bờ đi về được ít, mực bị xước da nên giá rẻ. Thông tin liên hệ nằm trong bài gốc tại group.",
-    "content": "Một sạp trong chợ khu có mực ống tươi giá rẻ: tranh thủ trời lặng, thuyền gần bờ đi về được ít mực, mai có hàng.\nMực ống dân kéo lưới gần bờ, tươi, nhưng bị xước da nên giá rẻ: size tầm 25–27 con/kg, chỉ 159.000 đồng/kg. Mực dày, xào ngon.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787560634814280/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-21T04:07:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "SEC điều tra kế toán Nvidia, cổ phiếu lao dốc 14% trong một phiên",
-    "summary": "Reuters đưa tin SEC đang xem xét các vấn đề kế toán tại Nvidia; cổ phiếu giảm 14% trong một phiên, bốc hơi khoảng 491 tỷ USD vốn hóa — tuần giảm thứ 7 liên tiếp, tệ nhất kể từ 2008.",
-    "content": "Reuters đưa tin chiều thứ Sáu 20/11 (giờ Mỹ) rằng nhân viên thực thi của Ủy ban Chứng khoán Mỹ (SEC) đang xem xét các vấn đề kế toán tiềm ẩn tại Nvidia. Tờ Wall Street Journal trước đó (thứ Ba) đã đưa tin về cuộc điều tra nhưng chưa rõ trọng tâm.\nCổ phiếu NVDA giảm 14,01% trong phiên, đóng cửa ở 125,53 USD, bốc hơi khoảng 491 tỷ USD vốn hóa chỉ trong một ngày. Đây là tuần giảm thứ 7 liên tiếp của cổ phiếu, tệ nhất kể từ 2008, và giá đã mất khoảng 48% so với đỉnh kỷ lục ngày 6/10 (tương đương khoảng 2,7 nghìn tỷ USD vốn hóa).\nDiễn biến này nối tiếp chuỗi khủng hoảng của Nvidia: CEO Jensen Huang từ chức ngày 11-12/11, Tổng chưởng lý California gửi trát điều tra ngày 19/11, và Bộ Tư pháp Mỹ đang xem xét thương vụ mua Hugging Face trị giá 12,9 tỷ USD. Reuters lưu ý rằng một cuộc điều tra chưa phải bằng chứng sai phạm, và nhiều cuộc điều tra kết thúc mà không có hành động thực thi.",
-    "url": "https://www.fool.com/investing/2026/11/20/nvidia-stock-plunge-wipes-out-nearly-usd500-billion-in-one-day-as-sec-reportedly-probes-its-accounting/",
-    "image": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F5129cc85e67acf9267c99f604e89668cf96e455d-1290x860.jpg&w=1200&op=resize",
-    "source": "Motley Fool / Reuters"
-  },
-  {
-    "ts": "2026-11-21T22:00:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "RIKEN xác nhận vụ xâm nhập siêu máy tính Fugaku: 430 khóa xác thực bị đánh cắp",
-    "summary": "Báo cáo thứ hai của RIKEN xác nhận kẻ xâm nhập đã lấy đi 430 thông tin xác thực của người dùng Fugaku, trong đó 233 khóa SSH không đặt passphrase; thông tin cá nhân của 4.222 người dùng bị lộ.",
-    "content": "Viện RIKEN (Nhật Bản) công bố báo cáo điều tra thứ hai ngày 20/11 về vụ xâm nhập siêu máy tính Fugaku, xác nhận kẻ xâm nhập đã lấy đi 430 thông tin xác thực từ thư mục cá nhân của người dùng — gồm khóa riêng SSH dùng để kết nối tới các siêu máy tính và dịch vụ đám mây bên ngoài — trong đó 233 khóa không đặt passphrase.\nThông tin cá nhân của 4.222 người dùng Fugaku (tên, email, ID, địa chỉ, đơn vị, số điện thoại) cũng bị xác nhận đã lộ. Kẻ tấn công xâm nhập qua một trang web công khai hiển thị trạng thái vận hành của Fugaku trong các ngày 10–13/11 và đã thử dùng một số khóa để kết nối ra hệ thống bên ngoài.\nFugaku ngừng hoạt động từ 14/11 và chưa có ngày khởi động lại. RIKEN đang liên hệ từng người dùng để thu hồi và cấp lại khóa tại từng dịch vụ đích, đồng thời cảnh báo về email giả mạo mang tên Fugaku/RIKEN.",
-    "url": "https://www.abijita.com/fugaku-breach-430-ssh-keys/",
-    "image": "https://www.abijita.com/wp-content/uploads/2026/11/fugaku-supercomputer-breach.jpg",
-    "source": "Abijita / RIKEN"
-  },
-  {
-    "ts": "2026-11-21T21:24:08+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh trôi tàu, bánh trôi trắng và bánh dày nhỏ nhà làm",
-    "summary": "Một sạp trong chợ khu có bánh trôi tàu 15.000 đồng/cốc (3 viên) và bánh trôi trắng 13.000 đồng/cốc, giao từ 2 cốc trở lên hoặc kèm bánh khác; bánh dày nhỏ mặn hoặc ngọt 20.000 đồng/hộp 10 cái.",
-    "content": "Một sạp trong chợ khu nhận làm bánh trôi tàu và bánh trôi trắng nhà làm, giao ngày mai.\nBánh trôi tàu: 15.000 đồng/cốc (3 viên).\nBánh trôi trắng: 13.000 đồng/cốc.\nGiao từ 2 cốc trở lên hoặc kèm bánh khác.\nBánh dày nhỏ mặn hoặc ngọt: 20.000 đồng/hộp 10 cái.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4787684221468588/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
