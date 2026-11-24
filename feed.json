@@ -1,5 +1,82 @@
 [
  {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Amazon mua công nghệ tối ưu chip AI của Decart với giá khoảng 7,5 tỷ USD",
+  "summary": "Amazon mua công nghệ Decart Optimization Stack (DOS) kèm 3 nhà sáng lập và đội ngũ kỹ sư; Bloomberg đưa giá khoảng 7,5 tỷ USD. Thương vụ phục vụ kế hoạch bán chip Trainium ra thị trường, cạnh tranh trực tiếp với Nvidia.",
+  "content": "Amazon đã ký thỏa thuận mua công nghệ Decart Optimization Stack (DOS) — phần mềm giúp mô hình AI chạy hiệu quả hơn và dễ chuyển đổi giữa chip Nvidia, Amazon và Google — kèm 3 nhà sáng lập và đội ngũ nghiên cứu, kỹ sư của startup Israel này.\nBloomberg đưa giá thỏa thuận khoảng 7,5 tỷ USD; Amazon không công bố con số chính thức. Thương vụ vẫn chờ các điều kiện thông thường, trong đó có phê duyệt quản lý.\nMục tiêu của Amazon là bán chip AI tự thiết kế Trainium ra thị trường, cạnh tranh trực tiếp với Nvidia. Công nghệ của Decart có thể giúp khách hàng chạy workload trên chip Amazon dễ dàng hơn thay vì dùng chip Nvidia như lâu nay.",
+  "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+  "image": "https://techcrunch.com/wp-content/uploads/2024/12/Decart-Founders-Dean-Leitersdorf-CEO-and-Moshe-Shalev-CPO.jpg?w=1024",
+  "source": "Reuters"
+ },
+ {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Z.ai ra mắt GLM-5.4 — mô hình Loop Transformer 750B tham số",
+  "summary": "Flagship đầu tiên của Z.ai dùng kiến trúc Loop Transformer: chạy 28 tầng hai lần mỗi lượt suy luận; hãng nói trí tuệ tương đương mô hình 2–3 nghìn tỷ tham số. Hiện chỉ dùng qua gói đăng ký, chưa có bảng benchmark công bố.",
+  "content": "Z.ai (Zhipu AI) đã ra mắt GLM-5.4, mẫu flagship đầu tiên của hãng dùng kiến trúc Loop Transformer. Mô hình khoảng 750 tỷ tham số, chạy 28 tầng của mô hình nền GLM-5 hai lần trong mỗi lượt suy luận để tăng độ sâu tính toán mà không thêm tham số.\nTheo Z.ai, trí tuệ của GLM-5.4 tương đương các mô hình 2–3 nghìn tỷ tham số. Mô hình thêm khả năng hiểu ảnh và cửa sổ ngữ cảnh 1 triệu token, hướng tới 'Generalized Coding' — dùng code làm nền cho nhiều tác vụ ngoài phần mềm.\nHiện GLM-5.4 chỉ dùng được qua gói GLM Coding Plan, ZCode và Z.ai Chat. API và trọng số mở vẫn chờ đánh giá an toàn; hãng chưa công bố bảng benchmark cho bản flagship này nên các con số vẫn là tuyên bố của nhà cung cấp.",
+  "url": "https://venturebeat.com/technology/z-ais-glm-5-4-aims-to-match-models-up-to-four-times-its-size-by-running-28-layers-twice",
+  "image": null,
+  "source": "VentureBeat"
+ },
+ {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Mỹ đưa Megaspeed vào danh sách Entity List",
+  "summary": "Bộ Thương mại Mỹ đưa Megaspeed International (Singapore) và 6 công ty Đông Nam Á khác vào danh sách kiểm soát xuất khẩu, chỉ vài giờ sau khi Jensen Huang được phục chức CEO NVIDIA.",
+  "content": "Bộ Thương mại Mỹ đã đưa Megaspeed International (Singapore) và 6 công ty Đông Nam Á khác vào danh sách Entity List — các thực thể muốn mua công nghệ tiên tiến của Mỹ, kể cả chip AI của Nvidia, phải xin giấy phép xuất khẩu.\nQuyết định được công bố chỉ vài giờ sau khi Jensen Huang được phục chức CEO NVIDIA. Megaspeed bị cáo buộc tuồn chip Nvidia sang Trung Quốc; cựu lãnh đạo Alice Huang bị quan chức Mỹ nghi làm việc cho tình báo Trung Quốc.\nDanh sách còn có một đơn vị của Alibaba tại Singapore; Alibaba phủ nhận từng tuồn chip bị hạn chế. Động thái này diễn ra trong lúc chính quyền Trump vẫn cho phép Nvidia bán một số chip sang Trung Quốc trực tiếp — một điểm bị giới phân tích cho là thiếu nhất quán.",
+  "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list?traffic_source=rss",
+  "image": null,
+  "source": "Al Jazeera"
+ },
+ {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "CEO Anthropic từng gợi ý game nhập vai xoa dịu bất ổn do AI gây thất nghiệp",
+  "summary": "Hồ sơ WSJ dẫn tin nhắn Slack thời Dario Amodei còn ở OpenAI: game nhập vai sâu có thể giúp giảm căng thẳng chính trị khi AI gây thất nghiệp hàng loạt. Đây chỉ là ý tưởng trao đổi nội bộ, không phải kế hoạch.",
+  "content": "Một hồ sơ của Wall Street Journal về anh em nhà Amodei dẫn các tin nhắn Slack từ thời Dario Amodei còn làm việc ở OpenAI: ông gợi ý rằng game nhập vai sâu (immersive video games) có thể giúp giảm căng thẳng chính trị khi AI gây thất nghiệp hàng loạt.\nĐây chỉ là một ý tưởng trong trao đổi nội bộ, không phải kế hoạch hay chính sách chính thức — và không có bằng chứng nó từng được triển khai ở OpenAI hay Anthropic.\nBối cảnh: Amodei nhiều lần cảnh báo AI có thể xóa sổ tới một nửa việc làm cổ trắng cấp đầu vào trong 1–5 năm, đẩy thất nghiệp Mỹ lên 10–20%. Hồ sơ được công bố ít ngày sau đợt IPO của Anthropic.",
+  "url": "https://www.tweaktown.com/news/114850/anthropic-boss-dario-amodei-reportedly-said-video-games-could-be-the-solution-to-ai-job-losses/index.html",
+  "image": null,
+  "source": "TweakTown"
+ },
+ {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "Bảo mật",
+  "title": "Lỗ hổng Bluetooth nghiêm trọng trên bộ điều khiển phanh rơ-moóc Elecbrakes",
+  "summary": "CVE-2026-96805, điểm 9.6: kẻ ở gần có thể bóp, chỉnh hoặc thả phanh rơ-moóc khi xe đang chạy mà không cần ghép nối hay PIN. CISA công bố ngày 19/11; bản vá đã có, chủ xe phải tự cập nhật qua app.",
+  "content": "Một lỗ hổng Bluetooth nghiêm trọng trong bộ điều khiển phanh rơ-moóc Elecbrakes có thể cho phép kẻ ở gần bóp, chỉnh hoặc thả phanh của rơ-moóc trong lúc xe đang được kéo — mà không cần ghép nối, mã PIN hay bất kỳ thao tác nào của tài xế.\nLỗ hổng chính, CVE-2026-96805, được chấm 9.6/10. CISA công bố ngày 19/11 cùng hai lỗ hổng liên quan: tấn công phát lại (CVE-2026-125273) và kênh cập nhật firmware không dây (CVE-2026-124281).\nBản vá firmware đã có cho EB2 (3.0.4.4.3 trở lên) và VM1 (1.3.4.2.1 trở lên), nhưng chủ xe phải tự khởi động cập nhật trong app Elecbrakes. Lỗ hổng được hai nhà nghiên cứu của Element Digital phát hiện sau khi remote trên xe của một người vô tình kết nối được với rơ-moóc của người khác mà không cần ghép nối.",
+  "url": "https://cybersecuritynews.com/critical-bluetooth-flaw/",
+  "image": null,
+  "source": "Cyber Security News"
+ },
+ {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "Game",
+  "title": "GTA 6 chạy tới 60 FPS trên Xbox Series X nhờ lỗi Quick Resume",
+  "summary": "Digital Foundry xác nhận lỗi Quick Resume gỡ bỏ giới hạn 30 FPS trên Xbox Series X/S: cảnh nhẹ đạt 60 FPS, đường cao tốc 40–45 FPS, trung bình khoảng 36 FPS; tốc độ game gắn với FPS nên hoạt ảnh chạy nhanh gấp đôi.",
+  "content": "Người chơi phát hiện một lỗi của tính năng Quick Resume trên Xbox có thể gỡ bỏ giới hạn 30 FPS của GTA 6. Digital Foundry đã kiểm tra và xác nhận giới hạn khung hình thực sự biến mất khi kích hoạt đúng cách.\nHiệu năng thực tế: cảnh nhẹ như bay trên trời đạt 60 FPS, đường cao tốc khoảng 40–45 FPS, khu đông người chỉ nhỉnh hơn 30 FPS; trung bình khoảng 36 FPS trong giờ chơi đầu tiên trên Series X.\nTác dụng phụ đáng kể: tốc độ mô phỏng của game gắn với FPS, nên hoạt ảnh nhân vật có thể chạy nhanh gấp đôi và đôi khi địch đứng im, kẹt nhiệm vụ. Lỗi nằm ở Quick Resume nên có thể cần Microsoft vá thay vì Rockstar; cả hai bên đều chưa lên tiếng.",
+  "url": "https://www.digitalfoundry.net/features/gta-6s-unlocked-frame-rate-glitch-tested-is-there-a-case-for-40fps",
+  "image": null,
+  "source": "Digital Foundry"
+ },
+ {
+  "ts": "2026-11-24T16:00:00+07:00",
+  "flow": "internet",
+  "category": "Game",
+  "title": "Giám đốc sáng tạo Cyberpunk 2 đùa \"hủy game\" sau khi chơi GTA 6",
+  "summary": "Igor Sarzyński gọi GTA 6 là 'thành tựu nghệ thuật vĩ đại nhất lịch sử' và đùa rằng 'Cyberpunk 2 is cancelled'. Game vẫn đang phát triển, ở giai đoạn tiền sản xuất với Unreal Engine 5.",
+  "content": "Giám đốc sáng tạo Cyberpunk 2, Igor Sarzyński, viết trên mạng xã hội rằng ông mắc 'GTA 6-induced-open-world-game-dev-depression' — chứng trầm cảm của nhà phát triển game thế giới mở sau khi chơi GTA 6.\nÔng gọi GTA 6 là 'thành tựu nghệ thuật vĩ đại nhất lịch sử', ca ngợi quy mô, mật độ, độ liền mạch và sự chu đáo của thế giới game, rồi đùa rằng 'Cyberpunk 2 is cancelled, imma go sweep autumn leaves in my backyard now'.\nDĩ nhiên đây chỉ là đùa: Cyberpunk 2 vẫn đang phát triển, đã vào giai đoạn tiền sản xuất từ tháng 5/2025 với Unreal Engine 5. Sarzyński nói thêm rằng đội của ông đang làm thứ của riêng mình với 'hương vị khác biệt', và GTA 6 'mở rộng những gì có thể' cho cả thể loại.",
+  "url": "https://www.gamespot.com/articles/cyberpunk-2-is-canceled-director-jokes-after-gta-6-raises-the-bar/",
+  "image": null,
+  "source": "GameSpot"
+ },
+ {
   "ts": "2026-11-24T11:30:00+07:00",
   "flow": "facebook",
   "category": "Bảng tin cư dân",
@@ -3221,82 +3298,5 @@
   "url": "https://aiweekly.co/alerts/thinking-machines-ships-variable-loop-inkling-research-model",
   "image": null,
   "source": "Thinking Machines Lab"
- },
- {
-  "ts": "2026-11-21T19:00:00+07:00",
-  "flow": "internet",
-  "category": "Bảo mật",
-  "title": "Cisco Expressway CVE-2026-76466 đã bị khai thác thực tế: tin tặc chiếm quyền root 4 thiết bị của một tổ chức Nga",
-  "summary": "F6 điều tra vụ xâm nhập: kẻ tấn công chiếm quyền root 2 thiết bị Expressway hướng internet rồi lan sang 2 node nội bộ, quét SMB/SQL Server/WinRM/GitLab tìm thông tin đăng nhập. Hạn vá của CISA là 23/11.",
-  "content": "Chi tiết mới về lỗ hổng đã vào danh sách KEV của CISA (hạn vá 23/11): hãng F6 điều tra vụ xâm nhập một tổ chức Nga, trong đó kẻ tấn công khai thác CVE-2026-76466 (hard-coded credentials, CVSS 9,8) để chiếm quyền root trên 2 thiết bị Expressway hướng internet, rồi lan sang 2 node trong mạng nội bộ và chạy script Python quét SMB, SQL Server, WinRM và GitLab để tìm thông tin đăng nhập.\nCisco đã vá từ 21/10 (bản X15.5.20); các tổ chức còn chạy X15.5.3 trở xuống cần cập nhật và rà soát dấu hiệu xâm nhập.",
-  "url": "http://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-  "image": null,
-  "source": "The Hacker News"
- },
- {
-  "ts": "2026-11-21T19:00:00+07:00",
-  "flow": "internet",
-  "category": "Khoa học",
-  "title": "MIT: mô hình AI cho hệ hỗn loạn giờ giữ đúng giới hạn vật lý",
-  "summary": "Nhóm MIT LIDS công bố trên PNAS phương pháp khiến mô hình học máy mô phỏng hệ hỗn loạn không trôi ra khỏi các giá trị vật lý có thể; ứng dụng thời tiết, khí hậu, nhiễu loạn.",
-  "content": "Nhóm MIT LIDS (Tang, Azizan, Sapsis) công bố trên PNAS phương pháp khiến mô hình học máy mô phỏng hệ hỗn loạn (thời tiết, khí hậu, nhiễu loạn chất lưu) không còn trôi ra khỏi các giá trị vật lý có thể: mô hình đồng thời học một hàm dạng năng lượng và một biên giới, rồi dùng lớp chiếu cưỡng chế tiêu tán năng lượng như một ràng buộc cứng.\nNhờ đó quỹ đạo dự báo được bảo đảm luôn bị chặn trong thời gian dài tùy ý mà vẫn giữ được tính hỗn loạn bên trong biên. Đây là công trình đầu tiên đưa ra bảo đảm chính thức dạng này cho mô hình hỗn loạn; mã nguồn đã mở trên GitHub.",
-  "url": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120",
-  "image": null,
-  "source": "MIT News"
- },
- {
-  "ts": "2026-11-21T19:00:00+07:00",
-  "flow": "internet",
-  "category": "Khoa học",
-  "title": "European XFEL lập kỷ lục tia X 0,04 nm — bước sóng ngắn hơn khoảng cách giữa các nguyên tử",
-  "summary": "Xung laser tia X 30 keV, 800 xung/giây, truyền qua beamline ~1 km vẫn giữ gần 60% cường độ — mở đường quan sát vật liệu dày đặc dưới áp suất cực cao.",
-  "content": "Nhóm DESY và European XFEL công bố trên Optica (20/11) việc tạo và truyền tải ổn định xung laser tia X bước sóng khoảng 0,04 nm (năng lượng photon 30 keV), phá kỷ lục của chính cơ sở này: 800 xung mỗi giây, truyền qua beamline dài khoảng 1 km và vẫn giữ gần 60% cường độ sau hệ quang học.\nBước sóng ngắn hơn khoảng cách điển hình giữa các nguyên tử trong vật rắn, mở đường quan sát vật liệu dày đặc và biến đổi nhanh dưới áp suất cực cao.",
-  "url": "https://phys.org/news/2026-11-ray-laser-reliably-generates-wavelengths.html",
-  "image": null,
-  "source": "Phys.org"
- },
- {
-  "ts": "2026-11-21T18:00:38+07:00",
-  "flow": "internet",
-  "category": "Video",
-  "title": "XCreepy: ANALOG HORROR - Nhà Ta | Bí Ẩn Đằng Sau Một Trang Web Kỳ Lạ",
-  "summary": "Video analog horror mới nhất của XCreepy, đăng chiều nay lúc 18:00 — bí ẩn đằng sau một trang web kỳ lạ.",
-  "content": "Video analog horror mới nhất của XCreepy, đăng chiều nay lúc 18:00 — bí ẩn đằng sau một trang web kỳ lạ.",
-  "url": "https://www.youtube.com/watch?v=FGJjTTxORdU",
-  "image": "https://i.ytimg.com/vi/FGJjTTxORdU/hqdefault.jpg",
-  "source": "XCreepy"
- },
- {
-  "ts": "2026-11-21T18:53:27+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Chuối sấy mè gừng giòn tan 70.000 đồng/túi",
-  "summary": "Một sạp trong chợ khu bán chuối sấy mè gừng giòn tan, làm từ chuối tươi ướp mè và gừng, sấy giòn, hàng có sẵn; giá 70.000 đồng/túi. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một sạp trong chợ khu bán chuối sấy mè gừng giòn tan, dành cho người thích ăn vặt.\nChuối tươi ướp mè, gừng rồi sấy giòn; vị chuối hòa quyện với mùi thơm của mè và gừng, ăn không ngán.\nGiá: 70.000 đồng/túi. Hàng có sẵn.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4787417761495234/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-21T18:51:33+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Cho thuê căn hộ 2 phòng ngủ đầy đủ nội thất 8,5 triệu/tháng",
-  "summary": "Một cư dân cho thuê căn hộ 2 phòng ngủ, 2 vệ sinh, đầy đủ nội thất, chỉ cần xách vali về ở; hợp đồng 1 năm, cọc 1 tháng, đóng tiền 3 tháng một lần, giá 8,5 triệu đồng/tháng. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một cư dân cho thuê căn hộ 2 phòng ngủ, 2 vệ sinh, đầy đủ nội thất, chỉ cần xách vali về ở.\nHợp đồng 1 năm, cọc 1 tháng, đóng tiền 3 tháng một lần.\nGiá thuê: 8,5 triệu đồng/tháng.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4787415834828760/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-21T18:47:47+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Tìm thêm một bạn học nhóm tiếng Anh lớp 9",
-  "summary": "Một phụ huynh trong khu tìm thêm 1 bạn học cùng nhóm tiếng Anh lớp 9 cho con; lớp học thứ 4 và thứ 7, 19h30–21h, nhóm 5 bạn, học phí 100.000 đồng/buổi. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một phụ huynh trong khu tìm thêm 1 bạn học cùng nhóm tiếng Anh lớp 9 cho con.\nLớp học thứ 4 và thứ 7, từ 19h30 đến 21h; cô giáo kèm nhóm 5 bạn, hiện còn thiếu 1 bạn.\nHọc phí: 100.000 đồng/buổi.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4787412024829141/",
-  "image": null,
-  "source": "Chợ cư dân"
  }
 ]
