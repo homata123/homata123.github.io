@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-25T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Trung Quốc phóng thành công Thần Châu 24 — phi hành gia Pakistan đầu tiên lên trạm Thiên Cung",
+    "summary": "Tên lửa Trường Chinh 2F đưa tàu Thần Châu 24 cùng 3 phi hành gia lên trạm Thiên Cung sáng nay; phi hành gia Pakistan Muhammad Zeeshan Ali là người nước ngoài đầu tiên bay trên sứ mệnh có người lái của Trung Quốc.",
+    "content": "Tên lửa Trường Chinh 2F rời bệ phóng Tửu Tuyền lúc 8:18 sáng nay (giờ Bắc Kinh), đưa tàu Thần Châu 24 cùng 3 phi hành gia — chỉ huy Đường Hồng Ba, kỹ sư bay Ngô Dịch và chuyên gia tải trọng Pakistan Muhammad Zeeshan Ali — lên trạm Thiên Cung.\nĐây là lần đầu tiên một phi hành gia nước ngoài bay trên sứ mệnh có người lái của Trung Quốc, đồng thời là cột mốc bay vũ trụ có người lái đầu tiên của Pakistan.\nĐoàn sẽ thực hiện khoảng 90 thí nghiệm khoa học trong các lĩnh vực sinh học vũ trụ, y học vũ trụ, vật lý vi trọng lực và công nghệ mới; Ali ở lại trạm khoảng một tuần rồi về Trái Đất bằng tàu Thần Châu 23 đang đậu sẵn.",
+    "url": "https://news.cgtn.com/news/2026-11-25/China-successfully-launches-Shenzhou-24-crewed-spacecraft-1SlLgRH7ZoA/p.html",
+    "image": "https://news.cgtn.com/news/2026-11-25/China-successfully-launches-Shenzhou-24-crewed-spacecraft-1SlLgRH7ZoA/img/4afe3d0405ce497f85fd1ad86c81b78a/4afe3d0405ce497f85fd1ad86c81b78a.gif",
+    "source": "CGTN"
+  },
+  {
+    "ts": "2026-11-25T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Quantinuum lập kỷ lục sửa lỗi lượng tử: chỉ 5 lỗi trên 1 triệu vòng kiểm tra",
+    "summary": "Bộ xử lý Helios 98 qubit đạt độ trung thực bộ nhớ logic 99,9995% — kỷ lục mới; mỗi lần tăng khoảng cách mã sửa lỗi giảm tỷ lệ lỗi trung bình 12 lần, vượt kỷ lục siêu dẫn của chip Willow (Google) hơn 100 lần.",
+    "content": "Bộ xử lý Helios 98 qubit của Quantinuum đạt độ trung thực bộ nhớ logic 99,9995% — tương đương 5 lỗi không sửa được trên mỗi triệu vòng kiểm tra sửa lỗi, kỷ lục mới của ngành.\nMỗi lần tăng khoảng cách mã sửa lỗi (từ 3 lên 5 rồi 7) giảm tỷ lệ lỗi trung bình 12 lần; ở khoảng cách 7, tỷ lệ lỗi chỉ còn 0,0005% mỗi chu kỳ, cải thiện 1.638 lần so với kỷ lục mã màu trước đó.\nKết quả vượt kỷ lục siêu dẫn của chip Willow (Google) — 772 lỗi không sửa được trên mỗi triệu vòng — hơn 100 lần, đưa máy tính lượng tử chịu lỗi tới gần ngưỡng \"megaquop\" (một triệu phép toán không lỗi).\nLưu ý: nghiên cứu vẫn là preprint (đăng arXiv 16/10, hãng công bố 19/10) và mới được báo chí đưa lại ngày 24/11; chưa qua bình duyệt độc lập.",
+    "url": "https://www.quantinuum.com/blog/quantinuum-closes-in-on-one-million-error-free-operations",
+    "image": "https://cdn.prod.website-files.com/669960f53cd73aedb80c8f0e/6ad292abdd000f4c4067a1d6_Distance-Scaling-Blog-MP.png",
+    "source": "Quantinuum"
+  },
+  {
+    "ts": "2026-11-25T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Dawn of War IV tung trailer Commander Edition — hé lộ Vashtorr the Arkifane trong DLC Aftermath",
+    "summary": "Trailer bản Commander Edition hé lộ đôi mắt máy vàng ở cuối — cộng đồng nhận định là Vashtorr the Arkifane; DLC \"Aftermath\" (hè 2027) thêm một phe chơi được mới cùng chiến dịch tiếp nối cuộc chiến giành Kronus.",
+    "content": "Trailer mới của bản Commander Edition (Warhammer 40,000: Dawn of War IV) hé lộ ở những giây cuối một đôi mắt máy phát sáng vàng — cộng đồng nhận định gần như chắc chắn là Vashtorr the Arkifane, phản diện Chaos được yêu thích từ chiến dịch Arks of Omen.\nDLC \"Aftermath\" (hè 2027) sẽ thêm một phe chơi được hoàn toàn mới cùng chiến dịch tiếp nối cuộc chiến giành Kronus; bản mở rộng đầu tiên đưa Blood Ravens trở lại Aurelia vào mùa xuân 2027.\nGame ra mắt 3/12 trên PC (Steam), bản Commander Edition mở sớm từ 30/11 kèm nhạc nền số và Year 1 Expansion.",
+    "url": "https://www.g2a.com/news/latest/dawn-of-war-ivs-commander-edition-trailer-reveals-a-new-faction/",
+    "image": null,
+    "source": "G2A News"
+  },
+  {
+    "ts": "2026-11-25T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "MMO võ hiệp u ám Cheonma: The Avengers công bố hôm nay với trailer CG đầu tiên",
+    "summary": "Rays Network giới thiệu Cheonma: The Avengers — MMO võ hiệp u ám — ngày 25/11, kèm teaser site và trailer CG đầu tiên; cốt truyện báo thù trong giang hồ đầy áp bức và phản bội.",
+    "content": "Rays Network chính thức giới thiệu Cheonma: The Avengers — MMO võ hiệp u ám (dark wuxia) — vào hôm nay 25/11, kèm teaser site và trailer CG đầu tiên phô diễn thế giới game.\nCốt truyện xoay quanh những con người mất tất cả vì xuất thân, môn phái và luật lệ giang hồ, trở lại dưới danh hiệu \"Thiên Ma\" để báo thù và giành lại cuộc sống.\nTeaser site mời người chơi chọn từ khóa cảm xúc (áp lực công việc, phản bội...) để gửi thông điệp; nhà phát hành sẽ lần lượt hé lộ thế giới, gameplay và mở đăng ký trước.",
+    "url": "https://www.invenglobal.com/articles/29089/cheonma-the-avengers-unveils-teaser-site-and-first-cg-trailer",
+    "image": "https://static.invenglobal.com/upload/image/2026/11/25/i1795577706706379.png",
+    "source": "Inven Global"
+  },
+  {
+    "ts": "2026-11-25T11:30:21+07:00",
+    "flow": "internet",
+    "category": "Video",
+    "title": "haitenpasta — Khủng Long Trong Analog Horror Này Đáng Sợ Hơn Tôi Tưởng",
+    "summary": "Video mới của haitenpasta, đăng 11:30 hôm nay: khủng long trong analog horror còn đáng sợ hơn tưởng tượng.",
+    "content": "Video mới của kênh haitenpasta, đăng 11:30 hôm nay (25/11): \"Khủng Long Trong Analog Horror Này Đáng Sợ Hơn Tôi Tưởng\".",
+    "url": "https://www.youtube.com/watch?v=lEjEYtAYZPA",
+    "image": "https://i.ytimg.com/vi/lEjEYtAYZPA/hqdefault.jpg",
+    "source": "haitenpasta"
+  },
+  {
     "ts": "2026-11-25T11:32:26+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3241,61 +3296,6 @@
     "summary": "Một sạp trong chợ khu nhận đặt đồ ăn sáng cho sáng thứ 2 (23/11), ship sớm trước 6h: bánh chưng vuông 40k/cái, giò lụa 35k/2 lạng, xôi cốm dừa 30k/đĩa, bánh cuốn nóng 58k/kg, cùng nhiều loại bánh mỳ, bánh rán, xôi và bánh giò.",
     "content": "Một sạp trong chợ khu nhận đặt đồ ăn sáng cho sáng thứ 2 (23/11), ship sớm trước 6h, ship từ 2 cái hoặc kèm đồ khác.\nBánh chưng vuông 40k/cái (loại nhỏ 30k/2 cái); giò lụa 35k/2 lạng; chả thịt 15k/lạng, chả quế 17k/lạng; bánh giò nóng 13k/cái.\nXôi cốm dừa 30k/đĩa; xôi xéo, xôi lạc, xôi ngô 25k/2 gói; xôi gấc, xôi cốm dừa 30k/2 gói; xôi khúc 30k/2 cái; xôi chè kèm xôi vò 14k/hộp; sắn hấp cốt dừa 20k/hộp; ngô bung đỗ đen 25k/2 hộp.\nBánh cuốn nóng nhân thịt mộc nhĩ 58k/kg (30k/0,5kg); bánh cuốn trắng 43k/kg; bánh giầy kẹp giò 25k/2 cặp; bánh nếp mặn/ngọt 20k/2 cái; bánh đúc lạc 35k/kg; bánh da lợn 17k/hộp; bánh trôi 11k/hộp.\nBánh mỳ bơ sốt mật ong mini 37k/10 cái kèm sốt chấm; bánh mỳ kẹp hamburger 35k/2 cái; bánh mỳ bơ thành cổ 30k/2 cái; bánh rán phố cổ mini 25k/hộp 10 cái; bánh rán đường/vừng 24k/hộp 6 cái; bánh mỳ chuột đặc ruột 18k/5 cái; sữa đặc 6k/hộp. Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4789518531285157/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:46:19+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Menu bữa tối nhà làm: gà luộc, thịt kho, cánh gà sốt",
-    "summary": "Một bếp nhà làm trong khu còn menu bữa tối: gà đồi luộc sẵn, thịt chưng mắm tép, thịt kho dừa, ba chỉ rang cháy cạnh, thịt quay giòn bì, cùng các món cánh gà sốt 99–115k/hộp và món canh, măng tiết, bí nấu xương.",
-    "content": "Một bếp nhà làm trong khu còn menu bữa tối, ship trong khu.\nGà đồi luộc sẵn (kèm lá chanh, quất, ớt); thịt chưng mắm tép; thịt kho dừa; ba chỉ rang cháy cạnh; ba chỉ xào cà; thịt quay giòn bì; thịt quay thái cuốn; lòng xào dưa; cuống tim xào dưa.\nCánh gà rang muối 99k/hộp; cánh khúc giữa chiên mắm 115k/hộp; cánh gà sốt phô mai 99k/hộp.\nCanh tiết; măng tiết 40k; bí xanh nấu xương 50k; củ cải chua ngọt hộp nhỏ 15k, hộp to 45k (ship cùng các món khác). Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789502647953412/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:58:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rau củ buổi tối: cải bẹ, sắn nếp, khoai lang, trứng gà ta",
-    "summary": "Một sạp trong chợ khu còn nhiều rau củ buổi tối: cải bẹ muối dưa 25k/2kg, sắn nếp 35k/2kg, khoai lang Nhật 60k/2kg, khoai lang mật 65k/2kg, trứng gà ta 125k/30 quả, cùng dứa, chuối tây, nước dừa tươi và tỏi tía.",
-    "content": "Một sạp trong chợ khu còn nhiều rau củ buổi tối.\nCải bẹ muối dưa 25k/2kg; sắn nếp bở 35k/2kg; khoai lang Nhật ruột vàng 60k/2kg; khoai lang mật 65k/2kg; cà pháo giòn 25k/kg; tỏi tía khô còn cuống 45k/kg.\nTrứng gà ta quả nhỏ, lòng vàng 125k/30 quả; chuối tây 15k/nải; dứa Ba Vì chín gọt sẵn 20k/quả; nước dừa tươi nguyên chất 35k/chai to. Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789518084618535/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:54:50+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Nầm lợn tươi 250k/kg, mai có khoảng 4kg",
-    "summary": "Một sạp trong chợ khu nhận đặt nầm lợn tươi cho ngày mai, khoảng 4kg, giá 250k/kg, hỗ trợ thái và ướp sẵn; món hợp để nướng.",
-    "content": "Một sạp trong chợ khu nhận đặt nầm lợn tươi cho ngày mai, khoảng 4kg, giá 250k/kg, hỗ trợ thái và ướp.\nNầm tươi, dai ngon, hợp ăn nướng. Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789513231285687/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:52:49+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Tokbokki, mì trộn tương đen, chả cá xiên que",
-    "summary": "Một quán ăn vặt trong khu có tokbokki sốt cay hoặc sốt tương đen 35k/phần, mì trộn tương đen 35k, chả cá xiên que 12k/xiên; nhận đơn từ 50k, miễn phí ship một số sảnh trong khu.",
-    "content": "Một quán ăn vặt trong khu có đồ ăn sẵn.\nTokbokki sốt cay 35k; tokbokki sốt tương đen 35k; mì trộn tương đen 35k; chả cá xiên que 12k/xiên (ship từ 2 xiên kèm món khác).\nNhận đơn từ 50k; miễn phí ship một số sảnh trong khu, các khu khác phụ thêm 5k ship. Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789510927952584/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:44:58+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh bèo nóng, bán đến 19h30 tối nay",
-    "summary": "Một sạp trong chợ khu còn bánh bèo nóng tối nay: 6 cốc luộc 30k/cốc, 6 cốc rán 40k/cốc, 2 set bánh bèo sống 100k/set 60 cái; nhân thịt mộc nhĩ, ăn kèm nước chấm nóng; bán đến 19h30 tối nay.",
-    "content": "Một sạp trong chợ khu còn bánh bèo nóng, bán đến 19h30 tối nay.\n6 cốc luộc 30k/cốc; 6 cốc rán 40k/cốc; 2 set bánh bèo sống 100k/set 60 cái.\nNhân thịt mộc nhĩ, ăn kèm nước chấm nóng hổi. Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789501107953566/",
     "image": null,
     "source": "Chợ cư dân"
   }
