@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ada's Feed — A personal newsroom, automated</title>
+<meta name="description" content="Ada's Feed is a personal news aggregation and publishing system that collects, curates and publishes AI, technology, science, game and video news every three hours, with on-demand refresh and access protected by Cloudflare Access.">
+<link rel="canonical" href="https://homata123.github.io/project.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ada's Feed">
+<meta property="og:url" content="https://homata123.github.io/project.html">
+<meta property="og:title" content="Ada's Feed — A personal newsroom, automated">
+<meta property="og:description" content="A personal news aggregation and publishing system that collects, curates and publishes AI, technology, science, game and video news every three hours — with on-demand refresh, near real-time residents search, and access protected by Cloudflare Access.">
+<meta property="og:image" content="https://homata123.github.io/assets/og-adas-feed.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Ada's Feed — a personal newsroom, automated">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ada's Feed — A personal newsroom, automated">
+<meta name="twitter:description" content="A personal news aggregation and publishing system that collects, curates and publishes AI, technology, science, game and video news every three hours — with on-demand refresh, near real-time residents search, and access protected by Cloudflare Access.">
+<meta name="twitter:image" content="https://homata123.github.io/assets/og-adas-feed.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEF0EC;
+    --surface:#F8F9F5;
+    --rail:#E2E8DC;
+    --ink:#17211C;
+    --ink-soft:#3D4741;
+    --muted:#68736A;
+    --line:#D7DBD0;
+    --accent:#BC3318;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#0F130F;
+      --surface:#151A15;
+      --rail:#18211A;
+      --ink:#E8EAE3;
+      --ink-soft:#C3C9BF;
+      --muted:#97A198;
+      --line:#293129;
+      --accent:#E4573D;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Be Vietnam Pro",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .page{max-width:1120px;margin:0 auto;padding:0 20px 64px}
+  .serif{font-family:"Newsreader",Georgia,"Times New Roman",serif}
+  a{color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+  /* ---------- Masthead ---------- */
+  .masthead{padding:36px 0 18px;border-bottom:6px double var(--ink);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+  .wordmark{font-family:"Newsreader",Georgia,serif;font-weight:800;font-size:clamp(40px,6vw,60px);line-height:.95;letter-spacing:-.015em;margin:0}
+  .tagline{margin:10px 0 0;font-size:13.5px;color:var(--muted);max-width:46ch;line-height:1.55}
+  .edition{text-align:right;font-size:13px;color:var(--ink-soft);line-height:1.7;padding-bottom:4px}
+  .edition .place{font-weight:600;color:var(--ink)}
+
+  /* ---------- Lead ---------- */
+  .lead{padding:34px 0 30px;max-width:820px}
+  .lead h1{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:clamp(32px,4.6vw,50px);line-height:1.08;letter-spacing:-.01em;margin:0 0 18px}
+  .lead p{font-family:"Newsreader",Georgia,serif;font-size:18.5px;line-height:1.65;color:var(--ink-soft);margin:0 0 18px;max-width:68ch}
+  .lead .links{font-size:14px;font-weight:600;display:flex;gap:28px;flex-wrap:wrap}
+  .lead .links a{text-decoration:underline;text-underline-offset:4px}
+
+  /* ---------- Latest edition strip ---------- */
+  .latest{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:18px 0 8px;margin-bottom:40px}
+  .latest h2{font-size:13.5px;font-weight:600;margin:0 0 6px;color:var(--ink)}
+  .latest .item{padding:10px 0;border-bottom:1px solid var(--line)}
+  .latest .item:last-child{border-bottom:none}
+  .latest .cat{font-size:12.5px;font-weight:600;color:var(--accent)}
+  .latest .ttl{font-family:"Newsreader",Georgia,serif;font-size:18px;font-weight:600;line-height:1.35;margin:3px 0 2px}
+  .latest .src{font-size:12.5px;color:var(--muted)}
+  .latest .empty{font-size:14px;color:var(--muted);padding:8px 0 12px}
+
+  /* ---------- Body: river + rail ---------- */
+  .front{display:grid;grid-template-columns:minmax(0,1fr) 338px;gap:40px}
+  @media (max-width:860px){.front{grid-template-columns:1fr}}
+  section{margin-bottom:44px}
+  h2.sec{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:27px;line-height:1.15;margin:0 0 6px}
+  .secnote{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 10px;max-width:60ch}
+
+  .step{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .step:first-of-type{border-top:1px solid var(--line)}
+  .step .no{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:22px;color:var(--accent);line-height:1.2}
+  .step h3{font-size:15.5px;font-weight:600;margin:2px 0 5px}
+  .step p{font-size:14.5px;line-height:1.65;color:var(--ink-soft);margin:0;max-width:62ch}
+
+  .beat{padding:14px 0;border-bottom:1px solid var(--line)}
+  .beat:first-of-type{border-top:1px solid var(--line)}
+  .beat h3{font-family:"Newsreader",Georgia,serif;font-size:19px;font-weight:600;margin:0 0 4px}
+  .beat p{font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin:0;max-width:62ch}
+
+  /* ---------- Rail ---------- */
+  .rail{background:var(--rail);padding:22px 22px 8px;align-self:start}
+  .rail h2{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:22px;margin:0 0 4px}
+  .rail .row{padding:11px 0;border-bottom:1px solid var(--line)}
+  .rail .row:last-child{border-bottom:none}
+  .rail .k{font-size:13px;font-weight:600;margin-bottom:2px}
+  .rail .v{font-size:13.5px;line-height:1.6;color:var(--ink-soft)}
+  .rail .note{font-size:13.5px;line-height:1.65;color:var(--ink-soft);padding:14px 0 16px;margin:0}
+
+  /* ---------- Colophon ---------- */
+  .colophon{border-top:6px double var(--ink);margin-top:8px;padding-top:16px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--muted);line-height:1.6}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div>
+      <p class="wordmark">Ada&rsquo;s Feed</p>
+      <p class="tagline">A personal newsroom, automated. The reading is mine; the gathering, checking and publishing run themselves.</p>
+    </div>
+    <div class="edition">
+      <div class="place">Project notes</div>
+      <div>Hanoi, Vietnam</div>
+      <div>Running since November 2026</div>
+    </div>
+  </header>
+
+  <div class="lead">
+    <h1>The news I follow, gathered and published without a newsroom.</h1>
+    <p>Ada&rsquo;s Feed is a personal news aggregation and publishing system I built and operate. It automatically collects, curates, and updates content every three hours on AI &amp; technology, cybersecurity, science, games, and video from multiple sources across the internet and Facebook groups, alongside a residents&rsquo; bulletin with built-in filtering of personal contact information to protect privacy.</p>
+    <p>The live feed sits behind sign-in, restricted to a small allowlist. This page is the public record of the project: what it does, how an edition is made, and what runs underneath.</p>
+    <div class="links">
+      <a href="https://adas-feed.pages.dev/">Open Ada&rsquo;s Feed (sign-in required)</a>
+      <a href="index.html">Read the current edition on the public mirror</a>
+    </div>
+  </div>
+
+  <div class="latest" id="latest">
+    <h2>From the latest edition</h2>
+    <div id="latest-items"><div class="empty">Loading the newest stories&hellip;</div></div>
+  </div>
+
+  <div class="front">
+    <main>
+      <section>
+        <h2 class="sec">How an edition is made</h2>
+        <p class="secnote">Four steps, repeated around the clock. No step needs me in the room; I step in only when a source changes or a rule needs adjusting.</p>
+
+        <div class="step">
+          <div class="no">1</div>
+          <div>
+            <h3>Collect</h3>
+            <p>Scheduled agents sweep the web and a set of Facebook groups every three hours, in rotating editions: a full morning briefing, then focused updates on AI, science, games, and video through the day, and an evening wrap-up.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="no">2</div>
+          <div>
+            <h3>Curate</h3>
+            <p>Every item must carry a real source link gathered during the run, or it is dropped. Duplicates are filtered against the day&rsquo;s log. Residents&rsquo; posts are scrubbed of phone numbers, personal names, and unit numbers before anything is written down.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="no">3</div>
+          <div>
+            <h3>Publish</h3>
+            <p>New items are committed to a Git repository as a single data file. That one push deploys the site twice: to GitHub Pages and to Cloudflare Pages. There is no database and no server to patch.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="no">4</div>
+          <div>
+            <h3>Read, and ask for more</h3>
+            <p>A refresh button on the site requests a fresh sweep of one topic or of everything. A search box queries the residents&rsquo; group directly. Requests travel over a WebSocket relay and results are usually back in about two minutes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec">What it covers</h2>
+        <p class="secnote">The beats were chosen the way a reader chooses them, not the way a publisher would: narrow, personal, and revised when my interests move.</p>
+
+        <div class="beat">
+          <h3>AI, technology and security</h3>
+          <p>Model releases, agent tooling, and the serious end of the security beat: actively exploited vulnerabilities, major breaches, and official warnings.</p>
+        </div>
+        <div class="beat">
+          <h3>Science</h3>
+          <p>Theoretical physics, cosmology, quantum mechanics, mathematics, and astronomy, including new videos from a Vietnamese astronomy channel I follow.</p>
+        </div>
+        <div class="beat">
+          <h3>Games and video</h3>
+          <p>AAA games, story and lore, plus new uploads from a short list of Vietnamese YouTube channels. A separate section tracks two favourite channels and embeds their live streams so they can be watched in place.</p>
+        </div>
+        <div class="beat">
+          <h3>Facebook groups digest</h3>
+          <p>A tech community&rsquo;s morning news post leads each edition, joined by alumni, entertainment, and AI-art groups, filtered down to posts with real information in them.</p>
+        </div>
+        <div class="beat">
+          <h3>Residents&rsquo; bulletin</h3>
+          <p>Food and drink sold inside my own residential complex, building notices, and everyday resident life, collected several times each evening with contact details stripped out.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="rail">
+      <h2>Under the hood</h2>
+      <div class="row">
+        <div class="k">Front end</div>
+        <div class="v">One static page in hand-written HTML, CSS and JavaScript. No framework, no build step.</div>
+      </div>
+      <div class="row">
+        <div class="k">Hosting and access</div>
+        <div class="v">Cloudflare Pages behind Cloudflare Access: a one-time PIN sign-in checked against a five-email allowlist.</div>
+      </div>
+      <div class="row">
+        <div class="k">On-demand requests</div>
+        <div class="v">Pages Functions write requests to Cloudflare KV; a Durable Object hub relays them over WebSocket to the collecting agent, with the KV mailbox as fallback.</div>
+      </div>
+      <div class="row">
+        <div class="k">Publishing pipeline</div>
+        <div class="v">Git is the CMS. Each edition is a commit; the site is a data file rendered in the browser.</div>
+      </div>
+      <div class="row">
+        <div class="k">Collection</div>
+        <div class="v">Scheduled AI agents with written editorial rules: source link or drop, deduplicate against daily logs, scrub private details.</div>
+      </div>
+      <p class="note">Why LinkedIn lands on this page: link previews need a public address, and the feed itself is private by design. This page carries the project&rsquo;s description and preview image so the link works the way LinkedIn expects.</p>
+    </aside>
+  </div>
+
+  <footer class="colophon">
+    <div>Ada&rsquo;s Feed. Designed, built and operated as a personal project.</div>
+    <div><a href="https://adas-feed.pages.dev/">adas-feed.pages.dev</a></div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var box = document.getElementById('latest-items');
+  function esc(s){var d=document.createElement('div');d.textContent=s||'';return d.innerHTML;}
+  fetch('feed.json', {cache:'no-store'}).then(function(r){return r.json();}).then(function(items){
+    if(!items || !items.length){ box.innerHTML = '<div class="empty">The latest edition is being prepared.</div>'; return; }
+    var html = '';
+    items.slice(0,3).forEach(function(it){
+      var when = '';
+      try{ when = new Date(it.ts).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}); }catch(e){}
+      html += '<div class="item"><span class="cat">'+esc(it.category)+'</span>' +
+        '<div class="ttl">'+esc(it.title)+'</div>' +
+        '<div class="src">'+esc(it.source)+(when ? ' &middot; ' + esc(when) : '')+'</div></div>';
+    });
+    box.innerHTML = html;
+  }).catch(function(){
+    box.innerHTML = '<div class="empty">The latest edition is available on the site itself.</div>';
+  });
+})();
+</script>
+</body>
+</html>
