@@ -147,6 +147,18 @@
   .listwrap{max-width:880px}
   .listwrap .story:first-child{border-top:none}
 
+  /* ---------- Pagination ---------- */
+  .pager{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 0 4px}
+  .front .pager{border-top:1px solid var(--line)}
+  .listwrap .pager{border-top:1px solid var(--line)}
+  .pgbtn,.pgnum{border:none;background:none;color:var(--ink-soft);font-family:inherit;font-size:13.5px;font-weight:600;cursor:pointer;padding:6px 2px}
+  .pgbtn:hover:not(:disabled),.pgnum:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+  .pgbtn:disabled{opacity:.38;cursor:default}
+  .pgnums{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .pgnum.active{color:var(--accent);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+  .pgdots{color:var(--muted)}
+  .pginfo{font-size:12.5px;color:var(--muted);margin-left:auto}
+
   .empty{padding:64px 0;text-align:center;color:var(--muted);font-size:14.5px;line-height:1.7}
   .loading{padding:64px 0;text-align:center;color:var(--muted);font-size:14.5px}
   footer{border-top:1px solid var(--line);margin-top:34px;padding:18px 0 40px;font-size:12.5px;color:var(--muted);line-height:1.7}
@@ -276,6 +288,8 @@ const CATCOLOR = {
 };
 let items = [], activeCat = "Tất cả", query = "";
 let yt = null, ytChan = "all", ytExp = { latest:false, popular:false };
+let page = 1, listPage = 1;
+const RIVER_PAGE = 10, LIST_PAGE = 15, RAIL_MAX = 8;
 
 function esc(t){ const d=document.createElement("div"); d.textContent=t||""; return d.innerHTML; }
 function relTime(iso){
@@ -303,6 +317,30 @@ function metarow(it){
 function playbadge(){
   return `<span class="playbadge"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5.5v13l11-6.5z"/></svg></span>`;
 }
+
+function pagerHtml(cur, total, fn, totalItems){
+  if (total <= 1) return "";
+  let nums = "";
+  for (let i = 1; i <= total; i++){
+    if (total > 9 && i > 2 && i < total - 1 && Math.abs(i - cur) > 1){
+      if (!nums.endsWith("…")) nums += `<span class="pgdots">…</span>`;
+      continue;
+    }
+    nums += `<button class="pgnum ${i===cur ? "active" : ""}" onclick="${fn}(${i})">${i}</button>`;
+  }
+  return `<nav class="pager" aria-label="Phân trang">
+    <button class="pgbtn" ${cur<=1 ? "disabled" : ""} onclick="${fn}(${cur-1})">Trang trước</button>
+    <span class="pgnums">${nums}</span>
+    <button class="pgbtn" ${cur>=total ? "disabled" : ""} onclick="${fn}(${cur+1})">Trang sau</button>
+    ${totalItems ? `<span class="pginfo">${totalItems} tin · trang ${cur}/${total}</span>` : ""}
+  </nav>`;
+}
+function scrollToMain(){
+  const y = document.getElementById("main").getBoundingClientRect().top + window.scrollY - 64;
+  window.scrollTo({top: Math.max(0, y), behavior: "smooth"});
+}
+function gotoPage(n){ page = n; render(); scrollToMain(); }
+function gotoListPage(n){ listPage = n; render(); scrollToMain(); }
 
 function storyRow(it){
   const idx = items.indexOf(it);
@@ -361,7 +399,11 @@ function render(){
   }
   const frontMode = activeCat==="Tất cả" && !query;
   if (!frontMode){
-    main.innerHTML = `<div class="listwrap">${filtered.map(storyRow).join("")}</div>`;
+    const totalPages = Math.max(1, Math.ceil(filtered.length / LIST_PAGE));
+    if (listPage > totalPages) listPage = totalPages;
+    if (listPage < 1) listPage = 1;
+    const slice = filtered.slice((listPage-1)*LIST_PAGE, listPage*LIST_PAGE);
+    main.innerHTML = `<div class="listwrap">${slice.map(storyRow).join("")}${pagerHtml(listPage, totalPages, "gotoListPage", filtered.length)}</div>`;
     return;
   }
   const residents = filtered.filter(it => it.category === "Bảng tin cư dân").slice(0, 6);
@@ -374,12 +416,17 @@ function render(){
     const rail = rest.filter(it => it.flow === "facebook");
     html += leadBlock(lead);
     if (river.length || rail.length){
-      html += `<div class="front"><div>${river.map(storyRow).join("")}</div>`;
+      const totalPages = Math.max(1, Math.ceil(river.length / RIVER_PAGE));
+      if (page > totalPages) page = totalPages;
+      if (page < 1) page = 1;
+      const riverSlice = river.slice((page-1)*RIVER_PAGE, page*RIVER_PAGE);
+      html += `<div class="front"><div>${riverSlice.map(storyRow).join("")}${pagerHtml(page, totalPages, "gotoPage", river.length)}</div>`;
       if (rail.length){
         html += `<aside class="rail">
           <h2>Từ cộng đồng Facebook</h2>
           <p class="railsub">Bài đáng chú ý trong các group Ada theo dõi cho Mister T, J2Team trước nhất.</p>
-          ${rail.map(railItem).join("")}
+          ${rail.slice(0, RAIL_MAX).map(railItem).join("")}
+          ${rail.length > RAIL_MAX ? `<p class="railsub" style="margin-top:10px">Còn ${rail.length - RAIL_MAX} bài nữa — xem ở tab Facebook hoặc gõ từ khóa tìm kiếm.</p>` : ""}
         </aside>`;
       }
       html += `</div>`;
@@ -554,10 +601,10 @@ CATS.forEach(name=>{
   const b=document.createElement("button");
   b.className="tab"+(name==="Tất cả"?" active":"");
   b.textContent=name;
-  b.onclick=()=>{ activeCat=name; document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b)); render(); };
+  b.onclick=()=>{ activeCat=name; page=1; listPage=1; document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b)); render(); };
   tabsEl.appendChild(b);
 });
-document.getElementById("search").addEventListener("input", e=>{ query=e.target.value.trim().toLowerCase(); render(); });
+document.getElementById("search").addEventListener("input", e=>{ query=e.target.value.trim().toLowerCase(); page=1; listPage=1; render(); });
 
 const now = new Date();
 const dateStr = now.toLocaleDateString("vi-VN",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
