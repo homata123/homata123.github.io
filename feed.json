@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-25T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Sakana AI ra mắt Namazu Small — model suy luận 30B \"vượt mặt\" model NVIDIA gấp 4 lần",
+    "summary": "Sakana AI (Nhật Bản) công bố Namazu Small (25/11), model suy luận 30 tỷ tham số xây trên nền NVIDIA Nemotron 3 Nano mở. Theo số liệu do chính Sakana báo cáo, model đạt trung bình cao hơn Nemotron 3 Super 120B trên 25 benchmark — nổi bật BrowseComp 73,5 so với 36,1 và LLM-jp LongBench 86,0 so với 60,0 — nhưng thua ở các bài kiểm tra kiến thức thuần túy. Model hướng tới nghiên cứu web và đọc tài liệu dài có trích dẫn nguồn; chi tiết bản on-premise dự kiến đầu–giữa tháng 12.",
+    "content": "Sakana AI (Nhật Bản) công bố Namazu Small ngày 25/11/2026 — model suy luận 30 tỷ tham số xây trên nền NVIDIA Nemotron 3 Nano mở, qua tiếp tục tiền huấn luyện và hậu huấn luyện nội bộ.\nTheo số liệu do chính Sakana báo cáo, model đạt trung bình cao hơn Nemotron 3 Super 120B trên 25 benchmark. Nổi bật: BrowseComp 73,5 so với 36,1; LLM-jp LongBench 86,0 so với 60,0; FaithEval 78,3, đều cao hơn cả hai model đối chiếu.\nĐiểm yếu: các bài kiểm tra kiến thức thuần túy cần ghi nhớ — SimpleQA Verified chỉ 6,8 so với 18,1 của Super; SimpleQA tiếng Nhật 8,0 so với 24,9. Model thắng khi được tìm kiếm và đọc tài liệu, không phải khi phải nhớ.\nSakana định vị Namazu Small cho phân tích tài liệu dài và nghiên cứu nhiều bước: báo cáo nội bộ, hợp đồng, thông số kỹ thuật, tin tức và nghiên cứu ngành — với câu trả lời có căn cứ trích dẫn. Chi tiết bản on-premise dự kiến đầu–giữa tháng 12/2026. Công trình được hỗ trợ bởi chương trình GENIAC của Bộ Kinh tế, Thương mại và Công nghiệp Nhật Bản (METI) và NEDO.",
+    "url": "https://superpowerdaily.com/posts/sakana-ai-introduces-a-30b-model-it-says-outperforms-nvidia-s-120b-rival",
+    "image": "https://superpowerdaily.com/posts/sakana-ai-introduces-a-30b-model-it-says-outperforms-nvidia-s-120b-rival/opengraph-image",
+    "source": "Superpower Daily"
+  },
+  {
+    "ts": "2026-11-25T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Cognition ra mắt SWE-2.1 — model coding cho Devin, điểm Terminal-Bench tăng gấp đôi",
+    "summary": "Cognition phát hành SWE-2.1 (24/11), huấn luyện bằng reinforcement learning thuần trên Kimi K3. Điểm Terminal-Bench 4.1 tăng từ 24,2 lên 50,0 so với SWE-2; FrontierCode 2.0 đạt 41,3; ExploitBench 80%. Kèm hai biến thể: SWE-2.1 Cyber chuyên an ninh mạng và SWE-2.1 Lightning qua Cerebras, nhanh gấp 10 lần. Miễn phí trên Devin Desktop và CLI tới 8/12.",
+    "content": "Cognition (nhà phát triển Devin) phát hành SWE-2.1 ngày 24/11/2026 — bản nâng cấp lớn của model coding SWE-2, huấn luyện bằng reinforcement learning thuần trên Kimi K3 của Moonshot AI.\nĐiểm số theo Cognition: Terminal-Bench 4.1 tăng từ 24,2 lên 50,0; FrontierCode 2.0 đạt 41,3 (từ 24,1); ExploitBench 80% (từ 36,1); ExploitGym 27,3% (từ 12,1). Model vẫn đứng sau Claude Opus 5.5 và GPT-6.2 Sol trên một số benchmark, nhưng vượt Grok 4.7 và Kimi K3.1.\nHai biến thể đi kèm: SWE-2.1 Cyber — model đầu tiên chuyên về an ninh mạng, nới lỏng giới hạn để phục vụ quét phòng thủ trong Devin Security; và SWE-2.1 Lightning qua đối tác Cerebras, nhanh gấp 10 lần bản thường (demo 600 token/giây so với 60), vì model càng làm việc lâu càng cải thiện.\nSWE-2.1 có mặt ngay trong Devin Cloud, Devin Desktop và Devin CLI; miễn phí cho người dùng Devin Pro, Max và Teams trong hai tuần, tới 8/12/2026.",
+    "url": "https://www.unite.ai/cognition-releases-swe-2-1-with-major-coding-and-cybersecurity-gains/",
+    "image": "https://www.unite.ai/wp-content/uploads/2026/11/cognition-releases-swe-2-1-with-major-coding-and-cybersecurity-gains.jpg",
+    "source": "Unite.AI"
+  },
+  {
+    "ts": "2026-11-25T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Claude mở Skills over MCP bản beta công khai — MCP tròn 2 tuổi",
+    "summary": "Anthropic công bố (24/11) Skills over MCP vào public beta trên Claude và Claude Code: máy chủ MCP giờ có thể kèm theo \"skill\" — quy trình làm việc nhiều bước — bên cạnh công cụ. Đồng thời Tasks và Elicitation lên GA; File Uploads sắp ra mắt. Anthropic cho biết SDK MCP đã vượt 700 triệu lượt tải/tháng sau 2 năm.",
+    "content": "Anthropic công bố ngày 24/11/2026, đúng dịp kỷ niệm 2 năm Model Context Protocol (MCP): Skills over MCP vào public beta trên Claude và Claude Code.\nVới Skills over MCP, máy chủ MCP có thể kèm theo skill — thư mục chứa SKILL.md và tài liệu hỗ trợ, tức quy trình làm việc nhiều bước — bên cạnh công cụ. Claude chỉ nạp skill khi cần, và skill cập nhật theo máy chủ nên người dùng không phải cài thêm gì. Ví dụ: Shopify hỗ trợ thiết kế cửa hàng trực tuyến trọn vẹn, HubSpot onboarding khách hàng, Atlassian khai thác insight tổ chức.\nĐồng thời, Tasks (chạy việc dài trong nền, kể cả vòng lặp agent) và Elicitation (dừng lại hỏi người dùng giữa chừng) lên GA; File Uploads — gửi/nhận file trực tiếp với máy chủ MCP mà không qua context window — sắp ra mắt.\nSkills over MCP bật mặc định cho gói Pro, Max, Ultra; Team cần quản trị viên bật; Enterprise sắp có. Anthropic cho biết SDK MCP đã vượt 700 triệu lượt tải/tháng.",
+    "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+    "image": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more/opengraph-image/og",
+    "source": "Anthropic"
+  },
+  {
+    "ts": "2026-11-25T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Midjourney ra mắt Niji 8 — model anime nhanh và nhất quán nhất từ trước tới nay",
+    "summary": "Midjourney và Spellbrush phát hành Niji 8 (24/11), model vẽ anime mới: nhanh và mạch lạc nhất trong dòng Niji, bám prompt chính xác hơn, kèm model chỉnh sửa riêng. Tính năng được chờ đợi nhất là giữ nhân vật nhất quán qua tính năng edit — thay thế cref của Niji 6. Dùng bằng --niji 8 trên Discord hoặc chọn \"Niji 8\" trong menu Version trên web.",
+    "content": "Midjourney và Spellbrush phát hành Niji 8 ngày 24/11/2026 — phiên bản mới của model vẽ anime/illustration, nối tiếp Niji 7 (tháng 1/2026).\nTheo Midjourney, Niji 8 là model Niji nhanh và mạch lạc nhất tới nay, bám prompt chính xác hơn, cảnh liền mạch hơn, kèm một model chỉnh sửa riêng. Tính năng được chờ đợi nhất là giữ nhân vật nhất quán qua tính năng edit (nút \"quick edit\" trên ảnh hoàn thành) — thay thế cref của Niji 6 mà nhiều người dùng tiếc nuối — cho phép đặt cùng một nhân vật vào các bối cảnh khác nhau.\nTriết lý lần này: thẩm mỹ của Niji 7 kết hợp sự đa dạng của Niji 6 — cùng một prompt cho ra nhiều lựa chọn hơn, thay vì giữ nhân vật giống hệt chỉ bằng cách gõ lại cùng từ. Midjourney cho biết đã hoãn ra mắt cho tới khi nhân vật có thể tái tạo được qua tính năng edit; sref và moodboard cũng được cải thiện vì cùng mục đích.\nCách dùng: gõ --niji 8 sau prompt trên Discord, hoặc chọn \"Niji 8\" trong menu Version trên giao diện web.",
+    "url": "https://nijijourney.com/blog/niji-8",
+    "image": null,
+    "source": "Niji Journey"
+  },
+  {
+    "ts": "2026-11-25T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "CISA đưa 3 lỗ hổng đang bị khai thác vào danh mục KEV — Drupal, Idunno, Optimizely",
+    "summary": "CISA bổ sung 3 lỗ hổng đang bị khai thác ngoài thực địa vào danh mục KEV ngày 24/11, hạn vá 27/11: RCE trong Drupal Core (CVE-2026-132165, qua install.php), lỗi deserialization trong Idunno AntiCsrf trên ASP.NET (CVE-2026-131914, CVSS 9.3 — thư viện đã ngừng hỗ trợ, không có bản vá, cần gỡ bỏ), và lỗi trong luồng đăng ký của Optimizely Web Experimentation (CVE-2026-132224, đã vá phía dịch vụ ngày 17/11).",
+    "content": "CISA bổ sung 3 lỗ hổng đang bị khai thác ngoài thực địa vào danh mục Known Exploited Vulnerabilities (KEV) ngày 24/11/2026, hạn vá 27/11/2026.\nDrupal Core RCE (CVE-2026-132165): lỗi cho phép thực thi mã từ xa qua install.php. Các phiên bản bị ảnh hưởng: trước 10.6.22, 11.0.0–11.3.21 và 11.4.0–11.4.12; cần cập nhật lên 10.6.22, 11.3.22 hoặc 11.4.13 và khóa chặt install.php.\nIdunno AntiCsrf (CVE-2026-131914, CVSS 9.3): lỗi deserialization dữ liệu không tin cậy trong công cụ chống CSRF cũ trên ASP.NET (tới bản 0.9.1 Beta). Thư viện đã ngừng hỗ trợ (end-of-life), không có bản vá — cần gỡ bỏ và dùng công cụ CSRF tích hợp sẵn của ASP.NET.\nOptimizely Web Experimentation (CVE-2026-132224, CVSS 7.1): lỗi trong luồng đăng ký của dịch vụ đám mây; Optimizely đã vá phía dịch vụ ngày 17/11/2026, các đội cần kiểm tra log.\nCISA chưa ghi nhận việc dùng ransomware với 3 lỗi này, và mã khai thác công khai chưa được xác nhận.",
+    "url": "https://securityonline.info/cisa-kev-catalog-drupal-idunno-optimizely/",
+    "image": "https://securityonline.info/wp-content/uploads/2026/11/ke.webp",
+    "source": "SecurityOnline.info"
+  },
+  {
     "ts": "2026-11-25T08:38:13+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3241,61 +3296,6 @@
     "summary": "Một sạp trong chợ khu còn nhiều rau củ buổi tối: sắn nếp bở 35k/2kg, bắp cải 15k/cây, su su 23k/kg, rau các loại 15–20k/mớ, trứng gà ta 125k/30 quả.",
     "content": "Một sạp trong chợ khu còn nhiều rau củ buổi tối, nhờ ủng hộ:\n- Sắn nếp bở: 18k/kg, 35k/2kg.\n- Bắp cải ta cây nhỏ: 15k/cây; su su: 23k/kg; rau cần mớ to 15k/mớ; muống ta mớ to 20k/mớ; ngót quế 15k/mớ; mùng tơi ta 15k/mớ.\n- Chuối tiêu xanh/ương nải đẹp 40k; chuối tây 30k/2 nải nhỏ; dứa Ba Vì chín gọt sẵn 20k/quả; nước dừa tươi nguyên chất 35k/chai to.\n- Cải bẹ muối dưa 30k/2kg; cà pháo giòn 25k/kg; măng nứa luộc 40k/kg; dưa chuột non 30k/kg; củ dền Mộc Châu 38k/kg; gừng ta 30k/kg; cà rốt 20k/kg; bí đỏ 20k/kg; bí xanh 25k/kg; khoai tây ta 45k/2kg; khoai lang Nhật 60k/2kg; khoai lang mật 65k/2kg; tỏi tía khô 45k/kg; hành lá ship kèm từ 5k.\n- Trứng gà ta quả nhỏ, lòng vàng ươm: 125k/30 quả.\nThông tin liên hệ nằm trong bài gốc tại group.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4789401637963513/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:00:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Tôm lớt tươi — 220k/kg, hỗ trợ làm sạch",
-    "summary": "Một sạp trong chợ khu còn ít tôm lớt tươi ủ đá, size 30–33 con/kg, giá 220k/kg, có hỗ trợ làm sạch, giao lúc 8h sáng mai.",
-    "content": "Một sạp trong chợ khu còn ít tôm lớt tươi ủ đá, size 30–33 con/kg, giá 220k/kg.\n\nCó hỗ trợ làm sạch. Bác nào lấy thì bỏ tủ, tiện nấu, giao lúc 8h sáng mai.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789441524626191/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:00:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cá rô đồng, thịt bò bê quê, giò chả và rau củ",
-    "summary": "Một sạp trong chợ khu bán cá rô đồng 60k/5 lạng cùng thịt bò, bê cỏ quê mới thịt sáng nay (bắp lõi bê 300k/kg, bắp hoa bò 320k/kg, thăn vai 300k/kg, dẻ sườn 230k/kg, sườn bò 200k/kg), giò lụa 90k/5 lạng, mọc và xúc xích nhà làm 180k/kg, kèm rau củ quê.",
-    "content": "Một sạp trong chợ khu bán cá rô đồng (5 lạng, giá 60k), hỗ trợ thái theo yêu cầu.\n\nThịt bò và bê cỏ quê mới thịt sáng nay: bắp lõi bê 300k/kg, bắp hoa bò 320k/kg, u vai hoa 320k/kg, lõi vai hoa 320k/kg, thăn vai 300k/kg, diềm thăn 300k/kg, dẻ sườn rút xương 230k/kg, sườn bò 200k/kg.\n\nGiò lụa gói lá chuối 90k/5 lạng, cắt lẻ theo khoanh từ 3 lạng. Mọc nấm, mọc trắng (giò sống) và xúc xích nhà làm đồng giá 180k/kg (90k/5 lạng).\n\nRau củ quê: mướp hương cuối mùa 30k/kg, rau mùng tơi 15k/bó, rau khoai lang 15k/bó, bắp cải quê 22k/kg, xà lách ta 35k/5 lạng, mùi tía ta và rau răm 5k/bó, hành lá 9k/lạng, bầu rầm 25k/kg. Có thể mix nhiều loại.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789441464626197/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:00:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Quả dâng hương Rằm tháng 10 — lựu, hồng mật, quýt hương",
-    "summary": "Một sạp trong chợ khu bán quả dâng hương ngày Rằm tháng 10: lựu hạt mềm đỏ ngọt 90k/2kg, hồng mật giòn ngọt 90k/2kg, quýt hương ngọt 80k/2kg, xoài hạt lép 70k/2kg, táo đá đường 100k/3kg.",
-    "content": "Một sạp trong chợ khu bán quả dâng hương ngày Rằm tháng 10:\n\nLựu hạt mềm đỏ ngọt 90k/2kg; hồng mật giòn ngọt 90k/2kg; quýt hương ngọt 80k/2kg; xoài hạt lép 70k/2kg; táo đá đường 100k/3kg.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789439604626383/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:00:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cá thu tươi và nướng — 190k–290k/kg",
-    "summary": "Một sạp trong chợ khu bán cá thu: tươi nguyên con 190–220k tùy size, cắt khúc 260k/kg, nướng 290k/kg, lườn nướng 220k/kg, đuôi nướng 220k, bộ đầu đuôi 160k; giao hàng online tận nơi.",
-    "content": "Một sạp trong chợ khu bán cá thu:\n\nCá thu tươi nguyên con 190–220k tùy size; cá thu tươi cắt khúc 260k/kg; cá thu nướng 290k/kg; lườn cá thu nướng 220k/kg; đuôi thu nướng riêng 220k; bộ đầu đuôi (1 đầu + 1 lườn + 1 đuôi) 160k.\n\nGợi ý món: cá thu kho thơm, chiên sốt cà chua, nướng muối ớt, hấp gừng hành. Giao hàng online tận nơi.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789436331293377/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T18:00:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thịt đông, giò xào tai lưỡi, chả mỡ nhà làm",
-    "summary": "Một sạp trong chợ khu bán thịt đông và giò chả nhà làm: giò xào tai lưỡi 95k/0,5kg, thịt chân giò nấu đông 60k/hộp, chả mỡ phố cổ 100k/0,5kg, muối vừng 80k/hũ.",
-    "content": "Một sạp trong chợ khu bán thịt đông và giò chả nhà làm, vừa gửi xuống trong ngày:\n\nGiò xào tai lưỡi 95k/0,5kg; thịt chân giò nấu đông 60k/hộp; chả mỡ phố cổ 100k/0,5kg; muối vừng 80k/hũ.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789435521293458/",
     "image": null,
     "source": "Chợ cư dân"
   }
