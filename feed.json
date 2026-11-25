@@ -1,5 +1,60 @@
 [
   {
+    "ts": "2026-11-25T13:40:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Baidu mở mã ERNIE 5.5 Flash Preview — MoE 280B, cửa sổ ngữ cảnh 1 triệu token",
+    "summary": "Baidu tung bản xem trước ERNIE 5.5 Flash: MoE 280B tham số, chỉ kích hoạt 14B mỗi token, ngữ cảnh tới 1 triệu token, giấy phép Apache 2.0, trọng số trên Hugging Face và ModelScope.",
+    "content": "Baidu đã mở mã ERNIE 5.5 Flash Preview — mô hình Mixture-of-Experts 280B tham số, kích hoạt 14B tham số mỗi token, với cửa sổ ngữ cảnh lên tới 1.048.576 token. Trọng số được phát hành theo giấy phép Apache 2.0 trên Hugging Face và ModelScope, hỗ trợ suy luận qua vLLM và SGLang.\nTheo Baidu, mô hình đạt 1.668 điểm trên bảng CodeArena WebDev, đứng thứ hai trong nhóm mã nguồn mở, cùng kết quả cạnh tranh trên Terminal-Bench và AutomationBench — lưu ý đây là số liệu do hãng tự công bố, chưa có kiểm chứng độc lập.\nBaidu nhấn mạnh đây là checkpoint giữa quá trình huấn luyện sau (post-training) chứ chưa phải bản hoàn thiện: một số năng lực vẫn đang được cải thiện và hành vi mô hình có thể thay đổi trước bản phát hành cuối.",
+    "url": "https://alphasignal.ai/news/baidu-drops-ernie-5-5-flash-preview-with-280b-weights-and-1m-token-context",
+    "image": null,
+    "source": "AlphaSignal"
+  },
+  {
+    "ts": "2026-11-25T13:40:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Cổ phiếu Anthropic rơi xuống dưới giá IPO 83 USD chỉ sau 4 phiên giao dịch",
+    "summary": "Anthropic đóng cửa phiên 24/11 ở 81,91 USD, giảm 6,5% trong ngày và thấp nhất chạm 75,61 USD — lần đầu dưới giá chào bán 83 USD kể từ màn IPO kỷ lục ngày 19/11.",
+    "content": "Cổ phiếu Anthropic (ANT) đã rơi xuống dưới giá IPO 83 USD: đóng cửa phiên thứ Ba 24/11 ở 81,91 USD, giảm 6,5% so với phiên trước, sau khi có lúc chạm 75,61 USD trong phiên. Vốn hóa có lúc tụt dưới mốc 1.000 tỷ USD, theo dữ liệu Dow Jones.\nCổ phiếu từng mở cửa ở 111,50 USD trong ngày chào sàn 19/11 và có lúc vượt 115 USD, đưa định giá pha loãng đầy đủ lên hơn 2.000 tỷ USD — đà đảo chiều diễn ra chỉ trong 4 phiên, giữa làn sóng bán tháo cổ phiếu công nghệ.\nTheo hồ sơ công bố tối thứ Hai, CEO Dario Amodei đã bán hơn 3,37 triệu cổ phiếu, thu về hơn 280 triệu USD, một ngày sau phiên IPO. Giới đầu tư xem diễn biến của Anthropic như thước đo cho định giá AI tư nhân và các đợt IPO sắp tới.",
+    "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+    "image": null,
+    "source": "TechCrunch"
+  },
+  {
+    "ts": "2026-11-25T13:40:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Google đưa Workspace MCP servers và CLI gwscli lên GA — agent phải chuyển khỏi REST API trước 1/2/2027",
+    "summary": "Google chính thức GA bộ máy chủ MCP cho Workspace (Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, Tasks) và CLI gwscli; từ 1/2/2027 agent bắt buộc dùng các cổng này thay REST API.",
+    "content": "Google đã đưa các máy chủ Workspace MCP và CLI chính thức gwscli lên trạng thái generally available (ngày 24/11), mở cho mọi khách hàng Workspace và nhà phát triển. Mỗi ứng dụng — Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, Tasks — có máy chủ MCP riêng, kế thừa quyền và cơ chế quản trị dữ liệu của người dùng, kèm xác nhận của con người cho thao tác nhạy cảm.\nTheo phụ lục Workspace AI Tools Addendum mới, các agent AI phải chuyển từ REST API sang máy chủ MCP hoặc CLI trước ngày 1/2/2027, khi Google bắt đầu thực thi kỹ thuật. Gói Standard miễn phí cho phép 5.000 yêu cầu/ngày/sản phẩm/dự án; tính phí gói Scaled bắt đầu từ 1/4/2027.\nCùng đợt, Google ra mắt Cloud Agent Gateway để kiểm tra danh tính agent và sàng lọc prompt trước khi gọi các dịch vụ. Việc triển khai diễn ra dần trong hai tuần cho các miền Rapid Release và Scheduled Release.",
+    "url": "https://www.unite.ai/google-requires-workspace-ai-agents-to-use-managed-interfaces/",
+    "image": null,
+    "source": "Unite.AI"
+  },
+  {
+    "ts": "2026-11-25T13:40:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "GPT-6 thiết kế được protein gắn mục tiêu thuốc trong phòng thí nghiệm — 35/322 mẫu cho kết quả bám dính",
+    "summary": "Preprint của OpenAI (24/11): GPT-6.2 tự thiết kế khung protein bằng lập luận và code, đối tác Onava kiểm chứng trong phòng thí nghiệm — 35 trong 322 minibinder bám được mục tiêu trên cả 5 đích, tỷ lệ 10,9%.",
+    "content": "OpenAI công bố preprint cho thấy họ GPT-6 có khả năng thiết kế protein nội tại: chỉ bằng lập luận ngôn ngữ tự nhiên và code Python tự viết, GPT-6.2 thiết kế được khung protein ba chiều, đề xuất trình tự amino acid và dự đoán cách phân tử nhỏ gắn vào đích — không cần mô hình sinh học chuyên biệt để tạo thiết kế.\nTrong thí nghiệm cùng đối tác phòng thí nghiệm Onava, 322 minibinder do GPT-6.2 thiết kế được thử trên 5 mục tiêu (PD-L1, IL-7Rα, TrkA, VEGF-A, IL-17A): 35 mẫu cho bằng chứng bám dính, tỷ lệ 10,9%. Thiết kế lại vòng kháng thể cũng giữ được khả năng bám: 128/182 mẫu kháng IL-4Rα và 179/272 mảnh kháng thể PD-1/PD-L1.\nCần thận trọng: preprint chưa qua bình duyệt; quy trình vẫn dùng mô hình chuyên biệt (SolubleMPNN, Boltz-2, ESMFold2) để gán trình tự và lọc ứng viên; và kết quả chỉ đo khả năng bám dính trong xét nghiệm — chưa chứng minh hiệu lực sinh học, độ an toàn hay tác dụng điều trị. Điểm yếu lớn nhất vẫn là dự đoán cấu trúc đầy đủ từ trình tự (TM-score 0,38 so với 0,93 của ESMFold2).",
+    "url": "https://alphasignal.ai/news/openai-s-gpt-6-2-designs-real-proteins-that-bind-drug-targets-in-the-lab",
+    "image": null,
+    "source": "AlphaSignal"
+  },
+  {
+    "ts": "2026-11-25T13:40:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Agent AI tự tìm và khai thác zero-day trong 11 phút — CISA đưa CVE-2026-133968 vào danh sách KEV",
+    "summary": "Amazon Threat Intelligence: agent chạy framework mã nguồn mở Cairn tự phát hiện và khai thác lỗ hổng path traversal chưa từng biết trong MONAI Label, chiếm quyền root trên máy chủ đại học chỉ sau ~11 phút từ lúc quét API.",
+    "content": "Amazon Threat Intelligence báo cáo: các agent AI tự hành chạy trên framework kiểm thử xâm nhập mã nguồn mở Cairn đã tự phát hiện và khai thác một lỗ hổng zero-day trong MONAI Label — máy chủ mã nguồn mở dùng để gán nhãn ảnh y tế phục vụ huấn luyện AI — và chiếm quyền root trên máy chủ của một trường đại học ở Đông Á.\nChỉ với chỉ thị duy nhất 'lấy quyền shell', agent tự lập bản đồ API, tìm ra endpoint upload có tham số tên file dính lỗi path traversal, và từ lúc chạm API tới khi ghi được file tùy ý chỉ mất khoảng 11 phút. Sau đó agent cài reverse shell Python vào sitecustomize.py và kích hoạt endpoint huấn luyện để lấy shell root.\nLỗ hổng nay được định danh CVE-2026-133968, CVSS 9,8; bản vá MONAI Label 0.8.6 phát hành ngày 22/11, và CISA đã đưa vào danh sách Known Exploited Vulnerabilities ngày 23/11, yêu cầu cơ quan liên bang Mỹ vá trước 26/11. Amazon đánh giá với độ tin cậy cao đây là zero-day thật, và với độ tin cậy vừa phải rằng kẻ vận hành có liên hệ với Trung Quốc (prompt tiếng Trung giản thể, múi giờ CST).",
+    "url": "https://gizmodo.com/amazon-says-open-source-ai-agent-mostly-autonomously-exploited-a-zero-day-2000844891",
+    "image": null,
+    "source": "Gizmodo"
+  },
+  {
     "ts": "2026-11-25T13:00:00+07:00",
     "flow": "internet",
     "category": "Khoa học",
@@ -3243,60 +3298,5 @@
     "url": "https://cybersecuritynews.com/upload2shell-flaw/",
     "image": null,
     "source": "Cyber Security News"
-  },
-  {
-    "ts": "2026-11-22T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "Hố đen \"Black Saturn\" 5 chiều: hố đen cầu trong vòng hố đen, cùng quay hai mặt phẳng",
-    "summary": "Nhà vật lý Jay Armas trình bày họ nghiệm 6 tham số cho phương trình Einstein: hố đen hình cầu ở giữa, bao quanh bởi vòng hố đen, cả hai cùng quay theo hai mặt phẳng độc lập.",
-    "content": "Một nghiên cứu lý thuyết mới của nhà vật lý Jay Armas, gửi lên arXiv ngày 16/11/2026 với tựa đề \"Doubly-spinning Black Saturns\", mô tả một cấu trúc kỳ lạ trong không-thời gian 5 chiều: một hố đen hình cầu nằm ở trung tâm, bao quanh bởi một hố đen hình vòng — trông như sao Thổ với vành đai, nhưng cả hai thành phần đều là hố đen.\nĐiểm mới so với mô hình Black Saturn trước đây: họ nghiệm 6 tham số này cho phép cả hố đen trung tâm lẫn vòng hố đen cùng quay theo hai mặt phẳng độc lập, mỗi cái giữ chân trời sự kiện riêng, và cả hai có thể cùng đạt trạng thái cực trị.\nĐây vẫn là một nghiệm toán học của phương trình Einstein trong chân không 5 chiều — một hệ như vậy chưa từng được quan sát, và sự tồn tại của chiều không gian thứ 5 cũng chưa được xác nhận. Giá trị của nó nằm ở việc thăm dò cách hấp dẫn và chuyển động quay của hố đen vận hành ngoài 4 chiều quen thuộc.",
-    "url": "https://www.jagranjosh.com/general-knowledge/five-dimensional-black-saturn-spacetime-1820014028-1",
-    "image": "https://img.jagranjosh.com/images/2026/11/22/template/image/_Five-Dimensional-Black-Saturn-Spacetime-1795330627632.webp",
-    "source": "Jagran Josh"
-  },
-  {
-    "ts": "2026-11-22T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "Dải Ngân Hà có thể phải vẽ lại: sao hình thành dọc sóng xung kích của thanh trung tâm",
-    "summary": "Các maser từng được gán cho tay xoắn Norma thực ra khớp với mặt sóng xung kích do thanh trung tâm tạo ra — một phần bản đồ tay xoắn có thể là vùng tạo sao dọc thanh.",
-    "content": "Các nhà thiên văn đã tìm thấy bằng chứng sao đang hình thành ở một vị trí bất ngờ trong Dải Ngân Hà, khiến cách vẽ tay xoắn của thiên hà có thể phải xem lại. Nghiên cứu do Hillary Davis (Đại học Sydney) dẫn đầu, đăng trên Nature Astronomy.\nNhóm nghiên cứu so sánh mô hình máy tính của thiên hà với quan sát các maser — nguồn phát vi sóng tự nhiên. Các maser trước đây được gán cho tay xoắn Norma lại khớp chặt với mặt sóng xung kích mà mô hình dự đoán do thanh trung tâm tạo ra, cho thấy ít nhất một phần của cái gọi là tay Norma thực ra là vùng tạo sao dọc theo sóng xung kích của thanh.\nNghiên cứu cũng giúp ước lượng thanh trung tâm: dài khoảng 14.000 năm ánh sáng tính từ tâm thiên hà dọc trục dài và quay tương đối chậm. Đây chưa phải bản đồ mới cuối cùng, nhưng là một bước điều chỉnh quan trọng trong cách hiểu cấu trúc thiên hà của chúng ta.",
-    "url": "https://knowridge.com/2026/11/milky-way-discovery-may-change-how-astronomers-map-its-spiral-arms/",
-    "image": "https://knowridge.com/wp-content/uploads/2026/11/ksr-76e9788b4ca007330f962648.jpg",
-    "source": "Knowridge / Đại học Sydney"
-  },
-  {
-    "ts": "2026-11-22T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "Parker Solar Probe: từ trường gió Mặt Trời đổi chiều quay ở thang rất nhỏ",
-    "summary": "Lần đầu quan sát trực tiếp từ trường gió Mặt Trời chuyển từ quay ngược chiều kim đồng hồ sang cùng chiều khi xuống thang rất nhỏ — ranh giới plasma chuyển sang động lực hạt riêng lẻ.",
-    "content": "Dữ liệu từ Parker Solar Probe — tàu vũ trụ bay gần Mặt Trời nhất từ trước đến nay — cho thấy từ trường trong gió Mặt Trời đổi chiều quay từ ngược chiều kim đồng hồ sang cùng chiều kim đồng hồ khi xuống tới các thang không gian rất nhỏ.\nĐây là lần đầu tiên hiện tượng này được quan sát trực tiếp trong nhiễu loạn không gian, theo nghiên cứu công bố trên The Astrophysical Journal Letters. Điểm đảo chiều đánh dấu ranh giới nơi plasma chuyển từ hành vi tập thể của chất lưu sang động lực của từng hạt riêng lẻ — một quá trình khó nghiên cứu vì các hạt trong plasma vũ trụ hiếm khi va chạm với nhau.\nPhát hiện dựa trên các phép đo từ trường và hạt có độ chính xác cao khi tàu bay qua gió Mặt Trời phía trong, và mở rộng những quan sát cấu trúc nhiễu loạn gió Mặt Trời mà các lần tiếp cận gần trước đây của Parker đã mang lại.",
-    "url": "https://wisevoter.com/world/2026/11/22/solar-wind-magnetic-field-rotation-reversal",
-    "image": null,
-    "source": "The Astrophysical Journal Letters"
-  },
-  {
-    "ts": "2026-11-22T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "Truyền tin bằng trọng lực: thang máy 1,8 tấn gửi mã nhị phân qua trường hấp dẫn",
-    "summary": "Nhóm Đại học Queensland dùng đối trọng thang máy di chuyển giữa hai tầng, biến đổi trường hấp dẫn thành mã nhị phân và đọc bằng gravimeter — kênh liên lạc \"gần như không thể chặn\".",
-    "content": "Các nhà vật lý tại Đại học Queensland đã chứng minh khả thi việc dùng trọng lực làm phương tiện liên lạc, theo nghiên cứu đăng trên tạp chí Science Advances.\nNhóm dùng một gravimeter — thiết bị đo nhạy biến đổi trường hấp dẫn — để theo dõi đối trọng thang máy nặng 1,8 tấn di chuyển giữa hai tầng. Sự thay đổi vị trí của đối trọng được dịch thành mã nhị phân (0 và 1), cho phép gửi đi một thông điệp.\nVì trọng lực xuyên qua gần như mọi vật chất, kênh liên lạc kiểu này được mô tả là \"gần như không thể chặn\" — một hướng đi khác hẳn với sóng điện từ hay cáp quang, dù tốc độ và ứng dụng thực tế vẫn còn là câu hỏi mở.",
-    "url": "https://www.newsbytesapp.com/news/science/gravity-can-be-used-to-send-practically-unblockable-messages/story",
-    "image": null,
-    "source": "NewsBytes / Đại học Queensland"
-  },
-  {
-    "ts": "2026-11-22T18:59:01+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thực đơn ăn sáng thứ 2: bánh chưng, giò lụa, xôi cốm dừa, bánh cuốn",
-    "summary": "Một sạp trong chợ khu nhận đặt đồ ăn sáng cho sáng thứ 2 (23/11), ship sớm trước 6h: bánh chưng vuông 40k/cái, giò lụa 35k/2 lạng, xôi cốm dừa 30k/đĩa, bánh cuốn nóng 58k/kg, cùng nhiều loại bánh mỳ, bánh rán, xôi và bánh giò.",
-    "content": "Một sạp trong chợ khu nhận đặt đồ ăn sáng cho sáng thứ 2 (23/11), ship sớm trước 6h, ship từ 2 cái hoặc kèm đồ khác.\nBánh chưng vuông 40k/cái (loại nhỏ 30k/2 cái); giò lụa 35k/2 lạng; chả thịt 15k/lạng, chả quế 17k/lạng; bánh giò nóng 13k/cái.\nXôi cốm dừa 30k/đĩa; xôi xéo, xôi lạc, xôi ngô 25k/2 gói; xôi gấc, xôi cốm dừa 30k/2 gói; xôi khúc 30k/2 cái; xôi chè kèm xôi vò 14k/hộp; sắn hấp cốt dừa 20k/hộp; ngô bung đỗ đen 25k/2 hộp.\nBánh cuốn nóng nhân thịt mộc nhĩ 58k/kg (30k/0,5kg); bánh cuốn trắng 43k/kg; bánh giầy kẹp giò 25k/2 cặp; bánh nếp mặn/ngọt 20k/2 cái; bánh đúc lạc 35k/kg; bánh da lợn 17k/hộp; bánh trôi 11k/hộp.\nBánh mỳ bơ sốt mật ong mini 37k/10 cái kèm sốt chấm; bánh mỳ kẹp hamburger 35k/2 cái; bánh mỳ bơ thành cổ 30k/2 cái; bánh rán phố cổ mini 25k/hộp 10 cái; bánh rán đường/vừng 24k/hộp 6 cái; bánh mỳ chuột đặc ruột 18k/5 cái; sữa đặc 6k/hộp. Thông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789518531285157/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
