@@ -1,5 +1,93 @@
 [
   {
+    "ts": "2026-11-25T00:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Meta đưa Muse vào Instagram DM — và bắt tay Walmart cho Black Friday",
+    "summary": "Từ 24/11, người dùng Instagram tại 5 nước trò chuyện với Muse ngay trong thread DM; Walmart hợp tác để khách mua deal Black Friday qua Muse, có giới hạn chi tiêu và duyệt trước khi mua.",
+    "content": "Từ 24/11, người dùng Instagram tại Mỹ, Canada, Mexico, Nhật Bản và Singapore có thể trò chuyện với Muse ngay trong một thread DM: hỏi thêm về bài đăng, địa điểm hay sản phẩm vừa thấy, nhờ tóm tắt các DM khác, hoặc chia sẻ bài đăng để Muse hành động — ví dụ thêm quán cà phê vào lịch trình Mexico City hay tìm deal Black Friday.\nBài đã lưu có thể nhờ Muse sắp xếp thành Collections, biến video công thức thành danh sách đi chợ, hay biến nội dung du lịch thành lịch trình. Meta khẳng định không chia sẻ hay đăng gì nếu chưa được phép, và người dùng có thể yêu cầu Muse quên thông tin bất cứ lúc nào.\nCùng ngày, Walmart công bố hợp tác để khách mua deal Black Friday qua Muse: đăng nhập tài khoản Walmart trong app Muse, nhờ tìm sản phẩm, so giá, lập giỏ hàng — có giới hạn chi tiêu và duyệt trước khi mua. Động thái trái ngược Amazon, vốn đang chặn agent bên thứ ba mua hộ.",
+    "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/11/1080x1080_Black.png?w=680",
+    "source": "TechCrunch"
+  },
+  {
+    "ts": "2026-11-25T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Anthropic: Claude artifacts thành ứng dụng desktop thật trên Mac và Windows",
+    "summary": "Tính năng \"Install as app\" mở beta trên mọi gói: artifact cài thành app riêng với icon và cửa sổ riêng, có 3 mức quyền, cao nhất là toàn quyền máy tính.",
+    "content": "Tính năng \"Install as app\" đang mở beta trên mọi gói (kể cả Free): một artifact như bộ đếm giờ, trình theo dõi hay công cụ đổi tên ảnh có thể cài thành app riêng với icon và cửa sổ riêng, dùng được Claude và các connector, tự cập nhật khi artifact gốc được sửa, và chia sẻ cho người dùng Claude khác mà không cần đóng gói hay ký.\nApp có 3 mức quyền: mặc định (chỉ như trong trình duyệt), quyền app (thông báo, phím tắt toàn cục, cửa sổ luôn nổi, menu bar/tray) và toàn quyền máy tính (chạy chương trình, đọc/sửa/xóa file không hỏi lại từng lần). Anthropic không kiểm duyệt app trước khi cài, nên toàn quyền chỉ cấp được cho app tự làm (hoặc cùng tổ chức trên gói Team/Enterprise).\nCần Claude desktop bản 6.28899.0 trở lên, phải online và đăng nhập mới mở được app.",
+    "url": "https://claude.com/resources/articles/install-as-app",
+    "image": null,
+    "source": "Anthropic"
+  },
+  {
+    "ts": "2026-11-25T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "KRAFTON ra mắt bản chính thức LLM tự phát triển Raon-1 mini 30B, mã nguồn mở",
+    "summary": "Mô hình 30B tham số do hãng tự thiết kế và huấn luyện từ đầu, MoE chỉ kích hoạt ~4B tham số mỗi lần suy luận, chọn được 6 mức suy luận, giấy phép Apache 2.0.",
+    "content": "Hãng game Hàn Quốc KRAFTON ngày 25/11 phát hành bản đầy đủ của Raon-1 mini — mô hình ngôn ngữ 30B tham số do hãng tự thiết kế kiến trúc và huấn luyện từ đầu, thay vì tinh chỉnh từ mô hình có sẵn. Kiến trúc MoE chỉ kích hoạt ~4B tham số mỗi lần suy luận, kết hợp công nghệ linear attention riêng, nên rẻ và nhanh.\nĐiểm mới so với bản preview tháng 10: khả năng suy luận và thực thi tác vụ agent tốt hơn, cùng tính năng chọn 6 mức suy luận (trả lời ngay không suy luận, low, medium, high, xhigh, max) tùy độ khó. Điểm benchmark theo hãng: MultiChallenge 64,9 (tăng 5,9 so với preview), AIME 2026 96,7, GPQA Diamond 86,0; kỳ thi đại học Hàn Quốc CSAT 2027 đạt 401,3 điểm.\nPhát hành trên Hugging Face theo giấy phép Apache 2.0, dùng được cho cả mục đích thương mại.",
+    "url": "https://www.invenglobal.com/articles/29095/krafton-officially-launches-in-house-llm-raon-1-mini",
+    "image": null,
+    "source": "Inven Global"
+  },
+  {
+    "ts": "2026-11-25T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Claude — và OpenAI — tuyên bố chứng minh VP ≠ VNP, bài toán 47 năm của lý thuyết độ phức tạp",
+    "summary": "Anthropic ngày 23/11 đăng bài báo 70 trang và ~73.000 dòng code Lean 4 do Claude viết; OpenAI cùng ngày đăng chứng minh riêng. Cả hai đều chưa được nhà toán học nào kiểm chứng.",
+    "content": "Anthropic ngày 23/11 âm thầm đăng lên GitHub bài báo 70 trang và ~73.000 dòng code Lean 4, tác giả duy nhất ghi \"Claude (Anthropic)\", khẳng định đã chứng minh VP là tập con thực sự của VNP trên mọi trường — phiên bản đại số của P ≠ NP, bài toán do Leslie Valiant đặt ra năm 1979. OpenAI cùng ngày cũng đăng chứng minh riêng cho cùng bài toán, sớm hơn Anthropic khoảng 6 giờ theo dấu thời gian.\nĐiểm cần nói rõ: cả hai đều chưa được nhà toán học nào kiểm chứng; Lean chỉ xác minh được rằng chứng minh đúng với phát biểu đã mã hóa, còn việc phát biểu đó có đúng là VP ≠ VNP chuẩn hay không mới chỉ được \"độc giả AI\" đánh giá. Bài báo tự ghi rõ kết quả này không giải quyết P vs NP.",
+    "url": "https://www.notebookcheck.net/Anthropic-and-OpenAI-claim-breakthroughs-on-a-47-year-old-fundamental-math-problem.1459160.0.html",
+    "image": null,
+    "source": "NotebookCheck"
+  },
+  {
+    "ts": "2026-11-25T08:05:49+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Lỗ hổng Cisco Expressway CVE-2026-76466 (9.8) đang bị khai thác ngoài thực tế",
+    "summary": "Hãng bảo mật F6 ghi nhận vụ xâm nhập đầu tiên khai thác CVE-2026-76466; lỗ hổng cho quyền root không cần đăng nhập, dù Cisco đã vá từ 21/10 và CISA đưa vào KEV ngày 23/11.",
+    "content": "Hãng bảo mật Nga F6 ghi nhận vụ xâm nhập đầu tiên khai thác CVE-2026-76466 trên Cisco Expressway: kẻ tấn công chiếm hai thiết bị hướng Internet rồi từ đó thâm nhập thêm hai node trong cụm nội bộ, dùng mã Python tự viết để quét mạng và liệt kê file chia sẻ qua SMB.\nLỗ hổng do cookie cố định trong môi trường cluster và xác thực chứng chỉ client không đầy đủ, cho phép truy cập dịch vụ cơ sở dữ liệu và thực thi lệnh với quyền root mà không cần đăng nhập.\nCisco đã công bố và vá từ 21/10 (bản sửa X15.5.20), CISA đưa vào danh mục KEV ngày 23/11 — nhưng vụ khai thác xảy ra dù đã có bản vá, sau khi mã PoC bị công khai cuối tuần trước. Ai còn chạy Expressway-E/C bản X15.5.3 trở xuống cần vá ngay và kiểm tra dấu vết xâm nhập.",
+    "url": "https://www.thelec.net/news/articleView.html?idxno=15878",
+    "image": null,
+    "source": "The Elec"
+  },
+  {
+    "ts": "2026-11-25T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "GL.iNet: lỗ hổng GoodCloud bị khai thác để cài malware lên router và thiết bị KVM",
+    "summary": "Kẻ tấn công khai thác lỗ hổng dịch vụ quản lý từ xa GoodCloud để cài malware lên router và KVM của khách hàng; firmware mới không dọn được malware đã nhiễm.",
+    "content": "Hãng router du lịch GL.iNet xác nhận kẻ tấn công đã khai thác lỗ hổng trong dịch vụ quản lý từ xa GoodCloud để cài malware lên một số router và thiết bị KVM của khách hàng (sự cố phát hiện ngày 20/11).\nHãng đã chặn đường tấn công trên đám mây và phát hành firmware bảo mật, nhưng firmware không dọn được malware đã nhiễm — chủ thiết bị phải tự kiểm tra và cài firmware mới. Phân tích độc lập ghi nhận reverse shell cấp root trên router GL-AXT1800; dấu vết biến mất khi khởi động lại nên khó phát hiện. Số CVE vẫn đang chờ cấp.\nNgười dùng GL.iNet nên kiểm tra tiến trình chứa chuỗi \"crond -i /tmp/.log\", cài firmware bảo mật mới nhất cho đúng model, và kiểm tra cả máy tính gắn với KVM bị nhiễm.",
+    "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+    "image": null,
+    "source": "The Hacker News"
+  },
+  {
+    "ts": "2026-11-25T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Marathon tung trailer điện ảnh Bishop Shell — class cận chiến mới",
+    "summary": "Bungie công bố trailer điện ảnh cho Bishop Shell, class mới thiên về cận chiến trong game bắn súng trích xuất sci-fi Marathon.",
+    "content": "Bungie công bố trailer điện ảnh cho Bishop Shell, class mới thiên về cận chiến trong game bắn súng trích xuất sci-fi Marathon: tốc độ và khả năng chiến đấu áp sát vượt trội.\nTrailer do IGN đăng ngày 24/11.",
+    "url": "https://www.youtube.com/watch?v=E0DAjg0uaz8",
+    "image": "https://i.ytimg.com/vi/E0DAjg0uaz8/hqdefault.jpg",
+    "source": "IGN (YouTube)"
+  },
+  {
+    "ts": "2026-11-25T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "The Cube — MMO RPG shooter mới trong vũ trụ Atomic Heart hé lộ teaser đầu tiên",
+    "summary": "Mundfish công bố The Cube, game MMO RPG shooter lấy bối cảnh cùng vũ trụ Atomic Heart; teaser \"Archive File #1\" do IGN đăng ngày 24/11.",
+    "content": "Mundfish, studio đứng sau Atomic Heart, công bố The Cube — game MMO RPG shooter lấy bối cảnh cùng vũ trụ, xoay quanh một khối vật thể khổng lồ đầy bí ẩn.\nTeaser \"Archive File #1\" do IGN đăng ngày 24/11 mới chỉ gợi mở, chưa có ngày phát hành.",
+    "url": "https://www.youtube.com/watch?v=M69kuiyffsY",
+    "image": "https://i.ytimg.com/vi/M69kuiyffsY/hqdefault.jpg",
+    "source": "IGN (YouTube)"
+  },
+  {
     "ts": "2026-11-25T14:41:29+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
@@ -3210,93 +3298,5 @@
     "url": "https://www.pma.caltech.edu/news/astronomers-find-hints-of-star-population-that-failed-to-explode",
     "image": "https://divisions-prod-assets.resources.caltech.edu/root/images/Hubble_failed_supernovae_comparison2.a5193a90.width-600.jpg",
     "source": "Caltech"
-  },
-  {
-    "ts": "2026-11-23T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Game",
-    "title": "GTA 6 đã xuất hiện lỗi \"tiền vô hạn\", nhiều người chơi cố tình bỏ qua",
-    "summary": "Chỉ một ngày sau ra mắt, người chơi lặp cướp kho hàng đỏ bằng save/load để kiếm ~8.000–11.000 USD mỗi vòng; nhiều người từ chối dùng để giữ trải nghiệm cày tiền đầu game.",
-    "content": "Chỉ một ngày sau khi ra mắt, người chơi đã tìm ra cách lặp lại việc cướp kho hàng đỏ ở South Vice-Dale County (gần Hamlet) bằng cách save/load thủ công để đồ cướp tái sinh.\nMỗi vòng kiếm khoảng 8.000–11.000 USD rồi bán qua fence như Brian's Lockup.\nNhiều người chơi từ chối dùng vì muốn giữ trải nghiệm \"cày tiền\" đầu game vốn là động lực cốt truyện của Jason và Lucia; một số còn phát hiện tiền farm sớm có thể bị khóa lại ở đoạn sau của cốt truyện.\nRockstar chưa xác nhận đã vá.",
-    "url": "https://www.tweaktown.com/news/114814/gta-6-already-has-an-infinite-money-glitch-but-many-players-are-skipping-it/index.html",
-    "image": "https://static.tweaktown.com/news/1/1/114814_2_theres-an-infinite-money-glitch-in-gta-6_full.jpg?v=1795365921",
-    "source": "TweakTown"
-  },
-  {
-    "ts": "2026-11-23T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Game",
-    "title": "GTA 6 bị review bomb: giới phê bình chấm 99, người chơi chỉ chấm 5,6",
-    "summary": "Metacritic ngày 22/11: Metascore 99 trên 152 bài phê bình PS5, nhưng điểm người dùng chỉ 5,6/10 với 70.035 lượt đánh giá, 43,6% tiêu cực.",
-    "content": "Trên Metacritic ngày 22/11, GTA VI đạt Metascore 99 (ngang kỷ lục của Zelda: Ocarina of Time, trên 152 bài phê bình PS5) nhưng điểm người dùng chỉ 5,6/10 với 70.035 lượt đánh giá, trong đó 43,6% là tiêu cực.\nKhoảng cách 43 điểm, lớn gấp 2,87 lần mức trung vị của các game đối chứng.\nOpenCritic ghi 99/100 với 100% nhà phê bình khuyên chơi.\nBài phân tích không kết luận nguyên nhân của khoảng cách này.",
-    "url": "https://axis-intelligence.com/gta-6-statistics/",
-    "image": "https://axis-intelligence.com/wp-content/uploads/2026/10/gta-6-statistics-updater.avif",
-    "source": "Axis Intelligence"
-  },
-  {
-    "ts": "2026-11-22T12:04:00+07:00",
-    "flow": "internet",
-    "category": "Video",
-    "title": "BLG Và Sự Hồi Sinh Của LoL Trung Quốc",
-    "summary": "Video mới từ Phê Game (22/11 12:04 +07).",
-    "content": "Video mới từ Phê Game, đăng 22/11/2026 12:04 +07.\nTiêu đề: \"BLG Và Sự Hồi Sinh Của LoL Trung Quốc\".",
-    "url": "https://www.youtube.com/watch?v=vLa_FVUMymA",
-    "image": "https://i.ytimg.com/vi/vLa_FVUMymA/hqdefault.jpg",
-    "source": "Phê Game"
-  },
-  {
-    "ts": "2026-11-22T18:30:00+07:00",
-    "flow": "internet",
-    "category": "Video",
-    "title": "Bản Tin BÓC PHỐT #292 | GTA 6 Bị Review Bomb & The Game Awards Lại Gây TRANH CÃI | GCH News",
-    "summary": "Video mới từ Game Cực Hay (22/11 18:30 +07).",
-    "content": "Video mới từ Game Cực Hay, đăng 22/11/2026 18:30 +07.\nTiêu đề: \"Bản Tin BÓC PHỐT #292 | GTA 6 Bị Review Bomb & The Game Awards Lại Gây TRANH CÃI | GCH News\".",
-    "url": "https://www.youtube.com/watch?v=fpMgEdjBorU",
-    "image": "https://i.ytimg.com/vi/fpMgEdjBorU/hqdefault.jpg",
-    "source": "Game Cực Hay"
-  },
-  {
-    "ts": "2026-11-22T21:24:02+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Sale sọ dừa bóc sẵn, giao sáng mai",
-    "summary": "Một sạp trong chợ khu sale sọ dừa bóc từ dừa xiêm xanh, 160.000 đồng/10 sọ, từ 20 sọ còn 15.000 đồng/sọ; sọ to từ 550g, bảo quản tủ lạnh được 10–15 ngày.",
-    "content": "Một sạp trong chợ khu sale sọ dừa bóc sẵn, giao sáng mai.\nSọ dừa bóc từ dừa xiêm xanh, khách đặt mới bóc nên tươi; sọ bóc nguyên bản, không tẩy. Bảo quản trong tủ lạnh được 10–15 ngày.\nGiá: sọ to size đại (từ 550g trở lên) sale còn 160.000 đồng/10 sọ; đặt từ 20 sọ còn 15.000 đồng/sọ. Miễn phí ship.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789690167934660/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T21:16:00+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thực đơn thứ 2: bánh chưng, giò lụa, xôi và bánh mỳ",
-    "summary": "Một sạp trong chợ khu nhận đơn thực đơn thứ 2 (23/11), ship sớm trước 6h: bánh chưng vuông 40.000 đồng, giò lụa 35.000 đồng/2 lạng, xôi cốm dừa 30.000 đồng/đĩa, cùng nhiều món bánh mỳ, bánh cuốn, xôi gói lá.",
-    "content": "Một sạp trong chợ khu nhận đơn thực đơn thứ 2 (ngày 23/11), ship sớm trước 6h, ship từ 2 cái hoặc kèm đồ khác.\nMón cho ngày Rằm mai: bánh chưng vuông 40.000 đồng, giò lụa ngon, đĩa xôi cốm dừa.\nMột số món trong thực đơn: set bánh mỳ bơ sốt mật ong mini kèm 1 hộp sốt chấm 37.000 đồng/10 cái (sốt chấm thêm 7.000 đồng/hộp); bánh rán phố cổ mini 25.000 đồng/hộp 10 cái; xôi khúc 30.000 đồng/2 cái; sắn hấp cốt dừa 20.000 đồng/hộp; bánh chưng nhỏ 30.000 đồng/2 cái; xôi cốm dừa đĩa 30.000 đồng/đĩa; xôi Phú Thượng gói lá chuối, xôi xéo, xôi lạc, xôi ngô 25.000 đồng/2 gói; xôi gấc, xôi cốm dừa 30.000 đồng/2 gói; bánh mỳ kẹp hamburger 35.000 đồng/2 cái; bánh cuốn nóng nhân thịt mộc nhĩ 58.000 đồng/kg (30.000 đồng/0,5kg); bánh cuốn trắng 43.000 đồng/kg (22.000 đồng/0,5kg); bánh giầy kẹp giò 25.000 đồng/2 cặp; bánh da lợn 17.000 đồng/hộp; bánh trôi 11.000 đồng/hộp; bánh chưng dẻo 1kg 40.000 đồng/cái; bánh giò nóng 13.000 đồng/cái; bánh mỳ chuột đặc ruột 18.000 đồng/5 cái, 32.000 đồng/10 cái; giò lụa 35.000 đồng/2 lạng; chả thịt 15.000 đồng/lạng, chả quế 17.000 đồng/lạng.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789680111268999/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T21:13:38+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Nhãn Thái VIP sale 99.000 đồng/2kg, phục vụ dâng hương Rằm",
-    "summary": "Một sạp trong chợ khu còn khoảng chục cân nhãn Thái VIP, sale 99.000 đồng/2kg, ship sớm mai; nhãn quả to, ngọt, phục vụ dâng hương ngày Rằm.",
-    "content": "Một sạp trong chợ khu còn khoảng chục cân nhãn Thái VIP, ship sớm mai.\nNhãn Thái ngon, quả to, ngọt, phục vụ dâng hương ngày Rằm. Giá sale 99.000 đồng/2kg.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789677101269300/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-22T21:11:26+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Hoa thắp hương Rằm, ship sớm từ 7h30 sáng mai",
-    "summary": "Một sạp trong chợ khu nhận đơn hoa thắp hương ngày Rằm, ship sớm từ 7h30 sáng mai: cúc lưới xanh lá 65.000 đồng/5 bông, tuyết mai rừng 70.000–85.000 đồng/bó, cúc Nhật 52.000 đồng/bó, dơn 65.000–90.000 đồng/10 cành.",
-    "content": "Một sạp trong chợ khu nhận đơn hoa thắp hương ngày Rằm, ship sớm từ 7h30 sáng mai.\nMột số loại hoa: cúc lưới xanh lá 65.000 đồng/5 bông; tuyết mai rừng 85.000 đồng/bó (cành dài khoảng 1,4m), 70.000 đồng/bó (cành khoảng 1m); hồng ngoại 125.000 đồng/50 bông cành ngắn, 130.000 đồng/30 bông; cành thông 105.000 đồng/set 2 cành; cành phát lộc đỏ 40.000 đồng/3 cành; hồng chùm 90.000 đồng/bó; cúc Tana 60.000 đồng/bó; phăng đơn 55.000 đồng/bó (18–20 bông); thanh liễu 60.000 đồng/bó; ly đỏ 75.000 đồng/3 cành; dơn đỏ 90.000 đồng/10 cành, dơn tím cẩm 65.000 đồng/10 cành, dơn hồng đào 70.000 đồng/10 cành; cúc Nhật 52.000 đồng/bó; tứ quý 30.000 đồng/bó, cúc lưới Đà Lạt 35.000 đồng/5 bông, chuối điểu 30.000 đồng/bó (ship cùng hoa khác).\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4789673934602950/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
