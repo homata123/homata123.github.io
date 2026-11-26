@@ -1,5 +1,49 @@
 [
   {
+    "ts": "2026-11-26T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "FCC phê duyệt SpaceX triển khai tới 1 triệu vệ tinh Starmind — trung tâm dữ liệu AI trên quỹ đạo",
+    "summary": "FCC lần đầu tiên trong lịch sử Mỹ cấp phép cho một chùm vệ tinh trung tâm dữ liệu trên không gian: SpaceX được triển khai tới 1 triệu vệ tinh Starmind để xử lý AI trên quỹ đạo, dùng năng lượng mặt trời và liên kết laser.",
+    "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/",
+    "image": null,
+    "source": "Reuters",
+    "content": "Ủy ban Truyền thông Liên bang Mỹ (FCC) ngày 25/11 phê duyệt cho SpaceX triển khai tới 1 triệu vệ tinh cho chùm \"Starmind\" — mạng lưới các mô-đun tính toán trên quỹ đạo thấp (500–1.002 km) xử lý khối lượng dữ liệu khổng lồ phục vụ AI, rồi trả kết quả về Trái Đất. Đây là lần đầu tiên trong lịch sử Mỹ một chùm vệ tinh trung tâm dữ liệu trên không gian được cấp phép.\nTheo giấy phép, SpaceX phải đưa vệ tinh đầu tiên vào hoạt động trước tháng 11/2033, đạt 10% (100.000 vệ tinh) trước tháng 11/2035, 50% trước tháng 11/2038 và toàn bộ trước năm 2040. Musk cho biết vệ tinh đầu tiên có thể phóng vào quý 3/2027; SpaceX sản xuất Starmind cùng Nvidia tại Bastrop, Texas.\nFCC bác bỏ phản đối từ Amazon, Viasat và Hội Thiên văn Mỹ (lo ngại về bầu trời đêm và rác quỹ đạo), nhưng kèm điều kiện: sao lưu liên lạc, báo cáo định kỳ và kế hoạch giảm thiểu rác quỹ đạo chi tiết; đề xuất đưa vệ tinh hết hạn lên quỹ đạo \"nghĩa địa\" vẫn chưa được chấp thuận."
+  },
+  {
+    "ts": "2026-11-26T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Anthropic dùng Claude chuyển Messages API từ Python sang Rust: CPU giảm 70%, không downtime",
+    "summary": "Anthropic kể lại cách Claude tự viết lại Messages API — cổng chính để khách hàng, Claude Code và Cowork gọi Claude — từ Python sang Rust: CPU mỗi request giảm ~70%, bộ nhớ giảm hơn 80%, thời gian tới token đầu tiên giảm ~20%.",
+    "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+    "image": "https://assets.claude.com/faac348155bf01d5c59ab38cbd05294eb2fa8197.jpg",
+    "source": "Anthropic",
+    "content": "Anthropic công bố ngày 25/11 bài viết kỹ thuật về việc chuyển Messages API — cổng chính để khách hàng cũng như các ứng dụng của hãng như Claude Code và Cowork gọi Claude — từ Python sang Rust. API này ra đời năm 2023 chỉ như một \"request forwarder\", nhưng tới cuối 2025 mỗi request phải qua xác thực, token hóa và các bộ phân loại an toàn; lưu lượng tăng khoảng 1.800 lần từ đầu 2024 đến mùa thu 2026.\nClaude viết bản đầu tiên của đường request chính trong khoảng một tuần; tới tháng 5/2026 Claude đã viết hơn 80% code mà Anthropic merge. Phần khó không phải viết code mà là chứng minh bản Rust hành xử đúng như bản Python: nhóm dùng chính API Python đang chạy làm \"đáp án\", chạy shadow trên lưu lượng thật, ghi lại từng khác biệt dưới dạng \"dấu vân tay\" (không đọc nội dung khách hàng) rồi điều phối agent tự sửa lỗi theo vòng lặp.\nKết quả theo số liệu của Anthropic: CPU mỗi request giảm ~70%, bộ nhớ giảm hơn 80%, thời gian trung bình tới token đầu tiên giảm ~20%; lưu lượng công khai chuyển sang Rust từ tháng 9/2026 mà không hề downtime hay đóng băng phát triển tính năng. Bài học hãng nhấn mạnh: \"Verification, not generation, had become the bottleneck\" — kiểm chứng, chứ không phải sinh code, mới là nút thắt."
+  },
+  {
+    "ts": "2026-11-26T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "OpenAI thử nghiệm Private Inference: chạy suy luận mà chính OpenAI cũng không đọc được dữ liệu doanh nghiệp",
+    "summary": "CEO Sam Altman công bố OpenAI đang thử nghiệm Private Inference với nhóm nhỏ khách hàng doanh nghiệp: prompt và kết quả chạy trên phần cứng cách ly có thể kiểm chứng độc lập, OpenAI không truy cập được dữ liệu.",
+    "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+    "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
+    "source": "The Decoder",
+    "content": "CEO Sam Altman công bố trên X ngày 25/11: OpenAI đang thử nghiệm Private Inference với một nhóm nhỏ khách hàng doanh nghiệp, thuộc gói OpenAI Private Intelligence. Tính năng dùng confidential computing — prompt và kết quả được xử lý trên phần cứng cách ly chuyên biệt, với các kiểm soát có thể xác minh độc lập, để OpenAI không thể truy cập dữ liệu trong lúc mô hình chạy.\nKèm theo là Zero Data Retention và Private Safety Processing: hệ thống vẫn quét lạm dụng tự động mà không lưu trữ dữ liệu khách hàng và nhân viên OpenAI không được xem nội dung. Altman nói bảo mật mạnh hơn sẽ giúp AI tiên tiến hữu ích cho nhiều công việc nhạy cảm hơn.\nĐây mới là thử nghiệm giới hạn (alpha), chưa có giá, danh sách mô hình hay ngày mở rộng; OpenAI đang tăng dung lượng tính toán để mở rộng dịch vụ."
+  },
+  {
+    "ts": "2026-11-26T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "New York cấm đồ chơi chatbot AI trong 5 năm",
+    "summary": "Thống đốc Kathy Hochul ký luật tạm dừng 5 năm việc sản xuất, phân phối và bán đồ chơi có chatbot AI tại New York — bang thứ hai của Mỹ sau California; vi phạm phạt tới 15.000 USD/ngày.",
+    "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+    "image": null,
+    "source": "TechCrunch",
+    "content": "Thống đốc New York Kathy Hochul ký ngày 24/11 dự luật S.9408A/A.11144B, tạm dừng 5 năm việc sản xuất, phân phối và bán đồ chơi có chatbot AI nhúng hoặc tích hợp — như thú bông biết nói, búp bê và robot dùng internet để trò chuyện với trẻ em. New York là bang thứ hai của Mỹ ban hành lệnh cấm này, sau California.\nLuật có hiệu lực 90 ngày sau khi ký (22/2/2027), nên mùa mua sắm lễ cuối năm nay chưa bị chặn về mặt pháp lý; thống đốc kêu gọi phụ huynh cân nhắc rủi ro trước khi mua. Vi phạm bị phạt dân sự tới 15.000 USD/ngày cho mỗi vi phạm, do tổng chưởng lý bang thực thi.\nĐộng thái nối tiếp luật tháng 10 của bang cấm các tính năng chatbot không an toàn với trẻ vị thành niên — như tạo lệ thuộc cảm xúc, khuyến khích tự hại hay trò chuyện mang tính tình dục — sau khi một tổ chức bảo vệ người tiêu dùng phát hiện một số đồ chơi chatbot nói về chủ đề nhạy cảm với trẻ."
+  },
+  {
     "ts": "2026-11-26T03:05:23+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3252,50 +3296,6 @@
     "summary": "Một sạp trong chợ khu bán cá tầm 175.000đ/kg, chép giòn 179.000đ/kg và cá lăng 115.000đ/kg, size từ trên 3kg đến 4kg, hỗ trợ làm sạch hoặc giao sống nguyên con.",
     "content": "Một sạp trong chợ khu rao bán cá tầm, chép giòn và cá lăng, size từ trên 3kg đến 4kg, hỗ trợ làm sạch hoặc giao sống nguyên con có bơm ô xi.\nCá tầm: 175.000đ/kg.\nChép giòn: 179.000đ/kg.\nCá lăng: 115.000đ/kg.\nHàng cam kết đổi 1 đổi 1 nếu không đạt chuẩn.\nThông tin liên hệ nằm trong bài gốc tại group.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4791059334464410/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T19:53:20+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cam Cao Phong nhà trồng, 50.000đ/2kg",
-    "summary": "Một cư dân bán hộ cam Cao Phong nhà trồng, quả nhỏ 6–7 quả/kg, ngọt, giá 50.000đ/2kg, cắt giao vào ngày mai.",
-    "content": "Một cư dân bán hộ cam Cao Phong nhà trồng, đợt này quả nhỏ, khoảng 6–7 quả/kg, ăn ngọt, có thể bổ miếng hoặc vắt nước.\nGiá: 50.000đ/2kg.\nCắt giao vào ngày mai.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791058894464454/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T19:51:30+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cơm cháy siêu ruốc Sài Gòn, 115.000đ",
-    "summary": "Một sạp trong chợ khu bán cơm cháy Sài Gòn siêu ruốc, lớp gạo dày xốp, sốt rưới trực tiếp, giá 115.000đ, có sẵn hàng.",
-    "content": "Một sạp trong chợ khu rao bán cơm cháy Sài Gòn siêu ruốc: lớp gạo dày, xốp, sốt rưới trực tiếp nên dẻo kẹo, phủ nhiều ruốc bông, ăn giòn.\nGiá: 115.000đ.\nCó sẵn hàng.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791057111131299/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T19:49:12+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cháo se, bánh cuốn, bánh rán vừng sáng mai",
-    "summary": "Một sạp trong chợ khu có cháo se đặc sản 20.000đ/bát, bánh cuốn 40.000đ/kg kèm hành phi và nước chấm, bánh rán vừng 15.000đ/hộp, giao sớm sáng mai.",
-    "content": "Một sạp trong chợ khu nhận đặt cháo se, bánh cuốn và bánh rán vừng cho sáng mai, giao sớm.\nCháo se đặc sản: 20.000đ/bát, quẩy 5.000đ/3 cái.\nBánh cuốn: 40.000đ/kg kèm hành phi và nước chấm, có bán theo suất 25.000–35.000đ.\nBánh rán vừng: 15.000đ/hộp.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791054634464880/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T19:47:26+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Chả mực, cá thu, mực và hải sản giao ngày mai",
-    "summary": "Một sạp trong chợ khu nhận đơn hải sản giao ngày mai: chả mực pha tôm 350.000đ/kg, cá thu khúc 290.000đ/kg, mực lá 270.000đ/kg, nõn tôm tươi 350.000đ/kg và nem tôm rế 90.000đ/hộp.",
-    "content": "Một sạp trong chợ khu nhận đơn hải sản, giao vào ngày mai.\nChả mực pha tôm vip: 350.000đ/kg; chả mực pha râu mực: 330.000đ/kg.\nCá thu khúc vip: 290.000đ/kg; cá thu nướng: 350.000đ/kg; cá thu 3 khúc: 190.000đ/kg.\nMực lá size 10–12 con: 270.000đ/kg; mực ống thước 4–5 con: 370.000đ/kg.\nThịt trứng mắm tép có tôm: 180.000đ/hũ.\nNõn tôm tươi: 350.000đ/kg.\nNem tôm rế: 90.000đ/hộp.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791052621131748/",
     "image": null,
     "source": "Chợ cư dân"
   }

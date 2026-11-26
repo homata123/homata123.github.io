@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T06:56:27.129551+07:00",
+ "updated_at": "2026-11-26T10:01:25.784813+07:00",
  "channels": [
   {
    "channel_id": "UCrCqu1n0H52uGETAoSmgNdQ",
@@ -23,7 +23,7 @@
    "handle": "@EASPORTSFCONLINEVN",
    "channel_url": "https://www.youtube.com/@EASPORTSFCONLINEVN",
    "ts": "2026-11-25T17:30:11+07:00",
-   "views": 1700,
+   "views": 1800,
    "viewers": null,
    "duration": 201,
    "live": false,
@@ -565,7 +565,7 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-08-02T16:00:05+07:00",
-   "views": 213998,
+   "views": 214002,
    "viewers": null,
    "duration": null,
    "live": false,
@@ -595,13 +595,28 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-07-14T12:44:56+07:00",
-   "views": 178862,
+   "views": 178863,
    "viewers": null,
    "duration": null,
    "live": false,
    "upcoming": false,
    "url": "https://www.youtube.com/watch?v=blqm8IoH54A",
    "image": "https://i.ytimg.com/vi/blqm8IoH54A/hqdefault.jpg"
+  },
+  {
+   "video": "PyxTNdNqC30",
+   "title": "The 14 Monarchs of the Tran and Later Tran Dynasties - An Era of Glorious Victories | A Summary o...",
+   "channel": "Sử Lược - Tóm Tắt Lịch Sử",
+   "handle": "@suluoc",
+   "channel_url": "https://www.youtube.com/@suluoc",
+   "ts": "2025-12-19T19:01:02+07:00",
+   "views": 122000,
+   "viewers": null,
+   "duration": 6200,
+   "live": false,
+   "upcoming": false,
+   "url": "https://www.youtube.com/watch?v=PyxTNdNqC30",
+   "image": "https://i.ytimg.com/vi/PyxTNdNqC30/hqdefault.jpg"
   },
   {
    "video": "gw86-iHDhh4",
@@ -640,7 +655,7 @@
    "handle": "@suluoc",
    "channel_url": "https://www.youtube.com/@suluoc",
    "ts": "2026-07-22T10:30:35+07:00",
-   "views": 110619,
+   "views": 110620,
    "viewers": null,
    "duration": null,
    "live": false,
@@ -722,21 +737,6 @@
    "upcoming": false,
    "url": "https://www.youtube.com/watch?v=mOIRUxExuFY",
    "image": "https://i.ytimg.com/vi/mOIRUxExuFY/hqdefault.jpg"
-  },
-  {
-   "video": "h02SGfx_s6E",
-   "title": "Tại sao Mỹ không nem bom hạt nhân Việt Nam? #suluoc #tomtatlichsu",
-   "channel": "Sử Lược - Tóm Tắt Lịch Sử",
-   "handle": "@suluoc",
-   "channel_url": "https://www.youtube.com/@suluoc",
-   "ts": "2026-07-23T10:30:15+07:00",
-   "views": 75065,
-   "viewers": null,
-   "duration": null,
-   "live": false,
-   "upcoming": false,
-   "url": "https://www.youtube.com/watch?v=h02SGfx_s6E",
-   "image": "https://i.ytimg.com/vi/h02SGfx_s6E/hqdefault.jpg"
   }
  ]
 }
