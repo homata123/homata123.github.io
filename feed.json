@@ -1,5 +1,93 @@
 [
   {
+    "ts": "2026-11-26T15:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Ấn Độ ra mắt mô hình AI quốc gia Chariot-1",
+    "summary": "Ấn Độ công bố bộ mô hình nền tảng Chariot-1 (LLM + text-to-speech) tiền huấn luyện từ đầu trong nước, với công nghệ IndicShift tiết kiệm tới 2,5 lần token cho văn bản tiếng Ấn và TTS hỗ trợ 10 ngôn ngữ Ấn Độ.",
+    "content": "Ấn Độ vừa công bố bộ mô hình nền tảng Chariot-1 do Chariot Artificial Intelligence phát triển trong khuôn khổ IndiaAI Mission — gồm một mô hình ngôn ngữ lớn (LLM) và một mô hình text-to-speech, cả hai đều được tiền huấn luyện từ đầu tại Ấn Độ.\nĐiểm đáng chú ý là công nghệ IndicShift mã nguồn mở: một bảng chữ cái chung cho 12 hệ chữ Ấn Độ (1.012 ký tự, 350 chữ cái), giúp tiết kiệm tới 2,5 lần token cho văn bản tiếng Ấn so với tokenizer của OpenAI và cải thiện hiệu năng ngôn ngữ Ấn 5–8% với cùng tài nguyên tính toán.\nCông nghệ huấn luyện lồng nhau (Nested Training) được cho là tăng tốc huấn luyện 62% so với huấn luyện ba kích cỡ model độc lập. Mô hình TTS hỗ trợ tiếng Anh và 10 ngôn ngữ Ấn Độ, gồm Hindi, Bengali, Marathi, Tamil, Telugu, Kannada, Malayalam, Gujarati, Punjabi và Odia.",
+    "url": "https://www.freepressjournal.in/amp/business/india-unveils-home-grown-chariot-1-ai-models-a-new-chapter-in-multilingual-intelligence-begins",
+    "image": "https://media.assettype.com/freepressjournal/2026-11-26/8hvf2lv6/chariotai1200x675.jpg?rect=0%2C0%2C3900%2C2048&w=1200&auto=format%2Ccompress&ogImage=true",
+    "source": "Free Press Journal"
+  },
+  {
+    "ts": "2026-11-26T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "OpenAI gộp Chat và Work trong ChatGPT, dùng chung một hạn mức",
+    "summary": "OpenAI bắt đầu triển khai giao diện ChatGPT hợp nhất cho nhóm nhỏ thuê bao Pro; từ tháng 12, Plus/Pro/Business dùng chung một hạn mức token cho ChatGPT và Codex, chỉ trừ chat trên model Instant.",
+    "content": "OpenAI bắt đầu triển khai (từ 24/11) giao diện ChatGPT hợp nhất cho một nhóm nhỏ thuê bao Pro: tab Work được gộp vào Chat, và từ tháng 12, các gói Plus, Pro và Business sẽ dùng chung một hạn mức token cho cả ChatGPT lẫn Codex.\nChat trên model Instant vẫn không giới hạn và không tính vào hạn mức chung. OpenAI thừa nhận đa số người dùng sẽ không bị reset sớm hơn, nhưng một bộ phận nhỏ người dùng nặng có thể chạm giới hạn sớm hơn trước.\nHãng vẫn chưa công bố tổng hạn mức token mới cho từng gói — đây là điểm gây tranh cãi chính trong cộng đồng thuê bao Pro.",
+    "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "image": null,
+    "source": "TechCrunch"
+  },
+  {
+    "ts": "2026-11-26T16:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Nvidia mở trọng số mô hình tạo ảnh Nemotron-Labs-Image-30B-A3B",
+    "summary": "Nvidia phát hành trọng số của mô hình tạo ảnh 30B tham số (3B active/token) trên Hugging Face; theo số liệu hãng tự báo, framework VisualCreation vượt GPT Image 2 trên GenEval và BizGenEval.",
+    "content": "Nvidia lặng lẽ phát hành trọng số của Nemotron-Labs-Image-30B-A3B trên Hugging Face — mô hình tạo ảnh tự hồi quy 30 tỉ tham số (chỉ 3 tỉ active mỗi token), thành phần tạo ảnh raster của framework agentic VisualCreation (\"Pixel as Code\").\nTheo số liệu do chính Nvidia báo cáo, framework đầy đủ đạt GenEval 92,86 và BizGenEval 86,0, vượt GPT Image 2 (89,00 / 83,2) — các con số này chưa có kiểm chứng độc lập, và phần lớn lợi thế đến từ bộ harness hệ thống chứ không chỉ từ trọng số.\nLưu ý: chỉ model tạo ảnh và tokenizer được mở; bộ harness và VisionCode chưa phát hành. Giấy phép chỉ cho nghiên cứu phi thương mại. Bản tải nặng ~133 GB, cấu hình tham chiếu cần 4 card H100.",
+    "url": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B",
+    "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nvidia/Nemotron-Labs-Image-30B-A3B.png",
+    "source": "Hugging Face"
+  },
+  {
+    "ts": "2026-11-26T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Lỗ hổng NGINX HTTP/2 CVE-2026-123007 đang bị khai thác ngoài thực tế",
+    "summary": "Cơ quan An ninh mạng Singapore ngày 26/11 báo cáo lỗ hổng NGINX HTTP/2 CVE-2026-123007 đang bị khai thác; bản vá 1.30.7/1.31.9 đã có từ 18/11 — ai chưa vá cần cập nhật và khởi động lại dịch vụ.",
+    "content": "Cơ quan An ninh mạng Singapore (CSA) ngày 26/11 báo cáo lỗ hổng CVE-2026-123007 trong NGINX đang bị khai thác ngoài thực tế. Đây là lỗi tràn số nguyên (integer underflow) trong module HTTP/2, cho phép kẻ tấn công không cần đăng nhập chạy mã tùy ý trên máy chủ — chuỗi khai thác được gọi là \"NGINX2Root\", có thể leo thang lên quyền root.\nLỗ hổng tồn tại từ NGINX 1.9.5 (2015) và ảnh hưởng mọi bản Open Source tới 1.31.8 khi bật HTTP/2. Bản vá đã có từ 18/11 (Open Source 1.30.7 / 1.31.9, Plus 37.x).\nAi chưa vá cần cập nhật và khởi động lại dịch vụ — reload không đủ vì worker cũ vẫn chạy binary cũ — hoặc tắt HTTP/2 tạm thời.",
+    "url": "https://blog.invidelabs.com/vulnerability-triage-november-2026/",
+    "image": "https://blog.invidelabs.com/content/images/2026/11/vulnerability-triage-november-2026-banner.png",
+    "source": "InviDeLabs"
+  },
+  {
+    "ts": "2026-11-26T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "CISA bổ sung Xen Orchestra và Juniper vào danh mục KEV",
+    "summary": "Cùng đợt KEV 25/11 với 5 lỗ hổng Mitel MiCollab đã báo sáng nay, CISA còn ghi nhận Xen Orchestra CVE-2026-133469 và Juniper CVE-2026-103406 — đều CVSS 9.8, đang bị khai thác, hạn vá 28/11.",
+    "content": "Trong cùng đợt bổ sung KEV ngày 25/11 với 5 lỗ hổng Mitel MiCollab đã đưa tin ở bản 07:00, CISA còn ghi nhận hai lỗ hổng nghiêm trọng khác đang bị khai thác.\nCVE-2026-133469 (Xen Orchestra, CVSS 9.8): bỏ qua xác thực bằng cookie chứa đối tượng JSON rỗng — Vates xác nhận lỗ hổng đã bị khai thác, bản vá có trong 6.9.2 / 6.10.1.\nCVE-2026-103406 (HPE Juniper Session Smart Conductor/Router, CVSS 9.8): tiêm lệnh hệ điều hành với quyền root qua salt minion ID giả mạo; bản vá 7.0.5, 7.1.7, 7.2.3. Hạn vá cho cơ quan liên bang: 28/11.",
+    "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+    "image": null,
+    "source": "The Hacker News"
+  },
+  {
+    "ts": "2026-11-25T22:30:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Team Cherry công bố \"Cherry Time!\" — cập nhật DLC Sea of Sorrow cho Silksong vào tối mai",
+    "summary": "Team Cherry thông báo buổi trình chiếu đặc biệt \"Cherry Time!\" phát sóng 27/11 lúc 22:00 giờ Việt Nam, hứa hẹn nhiều thông báo và cập nhật về bản mở rộng miễn phí Sea of Sorrow của Hollow Knight: Silksong.",
+    "content": "Team Cherry bất ngờ thông báo buổi trình chiếu đặc biệt \"Cherry Time!\" phát sóng ngày 27/11 lúc 7h sáng PT (22:00 giờ Việt Nam) trên YouTube, hứa hẹn \"một loạt thông báo thú vị\" cùng cập nhật về Sea of Sorrow — bản mở rộng miễn phí đầu tiên của Hollow Knight: Silksong.\nSea of Sorrow mang chủ đề biển cả, với khu vực, boss và công cụ mới. DLC được tease từ tháng 12/2025 với cửa sổ phát hành 2026 nhưng tới nay vẫn chưa có ngày cụ thể.\nBuổi chiếu ngày mai có thể công bố ngày phát hành — hoặc lùi sang 2027. Đây là lần hiếm hoi studio vốn kín tiếng như Team Cherry tự tổ chức một buổi showcase kiểu Nintendo Direct.",
+    "url": "https://www.polygon.com/hollow-knight-silksong-sea-of-sorrow-team-cherry-time/",
+    "image": null,
+    "source": "Polygon"
+  },
+  {
+    "ts": "2026-11-26T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Rockstar tiết lộ những tính năng GTA VI bị cắt: tennis, rạp phim, trang trí nhà",
+    "summary": "Trong phỏng vấn với PC Games (25/11), Rockstar cho biết tennis, đi xem phim/rạp hát, bò trườn, trang trí nhà và chế tạo đồ từng được lên kế hoạch cho GTA VI nhưng đã bị loại trước khi phát hành.",
+    "content": "Trong phỏng vấn với tạp chí Đức PC Games (25/11), giám đốc phát triển Rob Nelson và nhà sản xuất thiết kế Scott Mitchell cho biết nhiều tính năng từng được lên kế hoạch cho GTA VI đã bị loại trước khi phát hành.\nTennis — từng có ở GTA V — đã được lên kế hoạch trở lại nhưng bản triển khai không đạt chuẩn Rockstar nên bị cắt; mini golf thì được giữ lại. Đi xem phim/rạp hát bị loại vì đội ngũ đánh giá là không đủ tương tác. Bò trườn, trang trí nhà và chế tạo đồ cũng bị loại vì không phù hợp với cốt truyện và gameplay.\nĐội ngũ cũng từng thiết kế hệ thống mua đồ về trữ tủ lạnh cho Jason và Lucia nhưng đã lược bỏ để gameplay đỡ rườm rà.",
+    "url": "https://www.dexerto.com/gta/gta-6-devs-reveal-major-gameplay-features-that-didnt-make-the-final-cut-3431334/",
+    "image": null,
+    "source": "Dexerto"
+  },
+  {
+    "ts": "2026-11-26T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Take-Two gỡ dự án port GTA VI lên PC \"Leonida\" khỏi GitHub — 3.007 repo",
+    "summary": "Take-Two dùng thông báo DMCA (24/11) để GitHub gỡ toàn bộ mạng lưới 3.007 repository của dự án Leonida — nỗ lực biên dịch lại bản Xbox bị rò rỉ để chạy native trên Windows.",
+    "content": "Take-Two đã dùng thông báo DMCA (24/11) để GitHub gỡ toàn bộ mạng lưới 3.007 repository của dự án Leonida — nỗ lực biên dịch lại (recompile) bản Xbox bị rò rỉ (20/11) để chạy native trên Windows.\nTake-Two cho rằng dự án là tác phẩm phái sinh từ file game bị đánh cắp và vi phạm điều khoản cấm reverse engineering của Rockstar. Discord gần 180.000 thành viên của dự án cũng đã biến mất.\nCác bản build cộng đồng còn lại mới đạt 2–5 FPS, chưa chơi được thực sự. Rockstar vẫn chưa công bố bản PC chính thức của GTA VI.",
+    "url": "https://www.tweaktown.com/news/114877/gta-6-pc-port-takedown-confirmed-take-two-cites-rockstars-ban-on-reverse-engineering/index.html",
+    "image": null,
+    "source": "TweakTown"
+  },
+  {
     "ts": "2026-11-26T12:55:16+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3210,93 +3298,5 @@
     "url": "https://phys.org/news/2026-11-webb-evidence-star-layers-merged.html",
     "image": null,
     "source": "Phys.org"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "ALMA đo được hố đen 6,5 tỷ lần khối lượng Mặt Trời ở vũ trụ sơ khai",
-    "summary": "Lần đầu đo động lực khối lượng hố đen ở redshift trên 2 trong thiên hà không bị thấu kính hấp dẫn phóng đại (W2246-0526).",
-    "content": "Nhóm thiên văn dùng kính ALMA đo được khối lượng hố đen siêu nặng tại thiên hà W2246-0526, một thiên hà bị bụi che khuất mà ánh sáng đã bay 12 tỷ năm mới tới Trái Đất.\nBằng cách theo dõi chuyển động của khí gần trung tâm thiên hà, nhóm ước tính hố đen nặng khoảng 6,5 tỷ lần khối lượng Mặt Trời.\nĐây là phép đo động lực khối lượng hố đen đầu tiên ở redshift trên 2 trong một thiên hà không bị thấu kính hấp dẫn phóng đại, với vùng ảnh hưởng hấp dẫn của hố đen được phân giải không gian.\nThiên hà được quan sát ở thời điểm vũ trụ mới khoảng 1,3 tỷ năm tuổi. Nghiên cứu công bố trên Science Advances.",
-    "url": "https://phys.org/news/2026-11-alma-gravitational-black-hole-early.html",
-    "image": null,
-    "source": "Phys.org"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Game",
-    "title": "GTA 6 nhận bản vá đầu tiên 1.002.002 sau 4 ngày phát hành",
-    "summary": "Bản vá ngày 23/11 sửa crash, lỗi thời tiết không đổi, autosave và các lỗi chặn tiến trình nhiệm vụ; lỗi \"tiền vô hạn\" vẫn hoạt động.",
-    "content": "Rockstar Games ngày 23/11 tung bản vá hậu phát hành đầu tiên cho Grand Theft Auto 6, phiên bản 1.002.002, triển khai theo đợt trên PS5 và Xbox Series X|S.\nDung lượng khoảng 604 MB trên PS5 và khoảng 1,6 GB trên Xbox.\nBản vá sửa một số lỗi gây crash, lỗi thời tiết không thay đổi trong thời gian dài, lỗi autosave, các cuộc gọi điện thoại không kích hoạt (kể cả những cuộc gọi mở nhiệm vụ cốt truyện), lỗi không mất được Wanted Level, lỗi không dùng được xà tạ ở phòng gym và lỗi đồng đội không đưa túi để bán cho fence.\nTheo ghi nhận của người chơi, lỗi \"tiền vô hạn\" vẫn hoạt động sau khi cài bản vá.",
-    "url": "https://gamerant.com/new-gta-6-update-patch-notes-november-23-2026/",
-    "image": null,
-    "source": "GameRant"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Video",
-    "title": "Cờ Su: Family Manners - Áp lực có tạo ra kim cương?",
-    "summary": "Video mới của Cờ Su, đăng ngày 23/11/2026.",
-    "content": "Video mới từ kênh Cờ Su, đăng ngày 23/11/2026: \"Family Manners - Áp lực có tạo ra kim cương?\"",
-    "url": "https://www.youtube.com/watch?v=sbF3HIIpKBY",
-    "image": "https://i.ytimg.com/vi/sbF3HIIpKBY/hqdefault.jpg",
-    "source": "Cờ Su"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Video",
-    "title": "Game Cực Hay: Những Sự Thật VÔ DỤNG Trong GTA VI (Phần 1)",
-    "summary": "Video mới của Game Cực Hay, đăng ngày 23/11/2026, tổng hợp những chi tiết vụn vặt thú vị trong GTA VI.",
-    "content": "Video mới từ kênh Game Cực Hay, đăng ngày 23/11/2026: \"Những Sự Thật VÔ DỤNG Trong GTA VI (Phần 1)\".",
-    "url": "https://www.youtube.com/watch?v=rJZz8HJsvoY",
-    "image": "https://i.ytimg.com/vi/rJZz8HJsvoY/hqdefault.jpg",
-    "source": "Game Cực Hay"
-  },
-  {
-    "ts": "2026-11-23T21:25:35+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thực đơn bánh sáng mai: hơn 20 món, giá 13.000–50.000đ",
-    "summary": "Một sạp trong chợ khu rao thực đơn bánh cho sáng mai với hơn 20 món: sắn hấp cốt dừa, bánh khúc, bánh giò nóng, bánh rán vừng, bánh mỳ que, bánh trôi, các loại xôi, bánh bao thịt trứng, bánh dày, bánh đúc, sukem, bánh cuốn… Giá từ 13.000đ đến 50.000đ tùy món.",
-    "content": "Một sạp trong chợ khu rao thực đơn bánh cho sáng mai, giá niêm yết theo món:\n- Sắn hấp cốt dừa: 20.000đ/hộp; bánh khúc + bánh donut: 25.000đ/hộp 2 chiếc (bánh khúc lẻ 15.000đ/chiếc); bánh giò nóng: 15.000đ/chiếc; bánh rán vừng: 25.000đ/6 cái; bánh mỳ que: 35.000đ/10 chiếc.\n- Bánh trôi: 13.000đ/hộp; xôi gấc, xôi xéo, xôi chè, cơm lứt: 15.000đ/suất; bánh bao thịt trứng: 50.000đ/hộp 4 chiếc (lẻ 15.000đ/chiếc); bánh dày quán gánh: 20.000đ/hộp 10 chiếc; bánh dày giò hoặc kẹp chả: 15.000đ/cặp.\n- Bánh mỳ chuột: 20.000đ/5 chiếc; bánh mỳ thành cổ: 30.000đ/2 cái; bánh đúc: 25.000đ/0,5kg; bánh mỳ gối: 20.000đ/túi; sukem: 22.000đ/hộp; trôi tàu: 15.000đ/cốc; bánh cuốn Phủ Lý: 25.000đ/0,5kg; bánh cuốn thịt: 30.000đ/0,5kg (thêm 20.000đ/1 lạng chả); bánh mỳ sốt bơ mật ong: 39.000đ/set 10 chiếc kèm 1 sốt chấm; bánh rán đường + mật: 35.000đ/5 chiếc.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791169077786769/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T21:25:22+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Nem chua rán: nem sống 110.000đ/25 chiếc",
-    "summary": "Một sạp trong chợ khu bán nem chua rán (nem sống): nem Trần Công Châu 110.000đ/25 chiếc, 190.000đ/50 chiếc; nem vỏ giòn 110.000đ/15 chiếc; nem phomai 100.000đ/15 viên.",
-    "content": "Một sạp trong chợ khu bán nem chua rán, bán nem sống để khách tự rán:\n- Nem Trần Công Châu: 110.000đ/25 chiếc, 190.000đ/50 chiếc.\n- Nem vỏ giòn: 110.000đ/15 chiếc.\n- Nem phomai: 100.000đ/15 viên.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791168664453477/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T21:21:52+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ăn sáng thứ Ba 24/11: trứng lộn hầm ngải cứu, soup gà, bánh bao phomai",
-    "summary": "Một sạp trong chợ khu đăng thực đơn ăn sáng thứ Ba 24/11: trứng lộn hầm ngải cứu 25.000đ/suất (2 quả), soup gà 25.000đ, cháo dưỡng nhan 25.000đ, cơm tam giác 10.000đ, set ngô khoai trứng 17.000đ, trứng gà luộc 6.000đ/quả, bánh bao gà nấm phomai và xúc xích phomai 30.000đ/2 chiếc.",
-    "content": "Một sạp trong chợ khu đăng thực đơn ăn sáng thứ Ba ngày 24/11:\n- Trứng lộn hầm ngải cứu: 25.000đ/suất (2 quả); soup gà: 25.000đ; cháo dưỡng nhan: 25.000đ; cơm tam giác: 10.000đ; set ngô khoai trứng: 17.000đ; trứng gà luộc: 6.000đ/quả.\n- Bánh bao hấp nóng: gà nấm phomai 30.000đ/2 chiếc; xúc xích phomai 30.000đ/2 chiếc.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791164737787203/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T21:18:53+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Hoa quả sạch đồng giá 20.000–35.000đ/kg, me 45.000đ/kg, miễn phí ship",
-    "summary": "Một sạp trong chợ khu bán hoa quả sạch: đồng giá 20.000đ/kg (khế chua, sung nếp, xoài chua già), 25.000đ/kg (trứng gà, lekima, khế ngọt), 35.000đ/kg (xoài, dâu da xoan, sâm đất), me 45.000đ/kg; miễn phí ship.",
-    "content": "Một sạp trong chợ khu bán hoa quả sạch của nhà, giá theo nhóm:\n- Đồng giá 20.000đ/kg: khế chua, sung nếp, xoài chua già.\n- Đồng giá 25.000đ/kg: trứng gà, lekima, khế ngọt xanh dôn dốt (chấm muối).\n- Đồng giá 35.000đ/kg: xoài ta, dâu da xoan, sâm đất.\n- Me: 45.000đ/kg.\nMiễn phí ship.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791161174454226/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
