@@ -1,5 +1,93 @@
 [
  {
+  "ts": "2026-11-24T23:02:00+07:00",
+  "flow": "internet",
+  "category": "AI & Công nghệ",
+  "title": "Google ra mắt Gemini 4 Neon, model tầm trung vượt Claude Opus 5.5 và GPT-6.2 Sol trên nhiều benchmark",
+  "summary": "Model tầm trung mới của Google (ra mắt 24/11) đạt 61 điểm trên Artificial Analysis Intelligence Index, vượt Claude Opus 5.5 (59) và GPT-6.2 Sol (57), với giá rẻ hơn flagship Carbon.",
+  "content": "Google đã ra mắt Gemini 4 Neon, model tầm trung nằm giữa flagship Gemini 4 Carbon và bản nhanh-rẻ Hydrogen.\nTheo các bài test do Google công bố, Neon vượt Anthropic Claude Opus 5.5 và OpenAI GPT-6.2 Sol ở hầu hết bài kiểm tra được liệt kê. Trên Artificial Analysis Intelligence Index, Neon đạt 61 điểm, cao hơn Opus 5.5 (59) và GPT-6.2 Sol (57); trên Vals Index, Neon đạt 70,9% so với 70,1% của Opus 5.5 và 66,1% của GPT-6.2 Sol. Tuy nhiên Claude Opus 5.5 vẫn hơn Neon ở hai bài Terminal-Bench 4.1 và FrontierCode 2.0.\nNeon có cửa sổ ngữ cảnh 1 triệu token, bốn mức suy luận (cao nhất là xhigh), giá 3 USD/triệu token đầu vào và 15 USD/triệu token đầu ra — rẻ hơn Carbon (4/20 USD). Model đã có mặt trên Gemini API, Google AI Studio, Gemini cho doanh nghiệp, Google Antigravity và ứng dụng Gemini cho thuê bao AI Pro/Ultra. Google cũng cho biết Neon có thể đóng vai trò điều phối, chỉ đạo nhiều subagent Hydrogen chạy song song trong Antigravity.",
+  "url": "https://www.republicworld.com/tech/google-unveils-gemini-4-neon-ai-model-claims-it-beats-openai-s-gpt-62-sol-and-claude-opus-55-in-most-benchmarks-2026-11-24-141779",
+  "image": "https://img.republicworld.com/all_images/2026/11/google-unveils-gemini-4-neon-ai-model-claims-it-beats-openai-s-gpt-62-sol-and-claude-opus-55-in-most-benchmarks-1795536126021-1280x720.webp?w=1280&h=720&q=75&format=webp",
+  "source": "Republic World"
+ },
+ {
+  "ts": "2026-11-26T04:33:33+07:00",
+  "flow": "internet",
+  "category": "Bảo mật",
+  "title": "1Password xác nhận bị xâm nhập qua tài khoản GitHub nhân viên, lộ tên và email một phần người dùng — vault vẫn an toàn",
+  "summary": "Kẻ tấn công chiếm tài khoản GitHub của nhân viên 1Password, đẩy mã độc lên backend và tải về dữ liệu hành chính của một phần người dùng; hãng khẳng định nội dung vault và khóa mã hóa không bị chạm tới.",
+  "content": "1Password công bố ngày 25/11: từ 19/11 hãng phát hiện kẻ tấn công đã chiếm tài khoản GitHub công ty của một nhân viên, dùng tài khoản này truy cập mã nguồn và đẩy mã độc lên các dịch vụ backend để tải về dữ liệu hành chính của khách hàng.\nDữ liệu bị lấy gồm tên và địa chỉ email đăng nhập, ID tài khoản/người dùng, thời điểm tạo tài khoản và đăng nhập lần cuối, khóa công khai, tham số giao thức SRP, token trong link email mời/khôi phục tài khoản và một số metadata nội bộ. Kẻ tấn công cũng sao chép mã nguồn từ repo riêng và truy cập hệ thống CI/CD.\nHãng khẳng định vault và các mục trong đó, khóa bảo vệ vault, mật khẩu tài khoản và Secret Key đều không bị ảnh hưởng. Hãng đã vô hiệu hóa tài khoản GitHub bị chiếm, thu hồi token, xoay toàn bộ credential nội bộ có thể lộ, và kéo dài mã xác minh trong email mời/khôi phục từ 6 chữ số lên 10 ký tự chữ-số. Hãng cũng mời chuyên gia độc lập kiểm chứng việc khắc phục và cho biết chưa thấy bằng chứng tài khoản người dùng bị chiếm.",
+  "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+  "image": null,
+  "source": "1Password"
+ },
+ {
+  "ts": "2026-11-25T19:00:00+07:00",
+  "flow": "internet",
+  "category": "Bảo mật",
+  "title": "CISA đưa 5 lỗ hổng Mitel MiCollab vào danh sách bị khai thác, hạn vá 28/11",
+  "summary": "Cả 5 lỗ hổng đều nằm ở thành phần hội nghị AWV của MiCollab; nặng nhất là OS command injection CVE-2026-133323 mà Mitel chấm 10.0, cho phép kẻ tấn công không cần đăng nhập thực thi lệnh trên hệ thống.",
+  "content": "CISA đã bổ sung 5 lỗ hổng của Mitel MiCollab vào danh sách Known Exploited Vulnerabilities (KEV) ngày 25/11, tức đã có bằng chứng bị khai thác ngoài thực tế.\nTất cả đều nằm ở thành phần Audio, Web and Video Conferencing (AWV). Nặng nhất là CVE-2026-133323 — OS command injection không cần xác thực, Mitel chấm 10.0; tiếp theo là XML injection CVE-2026-133303 (9.0) cho phép thực thi lệnh tùy ý, cùng các lỗi upload file nguy hiểm, xác thực yếu và bypass xác thực.\nCác phiên bản bị ảnh hưởng là MiCollab 10.3 (10.3.0.18) trở về trước. Cơ quan dân sự liên bang Mỹ phải vá hoặc áp dụng biện pháp giảm thiểu trước 28/11; CISA yêu cầu kiểm tra pháp y (forensic triage) đối với hai lỗ hổng nghiêm trọng nhất.",
+  "url": "https://cyberpresso.com/blog/cisa-kev-mitel-micollab-awv-command-injection",
+  "image": null,
+  "source": "Cyberpresso"
+ },
+ {
+  "ts": "2026-11-26T01:45:00+07:00",
+  "flow": "internet",
+  "category": "Khoa học",
+  "title": "Tàu Hera của ESA công bố ảnh cận cảnh đầu tiên của Dimorphos: hố va chạm khổng lồ, tiểu hành tinh quay hỗn loạn",
+  "summary": "Mặt tiểu hành tinh từng bị tàu DART đâm năm 2022 nay biến thành hố va chạm rộng gần bằng cả thiên thể; Dimorphos đang quay hỗn loạn thay vì đồng bộ, và hàng trăm tảng đá chưa từng biết đang bay quanh hệ.",
+  "content": "ESA đã công bố ngày 25/11 những hình ảnh cận cảnh đầu tiên của tiểu hành tinh Dimorphos do tàu Hera chụp sau khi tới hệ Didymos vào tháng 10/2026.\nMặt Dimorphos từng bị tàu DART của NASA đâm vào tháng 9/2022 nay đã biến đổi hoàn toàn: bề mặt tròn trước đây biến thành một hố va chạm khổng lồ rộng gần bằng cả mặt bị đâm, với một cấu trúc lạ hình xì gà ở giữa. Trong khi đó Didymos — thiên thể lớn hơn (~730 m) — gần như không thay đổi, vẫn giữ nguyên các cánh đồng đá tảng và sống núi xích đạo.\nVa chạm cũng khiến Dimorphos mất đồng bộ quay-quỹ đạo và đang quay hỗn loạn (tumbling). Ngoài ra Hera phát hiện hàng trăm tảng đá đủ kích cỡ đang bay quanh hệ, trong đó hơn 100 tảng có kích thước từ quả bóng đá tới máy giặt — nhiều hơn hẳn dự đoán. Hera hiện bay cách hệ khoảng 25–30 km; tháng 12 sẽ tiến gần còn 13 km, và tháng 1/2027 sẽ thả hai CubeSat mini tiếp cận gần hơn nữa.",
+  "url": "https://www.iac.es/en/outreach/news/esas-hera-mission-reveals-first-images-asteroid-dimorphos-after-dart-impact",
+  "image": "https://www.iac.es/sites/default/files/styles/resize_full_1280_px/public/images/media/image/hsh_multispectral_261103.png?itok=Oiukv5g_",
+  "source": "Instituto de Astrofísica de Canarias"
+ },
+ {
+  "ts": "2026-11-26T07:00:00+07:00",
+  "flow": "internet",
+  "category": "Khoa học",
+  "title": "OpenAI đăng loạt bản thảo toán mới, tuyên bố giải bài toán thứ 9 của Smale và bác bỏ giả thuyết Hirsch đa thức",
+  "summary": "Trong 9 bản thảo đăng ngày 24/11, OpenAI tuyên bố có thuật toán xác định đa thức mạnh cho quy hoạch tuyến tính và phản ví dụ cho giả thuyết Hirsch đa thức; tất cả đều là preprint chưa bình duyệt và chưa được kiểm chứng độc lập.",
+  "content": "OpenAI đã bổ sung 9 bản thảo vào kho toán công khai openai/math ngày 24/11, gồm hai nhóm kết quả mới.\nNhóm thứ hai (họ 380) tuyên bố một thuật toán xác định đa thức mạnh cho quy hoạch tuyến tính — được giới thiệu là lời giải cho bài toán thứ 9 trong danh sách của Stephen Smale — và một phản ví dụ cho giả thuyết Hirsch đa thức: tồn tại đa diện mà đường kính đồ thị tăng nhanh hơn mọi lũy thừa cố định của số mặt. Đây là một trong những câu hỏi mở lớn của tối ưu hóa.\nCần thận trọng: toàn bộ đều là preprint chưa qua bình duyệt, chưa có nhà toán học độc lập nào đánh giá tính đúng đắn tính tới sáng 25/11; Lean mới kiểm chứng một phần kết quả (phần bác bỏ Hirsch cho đa diện hữu tỉ đơn giản có giới hạn). Cùng đợt đăng này còn có tuyên bố số mũ nhân ma trận ω = 9/4 — đã đưa ở bản tin 22:00 hôm qua.",
+  "url": "https://mlq.ai/news/openai-posts-unreviewed-proofs-claiming-answers-to-smales-ninth-problem-and-valiants-vp-vs-vnp-question/",
+  "image": null,
+  "source": "MLQ"
+ },
+ {
+  "ts": "2026-11-26T07:00:00+07:00",
+  "flow": "internet",
+  "category": "Game",
+  "title": "GTA VI bán 47,8 triệu bản trong cuối tuần ra mắt — game bán chạy nhất năm",
+  "summary": "Theo ước tính của Sensor Tower, GTA VI bán 47,8 triệu bản tới hết Chủ nhật đầu tiên; ngày đầu đạt 3,79 tỷ USD doanh số bán lẻ theo công bố của Take-Two — kỷ lục ra mắt lớn nhất lịch sử giải trí.",
+  "content": "Grand Theft Auto VI tiếp tục phá kỷ lục: theo ước tính của hãng phân tích Sensor Tower, game đã bán 47,8 triệu bản tính tới hết cuối tuần ra mắt, trở thành game bán chạy nhất năm 2026. Khoảng 35% máy console thế hệ mới đã cài đặt game.\nTrước đó Take-Two công bố doanh số bán lẻ ngày đầu đạt 3,79 tỷ USD với 32,5 triệu bản bán trước ngày phát hành — mức ra mắt lớn nhất lịch sử ngành giải trí. Sensor Tower ước tính riêng doanh số kỹ thuật số ngày đầu là 24,6 triệu bản, khoảng 2,36 tỷ USD, trong đó 75% trên PlayStation 5.\nGame phát hành ngày 19/11 trên PS5 và Xbox Series X|S, sau 13 năm chờ đợi kể từ GTA V, với điểm Metacritic 99.",
+  "url": "https://www.forbesmiddleeast.com/consumer/entertainment/gta-vi-sold-47-million-copies-by-end-of-launch-weekendand-siphoned-players-from-call-of-duty-fortnite-1",
+  "image": null,
+  "source": "Forbes Middle East"
+ },
+ {
+  "ts": "2026-11-25T18:00:26+07:00",
+  "flow": "internet",
+  "category": "Game",
+  "title": "Video Phê Game: Vì Sao OCARINA OF TIME Ăn Đứt Nhiều Tựa Game Ngày Nay?",
+  "summary": "Phê Game đăng video mới tối 25/11, nhìn lại vì sao The Legend of Zelda: Ocarina of Time vẫn vượt nhiều game hiện đại.",
+  "content": "Kênh Phê Game đăng video mới tối 25/11: 'Vì Sao OCARINA OF TIME Ăn Đứt Nhiều Tựa Game Ngày Nay?'.\nVideo nhìn lại The Legend of Zelda: Ocarina of Time và lý giải vì sao tựa game kinh điển này vẫn được đánh giá cao hơn nhiều game ngày nay.",
+  "url": "https://www.youtube.com/watch?v=KtyoTNKHsBo",
+  "image": "https://i.ytimg.com/vi/KtyoTNKHsBo/hqdefault.jpg",
+  "source": "Phê Game"
+ },
+ {
+  "ts": "2026-11-25T20:46:04+07:00",
+  "flow": "internet",
+  "category": "Game",
+  "title": "Video meGAME: Sự Thật Về Project Pilgrim - Phân Tích Game: Terrible Lizards (P.1)",
+  "summary": "meGAME đăng video mới tối 25/11, phân tích Project Pilgrim trong series Terrible Lizards.",
+  "content": "Kênh meGAME đăng video mới tối 25/11: 'Sự Thật Về Project Pilgrim - Phân Tích Game: Terrible Lizards (P.1)'.\nVideo mở đầu series phân tích về Project Pilgrim, tựa game thuộc series Terrible Lizards.",
+  "url": "https://www.youtube.com/watch?v=alIxI7Bd-n0",
+  "image": "https://i.ytimg.com/vi/alIxI7Bd-n0/hqdefault.jpg",
+  "source": "meGAME"
+ },
+ {
   "ts": "2026-11-25T00:47:11+07:00",
   "flow": "internet",
   "category": "AI & Công nghệ",
@@ -3208,94 +3296,6 @@
   "summary": "Một bếp trong khu mở cửa từ 11h sáng đến 2h đêm, freeship sảnh với hóa đơn từ 50k; có súp ngô gà 40k, đồ tần ngải cứu, xôi, mì/phở và trà chanh 15k.",
   "content": "Bếp mở cửa từ 11h sáng đến 2h đêm, vẫn nhận ship. Freeship sảnh với hóa đơn từ 50k (dưới 50k phụ thu 5k).\nSúp ngô gà: 40k. Đồ tần: đùi gà tần ngải cứu 55k, óc tần ngải cứu 45k/bộ, tim heo hầm ngải 90k, tim gà hầm ngải 65k, gà ác hầm ngải 110k/con, trứng lộn thêm 15k/quả, thêm mì 7k/gói.\nXôi: xôi đùi gà xối mắm 55k, xôi sườn cay 40k, xôi thịt kho 35k, xôi thịt kho chả 35k. Topping thêm: trứng ốp 10k, thịt kho 15k, sườn cay 25k, chả kho 10k.\nMì/phở: phở bò trộn 50k, mì cay xúc xích 50k, mì cay bò ta 50k, mì trộn Indomie 35k–50k. Đồ uống: trà chanh 15k, trà quất 15k.\nThông tin liên hệ nằm trong bài gốc tại group.",
   "url": "https://facebook.com/groups/1770535389850168/permalink/4790976834472660/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Facebook",
-  "title": "Touchpad MacBook… phát ra tiếng nói",
-  "summary": "Một người đã dùng touchpad của MacBook để tạo ra tiếng nói thay vì dùng loa, bằng cách tận dụng rung động từ động cơ haptic của nó; mã nguồn thử nghiệm được chia sẻ dưới phần bình luận bài gốc.",
-  "content": "Một người vừa sử dụng touchpad của MacBook để tạo ra tiếng nói (thay vì sử dụng loa) bằng cách sử dụng các rung động từ động cơ haptic của nó.\nMã nguồn để thử được chia sẻ dưới phần bình luận của bài gốc (nguồn: cody).\nBài đăng nhận được hơn 500 lượt tương tác trong nhóm J2Team.",
-  "url": "https://facebook.com/groups/j2team.community/permalink/3262976734034424/",
-  "image": null,
-  "source": "J2Team Community"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Facebook",
-  "title": "Anthropic mở khóa học miễn phí “Introduction to Evals”",
-  "summary": "Khóa học miễn phí của Anthropic hướng dẫn kiểm thử, đo lường và cải thiện chất lượng ứng dụng AI: đánh giá đầu ra bằng dữ liệu thực, so sánh mô hình theo độ chính xác và chi phí, tối ưu prompt, theo dõi hiệu suất khi chạy production. Gồm 4 bài học, khoảng 1 giờ.",
-  "content": "Anthropic vừa ra mắt khóa học miễn phí “Introduction to Evals” (Nhập môn đánh giá AI) cho tất cả mọi người.\nKhóa học hướng dẫn cách kiểm tra, đo lường và cải thiện chất lượng của các ứng dụng AI.\nNội dung bao gồm: kiểm thử AI (đánh giá kết quả đầu ra bằng dữ liệu thực tế); so sánh mô hình (lựa chọn model dựa trên độ chính xác và chi phí vận hành); tối ưu prompt (sử dụng những trường hợp AI trả lời sai để cải thiện prompt); đánh giá trong production (theo dõi hiệu suất khi ứng dụng đã được triển khai thực tế); phát hiện suy giảm hiệu suất (nhận biết sớm khi chất lượng đầu ra giảm sút theo thời gian).\nKhóa học gồm 4 bài học, tổng thời lượng khoảng 1 giờ và hoàn toàn miễn phí.",
-  "url": "https://facebook.com/groups/aiartworksvn/permalink/4625932044286310/",
-  "image": null,
-  "source": "AI Artworks VN"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Facebook",
-  "title": "Từ bị 27 trường từ chối đến người đứng sau PyTorch: Soumith Chintala",
-  "summary": "Soumith Chintala sinh ra tại Hyderabad, từ nhỏ phải mượn máy tính của hàng xóm để học lập trình; sau 27 lần bị từ chối khi nộp hồ sơ cao học tại Mỹ, anh đến NYU làm việc cùng Yann LeCun, rồi dẫn dắt PyTorch tại Meta khoảng 8 năm trước khi làm CTO tại startup AI của Mira Murati.",
-  "content": "Soumith Chintala sinh ra tại Hyderabad, Ấn Độ. Gia đình không có máy tính nên từ nhỏ anh đã phải mượn máy của hàng xóm để học lập trình.\nSau khi tốt nghiệp VIT Vellore, Soumith nộp hồ sơ cao học tại Mỹ nhưng liên tục bị từ chối — tổng cộng 27 lần — trước khi có cơ hội đến Đại học New York (NYU).\nTại NYU, Soumith có cơ hội làm việc cùng Yann LeCun, một trong những người đặt nền móng cho deep learning.\nSau đó, anh gia nhập phòng nghiên cứu AI của Meta và tham gia phát triển PyTorch, framework giúp các nhà nghiên cứu xây dựng và huấn luyện mô hình AI dễ dàng hơn.\nDù gặp sự hoài nghi trong nội bộ, anh vẫn dành khoảng 8 năm dẫn dắt và phát triển PyTorch, đưa nó trở thành một trong những công cụ phổ biến nhất trong ngành AI.\nPyTorch sau đó được chuyển giao cho Linux Foundation để phát triển theo mô hình quản trị mở.\nSau 11 năm làm việc tại Meta và thăng tiến lên vị trí Phó Chủ tịch, Soumith rời công ty để gia nhập startup AI của Mira Murati với vai trò CTO.\nNgày nay, PyTorch được sử dụng rộng rãi trong nghiên cứu và phát triển AI, từ các mô hình ngôn ngữ lớn đến thị giác máy tính; bài viết gốc cho rằng khoảng 80–90% nghiên cứu AI sử dụng framework này.",
-  "url": "https://facebook.com/groups/aiartworksvn/permalink/4626029357609912/",
-  "image": null,
-  "source": "AI Artworks VN"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Cá kho chuối xanh ba chỉ 60–100k/khúc, nem rán giòn 7k/chiếc",
-  "summary": "Một sạp trong chợ khu có bữa cơm nhà làm: cá kho chuối xanh ba chỉ 60–100k/khúc, nem rán giòn rụm 7.000đ/chiếc, đóng hộp giấy giữ nhiệt khi ship. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một sạp trong chợ khu lo bữa cơm tối với menu đặc sản nhà làm, chỉ cần cắm nồi cơm nóng là có ngay bữa tối tươm tất.\nCá kho chuối xanh ba chỉ: 60–100k/khúc (cá trắm chắc thịt, ngấm vị đậm đà, có thêm thịt ba chỉ béo ngậy ăn kèm chuối dẻo bùi).\nNem rán giòn rụm: 7.000đ/chiếc (chiên mới vàng ươm, vỏ giòn, nhân thịt thơm).\nĐồ ăn được đóng gói cẩn thận trong hộp giấy bảo vệ môi trường, giữ nhiệt tốt khi ship đến tay khách.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4790893081147702/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Tôm rang nhỏ sale 140k/kg, còn 6kg",
-  "summary": "Một sạp trong chợ khu sale tôm rang nhỏ, mỏng vỏ: 140k/kg, 80k/0,5kg, chỉ còn 6kg; tôm đã làm sạch, cất tủ để giữ tươi. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một sạp trong chợ khu sale tôm rang nhỏ, mỏng vỏ — lâu lắm mới có một mẻ ngon như này.\nGiá sale: 140k/kg, 80k/0,5kg. Chỉ còn 6kg.\nTôm đã làm sạch, cất tủ để đảm bảo tươi ngon.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4790892317814445/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Ổi ngon ngọt 100k/3kg, còn 5 combo",
-  "summary": "Một sạp trong chợ khu có ổi to ngon ngọt, 100k/3kg, còn 5 combo; ổi giòn mềm ngọt lịm, cùi dày ít hạt, bao ăn từng quả. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một sạp trong chợ khu có ổi to ngon ngọt, còn 5 combo.\nGiá: 100k/3kg. Ổi đã vào mùa ngon của năm: giòn mềm, ngọt lịm, cùi dày, ít hạt, vỏ sần giòn ngọt đậm vị; nhà làm, không thuốc thang hay chất bảo quản.\nSạp cam kết bù trừ nếu thối hỏng (khách chụp ảnh gửi lại).\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4790891794481164/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Chả ốc thơm ngon 145k/kg (2 khay)",
-  "summary": "Một sạp trong chợ khu có chả ốc: miếng chả thơm, ốc giòn sần sật, gia vị vừa miệng; giá 145k/kg (2 khay). Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một sạp trong chợ khu có chả ốc thơm ngon, được khách ăn khen nức nở.\nMiếng chả thơm, ốc giòn sần sật, gia vị nêm nếm vừa miệng.\nGiá: 145k/kg (2 khay).\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4790888864481457/",
-  "image": null,
-  "source": "Chợ cư dân"
- },
- {
-  "ts": "2026-11-23T18:01:52+07:00",
-  "flow": "facebook",
-  "category": "Bảng tin cư dân",
-  "title": "Set cua thịt ngon sale 190k/2 con, tặng nước chấm hải sản",
-  "summary": "Một sạp trong chợ khu sale set cua thịt 190k/2 con (khoảng 550g), tặng kèm nước chấm hải sản. Thông tin liên hệ nằm trong bài gốc tại group.",
-  "content": "Một sạp trong chợ khu sale set cua thịt ngon.\nGiá: 190k/2 con, khối lượng khoảng 550g.\nTặng kèm nước chấm hải sản.\nThông tin liên hệ nằm trong bài gốc tại group.",
-  "url": "https://facebook.com/groups/1770535389850168/permalink/4790888637814813/",
   "image": null,
   "source": "Chợ cư dân"
  }
