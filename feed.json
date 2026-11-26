@@ -1,5 +1,93 @@
 [
   {
+    "ts": "2026-11-26T08:42:20+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "📣 ĐIỂM TIN BUỔI SÁNG THỨ NĂM (26/11/2026)",
+    "summary": "Điểm tin sáng của J2Team (đăng muộn lúc 08:42 nên vào bản 11:30): FCC cấp phép cho SpaceX triển khai tới 1 triệu vệ tinh; trình duyệt Ladybird ra bản alpha đầu tiên; Claude Artifacts thành ứng dụng desktop; Hera gửi ảnh cận cảnh Dimorphos; Kagi ra mắt Kagi Mail; WhatsApp có hẹn giờ gửi tin; EA tái tạo giọng John Motson bằng AI cho FC 27; và 5 tin khác.",
+    "content": "1. FCC cấp phép cho SpaceX triển khai siêu chòm sao lên tới 1 triệu vệ tinh — quyết định mang tính bước ngoặt, mở đường cho SpaceX mở rộng mạng lưới vệ tinh quỹ đạo thấp lên quy mô chưa từng có, đẩy cuộc đua internet và tính toán không gian lên tầm cao mới. (Nguồn: arstechnica.com)\n2. Trình duyệt độc lập Ladybird tung bản alpha đầu tiên, chứng minh thế giới web vẫn có lối thoát khỏi Chromium — được xây dựng hoàn toàn từ con số 0, không dựa vào nhân của Google hay Apple; bản thử nghiệm gây ấn tượng nhờ tốc độ tải trang và khả năng hiển thị ổn định. (arstechnica.com)\n3. Anthropic cho phép biến trực tiếp sản phẩm từ Claude Artifacts thành ứng dụng độc lập trên Windows và macOS — thay vì chỉ chạy trong khung cửa sổ trình duyệt, người dùng giờ có thể đóng gói công cụ, bảng tính hay phần mềm do AI Claude tạo ra thành ứng dụng desktop cài đặt ngay trên máy tính cá nhân. (zdnet.com)\n4. Tàu vũ trụ Hera của châu Âu tiếp cận hiện trường thí nghiệm đâm lệch tiểu hành tinh, ghi nhận cảnh tượng hỗn loạn — những hình ảnh cận cảnh đầu tiên cho thấy cú va chạm thử nghiệm DART của NASA năm 2022 đã làm biến dạng hoàn toàn bề mặt tiểu hành tinh Dimorphos, kèm đám mây mảnh vỡ dày đặc. (arstechnica.com)\n5. Công cụ tìm kiếm Kagi chính thức ra mắt dịch vụ email không quảng cáo, đối đầu trực diện với Gmail — Kagi Mail hứa hẹn không theo dõi hành vi người dùng, không chen quảng cáo và tối ưu hóa tốc độ quản lý hộp thư. (arstechnica.com)\n6. WhatsApp cuối cùng cũng bổ sung tính năng hẹn giờ gửi tin nhắn được người dùng chờ đợi suốt nhiều năm — người dùng soạn sẵn nội dung và chọn chính xác ngày giờ tự động gửi, trong cả cuộc trò chuyện cá nhân lẫn nhóm. (theverge.com)\n7. EA gây xôn xao khi dùng AI tái tạo giọng bình luận của cố huyền thoại bóng đá John Motson đưa vào game FC 27 — với sự đồng thuận từ gia đình, hãng game Electronic Arts đã sử dụng công nghệ tổng hợp giọng nói AI để đưa chất giọng kinh điển của bình luận viên quá cố trở lại. (bbc.com)\n8. Google mở rộng tính năng AI nhận diện gương mặt người quen (Familiar Faces) trên Google Home sang dòng camera giá chỉ 35 USD — không còn độc quyền trên thiết bị Nest đắt đỏ, tính năng nay hỗ trợ dòng camera an ninh bình dân Onn của Walmart. (theverge.com)\n9. Công nghệ cảm biến mới mở ra bước ngoặt giúp phi công sớm phát hiện vùng nhiễu động không khí vô hình — các hệ thống cảm biến quang học kết hợp mô hình dữ liệu khí quyển thời gian thực giúp ngành hàng không dự báo chính xác hiện tượng nhiễu động trời quang vốn rất khó phát hiện bằng radar truyền thống. (wired.com)\n10. Khảo sát gây bất ngờ: Gen Z lại là thế hệ ít mặn mà với việc sử dụng AI tại nơi làm việc nhất — trái ngược với suy nghĩ phổ biến rằng giới trẻ chuộng công nghệ mới, báo cáo nhân sự mới nhất chỉ ra lao động Gen Z hoài nghi và ít hứng thú ứng dụng AI vào công việc hàng ngày hơn hẳn thế hệ Millennials và Gen X. (zdnet.com)\n11. Dịch vụ sao lưu đám mây Backblaze gây tranh cãi khi thừa nhận chia sẻ dữ liệu khách hàng cho đối tác quảng cáo — hãng lưu trữ đám mây buộc phải lên tiếng giải trình sau khi người dùng phát hiện nền tảng chuyển tiếp một phần thông tin tài khoản cho các mạng lưới quảng cáo. (arstechnica.com)\n12. 1Password xác nhận sự cố rò rỉ làm lộ họ tên và email khách hàng nhưng khẳng định kho mật khẩu vẫn an toàn — kẻ gian đã tiếp cận danh sách liên hệ cơ bản gồm tên và địa chỉ hộp thư của người dùng, song toàn bộ mật khẩu chính và dữ liệu két sắt mã hóa đầu-cuối không hề bị ảnh hưởng. (theverge.com)",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3266662423665855/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-26T09:13:00+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "EVKey cập nhật lên bản 6.1.1",
+    "summary": "Bộ gõ tiếng Việt EVKey vừa cập nhật lên phiên bản 6.1.1 (ngày 25/11) — bản cập nhật được một thành viên J2Team chia sẻ cùng ảnh chụp bảng cài đặt.",
+    "content": "Bộ gõ tiếng Việt EVKey cho Windows vừa có bản cập nhật 6.1.1, ghi ngày 25/11/2026, được một thành viên chia sẻ trong group J2Team kèm ảnh chụp bảng cài đặt.\nẢnh chụp cho thấy bảng cài đặt của EVKey với bảng mã Unicode, kiểu gõ Telex, cùng các tùy chọn như bật kiểm tra chính tả, tự động viết hoa đầu câu sau dấu câu và tự động khôi phục phím.\nBài đăng nhận được hơn 100 lượt tương tác và hàng chục bình luận trong group.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3266688006996630/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-26T11:32:04+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Set bánh Huế mix 3 loại 95k — bột lọc, bánh nậm, bánh ít",
+    "summary": "Một sạp trong chợ khu bán set bánh Huế mix 3 loại (bánh bột lọc, bánh nậm, bánh ít), 30 cái giá 95.000đ, chỉ cần hấp nóng 20 phút. Có thêm chả cua Huế, nem lụi, bánh canh tươi và các món Huế khác.",
+    "content": "Một sạp trong chợ khu bán set bánh Huế mix 3 loại — bánh bột lọc, bánh nậm, bánh ít — 30 cái giá 95.000đ/set, chỉ cần hấp nóng 20 phút là dùng được; nhân tôm thịt đậm đà.\nMenu thêm: bánh bột lọc lá chuối nhân tôm thịt 75.000đ/set 30 cái, 120.000đ/set 50 cái; bánh lọc trần nhân tôm 95.000đ/set 50 cái; bánh nậm/bánh ít 75.000đ/set 20 cái; bánh ram ít kèm 20 đế ram giòn 105.000đ/set 20 cái; bánh trôi nước 75.000đ/set 20 viên; chả cua Huế tươi 105.000đ/hộp 500g (2 hộp 200.000đ), loại đặc biệt 130.000đ/hộp 500g; bánh canh tươi 55.000đ/kg; nem lụi Huế 100.000đ/túi 500g; cá nục kho Huế 90.000đ/hộp 500g; mắm nêm, tôm chua, kho quẹt, mắm ruốc Huế 45.000–60.000đ.\nMiễn phí ship quanh khu vực 3km, xa hơn gọi ship hỏa tốc tận cửa.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795041910732819/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T11:26:16+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Rau củ quả, trái cây và trứng gà ta — bảng giá hôm nay",
+    "summary": "Một sạp trong chợ khu bán rau củ quả và trái cây hôm nay: bắp cải ta 38.000đ/2 cây, ổi lê 70.000đ/2kg, ngô nếp 40.000đ/5 bắp, trứng gà ta 125.000đ/30 quả, vịt lộn 55.000đ/10 quả.",
+    "content": "Một sạp trong chợ khu bán rau củ quả và trái cây hôm nay, giá tham khảo:\nBắp cải ta cây to khoảng 1,3kg: 38.000đ/2 cây. Mướp hương non 30.000đ/kg; su hào 22.000đ/2 củ; rau muống ta 20.000đ/mớ; mùng tơi ta 15.000đ/mớ; su su non 45.000đ/2kg; cà chua ta Mộc Châu 32.000đ/kg.\nỔi lê giòn ngọt 70.000đ/2kg; ngô nếp bắp to 40.000đ/5 bắp; chuối tiêu 35.000đ/2kg; dứa Ba Vì gọt sẵn 20.000đ/quả; sắn nếp bở 18.000đ/kg.\nMăng nứa luộc 40.000đ/kg; củ dền Mộc Châu 38.000đ/kg; gừng ta 30.000đ/kg; chanh tươi 40.000đ/kg; hành tây 25.000đ/kg; cà rốt 20.000đ/kg; bí đỏ 20.000đ/kg; bầu non 30.000đ/kg; bí xanh Mộc Châu 25.000đ/kg; khoai tây ta 45.000đ/2kg; khoai lang Nhật 60.000đ/2kg; khoai lang mật 65.000đ/2kg; tỏi tía khô 45.000đ/kg; lá chè xanh 20.000đ/nửa kg.\nTrứng gà ta quả nhỏ, lòng vàng ươm: 125.000đ/30 quả. Trứng vịt lộn quả to non, kèm rau răm: 55.000đ/10 quả.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795035350733475/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T11:25:58+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Set vịt giả cầy ướp sẵn 135k/set 1kg",
+    "summary": "Một sạp trong chợ khu bán set vịt giả cầy ướp sẵn, 1kg giá 135.000đ/set — vịt đã tẩm ướp đầy đủ gia vị, mua về chỉ việc chế biến, ăn cùng bún hoặc cơm nóng.",
+    "content": "Một sạp trong chợ khu bán set vịt giả cầy ướp sẵn, 1kg giá 135.000đ/set.\nVịt đã tẩm ướp đầy đủ gia vị, mua về chỉ việc chế biến, không mất công chuẩn bị. Mùi riềng mẻ thơm, vị đậm đà, ăn cùng bún hoặc cơm nóng đều hợp.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795034810733529/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T11:16:41+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Khu vui chơi Cầu Trượt 7 Sắc Cầu Vồng mở tại Vinhomes Thăng Long, Nam An Khánh",
+    "summary": "Khu vui chơi trẻ em 'Cầu Trượt 7 Sắc Cầu Vồng' khai mạc tối nay 26/11 tại Vinhomes Thăng Long, khu đô thị Nam An Khánh, kéo dài đến 04/12/2026. Vé 70.000đ/trẻ, bố mẹ và ông bà đi kèm miễn phí.",
+    "content": "Khu vui chơi trẻ em 'Cầu Trượt 7 Sắc Cầu Vồng' mở tại Vinhomes Thăng Long, khu đô thị Nam An Khánh.\nGiá vé 70.000đ một trẻ, bố mẹ và ông bà đi kèm miễn phí. Các bé được chơi gần 10 trò chơi cả ngày không giới hạn, gồm cầu trượt 7 sắc cầu vồng, nhà phao khổng lồ, tàu hỏa, xích đu, sân nhún và nhiều trò chơi vận động khác. Khu vực còn có không gian 3D với nhiều góc chụp ảnh.\nThời gian: khai mạc tối nay 26/11/2026, kéo dài đến 04/12/2026.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795025430734467/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T11:07:03+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Cơm ngon & gà tần ngày 26/11 — cơm 50k, gà tần ngải cứu 40k",
+    "summary": "Một bếp ăn trong khu bán cơm cả ngày từ 10h30 đến 20h30: cơm ba chỉ heo quay, cơm sườn, cơm gà 50.000đ/suất; gà tần ngải cứu 40.000đ/phần, mì gà tần 45.000–55.000đ.",
+    "content": "Một bếp ăn trong khu bán cơm cả ngày từ 10h30 đến 20h30, ngày 26/11.\nCác món cơm đồng giá 50.000đ/suất: cơm ba chỉ heo quay giòn bì, cơm sườn sốt chanh dây, cơm gà sốt cam, cơm thịt kho trứng cút, cơm sườn nướng, cơm gà xối mỡ; kèm canh và sốt. Thêm cơm 5.000đ, thêm trứng ốp 5.000đ, thêm gà 30.000đ/phần.\nGà tần ngải cứu 40.000đ/phần; mì gà tần ngải cứu 45.000đ, mì gà tần kèm 1 trứng lộn 55.000đ, mì 2 trứng lộn ngải cứu 40.000đ; thêm trứng lộn 10.000đ/quả.\nMì được chụng để hộp riêng, nước để túi zip riêng, về đổ nước vào là dùng ngay. Ship treo cửa trong khu; các tòa ngoài khu vực ship sảnh.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795013867402290/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T10:52:23+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Nem rán và canh cua đồng — combo 110k, ship ăn trưa",
+    "summary": "Một bếp ăn trong khu ship nem rán và canh cua đồng cho bữa trưa: nem rán sơ 70.000đ/10 chiếc kèm nước chấm, combo 10 nem + canh cua 110.000đ, canh cua riêng 45.000đ/tô. Nem khách đặt mới làm, không cất đông.",
+    "content": "Một bếp ăn trong khu vẫn đang ship nem rán và canh cua đồng cho bữa trưa hôm nay.\nNem rán sơ 70.000đ/10 chiếc kèm nước chấm; combo 10 nem rán sơ + canh cua 110.000đ; canh cua riêng 45.000đ/tô. Nem chua rán loại ngon 90.000đ/hộp, 175.000đ/2 hộp (chưa rán).\nNem khách đặt mới làm mỗi ngày, không cất đông; nem gói xong đã rán sơ, về rán lại hoặc bỏ nồi chiên không dầu vài phút là giòn. Cua tươi nên cần đặt trước 20 phút để xay nấu.\nMiễn phí ship sảnh các tòa trong khu.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4794988890738121/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-26T10:00:00+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
@@ -3210,93 +3298,5 @@
     "url": "https://facebook.com/groups/aiartworksvn/permalink/4626240320922149/",
     "image": null,
     "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-23T20:32:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Gom thịt bò, thịt heo, trứng và mọc cho ngày mai",
-    "summary": "Một sạp trong chợ khu gom đơn thịt quê cho ngày mai: bò vai hoa, thăn bò 320k/kg, bắp lõi rùa 380k/kg; thịt heo từ 95k–250k/kg; trứng gà ta 42k/chục; mọc nấm, mọc trắng 34k/cốc; rau giá quê 25k/kg.",
-    "content": "Một sạp trong chợ khu gom đơn thịt quê, trả khách ngày mai.\nThịt bò tươi: bò vai hoa 320k/kg, thăn bò 320k/kg, bắp lõi rùa 380k/kg, gân, dẻ sườn 220k/kg, nạm gầu 250k/kg.\nThịt heo: má đào 230k/kg, nạc nọng 230k/kg, nạc vai giòn 160k/kg, sụn non 200k/kg, xúc xích 160k/kg, nạc thăn 155k/kg, lưỡi 200k/kg, sườn vai 160k/kg, sườn thăn 170k/kg, ba chỉ rút sườn 165k/kg, ba chỉ thường 160k/kg, xương cổ nhiều thịt 95k/kg, móng giò 100k/kg, dạ dày 28k/lạng, tai heo 200k/kg, mũi heo 125k/kg, mỡ khổ 95k/kg, bắp chân giò 160k/kg, tim 31k/lạng, thịt xay 150k/kg.\nHàng tiện dùng: mọc nấm 34k/cốc, mọc trắng 34k/cốc; rau giá quê sạch 25k/kg (nhận từ 0,5kg).\nTrứng: trứng gà ta 42k/chục (lẻ 10 quả 45k/chục, nhận ship từ 20 quả), trứng vịt 32k/10 quả, trứng gà 2 lòng và trứng vịt 2 lòng 50k/chục (gom đơn, có trứng mới trả khách).\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791103117793365/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T20:32:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh xíu páo Nam Định 80k/10 chiếc, bánh mỳ Đò Quan 35k/chiếc",
-    "summary": "Một sạp trong chợ khu ship đặc sản Nam Định: bánh xíu páo 80k/10 chiếc, để tủ lạnh, quay nồi chiên vài phút là có bữa sáng; bánh mỳ Đò Quan 35k/chiếc, combo 2 chiếc 65k; freeship trong khu.",
-    "content": "Một sạp trong chợ khu ship đặc sản Nam Định.\nBánh xíu páo 80k/10 chiếc (cấp đông ăn dần thoải mái); để tủ lạnh, lúc nào ăn thì cho vào nồi chiên quay vài phút là có bữa sáng ngon lành.\nBánh mỳ Đò Quan (rau, dưa góp để riêng): 35k/chiếc, combo 2 chiếc chỉ 65k. Freeship trong khu.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791098667793810/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T20:32:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Dâu Mộc Châu: bi xinh 85k/250g, to nhỡ 170k/300g, freeship",
-    "summary": "Một sạp trong chợ khu bán dâu Mộc Châu: bi xinh 85k/250g, 150k/500g; to nhỡ 170k/300g, 250k/500g; khách cũ giảm 10k/hộp (size 500g); freeship.",
-    "content": "Một sạp trong chợ khu bán dâu Mộc Châu.\nBi xinh: 85k/250g, 150k/500g. To nhỡ: 170k/300g, 250k/500g. Khách cũ giảm 10k/hộp (size 500g). Freeship.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791096031127407/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T20:32:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Đồ ăn sáng mai ship sớm 6h–6h30: bánh chưng, bánh mỳ que, bánh tẻ, bánh bao, bánh khúc, bánh sắn",
-    "summary": "Một sạp trong chợ khu nhận đặt đồ ăn sáng mai, ship sớm từ 6h–6h30: bánh chưng tiêu Huế 55k/2 cặp, bánh mỳ que Hải Phòng 35k/10 chiếc, bánh tẻ Văn Giang 35k/5 chiếc, bánh bao mini 30k/5 cái, bánh khúc trắng 25k/2 chiếc, bánh khúc gạo lứt 30k/2 chiếc, bánh sắn Phú Thọ 30k/3 chiếc.",
-    "content": "Một sạp trong chợ khu nhận đặt đồ ăn sáng mai, ship sớm từ 6h–6h30.\nBánh chưng tiêu Huế: 55k/2 cặp, 30k/1 cặp. Bánh mỳ que Hải Phòng: 35k/10 chiếc, 60k/20 chiếc (giao bánh nguội). Bánh tẻ Văn Giang: 35k/5 chiếc, 65k/10 chiếc. Bánh bao nhỏ mini nhân thịt hành: 30k/5 cái. Bánh khúc trắng: 25k/2 chiếc. Bánh khúc gạo lứt: 30k/2 chiếc. Bánh sắn Phú Thọ: 30k/3 chiếc.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791093237794353/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T20:32:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Kê gà tươi 500k/kg, số lượng có hạn, ship tận nơi",
-    "summary": "Một sạp trong chợ khu gom được ít kê gà tươi (mai mổ gà cho đám): 500k/kg, số lượng có hạn, nhận đơn ship tận nơi.",
-    "content": "Một sạp trong chợ khu gom được ít kê gà tươi (mai mổ gà cho đám), 500k/kg, số lượng có hạn, nhận đơn ship tận nơi.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791092551127755/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T20:32:43+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Sale xả sọ dừa: 160k/10 sọ, từ 20 sọ còn 15k/sọ",
-    "summary": "Một sạp trong chợ khu sale xả sọ dừa: sọ to size đại (từ 550g trở lên, các quán hay bán 25k/sọ) nay còn 160k/10 sọ, từ 20 sọ còn 15k/sọ; sọ bóc từ xiêm xanh, khách đặt mới bóc, bảo quản tủ lạnh 10–15 ngày, không tẩy.",
-    "content": "Một sạp trong chợ khu sale xả sọ dừa, tiện công bóc cho khách sỉ sáng mai.\nSọ bóc từ xiêm xanh, khách đặt mới bóc nên tươi; bảo quản tủ lạnh 10–15 ngày; sọ bóc nguyên bản không tẩy nên an toàn. Sọ to size đại lớn nhất (từ 550g trở lên, các quán hay bán 25k/sọ) nay sale còn 160k/10 sọ; từ 20 sọ còn 15k/sọ. Miễn ship.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791091581127852/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T19:56:04+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cà pháo giòn, củ dền, măng nứa ship ngày mai",
-    "summary": "Một sạp trong chợ khu có cà pháo giòn non 25.000đ/kg, củ dền Mộc Châu 38.000đ/kg và măng nứa luộc 40.000đ/kg, giao vào ngày mai.",
-    "content": "Một sạp trong chợ khu rao bán cà pháo giòn, non, có khoảng 5kg và sẽ có thêm 5kg vào ngày mai.\nCà pháo trắng giòn, non: 25.000đ/kg.\nCủ dền Mộc Châu: 38.000đ/kg.\nMăng nứa luộc: 40.000đ/kg.\nHàng giao vào ngày mai.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791062374464106/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-23T19:53:44+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cá tầm, chép giòn, cá lăng size 3–4kg",
-    "summary": "Một sạp trong chợ khu bán cá tầm 175.000đ/kg, chép giòn 179.000đ/kg và cá lăng 115.000đ/kg, size từ trên 3kg đến 4kg, hỗ trợ làm sạch hoặc giao sống nguyên con.",
-    "content": "Một sạp trong chợ khu rao bán cá tầm, chép giòn và cá lăng, size từ trên 3kg đến 4kg, hỗ trợ làm sạch hoặc giao sống nguyên con có bơm ô xi.\nCá tầm: 175.000đ/kg.\nChép giòn: 179.000đ/kg.\nCá lăng: 115.000đ/kg.\nHàng cam kết đổi 1 đổi 1 nếu không đạt chuẩn.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791059334464410/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
