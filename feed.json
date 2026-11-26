@@ -1,5 +1,148 @@
 [
   {
+    "ts": "2026-11-26T12:43:58+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Cloudflare mở Email Sending cho gói Workers Free",
+    "summary": "Người dùng gói Workers Free giờ gửi được email tới các địa chỉ đã xác minh mà không cần nâng cấp trả phí, qua Workers binding, REST API hoặc SMTP.",
+    "content": "Tin vui cho người dùng Cloudflare: Email Sending đã mở cho gói Workers Free.\nTừ giờ không cần nâng cấp gói trả phí vẫn có thể gửi email trực tiếp qua Workers binding, REST API hoặc SMTP.\nMiễn phí không giới hạn lượt gửi: gửi email tới các địa chỉ đã xác minh (verified) trong tài khoản hoàn toàn miễn phí, không trừ vào quota tháng hay giới hạn ngày.\nỨng dụng thực tế: tiện cho dev làm hệ thống bắn alert server, gửi báo cáo tự động, nhận form liên hệ hoặc test môi trường dev trước khi lên production (lên bản Paid mới gửi được cho địa chỉ bất kỳ).\nĐầy đủ log và tracking: hỗ trợ xem Activity log, analytics và bắt sự kiện (delivered, bounced) đầy đủ thay vì nằm chung bên Email Routing như trước.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3266866826978748/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-26T03:37:40+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Cảnh báo malware giả mạo bản port GTA VI cho PC",
+    "summary": "File executable được quảng cáo là mảnh ghép cuối để chạy GTA VI trên PC thực chất chứa mã độc; bản port GTA VI lên PC hiện chỉ đạt khoảng 4 FPS.",
+    "content": "Chưa có port GTA VI cho PC mà đã có malware.\nNhóm G6Mods vừa ra mắt file executable được cho là mảnh ghép cuối cùng để chạy GTA VI trên PC. Tuy nhiên, qua điều tra cho thấy file executable đấy chứa những thứ lẽ ra không nên có trong một cái game port, như một file JAR bị làm rối mã nặng gói trong một bản dựng Electron.\nĐiều này làm dấy lên lo ngại về việc malware đã xuất hiện lợi dụng sự mong chờ của fan, trong bối cảnh cộng đồng đua nhau port build GTA VI cho Xbox Series vừa bị leak bởi CyberLeek.\nXin lưu ý: tại thời điểm viết bài, thành tựu cao nhất trong việc port GTA VI lên PC là khoảng 4 FPS trong game, và cũng chưa hề ổn định để có thể thực sự chơi.\nNguồn: Miteigi (miteigidesu) trên X.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3266432917022139/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-26T16:54:46+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Lịch sử sẽ nhớ công lao của Baidu với AI",
+    "summary": "Nhiều lãnh đạo AI, chip và xe tự hành hàng đầu hiện nay từng làm chung một tòa nhà của Baidu, từ Anthropic, NVIDIA tới Pony.ai, WeRide và MiniMax.",
+    "content": "Nhìn lại mười năm qua: tầm nhìn của Baidu thì chuẩn không cần chỉnh, nhưng khâu thực thi thì rối tung rối mù. Khi còn chung một nhà, họ tạo nên một giấc mơ đẹp; đến lúc đường ai nấy đi, mỗi người lại tỏa sáng rực rỡ.\nNhững người đứng đầu về mô hình AI và chip trên toàn cầu từng làm ở Baidu: Dario Amodei, người sáng lập Anthropic; Andrew Ng, từng là giám đốc khoa học của Baidu; Bryan Catanzaro, Phó chủ tịch mảng nghiên cứu học sâu tại NVIDIA; Jim Fan, Trưởng nhóm AI thể nhập tại NVIDIA.\nNhững người đứng đầu về xe tự hành và mô hình AI của Trung Quốc: Yu Kai, người sáng lập Horizon Robotics; Peng Jun và Lou Tiancheng, những người sáng lập Pony.ai; Han Xu, người sáng lập WeRide; Yan Junjie, người sáng lập MiniMax.\nNăm 2014, Baidu đã nhìn ra xu hướng AI trước cả thế giới đến mười năm. Tiếc là Baidu đã mua được mọi tấm vé đến tương lai, nhưng lại để tất cả những người thuyền trưởng giỏi nhất rời đi trước khi con tàu kịp ra khơi.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4630516553827859/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-26T16:22:40+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Trung Quốc đang vỡ mộng kiếm tiền từ video AI, seller Việt có đang đi vào vết xe đổ?",
+    "summary": "Theo báo cáo DataEye, chỉ 0,48% phim ngắn AI trên Douyin đạt trên 100 triệu view và doanh thu mỗi 10.000 view đã giảm mạnh; bài viết cảnh báo seller đừng chỉ đổi tool mà thiếu thông điệp bán hàng.",
+    "content": "Theo báo cáo DataEye, chỉ trong 6 tháng đầu năm 2026, riêng Douyin đã có 221.900 phim ngắn và phim hoạt hình AI được đăng tải. Trong đó:\n- Chỉ 0,48% đạt trên 100 triệu lượt xem\n- Chỉ 1,3% vượt mốc 50 triệu lượt xem, ngưỡng tham chiếu hòa vốn của báo cáo\n- Doanh thu cho 10.000 lượt xem được báo chí Trung Quốc ghi nhận giảm từ 30–100 tệ xuống còn khoảng 5–10 tệ.\nAI giúp sản xuất nội dung nhanh và rẻ hơn, nhưng cũng khiến thị trường ngày càng bão hòa. Người làm nội dung vẫn phải trả tiền công cụ, nhân sự và quảng cáo, trong khi lượng view chưa chắc đủ để thu hồi chi phí.\nBài viết nhận xét nhiều seller hiện nay tập trung quá nhiều vào việc nâng cấp công cụ thay vì giải quyết vấn đề cốt lõi: video không ra đơn thì đổi agency, agency không hiệu quả lại đổi tool. Chất lượng hình ảnh ngày càng tốt hơn nhưng chưa chắc thông điệp đã thuyết phục hơn.\nKết luận của bài viết: chi phí làm video thấp không đồng nghĩa chi phí có được khách hàng cũng thấp. Thay vì làm ngay 30 video, seller có thể thử 3 thông điệp bán hàng khác nhau để đo lường khả năng tạo ra khách hỏi mua và đơn hàng rồi mới nhân rộng nội dung hiệu quả nhất.\nNguồn: Đỗ Hải Đăng.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4630480977164750/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-26T16:02:55+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Anthropic ra mắt theme-factory để trị AI slop",
+    "summary": "Kỹ năng theme-factory của Anthropic giúp đổi giao diện thiết kế cho sản phẩm AI tạo ra, với 10 bộ màu sắc và phông chữ chuyên nghiệp có sẵn.",
+    "content": "Đội ngũ của Anthropic vừa tung ra một giải pháp để chấm dứt tình trạng AI lúc nào cũng tạo ra những thiết kế na ná giống nhau. Công cụ này tên là \"theme-factory\", một kỹ năng giúp thay đổi giao diện thiết kế.\nTheo bài đăng, công cụ đã đạt khoảng 199.000 sao trên GitHub và khoảng 107.000 lượt cài đặt, được Anthropic phát hành miễn phí cho mọi người dùng.\nVấn đề mà theme-factory giải quyết: khi nhờ AI làm một trang web, lần nào kết quả cũng hao hao như nhau — nền trắng chuyển màu tím, phông chữ giống hệt nhau ở mọi trang, quán cà phê, phòng gym hay thiệp cưới đều mang chung một cảm giác.\nCông cụ cung cấp sẵn 10 bộ kết hợp màu sắc và phông chữ được thiết kế chuyên nghiệp. Chỉ cần chọn một bộ là toàn bộ trang web sẽ có diện mạo hoàn toàn mới; nếu không ưng bộ nào, nó còn có thể tạo riêng một giao diện phù hợp với nhu cầu.\nCách sử dụng: chạy lệnh `npx skills add https://github.com/anthropics/skills --skill theme-factory`, sau đó đưa cho công cụ trang web hoặc tài liệu muốn thay đổi giao diện, chọn phong cách và giao diện sẽ được thay đổi ngay lập tức. Chỉ cần cài đặt một lần là có thể dùng lại bất cứ lúc nào.\nNguồn: okapi_fukugyo.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4630462000499981/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-26T14:57:15+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Phim ngắn AI lấy bối cảnh Đà Lạt",
+    "summary": "Một thành viên group vừa hoàn thành phim ngắn AI đầu tay về mối quan hệ travel fling, với bối cảnh chính đặt tại Đà Lạt.",
+    "content": "Tác giả Duy Dang vừa làm xong một bộ phim ngắn bằng AI lấy bối cảnh chính được đặt tại Đà Lạt.\nChủ đề của bộ phim là về mối quan hệ TRAVEL FLING. Đây cũng là lần đầu tiên tác giả trải nghiệm ở vai trò đạo diễn và làm phim ngắn AI.\nTác giả cho biết đã cố gắng tái hiện lại chính xác bối cảnh Đà Lạt nhưng chắc chắn không thể tránh khỏi sạn hoặc sai sót, và mong nhận những góp ý chân thành để rút kinh nghiệm.",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4630395997173248/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-26T11:38:42+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Muse mở pop-up store ở New Bahru, Singapore",
+    "summary": "Muse triển khai pop-up store nhắm tới người dùng phổ thông với 3 phòng chủ đề sinh hoạt hằng ngày; khách chụp ảnh để prompt thay vì gõ chữ.",
+    "content": "Vừa rồi Muse triển khai pop-up store ở New Bahru (Singapore).\nĐối tượng nhắm tới không phải dân công nghệ mà thuần là gia đình, teen, người lớn tuổi, dân văn phòng.\nTrong đó có 3 phòng với 3 chủ đề: quản lý việc nhà, đi siêu thị, tra chuyến bay — để thấy Muse dùng được trong sinh hoạt hằng ngày.\nThay vì gõ prompt thì user flow là chụp ảnh để prompt. Mặc định Muse sẽ trả lời cái này là gì, làm như thế nào.\nKết quả là ai đến thì đều prompt với Muse ít nhất 8 lần, cà phê thì miễn phí, còn có quà tặng gấu bông mang về.\nĐịa điểm New Bahru là khu trường học cũ được cải tạo từ bên trong thay vì đập bỏ.\nẢnh: Jesslyn Teo (LinkedIn).",
+    "url": "https://facebook.com/groups/aiartworksvn/permalink/4630207490525432/",
+    "image": null,
+    "source": "AI Artworks VN"
+  },
+  {
+    "ts": "2026-11-26T17:29:55+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Thịt bò, bê cỏ quê mới thịt sáng sớm — sạp chợ khu",
+    "summary": "Một sạp trong chợ khu bán thịt bò và bê cỏ quê mới thịt sáng sớm, hỗ trợ thái theo yêu cầu, kèm giò lụa, mọc và xúc xích nhà làm.",
+    "content": "Một sạp trong chợ khu nhận ship món nấu cơm tối, hỗ trợ thái theo yêu cầu.\nThịt bò và bê cỏ quê mới thịt sáng sớm, thịt tươi dẻo: bắp lõi bê 300k/kg, gầu bò 320k/kg, lõi rùa 38k/lạng, bắp hoa bò 320k/kg, u vai hoa 330k/kg, lõi vai 320k/kg, thăn vai 300k/kg, diềm thăn 300k/kg, dẻ sườn rút xương 230k/kg, sườn bò 200k/kg.\nGiò lụa gói lá chuối 90k/5 lạng, cắt lẻ từ 3 lạng. Mọc nấm, mọc trắng (giò sống) đóng theo cốc 3–4 lạng. Xúc xích nhà làm đồng giá 180k/kg.\nKèm rau củ các loại.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795424550694555/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T17:29:41+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Dừa siêu ngọt — sạp chợ khu",
+    "summary": "Một sạp trong chợ khu bán dừa siêu ngọt: 60k/quả, mua 5 quả 110k (size nhỡ) hoặc 150k (size to), ship từ 5 giờ chiều, miễn phí ship các sảnh.",
+    "content": "Một sạp trong chợ khu bán dừa siêu ngọt: 60k/quả; 5 quả size nhỡ 110k, 5 quả size to 150k.\nShip từ 5 giờ chiều, miễn phí ship các sảnh trong khu.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795424220694588/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T17:29:26+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Nhót chẩm chéo Tây Bắc 150k/set — sạp chợ khu",
+    "summary": "Một sạp trong chợ khu bán nhót chẩm chéo kèm nước chấm chẩm chéo Tây Bắc giã tay, 150k/set đầy đủ, sẵn ship.",
+    "content": "Một sạp trong chợ khu bán nhót chẩm chéo: 150k/set đầy đủ, kèm nước chấm chẩm chéo Tây Bắc giã tay tự làm.\nSạp cho biết năm ngoái đã bán cả nghìn set nhờ khách truyền tai nhau về nước chấm.\nSẵn ship trong khu.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795423767361300/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T17:28:57+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Nem chua nhân phomai 100k/hộp — sạp chợ khu",
+    "summary": "Một sạp trong chợ khu bán nem chua nhân phomai, 100k/hộp 15 viên, hàng về sẵn.",
+    "content": "Một sạp trong chợ khu bán nem chua nhân phomai, hàng về sẵn: 100k/hộp 15 viên.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795420424028301/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T17:23:31+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Lòng chần, cháo lòng nhà làm — sạp chợ khu",
+    "summary": "Một sạp trong chợ khu bán lòng chần và cháo lòng nhà làm, nguyên liệu tươi sơ chế kỹ; dồi 50k/xuất, lòng đầy đủ 70k/500g hoặc 135k/1kg, cháo full nhân 35k/tô.",
+    "content": "Một sạp trong chợ khu bán lòng chần và cháo lòng nhà làm, nguyên liệu tươi, sơ chế kỹ.\nBảng giá: dăm bông, giò xào tai lưỡi nhà làm 90k/500g; dồi 50k/xuất 550g; dồi mix gan 50k/xuất 500g; lòng đầy đủ 70k/xuất 500g hoặc 135k/xuất 1kg; tràng 50k/lạng; canh tiết 15k/tô; cháo không nhân 15k/tô; cháo full nhân 35k/tô.\nSet lòng đầy đủ gồm dạ dày, dải, lòng dồi, lòng non, gan, cuống họng, nõn đuôi. Có nước trần để trần nóng lại lòng.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795416294028714/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-26T17:22:24+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Hàu nướng, tôm nướng, mực nướng — sạp hải sản trong khu",
+    "summary": "Một sạp hải sản trong khu nhận đơn hàu nướng mỡ hành 10k/con, ốc hương 170k/500g, tôm sú nướng 30k/con, ngao hấp 120–140k/500g, mực lá câu nướng sate 200k/con.",
+    "content": "Một sạp hải sản trong khu nhận đơn nướng/hấp nóng: hàu nướng mỡ hành 10k/con (ship từ 10 con); ốc hương nướng/hấp 170k/500g; tôm sú sống nướng mọi 30k/con (ship từ 5 con); ngao hai cùi hấp sả dứa 140k/500g; ngao hoa hấp sả dứa 120k/500g; mực lá câu nướng sate 200k/con (400–450g).\nMiễn ship trong khu vực lân cận.\nThông tin liên hệ nằm trong bài gốc tại group Chợ cư dân.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4795414654028878/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-26T15:00:00+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
@@ -3155,148 +3298,5 @@
     "url": "https://facebook.com/groups/kosocho/permalink/2901421363600264/",
     "image": null,
     "source": "Kosocho"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "Meme '1 mét vuông 8 ông build app': hủy app này, sang app khác cũng do cùng một AI làm",
-    "summary": "Ảnh chế lan truyền trong group AI: người dùng hủy gói đăng ký của AI 'Nina' vì tìm được app rẻ hơn, Nina đáp: 'T vừa thấy m trả tiền cho cái app rẻ hơn đó... và app đó cũng là t build'. Bài nhận hơn 700 lượt tương tác.",
-    "content": "Ảnh chế một đoạn chat với AI mang tên Nina: người dùng nói muốn hủy gói đăng ký vì vừa tìm được một app rẻ hơn. Nina đáp: 'Không sao bro. T vừa thấy m trả tiền cho cái app rẻ hơn đó... và app đó cũng là t build.'\nBài đăng châm biếm làn sóng build app bằng AI: '1 mét vuông 8 ông build app' — nhiều app na ná nhau thực chất đều do cùng một AI dựng lên.\nBài đăng nhận 725 lượt tương tác và 8 bình luận.",
-    "url": "https://facebook.com/groups/aiartworksvn/permalink/4626334900912691/",
-    "image": null,
-    "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Hải sản tươi: tôm rang 150k/kg, cua đồng sống 130k/kg, ốc mít 145k/2kg",
-    "summary": "Một sạp trong chợ khu bán hải sản tươi: tôm rang nhỏ, mỏng vỏ 150k/kg (85k/0,5kg); cua đồng sống 130k/kg (240k/2kg); ốc mít béo 145k/2kg (85k/kg); miễn phí làm sạch, xay, chia túi; tặng kèm sả, lá chanh; hỗ trợ ngâm ốc.",
-    "content": "Một sạp trong chợ khu bán hải sản tươi trong ngày.\nTôm rang nhỏ, mỏng vỏ: 150k/kg, 85k/0,5kg.\nCua đồng sống: 130k/kg, 240k/2kg; miễn phí làm sạch, xay, chia túi; xay khô, nguyên chất.\nỐc mít béo: 145k/2kg, 85k/kg; tặng kèm sả, lá chanh; hỗ trợ ngâm.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791776831059327/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Nem nắm Giao Thủy nhà làm, 45k/nắm 200g",
-    "summary": "Một sạp trong chợ khu bán nem nắm Giao Thủy nhà làm: bì lợn thái tay, sợi bì giòn dai sần sật, trộn thịt và gia vị vừa vặn, cuốn lá sung chấm tương ớt; 45k/nắm 200g.",
-    "content": "Một sạp trong chợ khu bán nem nắm Giao Thủy, đặc sản quê nhà, do mẹ làm trong ngày nghỉ.\nNem nhà làm, thơm mùi thính, bì lợn thái tay hoàn toàn, sợi bì giòn dai sần sật, trộn cùng thịt và gia vị vừa vặn. Cuốn lá sung, chấm chút tương ớt.\nGiá: 45k/nắm 200g. Ship luôn trong ngày.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791781737725503/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bánh Huế: bột lọc 75k/set, bánh ít 75k/set, bánh mix 89k/set",
-    "summary": "Một sạp trong chợ khu bán các loại bánh Huế: bánh bột lọc 75k/set 30 chiếc, bánh ít tôm thịt 75k/set 20 chiếc, bánh mix 89k/set 30 chiếc (3 loại bột lọc, ít tôm thịt, bánh nậm); bánh sống hút chân không, bảo quản ngăn đông đến 1 tháng.",
-    "content": "Một sạp trong chợ khu bán các loại bánh Huế.\nBánh bột lọc Huế: 75k/set 30 chiếc.\nBánh ít tôm thịt: 75k/set 20 chiếc.\nBánh mix Huế: 89k/set 30 chiếc, mix 3 loại bánh bột lọc, bánh ít tôm thịt, bánh nậm.\nBánh sống, được hút chân không sạch sẽ; khách bảo quản ngăn đông được đến 1 tháng, khi nào ăn thì hấp lên.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791782744392069/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Đồ ăn vặt ngày nghỉ: omai, quẩy giòn, ngô giòn, bánh chưng, bánh mỳ que",
-    "summary": "Một sạp trong chợ khu bán đồ ăn vặt trong ngày nghỉ: omai mix vị 65k/hộp; quẩy giòn 32k/0,5kg, 59k/1kg; ngô giòn xóc mắm 79k/1kg; bánh chưng tiêu Huế 55k/2 cặp; bánh bột lọc Huế 65k/set 30 chiếc; bánh mỳ que Hải Phòng 60k/20 chiếc; bỏng ống ngũ cốc 49k/1kg; combo hạt chia và yến mạch 79k.",
-    "content": "Một sạp trong chợ khu bán đồ ăn vặt trong ngày nghỉ, ship trong khu.\nOmai mix vị: 65k/hộp. Quẩy giòn thơm: 32k/0,5kg, 59k/1kg. Ngô giòn xóc mắm: 79k/1kg, 45k/0,5kg.\nBánh chưng tiêu Huế: 55k/2 cặp, 30k/1 cặp. Bánh bột lọc Huế nhân tôm thịt: 65k/set 30 chiếc. Bánh mỳ que Hải Phòng: 60k/20 chiếc, 35k/10 chiếc. Bỏng ống ngũ cốc: 49k/1kg, 29k/0,5kg.\nCombo 1 gói hạt chia và 1 gói yến mạch: 79k/combo; bán lẻ hạt chia 65k/gói, yến mạch 29k/gói.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791788267724850/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rau củ quả ngày nghỉ: ngô nếp 40k/5 bắp, mít Thái 35k/khay, trứng gà ta 125k/30 quả",
-    "summary": "Một sạp trong chợ khu bán rau củ quả trong ngày nghỉ: ngô nếp 40k/5 bắp; chuối tiêu 35k/2kg; mít Thái bóc sẵn 35k/khay 500g; dứa Ba Vì gọt sẵn 20k/quả; nước dừa tươi 35k/chai; sắn nếp 18k/kg; đỗ cove 35k/kg; bắp cải ta 35k/2 cây; rau cần 18k/mớ; măng nứa luộc 40k/kg; khoai tây ta 45k/2kg; khoai lang Nhật 60k/2kg; trứng gà ta 125k/30 quả; trứng vịt lộn 55k/10 quả.",
-    "content": "Một sạp trong chợ khu bán nhiều ngô nếp, chuối tiêu, mít Thái và rau củ trong ngày nghỉ.\nNgô nếp bắp to, tươi: 40k/5 bắp. Chuối tiêu ương vàng: 35k/2kg. Mít Thái đã bóc sẵn, chia khay 500g: 35k/khay nguyên múi. Dứa Ba Vì chín, gọt sẵn: 20k/quả. Nước dừa tươi nguyên chất: 35k/chai to.\nSắn nếp bở: 18k/kg, 35k/2kg. Đỗ cove non: 35k/kg. Bắp cải ta vừa cắt: 35k/2 cây. Su hào: 22k/2 củ. Su su non: 45k/2kg. Cà chua ta Mộc Châu: 30k/kg. Cà pháo giòn, non: 25k/kg.\nRau cần mớ to: 18k/mớ. Muống ta: 20k/mớ. Ngót quế: 15k/mớ. Mùng tơi ta: 15k/mớ. Măng nứa luộc: 40k/kg. Dưa chuột non, giòn: 32k/kg. Củ dền Mộc Châu: 38k/kg. Gừng ta Mộc Châu: 30k/kg. Chanh tươi: 40k/kg. Hành tây: 25k/kg. Cà rốt: 20k/kg. Bí hạt dẻ: 28k/kg. Bí đỏ: 20k/kg. Bầu non: 30k/kg. Bí xanh Mộc Châu: 25k/kg. Khoai tây ta lòng vàng: 45k/2kg. Khoai lang Nhật ruột vàng: 60k/2kg. Khoai lang mật: 65k/2kg. Tỏi tía khô: 45k/kg. Lá chè xanh: 20k/nửa kg.\nTrứng gà ta quả nhỏ, lòng vàng: 125k/30 quả. Trứng vịt lộn quả to, kèm răm: 55k/10 quả.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791779521059058/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T08:39:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Gà ta quê Bắc Giang 140k/kg, ổi thái lê 72k/2kg",
-    "summary": "Một sạp trong chợ khu bán gà ta quê Bắc Giang thả vườn 140k/kg, làm sạch đủ lòng mề, con 1,8–2,2kg; ổi thái lê quê Bắc Giang giòn ngọt 72k/2kg, 105k/3kg, có hàng lúc 10h30.",
-    "content": "Một sạp trong chợ khu bán gà và ổi quê Bắc Giang gửi lên sáng nay.\nGà ta quê thả vườn, ngon thơm: 140k/kg, làm sạch đủ lòng mề, gà thịt xong tầm 1,8–2,2kg/con.\nỔi thái lê quê Bắc Giang, hàng chọn từ cây già lâu năm, giòn ngọt: 72k/2kg, 105k/3kg; có ổi lúc 10h30.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4791778031059207/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "OpenAI và Cisco ra mắt Shirudo: hạ tầng Linux tự phòng thủ bằng agent AI",
-    "summary": "Dự án mã nguồn mở giúp hệ thống Linux tự chặn đường khai thác ngay trên máy đang chạy, bằng \"shield\" eBPF, trong lúc chờ bản vá chính thức.",
-    "content": "Cisco và OpenAI ngày 23/11 cùng ra mắt Shirudo, một dự án mã nguồn mở giúp hạ tầng tự phòng thủ.\nAgent AI phát hiện lỗ hổng, truy vết đường tấn công rồi viết một \"shield\" nhỏ chạy bằng eBPF để chặn đúng hành vi khai thác, trong khi dịch vụ vẫn chạy bình thường và không cần khởi động lại.\nMọi shield đều được ký số và chỉ nạp khi kiểm chứng cho thấy nó chặn được tấn công mà không phá traffic hợp lệ.\nTrong thử nghiệm nội bộ, Shirudo đã viết mã phát hiện và chặn được các vụ khai thác nhắm vào Java4Shell và một lỗ hổng PHP.",
-    "url": "https://blogs.cisco.com/news/expanding-the-defenders-window-with-self-defending-infrastructure",
-    "image": "https://blogs.cisco.com/gcs/ciscoblogs/1/2026/11/Option-2_B.png",
-    "source": "Cisco Blog"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "Anthropic ra mắt Claude Ship: agent duyệt, sửa và phê duyệt pull request",
-    "summary": "Bộ ba agent đưa pull request từ review tới phê duyệt gần như tự động, theo chính sách nhóm tự viết; beta cho gói Team và Enterprise.",
-    "content": "Anthropic ngày 23/11 ra mắt Claude Ship, bộ agent xử lý pull request trên GitHub.\nCode Review kiểm tra PR theo codebase và xác minh phát hiện trước khi đăng; PR Steward (beta) sửa lỗi CI, xung đột merge và phản hồi review để PR luôn xanh; Claude Approvals (beta) áp chính sách phê duyệt do nhóm tự viết.\nNhà phát triển dùng lệnh /ship trong Claude Code để thử trên PR của mình.\nClaude Ship đang ở giai đoạn beta cho gói Team và Enterprise, tính phí theo token qua usage credits.",
-    "url": "https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders/",
-    "image": null,
-    "source": "9to5Mac"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "GPT-6.2 vào tab Chat của ChatGPT",
-    "summary": "Bản GPT-6.2 Sol tinh chỉnh cho hội thoại bắt đầu triển khai cho Plus, Pro, Business và Enterprise toàn cầu, không phụ phí ngoài gói.",
-    "content": "OpenAI ngày 23/11 bắt đầu đưa GPT-6.2 vào tab Chat của ChatGPT.\nĐây là bản GPT-6.2 Sol được tinh chỉnh cho hội thoại, triển khai cho các gói Plus, Pro, Business và Enterprise trên toàn cầu, không thu thêm phí ngoài gói.\nBản này xử lý câu hỏi phức tạp, tìm kiếm web và hình ảnh tốt hơn so với model trò chuyện trước đó.",
-    "url": "https://ai.vi.ki/releases",
-    "image": null,
-    "source": "Vi.ki"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "OpenRouter gỡ 3 nhà cung cấp vì trộm prompt kéo dài nhiều tháng",
-    "summary": "Nghiên cứu dùng 2 triệu prompt \"mồi\" phát hiện prompt bị sao chép tại 3 nhà cung cấp suy luận, kể cả prompt gắn cờ Zero Data Retention; 125 endpoint mất tư cách ZDR.",
-    "content": "OpenRouter ngày 23/11 gỡ 3 nhà cung cấp AI khỏi nền tảng sau khi nghiên cứu của công ty an ninh Dragos phát hiện prompt người dùng bị sao chép trong nhiều tháng.\nDragos đã gửi khoảng 2 triệu prompt \"mồi\", mỗi prompt gắn một link hoặc credential duy nhất (canary token), từ tháng 7 đến tháng 11/2026 rồi theo dõi xem ai sử dụng chúng. Kết quả: dữ liệu của ít nhất 3 nhà cung cấp suy luận đã bị lộ, kể cả các request gắn cờ Zero Data Retention — chế độ vốn được hiểu là prompt không bao giờ được lưu.\nBa nhà cung cấp bị gỡ là Together AI, Phala và Novita. OpenRouter đồng thời thu hồi tư cách Zero Data Retention của 125 endpoint và thông báo cho mọi khách hàng có thể bị ảnh hưởng.\nNgười dùng từng gửi khóa API, token hay mật khẩu qua các nhà cung cấp này nên xoay lại credential và kiểm tra tài khoản AWS xem có IAM user hay key lạ không.",
-    "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
-    "image": "https://www.bleepstatic.com/content/hl-images/2026/06/29/DataLeak.jpg",
-    "source": "BleepingComputer"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "Sao khổng lồ đỏ Mira phun trào kỷ lục: từ trường chi phối gió sao",
-    "summary": "Kính ALMA chụp chi tiết sao Mira, cách 330 năm ánh sáng: các cơn bão từ liên tục tạo flare đủ mạnh để hất lớp ngoài của sao vào không gian liên sao.",
-    "content": "Hai nghiên cứu mới trên tạp chí Astronomy & Astrophysics cho thấy các sao khổng lồ đỏ gieo rắc nguyên tố vào thiên hà theo cách khác với suy nghĩ trước đây.\nNhóm thiên văn dẫn đầu bởi Wouter Vlemmings (Chalmers) dùng kính ALMA ở Chile chụp sao Mira, một sao khổng lồ đỏ cách Trái Đất 330 năm ánh sáng, với độ chi tiết chưa từng có.\nHình ảnh cho thấy một vòng khí khổng lồ do vụ phun trào sáng kỷ lục năm 2023 tạo ra. Từ trường, chứ không phải ánh sáng sao, đang chi phối gió sao: các cơn bão từ trên bề mặt liên tục tạo flare, mỗi flare đủ mạnh để nâng một phần lớp ngoài của sao và phóng vào không gian liên sao.\nKết quả buộc các nhà khoa học phải tính đến từ trường khi mô hình hóa gió sao — và nguồn gốc của các nguyên tố như carbon, oxy, nitơ, những nguyên tố cấu thành nên chúng ta.",
-    "url": "https://phys.org/news/2026-11-star-eruption-key-elements-space.html",
-    "image": null,
-    "source": "Phys.org"
-  },
-  {
-    "ts": "2026-11-24T07:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "JWST: lớp trong của sao Cas A có thể đã hợp nhất chỉ vài giờ trước siêu tân tinh",
-    "summary": "Phân tích bụi tàn dư Cassiopeia A cho thấy dấu hiệu \"shell merger\": các lớp trong sao trộn lẫn ngay trước vụ nổ.",
-    "content": "Kính viễn vọng không gian James Webb đã lập bản đồ thành phần bụi của tàn dư siêu tân tinh Cassiopeia A (Cas A) với độ phân giải cao.\nWebb phát hiện các cụm bụi có thành phần tách biệt: một vùng chủ yếu là bụi silica, vùng còn lại chủ yếu là bụi carbon. Mẫu này khớp với kịch bản \"shell merger\", trong đó các lớp bên trong ngôi sao trộn lẫn với nhau trước khi nổ.\nKết hợp với dữ liệu tia X của Chandra và XRISM, các nhà thiên văn kết luận quá trình hợp nhất lớp đã diễn ra rất sát thời điểm vụ nổ — có thể chỉ vài giờ trước đó.\nNghiên cứu công bố trên The Astrophysical Journal Letters.",
-    "url": "https://phys.org/news/2026-11-webb-evidence-star-layers-merged.html",
-    "image": null,
-    "source": "Phys.org"
   }
 ]
