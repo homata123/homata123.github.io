@@ -140,6 +140,22 @@
   .ytchip.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
   .ytsec{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:20px;margin:22px 0 12px}
   .expandbtn{margin-top:16px;border:1px solid var(--ink);background:none;color:var(--ink);font-family:inherit;font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:6px;cursor:pointer}
+
+  /* ---------- Visitor stats tab ---------- */
+  .statsview h2{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:25px;margin:0}
+  .statshead{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:4px}
+  .statshead .expandbtn{margin-top:0}
+  .statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:22px 0 6px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+  .stat{padding:16px 18px 14px;border-left:1px solid var(--line)}
+  .stat:first-child{border-left:none;padding-left:0}
+  .statnum{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:38px;line-height:1;color:var(--ink)}
+  .statlabel{font-size:13px;color:var(--muted);margin-top:6px}
+  .statssec{font-family:"Newsreader",Georgia,serif;font-weight:700;font-size:19px;margin:26px 0 8px}
+  .stattable{width:100%;border-collapse:collapse;font-size:14px}
+  .stattable th{text-align:left;font-size:12.5px;color:var(--muted);font-weight:600;padding:6px 10px 6px 0;border-bottom:1px solid var(--ink)}
+  .stattable td{padding:7px 10px 7px 0;border-bottom:1px solid var(--line);color:var(--ink-soft)}
+  .stattable td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+  @media (max-width:720px){ .statgrid{grid-template-columns:1fr 1fr} .stat{padding-left:0;border-left:none} .statnum{font-size:30px} }
   .expandbtn:hover{background:var(--ink);color:var(--paper)}
   @media (prefers-reduced-motion: reduce){ .livebadge .dot{animation:none} }
 
@@ -275,6 +291,7 @@
 
 <script>
 const YTCAT = "YouTube Favorite & Live";
+const STATCAT = "Lượt ghé thăm";
 const CATS = ["Tất cả","AI & Công nghệ","Bảo mật","Khoa học","Game","Video",YTCAT,"Facebook","Bảng tin cư dân"];
 const CATCOLOR = {
   "AI & Công nghệ":"#205E3B",
@@ -385,6 +402,11 @@ function leadBlock(it){
 
 function render(){
   const main = document.getElementById("main");
+  if (activeCat === STATCAT){
+    main.innerHTML = statsViewHtml();
+    if (!statsData && !statsLoading) loadStats();
+    return;
+  }
   if (activeCat === YTCAT){
     main.innerHTML = ytViewHtml();
     return;
@@ -551,6 +573,53 @@ function openYT(video){
   document.body.style.overflow = "hidden";
   document.getElementById("overlay").scrollTop = 0;
 }
+// ---- Visitor stats tab (showcase page counters, via adas-relay /stats) ----
+let statsData = null, statsLoading = false, statsError = "";
+function statsViewHtml(){
+  let h = `<div class="statsview"><div class="statshead"><h2>Lượt ghé thăm trang showcase</h2><button class="expandbtn" onclick="loadStats(true)">Cập nhật số liệu</button></div>
+  <p class="ytsub">Số liệu của trang giới thiệu dự án (project.html — trang công khai dùng để chia sẻ trên LinkedIn). Mỗi thiết bị được nhận diện bằng một mã lưu trong trình duyệt của khách; địa chỉ IP lấy từ kết nối của khách. Không theo thời gian thực — bấm “Cập nhật số liệu” để lấy số mới nhất.</p>`;
+  if (statsError) h += `<p class="ytsub">${esc(statsError)}</p>`;
+  if (!statsData) return h + `<div class="loading">${statsLoading ? "Đang tải số liệu…" : "Đang chuẩn bị số liệu…"}</div></div>`;
+  const d = statsData;
+  h += `<div class="statgrid">
+    <div class="stat"><div class="statnum">${d.hits}</div><div class="statlabel">Tổng lượt xem trang</div></div>
+    <div class="stat"><div class="statnum">${d.devices}</div><div class="statlabel">Khách duy nhất (theo thiết bị)</div></div>
+    <div class="stat"><div class="statnum">${d.ips}</div><div class="statlabel">Địa chỉ IP duy nhất</div></div>
+    <div class="stat"><div class="statnum">${d.today ? d.today.hits : 0}</div><div class="statlabel">Lượt xem hôm nay — ${d.today ? d.today.devices : 0} thiết bị</div></div>
+  </div>`;
+  h += `<h3 class="statssec">14 ngày gần nhất</h3><table class="stattable"><thead><tr><th>Ngày</th><th>Lượt xem</th><th>Thiết bị</th></tr></thead><tbody>${
+    d.days.slice().reverse().map(x => `<tr><td>${esc(x.date)}</td><td>${x.hits}</td><td>${x.devices}</td></tr>`).join("")
+  }</tbody></table>`;
+  h += `<h3 class="statssec">Các lượt ghé gần nhất</h3>`;
+  if (!d.recent.length) h += `<p class="ytsub">Chưa có lượt ghé nào được ghi nhận.</p>`;
+  else h += `<table class="stattable"><thead><tr><th>Thời gian</th><th>IP</th><th>Thiết bị</th></tr></thead><tbody>${
+    d.recent.map(r => `<tr><td>${fullDate(r.ts)}</td><td>${esc(r.ip || "")}</td><td>${esc(r.device || "")}</td></tr>`).join("")
+  }</tbody></table>`;
+  h += `<p class="ytsub">Số liệu lấy lúc ${fullDate(d.generated_at)}.</p></div>`;
+  return h;
+}
+function renderStats(){
+  if (activeCat !== STATCAT) return;
+  const main = document.getElementById("main");
+  if (main) main.innerHTML = statsViewHtml();
+}
+async function loadStats(manual){
+  if (statsLoading) return;
+  statsLoading = true; statsError = "";
+  renderStats();
+  try {
+    const t = await fetch("/api/rt-token", { cache: "no-store" }).then(r => r.json());
+    if (!t.token) throw new Error("chưa đăng nhập Access");
+    const d = await fetch("https://adas-relay.ilias52544-13c.workers.dev/stats?token=" + encodeURIComponent(t.token), { cache: "no-store" })
+      .then(r => { if (!r.ok) throw new Error("máy chủ thống kê trả " + r.status); return r.json(); });
+    statsData = d;
+  } catch (e) {
+    statsError = "Không tải được số liệu (" + e.message + "). Thử lại bằng nút Cập nhật số liệu.";
+  }
+  statsLoading = false;
+  renderStats();
+}
+
 function loadYt(){
   return fetch("youtube.json", {cache:"no-store"})
     .then(r => r.ok ? r.json() : null)
@@ -604,6 +673,13 @@ CATS.forEach(name=>{
   b.onclick=()=>{ activeCat=name; page=1; listPage=1; document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b)); render(); };
   tabsEl.appendChild(b);
 });
+if (location.hostname === "adas-feed.pages.dev"){
+  const sb = document.createElement("button");
+  sb.className = "tab";
+  sb.textContent = STATCAT;
+  sb.onclick = () => { activeCat = STATCAT; document.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === sb)); render(); };
+  tabsEl.appendChild(sb);
+}
 document.getElementById("search").addEventListener("input", e=>{ query=e.target.value.trim().toLowerCase(); page=1; listPage=1; render(); });
 
 const now = new Date();

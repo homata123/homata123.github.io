@@ -228,6 +228,7 @@
 
   <footer class="colophon">
     <div>Ada&rsquo;s Feed. Designed, built and operated as a personal project.</div>
+    <div id="visit-count"></div>
     <div><a href="https://adas-feed.pages.dev/">adas-feed.pages.dev</a></div>
   </footer>
 
@@ -250,6 +251,40 @@
   }).catch(function(){
     box.innerHTML = '<div class="empty">The latest edition is available on the site itself.</div>';
   });
+})();
+</script>
+<script>
+// Visitor counter: one beacon per page load to the adas-relay Worker, which
+// keeps per-device records in KV. The device id lives in this browser's
+// localStorage; the Worker sees the visitor's IP from the connection itself.
+// The public /count endpoint returns totals only, shown in the footer.
+(function(){
+  var RELAY = 'https://adas-relay.ilias52544-13c.workers.dev';
+  var vid = null;
+  try {
+    vid = localStorage.getItem('adas-vid');
+    if (!vid) {
+      vid = (window.crypto && crypto.randomUUID) ? crypto.randomUUID()
+        : 'v' + Date.now().toString(36) + Math.random().toString(36).slice(2, 12);
+      localStorage.setItem('adas-vid', vid);
+    }
+  } catch (e) {
+    vid = 'v' + Date.now().toString(36) + Math.random().toString(36).slice(2, 12);
+  }
+  var payload = JSON.stringify({ vid: vid, page: 'showcase' });
+  try {
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(RELAY + '/track', new Blob([payload], { type: 'text/plain' }));
+    } else {
+      fetch(RELAY + '/track', { method: 'POST', body: payload, headers: { 'Content-Type': 'text/plain' }, keepalive: true }).catch(function(){});
+    }
+  } catch (e) {}
+  fetch(RELAY + '/count', { cache: 'no-store' }).then(function(r){ return r.json(); }).then(function(d){
+    var el = document.getElementById('visit-count');
+    if (el && typeof d.devices === 'number') {
+      el.textContent = d.hits + ' page views from ' + d.devices + ' visitors so far.';
+    }
+  }).catch(function(){});
 })();
 </script>
 </body>
