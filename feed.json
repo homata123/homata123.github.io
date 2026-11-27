@@ -1,5 +1,82 @@
 [
   {
+    "ts": "2026-11-27T10:54:43+07:00",
+    "flow": "facebook",
+    "category": "Facebook",
+    "title": "Đánh giá model AI giá rẻ và model local chạy trên OpenClaw",
+    "summary": "Trải nghiệm thực tế dùng các model AI giá rẻ/miễn phí và model local trên OpenClaw để code tool đơn giản, ghi chú công việc và tổng hợp tin ngành: GPT-6-Luna bị chê 'tuyệt đối vô dụng', GLM 5.3 Flash hiểu nhầm sau khoảng 1 tuần, DeepSeek 4.1 Flash ghi chú tốt nhưng code phải sửa nhiều, còn Qwen 3.8 27B chạy local được khen chất lượng cực tốt.",
+    "content": "Tác giả chia sẻ trải nghiệm thực tế dùng các model AI giá rẻ/miễn phí và model local trên OpenClaw để code các tool đơn giản, ghi chú công việc hằng ngày và tổng hợp tin tức về ngành.\nClaude Sonnet 5.5 free được đánh giá ở đẳng cấp khác nên không nằm trong bài so sánh.\nGPT-6-Luna bị chê 'tuyệt đối vô dụng' cả khi code lẫn tổng hợp tin (bảo tổng hợp thì chỉ cho một câu rất ngắn); bản Terra cũng không khá hơn.\nGLM 5.3 Flash ghi chú công việc ổn lúc đầu nhưng sau khoảng 1 tuần bắt đầu hiểu nhầm nhiều, code khá tệ — dù vậy vẫn tốt hơn và rẻ hơn GPT-6.\nDeepSeek 4.1 Flash ghi chú rất tốt, đôi khi tìm ra cách hay (nhờ tạo ảnh trình bày thì tự tạo trang HTML rồi mở trình duyệt chụp lại khi tạo ảnh lỗi template), nhưng code thì phải prompt sửa miệt mài; hướng dẫn triển khai web TypeScript cơ bản thì loay hoay cả tiếng không xong.\nDeepSeek 4.1 Pro tổng hợp kiến thức về một lĩnh vực kém hơn hẳn bản Flash.\nQwen 3.8 27B chạy local qua Ray backend và vLLM trên 2 máy i9/RTX 4090 (chạy được trên máy Mac 32GB), mô hình dense truyền thống nên chậm nhưng chất lượng cực tốt: code web quản lý thiết bị server, switch, đấu nối port, cloud server gần như không lỗi; tổng hợp lỗ hổng bảo mật 24h vừa đủ, tự chia chủ đề, phân đoạn, đánh giá mức độ nghiêm trọng và đối chiếu với hệ thống đang quản lý để kết luận có bị ảnh hưởng không. Bản FP4 rất tốt, xuống 2-bit thì kém hẳn. Tác giả đang cho team dùng luôn model này.",
+    "url": "https://facebook.com/groups/j2team.community/permalink/3268132130185551/",
+    "image": null,
+    "source": "J2Team Community"
+  },
+  {
+    "ts": "2026-11-27T11:31:39+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Rau bắp cải Đà Lạt và cải thảo tươi",
+    "summary": "Một sạp trong chợ khu về tiếp rau bắp cải Đà Lạt và cải thảo: bắp cải 30k/2 cái (hơn 2kg), cải thảo 12k/kg, rau tươi mới được chọn kỹ.",
+    "content": "Một sạp trong chợ khu về tiếp rau bắp cải Đà Lạt ngon: 30k/2 cái, hơn 2kg.\nCải thảo 12k/1kg, một cái to.\nRau tươi mới, được chọn cái không sâu.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4796593463910997/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-27T11:30:32+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Chả cá mối sale 85k/kg",
+    "summary": "Một sạp trong chợ khu sale chả cá mối 85k/kg: làm từ cá mối tươi và thịt xay dẻo, không chất phụ gia, không chất bảo quản; rán, sốt cà chua ăn cơm hay thả lẩu đều ngon.",
+    "content": "Một sạp trong chợ khu sale chả cá mối 85k/kg.\nChả cá làm từ cá mối tươi và thịt xay dẻo, không chất phụ gia, không chất bảo quản.\nRán một đĩa hết veo; trẻ con cũng thích cá viên chiên; sốt cà chua ăn cơm hay thả lẩu đều ngon.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4796592250577785/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-27T11:30:10+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Nem chua vip chuẩn Thanh Hóa",
+    "summary": "Một sạp trong chợ khu bán nem chua chuẩn Thanh Hóa, sản xuất tại quê nhà, không qua trung gian: nem vuông/dài vip 55k/chục, nem nướng 30k/chiếc; nhận đặt nem cối, nem nướng các loại, sỉ/lẻ 24/7.",
+    "content": "Một sạp trong chợ khu bán nem chua vip chuẩn Thanh Hóa, cơ sở sản xuất tại quê nhà Thanh Hóa, không buôn lại qua trung gian, bảo hành chất lượng nem đã 5 năm trong khu.\nGiá nem vuông/dài vip: 55k/chục; nem nướng 1 lạng nhân: 30k/chiếc.\nNhận đặt hàng theo yêu cầu các loại nem cối, nem nướng các loại; sỉ, lẻ nem chua 24/7.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4796591847244492/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-27T11:27:52+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Cọ nếp Phú Thọ đầu mùa, 119k/túi ỏm sẵn",
+    "summary": "Một sạp trong chợ khu gom cọ nếp Phú Thọ đầu mùa: 119k/túi ỏm sẵn, đóng túi hút chân không, bùi, ngậy, béo; gom đơn, chiều 4h trả đơn.",
+    "content": "Một sạp trong chợ khu gom cọ nếp Phú Thọ, cọ đầu mùa, chiều 4h trả đơn.\nGiá: 119k/1 túi ỏm sẵn; cọ bùi, ngậy, béo, đóng túi hút chân không, mở túi ăn ngay.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4796589823911361/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-27T11:27:24+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Bánh Huế chuẩn gốc: bột lọc, nậm, ít, ram ít",
+    "summary": "Một sạp trong chợ khu bán bánh Huế chuẩn gốc, đủ 4 dòng: bột lọc lá chuối 75k/set 30c (120k/set 50c), bánh nậm 75k/set 20c, bánh ít 75k/set 20c, bánh ram ít 105k/set 20c; set mix 3 loại 95k/set 30c; thêm chả cua Huế, bánh canh, nem lụi, cá nục kho và gia vị ăn kèm.",
+    "content": "Một sạp trong chợ khu bán bánh Huế chuẩn gốc, đủ 4 dòng bánh đặc trưng nhất xứ Huế.\nBánh bột lọc lá chuối: vỏ trong veo dẻo dai, nhân tôm thịt đậm đà — 75k/set 30c, 120k/set 50c.\nBánh nậm lá dong: bột gạo mềm mịn, nhân tôm thịt băm thơm bùi — 75k/set 20c.\nBánh ít lá chuối: vỏ nếp dẻo thơm mùi lá, nhân tôm thịt đậm vị — 75k/set 20c.\nBánh ram ít: trên là bánh ít nếp dẻo mềm, dưới là đế ram chiên giòn — 105k/set 20c kèm 20 đế ram giòn.\nSet bánh mix 3 loại (lọc - nậm - ít): 95k/set 30c.\nTất cả bánh cấp đông chuẩn từ Huế, mua về cất ngăn đá, lúc ăn hấp cách thủy 20 phút.\nNgoài ra còn có chả cua Huế tươi 105k/hộp 500g (2 hộp 200k), loại đặc biệt 130k/hộp 500g; bánh canh tươi 55k/kg; nem lụi Huế 100k/túi 500g; cá nục kho Huế 90k/hộp 500g; gia vị ăn kèm: mắm nêm 55k/chai 500ml, tôm chua 60k/hũ 400g, kho quẹt 45k/hộp, mắm ruốc Huế.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4796589387244738/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
+    "ts": "2026-11-27T11:24:55+07:00",
+    "flow": "facebook",
+    "category": "Bảng tin cư dân",
+    "title": "Bún hải sản B17 — bát bún nóng hổi buổi trưa",
+    "summary": "Quán bún hải sản B17 ở khu Geleximco: hải sản tươi, nước dùng đậm đà, bát bún đầy đặn — gợi ý cho bữa trưa.",
+    "content": "Quán bún hải sản B17 ở khu Geleximco, gợi ý cho bữa trưa: hải sản tươi, nước dùng đậm đà, bát bún đầy đặn, ăn một bát đủ ấm bụng cho cả buổi chiều.\nThông tin liên hệ nằm trong bài gốc tại group.",
+    "url": "https://facebook.com/groups/1770535389850168/permalink/4796587043911639/",
+    "image": null,
+    "source": "Chợ cư dân"
+  },
+  {
     "ts": "2026-11-27T10:00:00+07:00",
     "flow": "internet",
     "category": "AI & Công nghệ",
@@ -3219,83 +3296,6 @@
     "summary": "Một sạp trong chợ khu nhận đặt đồ ăn sáng mai với thực đơn dài: sắn hấp cốt dừa 20.000đ/hộp, bánh khúc và bánh donut 25.000đ/hộp 2 cái, bánh giò nóng 15.000đ/cái, bánh rán vừng 25.000đ/6 cái, bánh mỳ que 35.000đ/10 cái, bánh trôi 13.000đ/hộp, xôi chè và cơm lứt 15.000đ/suất, bánh bao thịt trứng 50.000đ/hộp 4 cái, bánh dày quán gánh 20.000đ/hộp 10 cái, bánh mỳ chuột 20.000đ/5 cái, sukem 22.000đ/hộp, trôi tàu 15.000đ/cốc.",
     "content": "Một sạp trong chợ khu nhận đặt đồ ăn sáng cho sáng mai, thực đơn gồm:\n\nSắn hấp cốt dừa: 20.000đ/hộp.\n\nBánh khúc và bánh donut: 25.000đ/hộp 2 cái (bánh khúc lẻ 15.000đ/cái).\n\nBánh giò nóng: 15.000đ/cái.\n\nBánh rán vừng: 25.000đ/6 cái.\n\nBánh mỳ que: 35.000đ/10 cái.\n\nBánh trôi: 13.000đ/hộp.\n\nXôi chè và cơm lứt: 15.000đ/suất.\n\nBánh bao thịt trứng: 50.000đ/hộp 4 cái (lẻ 15.000đ/cái).\n\nBánh dày quán gánh: 20.000đ/hộp 10 cái; dày giò hoặc kẹp chả: 15.000đ/cặp.\n\nBánh mỳ chuột: 20.000đ/5 cái.\n\nSukem: 22.000đ/hộp.\n\nTrôi tàu: 15.000đ/cốc.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4792645887639088/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T21:19:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Sáng mai có cốm, xôi cốm: cốm tươi 220.000đ/kg",
-    "summary": "Một sạp trong chợ khu nhận đặt cốm và các món từ cốm cho sáng mai: cốm tươi 220.000đ/kg, xôi cốm hạt sen 200.000đ/kg, bánh cốm 75.000đ/10 cái, xu xê 75.000đ/10 cái, hộp mix 80.000đ/10 cái, mochi 60.000đ/hộp 6 cái, cốm xào 200.000đ/kg, chả cốm và xúc xích cốm 190.000đ/kg, sữa chua cốm 75.000đ/vỉ, trà sữa cốm 55.000đ/lon, bánh chưng cốm 125.000đ/cái; có hút chân không mang đi xa và set quà biếu.",
-    "content": "Một sạp trong chợ khu nhận đặt cốm và các món từ cốm cho sáng mai, nhắn sớm để ship ăn sáng.\n\nCốm tươi: 220.000đ/kg, 115.000đ/0,5kg, 75.000đ/3 lạng.\n\nXôi cốm hạt sen: 200.000đ/kg, 110.000đ/0,5kg, 70.000đ/3 lạng.\n\nBánh cốm: 75.000đ/10 cái.\n\nXu xê: 75.000đ/10 cái.\n\nHộp mix: 80.000đ/10 cái.\n\nMochi: 60.000đ/hộp 6 cái.\n\nCốm xào: 200.000đ/kg, 110.000đ/0,5kg.\n\nChả cốm, xúc xích cốm: 190.000đ/kg, 100.000đ/0,5kg.\n\nSữa chua cốm: 75.000đ/vỉ.\n\nTrà sữa cốm: 55.000đ/lon to.\n\nBánh chưng cốm: 125.000đ/cái.\n\nCó hút chân không để mang đi xa làm quà và các set quà biếu tặng.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792645780972432/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T21:05:09+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ăn đêm ship đến 02:00: cơm, kimbap, gà chiên, tokbokki",
-    "summary": "Một bếp ăn đêm trong khu ship đến 02:00, thực đơn gồm cơm, kimbap, cánh gà chiên, tokbokki, chân gà chiên và các món ăn vặt, giá từ khoảng 32.000đ/món; nội dung thực đơn nằm trong ảnh của bài gốc.",
-    "content": "Một bếp ăn đêm trong khu nhận ship đồ ăn đến 02:00, mở cửa từ 9:00 đến 02:00 các ngày trong tuần.\n\nThực đơn gồm cơm, kimbap, cánh gà chiên, tokbokki, chân gà chiên và các món ăn vặt khác, giá từ khoảng 32.000đ/món.\n\nThực đơn chi tiết nằm trong ảnh của bài gốc tại group.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792629254307418/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T20:58:45+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Thanh long đỏ cuối vụ: 115.000đ/4kg, còn 30kg",
-    "summary": "Một sạp trong chợ khu còn 30kg thanh long đỏ cuối vụ, quả nhỏ 5–6 quả/kg, tươi cứng, ngọt thơm, hàng quê đất đồi sạch; giá 115.000đ/4kg.",
-    "content": "Một sạp trong chợ khu còn 30kg thanh long đỏ cuối vụ, quả nhỏ 5–6 quả/kg, tươi cứng, ngọt thơm.\n\nChuyến này là hàng quê đất đồi sạch, vườn không còn hàng to.\n\nGiá: 115.000đ/4kg.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792620597641617/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T20:56:54+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ăn sáng mai (25/11): bánh giò nóng 50.000đ/3 cái, cháo gạo lứt, bánh giầy, bánh rán",
-    "summary": "Một sạp trong chợ khu nhận đặt đồ ăn sáng mai, treo cửa sớm từ 5h45: bánh giò nóng 50.000đ/3 cái, cháo gạo lứt với đỗ đen và đỗ đỏ 30.000đ/2 cốc, bánh giầy nhà làm 30.000đ/hộp 6 cái, bánh rán nhân đỗ xanh lăn vừng 30.000đ/hộp 6 cái.",
-    "content": "Một sạp trong chợ khu nhận đặt đồ ăn sáng cho sáng mai (25/11), treo cửa sớm từ 5h45 nếu cần.\n\nBánh giò nóng cái to nhà làm: 50.000đ/3 cái.\n\nCháo gạo lứt với đỗ đen và đỗ đỏ, ngọt rất nhẹ: 30.000đ/2 cốc.\n\nBánh giầy nhà làm: 30.000đ/hộp 6 cái.\n\nBánh rán nhân đỗ xanh lăn vừng: 30.000đ/hộp 6 cái.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792618734308470/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T20:54:47+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Gà ri mái ghẹ thả vườn: 109.000đ/con, 210.000đ/2 con",
-    "summary": "Một sạp trong chợ khu có khoảng 10 con gà ri mái ghẹ thả vườn, chỉ ăn thóc ngô, xương nhỏ, thịt thơm; giá 109.000đ/con (tầm 1,1–1,3kg đã làm sạch), 210.000đ/2 con; hợp để hầm hoặc nướng.",
-    "content": "Một sạp trong chợ khu có khoảng 10 con gà ri mái ghẹ thả vườn, chỉ ăn thóc ngô, xương nhỏ, thịt thơm.\n\nGiá: 109.000đ/con (tầm 1,1–1,3kg đã làm sạch), 210.000đ/2 con.\n\nGà mái ta, hợp để hầm hoặc nướng.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792616554308688/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T20:54:16+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Sữa hạt 3 vị ngày mai: đồng giá 25.000đ/chai 330ml",
-    "summary": "Một tiệm trong khu lên kệ 3 vị sữa hạt vào ngày mai: hạnh nhân với đậu gà và yến mạch; hạt điều với yến mạch và matcha; hạt sen với hạt điều và bí đỏ; chai 330ml tiện mang đi học, đi làm, đồng giá 25.000đ/chai.",
-    "content": "Một tiệm trong khu lên kệ 3 vị sữa hạt thơm ngon vào ngày mai.\n\nVị 1: hạnh nhân, đậu gà, yến mạch.\n\nVị 2: hạt điều, yến mạch, matcha.\n\nVị 3: hạt sen, hạt điều, bí đỏ.\n\nChai 330ml tiện lợi, mang đi học, đi làm hay thưởng thức tại nhà đều thích hợp.\n\nĐồng giá: 25.000đ/chai.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792615857642091/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T20:52:28+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Đỗ tương nhà trồng: 60.000đ/kg, chỉ có 5kg",
-    "summary": "Một cư dân bán 5kg đỗ tương nhà trồng, hạt tròn, to mẩy, sạch, giàu dinh dưỡng, hợp cho người già, trẻ nhỏ, bà bầu và mẹ sau sinh; giá 60.000đ/kg.",
-    "content": "Một cư dân bán 5kg đỗ tương nhà trồng: hạt tròn, to mẩy, sạch, giàu dinh dưỡng.\n\nHợp cho cả gia đình: người già, trẻ nhỏ, bà bầu và mẹ sau sinh.\n\nGiá: 60.000đ/kg.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792613204309023/",
     "image": null,
     "source": "Chợ cư dân"
   }
