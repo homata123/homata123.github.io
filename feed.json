@@ -1,5 +1,49 @@
 [
   {
+    "ts": "2026-11-27T07:42:05+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Google bắt agent AI dùng MCP cho Workspace từ 1/2/2027 — Gmail công khai không gửi được mail, danh sách tool lúc 23 lúc 30",
+    "summary": "Từ 1/2/2027, agent AI phải truy cập Gmail, Drive, Calendar qua MCP server của Google thay vì REST trực tiếp, nếu không sẽ bị giới hạn quota bậc Standard; Gmail MCP công khai chỉ đọc/soạn nháp, không gửi mail — và kiểm tra thực tế ngày 27/11 cho thấy cùng một endpoint lúc trả 23 tool, lúc trả 30 tool.",
+    "content": "Ngày 24/11, Google đưa 8 MCP server cho Workspace (Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, Tasks) lên GA, kèm phụ lục điều khoản mới: từ 1/2/2027, mọi công cụ do AI agent điều khiển phải đi qua các MCP server này thay vì gọi REST API trực tiếp. Agent nào vẫn gọi REST sẽ bị giới hạn ở quota bậc Standard dù dự án trả tiền cao hơn.\nHạn chế lớn nhất nằm ở Gmail: máy chủ công khai chỉ cho tìm kiếm, đọc thread, tạo/lấy nháp, quản nhãn, thùng rác và spam — còn gửi, trả lời, chuyển tiếp và sửa nháp chỉ dành cho đối tác. Tài liệu của chính Google cũng mô tả Gmail MCP như vậy.\nKiểm tra thực tế của tác giả Frank Chu ngày 27/11 cho thấy vấn đề sâu hơn: gọi tools/list 30 lần trong 11 giây vào cùng endpoint gmailmcp.googleapis.com, 18 lần nhận 23 tool, 12 lần nhận 30 tool — 7 tool bị khóa (send_message, reply, forward, update_draft, create_filter, list_filters, update_label) lúc xuất hiện lúc không. Khả năng cao là cân bằng tải giữa các backend ở phiên bản rollout khác nhau. Vì vậy agent không nên kết luận Gmail có gửi được hay không chỉ từ một lần kiểm tra capability lúc khởi động.\nHai con số khác đáng nhớ trước hạn chót 1/2/2027: bậc Standard giới hạn 5.000 request/ngày/dự án, một lần tìm Gmail tính 10 request (tối đa ~500 lần tìm/ngày); phụ lục giới hạn bộ nhớ suy ra từ dữ liệu Workspace tối đa 30 ngày.",
+    "url": "https://dev.to/frankchu/23-or-30-tools-googles-gmail-mcp-cant-decide-59j3",
+    "image": "https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fraw.githubusercontent.com%2Ffrankchu91%2FWhatTechPost%2Fmain%2Fpublished%2F2026-11-26-gmail-mcp-tools%2Fcover.png",
+    "source": "dev.to"
+  },
+  {
+    "ts": "2026-11-27T09:05:04+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Drupal cảnh báo lỗ hổng installer CVE-2026-136716 đang bị khai thác — bản vá trước chưa bịt hết",
+    "summary": "Drupal Security Team (SA-CORE-2026-019, 25/11) cảnh báo bản vá tuần trước chưa bịt hết lỗ installer: site còn ở trạng thái cài đặt dở dang vẫn có thể bị chiếm quyền qua install.php, kể cả site production; hạn chót vá CISA KEV cho lỗ trước đó là hôm nay 27/11.",
+    "content": "Ngày 25/11, Drupal Security Team phát hành SA-CORE-2026-019 cho CVE-2026-136716, lỗ hổng kiểm tra điều kiện bất thường (CWE-754) trong core/install.php, chấm 21/25 'Highly critical'. Drupal xác nhận lỗ này đang bị khai thác trên các site thật.\nĐây là phần tiếp theo của CVE-2026-132165 (SA-CORE-2026-017, 18/11): bản vá đó chưa đóng hết các trường hợp — site nào còn ở trạng thái cài đặt dở dang hoặc bất thường vẫn có thể bị chiếm quyền, kể cả site production đã chạy bình thường nhiều năm. Không có màn hình nào trong admin Drupal cho biết site có đang ở trạng thái nguy hiểm hay không.\nLỗ trước đó (CVE-2026-132165) đã vào CISA KEV ngày 24/11, với hạn chót khắc phục cho cơ quan liên bang Mỹ là hôm nay 27/11; theo thống kê được The Hacker News dẫn, khoảng 55.800 site Drupal đang phơi bày trên Internet, trong đó ~31.500 chạy nhánh dễ bị tấn công.\nBản vá: nâng lên Drupal 10.6.23, 11.3.23 hoặc 11.4.14 rồi bắt buộc chạy update.php — chỉ thay file là chưa đủ. Drupal cũng khuyến nghị chặn truy cập install.php ở tầng web server trên mọi site; site nào đã chặn thì không bị ảnh hưởng. Trước khi vá, nên kiểm tra tài khoản quản trị chính (user 1) và rà log vì site đã bị xâm nhập có thể không còn ở trạng thái dễ bị tấn công nữa.",
+    "url": "https://stackurity.ai/blog/drupal-cve-2026-136716-exploited-installer-state-takeover/",
+    "image": "https://stackurity.ai/blog/content/images/2026/11/drupal-cve-2026-136716-exploited-installer-state-takeover.png",
+    "source": "Stackurity"
+  },
+  {
+    "ts": "2026-11-27T16:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Lỗ hổng vCenter CVE-2026-123903 (CVSS 9.8): bypass xác thực qua LDAP, đã có PoC công khai",
+    "summary": "Broadcom (VMSA-2026-0011, 24/11) vá 23 lỗ hổng; CVE-2026-123903 là bypass xác thực trong VMware Directory Service của vCenter, PoC công khai đã được Rapid7 kiểm chứng — khác với CVE-2026-123890 đã báo lúc 10:00 (lỗ cũ qua RPC, lỗ mới qua LDAP).",
+    "content": "Ngày 24/11, Broadcom phát hành VMSA-2026-0011, vá 23 lỗ hổng trên vCenter, ESX/ESXi, Workstation, Fusion, VMware Tools và Avi Load Balancer. Nổi bật nhất là CVE-2026-123903 (CVSS 9.8): bypass xác thực trong VMware Directory Service (vmdir) của vCenter — kẻ tấn công chỉ cần có kết nối mạng tới vCenter là chiếm được quyền quản trị mà không cần đăng nhập. Broadcom không đưa ra workaround nào.\nĐây là lỗ hổng khác với CVE-2026-123890 đã báo trong bản tin 10:00 hôm nay: cả hai đều nằm trong vmdir, nhưng lỗ cũ đi qua RPC và đã bị khai thác ngoài thực tế, còn lỗ mới đi qua LDAP. PoC công khai cho CVE-2026-123903 đã được Rapid7 kiểm chứng là bypass được thật; tính đến lúc công bố chưa có báo cáo khai thác ngoài thực tế, và lỗ này chưa vào CISA KEV.\nRapid7 khuyến nghị vá ngoài chu kỳ vá thường lệ vì nhóm tấn công đang nhắm vào các lỗ vmdir. Tin tốt cho ai đã vá gấp tuần trước: vCenter 8.0 U3m (bản vá CVE-2026-123890) đã chứa luôn bản sửa CVE-2026-123903; các nhánh 9.0 và 9.1 cần lên 9.0.2.0300 hoặc 9.1.2. Cùng đợt vá còn có hai lỗ Critical 9.8 khác trên ESX (I/O Filter Service).",
+    "url": "https://www.rapid7.com/blog/post/etr-cve-2026-123903-critical-vmware-directory-service-authentication-bypass-affects-vcenter/",
+    "image": "https://www.rapid7.com/cdn/images/blt65a432ba319f4043/6846abddaf18306debe6cf4d/ETR.webp",
+    "source": "Rapid7"
+  },
+  {
+    "ts": "2026-11-27T13:28:13+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "GTA 6 trên Xbox Series X thiếu FSR 4 dù Series S đã có — điều khoản hợp đồng Take-Two–Microsoft có thể mở đường cập nhật sau",
+    "summary": "GTA 6 dùng AMD FSR 4 trên Xbox Series S (720p → 1080p) nhưng Series X lại dùng TAA nội bộ của Rockstar (1440p → 4K); fan phát hiện điều khoản parity trong hợp đồng Xbox của Take-Two nộp SEC có thể mở đường cho bản cập nhật FSR sau này — nhưng Rockstar chưa xác nhận gì.",
+    "content": "Rockstar xác nhận với Wccftech: GTA 6 dùng AMD FSR Upscaling 4 trên Xbox Series S để nâng hình từ 720p lên 1080p, trong khi Xbox Series X và PS5 dùng giải pháp TAA nội bộ để upscale từ 1440p lên 4K; PS5 Pro dùng PSSR2 của Sony. FSR 4 và PSSR2 đều là upscaler học máy, thường cho hình sắc nét hơn TAA truyền thống — nghĩa là Series X, console mạnh nhất của Xbox, lại là bản cao cấp duy nhất không có upscaler học máy lúc ra mắt. AMD mới mở FSR cho nhà phát triển Xbox từ 4/11, chỉ hai tuần trước khi game ra mắt 19/11.\nĐiểm mới hôm nay: tài khoản X 'XBOX News for Koreans' phát hiện một điều khoản trong thỏa thuận phát hành Xbox mà Take-Two nộp cho SEC — nếu một game nhận được tính năng phần cứng mới trên console đối thủ sau khi ra mắt, Take-Two và Microsoft 'sẽ hợp tác thiện chí' để đưa tính năng tương đương lên Xbox. Hợp đồng lấy HDR và spatial audio làm ví dụ, và ghi rõ còn tùy phần cứng Xbox có đáp ứng được và có công cụ phát triển phù hợp hay không.\nTuy nhiên cần giữ kỳ vọng ở mức vừa phải: điều khoản không nhắc tới GTA 6 hay FSR, danh sách console đối thủ bị bôi đen, và Rockstar chưa nói gì về việc đưa FSR lên Series X. Giả thuyết của fan là Rockstar đơn giản là hết thời gian trước ngày ra mắt — nhưng đó vẫn chỉ là suy đoán, chưa phải kế hoạch đã xác nhận.",
+    "url": "https://www.tweaktown.com/news/114904/xbox-series-x-is-missing-a-gta-6-upgrade-that-the-cheaper-series-s-already-has/index.html",
+    "image": null,
+    "source": "TweakTown"
+  },
+  {
     "ts": "2026-11-27T08:45:11+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3254,49 +3298,5 @@
     "url": "https://facebook.com/groups/kosocho/permalink/2902867116789022/",
     "image": null,
     "source": "Kosocho"
-  },
-  {
-    "ts": "2026-11-25T08:38:13+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "12 nguyên tắc xây dựng 'Software Factory' dùng AI mà không đẻ ra code rác",
-    "summary": "Bài tổng hợp từ bài nói chuyện của Dex Horthy (Factory, cựu CEO Human Layer) tại sự kiện AI Engineer: dữ liệu từ benchmark Slop Code Bench (ĐH Wisconsin) cho thấy ngay cả các model mạnh nhất hiện nay cũng chỉ đạt khoảng 16% khi phải duy trì và phát triển một codebase qua nhiều giai đoạn; nghiên cứu của Faros ghi nhận tới 30% lượng PR được merge mà không qua review. 12 nguyên tắc xoay quanh Forward/Back Pressure, plan trước khi build, align trực quan, linter chống slop, feature flag và Unified Forge, cùng bản Anti-Slop Manifesto.",
-    "content": "Bài tổng hợp từ bài nói chuyện của Dex Horthy (Factory, cựu CEO Human Layer) tại sự kiện AI Engineer về 12 nguyên tắc xây dựng 'Software Factory' (nhà máy phần mềm) dùng AI mà không đẻ ra code rác.\nDữ liệu từ benchmark Slop Code Bench do Đại học Wisconsin công bố cho thấy ngay cả các model mạnh nhất hiện nay như GPT 5.5 hay Astra cũng chỉ đạt mức điểm loanh quanh 15% đến 16,3% khi phải duy trì và phát triển một codebase qua nhiều giai đoạn. Một nghiên cứu khác từ Faros ghi nhận có tới 30% lượng PR được merge mà không qua review, kéo theo số lượng bug trên mỗi lập trình viên và sự cố trên môi trường production tăng vọt.\nĐiểm yếu chí mạng của các model hiện tại là chúng rất giỏi giải quyết các bài toán độc lập từ con số không, nhưng cực kỳ tệ trong việc bảo trì và tiến hóa một codebase theo thời gian: nếu chỉ nhồi feature mới vào hệ thống một cách mù quáng, AI sẽ liên tục đắp thêm code chắp vá thay vì tái cấu trúc các lớp trừu tượng cũ, làm độ phức tạp của hệ thống phình to chỉ sau vài tháng.\nCác nguyên tắc thực chiến được đúc kết: thiết kế nhịp điệu giữa Forward Pressure (tự động đẩy việc vào cho agent) và Back Pressure (CI/CD chặt chẽ, static linter, test tự động, Agentic Code Review chặn code kém chất lượng); không bao giờ bỏ qua bước plan trước khi build với những phần đắt đỏ khi thay đổi về sau; chuyển sang align trực quan (sơ đồ, bảng biểu, mockup) và trao công cụ test thực tế cho agent (trình duyệt, curl, chụp màn hình); đưa bộ quy tắc chống 'slop' thẳng vào linter trong repo; dùng feature flag để agent tự thử nghiệm trên tập user nhỏ; gom toàn bộ ngữ cảnh vào một Unified Forge thay vì để rời rạc.\nDex Horthy cùng nhiều kỹ sư từ OpenAI, xAI cũng giới thiệu bản Anti-Slop Manifesto (slopmanifesto.com): slop xảy ra khi người tạo ra nội dung hoặc code tốn ít công sức hơn rất nhiều so với thời gian người đọc hoặc người review phải bỏ ra để dọn dẹp; chi phí tạo một PR 1.000 dòng giờ gần như bằng không nhưng chi phí review vẫn giữ nguyên, và rác sẽ tự nhân bản khi các agent đời sau lại đọc chính đống rác đó để học theo.\nKết luận của bài: AI chỉ khuếch đại tư duy của người dùng chứ không thể thay thế năng lực phán đoán kỹ thuật; với những hệ thống cần sống khỏe qua nhiều năm, trách nhiệm cuối cùng với chất lượng sản phẩm vẫn nằm ở người kỹ sư bấm nút merge.\nBài đăng nhận 126 lượt tương tác và 1 bình luận.",
-    "url": "https://facebook.com/groups/vgu.tech.alumni/permalink/1515548543814988/",
-    "image": null,
-    "source": "VGU Tech Alumni"
-  },
-  {
-    "ts": "2026-11-25T08:38:13+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "GitRanks: thước đo thực chất xem tài khoản GitHub của bạn đang đứng ở đâu trên bản đồ mã nguồn mở",
-    "summary": "GitRanks là nền tảng phân tích và xếp hạng dữ liệu công khai trên GitHub cho lập trình viên, kho mã nguồn và tổ chức. Thay vì chỉ đếm số commit, hệ thống chia bảng xếp hạng theo 3 tiêu chí: tổng số star của repo cá nhân, tổng số star của các repo bên ngoài mà bạn từng có pull request được merge, và số lượng follower. Có thể lọc theo quốc gia (có Việt Nam) và từng ngôn ngữ lập trình, phân hạng tài khoản từ Rookie đến Legend, kèm README badge cập nhật tự động.",
-    "content": "GitRanks là nền tảng phân tích và xếp hạng dữ liệu công khai trên GitHub cho cả lập trình viên, kho mã nguồn và tổ chức.\nThay vì chỉ đếm số commit xanh lè dễ bị 'cày' ảo, hệ thống chia bảng xếp hạng theo 3 tiêu chí thực chất: tổng số star của repo cá nhân (yêu cầu tối thiểu 5 star để lên bảng), tổng số star của các repo bên ngoài mà bạn từng có pull request được merge vào nhánh chính, và số lượng follower (tối thiểu 5 follower).\nMọi bảng xếp hạng đều cho phép lọc theo từng quốc gia (có cả Việt Nam) và từng ngôn ngữ lập trình cụ thể. Mỗi tài khoản sau khi phân tích sẽ được phân hạng (tier) từ Rookie đến Legend, còn các dự án mã nguồn mở thì xếp từ Stardust lên đến Supernova.\nTính năng phụ: README Badges — huy hiệu dạng ảnh động tự động cập nhật thứ hạng, tự đổi màu theo giao diện sáng/tối để nhúng vào file README; GitRanks Contribute (đang chạy beta) giúp quét các issue đang mở.\nBài đăng nhận 10 lượt tương tác và 1 bình luận.",
-    "url": "https://facebook.com/groups/vgu.tech.alumni/permalink/1515536430482866/",
-    "image": null,
-    "source": "VGU Tech Alumni"
-  },
-  {
-    "ts": "2026-11-25T08:38:13+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "Triều Tiên đã có chatbot AI 'Fountain of Wisdom' (Suối nguồn trí tuệ)",
-    "summary": "Triều Tiên đã có chatbot AI tên 'Fountain of Wisdom' (Suối nguồn trí tuệ), do Đại học Kim Il Sung phối hợp phát triển. Giao diện nhìn khá giống ChatGPT; hỗ trợ hỏi đáp khoa học — công nghệ bằng tiếng Hàn và tiếng Anh, có thể dịch thuật, trả lời về lập trình, phần mềm và kiến thức kỹ thuật. Trên màn hình có cảnh báo người dùng không được đặt 'các câu hỏi có nội dung chính trị — xã hội hoặc những câu hỏi thiếu văn hóa'. Bài đăng nhận hơn 1.900 lượt tương tác và 328 bình luận.",
-    "content": "Triều Tiên đã có chatbot AI mang tên 'Fountain of Wisdom' — Suối nguồn trí tuệ — do Đại học Kim Il Sung phối hợp phát triển.\nGiao diện nhìn khá giống ChatGPT. Chatbot hỗ trợ hỏi đáp khoa học — công nghệ bằng tiếng Hàn và tiếng Anh; có thể dịch thuật, trả lời về lập trình, phần mềm và kiến thức kỹ thuật.\nTrên màn hình có cảnh báo người dùng không được đặt 'các câu hỏi có nội dung chính trị — xã hội hoặc những câu hỏi thiếu văn hóa.'\nBài đăng nhận 1.926 lượt tương tác và 328 bình luận.",
-    "url": "https://facebook.com/groups/aiartworksvn/permalink/4627948477418000/",
-    "image": null,
-    "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-25T08:38:13+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "Gemini vẽ âm thanh giỏi hơn Claude: phổ tần nghe giống tiếng thật, 6/12 so với 3/12",
-    "summary": "Bài đăng so sánh Gemini 4 Neon và Claude Opus 5.5 về khả năng tạo ra các hình ảnh phổ tần (spectrogram) được thiết kế để 'nghe giống' các đoạn âm thanh thực tế như tiếng chó sủa, tiếng gà gáy, tiếng còi cảnh sát, tiếng chuông cửa, tiếng chim hót và tiếng nói 'hello' khi được phát lại qua một bộ phân loại âm thanh. Kết quả: Gemini đạt 6/12 lần phân loại đúng, vượt trội so với 3/12 của Claude. Bài đăng nhận 46 lượt tương tác.",
-    "content": "Bài đăng so sánh Gemini 4 Neon và Claude Opus 5.5 về khả năng tạo ra các hình ảnh phổ tần (spectrogram) được thiết kế để 'nghe giống' các đoạn âm thanh thực tế như tiếng chó sủa, tiếng gà gáy, tiếng còi cảnh sát, tiếng chuông cửa, tiếng chim hót và tiếng nói 'hello' khi được phát lại qua một bộ phân loại âm thanh.\nKết quả cho thấy Gemini đạt 6/12 lần phân loại đúng, vượt trội so với 3/12 của Claude.\nThử nghiệm này kiểm tra khả năng của AI đa phương thức trong việc mã hóa thông tin thính giác một cách trực quan, sử dụng đầu ra SVG thô được chuyển đổi thành âm thanh thông qua Griffin-Lim.\nNguồn: Adam Hotler. Bài đăng nhận 46 lượt tương tác.",
-    "url": "https://facebook.com/groups/aiartworksvn/permalink/4627969984082516/",
-    "image": null,
-    "source": "AI Artworks VN"
   }
 ]
