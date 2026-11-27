@@ -1,5 +1,71 @@
 [
   {
+    "ts": "2026-11-27T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Nvidia dừng giao server AI sang Malaysia, Singapore, Thái Lan và Indonesia",
+    "summary": "Financial Times đưa tin 26/11: Nvidia yêu cầu Dell và Supermicro ngừng giao server chứa chip của hãng tới 4 nước Đông Nam Á, sau khi Mỹ siết kiểm soát xuất khẩu chip AI tiên tiến. Chưa rõ lệnh dừng là tạm thời hay kéo dài.",
+    "content": "Financial Times đưa tin ngày 26/11: Nvidia đã yêu cầu các đối tác sản xuất như Dell và Supermicro ngừng giao các server chứa chip của hãng tới Malaysia, Singapore, Thái Lan và Indonesia.\nĐộng thái này diễn ra sau khi Bộ Thương mại Mỹ siết kiểm soát xuất khẩu chip AI tiên tiến. Quy định của Cục Công nghiệp và An ninh (BIS) có hiệu lực từ 19/11 yêu cầu giấy phép khi xuất khẩu chip tiên tiến sang 5 nước (gồm cả Brazil); các trung tâm dữ liệu đang phục vụ công ty Trung Quốc có 90 ngày để xin phép.\nMục đích là chặn đường vòng: nhiều công ty AI Trung Quốc thuê máy chủ qua nhà cung cấp đám mây trong khu vực để dùng chip Nvidia mà không cần nhập khẩu trực tiếp.",
+    "url": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351",
+    "image": "https://dam.mediacorp.sg/image/upload/s--ANaGTTdr--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-25T223901Z_1_LYNXNPEMAO1ZQ_RTROPTP_3_NVIDIA-CEO.JPG?itok=G3ct_318",
+    "source": "Channel News Asia"
+  },
+  {
+    "ts": "2026-11-27T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "DeepL ra mắt Aure v2, mô hình dịch giọng nói trực tiếp speech-to-speech",
+    "summary": "DeepL ra mắt Aure v2 ngày 26/11 tại Tokyo: dịch trực tiếp từ lời nói sang lời nói, độ trễ dịch trung vị giảm 50% so với bản Aure đầu tiên, hỗ trợ 6 ngôn ngữ lúc ra mắt.",
+    "content": "DeepL ra mắt Aure v2 ngày 26/11 tại hội nghị Unmute Summit ở Tokyo — mô hình Voice AI dịch trực tiếp từ lời nói sang lời nói, không qua các bước phiên âm, dịch văn bản rồi tổng hợp giọng nói riêng lẻ.\nTheo DeepL, độ trễ dịch trung vị giảm 50% so với bản Aure đầu tiên, đồng thời độ chính xác và tính biểu cảm cao hơn, nhờ kiến trúc end-to-end mới và học tăng cường.\nAure v2 hỗ trợ 6 ngôn ngữ lúc ra mắt (Anh, Đức, Pháp, Tây Ban Nha, Nhật, Hàn) và dùng cho DeepL Voice trong họp trực tuyến, trò chuyện trực tiếp và qua API. DeepL cho biết mức sử dụng DeepL Voice đã tăng hơn 8 lần so với cùng kỳ năm trước trong quý 3/2026.",
+    "url": "https://home.deepl.com/en/press-release/aure-v2",
+    "image": null,
+    "source": "DeepL"
+  },
+  {
+    "ts": "2026-11-27T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "JetBrains phát hành Mellum 2.1 Instruct, model code mở 12B chạy được trên máy cá nhân",
+    "summary": "Mellum 2.1 Instruct (Apache 2.0) trả lời trực tiếp không chain-of-thought, tiết kiệm ~45% token so với bản Thinking; SWE-bench Verified 40,4%, gấp đôi bản trước; có bản GGUF chạy local qua llama.cpp/Ollama.",
+    "content": "JetBrains phát hành Mellum 2.1 Instruct ngày 26/11 — mô hình code mở 12 tỷ tham số dạng mixture-of-experts (chỉ 2,5 tỷ tham số hoạt động mỗi token), giấy phép Apache 2.0.\nKhác bản Thinking, bản Instruct trả lời trực tiếp không trình bày chuỗi suy luận, tiết kiệm khoảng 45% token và giảm độ trễ — phù hợp làm sub-agent trong hệ thống coding agent, vòng lặp công cụ, sửa lỗi nhỏ và hỏi đáp về codebase.\nĐiểm SWE-bench Verified đạt 40,4%, gấp đôi bản Mellum 2 Instruct trước (20,2%); cửa sổ ngữ cảnh 131.072 token. Model có cả bản GGUF để chạy trên máy cá nhân qua llama.cpp, Ollama và LM Studio.",
+    "url": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/",
+    "image": "https://blog.jetbrains.com/wp-content/uploads/2026/11/mellum2.1-instruct-cover-2560x1440-jetbrains-nvidia-1.png",
+    "source": "JetBrains Blog"
+  },
+  {
+    "ts": "2026-11-27T10:00:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "OpenAI gộp hạn mức ChatGPT và Codex thành một từ tháng 12",
+    "summary": "Từ tháng 12, gói Plus, Pro và Business dùng chung một hạn mức tính theo token cho cả ChatGPT lẫn coding agent Codex; Instant Chat không tính vào hạn mức. Triển khai bắt đầu từ 24/11 với gói Pro.",
+    "content": "OpenAI gộp hạn mức sử dụng của ChatGPT và Codex thành một từ tháng 12/2026: các gói Plus, Pro và Business sẽ dùng chung một hạn mức tính theo token cho cả trò chuyện ChatGPT lẫn coding agent Codex.\nĐiều này có nghĩa dùng Codex nặng buổi sáng sẽ làm giảm hạn mức ChatGPT buổi chiều và ngược lại; mức tiêu thụ tùy thuộc vào model được chọn và độ phức tạp của tác vụ. Chế độ Instant Chat (trả lời nhanh) không tính vào hạn mức.\nViệc triển khai bắt đầu từ 24/11 với gói Pro. Đây là thay đổi đáng chú ý nối tiếp việc OpenAI sửa lỗi tính phí GPT-6.2 khiến người dùng chạm giới hạn nhanh hơn, mà bản tin 07:00 hôm nay đã đưa.",
+    "url": "https://cryptobriefing.com/openai-merges-chatgpt-chat-work-usage-limits/",
+    "image": "https://static.cryptobriefing.com/wp-content/uploads/2026/11/25150654/library-openai-merges-chatgpt-chat-and-work-tabs-adds-shared-usa-800x450.jpg",
+    "source": "Crypto Briefing"
+  },
+  {
+    "ts": "2026-11-27T08:00:57+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "PoC công khai cho lỗ hổng vCenter CVE-2026-123890 (CVSS 9.8): bypass xác thực lấy quyền root",
+    "summary": "Rapid7 công bố phân tích kỹ thuật và module Metasploit ngày 24/11; mã PoC công khai xuất hiện ngày 27/11. Nhóm gián điệp ARMORY CASTLE đã khai thác zero-day này từ đầu tháng 9/2026; Broadcom đã vá trong VMSA-2026-0009.",
+    "content": "Lỗ hổng bypass xác thực CVE-2026-123890 (CVSS 9.8) trong dịch vụ thư mục của VMware vCenter cho phép kẻ tấn công không cần mật khẩu vẫn chiếm quyền root: kẻ tấn công lấy được session key của một phiên đăng nhập admin đang diễn ra, hoàn tất đăng nhập SRP, rồi sao chép cơ sở dữ liệu thư mục chứa khóa ký riêng của Security Token Service để giả mạo token quản trị.\nRapid7 công bố phân tích kỹ thuật đầy đủ và module Metasploit ngày 24/11; mã PoC công khai đã xuất hiện ngày 27/11, khiến nguy cơ tấn công tăng nhanh.\nNhóm gián điệp ARMORY CASTLE (gắn với Trung Quốc) đã khai thác zero-day này từ đầu tháng 9/2026. Broadcom đã vá khẩn trong VMSA-2026-0009 (19/11); CISA đưa vào danh mục KEV ngày 20/11. Quản trị viên chưa vá cần vá ngay và rà soát log vì có thể đã bị xâm nhập từ trước.",
+    "url": "https://securityonline.info/cve-2026-123890-vmware-vcenter-authentication-bypass/",
+    "image": "https://securityonline.info/wp-content/uploads/2026/11/vmware-vcenter-srp-auth-bypass-cve-2026-123890-root-shell-1024x576.webp",
+    "source": "SecurityOnline.info"
+  },
+  {
+    "ts": "2026-11-27T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "FinCEN — đơn vị tình báo tài chính của Bộ Tài chính Mỹ — bị xâm nhập mạng",
+    "summary": "FinCEN xác nhận có truy cập trái phép vào một phần hệ thống và đã chủ động ngắt một số hệ thống; đang phối hợp FBI, CISA và pháp y bên ngoài. Chưa có bằng chứng cơ sở dữ liệu BSA hay dữ liệu chủ sở hữu hưởng lợi bị xâm phạm.",
+    "content": "Cơ quan Mạng lưới Thực thi Tội phạm Tài chính (FinCEN) của Bộ Tài chính Mỹ xác nhận đang điều tra một sự cố an ninh mạng dẫn tới truy cập trái phép vào một phần hệ thống, và đã chủ động ngắt một số hệ thống để phòng ngừa.\nBộ Tài chính Mỹ đang phối hợp với FBI, CISA và các đơn vị pháp y bên ngoài để xác định phạm vi và tác động. Chưa có bằng chứng cơ sở dữ liệu báo cáo theo Đạo luật Bảo mật Ngân hàng (BSA) hay dữ liệu chủ sở hữu hưởng lợi bị xâm phạm.\nFinCEN đã gia hạn nộp báo cáo đến 30/12 cho các hồ sơ đến hạn từ 18/11 đến 29/12 bị ảnh hưởng bởi gián đoạn. Vụ việc nối tiếp chuỗi xâm nhập các cơ quan liên bang Mỹ (CIA, ODNI) trong cùng tuần.",
+    "url": "https://www.helpnetsecurity.com/2026/11/26/fincen-breach-systems-offline/",
+    "image": null,
+    "source": "Help Net Security"
+  },
+  {
     "ts": "2026-11-27T08:27:32+07:00",
     "flow": "facebook",
     "category": "Facebook",
@@ -3232,71 +3298,5 @@
     "url": "https://facebook.com/groups/1770535389850168/permalink/4792613204309023/",
     "image": null,
     "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T20:52:02+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Sọ dừa xiêm xanh sale: 160.000đ/10 sọ, miễn ship",
-    "summary": "Một sạp trong chợ khu sale sọ dừa bóc từ dừa xiêm xanh, bóc mới khi khách đặt nên tươi, không tẩy, bảo quản tủ lạnh 10–15 ngày; giá 160.000đ/10 sọ, từ 20 sọ còn 15.000đ/sọ, size từ 550g; miễn phí ship.",
-    "content": "Một sạp trong chợ khu sale sọ dừa, bóc từ dừa xiêm xanh, khách đặt mới bóc nên tươi, sọ bóc nguyên bản không tẩy.\n\nBảo quản tủ lạnh 10–15 ngày.\n\nGiá sale: 160.000đ/10 sọ; từ 20 sọ còn 15.000đ/sọ. Size từ 550g trở lên.\n\nMiễn phí ship.\n\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4792612384309105/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-24T19:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "CrowdStrike mua Zscaler với giá khoảng 43,9 tỷ USD",
-    "summary": "Thương vụ mua lại lớn nhất lịch sử ngành an ninh mạng: trả toàn bộ bằng cổ phiếu, cao hơn 34% so với giá đóng cửa 20/11; hợp nhất cảm biến đầu cuối Falcon với proxy mạng của Zscaler.",
-    "content": "CrowdStrike sẽ mua công ty an ninh đám mây Zscaler trong một thương vụ toàn cổ phiếu trị giá khoảng 43,9 tỷ USD — thương vụ mua lại lớn nhất lịch sử ngành an ninh mạng.\nTheo thỏa thuận, mỗi cổ phiếu Zscaler đổi lấy 1,135 cổ phiếu CrowdStrike, tương đương 260,41 USD/cổ phiếu, cao hơn khoảng 34% so với giá đóng cửa ngày 20/11. Sau khi hoàn tất, cổ đông CrowdStrike sở hữu khoảng 84% công ty hợp nhất.\nThương vụ hợp nhất cảm biến đầu cuối Falcon của CrowdStrike — từng gây sự cố diện rộng với 8,5 triệu máy Windows năm 2024 — với proxy mạng nội tuyến của Zscaler, trong bối cảnh các cuộc tấn công có AI hỗ trợ ngày càng tinh vi. Dự kiến hoàn tất nửa cuối năm tài chính 2028, vẫn chờ cổ đông Zscaler và cơ quan quản lý phê duyệt.",
-    "url": "https://www.reuters.com/legal/litigation/symantec-zscaler-biggest-cybersecurity-acquisitions-2026-11-23/",
-    "image": "https://dam.mediacorp.sg/image/upload/s--3N3Poz4v--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-23T183032Z_6_LYNXNPEMAM0O2_RTROPTP_3_USA-CYBERSECURITY-SALITY.JPG?itok=nWruUM7W",
-    "source": "Reuters"
-  },
-  {
-    "ts": "2026-11-24T19:00:00+07:00",
-    "flow": "internet",
-    "category": "AI & Công nghệ",
-    "title": "OpenAI trả tới 8.000 USD/tháng cho chuyên gia AI địa phương giúp doanh nghiệp nhỏ",
-    "summary": "Chương trình OpenWorks tuyển cá nhân và nhóm tư vấn nhỏ có kỹ năng AI để hỗ trợ trực tiếp các doanh nghiệp độc lập tại Mỹ; doanh nghiệp được hỗ trợ miễn phí và 3 tháng ChatGPT Business.",
-    "content": "OpenAI ra mắt chương trình OpenWorks, tuyển các cá nhân và nhóm tư vấn nhỏ có kỹ năng AI để hỗ trợ trực tiếp các doanh nghiệp nhỏ độc lập tại Mỹ.\nĐối tác được chọn nhận trợ cấp tới 8.000 USD/tháng, đổi lại dành 4 ngày làm việc tại chỗ mỗi tháng cho các doanh nghiệp địa phương và tổ chức một buổi workshop cộng đồng. OpenAI nhấn mạnh đây không phải việc làm toàn thời gian với lương 96.000 USD/năm mà là mức trần trợ cấp.\nDoanh nghiệp tham gia không mất phí, được hướng dẫn một kèm một và 3 tháng ChatGPT Business miễn phí. Thí điểm triển khai tại 20 cộng đồng, trong đó có New York, Chicago, Los Angeles, Fargo; đối tượng là doanh nghiệp độc lập — loại trừ startup có vốn đầu tư mạo hiểm, công ty thuộc quỹ đầu tư và công ty phần mềm.",
-    "url": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
-    "image": null,
-    "source": "Decrypt"
-  },
-  {
-    "ts": "2026-11-24T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Backdoor trong 6 plugin WordPress của WP connect — CVE-2026-135202, điểm 9.8",
-    "summary": "Kẻ tấn công dùng chính tài khoản nhà phát triển để đẩy 9 bản phát hành độc hại lên WordPress.org ngày 22/11; module độc hại chạy mã PHP từ máy chủ điều khiển, cho phép chiếm toàn quyền website.",
-    "content": "Sáu plugin WordPress của nhà phát hành WP connect chứa mã độc cài sẵn (backdoor), theo dõi CVE-2026-135202 với điểm CVSS 9.8: Air WP Sync, WP Sync for Notion, Add-On for Contact Form 7 to Notion, Add-On for Contact Form 7 to Airtable, Add-on Brevo for Gravity Forms và Orders Sync to Airtable for WooCommerce.\nKẻ tấn công dùng chính tài khoản WordPress.org của nhà phát triển để đẩy 9 bản phát hành độc hại trong khoảng 2 giờ ngày 22/11. Mỗi bản thêm tập tin includes/airwp-online.php, chạy trên mọi request và theo lịch WP-Cron nửa giờ một lần: gửi thông tin trang (URL, phiên bản PHP/WordPress/hệ điều hành, user máy chủ) về máy chủ điều khiển tascredit-pay.com với xác thực chứng chỉ TLS bị tắt, rồi chạy mã PHP trả về qua eval().\nWordPress.org đã chặn các bản này trước khi chúng được phân phối qua hệ thống cập nhật, nên chưa ghi nhận khai thác trên site thật. Hơn 3.600 lượt cài đặt bị ảnh hưởng. Chưa có bản vá — Wordfence khuyến cáo gỡ plugin và quét mã độc toàn bộ.",
-    "url": "https://www.wordfence.com/threat-intel/vulnerabilities/detail/wp-connect-plugins-various-versions-unauthenticated-remote-code-execution-via-backdoored-software",
-    "image": null,
-    "source": "Wordfence"
-  },
-  {
-    "ts": "2026-11-24T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Bảo mật",
-    "title": "Lỗ hổng SSRF của N-able MailAssure bị khai thác, vào danh sách CISA KEV",
-    "summary": "CVE-2026-134624, điểm 9.3: lỗi trong bước kiểm tra kết nối đồng bộ LDAP cho phép bắt máy chủ kết nối tới host và cổng nội bộ tùy ý; phát hiện trong lúc điều tra vụ xâm nhập đám mây lưu trữ ngày 16/11.",
-    "content": "CISA ngày 23/11 đưa hai lỗ hổng vào danh sách Known Exploited Vulnerabilities, trong đó có CVE-2026-134624 (CVSS 9.3) — lỗi giả mạo yêu cầu phía máy chủ (SSRF) trong bước kiểm tra kết nối đồng bộ LDAP của N-able MailAssure (còn gọi là SpamExperts).\nLỗi nằm ở bước kiểm tra kết nối khi cấu hình relay: máy chủ không giới hạn đích kết nối, nên người dùng API có đủ quyền có thể bắt máy chủ kết nối tới host và cổng nội bộ tùy ý, dò xem dịch vụ nào đang mở và gửi dữ liệu giả mạo tới các dịch vụ nội bộ.\nLỗi được phát hiện trong lúc N-able điều tra sự cố gián đoạn dịch vụ Mail Assure và SpamExperts Hosted Cloud ngày 16/11, khi kẻ lạ đã truy cập một máy chủ trong đám mây lưu trữ. N-able đã vá ở bản 20261121.1943 và cho biết chưa có bằng chứng khai thác vượt ra ngoài máy chủ đó. Hạn chót vá cho cơ quan liên bang Mỹ là 26/11.",
-    "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
-    "image": null,
-    "source": "The Hacker News"
-  },
-  {
-    "ts": "2026-11-24T19:00:00+07:00",
-    "flow": "internet",
-    "category": "Khoa học",
-    "title": "Phát hiện chuẩn tinh xa nhất từ trước đến nay — J1504+6252 \"Dún Aonghasa\"",
-    "summary": "Chuẩn tinh ở redshift z = 8,13, chỉ 630 triệu năm sau Vụ Nổ Lớn; hố đen trung tâm nặng khoảng 360 triệu khối lượng Mặt Trời, ủng hộ kịch bản sụp đổ trực tiếp từ đám mây khí khổng lồ.",
-    "content": "Các nhà thiên văn phát hiện chuẩn tinh xa nhất từ trước đến nay: J1504+6252, biệt danh \"Dún Aonghasa\", ở redshift z = 8,13 — tức vũ trụ khi đó mới 630 triệu năm tuổi, chưa tới 5% tuổi hiện tại.\nNhóm của Julien Wolf (Viện Max Planck về Thiên văn / ESO) tìm thấy vật thể trong khảo sát Euclid Wide Survey và xác nhận bằng đài Keck, kính Hubble, Large Binocular Telescope và kính JWST. Đây là chuẩn tinh đầu tiên có redshift vượt 8, tồn tại sớm hơn kỷ lục trước tới 40 triệu năm.\nNhờ JWST, nhóm đo được hố đen trung tâm nặng khoảng 360 triệu khối lượng Mặt Trời — quá lớn so với tuổi vũ trụ lúc đó. Với tốc độ tăng trưởng hợp lý, kết quả phù hợp với kịch bản sụp đổ trực tiếp: một đám mây khí khổng lồ co lại dưới trọng lực của chính nó và tạo thành hố đen ngay lập tức. Kết quả đăng trên tạp chí Astronomy & Astrophysics.",
-    "url": "https://phys.org/news/2026-11-quasar-tightens-constraints-black-hole.html",
-    "image": "https://scx2.b-cdn.net/gfx/news/2026/new-quasar-record-tigh.jpg",
-    "source": "phys.org"
   }
 ]
