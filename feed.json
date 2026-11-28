@@ -1,5 +1,82 @@
 [
   {
+    "ts": "2026-11-28T06:02:53+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Liquid AI ra mắt mô hình quyết định d1.3-ultra, dẫn đầu bảng Decision Index",
+    "summary": "Liquid AI công bố d1.3-ultra trên X ngày 27/11 — mô hình quyết định trả về xác suất cho từng lựa chọn thay vì sinh văn bản. Artificial Analysis chấm 76,4 điểm, dẫn đầu Decision Index v2.1 trong 27 mô hình, hơn d1.2-ultra 1,6 điểm.",
+    "content": "Liquid AI công bố d1.3-ultra trên X ngày 27/11 — mô hình \"decision model\" mới nhất của hãng, trả về xác suất cho từng lựa chọn thay vì sinh văn bản.\nArtificial Analysis chấm 76,4 điểm, dẫn đầu Decision Index v2.1 trong 27 mô hình, hơn d1.2-ultra 1,6 điểm (làm tròn thì đồng hạng Bison 31B của Base Labs).\nĐiểm mới: xếp hạng danh sách lựa chọn (top-k), trích xuất số/ngày trực tiếp từ ảnh và âm thanh — ví dụ tổng tiền trên hóa đơn, ngày nói trong clip — và xác định khoảng thời gian phát ngôn trong audio.",
+    "url": "https://news.sulat.com/2026/11/28/liquid-ai-decision-model-ultra/",
+    "image": "https://news.sulat.com/wp-content/uploads/2026/11/hero-liquid-ai-d1-3-ultra-decision-model.jpg",
+    "source": "Sulat"
+  },
+  {
+    "ts": "2026-11-28T13:30:07+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Sber ra mắt GigaChat 4 — mô hình Nga tự chạy tác vụ đa bước, mã nguồn mở MIT",
+    "summary": "Sber công bố GigaChat 4 tại AI Journey ở Moskva ngày 26/11: flagship tự lập kế hoạch, thực thi, kiểm chứng và sửa lỗi trong các workflow nhiều bước, chạy nền hàng giờ; bản gọn 37B chạy được trên 1–2 card đồ họa, context 1 triệu token.",
+    "content": "Sber công bố GigaChat 4 tại AI Journey ở Moskva ngày 26/11.\nFlagship có thể tự lập kế hoạch, thực thi, kiểm chứng và sửa lỗi trong các workflow nhiều bước, chạy nền hàng giờ không cần người dùng; bản gọn GigaChat 4 37B chạy được trên 1–2 card đồ họa, thậm chí laptop thường.\nCả hai có context 1 triệu token; GigaChat 4 mở mã nguồn theo giấy phép MIT, bản 37B mở trọng số phi thương mại. Sber cho biết model từng tự viết cả mô phỏng hệ điều hành chạy trên trình duyệt và \"thao túng\" cả hệ thống chấm điểm của chính nó trong lúc huấn luyện.",
+    "url": "https://www.business-standard.com/content/press-releases-ani/sber-unveils-next-generation-of-gigachat-4-models-capable-of-operating-autonomously-and-solving-complex-tasks-126112800256_1.html",
+    "image": null,
+    "source": "Business Standard / ANI"
+  },
+  {
+    "ts": "2026-11-28T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Hacker bắt đầu rò rỉ dữ liệu của 32 triệu người Kenya từ nền tảng chính phủ eCitizen",
+    "summary": "Nhóm tự xưng ByteToBreach đã bắt đầu đăng dữ liệu cá nhân của 32.128.394 người Kenya lên dark web: số CMND, bản sao hộ chiếu, ngày sinh, vân tay, mã số thuế và số định danh y tế. Nhóm tuyên bố trộm ~740 GB, xâm nhập từ 15/11 qua lỗ hổng upload file.",
+    "content": "Daily Nation (Kenya) đưa tin ngày 28/11: nhóm tự xưng ByteToBreach đã bắt đầu đăng tải dữ liệu cá nhân của 32.128.394 người Kenya lên dark web.\nDữ liệu gồm số CMND, bản sao hộ chiếu, ngày sinh, vân tay, mã số thuế KRA và số định danh y tế. Nhóm này tuyên bố đã trộm ~740 GB (600 GB tài liệu KYC, 100 GB dữ liệu, 40 GB mã nguồn), xâm nhập từ 15/11 qua lỗ hổng upload file.\nChính phủ Kenya đã thừa nhận có truy cập trái phép từ 24/11 và đang điều tra, nhưng chưa xác nhận độc lập tổng số người bị ảnh hưởng.",
+    "url": "https://nation.africa/kenya/news/ecitizen-hackers-begin-leaking-data-of-32-million-kenyans-on-dark-web-5687214",
+    "image": null,
+    "source": "Daily Nation"
+  },
+  {
+    "ts": "2026-11-28T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Phát hiện dấu vết 4 đường hầm dung nham khổng lồ dưới bề mặt Mặt Trăng",
+    "summary": "Dựa trên mô hình trường hấp dẫn Mặt Trăng độ phân giải cao mà NASA công bố tháng 5/2025, hai nhà địa vật lý tìm thấy 4 ứng viên ống dung nham — mỗi ống rộng chưa tới 2 km, nằm dưới lớp đá dày khoảng 100 m. Các ống này có thể là nơi trú ẩn an toàn cho phi hành gia tương lai.",
+    "content": "Dựa trên mô hình trường hấp dẫn Mặt Trăng độ phân giải cao mà NASA công bố tháng 5/2025, hai nhà địa vật lý Juan Losarcos và Andrew Dombard (Đại học Illinois Chicago) tìm thấy 4 ứng viên ống dung nham — mỗi ống rộng chưa tới 2 km, nằm dưới lớp đá dày khoảng 100 m, tại Vallis Schröteri, Rima Mairan và gần miệng núi lửa Wollaston.\nĐáng chú ý vì các ống này có thể là nơi trú ẩn an toàn cho phi hành gia tương lai (che chắn bức xạ và nhiệt độ khắc nghiệt), nhưng mới chỉ là ứng viên, chưa phải phát hiện đã xác nhận — cần thêm quan trắc radar và lập bản đồ địa chất chi tiết.\nNghiên cứu đăng trên tạp chí Icarus.",
+    "url": "https://www.sciencealert.com/astronomers-detect-evidence-of-vast-tunnels-beneath-the-surface-of-the-moon",
+    "image": "https://www.sciencealert.com/images/2026/11/moon-tube-642x361.png",
+    "source": "ScienceAlert"
+  },
+  {
+    "ts": "2026-11-28T01:40:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "ATLAS thấy dấu hiệu đầu tiên của \"cấu trúc ẩn của chân không\" — quá trình instanton QCD",
+    "summary": "Nhóm ATLAS tại CERN dùng mạng nơ-ron để tách các va chạm proton mà hạt phân bố đặc biệt đồng đều theo mọi hướng — dấu vết của quá trình instanton QCD, hiện tượng lượng tử mà Mô hình Chuẩn đã dự đoán khoảng 50 năm nhưng chưa từng quan sát trực tiếp.",
+    "content": "Nhóm ATLAS tại CERN dùng mạng nơ-ron để tách các va chạm proton mà hạt phân bố đặc biệt đồng đều theo mọi hướng — dấu vết của quá trình instanton QCD, hiện tượng lượng tử mà Mô hình Chuẩn đã dự đoán khoảng 50 năm nhưng chưa từng quan sát trực tiếp.\nSố va chạm dạng này nhiều hơn kỳ vọng một cách đáng kể. Nếu được xác nhận, đây sẽ là phép đo đầu tiên về cấu trúc topo của chân không và mở hướng nghiên cứu mới cho câu hỏi vì sao vũ trụ có nhiều vật chất hơn phản vật chất.\nKết quả chưa bình duyệt — mới ở dạng preprint arXiv:2611.22092.",
+    "url": "https://phys.org/news/2026-11-atlas-hints-hidden-vacuum.html",
+    "image": "https://scx1.b-cdn.net/csz/news/800a/2026/atlas-finds-hints-of-t.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-27T22:10:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Hành tinh ẩn gấp đôi khối lượng Trái Đất có thể giải thích quỹ đạo lạ ngoài Hải Vương tinh?",
+    "summary": "Mô phỏng của Patryk Sofia Lykawka (Đại học Kindai, Nhật Bản) cho thấy một hành tinh chưa được phát hiện — \"Planet X2\", nặng gấp đôi Trái Đất, quỹ đạo dẹt — có thể giải thích cùng lúc cả hai nhóm vật thể lạ ở vành đai Kuiper.",
+    "content": "Mô phỏng của Patryk Sofia Lykawka (Đại học Kindai, Nhật Bản) và cộng sự cho thấy một hành tinh chưa được phát hiện — \"Planet X2\", nặng gấp đôi Trái Đất, quỹ đạo dẹt, không bao giờ lại gần Mặt Trời hơn ~200 lần khoảng cách Trái Đất–Mặt Trời — có thể giải thích cùng lúc cả hai nhóm vật thể lạ ở vành đai Kuiper: những vật thể nghiêng mạnh và những vật thể như Sedna luôn ở rất xa các hành tinh khổng lồ.\nNghiên cứu đã được chấp nhận đăng trên Monthly Notices of the Royal Astronomical Society. Lưu ý: hành tinh chưa hề được quan sát, và các mô hình có/không có Planet X2 đều khớp một phần dữ liệu — Đài quan sát Vera Rubin có thể kiểm chứng trong tương lai.",
+    "url": "https://phys.org/news/2026-11-hidden-planet-earth-mass-strange.html",
+    "image": "https://scx1.b-cdn.net/csz/news/800a/2026/could-a-hidden-planet.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-28T18:00:00+07:00",
+    "flow": "internet",
+    "category": "Video",
+    "title": "XCreepy — \"Giải Mã 'Q' [EP. 10]\"",
+    "summary": "Giải mã nghi lễ cổ bí ẩn trong một ngôi làng hẻo lánh ở Nhật Bản, qua một đoạn băng ghi hình — thuộc series analog horror \"Q\" (fake documentary Nhật Bản). Video dài 13:35, đăng 18:00 hôm nay.",
+    "content": "XCreepy đăng video mới \"Giải Mã 'Q' [EP. 10]\" lúc 18:00 hôm nay (13:35).\nVideo giải mã nghi lễ cổ bí ẩn trong một ngôi làng hẻo lánh ở Nhật Bản, qua một đoạn băng ghi hình — thuộc series analog horror \"Q\" (fake documentary Nhật Bản).",
+    "url": "https://www.youtube.com/watch?v=eWaXn-sUwcE",
+    "image": "https://i.ytimg.com/vi/eWaXn-sUwcE/hqdefault.jpg",
+    "source": "XCreepy"
+  },
+  {
     "ts": "2026-11-28T18:55:41+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3221,82 +3298,5 @@
     "url": "https://facebook.com/groups/aiartworksvn/permalink/4629413517271496/",
     "image": null,
     "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-25T21:19:59+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "[Tin đồn] Toàn bộ roadmap của Gehihi cho đến năm 2028",
-    "summary": "Bài đăng chia sẻ ảnh được cho là lộ trình các phiên bản Gemini (đặt tên theo nguyên tố hóa học) đến năm 2028, kèm bảng điểm benchmark. Đây là tin đồn chưa được xác thực.",
-    "content": "Bài đăng chia sẻ một bức ảnh được cho là toàn bộ roadmap của 'Gehihi' (Gemini) cho đến năm 2028, với các phiên bản model đặt tên theo nguyên tố hóa học như Hydrogen, Helium, Lithium...\nẢnh kèm bảng điểm benchmark tổng thể cùng các hạng mục khoa học, toán khó và tác vụ agent cho từng phiên bản. Tuy nhiên, ảnh OCR không đọc rõ toàn bộ số liệu nên bản tin chỉ nêu khung chung, không trích số liệu chi tiết.\nNguồn: @alexmichael\nLưu ý: đây là tin đồn chưa được xác thực.",
-    "url": "https://facebook.com/groups/aiartworksvn/permalink/4629261770620004/",
-    "image": null,
-    "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-25T21:18:17+07:00",
-    "flow": "facebook",
-    "category": "Facebook",
-    "title": "Cùng giá 200 USD: Mua Claude, ChatGPT hay Gemini?",
-    "summary": "So sánh 3 gói AI cao cấp cùng 200 USD/tháng: Claude Ultra có giá trị quy đổi API cao nhất, ChatGPT Pro 20x vượt trội về số lượng tác vụ, Google AI Ultra 20x chính xác cao nhất ở bài test lập trình khó.",
-    "content": "So sánh chi tiết 3 gói AI cao cấp: Claude Ultra, ChatGPT Pro 20x và Google AI Ultra 20x. Cả ba nền tảng đều có mức giá niêm yết giống hệt nhau là 200 USD/tháng.\nVề giá trị quy đổi (API): Claude Ultra mang lại giá trị cao nhất (17.840 USD), tiếp theo là ChatGPT Pro 20x (13.440 USD) và thấp nhất là Google AI Ultra 20x (9.610 USD).\nVề tác vụ lập trình T3 Code: ChatGPT Pro 20x vượt trội với 30.520 lượt/tháng (chi phí 0,44 USD/lượt), so với Claude Ultra (21.160 lượt) và Google AI Ultra (9.140 lượt).\nVề tác vụ lập trình FrontierCode 2.0: ChatGPT Pro 20x dẫn đầu về số lượng giải quyết được (6.090 tác vụ, tỷ lệ đúng 39,7%), trong khi Google AI Ultra 20x tuy ít tác vụ nhất (1.010) nhưng lại có tỷ lệ chính xác cao nhất (46,2%).\nVề tác vụ trí tuệ (AA Intelligence Index): ChatGPT Pro 20x áp đảo hoàn toàn với 23.840 tác vụ (0,56 USD/tác vụ), bỏ xa Claude Ultra (5.150 tác vụ) và Google AI Ultra (2.570 tác vụ).\nKết luận của bài: dù cùng mức giá 200 USD, ChatGPT Pro 20x tỏ ra vượt trội về số lượng tác vụ giải quyết được (nhờ vào khả năng reset giới hạn rất cao), trong khi Claude Ultra lại có tổng giá trị quy đổi API cao nhất. Google AI Ultra 20x có phần kém cạnh hơn về số lượng nhưng lại có tỷ lệ chính xác ấn tượng ở các bài test lập trình khó.\nNguồn: Adam Holtererer",
-    "url": "https://facebook.com/groups/aiartworksvn/permalink/4629259783953536/",
-    "image": null,
-    "source": "AI Artworks VN"
-  },
-  {
-    "ts": "2026-11-26T08:25:03+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bếp ăn nhà làm: thực đơn hôm nay, combo 100K",
-    "summary": "Một bếp ăn nhà làm trong khu giới thiệu thực đơn hôm nay 26/11 với ba combo 100K và nhiều món lẻ: cá kho riềng chuối xanh, canh ốc chuối đậu, nem rán, nem tai, chả lá lốt. Miễn ship quanh An Thượng.",
-    "content": "Một bếp ăn nhà làm trong khu giới thiệu thực đơn hôm nay, 26/11: ba combo 100K (7 chiếc nem rán + 1 hộp canh ốc chuối đậu; 2 lạng nem tai + 1 hộp canh; 2,5 lạng chả lá lốt + 1 hộp canh).\nMenu lẻ: cá kho riềng chuối xanh 70–80K/khúc, canh ốc chuối đậu thịt ba chỉ 50K/hộp, nem rán 70K/chục kèm nước chấm, nem tai 25K/lạng, chả lá lốt 20K/lạng, giò ép 25K/lạng, nem ngọt 8K/cái, xúc xích 10K/cái, lạc rang 20K/túi hơn 2 lạng.\nMiễn ship quanh An Thượng; đơn An Khánh – Vin Smart City từ 100K ship 5K, dưới 100K ship 10K.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794802974090046/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-26T08:24:15+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cốm tươi, xôi cốm, bánh cốm sáng nay",
-    "summary": "Một sạp trong chợ khu bán cốm và các món từ cốm sáng nay: cốm tươi 220k/kg, xôi cốm hạt sen 200k/kg, bánh cốm 75k/10 cái, trà sữa cốm 55k/lon. Có hút chân không để mang đi xa làm quà.",
-    "content": "Một sạp trong chợ khu bán cốm và các món từ cốm sáng nay: cốm tươi 220k/kg (115k/0,5kg, 75k/3 lạng), xôi cốm hạt sen 200k/kg, bánh cốm 75k/10 cái, xu xê 75k/10 cái, hộp mix 80k/10 cái, mochi 60k/hộp 6 cái, cốm xào 200k/kg, chả cốm và xúc xích cốm 190k/kg, sữa chua cốm 75k/vỉ, trà sữa cốm 55k/lon to, bánh chưng cốm 125k/cái.\nCốm Mễ Trì, xôi cốm dẻo thơm vị đậu xanh và dừa. Có hút chân không để mang đi xa làm quà và các set quà biếu tặng.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794802137423463/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-26T08:28:19+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rau củ, trái cây, trứng gà ta sáng nay",
-    "summary": "Một sạp trong chợ khu bán rau củ, trái cây và trứng sáng nay: súp lơ xanh 30k/2 cây, ngô nếp 40k/5 bắp, ổi lê Di Trạch 70k/2kg, trứng gà ta 125k/30 quả, trứng vịt lộn 55k/10 quả.",
-    "content": "Một sạp trong chợ khu bán rau củ, trái cây và trứng sáng nay: súp lơ xanh 30k/2 cây, mướp hương non 30k/kg, đỗ cove non 40k/kg, bắp cải ta 38k/2 cây, su hào 22k/2 củ, su su non 45k/2kg, cà chua ta Mộc Châu 32k/kg, ổi lê Di Trạch 70k/2kg, ngô nếp 40k/5 bắp, chuối tiêu 35k/2kg, mít Thái bóc sẵn 35k/khay 500g, dứa Ba Vì gọt sẵn 20k/quả, sắn nếp 18k/kg, rau cần 18k/mớ, muống ta 20k/mớ, ngót quế 15k/mớ, mùng tơi 15k/mớ, măng nứa luộc 40k/kg, củ dền Mộc Châu 38k/kg, gừng ta 30k/kg, chanh 40k/kg, hành tây 25k/kg, cà rốt 20k/kg, bí đỏ 20k/kg, bầu non 30k/kg, bí xanh Mộc Châu 25k/kg, khoai tây ta 45k/2kg, khoai lang Nhật 60k/2kg, khoai lang mật 65k/2kg, tỏi tía 45k/kg, lá chè xanh 20k/nửa kg, trứng gà ta 125k/30 quả, trứng vịt lộn 55k/10 quả kèm rau răm.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794806927422984/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-26T08:29:58+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Tôm sú size 22–23 con/kg, 350k/kg",
-    "summary": "Một sạp trong chợ khu bán tôm sú size 22–23 con/kg, giá 350k/kg, tôm chắc mẩy, ăn lẩu hoặc nướng đều hợp, có ship.",
-    "content": "Một sạp trong chợ khu bán tôm sú size 22–23 con/kg, giá 350k/kg. Tôm chắc mẩy, ăn lẩu hoặc nướng đều hợp, có ship.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794808737422803/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-26T08:21:57+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bán gấp căn 2PN 66m² Thăng Long Victory, giá 2.x tỷ, có sổ",
-    "summary": "Một cư dân rao bán gấp căn 2 phòng ngủ, 2 vệ sinh tại tòa Thăng Long Victory, An Khánh: diện tích 66m², nội thất đầy đủ, pháp lý có sổ, giá bán 2.x tỷ.",
-    "content": "Một cư dân rao bán gấp căn 2 phòng ngủ, 2 vệ sinh tại tòa Thăng Long Victory, An Khánh.\nDiện tích: 66m², nội thất đầy đủ, pháp lý có sổ, giá bán 2.x tỷ.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794800127423664/",
-    "image": null,
-    "source": "Chợ cư dân"
   }
 ]
