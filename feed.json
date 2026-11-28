@@ -1,5 +1,49 @@
 [
   {
+    "ts": "2026-11-28T04:51:00+07:00",
+    "flow": "internet",
+    "category": "AI & Công nghệ",
+    "title": "Cổ phiếu Anthropic tăng gần 11%, lấy lại giá IPO 83 USD",
+    "summary": "Cổ phiếu Anthropic (ANT) tăng 10,98%, đóng cửa ở 91,88 USD trong phiên Black Friday rút ngắn ngày 27/11, lấy lại giá IPO 83 USD sau hai phiên liên tiếp đóng cửa dưới giá chào bán.",
+    "content": "Cổ phiếu Anthropic (ANT) tăng 10,98% trong phiên giao dịch rút ngắn ngày Black Friday 27/11, đóng cửa ở 91,88 USD và lấy lại giá IPO 83 USD sau hai phiên liên tiếp đóng cửa dưới giá chào bán.\nĐây là mức đóng cửa cao nhất của cổ phiếu kể từ ngày chào sàn 19/11, dù vẫn thấp hơn đỉnh 115,10 USD ghi nhận trong ngày đầu tiên. Trước đó cổ phiếu từng rơi xuống 81,91 USD ngày 24/11 và 82,79 USD ngày 25/11.\nĐợt mở khóa cổ phiếu tiếp theo — khoảng 303 triệu cổ phiếu — sẽ hết hạn ngày 15/12, được xem là phép thử tiếp theo cho cổ phiếu sau tuần giao dịch đầu tiên đầy biến động.",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/11/27/stock-market-today-nov-27-anthropic-jumps-11-reclaiming-its-usd83-ipo-price-as-wall-street-rallies/",
+    "image": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2Ff43d26313a000d06b6e748cea72ccd30fe7b9dc7-1290x860.jpg&w=1200&op=resize",
+    "source": "The Motley Fool"
+  },
+  {
+    "ts": "2026-11-26T02:39:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Thụy Sĩ xác nhận các vụ tấn công mạng đầu tiên có AI agent hỗ trợ",
+    "summary": "Trung tâm An ninh mạng Quốc gia Thụy Sĩ (NCSC) xác nhận 5 vụ tấn công mạng có sự hỗ trợ của AI agent, trong đó 3 vụ nhắm vào hạ tầng trọng yếu và 2 vụ thành công.",
+    "content": "Trung tâm An ninh mạng Quốc gia Thụy Sĩ (NCSC) xác nhận đã nhận được những báo cáo đầu tiên về các vụ tấn công mạng vào tổ chức tại Thụy Sĩ mà kẻ tấn công dùng AI agent hỗ trợ. Tổng cộng 5 vụ được xác nhận, trong đó 3 vụ nhắm vào các đơn vị vận hành hạ tầng trọng yếu thuộc ít nhất hai lĩnh vực, và 2 vụ đã xâm nhập thành công.\nKẻ tấn công dùng các 'agentic offensive framework' như ARTEX hay CyberStrikeAI — những AI agent tự tìm mật khẩu yếu, lỗ hổng đã biết trên các hệ thống phơi bày trên internet rồi tự quyết định bước tấn công tiếp theo. NCSC cho biết số lượng AI agent công khai trên internet đã tăng gần gấp đôi kể từ tháng 10/2026.\nNCSC cảnh báo đây là bước chuyển của bức tranh đe dọa và khuyến nghị doanh nghiệp, đơn vị hạ tầng trọng yếu vá các hệ thống phơi bày trên internet trong vòng 24 giờ. Cơ quan an ninh mạng Ý cũng đưa ra cảnh báo tương tự trong cùng tuần.",
+    "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+    "image": "https://www.bleepstatic.com/content/hl-images/2026/10/21/robot.jpg",
+    "source": "BleepingComputer"
+  },
+  {
+    "ts": "2026-11-28T10:00:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "NFS2ROOT: lỗ hổng 12 năm trong máy chủ NFS của Linux cho phép chiếm quyền root từ xa",
+    "summary": "CVE-2026-99362 (CVSS 9.8): tràn bộ nhớ heap trong máy chủ NFS của Linux kernel, tồn tại từ kernel 3.16 (2014); chỉ cần tới được cổng TCP 2049 là có thể lấy shell root mà không cần đăng nhập.",
+    "content": "Lỗ hổng CVE-2026-99362, được đặt tên NFS2ROOT, là lỗi tràn bộ nhớ heap trong máy chủ NFS trong nhân Linux (nfsd) khi xử lý phiên NFSv4.1, tồn tại từ kernel 3.16 ra mắt năm 2014. Lỗi được chấm CVSS 9.8 (Critical).\nBất kỳ máy nào có thể tới được cổng TCP 2049 của một máy chủ đang chạy NFSv4.1 hoặc 4.2 đều có thể kích hoạt lỗi ngay trong bước thiết lập phiên — trước khi đăng nhập hay mount. Hãng nghiên cứu OpenSec đã chứng minh có thể nối lỗi này thành rò rỉ bộ nhớ kernel, qua mặt KASLR và lấy shell root.\nLỗi đã được vá trong các bản kernel 6.12.117, 6.18.61, 7.3.2 và 7.4-rc1 (cùng các nhánh ổn định khác). Chưa ghi nhận khai thác thực tế và mã khai thác chưa được công khai; các bản phân phối vẫn đang trong quá trình phát hành bản vá.",
+    "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+    "image": "https://www.bleepstatic.com/content/hl-images/2026/10/29/Linux_tux.jpg",
+    "source": "BleepingComputer"
+  },
+  {
+    "ts": "2026-11-26T22:29:00+07:00",
+    "flow": "internet",
+    "category": "Bảo mật",
+    "title": "Flight Centre: lượng lớn hồ sơ khách hàng có thể đã bị lộ qua hệ thống đặt phòng bên thứ ba",
+    "summary": "Tập đoàn du lịch Flight Centre (Úc) công bố ngày 26/11: hoạt động bất thường trong hệ thống đặt phòng lưu trú của bên thứ ba; một tỷ lệ rất nhỏ hồ sơ có thể gồm chi tiết hộ chiếu, email, số điện thoại và ngày sinh.",
+    "content": "Tập đoàn du lịch Flight Centre Travel Group (Úc) công bố ngày 26/11 đang điều tra hoạt động bất thường trong hệ thống đặt phòng lưu trú của bên thứ ba, được dùng bởi các thương hiệu Flight Centre, Travel Associates, Cruiseabout và một số đại lý độc lập.\nTheo đánh giá ban đầu, phần lớn hồ sơ bị truy cập chỉ gồm tên khách, một số kèm thông tin chuyến đi cơ bản; một tỷ lệ rất nhỏ có thể gồm chi tiết hộ chiếu, email, số điện thoại, ngày sinh, hiếm hơn là thông tin sức khỏe. Chưa phát hiện việc truy cập thông tin thẻ tín dụng hay tài khoản ngân hàng.\nHệ thống đặt vé máy bay và đặt chỗ doanh nghiệp dùng hệ thống riêng nên không bị ảnh hưởng. Công ty đã thuê hãng ứng cứu sự cố Mandiant điều tra và cho biết sẽ liên hệ trực tiếp với khách hàng bị ảnh hưởng.",
+    "url": "https://www.theregister.com/security/2026/11/26/significant-number-of-customer-records-pwned-in-flight-centre-travel-group-breach/5312360",
+    "image": "https://image.theregister.com/259334.jpg?imageId=259334&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
+    "source": "The Register"
+  },
+  {
     "ts": "2026-11-28T08:30:46+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3252,50 +3296,6 @@
     "summary": "Một sạp trong chợ khu bán gà ta luộc: gà mái 255k/con, gà trống 265k/con, bán từ nửa con; gà mái sống làm sạch 220k/con; chả lá lốt 70k/10 cái, thịt chiên xù 60k/suất, giò sào 22k/lạng.",
     "content": "Một sạp trong chợ khu bán gà ta luộc và đồ ăn sẵn.\nGà ta luộc: gà mái 255k/con, gà trống 265k/con, bán từ nửa con; gà mái sống làm sạch 220k/con.\nChả lá lốt: 70k/10 cái; thịt chiên xù: 60k/suất; giò sào: 22k/lạng, mỗi khoanh khoảng 3 lạng.\nThông tin liên hệ nằm trong bài gốc tại group.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4793937094176634/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T17:55:54+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Gà nướng ship nóng 210k/con, ba chỉ rút sườn nướng giòn bì 155k/hộp",
-    "summary": "Một sạp trong chợ khu bán gà nướng ship nóng hổi: gà nướng 210k/con; ba chỉ rút sườn nướng giòn bì 155k/hộp 5 lạng. Sạp nhận đặt tiệc, sinh nhật và nhận sỉ.",
-    "content": "Một sạp trong chợ khu bán gà nướng ship nóng hổi.\nGà nướng: 210k/con; ba chỉ rút sườn nướng giòn bì: 155k/hộp 5 lạng.\nSạp nhận đặt tiệc, sinh nhật và nhận sỉ, giao nóng hổi.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793936427510034/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T17:50:21+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Rau củ quả tươi — su hào 20k/2 củ, ngô nếp 40k/5 bắp, mít Thái 35k/khay",
-    "summary": "Một sạp trong chợ khu bán rau củ quả tươi: su hào 20k/2 củ, ngô nếp 40k/5 bắp, mít Thái bóc sẵn 35k/khay 500g, dứa Ba Vì gọt sẵn 20k/quả, sắn nếp 18k/kg, đỗ cove non 40k/kg cùng nhiều loại rau củ, trứng vịt lộn 55k/10 quả.",
-    "content": "Một sạp trong chợ khu bán rau củ quả tươi.\nSu hào: 20k/2 củ; ngô nếp bắp to: 40k/5 bắp; mít Thái bóc sẵn, chia khay 500g: 35k/khay; dứa Ba Vì chín, gọt sẵn: 20k/quả; sắn nếp bở: 18k/kg (35k/2kg); đỗ cove non: 40k/kg; su su non: 45k/2kg; cà pháo giòn non: 25k/kg.\nRau cần mớ to: 18k/mớ; muống ta mớ to: 20k/mớ; ngót quế: 15k/mớ; măng nứa luộc: 40k/kg; củ dền Mộc Châu: 38k/kg; gừng ta Mộc Châu: 30k/kg; chanh tươi: 40k/kg; hành tây: 25k/kg; cà rốt: 20k/kg; bí đỏ: 20k/kg; bầu non: 30k/kg; bí xanh Mộc Châu: 25k/kg (quả tầm 1,5kg); khoai tây ta lòng vàng: 45k/2kg; khoai lang Nhật ruột vàng: 60k/2kg; khoai lang mật: 65k/2kg; tỏi tía khô: 45k/kg.\nTrứng vịt lộn quả to, kèm rau răm: 55k/10 quả.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793930487510628/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T17:50:14+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bún chả 45k–60k, nem rán 10k — free ship nội khu",
-    "summary": "Một quán bún chả trong khu đang ra món liên tục: bún chả chan, bún chả chấm, bún mọc sườn chua đồng giá 45k/60k; nem rán 10k, quẩy/bún 5k; free ship nội khu.",
-    "content": "Một quán bún chả trong khu đang ra món liên tục, chả vừa nướng xong.\nMenu đồng giá 45k/60k (lẫn, băm, miếng, xương sông): bún chả chan, bún chả chấm, bún mọc sườn chua.\nNem rán: 10k; quẩy/bún: 5k.\nFree ship nội khu.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793930380843972/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T17:44:17+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Xe máy quên rút chìa khóa, không tắt máy — đã gửi bảo vệ",
-    "summary": "Một cư dân phát hiện một chiếc xe máy để quên chìa khóa, xe không tắt máy, và đã gửi chìa khóa cho bảo vệ. Ai là chủ xe thì xuống bảo vệ nhận lại.",
-    "content": "Một cư dân phát hiện một chiếc xe máy để quên chìa khóa, xe không tắt máy, và đã gửi chìa khóa cho bảo vệ.\nAi là chủ xe thì xuống bảo vệ nhận lại — thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793923474177996/",
     "image": null,
     "source": "Chợ cư dân"
   }
