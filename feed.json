@@ -1,5 +1,71 @@
 [
   {
+    "ts": "2026-11-28T00:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "136 thiên hà gần cho thấy vật chất tối ở trung tâm loãng hơn mô phỏng dự đoán",
+    "summary": "Nghiên cứu trên Nature Astronomy kết hợp chuyển động sao (MaNGA, CALIFA) và khí hydro (kính FAST): mật độ vật chất tối trung tâm thấp hơn hẳn dự đoán của các mô phỏng IllustrisTNG, EAGLE và SIMBA; lệch càng lớn ở thiên hà càng nặng, vùng lệch rộng tới ~160.000 năm ánh sáng.",
+    "content": "Nghiên cứu 136 thiên hà gần, công bố trên Nature Astronomy, kết hợp chuyển động sao (MaNGA, CALIFA) và khí hydro (kính FAST) cho thấy mật độ vật chất tối ở vùng trung tâm thấp hơn hẳn dự đoán của các mô phỏng IllustrisTNG, EAGLE và SIMBA.\nĐộ lệch càng lớn ở thiên hà càng nặng, vùng lệch trải rộng tới khoảng 160.000 năm ánh sáng.\nĐây là chuẩn quan trắc mới buộc các mô phỏng hình thành thiên hà phải xem lại, dù bản chất vật chất tối vẫn chưa được giải quyết.",
+    "url": "https://phys.org/news/2026-11-dark-puzzle-deepens-nearby-galaxies.html",
+    "image": "https://scx1.b-cdn.net/csz/news/800a/2026/the-dark-matter-puzzle.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-28T04:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Bài toán đường cong đẳng thời (tautochrone) 367 năm tuổi của Huygens vừa có phiên bản lượng tử",
+    "summary": "Nhóm Đại học Crete chứng minh bằng tính toán: hạt lượng tử xuất phát từ các vị trí khác nhau trong mạng tinh thể có thể hội tụ đồng thời tại trung tâm; boson tụ về cùng một điểm, fermion tụ về các điểm kề nhau do nguyên lý loại trừ Pauli. Mới chỉ là lý thuyết, chưa có thực nghiệm; preprint chưa qua bình duyệt.",
+    "content": "Bài toán tautochrone của Huygens năm 1659 hỏi đường cong nào khiến vật trượt xuống tới đáy trong cùng một khoảng thời gian bất kể điểm xuất phát. Nhóm Đại học Crete (Hy Lạp) vừa chứng minh bằng tính toán rằng các hạt lượng tử xuất phát từ những vị trí khác nhau trong một mạng tinh thể có thể hội tụ đồng thời tại trung tâm — boson tụ về cùng một điểm, còn fermion (do nguyên lý loại trừ Pauli) tụ về các điểm kề nhau.\nHiệu ứng mới chỉ tồn tại trên lý thuyết, chưa có thực nghiệm. Preprint gốc (Simopoulos và cộng sự, arXiv:2611.32319, nộp 24/11/2026) chưa qua bình duyệt.\nNếu được kiểm chứng, hiệu ứng mở ra cách điều khiển chính xác thời–điểm gặp nhau của hạt lượng tử cho công nghệ lượng tử dùng ánh sáng.",
+    "url": "https://www.sciencealert.com/scientists-discover-a-quantum-twist-on-a-367-year-old-physics-problem",
+    "image": "https://www.sciencealert.com/images/2026/11/quantum-tautochrone.png",
+    "source": "ScienceAlert"
+  },
+  {
+    "ts": "2026-11-27T23:00:00+07:00",
+    "flow": "internet",
+    "category": "Khoa học",
+    "title": "Vết sẹo vụ nổ thiên thạch hé lộ Sao Kim được dung nham tái tạo bề mặt theo từng mảng",
+    "summary": "Từ ảnh radar Magellan, nhóm Đại học Arizona lập bản đồ 592 vết sẹo do thiên thạch nổ tung trong khí quyển dày của Sao Kim; chúng phân bố thành cụm, trái với hố va chạm phân bố ngẫu nhiên — ủng hộ giả thuyết bề mặt Sao Kim được làm mới dần theo từng vùng.",
+    "content": "Từ ảnh radar Magellan, nhóm Đại học Arizona lập bản đồ 592 vết sẹo do thiên thạch nổ tung trong khí quyển dày của Sao Kim (không để lại hố va chạm) và thấy chúng phân bố thành cụm, trái với các hố va chạm phân bố ngẫu nhiên.\nMô hình cho thấy dung nham đã chôn vùi các vết sẹo theo từng mảng rộng 2.000–6.000 km.\nKết quả ủng hộ giả thuyết bề mặt Sao Kim được làm mới dần dần theo từng vùng, thay vì bị chôn vùi toàn bộ trong một đợt phun trào duy nhất. Bài gốc công bố trên AGU Advances.",
+    "url": "https://phys.org/news/2026-11-meteor-blast-scars-hint-venus.html",
+    "image": "https://scx1.b-cdn.net/csz/news/800a/2026/scars-from-meteor-blas.jpg",
+    "source": "phys.org"
+  },
+  {
+    "ts": "2026-11-28T13:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Người chơi PS5/PS5 Pro cho rằng GTA 6 bị giảm chất lượng đồ họa sau bản cập nhật đầu tiên",
+    "summary": "Sau bản 01.002.002 (23/11, sửa crash và thời tiết tĩnh), nhiều người chơi trên Reddit phản ánh texture mờ hơn, pop-in nhiều hơn, ánh sáng toàn cục kém thuyết phục, rõ nhất trên PS5 Pro. Rockstar chưa bình luận nên chưa thể kết luận đây là hạ cấp có chủ đích.",
+    "content": "Sau bản cập nhật 01.002.002 ngày 23/11 (sửa crash, thời tiết tĩnh), nhiều người chơi PS5 và PS5 Pro trên Reddit phản ánh chất lượng hình ảnh giảm: texture mờ hơn, pop-in nhiều hơn, ánh sáng toàn cục kém thuyết phục.\nHiện tượng rõ nhất trên PS5 Pro: bình minh và hoàng hôn mất độ ấn tượng, mây vỡ hạt, phản chiếu nước sau mưa kém, chiều sâu trường ảnh mạnh hơn khiến vật ở xa mờ đi.\nRockstar chưa bình luận gì nên chưa thể kết luận đây là hạ cấp có chủ đích để giảm tải cho console. Digital Foundry cũng ghi nhận tụt khung hình ở các cảnh đông đúc dù game giới hạn 30 fps.",
+    "url": "https://www.notebookcheck.net/GTA-6-PS5-and-PS5-Pro-players-note-downgraded-graphics-following-first-update.1461721.0.html",
+    "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/LuciaSunsetGTA6.jpg",
+    "source": "Notebookcheck"
+  },
+  {
+    "ts": "2026-11-27T16:33:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Bản port PC không chính thức của GTA 6 đã chạy được multiplayer ở 25–30 FPS",
+    "summary": "Modder TeK đăng video 26/11: hai người chơi cùng xuất hiện trong một thế giới GTA 6 trên bản PC không chính thức, đồng bộ nhân vật và xe, có voice chat theo khoảng cách. Cộng đồng PortWatch VI xác nhận video là thật nhưng bản build vẫn riêng tư, chưa kiểm chứng độc lập.",
+    "content": "Modder TeK đăng video ngày 26/11 cho thấy hai người chơi cùng xuất hiện trong một thế giới GTA 6 trên bản PC không chính thức, đồng bộ nhân vật và xe, có voice chat theo khoảng cách, chạy ổn định 25–30 FPS.\nCộng đồng theo dõi PortWatch VI xác nhận đoạn video là thật, nhưng bản build vẫn là bản riêng tư và chưa được kiểm chứng độc lập. Rockstar vẫn chưa công bố ngày ra mắt bản PC chính thức.\nĐây là bản port không chính thức, dựng từ file game bị rò rỉ; Take-Two đã gỡ bỏ nhiều dự án port tương tự, trong đó có 3.007 repository GitHub bị DMCA ngày 24/11.",
+    "url": "https://www.tweaktown.com/news/114929/gta-6-pc-port-now-has-multiplayer-running-at-30fps/index.html",
+    "image": "https://static.tweaktown.com/news/1/1/114929_1_gta-6-pc-port-now-has-multiplayer-running-at-30fps.png?v=1795769975",
+    "source": "TweakTown"
+  },
+  {
+    "ts": "2026-11-27T18:00:00+07:00",
+    "flow": "internet",
+    "category": "Game",
+    "title": "Phân Tích Game: Tôi kể lại toàn bộ diễn biến trong GTA VI (Chương 1-3)",
+    "summary": "Video dài 30 phút 41 giây kể lại toàn bộ cốt truyện GTA VI từ chương 1 đến chương 3 — đúng dạng phân tích/lore của mục game, đăng 27/11 trên kênh Phân Tích Game.",
+    "content": "Video dài 30 phút 41 giây kể lại toàn bộ cốt truyện GTA VI từ chương 1 đến chương 3.\nĐăng 27/11/2026 18:00 +07 trên kênh Phân Tích Game (Người Già Chơi Game) — đúng dạng phân tích cốt truyện/lore của mục game.",
+    "url": "https://www.youtube.com/watch?v=uHJu5TKxYe8",
+    "image": "https://i.ytimg.com/vi/uHJu5TKxYe8/hqdefault.jpg",
+    "source": "Phân Tích Game"
+  },
+  {
     "ts": "2026-11-28T11:28:15+07:00",
     "flow": "facebook",
     "category": "Bảng tin cư dân",
@@ -3230,72 +3296,6 @@
     "summary": "Một sạp trong chợ khu bán rau củ quả tươi về mai: cải bắp 30k/2 cây, súp lơ 30k/2 cây, cải thảo 30k/2 cây, củ cải 35k/2kg, mầm bắp cải Mộc Châu 45k/2kg, dưa chuột baby 55k/2kg, cà chua 55k/2kg.",
     "content": "Một sạp trong chợ khu bán rau củ quả tươi, hàng về mai.\nCải bắp: 30k/2 cây; súp lơ: 30k/2 cây; cải thảo: 30k/2 cây; củ cải: 35k/2kg; mầm bắp cải Mộc Châu: 45k/2kg; dưa chuột baby non sạch ăn cả vỏ: 55k/2kg; cà chua: 55k/2kg.\nThông tin liên hệ nằm trong bài gốc tại group.",
     "url": "https://facebook.com/groups/1770535389850168/permalink/4794047037498973/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T19:27:20+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Phô mai giao nhầm tới một căn hộ trong khu — chủ đơn qua lấy lại",
-    "summary": "Một sạp trong chợ khu giao nhầm đơn phô mai tới một căn hộ trong khu; chủ đơn qua nhà lấy lại giúp. Đơn vừa ship xong, căn hộ nhận được không đặt món này.",
-    "content": "Một sạp trong chợ khu giao nhầm đơn phô mai tới một căn hộ trong khu.\nĐơn vừa ship xong, căn hộ nhận được không đặt món này nên nhờ chủ đơn qua lấy lại — thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794043270832683/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T18:57:17+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ngô nếp 40k/5 bắp, mít Thái 35k/khay, dứa Ba Vì 20k/quả, sắn và khoai lang",
-    "summary": "Một sạp trong chợ khu bán ngô nếp 40k/5 bắp (bắp to 50k/5 bắp), mít Thái bóc sẵn 35k/khay 500g, dứa Ba Vì chín gọt sẵn 20k/quả, sắn nếp bở 18k/kg, khoai lang Nhật 60k/2kg, khoai lang mật 65k/2kg.",
-    "content": "Một sạp trong chợ khu bán ngô, mít, dứa, sắn và khoai lang.\nNgô nếp: 40k/5 bắp, bắp to 50k/5 bắp; mít Thái bóc sẵn, chia khay 500g nguyên múi: 35k/khay; dứa Ba Vì chín, gọt sẵn: 20k/quả; sắn nếp bở: 18k/kg (35k/2kg); khoai lang Nhật ruột vàng, bở, ngọt: 60k/2kg; khoai lang mật: 65k/2kg.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794006414169702/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T18:56:25+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ổi ngon giòn ngọt 100k/3kg, vừa hái chiều nay",
-    "summary": "Một sạp trong chợ khu bán ổi vừa hái chiều nay: 100k/3kg, còn 3 túi 3kg, ship ngay. Ổi giòn ngọt, cùi dày ít hạt, bao ăn từng quả, bù trừ nếu thối hỏng.",
-    "content": "Một sạp trong chợ khu bán ổi vừa hái chiều nay.\nỔi ngon giòn ngọt: 100k/3kg, còn 3 túi 3kg, ship ngay; bao ăn từng quả, vỏ sần chắc quả, cùi dày ít hạt; bù trừ nếu thối hỏng.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4794005564169787/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T18:32:19+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Ai quên điện thoại ở xe thì xuống sảnh gặp bác bảo vệ nhận lại",
-    "summary": "Một cư dân nhặt được điện thoại ai đó để quên ở xe và đã gửi bác bảo vệ ở sảnh tòa nhà. Ai là chủ nhân thì xuống sảnh gặp bác bảo vệ lấy lại.",
-    "content": "Một cư dân nhặt được điện thoại ai đó để quên ở xe và đã gửi bác bảo vệ ở sảnh tòa nhà.\nAi là chủ nhân thì xuống sảnh gặp bác bảo vệ lấy lại — thông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793979110839099/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T18:23:30+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Bán gấp căn hộ 2PN 2VS 69,9m² full nội thất, giá 3,x tỷ",
-    "summary": "Một cư dân rao bán gấp căn hộ 2PN 2VS, 69,9m² sử dụng, full nội thất, thiết kế sang, chỉ việc xách vali về ở, giá 3,x tỷ. Căn hộ thuộc dự án Thăng Long Capital.",
-    "content": "Một cư dân rao bán gấp căn hộ 2PN 2VS, 69,9m² sử dụng, full nội thất, thiết kế sang, chỉ việc xách vali về ở.\nGiá: 3,x tỷ.\nCăn hộ thuộc dự án Thăng Long Capital.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793967320840278/",
-    "image": null,
-    "source": "Chợ cư dân"
-  },
-  {
-    "ts": "2026-11-25T18:20:31+07:00",
-    "flow": "facebook",
-    "category": "Bảng tin cư dân",
-    "title": "Cua Cà Mau từ 130k/con — cua cốm 130k, cua thịt 160k–240k/con",
-    "summary": "Một sạp trong chợ khu bán cua Cà Mau loại 1: cua cốm cho khách sành gạch béo, size từ 250g, chỉ 130k/con; cua thịt size 400g 160k/con, size 600g 240k/con. Bao ăn bao gạch 1-1, hỗ trợ hấp sẵn kèm nước chấm.",
-    "content": "Một sạp trong chợ khu bán cua Cà Mau chuẩn loại 1.\nCua cốm cho khách sành gạch béo, size từ 250g: 130k/con; cua thịt size 400g: 160k/con; cua thịt size 600g: 240k/con.\nBao ăn bao gạch 1-1, hỗ trợ hấp sẵn miễn phí kèm nước chấm.\nThông tin liên hệ nằm trong bài gốc tại group.",
-    "url": "https://facebook.com/groups/1770535389850168/permalink/4793963794173964/",
     "image": null,
     "source": "Chợ cư dân"
   }
